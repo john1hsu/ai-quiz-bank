@@ -1,0 +1,20 @@
+id: ai-000031
+area: prompting-and-reasoning
+kind: origin
+topic: Chain-of-thought prompting
+topic_type: Technique
+maturity: established
+true_statement: Chain-of-thought prompting was introduced by Jason Wei and colleagues at Google in a paper presented at NeurIPS 2022.
+false_statement: Chain-of-thought prompting was introduced by Takeshi Kojima and colleagues at Google in a paper presented at NeurIPS 2022.
+explanation: 'Wei et al. showed that few-shot exemplars with worked reasoning improved arithmetic, commonsense and symbolic tasks. Kojima and colleagues came next, showing the zero-shot version: just add ''Let''s think step by step''.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/chain-of-thought.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: fae6181c4b404326f96b54b12f2951e52c20f7a9
+concepts:
+- kt:chain-of-thought
+- kt:chain-of-thought-prompting-elicits-reasoning-in-large-language-models
+difficulty: 1
+created: '2026-11-16'
+status: active

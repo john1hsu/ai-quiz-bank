@@ -1,0 +1,20 @@
+id: ai-000027
+area: inference-and-optimization
+kind: evidence
+topic: Quantization
+topic_type: Technique
+maturity: established
+true_statement: Dettmers et al. found naive 8-bit quantization breaks down in large transformers because a few hidden dimensions carry outlier features of very large magnitude.
+false_statement: Dettmers et al. found naive 8-bit quantization breaks down in large transformers because most hidden dimensions carry near-zero values that rounding erases.
+explanation: A handful of huge-magnitude dimensions stretch the quantization range and dominate attention. LLM.int8() handles them by routing those dimensions through 16-bit math while keeping over 99.9% of values in 8-bit.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/quantization.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 186c08e58635c2733ebc0dc818b2a4f448abe843
+concepts:
+- kt:quantization
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-16'
+status: active

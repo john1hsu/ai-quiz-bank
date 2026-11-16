@@ -1,0 +1,20 @@
+id: ai-000032
+area: prompting-and-reasoning
+kind: mechanism
+topic: Chain-of-thought prompting
+topic_type: Technique
+maturity: established
+true_statement: Self-consistency samples several diverse reasoning chains and takes the most frequent final answer, instead of decoding one chain greedily.
+false_statement: Self-consistency decodes one reasoning chain greedily, then has the model recheck each step and revise any it judges wrong.
+explanation: Different chains can reach the right answer by different routes, and wrong chains tend to disagree, so a majority vote filters errors. Wang et al. reported gains over plain chain-of-thought such as 17.9% on GSM8K.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/chain-of-thought.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: fae6181c4b404326f96b54b12f2951e52c20f7a9
+concepts:
+- kt:chain-of-thought
+- kt:self-consistency
+difficulty: 2
+created: '2026-11-16'
+status: active

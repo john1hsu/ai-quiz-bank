@@ -1,0 +1,21 @@
+id: ai-000004
+area: ai-history
+kind: origin
+topic: Chinese room argument
+topic_type: Concept
+maturity: foundational
+true_statement: John Searle introduced the Chinese room argument in his 1980 paper "Minds, brains, and programs".
+false_statement: Daniel Dennett introduced the Chinese room argument in his 1980 paper "Minds, brains, and programs".
+explanation: Searle, a Berkeley philosopher, published it in The Behavioral and Brain Sciences with 27 commentaries. Dennett was one of its best-known critics, defending a version of the systems reply.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/chinese-room-argument.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6855648232d5e4981a6e3771b638a10c9b9381fc
+concepts:
+- kt:chinese-room-argument
+- kt:john-searle
+- kt:minds-brains-and-programs
+difficulty: 1
+created: '2026-11-16'
+status: active

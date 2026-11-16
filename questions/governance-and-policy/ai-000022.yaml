@@ -1,0 +1,19 @@
+id: ai-000022
+area: governance-and-policy
+kind: mechanism
+topic: NIST AI Risk Management Framework
+topic_type: Policy
+maturity: established
+true_statement: The NIST AI RMF Core has four functions, Govern, Map, Measure and Manage, and Govern cuts across the other three.
+false_statement: The NIST AI RMF Core has four functions, Govern, Map, Measure and Manage, and Manage cuts across the other three.
+explanation: Govern sets the culture, policies and accountability that inform everything else. Map sets context, Measure assesses risks, and Manage prioritises and responds to them; a typical user sets up Govern, starts with Map, then iterates Measure and Manage.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/nist-ai-risk-management-framework.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 73bbeb5eaeca1d5d4979c09eb0deece5319c910a
+concepts:
+- kt:nist-ai-risk-management-framework
+difficulty: 1
+created: '2026-11-16'
+status: active

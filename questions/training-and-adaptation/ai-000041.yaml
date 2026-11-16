@@ -1,0 +1,20 @@
+id: ai-000041
+area: training-and-adaptation
+kind: mechanism
+topic: Reinforcement learning from human feedback
+topic_type: Technique
+maturity: established
+true_statement: In InstructGPT's RL stage, a KL penalty against the supervised model limits over-optimisation of the learned reward model.
+false_statement: In InstructGPT's RL stage, a KL penalty against the supervised model reduces the alignment tax on public NLP benchmarks.
+explanation: The KL term keeps the policy near the SFT model so it can't drift into outputs that game the reward model. The alignment tax was tackled separately by PPO-ptx, which mixes in pretraining gradients.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/rlhf.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: c36645a30ac51b1bfa24aba4708966bf1dfab6c5
+concepts:
+- kt:rlhf
+- kt:proximal-policy-optimization
+difficulty: 3
+created: '2026-11-16'
+status: active

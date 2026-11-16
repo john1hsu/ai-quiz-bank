@@ -1,0 +1,20 @@
+id: ai-000040
+area: training-and-adaptation
+kind: origin
+topic: Reinforcement learning from human feedback
+topic_type: Technique
+maturity: established
+true_statement: The modern RLHF recipe comes from Christiano and colleagues in 2017, who had humans compare pairs of short video clips of an agent.
+false_statement: The modern RLHF recipe comes from Stiennon and colleagues in 2017, who had humans compare pairs of short video clips of an agent.
+explanation: Christiano et al. (OpenAI and DeepMind) fitted a reward predictor to those choices and trained agents on it. Stiennon et al. brought the method to language in 2020 with summarisation, before InstructGPT applied it to instruction following.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/rlhf.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: c36645a30ac51b1bfa24aba4708966bf1dfab6c5
+concepts:
+- kt:rlhf
+- kt:deep-reinforcement-learning-from-human-preferences
+difficulty: 2
+created: '2026-11-16'
+status: active

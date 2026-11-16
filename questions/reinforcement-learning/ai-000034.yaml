@@ -1,0 +1,21 @@
+id: ai-000034
+area: reinforcement-learning
+kind: origin
+topic: Policy gradient methods
+topic_type: Technique
+maturity: established
+true_statement: Ronald Williams introduced REINFORCE in 1992, and Sutton and colleagues proved the general policy gradient theorem in 1999.
+false_statement: Richard Sutton introduced REINFORCE in 1992, and Williams and colleagues proved the general policy gradient theorem in 1999.
+explanation: Williams's REINFORCE followed the gradient of expected reward for networks of stochastic units. Sutton, McAllester, Singh and Mansour later showed policy iteration with any differentiable approximator converges to a local optimum.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/policy-gradient.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 5b483064c789373c4ef8d73f997f20e4fb22739a
+concepts:
+- kt:policy-gradient
+- kt:reinforce-algorithm
+- kt:policy-gradient-methods-for-reinforcement-learning-with-function-approximation
+difficulty: 2
+created: '2026-11-16'
+status: active

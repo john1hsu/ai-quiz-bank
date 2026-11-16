@@ -1,0 +1,21 @@
+id: ai-000003
+area: agents-and-tool-use
+kind: figure
+topic: Agentic workflow
+topic_type: Technique
+maturity: emerging
+true_statement: Self-Refine (2023), where one LLM critiques and revises its own output, reported an average gain of about 20 absolute points over one-shot generation.
+false_statement: Self-Refine (2023), where one LLM critiques and revises its own output, reported an average gain of about 6 absolute points over one-shot generation.
+explanation: Madaan et al. reported roughly 20 points on average across seven tasks with GPT-3.5, ChatGPT and GPT-4, with no extra training. It is the peer-reviewed backing for the evaluator–optimizer loop; about 6% is closer to AFlow's reported gain.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agentic-workflow.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 4c9bca8e8172944ad7b4ecad503766b6fd5c5953
+concepts:
+- kt:agentic-workflow
+- kt:self-refine
+difficulty: 3
+created: '2026-11-16'
+status: active

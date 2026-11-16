@@ -1,0 +1,20 @@
+id: ai-000042
+area: training-and-adaptation
+kind: evidence
+topic: Reinforcement learning from human feedback
+topic_type: Technique
+maturity: established
+true_statement: Human raters preferred outputs of the 1.3-billion-parameter InstructGPT over those of the 175-billion-parameter GPT-3.
+false_statement: Human raters preferred outputs of the 175-billion-parameter GPT-3 over those of the 1.3-billion-parameter InstructGPT.
+explanation: Fine-tuning on demonstrations and then on human preferences mattered more than raw size for following instructions. The aligned model still made simple mistakes, and the comparison was on the authors' own prompt distribution.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/rlhf.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: c36645a30ac51b1bfa24aba4708966bf1dfab6c5
+concepts:
+- kt:rlhf
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000001
+area: agents-and-tool-use
+kind: definition
+topic: Agentic workflow
+topic_type: Technique
+maturity: emerging
+true_statement: In an agentic workflow the developer's code controls the overall flow of steps, while in an AI agent the model decides the process itself.
+false_statement: In an agentic workflow the model decides the overall flow of steps, while in an AI agent the developer's code controls the process itself.
+explanation: Anthropic's guidance, followed by LangGraph, splits agentic systems by who controls the flow. Workflows run along predetermined code paths with the model filling in each step; agents choose their own process in feedback loops.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agentic-workflow.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 4c9bca8e8172944ad7b4ecad503766b6fd5c5953
+concepts:
+- kt:agentic-workflow
+- kt:ai-agent
+- kt:agentic-systems
+difficulty: 1
+created: '2026-11-16'
+status: active

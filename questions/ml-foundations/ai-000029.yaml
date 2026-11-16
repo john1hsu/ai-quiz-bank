@@ -1,0 +1,20 @@
+id: ai-000029
+area: ml-foundations
+kind: application
+topic: Bias-variance tradeoff
+topic_type: Concept
+maturity: foundational
+true_statement: When training error is low but test error is high, the usual remedies are more data, a simpler model or bagging.
+false_statement: When training error is low but test error is high, the usual remedies are a more expressive model, more features or boosting.
+explanation: That pattern signals high variance (overfitting), so you reduce flexibility or average it out with bagging. A more expressive model, more features or boosting are the fixes for high bias, when even training error is too high.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/bias-variance-tradeoff.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: dfabbb68b9c27d1c7a0a91edaa2425cffc0fde76
+concepts:
+- kt:bias-variance-tradeoff
+- kt:ensemble-methods
+difficulty: 2
+created: '2026-11-16'
+status: active

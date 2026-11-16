@@ -1,0 +1,20 @@
+id: ai-000030
+area: ml-foundations
+kind: evidence
+topic: Bias-variance tradeoff
+topic_type: Concept
+maturity: foundational
+true_statement: Belkin and colleagues' double descent curve shows test error falling a second time as capacity grows past the point of fitting the training data exactly.
+false_statement: Belkin and colleagues' double descent curve shows test error rising a second time as capacity grows past the point of fitting the training data exactly.
+explanation: The classical U-curve predicts that interpolating the data means overfitting, yet over-parameterised networks generalise well. Double descent adds a second fall beyond the interpolation point, which helps explain why scaling past a perfect fit pays off.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/bias-variance-tradeoff.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: dfabbb68b9c27d1c7a0a91edaa2425cffc0fde76
+concepts:
+- kt:bias-variance-tradeoff
+- kt:double-descent
+difficulty: 3
+created: '2026-11-16'
+status: active

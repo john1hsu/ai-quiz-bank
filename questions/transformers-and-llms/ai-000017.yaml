@@ -1,0 +1,20 @@
+id: ai-000017
+area: transformers-and-llms
+kind: evidence
+topic: Large language model
+topic_type: Concept
+maturity: established
+true_statement: Kaplan et al. (2020) found language-model loss falls as a smooth power law in model size, data and compute, while width versus depth matters little.
+false_statement: Kaplan et al. (2020) found language-model loss falls as a smooth power law in model size, data and compute, while width versus depth matters most.
+explanation: The trend held across more than seven orders of magnitude, and architectural details like the width-to-depth ratio mattered little within a broad range. Scale itself was the main lever, which shaped how labs spent compute.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/large-language-model.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: eba751335eb482ecf74022bfa3880480588fb549
+concepts:
+- kt:large-language-model
+- kt:scaling-laws
+difficulty: 2
+created: '2026-11-16'
+status: active

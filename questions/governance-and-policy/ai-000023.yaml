@@ -1,0 +1,20 @@
+id: ai-000023
+area: governance-and-policy
+kind: origin
+topic: NIST AI Risk Management Framework
+topic_type: Policy
+maturity: established
+true_statement: NIST released AI RMF 1.0 on 26 January 2023, at the direction of the National Artificial Intelligence Initiative Act of 2020.
+false_statement: NIST released AI RMF 1.0 on 26 July 2024, at the direction of the National Artificial Intelligence Initiative Act of 2020.
+explanation: Congress asked for a voluntary framework, and NIST built it through drafts and public workshops from 2021 to 2022. 26 July 2024 is when the separate Generative AI Profile (NIST AI 600-1) came out.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/nist-ai-risk-management-framework.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 73bbeb5eaeca1d5d4979c09eb0deece5319c910a
+concepts:
+- kt:nist-ai-risk-management-framework
+- kt:nist
+difficulty: 2
+created: '2026-11-16'
+status: active

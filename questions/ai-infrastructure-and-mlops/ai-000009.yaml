@@ -1,0 +1,21 @@
+id: ai-000009
+area: ai-infrastructure-and-mlops
+kind: application
+topic: MLOps
+topic_type: Paradigm
+maturity: established
+true_statement: In an MLOps stack, a feature store helps prevent training-serving skew, while a model registry keeps track of versioned models.
+false_statement: In an MLOps stack, a model registry helps prevent training-serving skew, while a feature store keeps track of versioned models.
+explanation: A feature store serves the same feature definitions to training and to production, so the model sees consistent inputs. A model registry stores and versions trained models so releases can be tracked and rolled back.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/mlops.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: e4fdd570649d6dd6deab18f2a2daa0fb75c910db
+concepts:
+- kt:mlops
+- kt:feature-store
+- kt:model-registry
+difficulty: 2
+created: '2026-11-16'
+status: active

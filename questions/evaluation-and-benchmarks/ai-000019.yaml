@@ -1,0 +1,20 @@
+id: ai-000019
+area: evaluation-and-benchmarks
+kind: figure
+topic: Evaluation of AI systems
+topic_type: Field
+maturity: established
+true_statement: HELM (2023) found language models had on average been evaluated on only 17.9% of its core scenarios before it standardised testing.
+false_statement: HELM (2023) found language models had on average been evaluated on 96.0% of its core scenarios before it standardised testing.
+explanation: Before HELM, labs reported different benchmarks under different prompts, so results rarely lined up. Running every model under the same conditions raised coverage to 96.0%, which is the after figure, not the before.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/ai-evaluation.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: bd9230144b6bad989192472234fe5935e3c6c158
+concepts:
+- kt:ai-evaluation
+difficulty: 3
+created: '2026-11-16'
+status: active

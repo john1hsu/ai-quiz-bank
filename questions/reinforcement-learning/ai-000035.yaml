@@ -1,0 +1,19 @@
+id: ai-000035
+area: reinforcement-learning
+kind: mechanism
+topic: Policy gradient methods
+topic_type: Technique
+maturity: established
+true_statement: Subtracting a state-dependent baseline from the return lowers the variance of a policy gradient estimate without biasing it.
+false_statement: Subtracting a state-dependent baseline from the return lowers the variance of a policy gradient estimate but biases it toward the baseline.
+explanation: 'The expected gradient of the log-probability is zero, so a term that depends only on the state averages out. A learned value function V(s) is the usual baseline, which turns the weight into an advantage: how much better the action was than average.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/policy-gradient.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 5b483064c789373c4ef8d73f997f20e4fb22739a
+concepts:
+- kt:policy-gradient
+difficulty: 3
+created: '2026-11-16'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000015
+area: deep-learning
+kind: evidence
+topic: Artificial neural network
+topic_type: Architecture
+maturity: foundational
+true_statement: Leshno et al. proved a one-hidden-layer network can approximate any continuous function if and only if its activation function is not a polynomial.
+false_statement: Leshno et al. proved a one-hidden-layer network can approximate any continuous function if and only if its activation function is bounded and monotonic.
+explanation: Their condition is simply non-polynomial, which covers ReLU (unbounded) as well as sigmoids, and they showed the bias term is needed. Such theorems promise existence, not that training will find the weights or how large the network must be.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/artificial-neural-network.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 63573418ca1ce0d51441ede663085ac62d19f2bb
+concepts:
+- kt:artificial-neural-network
+- kt:universal-approximation-theorem
+difficulty: 3
+created: '2026-11-16'
+status: active

@@ -1,0 +1,19 @@
+id: ai-000036
+area: reinforcement-learning
+kind: definition
+topic: Policy gradient methods
+topic_type: Technique
+maturity: established
+true_statement: 'Vanilla policy gradient is on-policy: its training data must come from the current policy it is improving.'
+false_statement: 'Vanilla policy gradient is off-policy: it can train on data collected by any earlier policy it has replaced.'
+explanation: The gradient is an expectation over trajectories from the current policy, so old data no longer matches it. Exploration comes only from the policy's own randomness, which shrinks over training and can leave it stuck in local optima.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/policy-gradient.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 5b483064c789373c4ef8d73f997f20e4fb22739a
+concepts:
+- kt:policy-gradient
+difficulty: 2
+created: '2026-11-16'
+status: active

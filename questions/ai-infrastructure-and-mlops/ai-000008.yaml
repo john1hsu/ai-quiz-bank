@@ -1,0 +1,19 @@
+id: ai-000008
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: MLOps
+topic_type: Paradigm
+maturity: established
+true_statement: In Google's MLOps maturity levels, Level 1 automates the training pipeline, and Level 2 also automates building and deploying new pipeline components.
+false_statement: In Google's MLOps maturity levels, Level 1 automates building and deploying new pipeline components, and Level 2 also automates the training pipeline.
+explanation: Level 0 is manual notebooks and hand-offs. Level 1 retrains automatically on triggers like new data or drift; Level 2 adds CI/CD for the pipeline itself, backed by a registry, feature store, metadata store and orchestrator.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/mlops.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: e4fdd570649d6dd6deab18f2a2daa0fb75c910db
+concepts:
+- kt:mlops
+difficulty: 2
+created: '2026-11-16'
+status: active

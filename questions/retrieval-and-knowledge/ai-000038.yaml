@@ -1,0 +1,20 @@
+id: ai-000038
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Embeddings
+topic_type: Concept
+maturity: established
+true_statement: Word2vec's skip-gram predicts the surrounding context words from a centre word, while CBOW predicts the centre word from its context.
+false_statement: Word2vec's CBOW predicts the surrounding context words from a centre word, while skip-gram predicts the centre word from its context.
+explanation: Skip-gram goes from one word out to its window; continuous bag of words averages the context vectors and predicts the word in the middle. Both are self-supervised, since raw text supplies the targets.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/embeddings.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6607e1e462a98e41f295f03eb5bb704e8cb9fdfe
+concepts:
+- kt:embeddings
+- kt:word2vec
+difficulty: 2
+created: '2026-11-16'
+status: active

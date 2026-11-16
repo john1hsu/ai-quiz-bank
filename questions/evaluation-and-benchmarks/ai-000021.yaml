@@ -1,0 +1,20 @@
+id: ai-000021
+area: evaluation-and-benchmarks
+kind: definition
+topic: Evaluation of AI systems
+topic_type: Field
+maturity: established
+true_statement: In AI evaluation, Goodhart's law describes a metric that stops tracking the property it stood for once it becomes an optimisation target.
+false_statement: In AI evaluation, benchmark contamination describes a metric that stops tracking the property it stood for once it becomes an optimisation target.
+explanation: Both inflate scores, but differently. Goodhart's law is about optimising toward the metric itself; contamination is when test items leak into training data, so the model has effectively seen the answers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/ai-evaluation.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: bd9230144b6bad989192472234fe5935e3c6c158
+concepts:
+- kt:ai-evaluation
+- kt:benchmark-contamination
+difficulty: 2
+created: '2026-11-16'
+status: active

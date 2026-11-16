@@ -1,0 +1,20 @@
+id: ai-000045
+area: safety-alignment-and-security
+kind: evidence
+topic: Jailbreak
+topic_type: Risk
+maturity: emerging
+true_statement: Anthropic reported in 2024 that many-shot jailbreaking grows more effective with more examples, and larger models were often more susceptible.
+false_statement: Anthropic reported in 2024 that many-shot jailbreaking grows more effective with more examples, but larger models were often more resistant.
+explanation: Effectiveness followed a power law like ordinary in-context learning, so bigger, better in-context learners were often easier to sway. Longer context windows widened the attack surface; classifying and modifying prompts cut one attack's success sharply.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/jailbreak.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: afcd65e305177a330f3a2364a4effd483454c6db
+concepts:
+- kt:jailbreak
+- kt:in-context-learning
+difficulty: 3
+created: '2026-11-16'
+status: active

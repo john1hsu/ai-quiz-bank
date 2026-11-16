@@ -1,0 +1,19 @@
+id: ai-000028
+area: ml-foundations
+kind: mechanism
+topic: Bias-variance tradeoff
+topic_type: Concept
+maturity: foundational
+true_statement: For squared loss, expected test error splits into variance plus squared bias plus noise, and no learner can remove the noise term.
+false_statement: For squared loss, expected test error splits into variance plus squared bias plus noise, and a flexible enough learner can remove the noise term.
+explanation: Noise comes from ambiguity in the data and features themselves, so it sets a floor on error. Model choices only trade bias against variance; often a small rise in bias buys a large drop in variance.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/bias-variance-tradeoff.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: dfabbb68b9c27d1c7a0a91edaa2425cffc0fde76
+concepts:
+- kt:bias-variance-tradeoff
+difficulty: 2
+created: '2026-11-16'
+status: active

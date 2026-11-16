@@ -1,0 +1,19 @@
+id: ai-000033
+area: prompting-and-reasoning
+kind: evidence
+topic: Chain-of-thought prompting
+topic_type: Technique
+maturity: established
+true_statement: Wei et al. found chain-of-thought helped only models of about 100 billion parameters or more; smaller models did worse than with standard prompting.
+false_statement: Wei et al. found chain-of-thought helped smaller models the most, while models of about 100 billion parameters or more gained little from it.
+explanation: Below that scale, models wrote fluent but illogical chains that hurt accuracy. The authors also warned that a chain carries no guarantee of correct reasoning, and later work showed chains can rationalise answers rather than explain them.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/chain-of-thought.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: fae6181c4b404326f96b54b12f2951e52c20f7a9
+concepts:
+- kt:chain-of-thought
+difficulty: 3
+created: '2026-11-16'
+status: active

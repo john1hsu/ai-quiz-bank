@@ -1,0 +1,20 @@
+id: ai-000020
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Evaluation of AI systems
+topic_type: Field
+maturity: established
+true_statement: Zheng et al. documented position, verbosity and self-enhancement biases when a strong LLM is used to grade other models' outputs.
+false_statement: Zheng et al. documented recency, brevity and self-criticism biases when a strong LLM is used to grade other models' outputs.
+explanation: Model judges can favour the answer shown first, longer answers, and outputs resembling their own. That is why LLM-as-a-judge scores should be checked against human labels even though agreement with humans was high.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/ai-evaluation.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: bd9230144b6bad989192472234fe5935e3c6c158
+concepts:
+- kt:ai-evaluation
+- kt:llm-as-a-judge
+difficulty: 2
+created: '2026-11-16'
+status: active

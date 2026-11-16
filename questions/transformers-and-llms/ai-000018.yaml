@@ -1,0 +1,19 @@
+id: ai-000018
+area: transformers-and-llms
+kind: mechanism
+topic: Large language model
+topic_type: Concept
+maturity: established
+true_statement: Perplexity, the exponential of the mean cross-entropy, is only comparable between language models that share the same tokenizer.
+false_statement: Perplexity, the exponential of the mean cross-entropy, is comparable between any two language models whatever tokenizers they use.
+explanation: Perplexity is computed per token, so models that split text into different tokens are scored on different units. A model with longer tokens faces a harder per-token prediction, which makes cross-tokenizer comparisons misleading.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/large-language-model.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: eba751335eb482ecf74022bfa3880480588fb549
+concepts:
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-16'
+status: active

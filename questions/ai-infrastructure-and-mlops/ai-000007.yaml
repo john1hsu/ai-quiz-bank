@@ -1,0 +1,20 @@
+id: ai-000007
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: MLOps
+topic_type: Paradigm
+maturity: established
+true_statement: A 2015 NeurIPS paper by D. Sculley and colleagues at Google argued that ML systems are fast to build but costly to maintain.
+false_statement: A 2015 NeurIPS paper by D. Sculley and colleagues at Google argued that ML systems are costly to build but cheap to maintain.
+explanation: Hidden Technical Debt in Machine Learning Systems showed the model code is a small box inside much larger data, serving and monitoring infrastructure, and that ML adds its own debt, such as entanglement and feedback loops. It is usually cited as MLOps' founding motivation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/mlops.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: e4fdd570649d6dd6deab18f2a2daa0fb75c910db
+concepts:
+- kt:mlops
+- kt:hidden-technical-debt-in-machine-learning-systems
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,720 @@
+{
+ "version": 1,
+ "count": 45,
+ "active": 45,
+ "questions": [
+  {
+   "id": "ai-000001",
+   "area": "agents-and-tool-use",
+   "kind": "definition",
+   "topic": "Agentic workflow",
+   "t": "In an agentic workflow the developer's code controls the overall flow of steps, while in an AI agent the model decides the process itself.",
+   "f": "In an agentic workflow the model decides the overall flow of steps, while in an AI agent the developer's code controls the process itself.",
+   "x": "Anthropic's guidance, followed by LangGraph, splits agentic systems by who controls the flow. Workflows run along predetermined code paths with the model filling in each step; agents choose their own process in feedback loops.",
+   "concepts": [
+    "kt:agentic-workflow",
+    "kt:ai-agent",
+    "kt:agentic-systems"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agentic-workflow.html"
+  },
+  {
+   "id": "ai-000002",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "Agentic workflow",
+   "t": "In the orchestrator–workers pattern a central model breaks the task into subtasks on the fly, unlike parallelisation, where the subtasks are known in advance.",
+   "f": "In the parallelisation pattern a central model breaks the task into subtasks on the fly, unlike orchestrator–workers, where the subtasks are known in advance.",
+   "x": "Parallelisation runs predefined calls at once (sectioning or voting) and aggregates them in code. Orchestrator–workers suits tasks like multi-file code edits, where you can't know the subtasks until a model looks at the job.",
+   "concepts": [
+    "kt:agentic-workflow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agentic-workflow.html"
+  },
+  {
+   "id": "ai-000003",
+   "area": "agents-and-tool-use",
+   "kind": "figure",
+   "topic": "Agentic workflow",
+   "t": "Self-Refine (2023), where one LLM critiques and revises its own output, reported an average gain of about 20 absolute points over one-shot generation.",
+   "f": "Self-Refine (2023), where one LLM critiques and revises its own output, reported an average gain of about 6 absolute points over one-shot generation.",
+   "x": "Madaan et al. reported roughly 20 points on average across seven tasks with GPT-3.5, ChatGPT and GPT-4, with no extra training. It is the peer-reviewed backing for the evaluator–optimizer loop; about 6% is closer to AFlow's reported gain.",
+   "concepts": [
+    "kt:agentic-workflow",
+    "kt:self-refine"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agentic-workflow.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000004",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "Chinese room argument",
+   "t": "John Searle introduced the Chinese room argument in his 1980 paper \"Minds, brains, and programs\".",
+   "f": "Daniel Dennett introduced the Chinese room argument in his 1980 paper \"Minds, brains, and programs\".",
+   "x": "Searle, a Berkeley philosopher, published it in The Behavioral and Brain Sciences with 27 commentaries. Dennett was one of its best-known critics, defending a version of the systems reply.",
+   "concepts": [
+    "kt:chinese-room-argument",
+    "kt:john-searle",
+    "kt:minds-brains-and-programs"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chinese-room-argument.html"
+  },
+  {
+   "id": "ai-000005",
+   "area": "ai-history",
+   "kind": "definition",
+   "topic": "Chinese room argument",
+   "t": "The Chinese room targets strong AI, the claim that a suitably programmed computer literally understands, not weak AI's use of computers as research tools.",
+   "f": "The Chinese room targets weak AI, the use of computers as research tools, not strong AI's claim that a suitably programmed computer literally understands.",
+   "x": "Searle had no quarrel with using computers to test hypotheses about the mind. His target was the stronger thesis that running the right program is itself having a mind, because syntax alone can't give meaning.",
+   "concepts": [
+    "kt:chinese-room-argument",
+    "kt:strong-ai"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chinese-room-argument.html"
+  },
+  {
+   "id": "ai-000006",
+   "area": "ai-history",
+   "kind": "evidence",
+   "topic": "Chinese room argument",
+   "t": "Searle answered the systems reply by having the man memorize the whole rulebook, arguing he would still understand no Chinese.",
+   "f": "Searle answered the robot reply by having the man memorize the whole rulebook, arguing he would still understand no Chinese.",
+   "x": "The systems reply says the whole room understands even if the man doesn't, so Searle put the whole system inside the man. To the robot reply he answered differently: camera input is just more symbols to shuffle.",
+   "concepts": [
+    "kt:chinese-room-argument"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chinese-room-argument.html"
+  },
+  {
+   "id": "ai-000007",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "origin",
+   "topic": "MLOps",
+   "t": "A 2015 NeurIPS paper by D. Sculley and colleagues at Google argued that ML systems are fast to build but costly to maintain.",
+   "f": "A 2015 NeurIPS paper by D. Sculley and colleagues at Google argued that ML systems are costly to build but cheap to maintain.",
+   "x": "Hidden Technical Debt in Machine Learning Systems showed the model code is a small box inside much larger data, serving and monitoring infrastructure, and that ML adds its own debt, such as entanglement and feedback loops. It is usually cited as MLOps' founding motivation.",
+   "concepts": [
+    "kt:mlops",
+    "kt:hidden-technical-debt-in-machine-learning-systems"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mlops.html"
+  },
+  {
+   "id": "ai-000008",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "MLOps",
+   "t": "In Google's MLOps maturity levels, Level 1 automates the training pipeline, and Level 2 also automates building and deploying new pipeline components.",
+   "f": "In Google's MLOps maturity levels, Level 1 automates building and deploying new pipeline components, and Level 2 also automates the training pipeline.",
+   "x": "Level 0 is manual notebooks and hand-offs. Level 1 retrains automatically on triggers like new data or drift; Level 2 adds CI/CD for the pipeline itself, backed by a registry, feature store, metadata store and orchestrator.",
+   "concepts": [
+    "kt:mlops"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mlops.html"
+  },
+  {
+   "id": "ai-000009",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "application",
+   "topic": "MLOps",
+   "t": "In an MLOps stack, a feature store helps prevent training-serving skew, while a model registry keeps track of versioned models.",
+   "f": "In an MLOps stack, a model registry helps prevent training-serving skew, while a feature store keeps track of versioned models.",
+   "x": "A feature store serves the same feature definitions to training and to production, so the model sees consistent inputs. A model registry stores and versions trained models so releases can be tracked and rolled back.",
+   "concepts": [
+    "kt:mlops",
+    "kt:feature-store",
+    "kt:model-registry"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mlops.html"
+  },
+  {
+   "id": "ai-000010",
+   "area": "computer-vision-and-multimodal",
+   "kind": "origin",
+   "topic": "Diffusion model",
+   "t": "Diffusion models were introduced by Sohl-Dickstein and colleagues at ICML 2015, borrowing ideas from nonequilibrium statistical physics.",
+   "f": "Diffusion models were introduced by Ho, Jain and Abbeel at ICML 2015, borrowing ideas from nonequilibrium statistical physics.",
+   "x": "Sohl-Dickstein, Weiss, Maheswaranathan and Ganguli proposed eroding data with a diffusion process and learning to reverse it. Ho, Jain and Abbeel's DDPM paper came in 2020 and is what made the approach popular.",
+   "concepts": [
+    "kt:diffusion-model",
+    "kt:deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/diffusion-model.html"
+  },
+  {
+   "id": "ai-000011",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Diffusion model",
+   "t": "DDPM trains its network to predict the noise that was added to an image, using a simple mean-squared-error loss.",
+   "f": "DDPM trains its network to predict the noise that was added to an image, using an adversarial loss from a discriminator.",
+   "x": "Pick a clean image, a random step and random noise, mix them, and regress the network's noise estimate onto the true noise. Ho et al. found this simple objective beat optimising the full variational bound; adversarial losses belong to GANs.",
+   "concepts": [
+    "kt:diffusion-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/diffusion-model.html"
+  },
+  {
+   "id": "ai-000012",
+   "area": "computer-vision-and-multimodal",
+   "kind": "evidence",
+   "topic": "Diffusion model",
+   "t": "The original DDPM needed one network evaluation per denoising step, 1,000 in all, making sampling far slower than a GAN's single forward pass.",
+   "f": "The original DDPM needed one network evaluation per denoising step, 10 in all, making sampling about as fast as a GAN's single forward pass.",
+   "x": "Sampling walks the chain back step by step, so the original 1,000-step setup took about 17 seconds for 256 CIFAR-10 images on a TPU. Later schedulers and latent diffusion cut this, with tuned schedules reaching around 10 steps.",
+   "concepts": [
+    "kt:diffusion-model",
+    "kt:generative-adversarial-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/diffusion-model.html"
+  },
+  {
+   "id": "ai-000013",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Artificial neural network",
+   "t": "McCulloch and Pitts's 1943 networks of idealised neurons could compute logical expressions, but their fixed connections could not learn.",
+   "f": "McCulloch and Pitts's 1958 networks of idealised neurons could compute logical expressions, but their fixed connections could not learn.",
+   "x": "Their 1943 paper treated all-or-none neurons as logic gates. Learning came later with Rosenblatt's 1958 perceptron, which stored information as changes in connection strength.",
+   "concepts": [
+    "kt:artificial-neural-network",
+    "kt:a-logical-calculus-of-the-ideas-immanent-in-nervous-activity"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/artificial-neural-network.html"
+  },
+  {
+   "id": "ai-000014",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Artificial neural network",
+   "t": "Without a nonlinear activation, two stacked linear layers collapse into a single linear map, so adding depth adds nothing.",
+   "f": "Without a nonlinear activation, two stacked linear layers still form a richer map than one, so adding depth adds expressive power.",
+   "x": "W2(W1x) is just (W2W1)x, one linear map. The nonlinearity between layers, such as ReLU or tanh, is what lets a deep network represent functions a single layer can't.",
+   "concepts": [
+    "kt:artificial-neural-network",
+    "kt:activation-function"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/artificial-neural-network.html"
+  },
+  {
+   "id": "ai-000015",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Artificial neural network",
+   "t": "Leshno et al. proved a one-hidden-layer network can approximate any continuous function if and only if its activation function is not a polynomial.",
+   "f": "Leshno et al. proved a one-hidden-layer network can approximate any continuous function if and only if its activation function is bounded and monotonic.",
+   "x": "Their condition is simply non-polynomial, which covers ReLU (unbounded) as well as sigmoids, and they showed the bias term is needed. Such theorems promise existence, not that training will find the weights or how large the network must be.",
+   "concepts": [
+    "kt:artificial-neural-network",
+    "kt:universal-approximation-theorem"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/artificial-neural-network.html"
+  },
+  {
+   "id": "ai-000016",
+   "area": "transformers-and-llms",
+   "kind": "figure",
+   "topic": "Large language model",
+   "t": "GPT-3, which OpenAI reported in 2020, had 175 billion parameters, roughly ten times more than any earlier non-sparse language model.",
+   "f": "GPT-3, which OpenAI reported in 2020, had 175 billion parameters, roughly a hundred times more than any earlier non-sparse language model.",
+   "x": "OpenAI described the 175B model as about 10x larger than previous dense language models. GPT-3 is the model that put the term 'large language model' and few-shot prompting into wide use.",
+   "concepts": [
+    "kt:large-language-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/large-language-model.html",
+   "asOf": "2020"
+  },
+  {
+   "id": "ai-000017",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "Large language model",
+   "t": "Kaplan et al. (2020) found language-model loss falls as a smooth power law in model size, data and compute, while width versus depth matters little.",
+   "f": "Kaplan et al. (2020) found language-model loss falls as a smooth power law in model size, data and compute, while width versus depth matters most.",
+   "x": "The trend held across more than seven orders of magnitude, and architectural details like the width-to-depth ratio mattered little within a broad range. Scale itself was the main lever, which shaped how labs spent compute.",
+   "concepts": [
+    "kt:large-language-model",
+    "kt:scaling-laws"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/large-language-model.html"
+  },
+  {
+   "id": "ai-000018",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Large language model",
+   "t": "Perplexity, the exponential of the mean cross-entropy, is only comparable between language models that share the same tokenizer.",
+   "f": "Perplexity, the exponential of the mean cross-entropy, is comparable between any two language models whatever tokenizers they use.",
+   "x": "Perplexity is computed per token, so models that split text into different tokens are scored on different units. A model with longer tokens faces a harder per-token prediction, which makes cross-tokenizer comparisons misleading.",
+   "concepts": [
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/large-language-model.html"
+  },
+  {
+   "id": "ai-000019",
+   "area": "evaluation-and-benchmarks",
+   "kind": "figure",
+   "topic": "Evaluation of AI systems",
+   "t": "HELM (2023) found language models had on average been evaluated on only 17.9% of its core scenarios before it standardised testing.",
+   "f": "HELM (2023) found language models had on average been evaluated on 96.0% of its core scenarios before it standardised testing.",
+   "x": "Before HELM, labs reported different benchmarks under different prompts, so results rarely lined up. Running every model under the same conditions raised coverage to 96.0%, which is the after figure, not the before.",
+   "concepts": [
+    "kt:ai-evaluation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-evaluation.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000020",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "Evaluation of AI systems",
+   "t": "Zheng et al. documented position, verbosity and self-enhancement biases when a strong LLM is used to grade other models' outputs.",
+   "f": "Zheng et al. documented recency, brevity and self-criticism biases when a strong LLM is used to grade other models' outputs.",
+   "x": "Model judges can favour the answer shown first, longer answers, and outputs resembling their own. That is why LLM-as-a-judge scores should be checked against human labels even though agreement with humans was high.",
+   "concepts": [
+    "kt:ai-evaluation",
+    "kt:llm-as-a-judge"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-evaluation.html"
+  },
+  {
+   "id": "ai-000021",
+   "area": "evaluation-and-benchmarks",
+   "kind": "definition",
+   "topic": "Evaluation of AI systems",
+   "t": "In AI evaluation, Goodhart's law describes a metric that stops tracking the property it stood for once it becomes an optimisation target.",
+   "f": "In AI evaluation, benchmark contamination describes a metric that stops tracking the property it stood for once it becomes an optimisation target.",
+   "x": "Both inflate scores, but differently. Goodhart's law is about optimising toward the metric itself; contamination is when test items leak into training data, so the model has effectively seen the answers.",
+   "concepts": [
+    "kt:ai-evaluation",
+    "kt:benchmark-contamination"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-evaluation.html"
+  },
+  {
+   "id": "ai-000022",
+   "area": "governance-and-policy",
+   "kind": "mechanism",
+   "topic": "NIST AI Risk Management Framework",
+   "t": "The NIST AI RMF Core has four functions, Govern, Map, Measure and Manage, and Govern cuts across the other three.",
+   "f": "The NIST AI RMF Core has four functions, Govern, Map, Measure and Manage, and Manage cuts across the other three.",
+   "x": "Govern sets the culture, policies and accountability that inform everything else. Map sets context, Measure assesses risks, and Manage prioritises and responds to them; a typical user sets up Govern, starts with Map, then iterates Measure and Manage.",
+   "concepts": [
+    "kt:nist-ai-risk-management-framework"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/nist-ai-risk-management-framework.html"
+  },
+  {
+   "id": "ai-000023",
+   "area": "governance-and-policy",
+   "kind": "origin",
+   "topic": "NIST AI Risk Management Framework",
+   "t": "NIST released AI RMF 1.0 on 26 January 2023, at the direction of the National Artificial Intelligence Initiative Act of 2020.",
+   "f": "NIST released AI RMF 1.0 on 26 July 2024, at the direction of the National Artificial Intelligence Initiative Act of 2020.",
+   "x": "Congress asked for a voluntary framework, and NIST built it through drafts and public workshops from 2021 to 2022. 26 July 2024 is when the separate Generative AI Profile (NIST AI 600-1) came out.",
+   "concepts": [
+    "kt:nist-ai-risk-management-framework",
+    "kt:nist"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/nist-ai-risk-management-framework.html"
+  },
+  {
+   "id": "ai-000024",
+   "area": "governance-and-policy",
+   "kind": "application",
+   "topic": "NIST AI Risk Management Framework",
+   "t": "NIST's Generative AI Profile (NIST AI 600-1) tailors the AI RMF to generative AI and, like the parent framework, is voluntary.",
+   "f": "NIST's Generative AI Profile (NIST AI 600-1) tailors the AI RMF to generative AI and, unlike the parent framework, is legally binding.",
+   "x": "Organisations use the AI RMF mainly through profiles that adapt the Core to a sector or technology. Neither the framework nor its profiles create legal obligations on their own; binding rules come from laws like the EU AI Act.",
+   "concepts": [
+    "kt:nist-ai-risk-management-framework",
+    "kt:nist-generative-ai-profile"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/nist-ai-risk-management-framework.html"
+  },
+  {
+   "id": "ai-000025",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "Quantization",
+   "t": "In affine quantization a real value r is stored as an integer q with r = S(q − Z), and the zero-point Z lets real zero be represented exactly.",
+   "f": "In affine quantization a real value r is stored as an integer q with r = S(q − Z), and the scale S lets real zero be represented exactly.",
+   "x": "S stretches the integer grid to the real range, while Z is the integer that stands for 0.0. Representing zero exactly matters for operations like zero-padding, where rounding error would otherwise creep in.",
+   "concepts": [
+    "kt:quantization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/quantization.html"
+  },
+  {
+   "id": "ai-000026",
+   "area": "inference-and-optimization",
+   "kind": "application",
+   "topic": "Quantization",
+   "t": "Post-training quantization dominates for LLMs, because quantization-aware training would mean retraining billion-parameter models.",
+   "f": "Quantization-aware training dominates for LLMs, because post-training quantization would mean retraining billion-parameter models.",
+   "x": "PTQ converts a finished model using a small calibration set, so it is cheap. QAT simulates rounding during training so weights learn to survive it, which works well but is costly at LLM scale.",
+   "concepts": [
+    "kt:quantization",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/quantization.html"
+  },
+  {
+   "id": "ai-000027",
+   "area": "inference-and-optimization",
+   "kind": "evidence",
+   "topic": "Quantization",
+   "t": "Dettmers et al. found naive 8-bit quantization breaks down in large transformers because a few hidden dimensions carry outlier features of very large magnitude.",
+   "f": "Dettmers et al. found naive 8-bit quantization breaks down in large transformers because most hidden dimensions carry near-zero values that rounding erases.",
+   "x": "A handful of huge-magnitude dimensions stretch the quantization range and dominate attention. LLM.int8() handles them by routing those dimensions through 16-bit math while keeping over 99.9% of values in 8-bit.",
+   "concepts": [
+    "kt:quantization",
+    "kt:large-language-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/quantization.html"
+  },
+  {
+   "id": "ai-000028",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Bias-variance tradeoff",
+   "t": "For squared loss, expected test error splits into variance plus squared bias plus noise, and no learner can remove the noise term.",
+   "f": "For squared loss, expected test error splits into variance plus squared bias plus noise, and a flexible enough learner can remove the noise term.",
+   "x": "Noise comes from ambiguity in the data and features themselves, so it sets a floor on error. Model choices only trade bias against variance; often a small rise in bias buys a large drop in variance.",
+   "concepts": [
+    "kt:bias-variance-tradeoff"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/bias-variance-tradeoff.html"
+  },
+  {
+   "id": "ai-000029",
+   "area": "ml-foundations",
+   "kind": "application",
+   "topic": "Bias-variance tradeoff",
+   "t": "When training error is low but test error is high, the usual remedies are more data, a simpler model or bagging.",
+   "f": "When training error is low but test error is high, the usual remedies are a more expressive model, more features or boosting.",
+   "x": "That pattern signals high variance (overfitting), so you reduce flexibility or average it out with bagging. A more expressive model, more features or boosting are the fixes for high bias, when even training error is too high.",
+   "concepts": [
+    "kt:bias-variance-tradeoff",
+    "kt:ensemble-methods"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/bias-variance-tradeoff.html"
+  },
+  {
+   "id": "ai-000030",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Bias-variance tradeoff",
+   "t": "Belkin and colleagues' double descent curve shows test error falling a second time as capacity grows past the point of fitting the training data exactly.",
+   "f": "Belkin and colleagues' double descent curve shows test error rising a second time as capacity grows past the point of fitting the training data exactly.",
+   "x": "The classical U-curve predicts that interpolating the data means overfitting, yet over-parameterised networks generalise well. Double descent adds a second fall beyond the interpolation point, which helps explain why scaling past a perfect fit pays off.",
+   "concepts": [
+    "kt:bias-variance-tradeoff",
+    "kt:double-descent"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/bias-variance-tradeoff.html"
+  },
+  {
+   "id": "ai-000031",
+   "area": "prompting-and-reasoning",
+   "kind": "origin",
+   "topic": "Chain-of-thought prompting",
+   "t": "Chain-of-thought prompting was introduced by Jason Wei and colleagues at Google in a paper presented at NeurIPS 2022.",
+   "f": "Chain-of-thought prompting was introduced by Takeshi Kojima and colleagues at Google in a paper presented at NeurIPS 2022.",
+   "x": "Wei et al. showed that few-shot exemplars with worked reasoning improved arithmetic, commonsense and symbolic tasks. Kojima and colleagues came next, showing the zero-shot version: just add 'Let's think step by step'.",
+   "concepts": [
+    "kt:chain-of-thought",
+    "kt:chain-of-thought-prompting-elicits-reasoning-in-large-language-models"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chain-of-thought.html"
+  },
+  {
+   "id": "ai-000032",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Chain-of-thought prompting",
+   "t": "Self-consistency samples several diverse reasoning chains and takes the most frequent final answer, instead of decoding one chain greedily.",
+   "f": "Self-consistency decodes one reasoning chain greedily, then has the model recheck each step and revise any it judges wrong.",
+   "x": "Different chains can reach the right answer by different routes, and wrong chains tend to disagree, so a majority vote filters errors. Wang et al. reported gains over plain chain-of-thought such as 17.9% on GSM8K.",
+   "concepts": [
+    "kt:chain-of-thought",
+    "kt:self-consistency"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chain-of-thought.html"
+  },
+  {
+   "id": "ai-000033",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Chain-of-thought prompting",
+   "t": "Wei et al. found chain-of-thought helped only models of about 100 billion parameters or more; smaller models did worse than with standard prompting.",
+   "f": "Wei et al. found chain-of-thought helped smaller models the most, while models of about 100 billion parameters or more gained little from it.",
+   "x": "Below that scale, models wrote fluent but illogical chains that hurt accuracy. The authors also warned that a chain carries no guarantee of correct reasoning, and later work showed chains can rationalise answers rather than explain them.",
+   "concepts": [
+    "kt:chain-of-thought"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chain-of-thought.html"
+  },
+  {
+   "id": "ai-000034",
+   "area": "reinforcement-learning",
+   "kind": "origin",
+   "topic": "Policy gradient methods",
+   "t": "Ronald Williams introduced REINFORCE in 1992, and Sutton and colleagues proved the general policy gradient theorem in 1999.",
+   "f": "Richard Sutton introduced REINFORCE in 1992, and Williams and colleagues proved the general policy gradient theorem in 1999.",
+   "x": "Williams's REINFORCE followed the gradient of expected reward for networks of stochastic units. Sutton, McAllester, Singh and Mansour later showed policy iteration with any differentiable approximator converges to a local optimum.",
+   "concepts": [
+    "kt:policy-gradient",
+    "kt:reinforce-algorithm",
+    "kt:policy-gradient-methods-for-reinforcement-learning-with-function-approximation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/policy-gradient.html"
+  },
+  {
+   "id": "ai-000035",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "Policy gradient methods",
+   "t": "Subtracting a state-dependent baseline from the return lowers the variance of a policy gradient estimate without biasing it.",
+   "f": "Subtracting a state-dependent baseline from the return lowers the variance of a policy gradient estimate but biases it toward the baseline.",
+   "x": "The expected gradient of the log-probability is zero, so a term that depends only on the state averages out. A learned value function V(s) is the usual baseline, which turns the weight into an advantage: how much better the action was than average.",
+   "concepts": [
+    "kt:policy-gradient"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/policy-gradient.html"
+  },
+  {
+   "id": "ai-000036",
+   "area": "reinforcement-learning",
+   "kind": "definition",
+   "topic": "Policy gradient methods",
+   "t": "Vanilla policy gradient is on-policy: its training data must come from the current policy it is improving.",
+   "f": "Vanilla policy gradient is off-policy: it can train on data collected by any earlier policy it has replaced.",
+   "x": "The gradient is an expectation over trajectories from the current policy, so old data no longer matches it. Exploration comes only from the policy's own randomness, which shrinks over training and can leave it stuck in local optima.",
+   "concepts": [
+    "kt:policy-gradient"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/policy-gradient.html"
+  },
+  {
+   "id": "ai-000037",
+   "area": "retrieval-and-knowledge",
+   "kind": "definition",
+   "topic": "Embeddings",
+   "t": "One-hot word codes can't show that \"cat\" is closer to \"dog\" than to \"carburettor\", because any two distinct one-hot vectors have cosine similarity zero.",
+   "f": "One-hot word codes can't show that \"cat\" is closer to \"dog\" than to \"carburettor\", because any two distinct one-hot vectors have cosine similarity one.",
+   "x": "Each one-hot vector has a single 1 in its own position, so distinct words are always orthogonal and equally unrelated. Learned dense embeddings fix this by placing words used in similar contexts near each other.",
+   "concepts": [
+    "kt:embeddings"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/embeddings.html"
+  },
+  {
+   "id": "ai-000038",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Embeddings",
+   "t": "Word2vec's skip-gram predicts the surrounding context words from a centre word, while CBOW predicts the centre word from its context.",
+   "f": "Word2vec's CBOW predicts the surrounding context words from a centre word, while skip-gram predicts the centre word from its context.",
+   "x": "Skip-gram goes from one word out to its window; continuous bag of words averages the context vectors and predicts the word in the middle. Both are self-supervised, since raw text supplies the targets.",
+   "concepts": [
+    "kt:embeddings",
+    "kt:word2vec"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/embeddings.html"
+  },
+  {
+   "id": "ai-000039",
+   "area": "retrieval-and-knowledge",
+   "kind": "figure",
+   "topic": "Embeddings",
+   "t": "Sentence-BERT (2019) cut a most-similar-pair search over 10,000 sentences from about 65 hours with BERT to about 5 seconds.",
+   "f": "Sentence-BERT (2019) cut a most-similar-pair search over 10,000 sentences from about 65 hours with BERT to about 5 minutes.",
+   "x": "BERT reads both sentences together, so every pair needs its own pass, about 50 million of them. Sentence-BERT encodes each sentence once into a vector compared by cosine similarity, the bi-encoder idea behind dense retrieval.",
+   "concepts": [
+    "kt:embeddings"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/embeddings.html",
+   "asOf": "2019"
+  },
+  {
+   "id": "ai-000040",
+   "area": "training-and-adaptation",
+   "kind": "origin",
+   "topic": "Reinforcement learning from human feedback",
+   "t": "The modern RLHF recipe comes from Christiano and colleagues in 2017, who had humans compare pairs of short video clips of an agent.",
+   "f": "The modern RLHF recipe comes from Stiennon and colleagues in 2017, who had humans compare pairs of short video clips of an agent.",
+   "x": "Christiano et al. (OpenAI and DeepMind) fitted a reward predictor to those choices and trained agents on it. Stiennon et al. brought the method to language in 2020 with summarisation, before InstructGPT applied it to instruction following.",
+   "concepts": [
+    "kt:rlhf",
+    "kt:deep-reinforcement-learning-from-human-preferences"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/rlhf.html"
+  },
+  {
+   "id": "ai-000041",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Reinforcement learning from human feedback",
+   "t": "In InstructGPT's RL stage, a KL penalty against the supervised model limits over-optimisation of the learned reward model.",
+   "f": "In InstructGPT's RL stage, a KL penalty against the supervised model reduces the alignment tax on public NLP benchmarks.",
+   "x": "The KL term keeps the policy near the SFT model so it can't drift into outputs that game the reward model. The alignment tax was tackled separately by PPO-ptx, which mixes in pretraining gradients.",
+   "concepts": [
+    "kt:rlhf",
+    "kt:proximal-policy-optimization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/rlhf.html"
+  },
+  {
+   "id": "ai-000042",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Reinforcement learning from human feedback",
+   "t": "Human raters preferred outputs of the 1.3-billion-parameter InstructGPT over those of the 175-billion-parameter GPT-3.",
+   "f": "Human raters preferred outputs of the 175-billion-parameter GPT-3 over those of the 1.3-billion-parameter InstructGPT.",
+   "x": "Fine-tuning on demonstrations and then on human preferences mattered more than raw size for following instructions. The aligned model still made simple mistakes, and the comparison was on the authors' own prompt distribution.",
+   "concepts": [
+    "kt:rlhf",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/rlhf.html"
+  },
+  {
+   "id": "ai-000043",
+   "area": "safety-alignment-and-security",
+   "kind": "definition",
+   "topic": "Jailbreak",
+   "t": "NIST classifies a jailbreak as a direct prompting attack, because the attacker is the person typing to the model.",
+   "f": "NIST classifies a jailbreak as an indirect prompt injection, because the attacker plants instructions in content the model reads.",
+   "x": "In a jailbreak the user's own input tries to get around the developer's restrictions, usually the trained refusal. Indirect prompt injection is a different threat, where a third party hides instructions in documents or web pages.",
+   "concepts": [
+    "kt:jailbreak",
+    "kt:prompt-injection",
+    "kt:adversarial-machine-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/jailbreak.html"
+  },
+  {
+   "id": "ai-000044",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Jailbreak",
+   "t": "Wei et al. called it mismatched generalization when pretraining gives a model a capability, like unusual encodings, that safety training never covered.",
+   "f": "Wei et al. called it competing objectives when pretraining gives a model a capability, like unusual encodings, that safety training never covered.",
+   "x": "Mismatched generalization means refusals don't transfer to input domains safety training never saw. Competing objectives is the other root cause: helpfulness or instruction-following goals pulling against safety goals.",
+   "concepts": [
+    "kt:jailbreak"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/jailbreak.html"
+  },
+  {
+   "id": "ai-000045",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "Jailbreak",
+   "t": "Anthropic reported in 2024 that many-shot jailbreaking grows more effective with more examples, and larger models were often more susceptible.",
+   "f": "Anthropic reported in 2024 that many-shot jailbreaking grows more effective with more examples, but larger models were often more resistant.",
+   "x": "Effectiveness followed a power law like ordinary in-context learning, so bigger, better in-context learners were often easier to sway. Longer context windows widened the attack surface; classifying and modifying prompts cut one attack's success sharply.",
+   "concepts": [
+    "kt:jailbreak",
+    "kt:in-context-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/jailbreak.html"
+  }
+ ]
+}

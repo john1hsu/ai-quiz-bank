@@ -1,0 +1,19 @@
+id: ai-000002
+area: agents-and-tool-use
+kind: mechanism
+topic: Agentic workflow
+topic_type: Technique
+maturity: emerging
+true_statement: In the orchestrator–workers pattern a central model breaks the task into subtasks on the fly, unlike parallelisation, where the subtasks are known in advance.
+false_statement: In the parallelisation pattern a central model breaks the task into subtasks on the fly, unlike orchestrator–workers, where the subtasks are known in advance.
+explanation: Parallelisation runs predefined calls at once (sectioning or voting) and aggregates them in code. Orchestrator–workers suits tasks like multi-file code edits, where you can't know the subtasks until a model looks at the job.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agentic-workflow.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 4c9bca8e8172944ad7b4ecad503766b6fd5c5953
+concepts:
+- kt:agentic-workflow
+difficulty: 2
+created: '2026-11-16'
+status: active

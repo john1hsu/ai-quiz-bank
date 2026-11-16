@@ -1,0 +1,19 @@
+id: ai-000044
+area: safety-alignment-and-security
+kind: mechanism
+topic: Jailbreak
+topic_type: Risk
+maturity: emerging
+true_statement: Wei et al. called it mismatched generalization when pretraining gives a model a capability, like unusual encodings, that safety training never covered.
+false_statement: Wei et al. called it competing objectives when pretraining gives a model a capability, like unusual encodings, that safety training never covered.
+explanation: 'Mismatched generalization means refusals don''t transfer to input domains safety training never saw. Competing objectives is the other root cause: helpfulness or instruction-following goals pulling against safety goals.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/jailbreak.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: afcd65e305177a330f3a2364a4effd483454c6db
+concepts:
+- kt:jailbreak
+difficulty: 3
+created: '2026-11-16'
+status: active

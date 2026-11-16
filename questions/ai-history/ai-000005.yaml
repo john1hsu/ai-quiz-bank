@@ -1,0 +1,20 @@
+id: ai-000005
+area: ai-history
+kind: definition
+topic: Chinese room argument
+topic_type: Concept
+maturity: foundational
+true_statement: The Chinese room targets strong AI, the claim that a suitably programmed computer literally understands, not weak AI's use of computers as research tools.
+false_statement: The Chinese room targets weak AI, the use of computers as research tools, not strong AI's claim that a suitably programmed computer literally understands.
+explanation: Searle had no quarrel with using computers to test hypotheses about the mind. His target was the stronger thesis that running the right program is itself having a mind, because syntax alone can't give meaning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/chinese-room-argument.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6855648232d5e4981a6e3771b638a10c9b9381fc
+concepts:
+- kt:chinese-room-argument
+- kt:strong-ai
+difficulty: 2
+created: '2026-11-16'
+status: active

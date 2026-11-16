@@ -1,0 +1,21 @@
+id: ai-000043
+area: safety-alignment-and-security
+kind: definition
+topic: Jailbreak
+topic_type: Risk
+maturity: emerging
+true_statement: NIST classifies a jailbreak as a direct prompting attack, because the attacker is the person typing to the model.
+false_statement: NIST classifies a jailbreak as an indirect prompt injection, because the attacker plants instructions in content the model reads.
+explanation: In a jailbreak the user's own input tries to get around the developer's restrictions, usually the trained refusal. Indirect prompt injection is a different threat, where a third party hides instructions in documents or web pages.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/jailbreak.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: afcd65e305177a330f3a2364a4effd483454c6db
+concepts:
+- kt:jailbreak
+- kt:prompt-injection
+- kt:adversarial-machine-learning
+difficulty: 2
+created: '2026-11-16'
+status: active

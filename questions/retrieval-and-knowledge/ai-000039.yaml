@@ -1,0 +1,20 @@
+id: ai-000039
+area: retrieval-and-knowledge
+kind: figure
+topic: Embeddings
+topic_type: Concept
+maturity: established
+true_statement: Sentence-BERT (2019) cut a most-similar-pair search over 10,000 sentences from about 65 hours with BERT to about 5 seconds.
+false_statement: Sentence-BERT (2019) cut a most-similar-pair search over 10,000 sentences from about 65 hours with BERT to about 5 minutes.
+explanation: BERT reads both sentences together, so every pair needs its own pass, about 50 million of them. Sentence-BERT encodes each sentence once into a vector compared by cosine similarity, the bi-encoder idea behind dense retrieval.
+as_of: '2019'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/embeddings.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6607e1e462a98e41f295f03eb5bb704e8cb9fdfe
+concepts:
+- kt:embeddings
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000026
+area: inference-and-optimization
+kind: application
+topic: Quantization
+topic_type: Technique
+maturity: established
+true_statement: Post-training quantization dominates for LLMs, because quantization-aware training would mean retraining billion-parameter models.
+false_statement: Quantization-aware training dominates for LLMs, because post-training quantization would mean retraining billion-parameter models.
+explanation: PTQ converts a finished model using a small calibration set, so it is cheap. QAT simulates rounding during training so weights learn to survive it, which works well but is costly at LLM scale.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/quantization.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 186c08e58635c2733ebc0dc818b2a4f448abe843
+concepts:
+- kt:quantization
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-16'
+status: active

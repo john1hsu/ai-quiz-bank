@@ -1,0 +1,19 @@
+id: ai-000006
+area: ai-history
+kind: evidence
+topic: Chinese room argument
+topic_type: Concept
+maturity: foundational
+true_statement: Searle answered the systems reply by having the man memorize the whole rulebook, arguing he would still understand no Chinese.
+false_statement: Searle answered the robot reply by having the man memorize the whole rulebook, arguing he would still understand no Chinese.
+explanation: 'The systems reply says the whole room understands even if the man doesn''t, so Searle put the whole system inside the man. To the robot reply he answered differently: camera input is just more symbols to shuffle.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/chinese-room-argument.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6855648232d5e4981a6e3771b638a10c9b9381fc
+concepts:
+- kt:chinese-room-argument
+difficulty: 3
+created: '2026-11-16'
+status: active

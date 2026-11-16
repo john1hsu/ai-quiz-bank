@@ -1,0 +1,19 @@
+id: ai-000037
+area: retrieval-and-knowledge
+kind: definition
+topic: Embeddings
+topic_type: Concept
+maturity: established
+true_statement: One-hot word codes can't show that "cat" is closer to "dog" than to "carburettor", because any two distinct one-hot vectors have cosine similarity zero.
+false_statement: One-hot word codes can't show that "cat" is closer to "dog" than to "carburettor", because any two distinct one-hot vectors have cosine similarity one.
+explanation: Each one-hot vector has a single 1 in its own position, so distinct words are always orthogonal and equally unrelated. Learned dense embeddings fix this by placing words used in similar contexts near each other.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/embeddings.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 6607e1e462a98e41f295f03eb5bb704e8cb9fdfe
+concepts:
+- kt:embeddings
+difficulty: 1
+created: '2026-11-16'
+status: active

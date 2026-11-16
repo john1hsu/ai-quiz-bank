@@ -1,0 +1,19 @@
+id: ai-000011
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Diffusion model
+topic_type: Architecture
+maturity: established
+true_statement: DDPM trains its network to predict the noise that was added to an image, using a simple mean-squared-error loss.
+false_statement: DDPM trains its network to predict the noise that was added to an image, using an adversarial loss from a discriminator.
+explanation: Pick a clean image, a random step and random noise, mix them, and regress the network's noise estimate onto the true noise. Ho et al. found this simple objective beat optimising the full variational bound; adversarial losses belong to GANs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/diffusion-model.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 178c1068724c32ae64e11f692721da73f5cfdf24
+concepts:
+- kt:diffusion-model
+difficulty: 2
+created: '2026-11-16'
+status: active

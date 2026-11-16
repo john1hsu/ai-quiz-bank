@@ -1,0 +1,19 @@
+id: ai-000025
+area: inference-and-optimization
+kind: mechanism
+topic: Quantization
+topic_type: Technique
+maturity: established
+true_statement: In affine quantization a real value r is stored as an integer q with r = S(q − Z), and the zero-point Z lets real zero be represented exactly.
+false_statement: In affine quantization a real value r is stored as an integer q with r = S(q − Z), and the scale S lets real zero be represented exactly.
+explanation: S stretches the integer grid to the real range, while Z is the integer that stands for 0.0. Representing zero exactly matters for operations like zero-padding, where rounding error would otherwise creep in.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/quantization.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 186c08e58635c2733ebc0dc818b2a4f448abe843
+concepts:
+- kt:quantization
+difficulty: 2
+created: '2026-11-16'
+status: active

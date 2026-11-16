@@ -1,0 +1,20 @@
+id: ai-000016
+area: transformers-and-llms
+kind: figure
+topic: Large language model
+topic_type: Concept
+maturity: established
+true_statement: GPT-3, which OpenAI reported in 2020, had 175 billion parameters, roughly ten times more than any earlier non-sparse language model.
+false_statement: GPT-3, which OpenAI reported in 2020, had 175 billion parameters, roughly a hundred times more than any earlier non-sparse language model.
+explanation: OpenAI described the 175B model as about 10x larger than previous dense language models. GPT-3 is the model that put the term 'large language model' and few-shot prompting into wide use.
+as_of: '2020'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/large-language-model.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: eba751335eb482ecf74022bfa3880480588fb549
+concepts:
+- kt:large-language-model
+difficulty: 1
+created: '2026-11-16'
+status: active

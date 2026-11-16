@@ -1,0 +1,20 @@
+id: ai-000024
+area: governance-and-policy
+kind: application
+topic: NIST AI Risk Management Framework
+topic_type: Policy
+maturity: established
+true_statement: NIST's Generative AI Profile (NIST AI 600-1) tailors the AI RMF to generative AI and, like the parent framework, is voluntary.
+false_statement: NIST's Generative AI Profile (NIST AI 600-1) tailors the AI RMF to generative AI and, unlike the parent framework, is legally binding.
+explanation: Organisations use the AI RMF mainly through profiles that adapt the Core to a sector or technology. Neither the framework nor its profiles create legal obligations on their own; binding rules come from laws like the EU AI Act.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/nist-ai-risk-management-framework.md
+  commit: f9935dfcf1d9a7dab4c0fdf36aef0ce0b7d95a26
+  blob: 73bbeb5eaeca1d5d4979c09eb0deece5319c910a
+concepts:
+- kt:nist-ai-risk-management-framework
+- kt:nist-generative-ai-profile
+difficulty: 2
+created: '2026-11-16'
+status: active
