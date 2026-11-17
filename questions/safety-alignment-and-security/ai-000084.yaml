@@ -1,0 +1,21 @@
+id: ai-000084
+area: safety-alignment-and-security
+kind: figure
+topic: Mechanistic interpretability
+topic_type: Field
+maturity: emerging
+true_statement: Anthropic's 2025 attribution graphs, which trace feature interactions on a prompt, gave satisfying explanations for only about a quarter of the prompts tried.
+false_statement: Anthropic's 2025 attribution graphs, which trace feature interactions on a prompt, gave satisfying explanations for about three quarters of the prompts tried.
+explanation: The method studies a replacement model built from a cross-layer transcoder and misses mechanisms in attention, so much of the computation stays unexplained. It is a reminder that striking case studies are not yet full coverage.
+as_of: '2025'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/mechanistic-interpretability.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1a0f43db633e0f0cdd586a9430ae817c8c9732e1
+concepts:
+- kt:mechanistic-interpretability
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-17'
+status: active

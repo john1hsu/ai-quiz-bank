@@ -1,0 +1,20 @@
+id: ai-000123
+area: ml-foundations
+kind: application
+topic: Double descent
+topic_type: Concept
+maturity: established
+true_statement: Nakkiran et al. (2021) proved that optimally tuned ℓ2 regularization makes test risk monotone in sample and model size for certain linear regression settings.
+false_statement: Nakkiran et al. (2021) proved that optimally tuned ℓ2 regularization sharpens the double-descent peak in sample and model size for certain linear regression settings.
+explanation: The spike belongs to unregularised interpolating learners. Tuned regularization, like optimal early stopping, damps it in neural networks too, so in practice the peak is mostly a warning about running near the threshold without them.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/double-descent.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 98973fd46c4220b698d49d9692736cec04792fe4
+concepts:
+- kt:double-descent
+- kt:regularization
+difficulty: 2
+created: '2026-11-17'
+status: active

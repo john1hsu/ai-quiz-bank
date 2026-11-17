@@ -1,0 +1,21 @@
+id: ai-000048
+area: agents-and-tool-use
+kind: application
+topic: AI agent
+topic_type: Concept
+maturity: emerging
+true_statement: In Anthropic's SWE-bench agent work, requiring absolute file paths in a tool removed a class of errors that relative paths had caused.
+false_statement: In Anthropic's SWE-bench agent work, requiring relative file paths in a tool removed a class of errors that absolute paths had caused.
+explanation: Once an agent moves between directories, relative paths become ambiguous and easy to get wrong. The example backs Anthropic's point that the agent–computer interface deserves as much engineering care as the prompt.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/ai-agent.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 599aef77b3ad8bd274bc382d550e13897de6e3f7
+concepts:
+- kt:ai-agent
+- kt:swe-bench
+- kt:tool-use
+difficulty: 2
+created: '2026-11-17'
+status: active

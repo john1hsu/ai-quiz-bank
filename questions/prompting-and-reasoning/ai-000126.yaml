@@ -1,0 +1,21 @@
+id: ai-000126
+area: prompting-and-reasoning
+kind: figure
+topic: Prompt sensitivity
+topic_type: Concept
+maturity: established
+true_statement: Sclar et al. (ICLR 2024) measured accuracy gaps of up to 76 points for LLaMA-2-13B from changing only prompt formatting such as separators, spacing and casing.
+false_statement: Sclar et al. (ICLR 2024) measured accuracy gaps of up to 7.6 points for LLaMA-2-13B from changing only prompt formatting such as separators, spacing and casing.
+explanation: Formatting that means nothing to a human could move a model from near failure to strong performance, and the effect persisted with bigger models and instruction tuning. Their FormatSpread method reports a range over formats instead of a single score.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/prompt-sensitivity.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1fb501fc75341c7d549ce645d332f77a07bdbb48
+concepts:
+- kt:prompt-sensitivity
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-17'
+status: active

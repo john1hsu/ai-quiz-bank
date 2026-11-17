@@ -1,0 +1,21 @@
+id: ai-000135
+area: transformers-and-llms
+kind: application
+topic: Scaling laws
+topic_type: Concept
+maturity: established
+true_statement: Sardana et al. (2024) found that once inference demand is counted, heavily used models should be smaller and trained on more tokens than Chinchilla-optimal.
+false_statement: Sardana et al. (2024) found that once inference demand is counted, heavily used models should be larger and trained on fewer tokens than Chinchilla-optimal.
+explanation: Chinchilla minimises training compute only, but a model served a billion times pays for its size on every request. Extra training is a one-off cost that buys a cheaper model to run, and quality kept rising up to 10,000 tokens per parameter.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/scaling-laws.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a311a8ffb5b23fd235a6dd5804ff4c726c329815
+concepts:
+- kt:scaling-laws
+- kt:test-time-compute
+- kt:pretraining
+difficulty: 3
+created: '2026-11-17'
+status: active

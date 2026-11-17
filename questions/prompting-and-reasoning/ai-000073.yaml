@@ -1,0 +1,22 @@
+id: ai-000073
+area: prompting-and-reasoning
+kind: figure
+topic: Self-consistency
+topic_type: Technique
+maturity: established
+true_statement: In the 2023 self-consistency paper, voting over sampled reasoning paths raised chain-of-thought accuracy on GSM8K by 17.9 points.
+false_statement: In the 2023 self-consistency paper, voting over sampled reasoning paths raised chain-of-thought accuracy on GSM8K by 3.9 points.
+explanation: Multi-step arithmetic word problems gained the most because different valid chains converge on one number while errors scatter. The 3.9-point gain was on ARC-challenge, where there was less room to improve.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-consistency.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8b02e454e9df8080ec176e5bb4ed9562a864db8
+concepts:
+- kt:self-consistency
+- kt:gsm8k
+- kt:chain-of-thought
+difficulty: 2
+created: '2026-11-17'
+status: active

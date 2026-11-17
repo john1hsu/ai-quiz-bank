@@ -1,0 +1,21 @@
+id: ai-000067
+area: governance-and-policy
+kind: origin
+topic: AI safety institutes
+topic_type: Organization
+maturity: emerging
+true_statement: The UK's AI Safety Institute, launched in November 2023 at the Bletchley Park AI Safety Summit, grew out of the government's Frontier AI Taskforce.
+false_statement: The UK's AI Safety Institute, launched in November 2024 at the Bletchley Park AI Safety Summit, grew out of the government's Frontier AI Taskforce.
+explanation: The UK and US institutes were announced in the same week of November 2023, making them the first of their kind. November 2024 is when the international network of such institutes launched in San Francisco.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-safety-institutes.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: cb2df54a9654b2963a489542dbed8de64dcf3cc1
+concepts:
+- kt:ai-safety-institutes
+- kt:ai-safety-summit
+- kt:uk-ai-security-institute
+difficulty: 1
+created: '2026-11-17'
+status: active

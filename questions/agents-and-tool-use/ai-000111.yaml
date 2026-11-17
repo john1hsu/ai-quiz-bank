@@ -1,0 +1,20 @@
+id: ai-000111
+area: agents-and-tool-use
+kind: origin
+topic: Agent2Agent protocol
+topic_type: Tool
+maturity: emerging
+true_statement: Google announced the Agent2Agent protocol in April 2025, and the Linux Foundation took over the project that June to keep it vendor neutral.
+false_statement: Microsoft announced the Agent2Agent protocol in April 2025, and the Linux Foundation took over the project that June to keep it vendor neutral.
+explanation: Google launched A2A with more than 50 partners; Microsoft later became an adopter, adding it to Azure AI Foundry and Copilot Studio. Handing a protocol to a neutral foundation is a common way to win cross-vendor adoption.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent2agent-protocol.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d737c7fbab25644ed5e5c79633fc1b529166be46
+concepts:
+- kt:agent2agent-protocol
+- kt:google
+difficulty: 1
+created: '2026-11-17'
+status: active

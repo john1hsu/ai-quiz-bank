@@ -1,0 +1,21 @@
+id: ai-000089
+area: transformers-and-llms
+kind: evidence
+topic: Emergent abilities
+topic_type: Concept
+maturity: emerging
+true_statement: 'Schaeffer et al. (2023) argued many emergent abilities are metric artefacts: re-scoring with token edit distance instead of exact match gave smooth curves.'
+false_statement: 'Schaeffer et al. (2023) argued many emergent abilities are metric artefacts: re-scoring with exact match instead of token edit distance gave smooth curves.'
+explanation: Exact match is all-or-nothing, so steady per-token gains show up as a sudden jump once whole answers come out right. A continuous metric reveals the gradual improvement underneath, though the authors did not claim emergence is impossible.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/emergent-abilities.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3e8d9e62ba9061d6d29fb38742307e2b35d16895
+concepts:
+- kt:emergent-abilities
+- kt:ai-evaluation
+- kt:big-bench
+difficulty: 3
+created: '2026-11-17'
+status: active

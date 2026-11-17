@@ -1,0 +1,20 @@
+id: ai-000055
+area: deep-learning
+kind: origin
+topic: Backpropagation algorithm
+topic_type: Algorithm
+maturity: foundational
+true_statement: Griewank credits Seppo Linnainmaa's 1970 master's thesis with reverse-mode differentiation, used there to estimate how rounding errors propagate.
+false_statement: Griewank credits Seppo Linnainmaa's 1970 master's thesis with reverse-mode differentiation, used there to compute gradients for training neural networks.
+explanation: Backprop was discovered several times. Linnainmaa's reverse mode had nothing to do with learning; Werbos's 1982 work was the version motivated by neural networks, and Rumelhart, Hinton and Williams popularised it for machine learning in 1986.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/backpropagation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d791fc2127dd248704137acc040d992531a52477
+concepts:
+- kt:backpropagation
+- kt:automatic-differentiation
+difficulty: 3
+created: '2026-11-17'
+status: active

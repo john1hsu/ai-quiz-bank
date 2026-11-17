@@ -1,0 +1,20 @@
+id: ai-000088
+area: transformers-and-llms
+kind: origin
+topic: Emergent abilities
+topic_type: Concept
+maturity: emerging
+true_statement: Wei et al. (2022) borrowed the idea of emergence from physicist Philip Anderson's 1972 essay More Is Different.
+false_statement: Wei et al. (2022) borrowed the idea of emergence from physicist Richard Feynman's 1972 essay More Is Different.
+explanation: Anderson's point was that quantitative change in a system can produce qualitative change in behaviour. Wei et al. applied it to language models whose task scores sit at chance until some scale, then jump.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/emergent-abilities.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3e8d9e62ba9061d6d29fb38742307e2b35d16895
+concepts:
+- kt:emergent-abilities
+- kt:emergent-abilities-of-large-language-models
+difficulty: 1
+created: '2026-11-17'
+status: active

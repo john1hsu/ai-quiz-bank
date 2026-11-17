@@ -1,0 +1,20 @@
+id: ai-000068
+area: governance-and-policy
+kind: evidence
+topic: AI safety institutes
+topic_type: Organization
+maturity: emerging
+true_statement: Because AI safety institutes depend on developers' voluntary commitments for model access, critics warn their close ties to labs risk regulatory capture.
+false_statement: Because AI safety institutes can legally compel developers to hand over models, critics warn their close ties to labs risk regulatory overreach.
+explanation: First-wave institutes have no regulatory or enforcement powers, so testing happens only with the labs' cooperation. Critics fear that dependence can soften scrutiny and ease pressure for binding rules.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-safety-institutes.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: cb2df54a9654b2963a489542dbed8de64dcf3cc1
+concepts:
+- kt:ai-safety-institutes
+- kt:ai-governance
+difficulty: 2
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000063
+area: ml-foundations
+kind: evidence
+topic: Machine learning
+topic_type: Field
+maturity: foundational
+true_statement: Samuel found rote learning of scored board positions helped most in openings and endgames, while generalisation learning of weights gave a strong middle game.
+false_statement: Samuel found generalisation learning of weights helped most in openings and endgames, while rote learning of scored board positions gave a strong middle game.
+explanation: Openings and endgames recur often enough that memorised positions pay off, but the middle game is too varied, so adjusting the weights of a scoring function generalises better. It is an early glimpse of memorisation versus generalisation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/machine-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: feae1e7648ec191a1bbcbcfc14c5940efe1cf46b
+concepts:
+- kt:machine-learning
+- kt:arthur-samuel
+difficulty: 3
+created: '2026-11-17'
+status: active

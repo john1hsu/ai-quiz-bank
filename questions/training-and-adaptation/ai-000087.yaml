@@ -1,0 +1,22 @@
+id: ai-000087
+area: training-and-adaptation
+kind: application
+topic: Knowledge distillation
+topic_type: Technique
+maturity: established
+true_statement: In sequence-level knowledge distillation the student is trained with plain cross-entropy on the teacher's beam-search outputs, the pattern later used to distil LLMs.
+false_statement: In sequence-level knowledge distillation the student is trained to match the teacher's per-token soft distributions, the pattern later used to distil LLMs.
+explanation: Kim and Rush had the teacher decode the training inputs and treated the results as new targets. Their students ran about ten times faster with little BLEU loss, and training on teacher-generated text is how large models are now compressed into small ones.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/knowledge-distillation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 9db4f31e680413f35af4b0e0e5303fc79d9b9184
+concepts:
+- kt:knowledge-distillation
+- kt:beam-search
+- kt:large-language-model
+- kt:synthetic-data
+difficulty: 2
+created: '2026-11-17'
+status: active

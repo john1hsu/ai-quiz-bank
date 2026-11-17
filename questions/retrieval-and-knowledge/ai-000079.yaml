@@ -1,0 +1,20 @@
+id: ai-000079
+area: retrieval-and-knowledge
+kind: mechanism
+topic: BM25
+topic_type: Algorithm
+maturity: established
+true_statement: In BM25 the k1 parameter sets how quickly repeated occurrences of a term saturate, while b sets how strongly scores are normalised by document length.
+false_statement: In BM25 the b parameter sets how quickly repeated occurrences of a term saturate, while k1 sets how strongly scores are normalised by document length.
+explanation: Saturation means the fifth 'photosynthesis' adds far less than the first, capping any one term's pull. Length normalisation, at b = 1 full and at b = 0 none, discounts long documents that repeat words merely because they are wordy.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/bm25.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 212679ae36df4da51e7fa54b3a103be906204674
+concepts:
+- kt:bm25
+- kt:tf-idf
+difficulty: 2
+created: '2026-11-17'
+status: active

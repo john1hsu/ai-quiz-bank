@@ -1,0 +1,22 @@
+id: ai-000117
+area: governance-and-policy
+kind: figure
+topic: Algorithmic bias and fairness
+topic_type: Risk
+maturity: established
+true_statement: Gender Shades (2018) found commercial gender classifiers had error rates up to 34.7% for darker-skinned women but at most 0.8% for lighter-skinned men.
+false_statement: Gender Shades (2018) found commercial gender classifiers had error rates up to 34.7% for lighter-skinned men but at most 0.8% for darker-skinned women.
+explanation: Common face benchmarks were mostly lighter-skinned, so aggregate accuracy hid the gap. Buolamwini and Gebru's balanced benchmark showed why evaluation must be broken down by intersecting subgroups.
+as_of: '2018'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/algorithmic-bias-and-fairness.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 66247ae2587f600355efe8017085f93b760b2287
+concepts:
+- kt:algorithmic-bias-and-fairness
+- kt:facial-recognition
+- kt:fairness-accountability-and-transparency
+difficulty: 2
+created: '2026-11-17'
+status: active

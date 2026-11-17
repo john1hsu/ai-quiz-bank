@@ -1,0 +1,20 @@
+id: ai-000047
+area: agents-and-tool-use
+kind: mechanism
+topic: AI agent
+topic_type: Concept
+maturity: emerging
+true_statement: In the Wang et al. survey's LLM agent architecture, the planning module breaks tasks into subtasks, while the profile module sets the agent's role, usually in the prompt.
+false_statement: In the Wang et al. survey's LLM agent architecture, the profile module breaks tasks into subtasks, while the planning module sets the agent's role, usually in the prompt.
+explanation: The survey's four modules are profile, memory, planning and action. Profile is who the agent is (a role written into the prompt); planning is how it decomposes work, with or without feedback from the environment, humans or itself.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/ai-agent.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 599aef77b3ad8bd274bc382d550e13897de6e3f7
+concepts:
+- kt:ai-agent
+- kt:planning-in-llms
+difficulty: 2
+created: '2026-11-17'
+status: active

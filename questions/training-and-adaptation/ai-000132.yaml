@@ -1,0 +1,21 @@
+id: ai-000132
+area: training-and-adaptation
+kind: application
+topic: QLoRA
+topic_type: Technique
+maturity: established
+true_statement: The QLoRA authors found adapters were needed on every linear layer to match 16-bit fine-tuning, while adapting only attention query and value projections fell short.
+false_statement: The QLoRA authors found adapters on attention query and value projections alone matched 16-bit fine-tuning, while adding them to every linear layer gave no further gain.
+explanation: The original LoRA experiments adapted just the query and value matrices, which became a common default. With a 4-bit base the extra capacity matters, so practical QLoRA recipes target all linear layers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/qlora.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 2a2b368df1741931e990b5d2fad69b9708868e5f
+concepts:
+- kt:qlora
+- kt:lora
+- kt:parameter-efficient-fine-tuning
+difficulty: 2
+created: '2026-11-17'
+status: active

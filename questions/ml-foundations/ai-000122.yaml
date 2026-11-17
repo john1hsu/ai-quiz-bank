@@ -1,0 +1,21 @@
+id: ai-000122
+area: ml-foundations
+kind: evidence
+topic: Double descent
+topic_type: Concept
+maturity: established
+true_statement: In deep double descent, more training data shifts the error peak toward larger models, so adding samples can temporarily make a model worse.
+false_statement: In deep double descent, more training data shifts the error peak toward smaller models, so adding samples can never make a model worse.
+explanation: The peak sits where the model can only just fit its training set, and a bigger dataset needs a bigger model to reach that point. Nakkiran et al. saw a Transformer get worse at translation with 4.5 times more data.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/double-descent.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 98973fd46c4220b698d49d9692736cec04792fe4
+concepts:
+- kt:double-descent
+- kt:deep-learning
+- kt:scaling-laws
+difficulty: 3
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000066
+area: ai-infrastructure-and-mlops
+kind: application
+topic: CUDA
+topic_type: Tool
+maturity: established
+true_statement: Because CUDA launches are asynchronous, an error often surfaces at a later call unless CUDA_LAUNCH_BLOCKING=1 forces each launch to block.
+false_statement: Because CUDA launches are synchronous, an error always surfaces at the failing call unless CUDA_LAUNCH_BLOCKING=1 lets launches run ahead.
+explanation: Frameworks like PyTorch queue GPU work so the CPU need not wait, which is fast but means failures and timings show up out of place. Forcing blocking launches, or synchronising before timing, ties them back to the right line.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/cuda.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1afff5881d52d5c615d74539e88330f2151cfaf8
+concepts:
+- kt:cuda
+- kt:deep-learning
+difficulty: 2
+created: '2026-11-17'
+status: active

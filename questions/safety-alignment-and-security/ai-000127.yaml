@@ -1,0 +1,21 @@
+id: ai-000127
+area: safety-alignment-and-security
+kind: definition
+topic: AI alignment
+topic_type: Field
+maturity: emerging
+true_statement: In Ji et al.'s alignment survey, forward alignment makes systems aligned during training, while backward alignment gathers evidence on whether a trained system is aligned.
+false_statement: In Ji et al.'s alignment survey, backward alignment makes systems aligned during training, while forward alignment gathers evidence on whether a trained system is aligned.
+explanation: Forward alignment covers methods like learning from human feedback; backward alignment covers assurance such as evaluation and interpretability, plus governance. Splitting them makes alignment something checked over a system's life, not settled once.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/ai-alignment.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: f6dd85f1506903251734ca47d133e2302bb0f6d2
+concepts:
+- kt:ai-alignment
+- kt:mechanistic-interpretability
+- kt:ai-governance
+difficulty: 2
+created: '2026-11-17'
+status: active

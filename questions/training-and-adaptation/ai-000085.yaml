@@ -1,0 +1,20 @@
+id: ai-000085
+area: training-and-adaptation
+kind: mechanism
+topic: Knowledge distillation
+topic_type: Technique
+maturity: established
+true_statement: Knowledge distillation raises the softmax temperature above 1 to flatten the teacher's outputs, exposing how it ranks the wrong classes.
+false_statement: Knowledge distillation lowers the softmax temperature below 1 to sharpen the teacher's outputs, exposing how it ranks the wrong classes.
+explanation: At normal temperature a confident teacher puts nearly all probability on one class, hiding that a '2' looks more like a '3' than a '7'. Softening reveals those similarities, so each soft target carries far more information than a one-hot label.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/knowledge-distillation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 9db4f31e680413f35af4b0e0e5303fc79d9b9184
+concepts:
+- kt:knowledge-distillation
+- kt:distilling-the-knowledge-in-a-neural-network
+difficulty: 2
+created: '2026-11-17'
+status: active

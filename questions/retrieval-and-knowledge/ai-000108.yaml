@@ -1,0 +1,21 @@
+id: ai-000108
+area: retrieval-and-knowledge
+kind: application
+topic: Semantic search
+topic_type: Technique
+maturity: established
+true_statement: In asymmetric semantic search a short query must match a longer passage that answers it, whereas in symmetric search the query and documents are alike.
+false_statement: In symmetric semantic search a short query must match a longer passage that answers it, whereas in asymmetric search the query and documents are alike.
+explanation: Matching a question to paraphrased questions is symmetric; matching a question to the passage that answers it is asymmetric. Sentence Transformers advises picking an encoder trained for the right setting, since one tuned for the other works worse.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/semantic-search.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 05e536c017967075ac2348f7e8003706de69c32b
+concepts:
+- kt:semantic-search
+- kt:embeddings
+- kt:retrieval-augmented-generation
+difficulty: 2
+created: '2026-11-17'
+status: active

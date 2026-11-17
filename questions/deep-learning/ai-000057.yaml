@@ -1,0 +1,20 @@
+id: ai-000057
+area: deep-learning
+kind: evidence
+topic: Backpropagation algorithm
+topic_type: Algorithm
+maturity: foundational
+true_statement: Backpropagation must keep forward-pass values until the backward pass ends, which is why training needs far more memory than running the network for prediction.
+false_statement: Backpropagation discards forward-pass values once each layer is computed, which is why training needs no more memory than running the network for prediction.
+explanation: The backward pass reuses stored intermediate activations to compute each gradient cheaply, so they cannot be freed early. The memory bill grows roughly with depth and batch size, a key constraint when training large models.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/backpropagation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d791fc2127dd248704137acc040d992531a52477
+concepts:
+- kt:backpropagation
+- kt:deep-learning
+difficulty: 2
+created: '2026-11-17'
+status: active

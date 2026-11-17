@@ -1,0 +1,21 @@
+id: ai-000136
+area: agents-and-tool-use
+kind: origin
+topic: LangGraph
+topic_type: Tool
+maturity: emerging
+true_statement: LangGraph's runtime adapts the execution model of Pregel, Google's 2010 graph-processing system, running parallel nodes in synchronised super-steps.
+false_statement: LangGraph's runtime adapts the execution model of AutoGen, Microsoft's multi-agent framework, running parallel nodes in synchronised super-steps.
+explanation: From Pregel it takes message passing, nodes that wake when input arrives, and a run that ends when every node is idle. AutoGen is an alternative design that frames applications as conversations between agents rather than an explicit graph.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/langgraph.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: aff7e9d32a4723a4b39827ee5266451fe4f2da58
+concepts:
+- kt:langgraph
+- kt:pregel
+- kt:autogen
+difficulty: 2
+created: '2026-11-17'
+status: active

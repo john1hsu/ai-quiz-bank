@@ -1,0 +1,21 @@
+id: ai-000133
+area: transformers-and-llms
+kind: evidence
+topic: Scaling laws
+topic_type: Concept
+maturity: established
+true_statement: Kaplan et al. (2020) advised growing model size much faster than data as compute rises, whereas Hoffmann et al. (2022) found parameters and tokens should scale equally.
+false_statement: Hoffmann et al. (2022) advised growing model size much faster than data as compute rises, whereas Kaplan et al. (2020) found parameters and tokens should scale equally.
+explanation: Kaplan's fits implied model size growing about as C^0.73 and data only as C^0.27, favouring huge, undertrained models. DeepMind's Chinchilla study, with three estimation methods, concluded that doubling the model should mean doubling the data.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/scaling-laws.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a311a8ffb5b23fd235a6dd5804ff4c726c329815
+concepts:
+- kt:scaling-laws
+- kt:scaling-laws-for-neural-language-models
+- kt:pretraining
+difficulty: 2
+created: '2026-11-17'
+status: active

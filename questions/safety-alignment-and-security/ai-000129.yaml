@@ -1,0 +1,21 @@
+id: ai-000129
+area: safety-alignment-and-security
+kind: mechanism
+topic: AI alignment
+topic_type: Field
+maturity: emerging
+true_statement: Leike et al.'s reward modeling learns a reward function from user interaction and then optimises it with reinforcement learning, so the objective is inferred rather than hand-written.
+false_statement: Leike et al.'s reward modeling has users hand-write a reward function that is then optimised with reinforcement learning, so the objective is explicit rather than inferred.
+explanation: Users often understand their goals only implicitly and struggle to write them down, which is the root of specification gaming. Learning the reward from feedback is the idea behind RLHF, though it gets harder for tasks humans cannot easily judge.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/ai-alignment.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: f6dd85f1506903251734ca47d133e2302bb0f6d2
+concepts:
+- kt:ai-alignment
+- kt:rlhf
+- kt:scalable-oversight
+difficulty: 2
+created: '2026-11-17'
+status: active

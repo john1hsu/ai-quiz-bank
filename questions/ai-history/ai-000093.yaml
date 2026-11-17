@@ -1,0 +1,20 @@
+id: ai-000093
+area: ai-history
+kind: origin
+topic: A Logical Calculus of the Ideas Immanent in Nervous Activity
+topic_type: Work
+maturity: historical
+true_statement: Stephen Kleene's 1951 RAND memorandum generalised McCulloch–Pitts nerve nets into finite automata, which accept exactly the regular languages.
+false_statement: Stephen Kleene's 1951 RAND memorandum generalised McCulloch–Pitts nerve nets into finite automata, which accept exactly the context-free languages.
+explanation: Kleene asked which events a nerve net could respond to and turned the answer into automata theory. McCulloch–Pitts automata accept the same class as finite-state grammars, the regular sets, which is why the paper matters to computer science as well as AI.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/a-logical-calculus-of-the-ideas-immanent-in-nervous-activity.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 179dbe6b7385c96173bca121839b55d4678c97f0
+concepts:
+- kt:a-logical-calculus-of-the-ideas-immanent-in-nervous-activity
+- kt:finite-automaton
+difficulty: 3
+created: '2026-11-17'
+status: active

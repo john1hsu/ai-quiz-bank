@@ -1,0 +1,21 @@
+id: ai-000049
+area: ai-history
+kind: origin
+topic: Turing test
+topic_type: Concept
+maturity: foundational
+true_statement: Alan Turing proposed the imitation game in his 1950 paper Computing Machinery and Intelligence, published in the philosophy journal Mind.
+false_statement: Alan Turing proposed the imitation game in his 1956 paper Computing Machinery and Intelligence, published in the philosophy journal Mind.
+explanation: The paper appeared in 1950, six years before the Dartmouth workshop named the field. Turing swapped the vague question 'Can machines think?' for a concrete behavioural test; the name 'Turing test' came later.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/turing-test.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 229482d5ccf4322cbb17ef898392b3c6282fe542
+concepts:
+- kt:turing-test
+- kt:computing-machinery-and-intelligence
+- kt:alan-turing
+difficulty: 1
+created: '2026-11-17'
+status: active

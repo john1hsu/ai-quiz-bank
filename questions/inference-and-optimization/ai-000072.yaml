@@ -1,0 +1,21 @@
+id: ai-000072
+area: inference-and-optimization
+kind: application
+topic: Speculative decoding
+topic_type: Technique
+maturity: established
+true_statement: Speculative decoding pays off most in latency-sensitive, low-traffic serving, because under heavy batched load the spare GPU compute it relies on disappears.
+false_statement: Speculative decoding pays off most under heavy batched load, because in latency-sensitive, low-traffic serving the spare GPU compute it relies on disappears.
+explanation: At small batch sizes decoding is memory-bound, so verifying several tokens in one pass is almost free. Busy servers already use that compute on other requests, and the wasted work on rejected drafts starts to cost real throughput.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/speculative-decoding.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8d554ef0ef83e74c0adaede1d2eb7d523d869c1
+concepts:
+- kt:speculative-decoding
+- kt:model-serving
+- kt:vllm
+difficulty: 2
+created: '2026-11-17'
+status: active

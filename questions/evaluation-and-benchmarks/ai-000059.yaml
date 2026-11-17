@@ -1,0 +1,20 @@
+id: ai-000059
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: Red teaming
+topic_type: Technique
+maturity: emerging
+true_statement: In Perez et al.'s automated red teaming, a red language model writes the test inputs and a classifier flags harmful replies from the target model.
+false_statement: In Perez et al.'s automated red teaming, human crowdworkers write the test inputs and a classifier flags harmful replies from the target model.
+explanation: Using a model to generate attacks scales coverage far beyond what hand-written tests can afford. The trade-off is that the red model and the classifier bound which failures can be found, so it complements rather than replaces human red teams.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/red-teaming.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: f873a085b918ce9541c37f4ca973293128f09de2
+concepts:
+- kt:red-teaming
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-17'
+status: active

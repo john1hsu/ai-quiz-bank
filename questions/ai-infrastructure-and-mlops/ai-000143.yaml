@@ -1,0 +1,21 @@
+id: ai-000143
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: Tensor Processing Unit
+topic_type: Hardware
+maturity: established
+true_statement: Google's first Tensor Processing Unit, running in its datacenters from 2015, was built for inference only; later generations added training.
+false_statement: Google's first Tensor Processing Unit, running in its datacenters from 2015, was built for training only; later generations added inference.
+explanation: Serving user-facing models had strict latency limits, so the first chip was simple, deterministic and used 8-bit arithmetic. From TPU v2 onward chips were linked into pods for training as well as serving.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tpu.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 683185cfa1277024df72d5f47b06b3fb72f1a8e2
+concepts:
+- kt:tpu
+- kt:google
+- kt:in-datacenter-performance-analysis-of-a-tensor-processing-unit
+difficulty: 1
+created: '2026-11-17'
+status: active

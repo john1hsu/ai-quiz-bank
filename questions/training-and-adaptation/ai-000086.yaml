@@ -1,0 +1,21 @@
+id: ai-000086
+area: training-and-adaptation
+kind: origin
+topic: Knowledge distillation
+topic_type: Technique
+maturity: established
+true_statement: In 2006 Buciluǎ, Caruana and Niculescu-Mizil trained a small neural network to mimic a large ensemble on teacher-labelled pseudo-data, work that distillation extends.
+false_statement: In 2016 Buciluǎ, Caruana and Niculescu-Mizil trained a small neural network to mimic a large ensemble on teacher-labelled pseudo-data, work that distillation extends.
+explanation: 'Their KDD 2006 ''model compression'' paper predates Hinton, Vinyals and Dean''s 2015 distillation paper by nearly a decade. Both started from the same problem: ensembles are accurate but too costly to deploy.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/knowledge-distillation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 9db4f31e680413f35af4b0e0e5303fc79d9b9184
+concepts:
+- kt:knowledge-distillation
+- kt:model-compression-caruana-2006
+- kt:ensemble-methods
+difficulty: 2
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000107
+area: retrieval-and-knowledge
+kind: origin
+topic: Semantic search
+topic_type: Technique
+maturity: established
+true_statement: Latent semantic indexing, introduced by Deerwester and colleagues in 1990, applied singular value decomposition to a large term-by-document matrix.
+false_statement: Latent semantic indexing, introduced by Deerwester and colleagues in 1990, applied k-means clustering to a large term-by-document matrix.
+explanation: Keeping about 100 factors from the SVD turned each document into a short concept vector, an early version of today's embeddings. The decomposition was costly and hard to update, so neural encoders later took its place.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/semantic-search.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 05e536c017967075ac2348f7e8003706de69c32b
+concepts:
+- kt:semantic-search
+- kt:latent-semantic-analysis
+difficulty: 2
+created: '2026-11-17'
+status: active

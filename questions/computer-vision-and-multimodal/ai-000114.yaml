@@ -1,0 +1,21 @@
+id: ai-000114
+area: computer-vision-and-multimodal
+kind: figure
+topic: Automatic speech recognition
+topic_type: Application
+maturity: established
+true_statement: For roughly 2023–2024 systems, word error rate was about 1.4% on LibriSpeech clean audiobooks but 25.5% on CHiME-6 dinner-party recordings.
+false_statement: For roughly 2023–2024 systems, word error rate was about 1.4% on CHiME-6 dinner-party recordings but 25.5% on LibriSpeech clean audiobooks.
+explanation: Read speech with a close microphone is nearly solved, while distant, overlapping conversation is not. The gap, along with higher error on African American English, is why headline WERs say little about real-world use.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/automatic-speech-recognition.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8f0c70b101af7a4a6876ecba79c835cee0a900fb
+concepts:
+- kt:automatic-speech-recognition
+- kt:librispeech
+difficulty: 2
+created: '2026-11-17'
+status: active

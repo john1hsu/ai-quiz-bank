@@ -1,0 +1,20 @@
+id: ai-000112
+area: computer-vision-and-multimodal
+kind: origin
+topic: Automatic speech recognition
+topic_type: Application
+maturity: established
+true_statement: In 2012 four research groups reported that deep networks outputting posteriors over HMM states beat Gaussian mixture models for speech acoustic modelling.
+false_statement: In 2012 four research groups reported that deep networks trained end to end with CTC, with no HMM at all, beat Gaussian mixture models for speech acoustic modelling.
+explanation: 'The 2012 win was a hybrid: the DNN replaced only the GMM scorer while the HMM still handled timing. It was one of deep learning''s first big industrial successes; fully end-to-end systems came later.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/automatic-speech-recognition.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8f0c70b101af7a4a6876ecba79c835cee0a900fb
+concepts:
+- kt:automatic-speech-recognition
+- kt:hidden-markov-model
+difficulty: 2
+created: '2026-11-17'
+status: active

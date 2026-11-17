@@ -1,0 +1,20 @@
+id: ai-000137
+area: agents-and-tool-use
+kind: mechanism
+topic: LangGraph
+topic_type: Tool
+maturity: emerging
+true_statement: In LangGraph a state key without a reducer is overwritten by each update, while an append reducer lets parallel nodes add messages without clobbering each other.
+false_statement: In LangGraph a state key without a reducer appends each update, while an overwrite reducer lets parallel nodes add messages without clobbering each other.
+explanation: Reducers define how node outputs merge into shared state. Overwrite is the default; when several nodes run in the same super-step, an append reducer is what keeps all their messages instead of the last write winning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/langgraph.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: aff7e9d32a4723a4b39827ee5266451fe4f2da58
+concepts:
+- kt:langgraph
+- kt:multi-agent-systems
+difficulty: 2
+created: '2026-11-17'
+status: active

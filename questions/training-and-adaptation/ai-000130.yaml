@@ -1,0 +1,21 @@
+id: ai-000130
+area: training-and-adaptation
+kind: definition
+topic: QLoRA
+topic_type: Technique
+maturity: established
+true_statement: LoRA keeps the frozen base weights in 16-bit precision, while QLoRA stores them in 4 bits and backpropagates through them into the adapters.
+false_statement: QLoRA keeps the frozen base weights in 16-bit precision, while LoRA stores them in 4 bits and backpropagates through them into the adapters.
+explanation: Both train only small low-rank adapters, but in LoRA the frozen base still dominates memory for large models. Quantizing it is what let QLoRA fine-tune a 65B model on one 48 GB GPU.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/qlora.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 2a2b368df1741931e990b5d2fad69b9708868e5f
+concepts:
+- kt:qlora
+- kt:lora
+- kt:quantization
+difficulty: 1
+created: '2026-11-17'
+status: active

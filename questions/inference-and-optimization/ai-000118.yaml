@@ -1,0 +1,21 @@
+id: ai-000118
+area: inference-and-optimization
+kind: origin
+topic: Continuous batching and PagedAttention
+topic_type: Technique
+maturity: established
+true_statement: Continuous batching came from the Orca serving system (OSDI 2022), while PagedAttention came with the vLLM engine (SOSP 2023).
+false_statement: Continuous batching came with the vLLM engine (SOSP 2023), while PagedAttention came from the Orca serving system (OSDI 2022).
+explanation: Orca solved scheduling by letting requests leave and join after every decoding step. vLLM then solved the memory problem that raised, by paging the KV cache so many more requests fit on one GPU at once.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/batching-and-paged-attention.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8a955b37fe25265c25226ed11859579d03834314
+concepts:
+- kt:batching-and-paged-attention
+- kt:orca-serving-system
+- kt:vllm
+difficulty: 2
+created: '2026-11-17'
+status: active

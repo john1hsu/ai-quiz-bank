@@ -1,0 +1,20 @@
+id: ai-000046
+area: agents-and-tool-use
+kind: definition
+topic: AI agent
+topic_type: Concept
+maturity: emerging
+true_statement: In the classical textbook view, the agent function maps the full history of percepts to an action, and the agent program is its concrete implementation.
+false_statement: In the classical textbook view, the agent program maps the full history of percepts to an action, and the agent function is its concrete implementation.
+explanation: Russell and Norvig separate the abstract mapping (the agent function) from the code that realises it on some architecture (the agent program). Keeping them apart lets you reason about what an agent should do before worrying about how it is built.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/ai-agent.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 599aef77b3ad8bd274bc382d550e13897de6e3f7
+concepts:
+- kt:ai-agent
+- kt:artificial-intelligence
+difficulty: 1
+created: '2026-11-17'
+status: active

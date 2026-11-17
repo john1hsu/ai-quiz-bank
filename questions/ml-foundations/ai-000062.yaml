@@ -1,0 +1,20 @@
+id: ai-000062
+area: ml-foundations
+kind: origin
+topic: Machine learning
+topic_type: Field
+maturity: foundational
+true_statement: Arthur Samuel reported in 1959 that his checkers program learned to play better than its author after roughly 8 to 10 hours of machine time.
+false_statement: Arthur Samuel reported in 1959 that his checkers program learned to play better than its author after roughly 8 to 10 weeks of machine time.
+explanation: Samuel's IBM Journal paper, with 'machine learning' in its title, started from little more than the rules and unweighted evaluation terms. Beating its own programmer within hours made the case that learning from experience could replace hand programming.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/machine-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: feae1e7648ec191a1bbcbcfc14c5940efe1cf46b
+concepts:
+- kt:machine-learning
+- kt:arthur-samuel
+difficulty: 1
+created: '2026-11-17'
+status: active

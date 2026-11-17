@@ -1,0 +1,20 @@
+id: ai-000052
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Generative adversarial network
+topic_type: Architecture
+maturity: established
+true_statement: At the theoretical optimum of the original GAN game, the generator reproduces the data distribution and the discriminator outputs 1/2 for every input.
+false_statement: At the theoretical optimum of the original GAN game, the generator reproduces the data distribution and the discriminator outputs 1 for every input.
+explanation: If generated and real samples are drawn from the same distribution, the discriminator has nothing to go on and can only guess, so its best estimate of 'real' is one half everywhere. Goodfellow et al. proved this unique solution assuming unlimited model capacity.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/generative-adversarial-network.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: b3a1f087760ed7cb1b618b7395b15ef19ea6d4f9
+concepts:
+- kt:generative-adversarial-network
+- kt:generative-adversarial-nets
+difficulty: 2
+created: '2026-11-17'
+status: active

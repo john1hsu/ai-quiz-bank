@@ -1,0 +1,20 @@
+id: ai-000058
+area: evaluation-and-benchmarks
+kind: definition
+topic: Red teaming
+topic_type: Technique
+maturity: emerging
+true_statement: Security red teaming is open-ended emulation of an adversary, whereas penetration testing checks a system against a list of known controls.
+false_statement: Penetration testing is open-ended emulation of an adversary, whereas security red teaming checks a system against a list of known controls.
+explanation: A red team plays a real opponent and looks for any way in, including ones nobody anticipated; a pen test or audit works through a checklist. That open-endedness is what AI red teaming borrows when it probes models for unexpected harms.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/red-teaming.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: f873a085b918ce9541c37f4ca973293128f09de2
+concepts:
+- kt:red-teaming
+- kt:penetration-testing
+difficulty: 1
+created: '2026-11-17'
+status: active

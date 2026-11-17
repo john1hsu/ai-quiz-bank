@@ -1,0 +1,20 @@
+id: ai-000115
+area: governance-and-policy
+kind: definition
+topic: Algorithmic bias and fairness
+topic_type: Risk
+maturity: established
+true_statement: Demographic parity requires equal acceptance rates across groups, while equalized odds requires equal true-positive and false-positive rates across groups.
+false_statement: Equalized odds requires equal acceptance rates across groups, while demographic parity requires equal true-positive and false-positive rates across groups.
+explanation: Demographic parity (independence) ignores the true outcome, so it can be met by accepting random people in one group. Equalized odds (separation), from Hardt, Price and Srebro, conditions on the outcome and so allows a perfect predictor.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/algorithmic-bias-and-fairness.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 66247ae2587f600355efe8017085f93b760b2287
+concepts:
+- kt:algorithmic-bias-and-fairness
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-17'
+status: active

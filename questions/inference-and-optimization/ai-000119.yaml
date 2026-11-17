@@ -1,0 +1,21 @@
+id: ai-000119
+area: inference-and-optimization
+kind: mechanism
+topic: Continuous batching and PagedAttention
+topic_type: Technique
+maturity: established
+true_statement: Orca's selective batching merges all requests' tokens for linear layers and layer norm, but runs attention separately for each request.
+false_statement: Orca's selective batching merges all requests' tokens for attention, but runs linear layers and layer norm separately for each request.
+explanation: Token-wise operations don't care which sequence a token belongs to, so ragged requests can be flattened into one big matrix. Attention must only see tokens of the same sequence, and having no weights to share, it loses little from running per request.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/batching-and-paged-attention.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8a955b37fe25265c25226ed11859579d03834314
+concepts:
+- kt:batching-and-paged-attention
+- kt:orca-serving-system
+- kt:model-serving
+difficulty: 3
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000101
+area: evaluation-and-benchmarks
+kind: application
+topic: GSM8K
+topic_type: Benchmark
+maturity: established
+true_statement: 'GSM8K solutions put the final numeric answer after a #### marker on the last line, so grading is an exact-match check on the extracted number.'
+false_statement: 'GSM8K solutions put the final numeric answer after a #### marker on the last line, so grading uses human raters to judge each full reasoning chain.'
+explanation: The worked steps are natural language with calculator annotations like <<48/2=24>>, but only the final number is scored. That makes evaluation cheap and automatic, though it cannot tell sound reasoning from a lucky answer.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/gsm8k.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 21340602474aaa628182e43e7ec0882a08e31647
+concepts:
+- kt:gsm8k
+- kt:ai-evaluation
+difficulty: 1
+created: '2026-11-17'
+status: active

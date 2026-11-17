@@ -1,0 +1,19 @@
+id: ai-000061
+area: ml-foundations
+kind: definition
+topic: Machine learning
+topic_type: Field
+maturity: foundational
+true_statement: In Mitchell's definition a program learns if performance P at task T improves with experience E; for a checkers player, P is the share of games won.
+false_statement: In Mitchell's definition a program learns if performance P at task T improves with experience E; for a checkers player, E is the share of games won.
+explanation: For checkers, T is playing the game, P is the fraction of games won and E is practice games against itself. Naming all three forces you to say exactly what 'getting better' means before you build a learner.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/machine-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: feae1e7648ec191a1bbcbcfc14c5940efe1cf46b
+concepts:
+- kt:machine-learning
+difficulty: 1
+created: '2026-11-17'
+status: active

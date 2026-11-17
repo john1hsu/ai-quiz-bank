@@ -1,0 +1,20 @@
+id: ai-000074
+area: prompting-and-reasoning
+kind: mechanism
+topic: Self-consistency
+topic_type: Technique
+maturity: established
+true_statement: Plain self-consistency needs answers that match exactly, so Universal Self-Consistency asks the model itself to pick the most consistent of its candidates.
+false_statement: Plain self-consistency needs answers that match exactly, so Universal Self-Consistency trains a separate reward model to pick the best of the candidates.
+explanation: A vote works for numbers or multiple-choice labels but not for summaries or code, where no two outputs are identical. Letting the model judge consistency extends the idea to open-ended tasks while matching standard voting on math.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-consistency.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8b02e454e9df8080ec176e5bb4ed9562a864db8
+concepts:
+- kt:self-consistency
+- kt:universal-self-consistency
+difficulty: 2
+created: '2026-11-17'
+status: active

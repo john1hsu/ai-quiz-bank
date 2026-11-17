@@ -1,0 +1,21 @@
+id: ai-000083
+area: safety-alignment-and-security
+kind: origin
+topic: Mechanistic interpretability
+topic_type: Field
+maturity: emerging
+true_statement: In Zoom In (Distill, 2020), Olah and colleagues claimed similar features and circuits recur across different models, a property they called universality.
+false_statement: In Zoom In (Distill, 2020), Olah and colleagues claimed similar features and circuits recur across layers of a single model, a property they called universality.
+explanation: Universality was the third of the circuits programme's working claims, after meaningful features and interpretable circuits. If it holds, understanding a mechanism in one network teaches you about others, which makes reverse-engineering worth the effort.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/mechanistic-interpretability.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1a0f43db633e0f0cdd586a9430ae817c8c9732e1
+concepts:
+- kt:mechanistic-interpretability
+- kt:interpretability
+- kt:artificial-neural-network
+difficulty: 2
+created: '2026-11-17'
+status: active

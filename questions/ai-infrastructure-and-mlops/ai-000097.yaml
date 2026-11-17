@@ -1,0 +1,21 @@
+id: ai-000097
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Hugging Face Transformers
+topic_type: Tool
+maturity: established
+true_statement: Hugging Face Transformers splits each model into a tokenizer, a transformer body and a task-specific head, so one pretrained body can take a new head for fine-tuning.
+false_statement: Hugging Face Transformers splits each model into a tokenizer, a transformer body and a task-specific head, so one pretrained head can take a new body for fine-tuning.
+explanation: The body holds the expensive pretrained knowledge as contextual embeddings; the head is a thin output layer for classification, question answering or generation. Swapping heads is what makes adapting a checkpoint to a new task cheap.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/hugging-face-transformers.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 04256cea3641b9d5dff5cb5aba6f6f242cdfc043
+concepts:
+- kt:hugging-face-transformers
+- kt:fine-tuning
+- kt:transformer-architecture
+difficulty: 2
+created: '2026-11-17'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000124
+area: prompting-and-reasoning
+kind: mechanism
+topic: Prompt sensitivity
+topic_type: Concept
+maturity: established
+true_statement: Contextual calibration gives the model the prompt with a content-free input such as 'N/A', then fits a correction so that input gets a uniform label prediction.
+false_statement: Contextual calibration gives the model the prompt with a content-free input such as 'N/A', then fits a correction so that input gets the most frequent label in the prompt.
+explanation: A content-free input should favour no answer, so whatever the model predicts for it exposes its built-in bias toward recent or common labels. Cancelling that bias raised GPT-2 and GPT-3 accuracy by up to 30 points and steadied results across prompts.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/prompt-sensitivity.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1fb501fc75341c7d549ce645d332f77a07bdbb48
+concepts:
+- kt:prompt-sensitivity
+- kt:contextual-calibration
+- kt:few-shot-prompting
+difficulty: 2
+created: '2026-11-17'
+status: active

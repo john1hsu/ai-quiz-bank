@@ -1,0 +1,20 @@
+id: ai-000106
+area: retrieval-and-knowledge
+kind: definition
+topic: Semantic search
+topic_type: Technique
+maturity: established
+true_statement: Synonymy makes keyword retrieval undervalue a document saying 'automobile' for a 'car' query, while polysemy inflates similarity between texts using a word in different senses.
+false_statement: Polysemy makes keyword retrieval undervalue a document saying 'automobile' for a 'car' query, while synonymy inflates similarity between texts using a word in different senses.
+explanation: Giving every term its own dimension means different words for one idea never match (synonymy), and one word for different ideas always does (polysemy). Semantic search exists to fix both by comparing meanings rather than strings.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/semantic-search.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 05e536c017967075ac2348f7e8003706de69c32b
+concepts:
+- kt:semantic-search
+- kt:information-retrieval
+difficulty: 1
+created: '2026-11-17'
+status: active

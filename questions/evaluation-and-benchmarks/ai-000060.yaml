@@ -1,0 +1,20 @@
+id: ai-000060
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Red teaming
+topic_type: Technique
+maturity: emerging
+true_statement: Ganguli et al. found RLHF-trained models got harder to red team as they grew, while plain language models showed a roughly flat trend with scale.
+false_statement: Ganguli et al. found plain language models got harder to red team as they grew, while RLHF-trained models showed a roughly flat trend with scale.
+explanation: Anthropic's 2022 study red-teamed models at 2.7B, 13B and 52B parameters across four training types. Only the RLHF models became more robust with size, suggesting scale helps safety mainly when combined with preference training.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/red-teaming.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: f873a085b918ce9541c37f4ca973293128f09de2
+concepts:
+- kt:red-teaming
+- kt:rlhf
+difficulty: 3
+created: '2026-11-17'
+status: active

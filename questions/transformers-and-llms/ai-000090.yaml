@@ -1,0 +1,21 @@
+id: ai-000090
+area: transformers-and-llms
+kind: mechanism
+topic: Emergent abilities
+topic_type: Concept
+maturity: emerging
+true_statement: Du et al. (2024) found that language models with the same pretraining loss performed similarly on tasks, whatever their parameter and data counts.
+false_statement: Du et al. (2024) found that language models with the same parameter count performed similarly on tasks, whatever their pretraining loss.
+explanation: This suggests loss, not size, is the better scale variable for predicting when a capability appears. Even with continuous metrics some tasks stayed near chance until loss fell below a threshold, so not all emergence is a metric artefact.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/emergent-abilities.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3e8d9e62ba9061d6d29fb38742307e2b35d16895
+concepts:
+- kt:emergent-abilities
+- kt:pretraining
+- kt:scaling-laws
+difficulty: 3
+created: '2026-11-17'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000100
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: GSM8K
+topic_type: Benchmark
+maturity: established
+true_statement: The paper that introduced GSM8K sampled many candidate solutions and returned the one a separately trained verifier scored highest.
+false_statement: The paper that introduced GSM8K sampled many candidate solutions and returned the final answer that appeared most often among them.
+explanation: Cobbe et al. trained a verifier to judge solutions, and found a 6B model plus verifier slightly beat a fine-tuned 175B model. Picking the most frequent answer is self-consistency, a later method that needs no trained scorer.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/gsm8k.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 21340602474aaa628182e43e7ec0882a08e31647
+concepts:
+- kt:gsm8k
+- kt:training-verifiers-to-solve-math-word-problems
+- kt:self-consistency
+difficulty: 2
+created: '2026-11-17'
+status: active

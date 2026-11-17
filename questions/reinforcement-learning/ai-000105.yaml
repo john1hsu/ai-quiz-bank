@@ -1,0 +1,20 @@
+id: ai-000105
+area: reinforcement-learning
+kind: evidence
+topic: Q-learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: In stochastic environments Q-learning tends to overestimate action values, because the maximum of noisy estimates is biased upward.
+false_statement: In stochastic environments Q-learning tends to underestimate action values, because the maximum of noisy estimates is biased downward.
+explanation: Taking the max picks whichever estimate happens to be high by chance, so errors don't cancel out. Van Hasselt's Double Q-learning fixes this by using one estimator to choose the action and another to value it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/q-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3da1293dd492d788361f769219ac4a6a58752f09
+concepts:
+- kt:q-learning
+- kt:double-q-learning
+difficulty: 3
+created: '2026-11-17'
+status: active

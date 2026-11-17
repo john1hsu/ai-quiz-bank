@@ -1,0 +1,21 @@
+id: ai-000102
+area: evaluation-and-benchmarks
+kind: evidence
+topic: GSM8K
+topic_type: Benchmark
+maturity: established
+true_statement: GSM-Symbolic (ICLR 2025) found models' accuracy fell when only the numbers in GSM8K-style problems changed, while changing only the names barely mattered.
+false_statement: GSM-Symbolic (ICLR 2025) found models' accuracy fell when only the names in GSM8K-style problems changed, while changing only the numbers barely mattered.
+explanation: A model that truly reasoned would be indifferent to which numbers appear. Sensitivity to numbers, and big drops when an irrelevant clause was added, led the Apple authors to suspect pattern matching on familiar problems.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/gsm8k.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 21340602474aaa628182e43e7ec0882a08e31647
+concepts:
+- kt:gsm8k
+- kt:benchmark-contamination
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-17'
+status: active

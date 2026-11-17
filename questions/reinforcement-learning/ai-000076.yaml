@@ -1,0 +1,21 @@
+id: ai-000076
+area: reinforcement-learning
+kind: definition
+topic: Actor-critic
+topic_type: Technique
+maturity: established
+true_statement: In actor-critic reinforcement learning the actor is the parameterised policy that picks actions, and the critic is a learned value function that scores them.
+false_statement: In actor-critic reinforcement learning the critic is the parameterised policy that picks actions, and the actor is a learned value function that scores them.
+explanation: The design sits between policy-only methods like REINFORCE and value-only methods like Q-learning. The critic's judgement replaces a noisy whole-episode return as the signal that tells the actor which actions to make more likely.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/actor-critic.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 17d08222e68da9674e082cc0adc4c452e1351f63
+concepts:
+- kt:actor-critic
+- kt:policy-gradient
+- kt:q-learning
+difficulty: 1
+created: '2026-11-17'
+status: active

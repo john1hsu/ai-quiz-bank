@@ -1,0 +1,21 @@
+id: ai-000145
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: Tensor Processing Unit
+topic_type: Hardware
+maturity: established
+true_statement: Google reported in 2017 that convolutional networks were only about 5% of the datacenter inference workload its first TPU was designed for.
+false_statement: Google reported in 2017 that convolutional networks were about 95% of the datacenter inference workload its first TPU was designed for.
+explanation: Multilayer perceptrons and LSTMs dominated the six production applications measured, which together were about 95% of demand. It is a reminder that the chip was driven by text and ranking models, not mainly image models.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tpu.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 683185cfa1277024df72d5f47b06b3fb72f1a8e2
+concepts:
+- kt:tpu
+- kt:in-datacenter-performance-analysis-of-a-tensor-processing-unit
+difficulty: 2
+created: '2026-11-17'
+status: active

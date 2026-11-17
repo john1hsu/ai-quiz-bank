@@ -1,0 +1,21 @@
+id: ai-000104
+area: reinforcement-learning
+kind: origin
+topic: Q-learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: Watkins and Dayan's 1992 note proved tabular Q-learning converges to the optimal action-values, provided every action is tried repeatedly in every state.
+false_statement: Watkins and Dayan's 1992 note proved tabular Q-learning converges to the optimal action-values, provided the agent always acts greedily on its current estimates.
+explanation: Convergence needs every state-action pair visited again and again, which pure greedy behaviour cannot guarantee; hence exploration such as ε-greedy. The proof also assumed values stored in a discrete table, which neural networks break.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/q-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3da1293dd492d788361f769219ac4a6a58752f09
+concepts:
+- kt:q-learning
+- kt:christopher-watkins
+- kt:markov-decision-process
+difficulty: 2
+created: '2026-11-17'
+status: active

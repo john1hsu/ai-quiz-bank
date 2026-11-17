@@ -1,0 +1,21 @@
+id: ai-000075
+area: prompting-and-reasoning
+kind: evidence
+topic: Self-consistency
+topic_type: Technique
+maturity: established
+true_statement: Brown et al. (2024) found majority voting stops improving after several hundred samples, even as the share of problems solved by at least one sample keeps rising.
+false_statement: Brown et al. (2024) found majority voting keeps improving past several hundred samples, rising in step with the share of problems solved by at least one sample.
+explanation: Sampling more keeps producing a correct answer somewhere, but without an automatic verifier the vote cannot single it out. The gap shows that answer selection, not generation, becomes the bottleneck at large budgets.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-consistency.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8b02e454e9df8080ec176e5bb4ed9562a864db8
+concepts:
+- kt:self-consistency
+- kt:large-language-monkeys
+- kt:test-time-compute
+difficulty: 3
+created: '2026-11-17'
+status: active

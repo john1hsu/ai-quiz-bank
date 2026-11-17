@@ -1,0 +1,20 @@
+id: ai-000056
+area: deep-learning
+kind: mechanism
+topic: Backpropagation algorithm
+topic_type: Algorithm
+maturity: foundational
+true_statement: In backpropagation, an addition node passes the upstream gradient unchanged to every input, while a max node routes all of it to the larger input.
+false_statement: In backpropagation, a max node passes the upstream gradient unchanged to every input, while an addition node routes all of it to the larger input.
+explanation: 'Each node multiplies the upstream gradient by its local derivative: addition has derivative 1 for each input, and max has 1 for the winner and 0 for the rest. That max rule is why ReLU blocks gradients wherever its input is non-positive.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/backpropagation.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d791fc2127dd248704137acc040d992531a52477
+concepts:
+- kt:backpropagation
+- kt:activation-function
+difficulty: 2
+created: '2026-11-17'
+status: active

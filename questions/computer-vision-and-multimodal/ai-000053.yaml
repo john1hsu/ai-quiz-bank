@@ -1,0 +1,21 @@
+id: ai-000053
+area: computer-vision-and-multimodal
+kind: evidence
+topic: Generative adversarial network
+topic_type: Architecture
+maturity: established
+true_statement: The Wasserstein GAN replaced the original GAN objective with an earth-mover distance, reporting more stable training and losses that track sample quality.
+false_statement: StyleGAN replaced the original GAN objective with an earth-mover distance, reporting more stable training and losses that track sample quality.
+explanation: WGAN (Arjovsky, Chintala and Bottou, 2017) changed the training objective to tackle instability and mode collapse. StyleGAN (Karras et al., 2019) instead redesigned the generator architecture, borrowing ideas from style transfer.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/generative-adversarial-network.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: b3a1f087760ed7cb1b618b7395b15ef19ea6d4f9
+concepts:
+- kt:generative-adversarial-network
+- kt:wasserstein-gan
+- kt:stylegan
+difficulty: 2
+created: '2026-11-17'
+status: active

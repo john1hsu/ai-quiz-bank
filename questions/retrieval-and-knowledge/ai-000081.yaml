@@ -1,0 +1,21 @@
+id: ai-000081
+area: retrieval-and-knowledge
+kind: evidence
+topic: BM25
+topic_type: Algorithm
+maturity: established
+true_statement: The BEIR benchmark (2021) found that dense retrievers, tested zero-shot on new domains, often underperformed the BM25 baseline.
+false_statement: The BEIR benchmark (2021) found that BM25, tested zero-shot on new domains, often underperformed the dense retriever baselines.
+explanation: Dense models learn their notion of similarity from training data, which may not transfer, while BM25 needs no training and just matches terms. That robustness is why BM25 survives as the keyword half of hybrid search in RAG systems.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/bm25.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 212679ae36df4da51e7fa54b3a103be906204674
+concepts:
+- kt:bm25
+- kt:beir
+- kt:semantic-search
+difficulty: 2
+created: '2026-11-17'
+status: active

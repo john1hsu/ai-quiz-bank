@@ -1,0 +1,21 @@
+id: ai-000109
+area: agents-and-tool-use
+kind: definition
+topic: Agent2Agent protocol
+topic_type: Tool
+maturity: emerging
+true_statement: The Model Context Protocol connects an agent to tools and data sources, while the Agent2Agent protocol lets independent agents discover each other and delegate work.
+false_statement: The Agent2Agent protocol connects an agent to tools and data sources, while the Model Context Protocol lets independent agents discover each other and delegate work.
+explanation: 'The A2A project calls MCP the vertical layer and A2A the horizontal one between peers. A typical design uses both: a client hands a task to a remote agent over A2A, and that agent reaches its tools over MCP.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent2agent-protocol.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d737c7fbab25644ed5e5c79633fc1b529166be46
+concepts:
+- kt:agent2agent-protocol
+- kt:model-context-protocol
+- kt:tool-use
+difficulty: 1
+created: '2026-11-17'
+status: active

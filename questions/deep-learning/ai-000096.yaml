@@ -1,0 +1,20 @@
+id: ai-000096
+area: deep-learning
+kind: evidence
+topic: Deep learning
+topic_type: Field
+maturity: established
+true_statement: Zhang et al. (ICLR 2017) showed standard image networks can perfectly fit randomly relabelled training data, with explicit regularisation making little difference.
+false_statement: Zhang et al. (ICLR 2017) showed standard image networks cannot fit randomly relabelled training data unless explicit regularisation is switched off.
+explanation: If the same network can memorise pure noise, its capacity alone cannot explain why it generalises on real labels. The result undercut textbook accounts of generalisation and left the question of why deep nets work partly open.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/deep-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 55428438dd2ffeb14e377377c617ea40e0ce8459
+concepts:
+- kt:deep-learning
+- kt:machine-learning
+difficulty: 3
+created: '2026-11-17'
+status: active

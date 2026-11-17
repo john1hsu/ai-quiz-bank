@@ -1,0 +1,22 @@
+id: ai-000146
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: CLIP
+topic_type: Model
+maturity: established
+true_statement: CLIP classifies an image zero-shot by writing each class name into a text prompt and picking the prompt whose embedding is most similar to the image's.
+false_statement: CLIP classifies an image zero-shot by running it through a classifier head trained on ImageNet's labelled images and mapping the output to class names.
+explanation: Contrastive training on 400 million web image-caption pairs puts images and text in one embedding space, so any list of labels written as text becomes a classifier. That is how CLIP matched a supervised ResNet-50 on ImageNet without its labelled training images.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/clip.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 10d2edab5192403d97cfb0fcc771945cdb2e8637
+concepts:
+- kt:clip
+- kt:zero-shot-learning
+- kt:contrastive-learning
+- kt:embeddings
+difficulty: 1
+created: '2026-11-17'
+status: active

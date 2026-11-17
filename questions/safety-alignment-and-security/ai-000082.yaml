@@ -1,0 +1,20 @@
+id: ai-000082
+area: safety-alignment-and-security
+kind: definition
+topic: Mechanistic interpretability
+topic_type: Field
+maturity: emerging
+true_statement: Superposition is the hypothesis that a network represents more features than it has neurons, encoding each feature as a direction spread across many neurons.
+false_statement: Superposition is the hypothesis that a network represents fewer features than it has neurons, giving each feature its own group of dedicated neurons.
+explanation: It is the leading explanation for polysemantic neurons that fire on unrelated inputs. If features are directions rather than single neurons, you need a tool like dictionary learning to pull them apart before circuits can be read.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/mechanistic-interpretability.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 1a0f43db633e0f0cdd586a9430ae817c8c9732e1
+concepts:
+- kt:mechanistic-interpretability
+- kt:sparse-autoencoder
+difficulty: 2
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000077
+area: reinforcement-learning
+kind: mechanism
+topic: Actor-critic
+topic_type: Technique
+maturity: established
+true_statement: Advantage actor-critic uses the one-step TD error r + γV(s′) − V(s) as its advantage estimate, so the critic only has to learn a state-value function V.
+false_statement: Advantage actor-critic uses the one-step TD error r + γV(s′) − V(s) as its advantage estimate, so the critic has to learn both Q and V separately.
+explanation: The advantage Q(s, a) − V(s) says whether an action beat the state's average. Since r + γV(s′) is a sample of Q(s, a), one value network suffices, which keeps A2C simple and cuts variance compared with raw returns.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/actor-critic.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 17d08222e68da9674e082cc0adc4c452e1351f63
+concepts:
+- kt:actor-critic
+- kt:temporal-difference-learning
+difficulty: 2
+created: '2026-11-17'
+status: active

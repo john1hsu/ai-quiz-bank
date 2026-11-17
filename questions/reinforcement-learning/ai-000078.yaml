@@ -1,0 +1,20 @@
+id: ai-000078
+area: reinforcement-learning
+kind: application
+topic: Actor-critic
+topic_type: Technique
+maturity: established
+true_statement: Soft actor-critic is off-policy, reusing past transitions from a replay buffer, and its actor maximises expected reward plus the policy's entropy.
+false_statement: Soft actor-critic is on-policy, discarding past transitions after each update, and its actor maximises expected reward plus the policy's entropy.
+explanation: Reusing old experience is what makes SAC sample-efficient for continuous control, and the entropy bonus keeps the policy as random as success allows, aiding exploration and stability across seeds.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/actor-critic.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 17d08222e68da9674e082cc0adc4c452e1351f63
+concepts:
+- kt:actor-critic
+- kt:soft-actor-critic
+difficulty: 2
+created: '2026-11-17'
+status: active

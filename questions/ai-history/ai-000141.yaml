@@ -1,0 +1,20 @@
+id: ai-000141
+area: ai-history
+kind: evidence
+topic: Dartmouth workshop
+topic_type: Event
+maturity: historical
+true_statement: McCarthy later wrote that at Dartmouth participants mostly pursued their own research, arriving and leaving at different times, rather than collaborating on one agenda.
+false_statement: McCarthy later wrote that at Dartmouth the ten participants worked together on one agenda for the full two months, just as the proposal had planned.
+explanation: The foundation funded only about half the request, and only McCarthy, Minsky and Solomonoff stayed all eight weeks. The meeting's lasting effect was institutional, naming the field and linking its founders, more than any technical breakthrough.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/dartmouth-workshop.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 7cc22ddce25a68e76b5c97f119dbd512db6c19e6
+concepts:
+- kt:dartmouth-workshop
+- kt:john-mccarthy
+difficulty: 2
+created: '2026-11-17'
+status: active

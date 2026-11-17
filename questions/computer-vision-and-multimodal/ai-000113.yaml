@@ -1,0 +1,21 @@
+id: ai-000113
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Automatic speech recognition
+topic_type: Application
+maturity: established
+true_statement: RNN-Transducer adds a predictor network conditioned on previously emitted tokens, relaxing CTC's assumption that each frame's output is independent.
+false_statement: CTC adds a predictor network conditioned on previously emitted tokens, relaxing RNN-Transducer's assumption that each frame's output is independent.
+explanation: Because CTC treats frames independently given the audio, it learns no implicit language model and often needs an external one. RNN-T lets past output shape the next prediction while still running left to right, so it remains suitable for streaming.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/automatic-speech-recognition.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8f0c70b101af7a4a6876ecba79c835cee0a900fb
+concepts:
+- kt:automatic-speech-recognition
+- kt:recurrent-neural-network
+- kt:sequence-to-sequence-learning
+difficulty: 2
+created: '2026-11-17'
+status: active

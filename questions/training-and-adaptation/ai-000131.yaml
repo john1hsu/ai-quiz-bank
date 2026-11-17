@@ -1,0 +1,21 @@
+id: ai-000131
+area: training-and-adaptation
+kind: mechanism
+topic: QLoRA
+topic_type: Technique
+maturity: established
+true_statement: QLoRA's 4-bit NormalFloat format places its 16 levels at quantiles of a normal distribution, matching how pretrained weights are spread.
+false_statement: QLoRA's 4-bit NormalFloat format places its 16 levels evenly across the range [−1, 1], matching how pretrained weights are spread.
+explanation: Because pretrained weights are roughly normal, quantile-based levels give each level about the same number of weights, wasting fewer codes on rare extremes. The paper found NF4 beat 4-bit integer and 4-bit float formats.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/qlora.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 2a2b368df1741931e990b5d2fad69b9708868e5f
+concepts:
+- kt:qlora
+- kt:quantization
+- kt:qlora-efficient-finetuning-of-quantized-llms
+difficulty: 3
+created: '2026-11-17'
+status: active

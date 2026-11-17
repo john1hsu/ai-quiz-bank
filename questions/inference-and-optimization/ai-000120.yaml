@@ -1,0 +1,22 @@
+id: ai-000120
+area: inference-and-optimization
+kind: figure
+topic: Continuous batching and PagedAttention
+topic_type: Technique
+maturity: established
+true_statement: Kwon et al. (2023) found only 20.4%–38.2% of KV-cache memory held token states in earlier serving systems, versus about 96% with PagedAttention.
+false_statement: Kwon et al. (2023) found only 20.4%–38.2% of KV-cache memory held token states with PagedAttention, versus about 96% in earlier serving systems.
+explanation: Earlier systems reserved one contiguous region per request for its maximum length, wasting space that was reserved, unused or fragmented. Paging allocates small blocks on demand, so waste is limited to each sequence's last partly filled block.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/batching-and-paged-attention.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 8a955b37fe25265c25226ed11859579d03834314
+concepts:
+- kt:batching-and-paged-attention
+- kt:kv-cache
+- kt:efficient-memory-management-for-large-language-model-serving-with-pagedattention
+difficulty: 2
+created: '2026-11-17'
+status: active

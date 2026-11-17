@@ -1,0 +1,20 @@
+id: ai-000110
+area: agents-and-tool-use
+kind: mechanism
+topic: Agent2Agent protocol
+topic_type: Tool
+maturity: emerging
+true_statement: An A2A server advertises its identity, skills, endpoint and required authentication in an Agent Card, a JSON document clients can fetch from a well-known path.
+false_statement: An A2A server advertises its identity, skills, endpoint and required authentication in an Artifact, a JSON document clients can fetch from a well-known path.
+explanation: 'Agent Cards are how agents find and size each other up before any work starts. Artifacts are something else: the outputs a remote agent returns when a task is done.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent2agent-protocol.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: d737c7fbab25644ed5e5c79633fc1b529166be46
+concepts:
+- kt:agent2agent-protocol
+- kt:multi-agent-systems
+difficulty: 2
+created: '2026-11-17'
+status: active

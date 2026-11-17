@@ -1,0 +1,21 @@
+id: ai-000070
+area: inference-and-optimization
+kind: definition
+topic: Speculative decoding
+topic_type: Technique
+maturity: established
+true_statement: Speculative decoding cuts how many sequential target-model forward passes are needed, while quantization makes each forward pass cheaper.
+false_statement: Quantization cuts how many sequential target-model forward passes are needed, while speculative decoding makes each forward pass cheaper.
+explanation: The two attack latency from different sides, so they combine well. Speculative decoding lets one target pass verify several drafted tokens, and it is exact, whereas quantization shrinks weights so every pass reads and computes less.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/speculative-decoding.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8d554ef0ef83e74c0adaede1d2eb7d523d869c1
+concepts:
+- kt:speculative-decoding
+- kt:quantization
+- kt:llm-inference-optimization
+difficulty: 2
+created: '2026-11-17'
+status: active

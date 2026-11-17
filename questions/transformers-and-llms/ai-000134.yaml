@@ -1,0 +1,21 @@
+id: ai-000134
+area: transformers-and-llms
+kind: figure
+topic: Scaling laws
+topic_type: Concept
+maturity: established
+true_statement: In 2022 DeepMind's 70-billion-parameter Chinchilla, given the same compute as the 280-billion-parameter Gopher, beat it by training on four times more data.
+false_statement: In 2022 DeepMind's 280-billion-parameter Chinchilla, given the same compute as the 70-billion-parameter Gopher, beat it by training on four times more data.
+explanation: Chinchilla was the smaller model, trained at roughly 20 tokens per parameter. Its win over Gopher, GPT-3 and Megatron-Turing NLG showed that many large models of the time were undertrained for their size.
+as_of: '2022'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/scaling-laws.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a311a8ffb5b23fd235a6dd5804ff4c726c329815
+concepts:
+- kt:scaling-laws
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-17'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000080
+area: retrieval-and-knowledge
+kind: origin
+topic: BM25
+topic_type: Algorithm
+maturity: established
+true_statement: The Okapi team's TREC-3 paper presented BM25 as unifying BM11 and BM15 through parameter b, with b = 1 giving BM11 and b = 0 giving BM15.
+false_statement: The Okapi team's TREC-3 paper presented BM25 as unifying BM11 and BM15 through parameter b, with b = 0 giving BM11 and b = 1 giving BM15.
+explanation: BM25 was built at City University London for the Okapi system. BM11 fully normalised for document length and BM15 ignored it; making b tunable let one function cover the whole range in between.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/bm25.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 212679ae36df4da51e7fa54b3a103be906204674
+concepts:
+- kt:bm25
+- kt:probabilistic-relevance-framework
+difficulty: 3
+created: '2026-11-17'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000099
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: Hugging Face Transformers
+topic_type: Tool
+maturity: established
+true_statement: Hugging Face reported in 2025 that Transformers supported over 400 model architectures, up from about 40 five years earlier.
+false_statement: Hugging Face reported in 2025 that Transformers supported over 4,000 model architectures, up from about 40 five years earlier.
+explanation: The tenfold growth came alongside compatible Hub checkpoints rising from about 1,000 to over 750,000. Architectures are model designs, so even a few hundred covers most of open-source AI; checkpoints are the trained weights built on them.
+as_of: '2025'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/hugging-face-transformers.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 04256cea3641b9d5dff5cb5aba6f6f242cdfc043
+concepts:
+- kt:hugging-face-transformers
+- kt:hugging-face
+difficulty: 2
+created: '2026-11-17'
+status: active

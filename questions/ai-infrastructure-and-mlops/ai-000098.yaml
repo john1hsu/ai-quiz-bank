@@ -1,0 +1,20 @@
+id: ai-000098
+area: ai-infrastructure-and-mlops
+kind: application
+topic: Hugging Face Transformers
+topic_type: Tool
+maturity: established
+true_statement: Transformers version 5, announced by Hugging Face in December 2025, made PyTorch its sole backend and sunset TensorFlow and Flax support.
+false_statement: Transformers version 5, announced by Hugging Face in December 2025, made TensorFlow its sole backend and sunset PyTorch and Flax support.
+explanation: The 2020 library let models move between PyTorch and TensorFlow, but v5 consolidated on PyTorch to keep one canonical model definition. It is a breaking change for older TensorFlow code that depended on the library.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/hugging-face-transformers.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 04256cea3641b9d5dff5cb5aba6f6f242cdfc043
+concepts:
+- kt:hugging-face-transformers
+- kt:pytorch
+difficulty: 2
+created: '2026-11-17'
+status: active

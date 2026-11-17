@@ -1,0 +1,20 @@
+id: ai-000050
+area: ai-history
+kind: evidence
+topic: Turing test
+topic_type: Concept
+maturity: foundational
+true_statement: Stevan Harnad's Total Turing Test adds robotic capacities, answering the critique that a text-only test ignores perception and action.
+false_statement: Ned Block's Total Turing Test adds robotic capacities, answering the critique that a text-only test ignores perception and action.
+explanation: 'Harnad argued conversation alone is too narrow a window on intelligence, so the machine should also see and act. Block''s contribution was different: ''Blockhead'', a giant lookup table that could pass without any intelligence.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/turing-test.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 229482d5ccf4322cbb17ef898392b3c6282fe542
+concepts:
+- kt:turing-test
+- kt:ai-evaluation
+difficulty: 3
+created: '2026-11-17'
+status: active

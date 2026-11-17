@@ -1,0 +1,20 @@
+id: ai-000069
+area: governance-and-policy
+kind: application
+topic: AI safety institutes
+topic_type: Organization
+maturity: emerging
+true_statement: In December 2025 the International Network of AI Safety Institutes renamed itself around advanced AI measurement, evaluation and science, with the UK as coordinator.
+false_statement: In December 2025 the International Network of AI Safety Institutes renamed itself around advanced AI measurement, evaluation and science, with the US as coordinator.
+explanation: The ten-member network launched in November 2024 and, at a meeting alongside NeurIPS in San Diego, refocused on shared methods for measuring capabilities. The new name mirrors the wider 2025 shift away from 'safety' branding.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-safety-institutes.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: cb2df54a9654b2963a489542dbed8de64dcf3cc1
+concepts:
+- kt:ai-safety-institutes
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-17'
+status: active

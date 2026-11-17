@@ -1,0 +1,21 @@
+id: ai-000138
+area: agents-and-tool-use
+kind: application
+topic: LangGraph
+topic_type: Tool
+maturity: emerging
+true_statement: When a LangGraph run resumes after interrupt(), the node restarts from its beginning, so code before the interrupt must be idempotent.
+false_statement: When a LangGraph run resumes after interrupt(), the node continues from the line after it, so code before the interrupt runs only once.
+explanation: Interrupts pause a run for human approval or edits, relying on the checkpointer to save state. Because the node is re-run on resume, side effects placed before the interrupt, like charging a card, could happen twice.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/langgraph.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: aff7e9d32a4723a4b39827ee5266451fe4f2da58
+concepts:
+- kt:langgraph
+- kt:agent-memory
+- kt:ai-agent
+difficulty: 3
+created: '2026-11-17'
+status: active

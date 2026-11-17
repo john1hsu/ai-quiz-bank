@@ -1,0 +1,21 @@
+id: ai-000094
+area: deep-learning
+kind: definition
+topic: Deep learning
+topic_type: Field
+maturity: established
+true_statement: The defining move of deep learning, as LeCun, Bengio and Hinton put it in 2015, is that layered representations are learned from data rather than designed by hand.
+false_statement: The defining move of deep learning, as LeCun, Bengio and Hinton put it in 2015, is that layered representations are designed by hand and only the final classifier is learned.
+explanation: Earlier pipelines relied on hand-engineered features feeding a trainable classifier. Deep learning trains every layer jointly with backpropagation, so each one learns a slightly more abstract representation of the layer below.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/deep-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 55428438dd2ffeb14e377377c617ea40e0ce8459
+concepts:
+- kt:deep-learning
+- kt:representation-learning
+- kt:backpropagation
+difficulty: 1
+created: '2026-11-17'
+status: active

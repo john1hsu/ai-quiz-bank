@@ -1,0 +1,21 @@
+id: ai-000140
+area: ai-history
+kind: definition
+topic: Dartmouth workshop
+topic_type: Event
+maturity: historical
+true_statement: The Dartmouth proposal conjectured that every aspect of learning or intelligence could in principle be described precisely enough for a machine to simulate it.
+false_statement: The Dartmouth proposal conjectured that intelligence could be simulated only by building machines that copy the brain's neurons one by one.
+explanation: The premise was that intelligence is a matter of precise description, not of a particular substrate. Its seven topics spanned both neuron nets and symbolic approaches like language use and abstraction, a split that ran through AI's later history.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/dartmouth-workshop.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 7cc22ddce25a68e76b5c97f119dbd512db6c19e6
+concepts:
+- kt:dartmouth-workshop
+- kt:artificial-intelligence
+- kt:symbolic-ai
+difficulty: 2
+created: '2026-11-17'
+status: active

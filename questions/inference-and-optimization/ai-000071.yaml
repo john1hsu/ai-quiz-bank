@@ -1,0 +1,20 @@
+id: ai-000071
+area: inference-and-optimization
+kind: mechanism
+topic: Speculative decoding
+topic_type: Technique
+maturity: established
+true_statement: In speculative decoding a drafted token is always kept if the draft model gave it no more probability than the target, and otherwise rejected with probability 1 − p(x)/q(x).
+false_statement: In speculative decoding a drafted token is always kept if the draft model gave it no less probability than the target, and otherwise rejected with probability 1 − q(x)/p(x).
+explanation: Tokens the draft over-proposes are thinned out, and after a rejection a replacement is drawn from the leftover distribution max(0, p − q). Leviathan et al. prove this yields exactly the samples the target model alone would produce.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/speculative-decoding.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: a8d554ef0ef83e74c0adaede1d2eb7d523d869c1
+concepts:
+- kt:speculative-decoding
+- kt:fast-inference-from-transformers-via-speculative-decoding
+difficulty: 3
+created: '2026-11-17'
+status: active

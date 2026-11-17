@@ -1,0 +1,20 @@
+id: ai-000116
+area: governance-and-policy
+kind: evidence
+topic: Algorithmic bias and fairness
+topic_type: Risk
+maturity: established
+true_statement: Kleinberg and colleagues proved that calibration within groups and balance for both outcome classes can all hold only with perfect prediction or equal base rates.
+false_statement: Kleinberg and colleagues proved that calibration within groups and balance for both outcome classes can all hold whenever every group is well represented in the training data.
+explanation: When groups differ in base rates, any imperfect predictor must trade one criterion against another. Choosing a fairness metric is therefore a value judgement about which errors matter, not something more data can settle.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/algorithmic-bias-and-fairness.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 66247ae2587f600355efe8017085f93b760b2287
+concepts:
+- kt:algorithmic-bias-and-fairness
+- kt:ai-ethics
+difficulty: 3
+created: '2026-11-17'
+status: active

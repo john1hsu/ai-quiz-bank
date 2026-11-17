@@ -1,0 +1,21 @@
+id: ai-000144
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Tensor Processing Unit
+topic_type: Hardware
+maturity: established
+true_statement: In a TPU's systolic array operands pass from neighbour to neighbour each cycle, so each value fetched from memory is reused across many multiplications.
+false_statement: In a TPU's systolic array every unit reads its operands straight from memory each cycle, so each value fetched from memory feeds just one multiplication.
+explanation: Memory traffic, not arithmetic, is what costs time and energy in matrix multiplication. Streaming data through a grid of multiply-accumulate units cuts reads and writes, which is the core bet behind the TPU design.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tpu.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 683185cfa1277024df72d5f47b06b3fb72f1a8e2
+concepts:
+- kt:tpu
+- kt:systolic-array
+- kt:ai-accelerator
+difficulty: 2
+created: '2026-11-17'
+status: active

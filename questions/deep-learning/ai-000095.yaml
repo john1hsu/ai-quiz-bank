@@ -1,0 +1,20 @@
+id: ai-000095
+area: deep-learning
+kind: origin
+topic: Deep learning
+topic_type: Field
+maturity: established
+true_statement: In 2006 Hinton, Osindero and Teh trained a deep belief network greedily one layer at a time, then fine-tuned the whole network.
+false_statement: In 2006 Hinton, Osindero and Teh trained a deep belief network on all layers at once, then fine-tuned it greedily one layer at a time.
+explanation: Each added layer improved a bound on the model's log probability, which made deep nets trainable when they were widely seen as outmoded. Their network reached 1.25% error on permutation-invariant MNIST and helped revive the field.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/deep-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 55428438dd2ffeb14e377377c617ea40e0ce8459
+concepts:
+- kt:deep-learning
+- kt:deep-belief-network
+difficulty: 2
+created: '2026-11-17'
+status: active

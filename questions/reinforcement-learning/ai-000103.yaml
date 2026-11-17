@@ -1,0 +1,21 @@
+id: ai-000103
+area: reinforcement-learning
+kind: definition
+topic: Q-learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: Q-learning is off-policy because its update target uses the greedy max over next actions, while SARSA uses the next action its ε-greedy policy actually takes.
+false_statement: SARSA is off-policy because its update target uses the greedy max over next actions, while Q-learning uses the next action its ε-greedy policy actually takes.
+explanation: In Q-learning the agent explores with one policy (ε-greedy) but learns the value of another (greedy), so it learns optimal values even while acting randomly. SARSA learns the value of the exploring policy it is actually following.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/q-learning.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 3da1293dd492d788361f769219ac4a6a58752f09
+concepts:
+- kt:q-learning
+- kt:sarsa
+- kt:exploration-exploitation
+difficulty: 2
+created: '2026-11-17'
+status: active

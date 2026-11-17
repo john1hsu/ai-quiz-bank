@@ -1,0 +1,22 @@
+id: ai-000051
+area: ai-history
+kind: figure
+topic: Turing test
+topic_type: Concept
+maturity: foundational
+true_statement: In Jones and Bergen's 2025 three-party Turing test, GPT-4.5 with a humanlike persona prompt was picked as the human 73 percent of the time.
+false_statement: In Jones and Bergen's 2025 three-party Turing test, GPT-4.5 with a humanlike persona prompt was picked as the human 56 percent of the time.
+explanation: 73 percent meant it was chosen more often than the real humans; 56 percent was LLaMa-3.1-405B with the same prompt. The authors stress the result hinged on the persona prompt and measures humanlikeness, not intelligence.
+as_of: '2025'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/turing-test.md
+  commit: 89f3cd36d79ebc637c36c6d65c7a533e475d8a79
+  blob: 229482d5ccf4322cbb17ef898392b3c6282fe542
+concepts:
+- kt:turing-test
+- kt:large-language-model
+- kt:eliza
+difficulty: 2
+created: '2026-11-17'
+status: active
