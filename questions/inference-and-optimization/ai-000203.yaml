@@ -1,0 +1,21 @@
+id: ai-000203
+area: inference-and-optimization
+kind: evidence
+topic: AWQ
+topic_type: Algorithm
+maturity: established
+true_statement: AWQ quantises weights only, so activations and the KV cache stay in higher precision and its speed gains are largest in memory-bound decoding.
+false_statement: AWQ quantises activations only, so weights and the KV cache stay in higher precision and its speed gains are largest in compute-bound prefill.
+explanation: Token-by-token decoding is limited by how fast weights stream from memory, so 4-bit weights help most there. Prefill is compute-bound, and real speed also depends on kernel quality; vLLM once rated its AWQ support slower than unquantised serving.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/awq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 517f6b0b7ec8059afe3a555a0737b99b63e75f19
+concepts:
+- kt:awq
+- kt:model-serving
+- kt:vllm
+difficulty: 3
+created: '2026-11-18'
+status: active

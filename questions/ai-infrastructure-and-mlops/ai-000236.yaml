@@ -1,0 +1,21 @@
+id: ai-000236
+area: ai-infrastructure-and-mlops
+kind: application
+topic: NVIDIA
+topic_type: Organization
+maturity: established
+true_statement: CUDA's large developer base and software ecosystem give NVIDIA hardware a lock-in effect that rival accelerators such as Google's TPUs must overcome.
+false_statement: The TPU's large developer base and software ecosystem give Google hardware a lock-in effect that rival accelerators such as NVIDIA's GPUs must overcome.
+explanation: Most deep-learning code and libraries are built on CUDA, which NVIDIA introduced to open its GPUs to general-purpose programming. Switching accelerators means porting that software, so the platform, not just the chip, is NVIDIA's advantage.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/nvidia.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f6084c4d84a6a28e9a5955abddbad7f1730c5a16
+concepts:
+- kt:nvidia
+- kt:cuda
+- kt:tpu
+difficulty: 1
+created: '2026-11-18'
+status: active

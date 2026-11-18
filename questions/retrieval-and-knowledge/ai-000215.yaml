@@ -1,0 +1,21 @@
+id: ai-000215
+area: retrieval-and-knowledge
+kind: evidence
+topic: Approximate nearest neighbor search
+topic_type: Technique
+maturity: established
+true_statement: In 2018 ANN-Benchmarks results, graph indexes such as HNSW generally gave the best recall-speed trade-offs at high recall, though some took hours to build.
+false_statement: In 2018 ANN-Benchmarks results, locality-sensitive hashing generally gave the best recall-speed trade-offs at high recall, though some indexes took hours to build.
+explanation: ANN methods trade accuracy, speed, memory and build time. Graph indexes excel at fast high-recall queries but cost memory and build time, while compressed inverted-file indexes like Faiss's built in seconds with a small footprint, which is why they suit very large collections.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/approximate-nearest-neighbor-search.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 973797a910b2f4f8f2e9252d74e55e5330bd8d9c
+concepts:
+- kt:approximate-nearest-neighbor-search
+- kt:ann-benchmarks
+- kt:faiss
+difficulty: 3
+created: '2026-11-18'
+status: active

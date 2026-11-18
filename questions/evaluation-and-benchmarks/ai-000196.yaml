@@ -1,0 +1,20 @@
+id: ai-000196
+area: evaluation-and-benchmarks
+kind: evidence
+topic: TruthfulQA
+topic_type: Benchmark
+maturity: established
+true_statement: 'TruthfulQA''s original study found inverse scaling: within model families such as GPT-3 and GPT-Neo/J, larger models were generally less truthful.'
+false_statement: 'TruthfulQA''s original study found smooth positive scaling: within model families such as GPT-3 and GPT-Neo/J, larger models were generally more truthful.'
+explanation: Bigger models imitate their training text more faithfully, misconceptions included. The authors argued that scaling alone would not fix truthfulness and that objectives beyond imitating web text were needed, a well-known counterexample to the bigger-is-better trend.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/truthfulqa.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5b708a4643dba277be1ef2f44060b78e92f45343
+concepts:
+- kt:truthfulqa
+- kt:scaling-laws
+difficulty: 2
+created: '2026-11-18'
+status: active

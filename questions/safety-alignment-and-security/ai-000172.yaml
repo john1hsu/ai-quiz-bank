@@ -1,0 +1,20 @@
+id: ai-000172
+area: safety-alignment-and-security
+kind: mechanism
+topic: Scalable oversight
+topic_type: Concept
+maturity: emerging
+true_statement: Irving and colleagues argued that debate with optimal play could let polynomial-time judges answer any PSPACE question, whereas direct judging reaches only NP.
+false_statement: Irving and colleagues argued that debate with optimal play could let polynomial-time judges answer any NP question, whereas direct judging reaches all of PSPACE.
+explanation: By analogy with complexity theory, two adversarial agents can expose each other's flaws, letting a weak judge evaluate far more than it could check alone. That is the core hope of debate as a scalable-oversight method, though its practical value remains an empirical question.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/scalable-oversight.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 76d279a8ef247c26ddbf998de72f1d5764176127
+concepts:
+- kt:scalable-oversight
+- kt:ai-safety-via-debate
+difficulty: 3
+created: '2026-11-18'
+status: active

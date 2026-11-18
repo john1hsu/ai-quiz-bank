@@ -1,0 +1,21 @@
+id: ai-000205
+area: ml-foundations
+kind: definition
+topic: Conditional random field
+topic_type: Concept
+maturity: established
+true_statement: Because a CRF models the conditional probability of labels given the inputs, it can use rich, overlapping input features without modelling how the inputs were generated.
+false_statement: Because a CRF models the joint probability of labels and inputs, it can use rich, overlapping input features without modelling how the inputs were generated.
+explanation: A generative model such as an HMM must describe the observations themselves, which forces independence assumptions on features. A discriminative CRF only scores labelings of a given input, so features can look anywhere in the sentence and overlap freely; it is in effect sequence-wide logistic regression.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/conditional-random-field.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 388786b29055da6f99f9e54de25a2b811438637d
+concepts:
+- kt:conditional-random-field
+- kt:hidden-markov-model
+- kt:logistic-regression
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000147
+area: deep-learning
+kind: mechanism
+topic: Dropout
+topic_type: Technique
+maturity: established
+true_statement: With inverted dropout, surviving activations are scaled up by 1/(1 − p) during training, so the network needs no rescaling at inference.
+false_statement: With inverted dropout, surviving activations are left unscaled during training, so every weight must be multiplied by 1 − p at inference.
+explanation: 'Inverted dropout moves the correction into training: dividing the survivors by the keep fraction keeps each activation''s expected value unchanged. That is why frameworks like PyTorch simply make dropout the identity in evaluation mode, whereas the original formulation scaled the weights at test time instead.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/dropout.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 39923a78ed2369f719d629fe2c9a85a4905848aa
+concepts:
+- kt:dropout
+- kt:pytorch
+difficulty: 2
+created: '2026-11-18'
+status: active

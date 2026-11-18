@@ -1,0 +1,21 @@
+id: ai-000195
+area: evaluation-and-benchmarks
+kind: definition
+topic: TruthfulQA
+topic_type: Benchmark
+maturity: established
+true_statement: 'TruthfulQA targets imitative falsehoods: wrong answers a model rates as likely precisely because they appear often in the human-written text it learned from.'
+false_statement: 'TruthfulQA targets random hallucinations: wrong answers a model invents precisely because they never appear in the human-written text it learned from.'
+explanation: Its 817 questions are built around common misconceptions and myths, so a model that simply imitates web text reproduces the popular wrong answer. That makes better next-token prediction a liability on this benchmark rather than a help.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/truthfulqa.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5b708a4643dba277be1ef2f44060b78e92f45343
+concepts:
+- kt:truthfulqa
+- kt:hallucination
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-18'
+status: active

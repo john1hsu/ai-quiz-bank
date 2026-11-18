@@ -1,0 +1,21 @@
+id: ai-000168
+area: retrieval-and-knowledge
+kind: origin
+topic: TF-IDF
+topic_type: Technique
+maturity: foundational
+true_statement: Inverse document frequency came from Karen Spärck Jones's 1972 paper, while combining it with term frequency emerged largely from Gerard Salton's SMART group at Cornell.
+false_statement: Inverse document frequency came from Gerard Salton's 1972 paper, while combining it with term frequency emerged largely from Karen Spärck Jones's group at Cambridge.
+explanation: Spärck Jones argued that a term attached to many documents discriminates poorly, so it should weigh less. Salton and Buckley's later experiments recommended multiplying that idf by within-document term frequency, giving the tf-idf weighting search engines used for decades.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/tf-idf.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 0d00a8dfa84955e37d28e69d756e4ff16f753201
+concepts:
+- kt:tf-idf
+- kt:karen-sparck-jones
+- kt:vector-space-model
+difficulty: 1
+created: '2026-11-18'
+status: active

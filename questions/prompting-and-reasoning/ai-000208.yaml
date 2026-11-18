@@ -1,0 +1,21 @@
+id: ai-000208
+area: prompting-and-reasoning
+kind: origin
+topic: Scratchpad
+topic_type: Technique
+maturity: established
+true_statement: Scratchpads were introduced by Nye, Odena and colleagues at Google in the 2021 paper Show Your Work, before chain-of-thought prompting was published.
+false_statement: Scratchpads were introduced by Wei and colleagues at Google in the 2023 paper Show Your Work, after chain-of-thought prompting was published.
+explanation: Nye et al. trained or prompted models to emit intermediate computation inside scratch tags. Chain-of-thought prompting lists that work among its predecessors and showed that a few natural-language exemplars could elicit similar steps from large models without fine-tuning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/scratchpad.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: bb2f583aae05ec96792eacd29c814a150b5b9402
+concepts:
+- kt:scratchpad
+- kt:show-your-work-scratchpads-for-intermediate-computation-with-language-models
+- kt:chain-of-thought
+difficulty: 1
+created: '2026-11-18'
+status: active

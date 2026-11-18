@@ -1,0 +1,22 @@
+id: ai-000188
+area: ai-history
+kind: figure
+topic: Geoffrey Hinton
+topic_type: Person
+maturity: historical
+true_statement: In 2012 Hinton, Krizhevsky and Sutskever trained AlexNet, a 60-million-parameter, eight-layer convolutional network, on GPUs for ImageNet classification.
+false_statement: In 2012 Hinton, Krizhevsky and Sutskever trained AlexNet, a 600-million-parameter, eighty-layer convolutional network, on GPUs for ImageNet classification.
+explanation: By later standards AlexNet was small and shallow, yet training it on GPUs let it cut ImageNet top-5 error to 18.9% and beat the next program by a wide margin. That result helped convince the field that deep networks trained on large data were the way forward.
+as_of: '2012'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/geoffrey-hinton.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 621c97b6346a86b0e0b9b6e54139614171e97533
+concepts:
+- kt:geoffrey-hinton
+- kt:imagenet-and-alexnet
+- kt:deep-learning
+difficulty: 2
+created: '2026-11-18'
+status: active

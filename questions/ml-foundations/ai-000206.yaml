@@ -1,0 +1,22 @@
+id: ai-000206
+area: ml-foundations
+kind: figure
+topic: Conditional random field
+topic_type: Concept
+maturity: established
+true_statement: In 2016 Lample et al.'s LSTM-CRF scored 90.94 F1 on CoNLL-2003 English named-entity recognition, with the CRF layer adding about 1.8 F1 over the LSTM alone.
+false_statement: In 2016 Lample et al.'s LSTM-CRF scored 90.94 F1 on CoNLL-2003 English named-entity recognition, with the CRF layer costing about 1.8 F1 against the LSTM alone.
+explanation: The bidirectional LSTM scores each token's tags, and the CRF layer adds learned tag-to-tag transitions, so it can rule out sequences like I-PER right after B-LOC. That is why CRFs survived the neural era as output layers rather than standalone models.
+as_of: '2016'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/conditional-random-field.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 388786b29055da6f99f9e54de25a2b811438637d
+concepts:
+- kt:conditional-random-field
+- kt:named-entity-recognition
+- kt:recurrent-neural-network
+difficulty: 2
+created: '2026-11-18'
+status: active

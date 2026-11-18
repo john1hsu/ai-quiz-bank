@@ -1,0 +1,20 @@
+id: ai-000161
+area: ml-foundations
+kind: origin
+topic: Hidden Markov model
+topic_type: Concept
+maturity: established
+true_statement: HMMs were applied to speech recognition in the 1970s by Baker at Carnegie Mellon and Jelinek's group at IBM, building on mathematics by Baum and colleagues.
+false_statement: HMMs were applied to speech recognition in the 1970s by Rabiner's group at Bell Labs and Lafferty at Carnegie Mellon, building on mathematics by Baum and colleagues.
+explanation: Baum and Petrie's 1966 work supplied the theory, and Baker and Jelinek brought it to speech. Rabiner's 1989 tutorial later popularised the method, noting that adoption lagged because the theory sat in mathematics journals engineers rarely read.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/hidden-markov-model.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 3fb10f0da164e0004e4d9d75ddbcdd79aacf28bc
+concepts:
+- kt:hidden-markov-model
+- kt:automatic-speech-recognition
+difficulty: 2
+created: '2026-11-18'
+status: active

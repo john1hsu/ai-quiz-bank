@@ -1,0 +1,22 @@
+id: ai-000234
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: NVIDIA
+topic_type: Organization
+maturity: established
+true_statement: In 2009 Raina, Madhavan and Ng reported training deep belief networks on an NVIDIA GeForce GTX 280 up to about 70 times faster than on a dual-core CPU.
+false_statement: In 2009 Raina, Madhavan and Ng reported training deep belief networks on an NVIDIA GeForce GTX 280 only about 2 times faster than on a dual-core CPU.
+explanation: The speedup cut training of a roughly 100-million-parameter network from weeks to about a day. Results like this showed graphics hardware's parallel arithmetic suited neural networks, and the authors argued it made much larger models practical.
+as_of: '2009'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/nvidia.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f6084c4d84a6a28e9a5955abddbad7f1730c5a16
+concepts:
+- kt:nvidia
+- kt:gpu-computing
+- kt:deep-learning
+difficulty: 2
+created: '2026-11-18'
+status: active

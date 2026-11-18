@@ -1,0 +1,22 @@
+id: ai-000175
+area: training-and-adaptation
+kind: figure
+topic: 'STaR: Self-Taught Reasoner'
+topic_type: Technique
+maturity: established
+true_statement: In 2022, STaR raised 6-billion-parameter GPT-J to 72.5% on CommonsenseQA, close to a fine-tuned GPT-3 about 30 times larger at 73.0%.
+false_statement: In 2022, STaR raised 6-billion-parameter GPT-J to 52.5% on CommonsenseQA, well behind a fine-tuned GPT-3 about 30 times larger at 73.0%.
+explanation: Few-shot chain-of-thought GPT-J scored only 36.6% and direct answer fine-tuning 60.0%, so training on its own filtered rationales gave a large jump. Gains on GSM8K math were much smaller in absolute terms, a reminder that the method's payoff varies by task.
+as_of: '2022'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/star-self-taught-reasoner.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 8a7e329640de48b66f5ad5457815225e3e239407
+concepts:
+- kt:star-self-taught-reasoner
+- kt:commonsenseqa
+- kt:star-bootstrapping-reasoning-with-reasoning
+difficulty: 2
+created: '2026-11-18'
+status: active

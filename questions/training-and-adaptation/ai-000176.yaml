@@ -1,0 +1,20 @@
+id: ai-000176
+area: training-and-adaptation
+kind: evidence
+topic: 'STaR: Self-Taught Reasoner'
+topic_type: Technique
+maturity: established
+true_statement: STaR works poorly on tasks with high chance accuracy, such as yes/no questions, because many bad rationales reach the right answer by luck and pass the filter.
+false_statement: STaR works best on tasks with high chance accuracy, such as yes/no questions, because more rationales reach the right answer and pass the filter.
+explanation: STaR's only quality check is whether the final answer matches, so with a 50% guess rate flawed reasoning gets reinforced. The same weakness means a correct answer never guarantees a faithful rationale, and the loop cannot start at all if few-shot performance is near chance.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/star-self-taught-reasoner.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 8a7e329640de48b66f5ad5457815225e3e239407
+concepts:
+- kt:star-self-taught-reasoner
+- kt:fine-tuning
+difficulty: 3
+created: '2026-11-18'
+status: active

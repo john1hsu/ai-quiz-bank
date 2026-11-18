@@ -1,0 +1,20 @@
+id: ai-000157
+area: inference-and-optimization
+kind: definition
+topic: Sampling temperature and top-p
+topic_type: Technique
+maturity: established
+true_statement: Dividing the logits by a temperature below 1 sharpens the next-token distribution toward likely tokens, while a temperature above 1 flattens it.
+false_statement: Dividing the logits by a temperature above 1 sharpens the next-token distribution toward likely tokens, while a temperature below 1 flattens it.
+explanation: Smaller temperatures exaggerate the gaps between logits before the softmax, so the top tokens dominate; as temperature approaches 0, sampling becomes greedy decoding. Higher temperatures shrink the gaps, giving unlikely tokens more chance and more diversity at some cost to quality.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/sampling-temperature-and-top-p.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 686425bf44646529b5d78586c6cc475d9a390101
+concepts:
+- kt:sampling-temperature-and-top-p
+- kt:large-language-model
+difficulty: 1
+created: '2026-11-18'
+status: active

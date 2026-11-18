@@ -1,0 +1,21 @@
+id: ai-000228
+area: agents-and-tool-use
+kind: mechanism
+topic: Voyager (embodied LLM agent)
+topic_type: Model
+maturity: emerging
+true_statement: Voyager stores what it learns as verified JavaScript programs in a skill library indexed by embeddings of their descriptions, never updating GPT-4's weights.
+false_statement: Voyager stores what it learns by fine-tuning GPT-4's weights on each verified program, instead of keeping a skill library indexed by embeddings of descriptions.
+explanation: Voyager treats GPT-4 as a black box, so all learning lives outside the model. For a new task it retrieves the top matching skills and composes them, a form of agent memory that can even be loaded into a fresh agent.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/voyager.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f3f5a3d1615c6d5ce1d21408eaf9d1ba0f1ef5f5
+concepts:
+- kt:voyager
+- kt:agent-memory
+- kt:tool-use
+difficulty: 2
+created: '2026-11-18'
+status: active

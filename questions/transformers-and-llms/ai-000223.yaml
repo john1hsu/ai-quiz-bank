@@ -1,0 +1,20 @@
+id: ai-000223
+area: transformers-and-llms
+kind: mechanism
+topic: Context window
+topic_type: Concept
+maturity: established
+true_statement: Position Interpolation extends a RoPE model's context by rescaling position indices so a longer input fits inside the range seen in training, rather than extrapolating beyond it.
+false_statement: Position Interpolation extends a RoPE model's context by letting position indices run past the range seen in training, rather than rescaling them to fit inside it.
+explanation: Running past the trained length can produce huge attention scores that break self-attention, while interpolating keeps positions familiar. Chen et al. bounded interpolation's error far below extrapolation's and stretched LLaMA models to 32,768 tokens with at most 1,000 fine-tuning steps.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/context-window.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: ccbf57be42b96265baa341811d43dc601b9b9add
+concepts:
+- kt:context-window
+- kt:positional-encoding
+difficulty: 3
+created: '2026-11-18'
+status: active

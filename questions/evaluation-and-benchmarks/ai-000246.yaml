@@ -1,0 +1,20 @@
+id: ai-000246
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: CommonsenseQA
+topic_type: Benchmark
+maturity: established
+true_statement: Each CommonsenseQA question's hard distractors are other ConceptNet targets sharing the same source concept and relation as the correct answer.
+false_statement: Each CommonsenseQA question's hard distractors are random ConceptNet concepts unrelated to the source concept and relation of the correct answer.
+explanation: Because the wrong options relate to the question's concept in the same way as the right one, a shallow association cannot pick the answer. When the authors swapped in random distractors, BERT-large jumped above 92%, showing the difficulty came from those carefully chosen options.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/commonsenseqa.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: eb4a41f9a3764de8ffc49b7437e41fd8c77a942a
+concepts:
+- kt:commonsenseqa
+- kt:conceptnet
+difficulty: 2
+created: '2026-11-18'
+status: active

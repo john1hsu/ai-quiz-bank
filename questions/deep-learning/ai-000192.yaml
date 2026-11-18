@@ -1,0 +1,20 @@
+id: ai-000192
+area: deep-learning
+kind: mechanism
+topic: Adam optimizer
+topic_type: Algorithm
+maturity: established
+true_statement: Adam divides its moment estimates by 1 − β^t because both moving averages start at zero and are biased toward zero early in training.
+false_statement: Adam divides its moment estimates by 1 − β^t because both moving averages start at one and are biased toward large values early in training.
+explanation: With β close to 1, a zero-initialised average takes many steps to reflect the true gradient statistics. Bias correction inflates the early estimates to compensate, and its effect fades as t grows and β^t shrinks toward zero.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/adam-optimizer.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 7158b2415eaa456e1fc57ddcce946555b423f378
+concepts:
+- kt:adam-optimizer
+- kt:gradient-descent
+difficulty: 2
+created: '2026-11-18'
+status: active

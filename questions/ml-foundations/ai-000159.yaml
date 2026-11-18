@@ -1,0 +1,20 @@
+id: ai-000159
+area: ml-foundations
+kind: mechanism
+topic: Hidden Markov model
+topic_type: Concept
+maturity: established
+true_statement: The Viterbi algorithm has the same dynamic-programming structure as the forward algorithm but takes a maximum over previous states where the forward algorithm sums.
+false_statement: The forward algorithm has the same dynamic-programming structure as the Viterbi algorithm but takes a maximum over previous states where the Viterbi algorithm sums.
+explanation: Summing over all paths gives the likelihood of the observations (the forward algorithm), while keeping only the best predecessor plus a back-pointer recovers the single most likely hidden-state path (Viterbi). Both avoid the exponential cost of enumerating every path.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/hidden-markov-model.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 3fb10f0da164e0004e4d9d75ddbcdd79aacf28bc
+concepts:
+- kt:hidden-markov-model
+- kt:markov-chain
+difficulty: 2
+created: '2026-11-18'
+status: active

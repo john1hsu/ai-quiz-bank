@@ -1,0 +1,20 @@
+id: ai-000155
+area: governance-and-policy
+kind: evidence
+topic: OMB AI memoranda
+topic_type: Policy
+maturity: emerging
+true_statement: Every OMB AI memo excludes AI used as a component of a National Security System, leaving a large share of high-stakes government AI outside its rules.
+false_statement: Every OMB AI memo applies its strictest minimum practices to AI used as a component of a National Security System, the highest-stakes government AI.
+explanation: National security systems and, largely, the Intelligence Community sit outside the series. Critics also point to waivers granted by Chief AI Officers and the memos' dependence on executive orders, which let the rules change quickly with a new administration.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/omb-ai-memoranda.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 7f7eff29a6be698845ca10abdfcc92cdd8c08ad0
+concepts:
+- kt:omb-ai-memoranda
+- kt:ai-governance
+difficulty: 3
+created: '2026-11-18'
+status: active

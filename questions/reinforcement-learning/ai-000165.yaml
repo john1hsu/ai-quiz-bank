@@ -1,0 +1,20 @@
+id: ai-000165
+area: reinforcement-learning
+kind: origin
+topic: Reinforcement learning
+topic_type: Field
+maturity: foundational
+true_statement: Andrew Barto and his former PhD student Richard Sutton received the 2024 ACM A.M. Turing Award for founding the core ideas and algorithms of reinforcement learning.
+false_statement: Richard Sutton and his former PhD student David Silver received the 2024 ACM A.M. Turing Award for founding the core ideas and algorithms of reinforcement learning.
+explanation: Barto and Sutton began framing RL as a general problem in the early 1980s and wrote the standard 1998 textbook. ACM singled out temporal-difference learning as their most important contribution, alongside policy-gradient methods and agents that combine learning with planning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/reinforcement-learning.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: e0f66a461c315c22d615a4bcac4f3eaa45532371
+concepts:
+- kt:reinforcement-learning
+- kt:temporal-difference-learning
+difficulty: 1
+created: '2026-11-18'
+status: active

@@ -1,0 +1,22 @@
+id: ai-000193
+area: deep-learning
+kind: origin
+topic: Adam optimizer
+topic_type: Algorithm
+maturity: established
+true_statement: Kingma and Ba designed Adam to combine AdaGrad's strength with sparse gradients and RMSProp's strength with non-stationary objectives.
+false_statement: Kingma and Ba designed Adam to combine RMSProp's strength with sparse gradients and AdaGrad's strength with non-stationary objectives.
+explanation: AdaGrad's accumulated per-parameter scaling suits rare features, while RMSProp's decaying average adapts when the objective shifts. Adam adds momentum to an RMSProp-style per-coordinate rescaling, which is why it became the default optimiser for deep networks after its 2015 ICLR publication.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/adam-optimizer.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 7158b2415eaa456e1fc57ddcce946555b423f378
+concepts:
+- kt:adam-optimizer
+- kt:adagrad
+- kt:rmsprop
+- kt:diederik-kingma
+difficulty: 2
+created: '2026-11-18'
+status: active

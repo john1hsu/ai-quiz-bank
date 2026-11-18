@@ -1,0 +1,20 @@
+id: ai-000162
+area: prompting-and-reasoning
+kind: mechanism
+topic: Test-time compute
+topic_type: Concept
+maturity: emerging
+true_statement: The s1 recipe's budget forcing extends reasoning by appending "Wait" when the model tries to stop, a sequential way to spend more test-time compute.
+false_statement: The s1 recipe's budget forcing extends reasoning by sampling extra answers in parallel when the model tries to stop, a parallel way to spend more test-time compute.
+explanation: Budget forcing either cuts reasoning off or, by adding "Wait", nudges the model to re-check its own work in one longer chain. Parallel sampling with voting or a verifier is the other family of test-time methods, and s1 showed the sequential route can work with just 1,000 curated training traces.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/test-time-compute.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5108add249463ddec0d34de85e580d6e258e0c80
+concepts:
+- kt:test-time-compute
+- kt:reasoning-models
+difficulty: 2
+created: '2026-11-18'
+status: active

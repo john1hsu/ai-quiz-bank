@@ -1,0 +1,21 @@
+id: ai-000230
+area: agents-and-tool-use
+kind: definition
+topic: Voyager (embodied LLM agent)
+topic_type: Model
+maturity: emerging
+true_statement: Voyager's automatic curriculum has GPT-4 propose the agent's next task from its current state, aiming to discover as many diverse things as possible.
+false_statement: Voyager's automatic curriculum has human designers fix the agent's sequence of tasks in advance, aiming to reach diamond tools as fast as possible.
+explanation: The curriculum sees the inventory, surroundings and lists of completed and failed tasks, so it can pick goals at the edge of current ability. That is what makes the agent open-ended rather than following a scripted route, though it sometimes proposes items that do not exist in the game.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/voyager.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f3f5a3d1615c6d5ce1d21408eaf9d1ba0f1ef5f5
+concepts:
+- kt:voyager
+- kt:ai-agent
+- kt:planning-in-llms
+difficulty: 1
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000219
+area: training-and-adaptation
+kind: evidence
+topic: Synthetic data
+topic_type: Technique
+maturity: established
+true_statement: Shumailov et al. found generative models trained recursively on their predecessors' output first lose the tails of the original distribution, then collapse toward low variance.
+false_statement: Shumailov et al. found generative models trained recursively on their predecessors' output first lose the centre of the original distribution, then spread toward high variance.
+explanation: Rare events are under-sampled each generation, so errors compound and the data narrows until it barely resembles the original. In their experiments, keeping 10% of the original human data in each generation largely prevented this model collapse.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/synthetic-data.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 35974d0c4d3ad8a58ee227b5f2a78b7d08a87dae
+concepts:
+- kt:synthetic-data
+- kt:model-collapse
+difficulty: 3
+created: '2026-11-18'
+status: active

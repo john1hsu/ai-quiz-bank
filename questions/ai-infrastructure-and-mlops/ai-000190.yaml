@@ -1,0 +1,21 @@
+id: ai-000190
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Data parallelism
+topic_type: Technique
+maturity: established
+true_statement: PyTorch's DistributedDataParallel groups gradients into buckets and starts an all-reduce for each bucket as soon as it is ready, overlapping communication with the backward pass.
+false_statement: PyTorch's DistributedDataParallel waits for the whole backward pass to finish and then runs a single all-reduce over all gradients, so communication never overlaps computation.
+explanation: Gradients for the last layers are ready first, so their buckets can be summed across GPUs while earlier layers are still computing. Hiding communication behind computation is what lets DDP scale near-linearly, and it beats the older single-process DataParallel wrapper.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/data-parallelism.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: c31651782f549b95eb584b8fb747ce738e0aa21c
+concepts:
+- kt:data-parallelism
+- kt:pytorch
+- kt:all-reduce
+difficulty: 2
+created: '2026-11-18'
+status: active

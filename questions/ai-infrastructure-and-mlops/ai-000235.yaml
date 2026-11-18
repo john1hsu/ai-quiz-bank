@@ -1,0 +1,21 @@
+id: ai-000235
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: NVIDIA
+topic_type: Organization
+maturity: established
+true_statement: The Transformer Engine in NVIDIA's H100 switches network layers between FP8 and 16-bit precision to speed up transformer training and inference.
+false_statement: The Transformer Engine in NVIDIA's H100 switches network layers between 16-bit and 64-bit precision to speed up transformer training and inference.
+explanation: Lower precision means more arithmetic per second and less memory traffic, and FP8 is enough for many layers if precision is managed carefully. Going up to 64-bit would slow things down; it matters for scientific computing, not neural-network throughput.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/nvidia.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f6084c4d84a6a28e9a5955abddbad7f1730c5a16
+concepts:
+- kt:nvidia
+- kt:tensor-cores
+- kt:ai-hardware
+difficulty: 2
+created: '2026-11-18'
+status: active

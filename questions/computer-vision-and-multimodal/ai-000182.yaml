@@ -1,0 +1,23 @@
+id: ai-000182
+area: computer-vision-and-multimodal
+kind: figure
+topic: 'An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale'
+topic_type: Work
+maturity: foundational
+true_statement: The best Vision Transformer in the 2021 ICLR paper, ViT-H/14 pre-trained on JFT-300M, reached 88.55% top-1 accuracy on ImageNet.
+false_statement: The best Vision Transformer in the 2021 ICLR paper, ViT-H/14 pre-trained on JFT-300M, reached 77.63% top-1 accuracy on ImageNet.
+explanation: 77.63% was the same model's average on the 19-task VTAB transfer suite, not its ImageNet accuracy. The headline numbers came from huge-scale pre-training, and the authors also reported ViT using substantially less pre-training compute than the BiT-L convolutional baseline.
+as_of: '2021'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/an-image-is-worth-16x16-words.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: bf3ad543e39fddaee8ae25ddf0e642feb3424c4a
+concepts:
+- kt:an-image-is-worth-16x16-words
+- kt:vision-transformer
+- kt:vtab
+- kt:image-classification
+difficulty: 2
+created: '2026-11-18'
+status: active

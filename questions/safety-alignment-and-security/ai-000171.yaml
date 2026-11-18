@@ -1,0 +1,21 @@
+id: ai-000171
+area: safety-alignment-and-security
+kind: origin
+topic: Scalable oversight
+topic_type: Concept
+maturity: emerging
+true_statement: Scalable oversight entered the AI safety literature as one of five accident-risk problems listed in Concrete Problems in AI Safety (2016).
+false_statement: Scalable oversight entered the AI safety literature as one of five accident-risk problems listed in AI Safety via Debate (2018).
+explanation: Amodei and colleagues framed it as a true objective too costly to evaluate often, so training must lean on cheaper proxies. Debate, published two years later, is one proposed solution to the problem rather than where it was named.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/scalable-oversight.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 76d279a8ef247c26ddbf998de72f1d5764176127
+concepts:
+- kt:scalable-oversight
+- kt:concrete-problems-in-ai-safety
+- kt:ai-safety-via-debate
+difficulty: 1
+created: '2026-11-18'
+status: active

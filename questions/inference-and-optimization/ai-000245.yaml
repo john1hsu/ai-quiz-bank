@@ -1,0 +1,22 @@
+id: ai-000245
+area: inference-and-optimization
+kind: figure
+topic: GPTQ
+topic_type: Algorithm
+maturity: established
+true_statement: In 2022 GPTQ quantized the 175-billion-parameter OPT-175B to 4 bits in about 4 hours on one A100, moving WikiText2 perplexity only from 8.34 to 8.37.
+false_statement: In 2022 GPTQ quantized the 175-billion-parameter OPT-175B to 4 bits in about 4 hours on one A100, moving WikiText2 perplexity from 8.34 to 10.54.
+explanation: 10.54 was what simple round-to-nearest gave at 4 bits. GPTQ's near-lossless result, and a 3-bit model that fit on a single 80GB GPU, showed second-order post-training quantization could shrink the largest open models without retraining.
+as_of: '2022'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/gptq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 98e55d103f4074d1f2f50a2a8171910f98b16530
+concepts:
+- kt:gptq
+- kt:quantization
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-18'
+status: active

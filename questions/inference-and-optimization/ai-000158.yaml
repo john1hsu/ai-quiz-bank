@@ -1,0 +1,21 @@
+id: ai-000158
+area: inference-and-optimization
+kind: evidence
+topic: Sampling temperature and top-p
+topic_type: Technique
+maturity: established
+true_statement: Holtzman et al. found that likelihood-maximising decoding such as greedy or beam search yields bland, repetitive text, while pure unrestricted sampling drifts into incoherence.
+false_statement: Holtzman et al. found that likelihood-maximising decoding such as greedy or beam search drifts into incoherence, while pure unrestricted sampling yields bland, repetitive text.
+explanation: Chasing the most probable sequence gets stuck in loops, whereas sampling from the full distribution eventually picks tokens from the long unreliable tail. Truncated sampling like top-p sits between the two failure modes, which is why it became the standard for open-ended generation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/sampling-temperature-and-top-p.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 686425bf44646529b5d78586c6cc475d9a390101
+concepts:
+- kt:sampling-temperature-and-top-p
+- kt:the-curious-case-of-neural-text-degeneration
+- kt:beam-search
+difficulty: 2
+created: '2026-11-18'
+status: active

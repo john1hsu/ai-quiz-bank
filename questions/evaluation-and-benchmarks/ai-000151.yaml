@@ -1,0 +1,21 @@
+id: ai-000151
+area: evaluation-and-benchmarks
+kind: evidence
+topic: BEIR
+topic_type: Benchmark
+maturity: established
+true_statement: Because many BEIR datasets were labelled by pooling keyword-system results, documents found only by neural retrievers often went unjudged, understating neural retrievers' scores.
+false_statement: Because many BEIR datasets were labelled by pooling neural-retriever results, documents found only by BM25 often went unjudged, understating BM25's scores.
+explanation: Unjudged documents count as irrelevant, so a system that surfaces new, unlabelled hits is penalised. On TREC-COVID, labelling the missing pairs lifted DPR's score sharply while BM25 barely moved, a reminder that a benchmark score partly reflects how its labels were collected.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/beir.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2ddbc36c50ac465c309f23d4735bb1ce03698994
+concepts:
+- kt:beir
+- kt:bm25
+- kt:semantic-search
+difficulty: 3
+created: '2026-11-18'
+status: active

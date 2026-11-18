@@ -1,0 +1,21 @@
+id: ai-000154
+area: governance-and-policy
+kind: definition
+topic: OMB AI memoranda
+topic_type: Policy
+maturity: emerging
+true_statement: The OMB AI memoranda govern only US federal agencies' own use and purchasing of AI, whereas the EU AI Act regulates AI placed on the private market.
+false_statement: The OMB AI memoranda regulate AI products sold on the private US market, whereas the EU AI Act governs only EU institutions' own use of AI.
+explanation: OMB directs executive agencies, so its memos bind agencies directly, with deadlines, named officials and the power to stop a non-compliant system, but they say nothing to private companies selling to the public. The EU AI Act is market regulation aimed at providers and deployers generally.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/omb-ai-memoranda.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 7f7eff29a6be698845ca10abdfcc92cdd8c08ad0
+concepts:
+- kt:omb-ai-memoranda
+- kt:eu-ai-act
+- kt:office-of-management-and-budget
+difficulty: 1
+created: '2026-11-18'
+status: active

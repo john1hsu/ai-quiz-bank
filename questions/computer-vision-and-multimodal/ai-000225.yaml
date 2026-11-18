@@ -1,0 +1,21 @@
+id: ai-000225
+area: computer-vision-and-multimodal
+kind: definition
+topic: YOLO
+topic_type: Architecture
+maturity: established
+true_statement: YOLO is a single-stage detector that predicts every bounding box and class probability in one network pass, unlike two-stage R-CNN, which scores region proposals separately.
+false_statement: YOLO is a two-stage detector that scores region proposals separately, unlike single-stage R-CNN, which predicts every bounding box and class probability in one network pass.
+explanation: R-CNN classified about 2,000 proposals per image and took over 40 seconds at test time. YOLO recast detection as one regression from pixels to boxes, making it fast enough for video at some cost in localisation accuracy.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/yolo.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5ae11e2ffcf59d4b819fb9d56d382a2f62385972
+concepts:
+- kt:yolo
+- kt:object-detection
+- kt:r-cnn
+difficulty: 1
+created: '2026-11-18'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000191
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: Data parallelism
+topic_type: Technique
+maturity: established
+true_statement: In 2017 Goyal et al. at Facebook trained ResNet-50 on ImageNet in about an hour on 256 GPUs, using 8,192-image minibatches with a linear learning-rate scaling rule and warmup.
+false_statement: In 2017 Goyal et al. at Facebook trained ResNet-50 on ImageNet in about an hour on 256 GPUs, using 8,192-image minibatches with a fixed learning rate and no warmup.
+explanation: A larger global batch gives fewer, less noisy steps, so the learning rate is raised in proportion to batch size to keep progress per epoch, while a warmup phase avoids instability early on. With both, the huge-batch run matched small-batch accuracy.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/data-parallelism.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: c31651782f549b95eb584b8fb747ce738e0aa21c
+concepts:
+- kt:data-parallelism
+- kt:stochastic-gradient-descent
+difficulty: 2
+created: '2026-11-18'
+status: active

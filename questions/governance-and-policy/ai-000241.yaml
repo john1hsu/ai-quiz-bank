@@ -1,0 +1,20 @@
+id: ai-000241
+area: governance-and-policy
+kind: origin
+topic: Bureau of Industry and Security
+topic_type: Organization
+maturity: established
+true_statement: The Export Control Reform Act of 2018 gave BIS permanent authority, after decades in which US export controls were mostly kept in force under emergency powers.
+false_statement: The Export Control Reform Act of 2018 gave BIS authority that expires after five years, after decades in which US export controls rested on a permanent statute.
+explanation: The Export Administration Act of 1979 lapsed, so controls ran under the International Emergency Economic Powers Act. ECRA put them on a permanent footing with no expiry and was the first export statute to treat economic security as part of national security.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/bureau-of-industry-and-security.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 27c13ca2cefc5fab40a1fcedd33153f44f10b00f
+concepts:
+- kt:bureau-of-industry-and-security
+- kt:export-control-reform-act
+difficulty: 2
+created: '2026-11-18'
+status: active

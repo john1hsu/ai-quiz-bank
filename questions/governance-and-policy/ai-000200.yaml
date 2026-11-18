@@ -1,0 +1,20 @@
+id: ai-000200
+area: governance-and-policy
+kind: application
+topic: AI chip export controls
+topic_type: Policy
+maturity: emerging
+true_statement: From January 2026, US licence review for exporting chips such as NVIDIA's H200 to China shifted from a presumption of denial to case-by-case review.
+false_statement: From January 2026, US licence review for exporting chips such as NVIDIA's H200 to China shifted from case-by-case review to a presumption of denial.
+explanation: The 2026 rule moved toward conditional sales for chips below set performance thresholds, with caps tied to US shipments, independent lab testing and customer checks. Chips above the thresholds stay under a presumption of denial, showing how the regime keeps being redesigned.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-chip-export-controls.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 6efb121ccebc35c018d98da84b18f0935e74ad61
+concepts:
+- kt:ai-chip-export-controls
+- kt:nvidia
+difficulty: 2
+created: '2026-11-18'
+status: active

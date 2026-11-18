@@ -1,0 +1,20 @@
+id: ai-000204
+area: ml-foundations
+kind: mechanism
+topic: Conditional random field
+topic_type: Concept
+maturity: established
+true_statement: CRFs avoid the label bias problem of maximum entropy Markov models by normalising once over whole label sequences instead of separately at each state.
+false_statement: Maximum entropy Markov models avoid the label bias problem of CRFs by normalising separately at each state instead of once over whole label sequences.
+explanation: With per-state normalisation, a state's outgoing probability mass is fixed whatever is observed, so a state with one successor ignores its input. Normalising over entire sequences lets evidence anywhere raise or lower a whole path's score.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/conditional-random-field.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 388786b29055da6f99f9e54de25a2b811438637d
+concepts:
+- kt:conditional-random-field
+- kt:maximum-entropy-markov-model
+difficulty: 3
+created: '2026-11-18'
+status: active

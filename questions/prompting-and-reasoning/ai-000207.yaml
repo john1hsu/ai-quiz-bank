@@ -1,0 +1,21 @@
+id: ai-000207
+area: prompting-and-reasoning
+kind: mechanism
+topic: Scratchpad
+topic_type: Technique
+maturity: established
+true_statement: A scratchpad helps a transformer because each generated token adds a fixed amount of computation, and earlier written steps become context it can read back.
+false_statement: A scratchpad helps a transformer because it unlocks extra layers inside the network, so each step is computed more deeply rather than written out as context.
+explanation: A single forward pass has bounded depth, which is too little for long multi-step tasks like adding many-digit numbers. Writing intermediate results out spreads the work across many tokens, and the model can consult its own trace, the same principle later behind chain of thought and test-time compute.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/scratchpad.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: bb2f583aae05ec96792eacd29c814a150b5b9402
+concepts:
+- kt:scratchpad
+- kt:test-time-compute
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-18'
+status: active

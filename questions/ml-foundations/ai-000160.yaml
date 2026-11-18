@@ -1,0 +1,20 @@
+id: ai-000160
+area: ml-foundations
+kind: evidence
+topic: Hidden Markov model
+topic_type: Concept
+maturity: established
+true_statement: Rabiner named state duration as perhaps the HMM's major weakness, because self-transitions imply an exponentially distributed stay in each state.
+false_statement: Rabiner named state duration as perhaps the HMM's major weakness, because self-transitions force a fixed, constant stay in each state.
+explanation: Staying in a state means repeatedly taking the same self-transition, so the chance of a long stay decays exponentially. Real signals such as speech sounds rarely have durations shaped like that, one of several limits that come from the same simplifying assumptions that make HMMs efficient.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/hidden-markov-model.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 3fb10f0da164e0004e4d9d75ddbcdd79aacf28bc
+concepts:
+- kt:hidden-markov-model
+- kt:automatic-speech-recognition
+difficulty: 3
+created: '2026-11-18'
+status: active

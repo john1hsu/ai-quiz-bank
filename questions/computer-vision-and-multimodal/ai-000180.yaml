@@ -1,0 +1,21 @@
+id: ai-000180
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: 'An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale'
+topic_type: Work
+maturity: foundational
+true_statement: The Vision Transformer splits an image into fixed-size patches, linearly projects each flattened patch to an embedding and feeds the sequence to a standard Transformer encoder.
+false_statement: The Vision Transformer splits an image into fixed-size patches, passes each through a deep ResNet backbone and feeds the resulting features to a standard Transformer decoder.
+explanation: 'Each 16×16 patch plays the role of a word token: a learnable class token and position embeddings are added, and the class token''s final state represents the image. The pure ViT has no convolutional backbone; a CNN-fed hybrid was tested but its advantage vanished for larger models.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/an-image-is-worth-16x16-words.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: bf3ad543e39fddaee8ae25ddf0e642feb3424c4a
+concepts:
+- kt:an-image-is-worth-16x16-words
+- kt:vision-transformer
+- kt:attention-is-all-you-need
+difficulty: 1
+created: '2026-11-18'
+status: active

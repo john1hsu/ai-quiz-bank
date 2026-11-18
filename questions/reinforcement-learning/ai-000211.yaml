@@ -1,0 +1,21 @@
+id: ai-000211
+area: reinforcement-learning
+kind: evidence
+topic: AlphaGo
+topic_type: Model
+maturity: historical
+true_statement: AlphaGo bootstrapped its policy network from human expert games, whereas its successor AlphaGo Zero learned only from self-play, starting from the rules.
+false_statement: AlphaGo learned only from self-play, starting from the rules, whereas its successor AlphaGo Zero bootstrapped its policy network from human expert games.
+explanation: AlphaGo's first stage was supervised learning on about 30 million positions from expert games, plus hand-crafted features and a separate rollout policy. AlphaGo Zero dropped all of that for a single self-taught network and still beat the champion-defeating AlphaGo 100 games to 0.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2eb8e92fedd3cf764bfff4c74b14a4d45f9c5217
+concepts:
+- kt:alphago
+- kt:alphago-zero
+- kt:supervised-learning
+difficulty: 2
+created: '2026-11-18'
+status: active

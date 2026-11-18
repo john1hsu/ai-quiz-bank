@@ -1,0 +1,20 @@
+id: ai-000149
+area: deep-learning
+kind: application
+topic: Dropout
+topic_type: Technique
+maturity: established
+true_statement: Keeping dropout switched on at test time and averaging several sampled predictions gives a cheap estimate of a model's uncertainty, known as Monte Carlo dropout.
+false_statement: Keeping dropout switched on at test time and averaging several sampled predictions gives a cheap estimate of a model's uncertainty, known as inverted dropout.
+explanation: Gal and Ghahramani showed dropout training can be read as approximate Bayesian inference, so the spread of predictions across random masks reflects model uncertainty. Inverted dropout is just the training-time rescaling convention, unrelated to uncertainty estimation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/dropout.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 39923a78ed2369f719d629fe2c9a85a4905848aa
+concepts:
+- kt:dropout
+- kt:monte-carlo-dropout
+difficulty: 2
+created: '2026-11-18'
+status: active

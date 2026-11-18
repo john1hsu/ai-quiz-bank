@@ -1,0 +1,20 @@
+id: ai-000156
+area: inference-and-optimization
+kind: mechanism
+topic: Sampling temperature and top-p
+topic_type: Technique
+maturity: established
+true_statement: Top-p sampling keeps the smallest set of tokens whose cumulative probability reaches p, so the candidate set shrinks when the model is confident.
+false_statement: Top-k sampling keeps the smallest set of tokens whose cumulative probability reaches k, so the candidate set shrinks when the model is confident.
+explanation: 'Nucleus (top-p) sampling adapts to the shape of each step''s distribution: a peaked step may keep one token, a flat one dozens. Top-k always keeps a fixed number of tokens, which cuts good options when the distribution is flat and admits junk when it is peaked.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/sampling-temperature-and-top-p.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 686425bf44646529b5d78586c6cc475d9a390101
+concepts:
+- kt:sampling-temperature-and-top-p
+- kt:the-curious-case-of-neural-text-degeneration
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000244
+area: inference-and-optimization
+kind: origin
+topic: GPTQ
+topic_type: Algorithm
+maturity: established
+true_statement: GPTQ makes the Optimal Brain Quantization procedure from Frantar and Alistarh's Optimal Brain Compression tractable for billion-parameter models.
+false_statement: GPTQ makes the activation-aware scaling procedure from Lin and Han's AWQ paper tractable for billion-parameter models.
+explanation: OBQ quantised weights greedily one at a time with error compensation, but its cost grew cubically with layer width. GPTQ's fixed column order, lazy batch updates and Cholesky reformulation cut that cost. AWQ came later and is a separate, competing method.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/gptq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 98e55d103f4074d1f2f50a2a8171910f98b16530
+concepts:
+- kt:gptq
+- kt:optimal-brain-compression
+- kt:awq
+difficulty: 2
+created: '2026-11-18'
+status: active

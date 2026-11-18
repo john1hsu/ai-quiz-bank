@@ -1,0 +1,21 @@
+id: ai-000201
+area: inference-and-optimization
+kind: mechanism
+topic: AWQ
+topic_type: Algorithm
+maturity: established
+true_statement: AWQ picks salient weight channels by the magnitude of their input activations, since choosing them by weight norm barely beat random selection.
+false_statement: AWQ picks salient weight channels by the magnitude of their weight norms, since choosing them by input activations barely beat random selection.
+explanation: A channel that sees large activations amplifies any rounding error in its weights, so protecting about 1% of channels chosen this way sharply cuts quantisation error. The name, activation-aware weight quantisation, records exactly this insight.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/awq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 517f6b0b7ec8059afe3a555a0737b99b63e75f19
+concepts:
+- kt:awq
+- kt:quantization
+- kt:post-training-quantization
+difficulty: 2
+created: '2026-11-18'
+status: active

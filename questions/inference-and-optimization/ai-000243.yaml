@@ -1,0 +1,21 @@
+id: ai-000243
+area: inference-and-optimization
+kind: mechanism
+topic: GPTQ
+topic_type: Algorithm
+maturity: established
+true_statement: GPTQ quantizes a layer's weight columns in a fixed order and updates the not-yet-quantized weights to compensate, using second-order information from XXᵀ.
+false_statement: GPTQ quantizes a layer's weight columns in a fixed order and rounds each independently to the nearest grid value, leaving the other weights unchanged.
+explanation: Rounding each weight on its own is round-to-nearest, which collapses at 3 bits on huge models. GPTQ instead spreads each rounding error onto the remaining weights, guided by the layer's Hessian, so the layer's output stays close to the original.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/gptq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 98e55d103f4074d1f2f50a2a8171910f98b16530
+concepts:
+- kt:gptq
+- kt:post-training-quantization
+- kt:optimal-brain-compression
+difficulty: 3
+created: '2026-11-18'
+status: active

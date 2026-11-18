@@ -1,0 +1,20 @@
+id: ai-000213
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Approximate nearest neighbor search
+topic_type: Technique
+maturity: established
+true_statement: Product quantization splits each vector into sub-vectors and stores a short code for each, so distances can be estimated from small lookup tables.
+false_statement: Product quantization clusters whole vectors into cells and stores only each vector's cell number, so distances can be estimated from the cell centres alone.
+explanation: Coding sub-vectors separately gives a huge effective codebook from small ones, compressing vectors to a few bytes while keeping usable distance estimates. Assigning whole vectors to clusters is the coarse quantiser of an inverted file, which only decides which lists to visit.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/approximate-nearest-neighbor-search.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 973797a910b2f4f8f2e9252d74e55e5330bd8d9c
+concepts:
+- kt:approximate-nearest-neighbor-search
+- kt:faiss
+difficulty: 2
+created: '2026-11-18'
+status: active

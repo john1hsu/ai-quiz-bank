@@ -1,0 +1,20 @@
+id: ai-000214
+area: retrieval-and-knowledge
+kind: definition
+topic: Approximate nearest neighbor search
+topic_type: Technique
+maturity: established
+true_statement: HNSW draws each element's top layer from an exponentially decaying distribution, so its upper graph layers are sparse and carry long-range links.
+false_statement: HNSW places every element in every layer of its hierarchy, so its upper graph layers are as dense as the bottom one and carry only short-range links.
+explanation: Few points reach the top layers, so a search there takes big jumps across the dataset, then descends to denser layers to refine. This coarse-to-fine greedy walk is why Malkov and Yashunin report logarithmic scaling with dataset size.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/approximate-nearest-neighbor-search.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 973797a910b2f4f8f2e9252d74e55e5330bd8d9c
+concepts:
+- kt:approximate-nearest-neighbor-search
+- kt:vector-database
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000233
+area: ai-history
+kind: evidence
+topic: Perceptron
+topic_type: Algorithm
+maturity: foundational
+true_statement: The perceptron convergence theorem bounds training mistakes by 1/γ² for margin γ, so the bound depends on the margin rather than the input dimension.
+false_statement: The perceptron convergence theorem bounds training mistakes by the input dimension d, so the bound depends on the dimension rather than the margin.
+explanation: Each update raises the weights' alignment with a perfect separator by at least γ while their squared length grows by at most 1, which caps the number of updates. That dimension-free, margin-based reasoning links the perceptron to support vector machines and kernel methods.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/perceptron.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 4bacda4c95b9095feb55386e5038f2ade82de6bc
+concepts:
+- kt:perceptron
+- kt:support-vector-machine
+difficulty: 3
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000169
+area: retrieval-and-knowledge
+kind: mechanism
+topic: TF-IDF
+topic_type: Technique
+maturity: foundational
+true_statement: In tf-idf, a word that appears in every document of the collection gets an idf of log(1) = 0, so it adds nothing to a document's score however often it occurs.
+false_statement: In tf-idf, a word that appears in only one document of the collection gets an idf of log(1) = 0, so it adds nothing to a document's score however often it occurs.
+explanation: Idf is the log of the number of documents divided by the number containing the term. A word like "the" in all N documents gives log(N/N) = 0, while a rare word gets a large weight, which is how tf-idf favours words common in one document but rare overall.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/tf-idf.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 0d00a8dfa84955e37d28e69d756e4ff16f753201
+concepts:
+- kt:tf-idf
+- kt:information-retrieval
+difficulty: 1
+created: '2026-11-18'
+status: active

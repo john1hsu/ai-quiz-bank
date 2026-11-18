@@ -1,0 +1,21 @@
+id: ai-000173
+area: safety-alignment-and-security
+kind: evidence
+topic: Scalable oversight
+topic_type: Concept
+maturity: emerging
+true_statement: Burns and colleagues found that strong models fine-tuned on a much weaker supervisor's labels beat that supervisor but fell well short of their own capability ceiling.
+false_statement: Burns and colleagues found that strong models fine-tuned on a much weaker supervisor's labels fell below that supervisor but nearly reached their own capability ceiling.
+explanation: 'This weak-to-strong generalisation is an analogy for humans supervising superhuman models: the strong model generalises beyond its weak teacher''s mistakes, but not all the way. The gap suggests naive RLHF may scale poorly once models outgrow their evaluators.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/scalable-oversight.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 76d279a8ef247c26ddbf998de72f1d5764176127
+concepts:
+- kt:scalable-oversight
+- kt:weak-to-strong-generalization
+- kt:rlhf
+difficulty: 3
+created: '2026-11-18'
+status: active

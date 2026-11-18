@@ -1,0 +1,20 @@
+id: ai-000198
+area: governance-and-policy
+kind: origin
+topic: AI chip export controls
+topic_type: Policy
+maturity: emerging
+true_statement: US AI chip export controls began with an interim final rule from the Commerce Department's Bureau of Industry and Security on 7 October 2022.
+false_statement: US AI chip export controls began with an interim final rule from the Defense Department's Defense Technology Security Administration on 7 October 2022.
+explanation: Export controls on dual-use items sit under the Export Administration Regulations, which Commerce's BIS writes and enforces. The 2022 rule justified the controls on national-security grounds and set a presumption of denial for licences to China.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-chip-export-controls.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 6efb121ccebc35c018d98da84b18f0935e74ad61
+concepts:
+- kt:ai-chip-export-controls
+- kt:bureau-of-industry-and-security
+difficulty: 1
+created: '2026-11-18'
+status: active

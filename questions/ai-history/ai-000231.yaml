@@ -1,0 +1,21 @@
+id: ai-000231
+area: ai-history
+kind: origin
+topic: Perceptron
+topic_type: Algorithm
+maturity: foundational
+true_statement: Frank Rosenblatt set out the perceptron, the first neural network that learned its connection strengths, in a 1958 Psychological Review paper.
+false_statement: Marvin Minsky set out the perceptron, the first neural network that learned its connection strengths, in a 1958 Psychological Review paper.
+explanation: Rosenblatt, a psychologist at the Cornell Aeronautical Laboratory, extended McCulloch and Pitts's fixed threshold neurons with adjustable weights. Minsky was his public critic, and with Papert wrote the 1969 book analysing what single-layer perceptrons cannot compute.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/perceptron.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 4bacda4c95b9095feb55386e5038f2ade82de6bc
+concepts:
+- kt:perceptron
+- kt:frank-rosenblatt
+- kt:marvin-minsky
+difficulty: 1
+created: '2026-11-18'
+status: active

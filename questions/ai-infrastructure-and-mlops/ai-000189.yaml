@@ -1,0 +1,21 @@
+id: ai-000189
+area: ai-infrastructure-and-mlops
+kind: definition
+topic: Data parallelism
+topic_type: Technique
+maturity: established
+true_statement: In data parallelism every device holds a complete copy of the model and processes a different shard of each minibatch, so adding devices adds throughput but not memory capacity.
+false_statement: In data parallelism every device holds a different slice of the model and processes the whole minibatch, so adding devices adds memory capacity but not throughput.
+explanation: Because each replica must fit the full model, data parallelism speeds training but cannot help a model that is too big for one device. Splitting the network itself across devices is model parallelism, the tool for that case.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/data-parallelism.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: c31651782f549b95eb584b8fb747ce738e0aa21c
+concepts:
+- kt:data-parallelism
+- kt:model-parallelism
+- kt:distributed-training
+difficulty: 1
+created: '2026-11-18'
+status: active

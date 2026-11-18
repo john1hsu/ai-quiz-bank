@@ -1,0 +1,20 @@
+id: ai-000209
+area: prompting-and-reasoning
+kind: evidence
+topic: Scratchpad
+topic_type: Technique
+maturity: established
+true_statement: In the scratchpad experiments, models trained on 1–8 digit sums with traces improved on unseen 9- and 10-digit sums as they grew, while direct-answer models failed.
+false_statement: In the scratchpad experiments, models trained on 1–8 digit sums with direct answers improved on unseen 9- and 10-digit sums as they grew, while scratchpad models failed.
+explanation: Writing out each digit with its carry teaches a procedure that extends to longer inputs, whereas mapping inputs straight to answers does not generalise out of distribution. A written trace still does not guarantee correct computation, so the gains have limits.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/scratchpad.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: bb2f583aae05ec96792eacd29c814a150b5b9402
+concepts:
+- kt:scratchpad
+- kt:show-your-work-scratchpads-for-intermediate-computation-with-language-models
+difficulty: 2
+created: '2026-11-18'
+status: active

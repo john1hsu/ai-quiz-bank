@@ -1,0 +1,21 @@
+id: ai-000224
+area: transformers-and-llms
+kind: figure
+topic: Context window
+topic_type: Concept
+maturity: established
+true_statement: In 2024 the RULER benchmark found that only about half of 17 models claiming context windows of at least 32K tokens performed satisfactorily at 32K.
+false_statement: In 2024 the RULER benchmark found that all but one of 17 models claiming context windows of at least 32K tokens performed satisfactorily at 32K.
+explanation: RULER added multi-needle, multi-hop tracing and aggregation tasks because the simple needle-in-a-haystack test only checks shallow retrieval. Models that nearly aced that basic test still degraded as length and difficulty grew, separating advertised from effective context.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/context-window.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: ccbf57be42b96265baa341811d43dc601b9b9add
+concepts:
+- kt:context-window
+- kt:ruler
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000240
+area: governance-and-policy
+kind: definition
+topic: Bureau of Industry and Security
+topic_type: Organization
+maturity: established
+true_statement: The Commerce Control List names the items BIS controls for export, while the Entity List names foreign parties that need special licences.
+false_statement: The Entity List names the items BIS controls for export, while the Commerce Control List names foreign parties that need special licences.
+explanation: Export rules can bite on what is shipped or on who receives it. The Commerce Control List sorts items into nine categories with classification numbers, while the Entity List, maintained by an interagency committee, targets specific companies and organisations.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/bureau-of-industry-and-security.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 27c13ca2cefc5fab40a1fcedd33153f44f10b00f
+concepts:
+- kt:bureau-of-industry-and-security
+- kt:ai-chip-export-controls
+difficulty: 2
+created: '2026-11-18'
+status: active

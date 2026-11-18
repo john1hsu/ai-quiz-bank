@@ -1,0 +1,21 @@
+id: ai-000197
+area: evaluation-and-benchmarks
+kind: application
+topic: TruthfulQA
+topic_type: Benchmark
+maturity: established
+true_statement: Hugging Face dropped TruthfulQA from its rebuilt Open LLM Leaderboard in 2024, partly because the benchmark had leaked into instruction-tuning datasets.
+false_statement: Hugging Face added TruthfulQA to its rebuilt Open LLM Leaderboard in 2024, partly because the benchmark had been kept out of instruction-tuning datasets.
+explanation: Once test questions appear in training data, scores measure memorisation rather than general ability. TruthfulQA's removal is a standard case study in benchmark contamination, alongside the authors' own caution that a high score says little about truthfulness in long-form or interactive use.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/truthfulqa.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5b708a4643dba277be1ef2f44060b78e92f45343
+concepts:
+- kt:truthfulqa
+- kt:benchmark-contamination
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-18'
+status: active

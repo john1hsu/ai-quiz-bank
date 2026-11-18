@@ -1,0 +1,21 @@
+id: ai-000150
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: BEIR
+topic_type: Benchmark
+maturity: established
+true_statement: BEIR's headline metric is nDCG@10, chosen because it works with both binary and graded relevance labels across its mixed datasets.
+false_statement: BEIR's headline metric is MRR@10, chosen because it works with both binary and graded relevance labels across its mixed datasets.
+explanation: Normalised discounted cumulative gain rewards putting highly relevant documents near the top and can use graded judgments, which some BEIR datasets have. Mean reciprocal rank only looks at the first relevant hit and is offered in the package as an extra metric, not the headline one.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/beir.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2ddbc36c50ac465c309f23d4735bb1ce03698994
+concepts:
+- kt:beir
+- kt:ai-evaluation
+- kt:information-retrieval
+difficulty: 2
+created: '2026-11-18'
+status: active

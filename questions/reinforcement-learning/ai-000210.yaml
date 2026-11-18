@@ -1,0 +1,20 @@
+id: ai-000210
+area: reinforcement-learning
+kind: mechanism
+topic: AlphaGo
+topic_type: Model
+maturity: historical
+true_statement: During tree search, AlphaGo scored each leaf by mixing its value network's estimate with the result of a fast rollout, weighting the two equally in its best setting.
+false_statement: During tree search, AlphaGo scored each leaf with its value network's estimate alone, having found that adding fast rollouts made its play weaker.
+explanation: The value network judges a position in one shot, while a rollout plays the game out quickly with a cheap linear policy; combining them at λ = 0.5 worked best. Meanwhile the supervised policy network acted as a prior steering which moves the search explored.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2eb8e92fedd3cf764bfff4c74b14a4d45f9c5217
+concepts:
+- kt:alphago
+- kt:monte-carlo-tree-search
+difficulty: 3
+created: '2026-11-18'
+status: active

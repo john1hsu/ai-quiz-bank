@@ -1,0 +1,21 @@
+id: ai-000163
+area: prompting-and-reasoning
+kind: evidence
+topic: Test-time compute
+topic_type: Concept
+maturity: emerging
+true_statement: Snell et al. found a smaller model given extra test-time compute could beat a 14× larger model at matched FLOPs, but only on prompts it already solved some of the time.
+false_statement: Snell et al. found a smaller model given extra test-time compute could beat a 14× larger model at matched FLOPs, but only on the hardest prompts it almost never solved.
+explanation: Extra samples or revisions help only if the model can sometimes reach the right answer; when it almost never does, more inference compute has nothing to select or refine. That is why inference compute only partly substitutes for pretraining a larger model.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/test-time-compute.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5108add249463ddec0d34de85e580d6e258e0c80
+concepts:
+- kt:test-time-compute
+- kt:pretraining
+- kt:scaling-laws
+difficulty: 3
+created: '2026-11-18'
+status: active

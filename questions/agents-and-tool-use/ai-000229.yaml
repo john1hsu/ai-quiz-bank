@@ -1,0 +1,20 @@
+id: ai-000229
+area: agents-and-tool-use
+kind: evidence
+topic: Voyager (embodied LLM agent)
+topic_type: Model
+maturity: emerging
+true_statement: In Voyager's ablations, a random curriculum cut discovered items by 93%, a bigger drop than the 73% from removing self-verification.
+false_statement: In Voyager's ablations, removing self-verification cut discovered items by 93%, a bigger drop than the 73% from using a random curriculum.
+explanation: 'Choosing sensible next tasks mattered most: random goals waste effort on tasks the agent cannot yet do. Self-verification by a separate GPT-4 critic was the next most important piece. These are the authors'' own results in a single game, not independently replicated.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/voyager.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: f3f5a3d1615c6d5ce1d21408eaf9d1ba0f1ef5f5
+concepts:
+- kt:voyager
+- kt:self-refine
+difficulty: 3
+created: '2026-11-18'
+status: active

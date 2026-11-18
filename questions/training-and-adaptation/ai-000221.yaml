@@ -1,0 +1,22 @@
+id: ai-000221
+area: training-and-adaptation
+kind: figure
+topic: Synthetic data
+topic_type: Technique
+maturity: established
+true_statement: NVIDIA reported in June 2024 that over 98% of the data used to align its Nemotron-4 340B model was synthetically generated.
+false_statement: NVIDIA reported in June 2024 that under 10% of the data used to align its Nemotron-4 340B model was synthetically generated.
+explanation: Alignment data such as preference labels is expensive to collect from people, so labs increasingly generate it with models and filter it with reward models. NVIDIA released a reward model and permissive licence so others could build similar pipelines.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/synthetic-data.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 35974d0c4d3ad8a58ee227b5f2a78b7d08a87dae
+concepts:
+- kt:synthetic-data
+- kt:rlhf
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-18'
+status: active

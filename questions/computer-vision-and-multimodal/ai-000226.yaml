@@ -1,0 +1,20 @@
+id: ai-000226
+area: computer-vision-and-multimodal
+kind: evidence
+topic: YOLO
+topic_type: Architecture
+maturity: established
+true_statement: Compared with Fast R-CNN, the original YOLO made more localization errors but far fewer background false positives, because it sees the whole image at once.
+false_statement: Compared with Fast R-CNN, the original YOLO made fewer localization errors but far more background false positives, because it sees only small image regions at once.
+explanation: Global context helps YOLO avoid mistaking background patches for objects, while its coarse grid and downsampled features make precise box placement harder. The complementary error profiles are why the two are easy to tell apart, and localisation was YOLO's main error source.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/yolo.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5ae11e2ffcf59d4b819fb9d56d382a2f62385972
+concepts:
+- kt:yolo
+- kt:faster-r-cnn
+difficulty: 3
+created: '2026-11-18'
+status: active

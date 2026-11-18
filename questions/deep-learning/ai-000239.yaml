@@ -1,0 +1,20 @@
+id: ai-000239
+area: deep-learning
+kind: evidence
+topic: Long short-term memory
+topic_type: Architecture
+maturity: established
+true_statement: Greff and colleagues compared eight LSTM variants across 5,400 runs and found none meaningfully beat the vanilla LSTM, with the forget gate among the most critical parts.
+false_statement: Greff and colleagues compared eight LSTM variants across 5,400 runs and found most clearly beat the vanilla LSTM, with the forget gate among the least critical parts.
+explanation: Tested on speech, handwriting and music, simplified or altered gates gave no real gain, while removing the forget gate or output activation hurt most. They also found hyperparameters largely independent, which makes tuning easier in practice.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/long-short-term-memory.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: aac95b564c04eb300bf62d485b82f5e10ea735a6
+concepts:
+- kt:long-short-term-memory
+- kt:automatic-speech-recognition
+difficulty: 3
+created: '2026-11-18'
+status: active

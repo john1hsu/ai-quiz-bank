@@ -1,0 +1,20 @@
+id: ai-000186
+area: ai-history
+kind: origin
+topic: Geoffrey Hinton
+topic_type: Person
+maturity: historical
+true_statement: Geoffrey Hinton shared the 2024 Nobel Prize in Physics with John Hopfield for foundational discoveries enabling machine learning with artificial neural networks.
+false_statement: Geoffrey Hinton shared the 2024 Nobel Prize in Physics with Yann LeCun for foundational discoveries enabling machine learning with artificial neural networks.
+explanation: 'The pairing is natural: Hinton''s Boltzmann machine built on Hopfield''s associative network, borrowing tools from statistical physics, which is why a physics prize fit. Hinton had earlier been a joint recipient of the 2018 ACM Turing Award.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/geoffrey-hinton.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 621c97b6346a86b0e0b9b6e54139614171e97533
+concepts:
+- kt:geoffrey-hinton
+- kt:boltzmann-machine
+difficulty: 1
+created: '2026-11-18'
+status: active

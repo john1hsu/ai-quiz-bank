@@ -1,0 +1,21 @@
+id: ai-000220
+area: training-and-adaptation
+kind: origin
+topic: Synthetic data
+topic_type: Technique
+maturity: established
+true_statement: Self-Instruct bootstrapped an instruction-tuning dataset by having GPT-3 generate new tasks from a small seed pool, filtering them, and fine-tuning GPT-3 on the result.
+false_statement: Self-Instruct bootstrapped an instruction-tuning dataset by having paid annotators write new tasks from a small seed pool, filtering them, and fine-tuning GPT-3 on the result.
+explanation: The point was to replace costly human annotation with the model's own outputs. Its reported gains brought vanilla GPT-3 roughly level with InstructGPT-001, which relied on private user data and human labels, making instruction tuning cheap to reproduce.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/synthetic-data.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 35974d0c4d3ad8a58ee227b5f2a78b7d08a87dae
+concepts:
+- kt:synthetic-data
+- kt:instruction-tuning
+- kt:fine-tuning
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000177
+area: transformers-and-llms
+kind: mechanism
+topic: Attention Is All You Need
+topic_type: Work
+maturity: foundational
+true_statement: Scaled dot-product attention divides QKᵀ by √d_k because large dot products would push the softmax into regions with tiny gradients.
+false_statement: Scaled dot-product attention divides QKᵀ by √d_k because small dot products would make the softmax weights fail to sum to one.
+explanation: As the key dimension grows, raw dot products grow in magnitude, so the softmax saturates toward a near one-hot output whose gradients vanish. Scaling keeps the scores in a range where learning still works; the softmax sums to one regardless of scale.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-is-all-you-need.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5d949b40875d566992c81f95ee3aa635268f06a2
+concepts:
+- kt:attention-is-all-you-need
+- kt:self-attention
+- kt:attention-mechanism
+difficulty: 2
+created: '2026-11-18'
+status: active

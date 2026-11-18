@@ -1,0 +1,22 @@
+id: ai-000164
+area: prompting-and-reasoning
+kind: figure
+topic: Test-time compute
+topic_type: Concept
+maturity: emerging
+true_statement: In 2024 OpenAI reported that o1 scored 74% on AIME 2024 with one sample, 83% with consensus over 64 samples and 93% when re-ranking 1,000 samples.
+false_statement: In 2024 OpenAI reported that o1 scored 93% on AIME 2024 with one sample, 83% with consensus over 64 samples and 74% when re-ranking 1,000 samples.
+explanation: These lab-reported numbers show accuracy climbing as more inference compute is spent per problem, and a learned scorer re-ranking many samples beating simple majority voting. They illustrate test-time compute as a second scaling axis alongside training.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/test-time-compute.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5108add249463ddec0d34de85e580d6e258e0c80
+concepts:
+- kt:test-time-compute
+- kt:reasoning-models
+- kt:self-consistency
+difficulty: 2
+created: '2026-11-18'
+status: active

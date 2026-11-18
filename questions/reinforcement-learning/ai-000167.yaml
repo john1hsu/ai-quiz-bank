@@ -1,0 +1,21 @@
+id: ai-000167
+area: reinforcement-learning
+kind: figure
+topic: Reinforcement learning
+topic_type: Field
+maturity: foundational
+true_statement: DeepMind's DQN, reported in Nature in 2015, learned 49 Atari 2600 games from raw pixels and the score alone, and beat earlier machine-learning methods on 43 of them.
+false_statement: DeepMind's DQN, reported in Nature in 2015, learned 49 Atari 2600 games from raw pixels and the score alone, but beat earlier machine-learning methods on only 13 of them.
+explanation: One network architecture and one set of hyperparameters handled every game, showing deep networks could learn control directly from high-dimensional input. Experience replay, which reuses stored past transitions, proved essential to that performance.
+as_of: '2015'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/reinforcement-learning.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: e0f66a461c315c22d615a4bcac4f3eaa45532371
+concepts:
+- kt:reinforcement-learning
+- kt:deep-q-network
+difficulty: 2
+created: '2026-11-18'
+status: active

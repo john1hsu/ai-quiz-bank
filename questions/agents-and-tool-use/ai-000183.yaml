@@ -1,0 +1,21 @@
+id: ai-000183
+area: agents-and-tool-use
+kind: mechanism
+topic: 'Toolformer: Language Models Can Teach Themselves to Use Tools'
+topic_type: Model
+maturity: established
+true_statement: Toolformer keeps a sampled API call for training only if inserting the call and its result lowers the model's loss on the tokens that follow.
+false_statement: Toolformer keeps a sampled API call for training only if the model assigned a high probability to opening an API call at that position.
+explanation: 'The probability threshold only chooses where to sample candidate calls. The real filter is usefulness: the result must make the following text easier to predict than no call, or the call without its result. This lets the model build its own tool-use training data with just a few human demonstrations per tool.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/toolformer.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 9b383625a7d08f02b3b2354ad4d1467628a2db5d
+concepts:
+- kt:toolformer
+- kt:tool-use
+- kt:synthetic-data
+difficulty: 2
+created: '2026-11-18'
+status: active

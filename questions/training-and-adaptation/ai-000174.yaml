@@ -1,0 +1,21 @@
+id: ai-000174
+area: training-and-adaptation
+kind: mechanism
+topic: 'STaR: Self-Taught Reasoner'
+topic_type: Technique
+maturity: established
+true_statement: In STaR's rationalization step, the model is shown the correct answer as a hint for questions it got wrong and asked to write a rationale reaching it.
+false_statement: In STaR's rationalization step, the model is shown a human-written rationale as a hint for questions it got wrong and asked to copy its reasoning.
+explanation: Plain filtering only learns from problems the model can already solve. Giving the right answer as a hint lets it produce reasoning for harder questions; the hint is then removed so the rationale is trained on as if found unaided, enlarging the training set without any human rationales.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/star-self-taught-reasoner.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 8a7e329640de48b66f5ad5457815225e3e239407
+concepts:
+- kt:star-self-taught-reasoner
+- kt:chain-of-thought
+- kt:synthetic-data
+difficulty: 2
+created: '2026-11-18'
+status: active

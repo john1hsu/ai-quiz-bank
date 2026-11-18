@@ -1,0 +1,20 @@
+id: ai-000148
+area: deep-learning
+kind: evidence
+topic: Dropout
+topic_type: Technique
+maturity: established
+true_statement: Srivastava and colleagues reported that dropout networks typically take two to three times longer to train than standard networks of the same architecture.
+false_statement: Srivastava and colleagues reported that dropout networks typically train two to three times faster than standard networks of the same architecture.
+explanation: Randomly removing units makes each gradient update noisier, so convergence slows. The regularisation benefit is paid for in extra training time, a real cost when choosing between dropout and other regularisers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/dropout.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 39923a78ed2369f719d629fe2c9a85a4905848aa
+concepts:
+- kt:dropout
+- kt:dropout-a-simple-way-to-prevent-neural-networks-from-overfitting
+difficulty: 3
+created: '2026-11-18'
+status: active

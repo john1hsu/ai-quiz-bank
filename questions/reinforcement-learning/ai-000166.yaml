@@ -1,0 +1,21 @@
+id: ai-000166
+area: reinforcement-learning
+kind: mechanism
+topic: Reinforcement learning
+topic_type: Field
+maturity: foundational
+true_statement: Model-based RL agents learn or are given a model of transitions and rewards they can plan with, while model-free agents learn values or policies directly from experience.
+false_statement: Model-free RL agents learn or are given a model of transitions and rewards they can plan with, while model-based agents learn values or policies directly from experience.
+explanation: The model predicts the next state and reward for a state-action pair. Having one lets an agent simulate ahead and plan; without it, methods such as Q-learning or policy gradients improve purely from trial and error. Value-based, policy-based and actor-critic are a separate, overlapping way to classify agents.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/reinforcement-learning.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: e0f66a461c315c22d615a4bcac4f3eaa45532371
+concepts:
+- kt:reinforcement-learning
+- kt:markov-decision-process
+- kt:q-learning
+difficulty: 1
+created: '2026-11-18'
+status: active

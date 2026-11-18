@@ -1,0 +1,20 @@
+id: ai-000170
+area: retrieval-and-knowledge
+kind: evidence
+topic: TF-IDF
+topic_type: Technique
+maturity: foundational
+true_statement: Robertson argued in 2004 that idf is best justified by the Robertson/Spärck Jones relevance weight, rather than by Zipf's law or Shannon information theory.
+false_statement: Robertson argued in 2004 that idf is best justified by Shannon information theory, rather than by Zipf's law or the Robertson/Spärck Jones relevance weight.
+explanation: Tf-idf was long seen as a heuristic. The relevance weight reduces to an idf-like form when no relevance judgments are available, giving idf a probabilistic grounding, and BM25 then adds a principled, saturating term-frequency component.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/tf-idf.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 0d00a8dfa84955e37d28e69d756e4ff16f753201
+concepts:
+- kt:tf-idf
+- kt:bm25
+difficulty: 3
+created: '2026-11-18'
+status: active

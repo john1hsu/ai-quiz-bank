@@ -1,0 +1,21 @@
+id: ai-000178
+area: transformers-and-llms
+kind: figure
+topic: Attention Is All You Need
+topic_type: Work
+maturity: foundational
+true_statement: In 2017 the large Transformer scored 28.4 BLEU on WMT 2014 English-German translation, more than 2 points above previous results including ensembles.
+false_statement: In 2017 the large Transformer scored 41.0 BLEU on WMT 2014 English-German translation, more than 2 points above previous results including ensembles.
+explanation: 41.0 was the large model's English-French score, a different and easier language pair. The German result mattered because a single attention-only model beat ensembles of recurrent and convolutional systems while training in about 3.5 days on eight GPUs.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-is-all-you-need.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5d949b40875d566992c81f95ee3aa635268f06a2
+concepts:
+- kt:attention-is-all-you-need
+- kt:wmt-2014
+difficulty: 2
+created: '2026-11-18'
+status: active

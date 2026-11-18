@@ -1,0 +1,21 @@
+id: ai-000199
+area: governance-and-policy
+kind: mechanism
+topic: AI chip export controls
+topic_type: Policy
+maturity: emerging
+true_statement: The October 2023 update to US AI chip export controls dropped interconnect bandwidth as a criterion and added a performance density test.
+false_statement: The October 2023 update to US AI chip export controls dropped performance density as a criterion and added an interconnect bandwidth test.
+explanation: Chips are caught by technical thresholds, not product names. Vendors had shipped chips that kept high compute but cut interconnect speed to stay under the 2022 limits; testing performance per unit of die area closed that loophole.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-chip-export-controls.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 6efb121ccebc35c018d98da84b18f0935e74ad61
+concepts:
+- kt:ai-chip-export-controls
+- kt:ai-accelerator
+- kt:compute-governance
+difficulty: 3
+created: '2026-11-18'
+status: active

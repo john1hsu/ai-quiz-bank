@@ -1,0 +1,23 @@
+id: ai-000242
+area: governance-and-policy
+kind: figure
+topic: Bureau of Industry and Security
+topic_type: Organization
+maturity: established
+true_statement: In September 2024 BIS proposed quarterly reports from US developers of AI models trained with more than 10^26 operations, covering training plans, weight security and red-team results.
+false_statement: In September 2024 BIS proposed quarterly reports from US developers of AI models trained with more than 10^20 operations, covering training plans, weight security and red-team results.
+explanation: The rule used Defense Production Act information-gathering powers to implement Executive Order 14110, using training compute as a proxy for frontier capability. That order was revoked in January 2025, removing the basis the proposal was written for.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/bureau-of-industry-and-security.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 27c13ca2cefc5fab40a1fcedd33153f44f10b00f
+concepts:
+- kt:bureau-of-industry-and-security
+- kt:compute-governance
+- kt:red-teaming
+- kt:executive-orders-on-ai
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,22 @@
+id: ai-000152
+area: evaluation-and-benchmarks
+kind: figure
+topic: BEIR
+topic_type: Benchmark
+maturity: established
+true_statement: In the 2021 BEIR study, BM25 followed by a cross-encoder re-ranker scored about 11% above BM25 alone on average nDCG@10.
+false_statement: In the 2021 BEIR study, BM25 followed by a cross-encoder re-ranker scored about 11% below BM25 alone on average nDCG@10.
+explanation: 'Re-ranking BM25''s candidates with a cross-encoder was the strongest zero-shot setup in the original comparison, though far costlier per query. It is the evidence behind the common two-stage design: cheap lexical retrieval first, then an expensive re-ranker on the shortlist.'
+as_of: '2021'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/beir.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2ddbc36c50ac465c309f23d4735bb1ce03698994
+concepts:
+- kt:beir
+- kt:reranking
+- kt:bm25
+difficulty: 2
+created: '2026-11-18'
+status: active

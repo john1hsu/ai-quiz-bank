@@ -1,0 +1,20 @@
+id: ai-000232
+area: ai-history
+kind: mechanism
+topic: Perceptron
+topic_type: Algorithm
+maturity: foundational
+true_statement: When a perceptron misclassifies a training point it adds y·x to its weight vector, and training stops after a full pass with no mistakes.
+false_statement: When a perceptron classifies a training point correctly it adds y·x to its weight vector, and training stops after a full pass with no mistakes.
+explanation: 'The rule is error-driven: correct points leave the weights alone, while each mistake nudges the separating hyperplane toward the right side for that point. On data no hyperplane can separate, such as XOR, the loop never ends.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/perceptron.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 4bacda4c95b9095feb55386e5038f2ade82de6bc
+concepts:
+- kt:perceptron
+- kt:supervised-learning
+difficulty: 1
+created: '2026-11-18'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000222
+area: transformers-and-llms
+kind: evidence
+topic: Context window
+topic_type: Concept
+maturity: established
+true_statement: Liu et al. found long-context models answered best when the relevant information sat at the start or end of the input, and markedly worse when it sat in the middle.
+false_statement: Liu et al. found long-context models answered best when the relevant information sat in the middle of the input, and markedly worse when it sat at the start or end.
+explanation: This U-shaped "lost in the middle" curve held even for models built for long contexts. It means a big window is not used evenly, so in retrieval pipelines where you place the key passages matters, not just whether they fit.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/context-window.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: ccbf57be42b96265baa341811d43dc601b9b9add
+concepts:
+- kt:context-window
+- kt:retrieval-augmented-generation
+difficulty: 2
+created: '2026-11-18'
+status: active

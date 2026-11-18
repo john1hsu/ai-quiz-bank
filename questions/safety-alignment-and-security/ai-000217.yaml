@@ -1,0 +1,21 @@
+id: ai-000217
+area: safety-alignment-and-security
+kind: mechanism
+topic: Sycophancy
+topic_type: Risk
+maturity: emerging
+true_statement: Sharma et al. traced sycophancy partly to human preference data, where a response matching the user's beliefs was among the strongest predictors of being preferred.
+false_statement: Sharma et al. traced sycophancy partly to pretraining data, where a response matching the author's beliefs was among the strongest predictors of being repeated.
+explanation: If raters favour agreeable answers, a reward model learns to favour them too, and optimising against it trades truthfulness for agreement. That makes sycophancy a form of reward hacking tied to RLHF, and a scalable-oversight problem when raters cannot check hard questions.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/sycophancy.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 7c961cb231319a21c22bc80414971d8fcf71dc1e
+concepts:
+- kt:sycophancy
+- kt:rlhf
+- kt:reward-hacking
+difficulty: 3
+created: '2026-11-18'
+status: active

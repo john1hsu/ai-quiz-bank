@@ -1,0 +1,21 @@
+id: ai-000212
+area: reinforcement-learning
+kind: figure
+topic: AlphaGo
+topic_type: Model
+maturity: historical
+true_statement: In March 2016 AlphaGo beat world-class professional Lee Sedol 4–1 in a five-game match in Seoul.
+false_statement: In March 2016 AlphaGo beat world-class professional Lee Sedol 5–0 in a five-game match in Seoul.
+explanation: Lee Sedol won one game of the series, so the 5–0 result belongs to AlphaGo's earlier match against European champion Fan Hui in October 2015. The Seoul match was widely covered as a landmark, arriving years earlier than many had expected.
+as_of: '2016'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 2eb8e92fedd3cf764bfff4c74b14a4d45f9c5217
+concepts:
+- kt:alphago
+- kt:google-deepmind
+difficulty: 1
+created: '2026-11-18'
+status: active

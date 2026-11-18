@@ -1,0 +1,21 @@
+id: ai-000187
+area: ai-history
+kind: definition
+topic: Geoffrey Hinton
+topic_type: Person
+maturity: historical
+true_statement: A Boltzmann machine learns the characteristic features of a class of data, so it can both classify inputs and generate new examples of that class.
+false_statement: A Boltzmann machine learns only a decision boundary between classes of data, so it can classify inputs but cannot generate new examples of a class.
+explanation: 'It is a generative model: by learning what typical data look like rather than just where classes divide, it can also produce new samples. The Nobel committee cited this work as helping launch the current growth of machine learning.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/geoffrey-hinton.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 621c97b6346a86b0e0b9b6e54139614171e97533
+concepts:
+- kt:geoffrey-hinton
+- kt:boltzmann-machine
+- kt:connectionism
+difficulty: 2
+created: '2026-11-18'
+status: active

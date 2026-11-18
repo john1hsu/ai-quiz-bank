@@ -1,0 +1,21 @@
+id: ai-000184
+area: agents-and-tool-use
+kind: evidence
+topic: 'Toolformer: Language Models Can Teach Themselves to Use Tools'
+topic_type: Model
+maturity: established
+true_statement: Toolformer cannot chain tools, because the training calls for each tool were generated independently of the other tools.
+false_statement: Toolformer cannot chain tools, because its fine-tuning objective allows at most one API call in each training document.
+explanation: Since every tool's examples were sampled and filtered separately, the model never saw one tool's output feeding another's input. It also cannot interact with a tool, such as browsing several search results, which is where ReAct-style loops and full agents differ.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/toolformer.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 9b383625a7d08f02b3b2354ad4d1467628a2db5d
+concepts:
+- kt:toolformer
+- kt:react-prompting
+- kt:ai-agent
+difficulty: 3
+created: '2026-11-18'
+status: active

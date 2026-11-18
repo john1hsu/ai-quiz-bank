@@ -1,0 +1,20 @@
+id: ai-000227
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: YOLO
+topic_type: Architecture
+maturity: established
+true_statement: YOLOv2 introduced anchor boxes whose shapes came from k-means clustering of the training set's bounding boxes.
+false_statement: YOLOv2 introduced anchor boxes whose shapes were hand-picked to a fixed set of standard aspect ratios.
+explanation: Clustering real box shapes gives priors that match the data, so the network starts from sensible guesses and learns offsets more easily. YOLOv2 also added batch normalisation and multi-scale training; later versions such as YOLOv8 moved to anchor-free heads.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/yolo.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5ae11e2ffcf59d4b819fb9d56d382a2f62385972
+concepts:
+- kt:yolo
+- kt:batch-normalization
+difficulty: 2
+created: '2026-11-18'
+status: active

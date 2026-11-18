@@ -1,0 +1,21 @@
+id: ai-000185
+area: agents-and-tool-use
+kind: figure
+topic: 'Toolformer: Language Models Can Teach Themselves to Use Tools'
+topic_type: Model
+maturity: established
+true_statement: In 2023 the 6.7-billion-parameter Toolformer scored 40.4 zero-shot on the ASDiv maths word problems, against 14.0 for the 175-billion-parameter GPT-3.
+false_statement: In 2023 the 6.7-billion-parameter Toolformer scored 14.0 zero-shot on the ASDiv maths word problems, against 40.4 for the 175-billion-parameter GPT-3.
+explanation: A calculator tool let a model about 26 times smaller beat GPT-3 at arithmetic-heavy problems. Toolformer still trailed GPT-3 on open-domain QA such as TriviaQA, so tools patch specific weaknesses rather than replacing scale.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/toolformer.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 9b383625a7d08f02b3b2354ad4d1467628a2db5d
+concepts:
+- kt:toolformer
+- kt:gpt-j
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000179
+area: transformers-and-llms
+kind: evidence
+topic: Attention Is All You Need
+topic_type: Work
+maturity: foundational
+true_statement: The Transformer paper put self-attention's per-layer cost at O(n²·d) against O(n·d²) for recurrence, so attention is cheaper when sequence length n is below width d.
+false_statement: The Transformer paper put self-attention's per-layer cost at O(n²·d) against O(n·d²) for recurrence, so attention is cheaper when sequence length n is above width d.
+explanation: Attention compares every pair of positions, so its cost grows with the square of sequence length, while needing only one sequential step. For typical sentences shorter than the 512-wide representations this wins; for very long inputs the advantage shrinks, which the authors flagged as future work.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-is-all-you-need.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 5d949b40875d566992c81f95ee3aa635268f06a2
+concepts:
+- kt:attention-is-all-you-need
+- kt:self-attention
+- kt:recurrent-neural-network
+difficulty: 3
+created: '2026-11-18'
+status: active

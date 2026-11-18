@@ -1,0 +1,20 @@
+id: ai-000202
+area: inference-and-optimization
+kind: definition
+topic: AWQ
+topic_type: Algorithm
+maturity: established
+true_statement: AWQ protects salient channels by scaling their weights up and their inputs down, rather than storing those weights in higher precision.
+false_statement: AWQ protects salient channels by storing those weights in FP16 alongside low-bit weights, rather than scaling their weights up and their inputs down.
+explanation: Mixed FP16 and integer formats are accurate but awkward for hardware kernels. Scaling a weight by s and dividing its input by s leaves the output unchanged while shrinking that weight's relative rounding error, keeping one uniform low-bit format.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/awq.md
+  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
+  blob: 517f6b0b7ec8059afe3a555a0737b99b63e75f19
+concepts:
+- kt:awq
+- kt:quantization
+difficulty: 2
+created: '2026-11-18'
+status: active
