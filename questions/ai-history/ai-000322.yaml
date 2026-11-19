@@ -1,0 +1,21 @@
+id: ai-000322
+area: ai-history
+kind: origin
+topic: ELIZA
+topic_type: Model
+maturity: historical
+true_statement: Joseph Weizenbaum of MIT described ELIZA, a program for typed conversation in English, in Communications of the ACM in 1966.
+false_statement: Joseph Weizenbaum of MIT described ELIZA, a program for typed conversation in English, in Communications of the ACM in 1976.
+explanation: ELIZA dates to 1966 and ran on MIT's time-sharing system. 1976 is the year of Weizenbaum's book Computer Power and Human Reason, in which he warned against handing machines choices that are properly human.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/eliza.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 710dc7231514534f26b223c71f5d5f371cc819b4
+concepts:
+- kt:eliza
+- kt:joseph-weizenbaum
+- kt:eliza-a-computer-program-for-the-study-of-natural-language-communication-between-man-and-machine
+difficulty: 1
+created: '2026-11-19'
+status: active

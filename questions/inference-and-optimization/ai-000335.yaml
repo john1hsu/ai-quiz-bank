@@ -1,0 +1,20 @@
+id: ai-000335
+area: inference-and-optimization
+kind: evidence
+topic: Model pruning
+topic_type: Technique
+maturity: established
+true_statement: Frankle and Carbin found pruned subnetworks train to comparable accuracy when reset to their original initial weights, but not when freshly reinitialised.
+false_statement: Frankle and Carbin found pruned subnetworks train to comparable accuracy when freshly reinitialised, but not when reset to their original initial weights.
+explanation: 'This lottery ticket result suggests pruning finds favourable initialisations, not just redundant weights. The sparse structure alone is not enough: the same mask with new random weights falls short of the dense network.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-pruning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0efa046c0f3ed83183e7ed0f792d8b64679ecf14
+concepts:
+- kt:model-pruning
+- kt:lottery-ticket-hypothesis
+difficulty: 3
+created: '2026-11-19'
+status: active

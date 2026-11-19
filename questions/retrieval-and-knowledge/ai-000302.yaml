@@ -1,0 +1,19 @@
+id: ai-000302
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Word2vec
+topic_type: Algorithm
+maturity: foundational
+true_statement: Word2vec's negative sampling draws noise words from the unigram distribution raised to the 3/4 power, which slightly raises how often rare words are picked as negatives.
+false_statement: Word2vec's negative sampling draws noise words from the unigram distribution raised to the 3/4 power, which slightly raises how often frequent words are picked as negatives.
+explanation: Negative sampling turns training into telling real word-context pairs from k noise words, avoiding a full softmax over the vocabulary. Raising frequencies to 0.75 flattens the distribution, so rare words get a bit more of the probability mass and frequent ones a bit less.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/word2vec.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdee7eac17b80c75490bc7f4c91488a1e10785fb
+concepts:
+- kt:word2vec
+difficulty: 2
+created: '2026-11-19'
+status: active

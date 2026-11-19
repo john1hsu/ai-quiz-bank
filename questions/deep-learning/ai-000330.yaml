@@ -1,0 +1,19 @@
+id: ai-000330
+area: deep-learning
+kind: definition
+topic: Convolutional neural network
+topic_type: Architecture
+maturity: established
+true_statement: The 'convolution' in deep-learning libraries is really cross-correlation, without flipping the kernel, and the difference does not matter because the kernel is learned.
+false_statement: The 'convolution' in deep-learning libraries is true convolution with a flipped kernel, and the flip matters because cross-correlation would learn different features.
+explanation: Convolution and cross-correlation differ only by flipping the kernel. Since training starts from random weights, a network using cross-correlation simply learns the flipped kernel, so the results are equivalent.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/convolutional-neural-network.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fccec7eacd76b5797a253115ff4cca2a06cc66b8
+concepts:
+- kt:convolutional-neural-network
+difficulty: 2
+created: '2026-11-19'
+status: active

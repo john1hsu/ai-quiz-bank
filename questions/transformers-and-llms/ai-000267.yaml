@@ -1,0 +1,21 @@
+id: ai-000267
+area: transformers-and-llms
+kind: evidence
+topic: Neural Machine Translation by Jointly Learning to Align and Translate
+topic_type: Work
+maturity: foundational
+true_statement: In Bahdanau and colleagues' tests, a plain encoder-decoder's BLEU collapsed as sentences got longer, while RNNsearch-50 showed no clear decline even past 50 words.
+false_statement: In Bahdanau and colleagues' tests, RNNsearch-50's BLEU collapsed as sentences got longer, while a plain encoder-decoder showed no clear decline even past 50 words.
+explanation: 'This was the direct evidence for the fixed-length bottleneck: one vector cannot hold a long sentence, but per-step attention over all source annotations can. It is the main reason attention spread from translation to most sequence models.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/neural-machine-translation-by-jointly-learning-to-align-and-translate.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 3b66be8e00358357f6be8e707011734f27cb1f20
+concepts:
+- kt:neural-machine-translation-by-jointly-learning-to-align-and-translate
+- kt:sequence-to-sequence-learning
+- kt:wmt-2014
+difficulty: 2
+created: '2026-11-19'
+status: active

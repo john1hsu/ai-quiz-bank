@@ -1,0 +1,22 @@
+id: ai-000254
+area: reinforcement-learning
+kind: origin
+topic: 'Deep Q-network: human-level control through deep reinforcement learning'
+topic_type: Algorithm
+maturity: established
+true_statement: DeepMind's first DQN preprint, posted to arXiv in December 2013, ran one unchanged architecture on seven Atari 2600 games and beat a human expert on three.
+false_statement: DeepMind's first DQN preprint, posted to arXiv in December 2013, ran one unchanged architecture on 49 Atari 2600 games and beat a human expert on three.
+explanation: The 2013 preprint was a small proof of concept on seven games. The 49-game evaluation came with the full Nature paper in 2015, which scaled the same one-architecture, one-hyperparameter-setting idea up to the wider benchmark.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/deep-q-network.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 13998a05ff063959c9eba1b1dafe0870ff964344
+concepts:
+- kt:deep-q-network
+- kt:playing-atari-with-deep-reinforcement-learning
+- kt:google-deepmind
+- kt:arcade-learning-environment
+difficulty: 2
+created: '2026-11-19'
+status: active

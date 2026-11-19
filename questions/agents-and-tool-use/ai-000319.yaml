@@ -1,0 +1,21 @@
+id: ai-000319
+area: agents-and-tool-use
+kind: mechanism
+topic: 'Generative Agents: Interactive Simulacra of Human Behavior'
+topic_type: Work
+maturity: established
+true_statement: Generative agents rank memories by summing recency, importance and relevance, where importance is a 1–10 rating the LLM gives each memory when it is stored.
+false_statement: Generative agents rank memories by summing recency, importance and relevance, where importance is the cosine similarity between the memory's embedding and the current query.
+explanation: Embedding similarity to the query is the relevance score; importance separates mundane events from poignant ones. Combining the three lets an agent recall what is recent, significant and on-topic rather than just the closest match.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/generative-agents-interactive-simulacra-of-human-behavior.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b0870cb325a6b296baeda2c96f311aa7cff9029b
+concepts:
+- kt:generative-agents-interactive-simulacra-of-human-behavior
+- kt:agent-memory
+- kt:embeddings
+difficulty: 2
+created: '2026-11-19'
+status: active

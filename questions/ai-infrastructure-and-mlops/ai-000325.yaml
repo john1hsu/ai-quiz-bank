@@ -1,0 +1,21 @@
+id: ai-000325
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: GPU computing
+topic_type: Paradigm
+maturity: established
+true_statement: Before compute APIs such as CUDA arrived, GPGPU programmers stored arrays as textures and wrote their kernels as fragment shaders.
+false_statement: Before compute APIs such as CUDA arrived, GPGPU programmers stored arrays in shared memory and wrote their kernels as thread blocks.
+explanation: Early general-purpose GPU work had to disguise computation as graphics, which imposed 2D layouts and made scattered writes awkward. Shared memory, pointers and thread blocks only came with the compute interfaces AMD and NVIDIA shipped in 2006–2007.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/gpu-computing.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 7ab7be9787e8bd554d5f25d8a1d2409a86941046
+concepts:
+- kt:gpu-computing
+- kt:cuda
+- kt:parallel-computing
+difficulty: 2
+created: '2026-11-19'
+status: active

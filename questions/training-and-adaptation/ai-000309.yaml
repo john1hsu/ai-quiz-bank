@@ -1,0 +1,22 @@
+id: ai-000309
+area: training-and-adaptation
+kind: figure
+topic: Fine-tuning
+topic_type: Technique
+maturity: established
+true_statement: In 2018, ULMFiT fine-tuned with only 100 labelled examples matched a text classifier trained from scratch on 100 times more data.
+false_statement: In 2018, ULMFiT fine-tuned with only 100 labelled examples matched a text classifier trained from scratch on 10 times more data.
+explanation: Howard and Ruder's result showed how much labelled data a pretrained language model saves, which helped make pretrain-then-fine-tune the default recipe in NLP. The saving was a hundredfold, not tenfold.
+as_of: '2018'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/fine-tuning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b220d9d30bbe5a76d1e414acad8a0a24e5b51b24
+concepts:
+- kt:fine-tuning
+- kt:universal-language-model-fine-tuning-for-text-classification
+- kt:pretraining
+difficulty: 2
+created: '2026-11-19'
+status: active

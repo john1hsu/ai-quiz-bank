@@ -1,72 +1,72 @@
 {
  "totals": {
-  "active": 245
+  "active": 342
  },
  "areas": {
   "agents-and-tool-use": {
-   "active": 18
+   "active": 24
   },
   "ai-history": {
-   "active": 18
+   "active": 24
   },
   "ai-infrastructure-and-mlops": {
-   "active": 18
+   "active": 24
   },
   "computer-vision-and-multimodal": {
-   "active": 16
+   "active": 22
   },
   "deep-learning": {
-   "active": 18
+   "active": 24
   },
   "evaluation-and-benchmarks": {
-   "active": 16
+   "active": 22
   },
   "governance-and-policy": {
-   "active": 18
+   "active": 24
   },
   "inference-and-optimization": {
-   "active": 18
+   "active": 24
   },
   "ml-foundations": {
-   "active": 15
+   "active": 24
   },
   "prompting-and-reasoning": {
-   "active": 15
+   "active": 24
   },
   "reinforcement-learning": {
-   "active": 15
+   "active": 22
   },
   "retrieval-and-knowledge": {
-   "active": 15
+   "active": 21
   },
   "safety-alignment-and-security": {
-   "active": 15
+   "active": 21
   },
   "training-and-adaptation": {
-   "active": 15
+   "active": 21
   },
   "transformers-and-llms": {
-   "active": 15
+   "active": 21
   }
  },
  "kinds": {
   "application": {
-   "active": 22
-  },
-  "definition": {
    "active": 32
   },
+  "definition": {
+   "active": 46
+  },
   "evidence": {
-   "active": 53
+   "active": 75
   },
   "figure": {
-   "active": 31
+   "active": 43
   },
   "mechanism": {
-   "active": 67
+   "active": 93
   },
   "origin": {
-   "active": 40
+   "active": 53
   }
  },
  "articles": {
@@ -77,6 +77,12 @@
    "active": 3
   },
   "articles/agents-and-tool-use/ai-agent.md": {
+   "active": 3
+  },
+  "articles/agents-and-tool-use/autogen.md": {
+   "active": 3
+  },
+  "articles/agents-and-tool-use/generative-agents-interactive-simulacra-of-human-behavior.md": {
    "active": 3
   },
   "articles/agents-and-tool-use/langgraph.md": {
@@ -97,7 +103,13 @@
   "articles/ai-history/dartmouth-workshop.md": {
    "active": 3
   },
+  "articles/ai-history/eliza.md": {
+   "active": 3
+  },
   "articles/ai-history/geoffrey-hinton.md": {
+   "active": 3
+  },
+  "articles/ai-history/imagenet-and-alexnet.md": {
    "active": 3
   },
   "articles/ai-history/perceptron.md": {
@@ -110,6 +122,12 @@
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/data-parallelism.md": {
+   "active": 3
+  },
+  "articles/ai-infrastructure-and-mlops/gpu-computing.md": {
+   "active": 3
+  },
+  "articles/ai-infrastructure-and-mlops/high-bandwidth-memory.md": {
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/hugging-face-transformers.md": {
@@ -136,7 +154,13 @@
   "articles/computer-vision-and-multimodal/diffusion-model.md": {
    "active": 3
   },
+  "articles/computer-vision-and-multimodal/faster-r-cnn.md": {
+   "active": 3
+  },
   "articles/computer-vision-and-multimodal/generative-adversarial-network.md": {
+   "active": 3
+  },
+  "articles/computer-vision-and-multimodal/object-detection.md": {
    "active": 3
   },
   "articles/computer-vision-and-multimodal/yolo.md": {
@@ -151,6 +175,9 @@
   "articles/deep-learning/backpropagation.md": {
    "active": 3
   },
+  "articles/deep-learning/convolutional-neural-network.md": {
+   "active": 3
+  },
   "articles/deep-learning/deep-learning.md": {
    "active": 3
   },
@@ -160,16 +187,25 @@
   "articles/deep-learning/long-short-term-memory.md": {
    "active": 3
   },
+  "articles/deep-learning/universal-approximation-theorem.md": {
+   "active": 3
+  },
   "articles/evaluation-and-benchmarks/ai-evaluation.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/beir.md": {
    "active": 3
   },
+  "articles/evaluation-and-benchmarks/benchmark-contamination.md": {
+   "active": 3
+  },
   "articles/evaluation-and-benchmarks/commonsenseqa.md": {
    "active": 1
   },
   "articles/evaluation-and-benchmarks/gsm8k.md": {
+   "active": 3
+  },
+  "articles/evaluation-and-benchmarks/mmlu.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/red-teaming.md": {
@@ -181,6 +217,9 @@
   "articles/governance-and-policy/ai-chip-export-controls.md": {
    "active": 3
   },
+  "articles/governance-and-policy/ai-governance.md": {
+   "active": 3
+  },
   "articles/governance-and-policy/ai-safety-institutes.md": {
    "active": 3
   },
@@ -188,6 +227,9 @@
    "active": 3
   },
   "articles/governance-and-policy/bureau-of-industry-and-security.md": {
+   "active": 3
+  },
+  "articles/governance-and-policy/compute-governance.md": {
    "active": 3
   },
   "articles/governance-and-policy/nist-ai-risk-management-framework.md": {
@@ -202,7 +244,13 @@
   "articles/inference-and-optimization/batching-and-paged-attention.md": {
    "active": 3
   },
+  "articles/inference-and-optimization/flash-attention.md": {
+   "active": 3
+  },
   "articles/inference-and-optimization/gptq.md": {
+   "active": 3
+  },
+  "articles/inference-and-optimization/model-pruning.md": {
    "active": 3
   },
   "articles/inference-and-optimization/quantization.md": {
@@ -220,6 +268,9 @@
   "articles/ml-foundations/conditional-random-field.md": {
    "active": 3
   },
+  "articles/ml-foundations/dimensionality-reduction.md": {
+   "active": 3
+  },
   "articles/ml-foundations/double-descent.md": {
    "active": 3
   },
@@ -229,7 +280,19 @@
   "articles/ml-foundations/machine-learning.md": {
    "active": 3
   },
+  "articles/ml-foundations/principal-component-analysis.md": {
+   "active": 3
+  },
+  "articles/ml-foundations/supervised-learning.md": {
+   "active": 3
+  },
   "articles/prompting-and-reasoning/chain-of-thought.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/program-induction-by-rationale-generation.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/prompt-engineering.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/prompt-sensitivity.md": {
@@ -241,6 +304,9 @@
   "articles/prompting-and-reasoning/self-consistency.md": {
    "active": 3
   },
+  "articles/prompting-and-reasoning/self-refine-iterative-refinement-with-self-feedback.md": {
+   "active": 3
+  },
   "articles/prompting-and-reasoning/test-time-compute.md": {
    "active": 3
   },
@@ -249,6 +315,15 @@
   },
   "articles/reinforcement-learning/alphago.md": {
    "active": 3
+  },
+  "articles/reinforcement-learning/deep-q-network.md": {
+   "active": 3
+  },
+  "articles/reinforcement-learning/exploration-exploitation.md": {
+   "active": 3
+  },
+  "articles/reinforcement-learning/markov-decision-process.md": {
+   "active": 1
   },
   "articles/reinforcement-learning/policy-gradient.md": {
    "active": 3
@@ -268,13 +343,22 @@
   "articles/retrieval-and-knowledge/embeddings.md": {
    "active": 3
   },
+  "articles/retrieval-and-knowledge/glove.md": {
+   "active": 3
+  },
   "articles/retrieval-and-knowledge/semantic-search.md": {
    "active": 3
   },
   "articles/retrieval-and-knowledge/tf-idf.md": {
    "active": 3
   },
+  "articles/retrieval-and-knowledge/word2vec.md": {
+   "active": 3
+  },
   "articles/safety-alignment-and-security/ai-alignment.md": {
+   "active": 3
+  },
+  "articles/safety-alignment-and-security/goodharts-law.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/jailbreak.md": {
@@ -283,10 +367,19 @@
   "articles/safety-alignment-and-security/mechanistic-interpretability.md": {
    "active": 3
   },
+  "articles/safety-alignment-and-security/reward-hacking.md": {
+   "active": 3
+  },
   "articles/safety-alignment-and-security/scalable-oversight.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/sycophancy.md": {
+   "active": 3
+  },
+  "articles/training-and-adaptation/direct-preference-optimization.md": {
+   "active": 3
+  },
+  "articles/training-and-adaptation/fine-tuning.md": {
    "active": 3
   },
   "articles/training-and-adaptation/knowledge-distillation.md": {
@@ -316,7 +409,13 @@
   "articles/transformers-and-llms/large-language-model.md": {
    "active": 3
   },
+  "articles/transformers-and-llms/neural-machine-translation-by-jointly-learning-to-align-and-translate.md": {
+   "active": 3
+  },
   "articles/transformers-and-llms/scaling-laws.md": {
+   "active": 3
+  },
+  "articles/transformers-and-llms/transformer-architecture.md": {
    "active": 3
   }
  }

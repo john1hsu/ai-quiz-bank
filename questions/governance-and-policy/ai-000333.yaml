@@ -1,0 +1,20 @@
+id: ai-000333
+area: governance-and-policy
+kind: application
+topic: AI governance
+topic_type: Field
+maturity: emerging
+true_statement: Under the EU AI Act's risk tiers, chatbots carry transparency duties, while recruitment tools are high-risk and must meet data-quality and human-oversight requirements.
+false_statement: Under the EU AI Act's risk tiers, recruitment tools carry transparency duties, while chatbots are high-risk and must meet data-quality and human-oversight requirements.
+explanation: 'The Act scales obligations to the harm a use can cause: decisions about people''s jobs or health are high-risk, a chatbot mainly must disclose what it is. Most systems, like spam filters, carry no duties, and practices such as social scoring are banned.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: af451ab64bc49c3074e27165b922440b476585f2
+concepts:
+- kt:ai-governance
+- kt:eu-ai-act
+difficulty: 2
+created: '2026-11-19'
+status: active

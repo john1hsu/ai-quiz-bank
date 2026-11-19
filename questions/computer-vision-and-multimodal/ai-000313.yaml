@@ -1,0 +1,21 @@
+id: ai-000313
+area: computer-vision-and-multimodal
+kind: application
+topic: Object detection
+topic_type: Application
+maturity: established
+true_statement: COCO's primary detection score averages precision over ten IoU thresholds from 0.50 to 0.95, while PASCAL VOC counted a detection correct at a single 50% IoU threshold.
+false_statement: COCO's primary detection score counts a detection correct at a single 50% IoU threshold, while PASCAL VOC averaged precision over ten IoU thresholds from 0.50 to 0.95.
+explanation: Intersection over union (IoU) measures how well a predicted box overlaps the true one. VOC's 50% bar was deliberately lenient, so one number hid poor localization; COCO's averaging over stricter thresholds rewards boxes that fit tightly.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/object-detection.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4d0ea271f5f58716f61400ae2065de6815d723c1
+concepts:
+- kt:object-detection
+- kt:ms-coco
+- kt:pascal-voc
+difficulty: 2
+created: '2026-11-19'
+status: active

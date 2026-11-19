@@ -1,0 +1,21 @@
+id: ai-000312
+area: transformers-and-llms
+kind: application
+topic: Transformer architecture
+topic_type: Architecture
+maturity: established
+true_statement: As of 2026, almost no large Transformer language models use anything but standard quadratic attention, because cheaper attention variants often underperform at scale.
+false_statement: As of 2026, most large Transformer language models have replaced standard quadratic attention, because cheaper attention variants usually match it at scale.
+explanation: Self-attention compares every pair of positions, so cost grows with the square of sequence length and limits the context window. Many sub-quadratic variants exist, but Stanford's CS224N notes they rarely survive at scale, so better long-context designs remain an open question.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/transformer-architecture.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 2b435471662a3db7db27f56be8a082eb827f5c9d
+concepts:
+- kt:transformer-architecture
+- kt:self-attention
+- kt:context-window
+difficulty: 2
+created: '2026-11-19'
+status: active

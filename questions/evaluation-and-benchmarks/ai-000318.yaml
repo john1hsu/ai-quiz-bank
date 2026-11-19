@@ -1,0 +1,20 @@
+id: ai-000318
+area: evaluation-and-benchmarks
+kind: application
+topic: Benchmark contamination
+topic_type: Risk
+maturity: emerging
+true_statement: LiveBench limits contamination by drawing questions from recent competitions, arXiv papers and news, refreshing them monthly and scoring against objective answers.
+false_statement: LiveBench limits contamination by drawing questions from recent competitions, arXiv papers and news, refreshing them monthly and scoring them with LLM judges.
+explanation: Fresh questions are unlikely to be in any model's training data yet, and objective answers avoid the biases of LLM judges or crowdworkers. Even so, its authors softened the claim from 'contamination-free' to 'contamination-limited'.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/benchmark-contamination.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 9dd4b216f4253c1304e32c3c2a7d5c516f83fefc
+concepts:
+- kt:benchmark-contamination
+- kt:livebench
+difficulty: 2
+created: '2026-11-19'
+status: active

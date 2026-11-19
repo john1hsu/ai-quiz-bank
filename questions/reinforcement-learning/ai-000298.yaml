@@ -1,0 +1,21 @@
+id: ai-000298
+area: reinforcement-learning
+kind: definition
+topic: Exploration-exploitation dilemma
+topic_type: Concept
+maturity: foundational
+true_statement: Thompson sampling draws one plausible model from its posterior and acts optimally for that sample, so each action is tried in proportion to the chance it is best.
+false_statement: Thompson sampling adds a confidence bonus to each action's estimate and picks the highest total, so each action is tried in proportion to the chance it is best.
+explanation: 'Thompson sampling explores through randomness in its beliefs: uncertain actions sometimes win the posterior draw. Adding a shrinking confidence bonus to each estimate is the upper confidence bound (UCB) approach, which explores through optimism rather than sampling.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/exploration-exploitation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 81bdc19c500b3eeec5375e010056153da8391bd3
+concepts:
+- kt:exploration-exploitation
+- kt:thompson-sampling
+- kt:upper-confidence-bound
+difficulty: 2
+created: '2026-11-19'
+status: active

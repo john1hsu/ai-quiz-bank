@@ -1,0 +1,22 @@
+id: ai-000251
+area: prompting-and-reasoning
+kind: figure
+topic: 'Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems'
+topic_type: Work
+maturity: historical
+true_statement: On the AQuA test set in 2017, Ling et al.'s rationale-generating model reached 36.4% accuracy, against 20.8% for an attention-based sequence-to-sequence baseline.
+false_statement: On the AQuA test set in 2017, Ling et al.'s rationale-generating model reached 56.4% accuracy, against 20.8% for an attention-based sequence-to-sequence baseline.
+explanation: With five answer options, chance is 20%, so the baseline barely beat guessing while the rationale model got about 1.75 times its score. That is real progress but far from solving algebra word problems, which is why later chain-of-thought work on AQuA mattered.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/program-induction-by-rationale-generation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0918065abb98e821ab50fed5ac55888ab3de24ef
+concepts:
+- kt:program-induction-by-rationale-generation
+- kt:aqua-rat
+- kt:sequence-to-sequence-learning
+difficulty: 3
+created: '2026-11-19'
+status: active

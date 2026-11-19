@@ -1,0 +1,21 @@
+id: ai-000291
+area: inference-and-optimization
+kind: figure
+topic: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
+topic_type: Algorithm
+maturity: established
+true_statement: In 2023 FlashAttention-2 reached 50–73% of an A100's peak FLOPs/s, up from 25–40% for the original FlashAttention.
+false_statement: In 2023 FlashAttention-2 reached 25–40% of an A100's peak FLOPs/s, up from 10–20% for the original FlashAttention.
+explanation: FlashAttention-2 roughly doubled speed by cutting non-matmul work, parallelising over sequence length and splitting work across warps. Utilisation then fell again on newer hardware, which is why FlashAttention-3 and -4 were redesigned for Hopper and Blackwell.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/flash-attention.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 67b77b57a557a3261c090fd355b468b06daf45cd
+concepts:
+- kt:flash-attention
+- kt:tri-dao
+difficulty: 2
+created: '2026-11-19'
+status: active

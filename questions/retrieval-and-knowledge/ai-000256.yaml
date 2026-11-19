@@ -1,0 +1,23 @@
+id: ai-000256
+area: retrieval-and-knowledge
+kind: origin
+topic: GloVe
+topic_type: Algorithm
+maturity: foundational
+true_statement: GloVe was introduced by Pennington, Socher and Manning of Stanford at EMNLP 2014 to unite global count-based matrix factorisation with local context-window prediction.
+false_statement: GloVe was introduced by Pennington, Socher and Manning of Stanford at EMNLP 2017 to unite global count-based matrix factorisation with local context-window prediction.
+explanation: GloVe appeared in 2014, a year after word2vec. Its authors saw that LSA-style factorisation used whole-corpus counts efficiently but did poorly on analogies, while window predictors like skip-gram did well on analogies but saw one window at a time, so they aimed for both.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/glove.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8e83f9995df097c849784553bcfbd20cfb3f59a1
+concepts:
+- kt:glove
+- kt:stanford-nlp-group
+- kt:glove-global-vectors-for-word-representation
+- kt:latent-semantic-analysis
+- kt:word2vec
+difficulty: 1
+created: '2026-11-19'
+status: active

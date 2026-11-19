@@ -1,0 +1,21 @@
+id: ai-000264
+area: training-and-adaptation
+kind: application
+topic: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'
+topic_type: Algorithm
+maturity: established
+true_statement: Zephyr-7B applied a distilled form of DPO to preference rankings produced by a teacher model rather than by human annotators.
+false_statement: Zephyr-7B applied a distilled form of DPO to preference rankings produced by human annotators rather than by a teacher model.
+explanation: Zephyr showed DPO working with AI-generated preference labels, which is why DPO is tied to synthetic data in practice. Dropping human labelling made preference tuning cheap, and its authors report it beat the much larger Llama2-Chat-70B on MT-Bench after a few hours of training.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/direct-preference-optimization.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 71ff8df42c2fb5bccf59b57e2f555a76a0a56c30
+concepts:
+- kt:direct-preference-optimization
+- kt:synthetic-data
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

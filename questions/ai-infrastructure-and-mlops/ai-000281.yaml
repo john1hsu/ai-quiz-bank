@@ -1,0 +1,20 @@
+id: ai-000281
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: High-bandwidth memory
+topic_type: Hardware
+maturity: established
+true_statement: High-bandwidth memory first reached the market in 2015, in AMD's Fiji graphics processors built with memory partner SK hynix.
+false_statement: High-bandwidth memory first reached the market in 2018, in AMD's Fiji graphics processors built with memory partner SK hynix.
+explanation: AMD's Radeon R9 Fury family launched HBM in 2015, replacing GDDR5 and claiming about four times the bandwidth per watt. 2018 is when JEDEC's JESD235B update raised per-pin rates, a revision of an already shipping standard.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/high-bandwidth-memory.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: cfdfef36093a23aa12ae0399c12d8ad6a498a1cd
+concepts:
+- kt:high-bandwidth-memory
+- kt:gddr-memory
+difficulty: 1
+created: '2026-11-19'
+status: active

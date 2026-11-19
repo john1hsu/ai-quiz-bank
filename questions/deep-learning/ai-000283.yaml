@@ -1,0 +1,22 @@
+id: ai-000283
+area: deep-learning
+kind: origin
+topic: Universal approximation theorem
+topic_type: Concept
+maturity: foundational
+true_statement: In 1989 George Cybenko proved that a single hidden layer of continuous sigmoidal units can approximate any continuous function on the unit cube arbitrarily well.
+false_statement: In 1989 George Cybenko proved that a single hidden layer of linear units can approximate any continuous function on the unit cube arbitrarily well.
+explanation: 'The nonlinearity is what makes it work: sums of sigmoids can bend into any continuous shape, while linear units only ever add up to a linear map. Hornik, Stinchcombe and White published a closely related result the same year.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/universal-approximation-theorem.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4b73042ee2742acb14c8e0fc47e99435c78af421
+concepts:
+- kt:universal-approximation-theorem
+- kt:george-cybenko
+- kt:approximation-by-superpositions-of-a-sigmoidal-function
+- kt:activation-function
+difficulty: 1
+created: '2026-11-19'
+status: active

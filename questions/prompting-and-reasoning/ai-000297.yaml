@@ -1,0 +1,21 @@
+id: ai-000297
+area: prompting-and-reasoning
+kind: evidence
+topic: 'Self-Refine: Iterative Refinement with Self-Feedback'
+topic_type: Work
+maturity: established
+true_statement: Huang et al. argued Self-Refine's CommonGen-Hard gains partly came from the feedback prompt adding a requirement the first prompt left out; stating it up front scored higher.
+false_statement: Huang et al. argued Self-Refine's CommonGen-Hard gains partly came from the feedback prompt adding a requirement the first prompt left out; stating it up front scored lower.
+explanation: The requirement to use every concept was only spelled out at the feedback step, so revision looked better than a fairly written first prompt. A plain prompt that stated it scored 81.8 against Self-Refine's 75.1, a reminder to compare self-correction loops with simply improving the initial prompt.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-refine-iterative-refinement-with-self-feedback.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20f0e11ea32531e7ab54215e3551c36a8e9d88d6
+concepts:
+- kt:self-refine-iterative-refinement-with-self-feedback
+- kt:self-correction
+- kt:prompt-engineering
+difficulty: 3
+created: '2026-11-19'
+status: active

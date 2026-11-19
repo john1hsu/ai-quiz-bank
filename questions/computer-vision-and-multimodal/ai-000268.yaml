@@ -1,0 +1,21 @@
+id: ai-000268
+area: computer-vision-and-multimodal
+kind: definition
+topic: Faster R-CNN
+topic_type: Architecture
+maturity: established
+true_statement: Faster R-CNN's key addition was a Region Proposal Network that shares the detector's convolutional features, replacing the slow selective-search proposals Fast R-CNN relied on.
+false_statement: Faster R-CNN's key addition was RoI pooling, which pools each region's features from one shared map, replacing the slow per-region CNN passes Fast R-CNN relied on.
+explanation: RoI pooling was Fast R-CNN's contribution; it already shared one CNN pass across regions. That left proposal generation on the CPU as the bottleneck, and Faster R-CNN's RPN made proposals almost free by reusing the same feature map.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/faster-r-cnn.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 960192c933f52d8ae22f7471233deaffdf23186c
+concepts:
+- kt:faster-r-cnn
+- kt:fast-r-cnn
+- kt:r-cnn
+difficulty: 2
+created: '2026-11-19'
+status: active

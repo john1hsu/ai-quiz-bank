@@ -1,0 +1,21 @@
+id: ai-000266
+area: transformers-and-llms
+kind: mechanism
+topic: Neural Machine Translation by Jointly Learning to Align and Translate
+topic_type: Work
+maturity: foundational
+true_statement: In RNNsearch, a small feed-forward network scores the previous decoder state against each encoder annotation, which is why Bahdanau attention is called additive attention.
+false_statement: In RNNsearch, a scaled dot product scores the previous decoder state against each encoder annotation, which is why Bahdanau attention is called multiplicative attention.
+explanation: 'The score is v_a tanh(W_a s + U_a h): the two vectors are projected and added inside a learned network. That lets training decide which similarities matter and lets encoder and decoder vectors differ in size, unlike a plain dot-product score.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/neural-machine-translation-by-jointly-learning-to-align-and-translate.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 3b66be8e00358357f6be8e707011734f27cb1f20
+concepts:
+- kt:neural-machine-translation-by-jointly-learning-to-align-and-translate
+- kt:attention-mechanism
+- kt:recurrent-neural-network
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000257
+area: retrieval-and-knowledge
+kind: mechanism
+topic: GloVe
+topic_type: Algorithm
+maturity: foundational
+true_statement: GloVe fits word and context vectors by weighted least squares so that their dot product plus two biases approximates the logarithm of the pair's co-occurrence count.
+false_statement: GloVe fits word and context vectors by weighted least squares so that their dot product plus two biases approximates the ratio of the pair's co-occurrence probabilities.
+explanation: Ratios of co-occurrence probabilities motivate GloVe ("solid" is far likelier near "ice" than "steam"), but the fitted target is log X_ij. Because a log turns ratios into differences, vector differences then encode those ratios, which is what gives GloVe its analogy structure.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/glove.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8e83f9995df097c849784553bcfbd20cfb3f59a1
+concepts:
+- kt:glove
+- kt:embeddings
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000284
+area: deep-learning
+kind: definition
+topic: Universal approximation theorem
+topic_type: Concept
+maturity: foundational
+true_statement: 'The universal approximation theorem is an existence result: it shows suitable weights exist but bounds neither the number of hidden units needed nor whether training will find them.'
+false_statement: 'The universal approximation theorem is a constructive result: it gives the suitable weights and bounds both the number of hidden units needed and whether training will find them.'
+explanation: Cybenko's proof works by contradiction and places no limit on width or weight size. Lecture notes add that worst-case size grows exponentially with input dimension and that training is non-convex, so expressive power alone doesn't explain why networks learn well.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/universal-approximation-theorem.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4b73042ee2742acb14c8e0fc47e99435c78af421
+concepts:
+- kt:universal-approximation-theorem
+- kt:backpropagation
+- kt:curse-of-dimensionality
+difficulty: 2
+created: '2026-11-19'
+status: active

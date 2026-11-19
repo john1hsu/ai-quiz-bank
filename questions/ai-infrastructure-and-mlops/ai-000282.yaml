@@ -1,0 +1,22 @@
+id: ai-000282
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: High-bandwidth memory
+topic_type: Hardware
+maturity: established
+true_statement: A 2024 'memory wall' analysis estimated that peak server FLOPS grew about 3.0x every two years over two decades, while DRAM bandwidth grew only about 1.6x.
+false_statement: A 2024 'memory wall' analysis estimated that DRAM bandwidth grew about 3.0x every two years over two decades, while peak server FLOPS grew only about 1.6x.
+explanation: Gholami and colleagues found compute outpacing memory bandwidth, which is why many AI workloads, especially LLM decoding, are limited by bytes moved rather than arithmetic. HBM narrows that gap but has not closed it.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/high-bandwidth-memory.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: cfdfef36093a23aa12ae0399c12d8ad6a498a1cd
+concepts:
+- kt:high-bandwidth-memory
+- kt:memory-wall
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

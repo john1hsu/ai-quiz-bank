@@ -1,0 +1,20 @@
+id: ai-000285
+area: deep-learning
+kind: evidence
+topic: Universal approximation theorem
+topic_type: Concept
+maturity: foundational
+true_statement: Lu and colleagues (NeurIPS 2017) showed ReLU networks of width n + 4 for n inputs are universal approximators as depth grows, while networks of width at most n generally are not.
+false_statement: Lu and colleagues (NeurIPS 2017) showed ReLU networks of width n for n inputs are universal approximators as depth grows, while networks of width at most n − 4 generally are not.
+explanation: The classical theorems fix depth at one hidden layer and let width grow; this is the mirror image, fixing width and letting depth grow. The sharp jump between width n and n + 4 is a phase transition in what narrow deep networks can represent.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/universal-approximation-theorem.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4b73042ee2742acb14c8e0fc47e99435c78af421
+concepts:
+- kt:universal-approximation-theorem
+- kt:deep-learning
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000307
+area: training-and-adaptation
+kind: mechanism
+topic: Fine-tuning
+topic_type: Technique
+maturity: established
+true_statement: In classic fine-tuning, the copied pretrained layers get a small learning rate, while the new randomly initialised output layer gets a larger one.
+false_statement: In classic fine-tuning, the copied pretrained layers get a large learning rate, while the new randomly initialised output layer gets a smaller one.
+explanation: The copied layers already hold useful features, so big updates would mostly damage them, while the new head starts from scratch and must move a long way. Dive into Deep Learning's example gives the head ten times the backbone's learning rate.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/fine-tuning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b220d9d30bbe5a76d1e414acad8a0a24e5b51b24
+concepts:
+- kt:fine-tuning
+- kt:pretraining
+- kt:transfer-learning
+difficulty: 2
+created: '2026-11-19'
+status: active

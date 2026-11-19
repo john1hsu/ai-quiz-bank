@@ -1,0 +1,19 @@
+id: ai-000260
+area: safety-alignment-and-security
+kind: mechanism
+topic: Goodhart's law
+topic_type: Concept
+maturity: foundational
+true_statement: In Manheim and Garrabrant's taxonomy, regressional Goodhart arises because selecting for a high proxy score also selects for noise, so top scorers fall short on the true goal.
+false_statement: In Manheim and Garrabrant's taxonomy, extremal Goodhart arises because selecting for a high proxy score also selects for noise, so top scorers fall short on the true goal.
+explanation: 'Any proxy is the true goal plus error, and the highest proxy scores are partly lucky error, so the winners are predictably worse than they look. Extremal Goodhart is a different failure: optimisation pushes into regions where the usual proxy-goal relationship stops holding at all.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/goodharts-law.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdc87de52a80274985fbf00433e3d786fb8cd256
+concepts:
+- kt:goodharts-law
+difficulty: 3
+created: '2026-11-19'
+status: active

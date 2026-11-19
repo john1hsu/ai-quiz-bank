@@ -1,0 +1,19 @@
+id: ai-000247
+area: ml-foundations
+kind: mechanism
+topic: Dimensionality reduction
+topic_type: Technique
+maturity: foundational
+true_statement: Isomap estimates geodesic distances as shortest paths through a k-nearest-neighbour graph, then embeds them with classical multidimensional scaling.
+false_statement: Isomap estimates geodesic distances as straight-line Euclidean distances between all pairs of points, then embeds them with classical multidimensional scaling.
+explanation: Hopping between near neighbours makes the distance follow the curved sheet the data lies on, which is how Isomap unrolls the Swiss roll where PCA and plain MDS fail. Straight-line distances would cut across the roll and keep the fold.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/dimensionality-reduction.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 083b053389cddc69b1272307193a721e00e0b4ef
+concepts:
+- kt:dimensionality-reduction
+difficulty: 2
+created: '2026-11-19'
+status: active

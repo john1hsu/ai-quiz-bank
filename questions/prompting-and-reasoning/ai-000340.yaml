@@ -1,0 +1,21 @@
+id: ai-000340
+area: prompting-and-reasoning
+kind: origin
+topic: Prompt engineering
+topic_type: Technique
+maturity: established
+true_statement: Liu et al.'s 2021 survey named the 'pre-train, prompt, and predict' paradigm, in which an input is wrapped in a template whose open slots the language model fills.
+false_statement: Brown et al.'s 2020 GPT-3 paper named the 'pre-train, prompt, and predict' paradigm, in which an input is wrapped in a template whose open slots the language model fills.
+explanation: GPT-3 showed in 2020 that tasks could be specified purely in text; Liu and colleagues' survey a year later gave the shift its name. The point is that one pretrained model is steered by templates instead of training a separate supervised model per task.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/prompt-engineering.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20d323cce49e6b2424f4286132c7aac6759fd9ec
+concepts:
+- kt:prompt-engineering
+- kt:natural-language-processing
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

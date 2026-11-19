@@ -1,0 +1,20 @@
+id: ai-000339
+area: ml-foundations
+kind: origin
+topic: Supervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: Leslie Valiant's 1984 paper "A Theory of the Learnable" gave learning a computational footing, the template later called probably approximately correct (PAC) learning.
+false_statement: Leslie Valiant's 1994 paper "A Theory of the Learnable" gave learning a computational footing, the template later called probably approximately correct (PAC) learning.
+explanation: Valiant's 1984 Communications of the ACM paper asked a learner to produce, in polynomial time, a rule whose error is small with high probability. That framing underlies the formal theory of supervised learning taught today.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/supervised-learning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdfda40fe784e4347b5b6abb77299c383845a470
+concepts:
+- kt:supervised-learning
+- kt:statistical-learning-theory
+difficulty: 1
+created: '2026-11-19'
+status: active

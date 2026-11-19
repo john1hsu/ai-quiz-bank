@@ -1,0 +1,23 @@
+id: ai-000248
+area: ml-foundations
+kind: figure
+topic: Dimensionality reduction
+topic_type: Technique
+maturity: foundational
+true_statement: In 2006 Hinton and Salakhutdinov's 784-1000-500-250-30 deep autoencoder cut average squared reconstruction error on MNIST to 3.00, versus 13.87 for 30-component PCA.
+false_statement: In 2006 Hinton and Salakhutdinov's 784-1000-500-250-30 deep autoencoder reached average squared reconstruction error on MNIST of 13.87, versus 3.00 for 30-component PCA.
+explanation: With the same 30-number code, the nonlinear autoencoder reconstructed digits several times more accurately than linear PCA. They made deep training work by pretraining stacked restricted Boltzmann machines before fine-tuning with backpropagation.
+as_of: '2006'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/dimensionality-reduction.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 083b053389cddc69b1272307193a721e00e0b4ef
+concepts:
+- kt:dimensionality-reduction
+- kt:autoencoder
+- kt:principal-component-analysis
+- kt:geoffrey-hinton
+difficulty: 2
+created: '2026-11-19'
+status: active

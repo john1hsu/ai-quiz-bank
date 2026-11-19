@@ -1,0 +1,21 @@
+id: ai-000265
+area: transformers-and-llms
+kind: definition
+topic: Neural Machine Translation by Jointly Learning to Align and Translate
+topic_type: Work
+maturity: foundational
+true_statement: Bahdanau attention lets a translation decoder build a fresh context vector from all source positions at every output step, instead of relying on one fixed-length sentence vector.
+false_statement: Bahdanau attention lets a translation decoder build one context vector from all source positions per sentence, then reuse that fixed-length vector at every output step.
+explanation: Plain encoder-decoders squeezed the whole source into a single vector, a bottleneck that hurt long sentences. Recomputing the context per target word lets the decoder look at whichever source words matter right now.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/neural-machine-translation-by-jointly-learning-to-align-and-translate.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 3b66be8e00358357f6be8e707011734f27cb1f20
+concepts:
+- kt:neural-machine-translation-by-jointly-learning-to-align-and-translate
+- kt:attention-mechanism
+- kt:sequence-to-sequence-learning
+difficulty: 1
+created: '2026-11-19'
+status: active

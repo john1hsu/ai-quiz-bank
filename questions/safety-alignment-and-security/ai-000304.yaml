@@ -1,0 +1,21 @@
+id: ai-000304
+area: safety-alignment-and-security
+kind: evidence
+topic: Reward hacking
+topic_type: Risk
+maturity: established
+true_statement: In Gao, Schulman and Hilton's study of RLHF overoptimization, larger proxy reward models reached higher gold scores and suffered less overoptimization.
+false_statement: In Gao, Schulman and Hilton's study of RLHF overoptimization, smaller proxy reward models reached higher gold scores and suffered less overoptimization.
+explanation: A larger reward model is a better proxy for human judgement, so a policy can push further against it before the true (gold) score turns down. The benefit scaled smoothly with parameter count, which makes reward-model size a practical lever against reward hacking in RLHF, though not a cure.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/reward-hacking.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: a0444933401aa7732500d37db970276a86e68258
+concepts:
+- kt:reward-hacking
+- kt:reward-model
+- kt:rlhf
+difficulty: 3
+created: '2026-11-19'
+status: active

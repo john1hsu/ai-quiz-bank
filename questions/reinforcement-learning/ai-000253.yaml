@@ -1,0 +1,20 @@
+id: ai-000253
+area: reinforcement-learning
+kind: mechanism
+topic: 'Deep Q-network: human-level control through deep reinforcement learning'
+topic_type: Algorithm
+maturity: established
+true_statement: In a deep Q-network (DQN), experience replay samples stored transitions uniformly at random, which breaks up the correlation between consecutive frames.
+false_statement: In a deep Q-network (DQN), the target network samples stored transitions uniformly at random, which breaks up the correlation between consecutive frames.
+explanation: 'Experience replay is the memory of past transitions that DQN draws random minibatches from, so each experience is reused and training data is less correlated. The target network is the other stabiliser: a frozen weight copy, refreshed every C steps, that keeps the regression target from shifting after every update.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/deep-q-network.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 13998a05ff063959c9eba1b1dafe0870ff964344
+concepts:
+- kt:deep-q-network
+- kt:q-learning
+difficulty: 2
+created: '2026-11-19'
+status: active

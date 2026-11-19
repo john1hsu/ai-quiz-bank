@@ -1,0 +1,22 @@
+id: ai-000338
+area: ml-foundations
+kind: mechanism
+topic: Supervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: Fixing a narrower hypothesis class in advance makes empirical risk minimization less prone to overfitting, at the price of a stronger inductive bias.
+false_statement: Fixing a wider hypothesis class in advance makes empirical risk minimization less prone to overfitting, at the price of a stronger inductive bias.
+explanation: 'Unrestricted ERM can pick a predictor that memorises the training set: zero training error, chance-level on new data. Limiting the class blocks such lookup tables, but if the class is too narrow it may miss the true pattern.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/supervised-learning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdfda40fe784e4347b5b6abb77299c383845a470
+concepts:
+- kt:supervised-learning
+- kt:empirical-risk-minimization
+- kt:overfitting
+- kt:statistical-learning-theory
+difficulty: 2
+created: '2026-11-19'
+status: active

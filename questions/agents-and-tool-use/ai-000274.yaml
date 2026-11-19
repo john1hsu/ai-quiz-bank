@@ -1,0 +1,21 @@
+id: ai-000274
+area: agents-and-tool-use
+kind: mechanism
+topic: 'AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation'
+topic_type: Tool
+maturity: established
+true_statement: In AutoGen's conversation programming, each agent auto-replies until a termination condition is met, so the control flow emerges from the conversation itself.
+false_statement: In AutoGen's conversation programming, each agent replies only along edges of a state graph defined in advance, so the control flow is fixed before the conversation.
+explanation: A single opening message can drive a long multi-agent exchange, with control steered by system messages or custom Python reply functions. Explicit state graphs are the approach of LangGraph, the main alternative design.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/autogen.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8f9226f350247d3dff608dfcf956042a4a0d8b09
+concepts:
+- kt:autogen
+- kt:multi-agent-systems
+- kt:langgraph
+difficulty: 2
+created: '2026-11-19'
+status: active

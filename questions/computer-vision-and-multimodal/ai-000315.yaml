@@ -1,0 +1,22 @@
+id: ai-000315
+area: computer-vision-and-multimodal
+kind: origin
+topic: Object detection
+topic_type: Application
+maturity: established
+true_statement: In 2014 Girshick, Donahue, Darrell and Malik's R-CNN ran a convolutional network on region proposals and raised PASCAL VOC 2012 mAP by over 30% relative to the prior best.
+false_statement: In 2014 Ren, He, Girshick and Sun's R-CNN ran a convolutional network on region proposals and raised PASCAL VOC 2012 mAP by over 30% relative to the prior best.
+explanation: R-CNN broke a plateau of hand-engineered feature pipelines and showed that an ImageNet-pretrained network fine-tuned on scarce detection data works well. Ren, He, Girshick and Sun wrote the later Faster R-CNN paper, which kept Girshick but changed the rest of the team.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/object-detection.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4d0ea271f5f58716f61400ae2065de6815d723c1
+concepts:
+- kt:object-detection
+- kt:pascal-voc
+- kt:convolutional-neural-network
+- kt:imagenet-and-alexnet
+difficulty: 1
+created: '2026-11-19'
+status: active

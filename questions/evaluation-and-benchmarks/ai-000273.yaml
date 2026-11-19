@@ -1,0 +1,20 @@
+id: ai-000273
+area: evaluation-and-benchmarks
+kind: evidence
+topic: 'MMLU: Measuring Massive Multitask Language Understanding'
+topic_type: Benchmark
+maturity: established
+true_statement: Re-annotating MMLU for MMLU-Redux, Gema et al. found errors in 57% of the analysed Virology questions, and re-scoring on corrected items could change model rankings.
+false_statement: Re-annotating MMLU for MMLU-Redux, Gema et al. found errors in 57% of the analysed Virology questions, but re-scoring on corrected items left model rankings unchanged.
+explanation: 'Label noise is not just cosmetic: when the answer key is wrong, models get credit for matching the mistake, and fixing the key can reorder who looks best. It is one reason a headline MMLU score needs care before being trusted.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/mmlu.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: dc7747e59f89b2a1f086409eaad3083465879ab2
+concepts:
+- kt:mmlu
+- kt:ai-evaluation
+difficulty: 3
+created: '2026-11-19'
+status: active

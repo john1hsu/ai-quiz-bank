@@ -1,0 +1,21 @@
+id: ai-000292
+area: ml-foundations
+kind: origin
+topic: Principal component analysis
+topic_type: Algorithm
+maturity: foundational
+true_statement: Karl Pearson (1901) derived PCA as fitting the closest lines and planes to a cloud of points; Harold Hotelling (1933) derived it as the projection that maximises variance.
+false_statement: Harold Hotelling (1901) derived PCA as fitting the closest lines and planes to a cloud of points; Karl Pearson (1933) derived it as the projection that maximises variance.
+explanation: Pearson's geometric view minimises squared reconstruction error, and Hotelling's statistical view maximises projected variance. The two derivations give the same components, which is why PCA can be explained either way.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/principal-component-analysis.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: adedc2c5de2ded8c4d72ed75d7aae0dfde228a0a
+concepts:
+- kt:principal-component-analysis
+- kt:karl-pearson
+- kt:harold-hotelling
+difficulty: 1
+created: '2026-11-19'
+status: active

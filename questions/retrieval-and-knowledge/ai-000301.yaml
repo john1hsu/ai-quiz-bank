@@ -1,0 +1,21 @@
+id: ai-000301
+area: retrieval-and-knowledge
+kind: definition
+topic: Word2vec
+topic_type: Algorithm
+maturity: foundational
+true_statement: Word2vec gives each vocabulary word one fixed vector whatever sentence it appears in, so it cannot separate the river and the money senses of "bank".
+false_statement: Word2vec gives each vocabulary word a new vector in every sentence it appears in, so it can separate the river and the money senses of "bank".
+explanation: 'Word2vec embeddings are static: one vector per word type, blending all its senses. Producing a different vector per occurrence is what contextual encoders such as BERT do, which is why they replaced static vectors in most modern systems.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/word2vec.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdee7eac17b80c75490bc7f4c91488a1e10785fb
+concepts:
+- kt:word2vec
+- kt:embeddings
+- kt:transformer-architecture
+difficulty: 1
+created: '2026-11-19'
+status: active

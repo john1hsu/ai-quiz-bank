@@ -1,0 +1,22 @@
+id: ai-000310
+area: transformers-and-llms
+kind: mechanism
+topic: Transformer architecture
+topic_type: Architecture
+maturity: established
+true_statement: Decoder-only Transformers apply a causal mask that sets attention scores for future positions to negative infinity, so each token can attend only to earlier tokens.
+false_statement: Encoder-only Transformers apply a causal mask that sets attention scores for future positions to negative infinity, so each token can attend only to earlier tokens.
+explanation: The causal mask is what makes a decoder-only model a left-to-right generator that can still train on all positions in parallel. Encoder-only models such as BERT use no mask, so every token sees both left and right context.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/transformer-architecture.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 2b435471662a3db7db27f56be8a082eb827f5c9d
+concepts:
+- kt:transformer-architecture
+- kt:self-attention
+- kt:bert
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

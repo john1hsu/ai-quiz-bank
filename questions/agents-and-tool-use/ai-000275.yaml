@@ -1,0 +1,22 @@
+id: ai-000275
+area: agents-and-tool-use
+kind: figure
+topic: 'AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation'
+topic_type: Tool
+maturity: established
+true_statement: In the 2023 AutoGen paper, a GPT-4-based AutoGen setup solved 52.5% of 120 level-5 MATH problems, against 30.0% for plain GPT-4.
+false_statement: In the 2023 AutoGen paper, a GPT-4-based AutoGen setup solved 52.5% of 120 level-5 MATH problems, against 48.3% for plain GPT-4.
+explanation: Letting an assistant agent write code and a proxy agent run it gave GPT-4 a feedback loop it lacks when answering directly. The 48.33% figure was ChatGPT with Code Interpreter, a closer competitor that also executes code.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/autogen.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8f9226f350247d3dff608dfcf956042a4a0d8b09
+concepts:
+- kt:autogen
+- kt:tool-use
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

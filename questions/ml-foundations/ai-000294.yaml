@@ -1,0 +1,20 @@
+id: ai-000294
+area: ml-foundations
+kind: application
+topic: Principal component analysis
+topic_type: Algorithm
+maturity: foundational
+true_statement: Scikit-learn's PCA centres each feature but doesn't scale it, so variables measured on large scales dominate the components unless you rescale them first.
+false_statement: Scikit-learn's PCA centres each feature and scales it to unit variance, so variables measured on large scales can't dominate the components even if you skip rescaling.
+explanation: Because PCA chases variance, a feature in large units looks important simply because its numbers are big. Whether to standardise is a real modelling choice; NIST's tutorial standardises and works from the correlation matrix instead.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/principal-component-analysis.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: adedc2c5de2ded8c4d72ed75d7aae0dfde228a0a
+concepts:
+- kt:principal-component-analysis
+- kt:scikit-learn
+difficulty: 2
+created: '2026-11-19'
+status: active

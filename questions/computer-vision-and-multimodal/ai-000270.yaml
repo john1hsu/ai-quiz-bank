@@ -1,0 +1,21 @@
+id: ai-000270
+area: computer-vision-and-multimodal
+kind: figure
+topic: Faster R-CNN
+topic_type: Architecture
+maturity: established
+true_statement: In 2015, on a K40 GPU, Faster R-CNN with VGG-16 took about 198 ms per image, only about 10 ms of it spent on region proposals.
+false_statement: In 2015, on a K40 GPU, Faster R-CNN with VGG-16 took about 198 ms per image, about 150 ms of it spent on region proposals.
+explanation: Selective search had taken around 1.5 to 2 seconds per image, so moving proposals onto shared GPU features cut the whole pipeline from about 1,830 ms to 198 ms. Even so, roughly 5 frames per second is far from what 'real-time' usually means, because two stages still run per image.
+as_of: '2015'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/faster-r-cnn.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 960192c933f52d8ae22f7471233deaffdf23186c
+concepts:
+- kt:faster-r-cnn
+- kt:faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000279
+area: ai-history
+kind: evidence
+topic: ImageNet and AlexNet
+topic_type: Event
+maturity: historical
+true_statement: AlexNet's authors found that removing any single convolutional layer hurt accuracy, even though each held at most 1% of the parameters, an early sign that depth itself mattered.
+false_statement: AlexNet's authors found that removing any single convolutional layer barely changed accuracy, since each held at most 1% of the parameters, an early sign that width mattered more than depth.
+explanation: Most of AlexNet's parameters sat in its fully connected layers, so the convolutional layers looked cheap. That losing even one still cost accuracy suggested the stack of learned feature levels, not raw parameter count, was doing the work.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/imagenet-and-alexnet.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: ecc51d41d5c9023c23e53b165cba3ed886b52f0e
+concepts:
+- kt:imagenet-and-alexnet
+- kt:convolutional-neural-network
+- kt:imagenet-classification-with-deep-convolutional-neural-networks
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000269
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Faster R-CNN
+topic_type: Architecture
+maturity: established
+true_statement: 'At each feature-map position, Faster R-CNN''s Region Proposal Network scores k = 9 anchor boxes: three scales times three aspect ratios (1:1, 1:2 and 2:1).'
+false_statement: 'At each feature-map position, Faster R-CNN''s Region Proposal Network scores k = 6 anchor boxes: three scales times two aspect ratios (1:1 and 2:1).'
+explanation: Anchors are reference boxes centred on each location; the RPN outputs an objectness score and four box offsets for every one. Using several scales and shapes at every position lets one small, translation-invariant network propose objects of very different sizes.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/faster-r-cnn.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 960192c933f52d8ae22f7471233deaffdf23186c
+concepts:
+- kt:faster-r-cnn
+- kt:object-detection
+difficulty: 2
+created: '2026-11-19'
+status: active

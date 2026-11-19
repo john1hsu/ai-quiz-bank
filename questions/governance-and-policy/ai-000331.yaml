@@ -1,0 +1,20 @@
+id: ai-000331
+area: governance-and-policy
+kind: definition
+topic: AI governance
+topic_type: Field
+maturity: emerging
+true_statement: 'Dafoe''s AI governance research agenda has three clusters: the technical landscape, AI politics, and ideal governance, which asks what institutions would best ensure beneficial AI.'
+false_statement: 'Dafoe''s AI governance research agenda has three clusters: the technical landscape, AI politics, and ideal governance, which asks what AI will be able to do and when.'
+explanation: Forecasting what AI can do and when belongs to the technical landscape cluster. Ideal governance is the normative part, asking which norms, institutions and systems should steer AI toward beneficial use.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: af451ab64bc49c3074e27165b922440b476585f2
+concepts:
+- kt:ai-governance
+- kt:ai-governance-a-research-agenda
+difficulty: 2
+created: '2026-11-19'
+status: active

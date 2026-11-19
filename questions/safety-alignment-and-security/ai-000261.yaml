@@ -1,0 +1,20 @@
+id: ai-000261
+area: safety-alignment-and-security
+kind: evidence
+topic: Goodhart's law
+topic_type: Concept
+maturity: foundational
+true_statement: Karwowski et al.'s early-stopping rule provably avoids Goodharting given a bound on the proxy-true reward angle, but in experiments it gave up about 10% to 44% of attainable true reward.
+false_statement: Karwowski et al.'s early-stopping rule provably avoids Goodharting given a bound on the proxy-true reward angle, and in experiments it gave up almost none of the attainable true reward.
+explanation: 'Stopping early protects against the point where the true reward starts to fall, but it also stops before much of the genuine gain is reached. It shows the general trade: no fix removes Goodhart''s law, mitigations buy robustness with performance, and this one also needs the angle bound estimated well.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/goodharts-law.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdc87de52a80274985fbf00433e3d786fb8cd256
+concepts:
+- kt:goodharts-law
+- kt:reward-hacking
+difficulty: 3
+created: '2026-11-19'
+status: active

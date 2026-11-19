@@ -1,0 +1,20 @@
+id: ai-000316
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: Benchmark contamination
+topic_type: Risk
+maturity: emerging
+true_statement: Oren et al.'s contamination test relies on a clean model finding every ordering of a benchmark's examples equally likely, so a preference for the published order signals memorisation.
+false_statement: Oren et al.'s contamination test relies on a clean model preferring the published ordering of a benchmark's examples, so equal likelihood across shuffles signals memorisation.
+explanation: A model that never saw the test set has no reason to favour the order the examples were published in. If it does, it has probably read that file, and because the test only needs output probabilities it works on black-box models with exact false-positive guarantees.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/benchmark-contamination.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 9dd4b216f4253c1304e32c3c2a7d5c516f83fefc
+concepts:
+- kt:benchmark-contamination
+- kt:membership-inference-attack
+difficulty: 3
+created: '2026-11-19'
+status: active

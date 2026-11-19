@@ -1,0 +1,20 @@
+id: ai-000258
+area: retrieval-and-knowledge
+kind: evidence
+topic: GloVe
+topic_type: Algorithm
+maturity: foundational
+true_statement: When Levy, Goldberg and Dagan retrained GloVe and skip-gram with negative sampling on the same corpus with matched hyperparameters, skip-gram beat GloVe on every task they tested.
+false_statement: When Levy, Goldberg and Dagan retrained GloVe and skip-gram with negative sampling on the same corpus with matched hyperparameters, GloVe beat skip-gram on every task they tested.
+explanation: GloVe's original paper reported beating skip-gram, but Levy and colleagues traced that gap to uncontrolled hyperparameters, a single analogy set and different corpora. The wider lesson is that design choices such as context smoothing often matter more than which embedding algorithm you pick.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/glove.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8e83f9995df097c849784553bcfbd20cfb3f59a1
+concepts:
+- kt:glove
+- kt:word2vec
+difficulty: 3
+created: '2026-11-19'
+status: active

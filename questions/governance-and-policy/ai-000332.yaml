@@ -1,0 +1,20 @@
+id: ai-000332
+area: governance-and-policy
+kind: evidence
+topic: AI governance
+topic_type: Field
+maturity: emerging
+true_statement: Jobin, Ienca and Vayena's review of 84 AI ethics guidelines found convergence on five themes, yet no single principle appeared in every document.
+false_statement: Jobin, Ienca and Vayena's review of 84 AI ethics guidelines found convergence on five themes, with transparency appearing in every document.
+explanation: Transparency, justice and fairness, non-maleficence, responsibility and privacy recurred, but none was universal, and authors disagreed on what the terms mean and how to implement them. It is a core piece of evidence for the critique that principles outran enforceable practice.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/ai-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: af451ab64bc49c3074e27165b922440b476585f2
+concepts:
+- kt:ai-governance
+- kt:algorithmic-bias-and-fairness
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000314
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Object detection
+topic_type: Application
+maturity: established
+true_statement: DETR trains with a bipartite-matching loss that assigns each object exactly one prediction, which lets it drop non-maximum suppression and hand-built anchors.
+false_statement: DETR trains with an anchor-matching loss that assigns each object several predictions, which means it still relies on non-maximum suppression and hand-built anchors.
+explanation: Conventional detectors let many candidates fire on one object and prune the duplicates afterwards with non-maximum suppression. DETR instead treats detection as set prediction from a fixed set of learned object queries, so duplicates are penalised during training rather than removed after it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/object-detection.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 4d0ea271f5f58716f61400ae2065de6815d723c1
+concepts:
+- kt:object-detection
+- kt:non-maximum-suppression
+- kt:vision-transformer
+difficulty: 3
+created: '2026-11-19'
+status: active

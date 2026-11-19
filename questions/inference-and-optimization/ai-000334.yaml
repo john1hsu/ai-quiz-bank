@@ -1,0 +1,20 @@
+id: ai-000334
+area: inference-and-optimization
+kind: definition
+topic: Model pruning
+topic_type: Technique
+maturity: established
+true_statement: Structured pruning removes whole channels, heads or blocks, leaving a smaller dense network, while unstructured pruning zeroes individual weights in an irregular pattern.
+false_statement: Unstructured pruning removes whole channels, heads or blocks, leaving a smaller dense network, while structured pruning zeroes individual weights in an irregular pattern.
+explanation: Unstructured pruning reaches the highest sparsity for a given accuracy, but its scattered zeros are hard for hardware to exploit. Structured pruning gives up some sparsity so ordinary dense kernels can run the slimmer model faster.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-pruning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0efa046c0f3ed83183e7ed0f792d8b64679ecf14
+concepts:
+- kt:model-pruning
+- kt:model-compression
+difficulty: 2
+created: '2026-11-19'
+status: active

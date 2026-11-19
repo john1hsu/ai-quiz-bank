@@ -1,0 +1,21 @@
+id: ai-000343
+area: reinforcement-learning
+kind: definition
+topic: Markov decision process
+topic_type: Concept
+maturity: foundational
+true_statement: In a Markov decision process (MDP), the next state and reward depend only on the current state and action, so the state must summarise everything relevant about the past.
+false_statement: In a Markov decision process (MDP), the next state and reward depend on the full history of states and actions, so the agent must remember everything about the past.
+explanation: 'The Markov property is what makes MDPs tractable: the current state is a sufficient summary, so values and policies can be defined per state. When the agent cannot observe such a state, the problem becomes a partially observable MDP, where the agent tracks a belief over states instead.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/markov-decision-process.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: d4a458fc254b17d107e9abf8d454b459e245aea8
+concepts:
+- kt:markov-decision-process
+- kt:markov-chain
+- kt:partially-observable-markov-decision-process
+difficulty: 1
+created: '2026-11-19'
+status: active

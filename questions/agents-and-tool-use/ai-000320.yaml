@@ -1,0 +1,21 @@
+id: ai-000320
+area: agents-and-tool-use
+kind: definition
+topic: 'Generative Agents: Interactive Simulacra of Human Behavior'
+topic_type: Work
+maturity: established
+true_statement: In generative agents, a reflection is a higher-level insight written about recent memories and stored back in the memory stream, so later reflections can build on it.
+false_statement: In generative agents, a reflection is a higher-level summary that replaces recent memories in the memory stream, so later reflections can only use the summary.
+explanation: Reflections cite the memories that support them and sit alongside raw observations, forming trees of increasingly abstract beliefs. They are triggered when the summed importance of recent events passes a threshold, a few times per simulated day.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/generative-agents-interactive-simulacra-of-human-behavior.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b0870cb325a6b296baeda2c96f311aa7cff9029b
+concepts:
+- kt:generative-agents-interactive-simulacra-of-human-behavior
+- kt:agent-memory
+- kt:ai-agent
+difficulty: 2
+created: '2026-11-19'
+status: active

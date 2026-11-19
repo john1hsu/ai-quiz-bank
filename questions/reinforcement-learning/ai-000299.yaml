@@ -1,0 +1,20 @@
+id: ai-000299
+area: reinforcement-learning
+kind: mechanism
+topic: Exploration-exploitation dilemma
+topic_type: Concept
+maturity: foundational
+true_statement: Optimistic initial values push even a greedy learner to try every action early on, but the effect fades, so they do not help in nonstationary problems.
+false_statement: Optimistic initial values push even a greedy learner to try every action early on, and the effect persists, so they suit nonstationary problems well.
+explanation: Starting every estimate too high means early rewards disappoint, so the learner keeps moving on to untried actions. Once the estimates settle the push to explore is gone, which is why the trick fails when the best action changes over time and exploration must restart.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/exploration-exploitation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 81bdc19c500b3eeec5375e010056153da8391bd3
+concepts:
+- kt:exploration-exploitation
+- kt:multi-armed-bandit
+difficulty: 2
+created: '2026-11-19'
+status: active

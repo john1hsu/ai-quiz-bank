@@ -1,0 +1,21 @@
+id: ai-000255
+area: reinforcement-learning
+kind: evidence
+topic: 'Deep Q-network: human-level control through deep reinforcement learning'
+topic_type: Algorithm
+maturity: established
+true_statement: The DQN authors noted that Atari games needing temporally extended planning, such as Montezuma's Revenge, remained a major challenge for their agent.
+false_statement: The DQN authors noted that Atari games needing fast reactive play, such as Breakout, remained a major challenge for their agent.
+explanation: 'Breakout was one of DQN''s showcase successes: it even learned to tunnel through one side of the wall. Games where reward only comes after a long, planned sequence of moves exposed the limits of a reactive agent exploring with ε-greedy.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/deep-q-network.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 13998a05ff063959c9eba1b1dafe0870ff964344
+concepts:
+- kt:deep-q-network
+- kt:arcade-learning-environment
+- kt:exploration-exploitation
+difficulty: 3
+created: '2026-11-19'
+status: active

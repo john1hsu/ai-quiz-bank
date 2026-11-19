@@ -1,0 +1,20 @@
+id: ai-000337
+area: ml-foundations
+kind: definition
+topic: Supervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: In supervised learning, a continuous target such as a house price makes the task regression, while a target with a few discrete values makes it classification.
+false_statement: In supervised learning, a continuous target such as a house price makes the task classification, while a target with a few discrete values makes it regression.
+explanation: 'The type of label decides the task: regression predicts a number on a continuous scale, classification picks one of a small set of categories. The choice also shapes the loss, such as squared error for regression and cross-entropy for classification.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/supervised-learning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdfda40fe784e4347b5b6abb77299c383845a470
+concepts:
+- kt:supervised-learning
+- kt:loss-function
+difficulty: 1
+created: '2026-11-19'
+status: active

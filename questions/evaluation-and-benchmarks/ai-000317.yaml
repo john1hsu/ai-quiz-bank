@@ -1,0 +1,21 @@
+id: ai-000317
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Benchmark contamination
+topic_type: Risk
+maturity: emerging
+true_statement: On GSM1k, a fresh set matched to GSM8K, some leading models scored up to 8% lower, though many frontier models showed little sign of overfitting (NeurIPS 2024).
+false_statement: On GSM1k, a fresh set matched to GSM8K, some leading models scored up to 8% higher, though many frontier models showed little sign of overfitting (NeurIPS 2024).
+explanation: 'Rebuilding a benchmark from scratch and comparing is the clearest way to measure contamination''s effect: a drop on unseen but equivalent problems means the old score was inflated. The result was mixed, with some model families overfit and many frontier models not.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/benchmark-contamination.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 9dd4b216f4253c1304e32c3c2a7d5c516f83fefc
+concepts:
+- kt:benchmark-contamination
+- kt:gsm8k
+- kt:overfitting
+difficulty: 2
+created: '2026-11-19'
+status: active

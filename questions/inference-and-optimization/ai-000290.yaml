@@ -1,0 +1,21 @@
+id: ai-000290
+area: inference-and-optimization
+kind: mechanism
+topic: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
+topic_type: Algorithm
+maturity: established
+true_statement: FlashAttention keeps a running row maximum and sum of exponentials, rescaling partial outputs per block, so it never stores the N×N score matrix.
+false_statement: FlashAttention writes the N×N score matrix to high-bandwidth memory once, then reads it back in blocks to apply softmax and multiply by V.
+explanation: Softmax normally needs a whole row before normalising, which forces naive attention to write and reread the score matrix. The 'online softmax' trick fixes the normalisation as blocks arrive, so the full computation fuses into one kernel with memory linear in sequence length.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/flash-attention.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 67b77b57a557a3261c090fd355b468b06daf45cd
+concepts:
+- kt:flash-attention
+- kt:self-attention
+- kt:context-window
+difficulty: 3
+created: '2026-11-19'
+status: active

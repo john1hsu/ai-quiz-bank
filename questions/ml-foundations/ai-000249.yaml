@@ -1,0 +1,20 @@
+id: ai-000249
+area: ml-foundations
+kind: evidence
+topic: Dimensionality reduction
+topic_type: Technique
+maturity: foundational
+true_statement: Distances between clusters in a t-SNE plot shouldn't be over-read, and a 2-D map where classes overlap doesn't prove the classes are inseparable.
+false_statement: Distances between clusters in a t-SNE plot can be read as true separations, and a 2-D map where classes overlap proves the classes are inseparable.
+explanation: t-SNE is built to keep local neighbourhoods, so the gaps between clusters depend on perplexity and the random seed rather than on real global distances. Squeezing many dimensions into two can hide separation that exists in the original space.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/dimensionality-reduction.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 083b053389cddc69b1272307193a721e00e0b4ef
+concepts:
+- kt:dimensionality-reduction
+- kt:t-sne
+difficulty: 2
+created: '2026-11-19'
+status: active

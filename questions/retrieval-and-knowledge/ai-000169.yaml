@@ -10,8 +10,8 @@ explanation: Idf is the log of the number of documents divided by the number con
 source:
   repo: john1hsu/ai-knowledge-graph
   path: articles/retrieval-and-knowledge/tf-idf.md
-  commit: 8be00c6c1359f4d2d57b8479b2cd72b97516288b
-  blob: 0d00a8dfa84955e37d28e69d756e4ff16f753201
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: a27263d6949fcc890224367533852eef3ec6638f
 concepts:
 - kt:tf-idf
 - kt:information-retrieval

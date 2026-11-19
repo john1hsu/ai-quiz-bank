@@ -1,0 +1,21 @@
+id: ai-000295
+area: prompting-and-reasoning
+kind: mechanism
+topic: 'Self-Refine: Iterative Refinement with Self-Feedback'
+topic_type: Work
+maturity: established
+true_statement: Self-Refine prompts one LLM to draft an answer, critique it and rewrite it, and the refine prompt carries the history of earlier drafts and critiques.
+false_statement: Self-Refine trains a separate critic model to critique a generator LLM's draft, and the refine prompt carries only the current draft and its critique.
+explanation: All three roles are the same frozen model set up with few-shot prompts, so the method needs no training data or weight updates. Keeping the full history lets the model avoid repeating mistakes it already made in earlier rounds.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-refine-iterative-refinement-with-self-feedback.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20f0e11ea32531e7ab54215e3551c36a8e9d88d6
+concepts:
+- kt:self-refine-iterative-refinement-with-self-feedback
+- kt:self-correction
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

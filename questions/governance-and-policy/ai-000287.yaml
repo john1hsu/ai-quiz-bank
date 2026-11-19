@@ -1,0 +1,22 @@
+id: ai-000287
+area: governance-and-policy
+kind: figure
+topic: Compute governance
+topic_type: Concept
+maturity: emerging
+true_statement: A 2024 paper reported training compute for notable ML systems doubling about every six months, while GPU price-performance doubled only every two to two-and-a-half years.
+false_statement: A 2024 paper reported training compute for notable ML systems doubling about every two years, while GPU price-performance doubled roughly every six months.
+explanation: Because compute grew far faster than chips got cheaper, most of the growth came from bigger clusters and more spending. That spending makes large training runs visible, which is what gives compute governance its leverage.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/compute-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0e50aefd6189a0602939a1402b2607a5c477dcd0
+concepts:
+- kt:compute-governance
+- kt:computing-power-and-the-governance-of-artificial-intelligence
+- kt:scaling-laws
+difficulty: 2
+created: '2026-11-19'
+status: active

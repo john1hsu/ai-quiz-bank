@@ -1,0 +1,21 @@
+id: ai-000324
+area: ai-history
+kind: application
+topic: ELIZA
+topic_type: Model
+maturity: historical
+true_statement: Weizenbaum used a Rogerian psychotherapist for ELIZA's DOCTOR script because such an interviewer can seem to know almost nothing about the world.
+false_statement: Weizenbaum used a Rogerian psychotherapist for ELIZA's DOCTOR script because such an interviewer is expected to know a great deal about the world.
+explanation: A therapist who reflects questions back hides the program's total lack of knowledge, so users fill in the understanding themselves. That human tendency to read meaning into simple output became known as the ELIZA effect.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/eliza.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 710dc7231514534f26b223c71f5d5f371cc819b4
+concepts:
+- kt:eliza
+- kt:chatbot
+- kt:eliza-effect
+difficulty: 1
+created: '2026-11-19'
+status: active

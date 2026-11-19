@@ -1,0 +1,20 @@
+id: ai-000308
+area: training-and-adaptation
+kind: evidence
+topic: Fine-tuning
+topic_type: Technique
+maturity: established
+true_statement: Kumar et al. (ICLR 2022) found full fine-tuning beat linear probing in distribution but did worse out of distribution, and probing first then fine-tuning recovered much of the gap.
+false_statement: Kumar et al. (ICLR 2022) found full fine-tuning beat linear probing out of distribution but did worse in distribution, and probing first then fine-tuning recovered much of the gap.
+explanation: While a random head is still being learned, its noisy gradients distort the pretrained lower layers, which hurts robustness to distribution shift. Fitting a linear probe first (LP-FT) gives the head a sensible start, so fine-tuning changes the features less.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/fine-tuning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b220d9d30bbe5a76d1e414acad8a0a24e5b51b24
+concepts:
+- kt:fine-tuning
+- kt:linear-probing
+difficulty: 3
+created: '2026-11-19'
+status: active

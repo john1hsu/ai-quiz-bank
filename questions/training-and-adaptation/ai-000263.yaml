@@ -1,0 +1,21 @@
+id: ai-000263
+area: training-and-adaptation
+kind: evidence
+topic: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'
+topic_type: Algorithm
+maturity: established
+true_statement: Xu et al. (ICML 2024) found a carefully tuned PPO beat DPO in all their tests, and DPO failed to improve over supervised fine-tuning on competitive code generation.
+false_statement: Xu et al. (ICML 2024) found DPO beat a carefully tuned PPO in all their tests, and PPO failed to improve over supervised fine-tuning on competitive code generation.
+explanation: The original DPO paper reported matching or beating PPO-based RLHF on small tasks, but this later study qualified that. It traced DPO's weaknesses to favouring out-of-distribution responses and to mismatch between the model's own outputs and the preference data.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/direct-preference-optimization.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 71ff8df42c2fb5bccf59b57e2f555a76a0a56c30
+concepts:
+- kt:direct-preference-optimization
+- kt:proximal-policy-optimization
+- kt:fine-tuning
+difficulty: 3
+created: '2026-11-19'
+status: active

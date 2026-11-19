@@ -1,0 +1,20 @@
+id: ai-000303
+area: retrieval-and-knowledge
+kind: evidence
+topic: Word2vec
+topic_type: Algorithm
+maturity: foundational
+true_statement: Levy and Goldberg showed skip-gram with negative sampling implicitly factorises a word-context matrix of pointwise mutual information shifted by a constant.
+false_statement: Levy and Goldberg showed skip-gram with negative sampling implicitly factorises a term-document matrix of tf-idf weights shifted by a constant.
+explanation: This result tied word2vec back to count-based distributional methods built on PMI. An exact SVD of that matrix could match it on word similarity, though skip-gram stayed ahead on analogies; tf-idf weights term-document counts and is a different, sparse scheme.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/word2vec.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdee7eac17b80c75490bc7f4c91488a1e10785fb
+concepts:
+- kt:word2vec
+- kt:tf-idf
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000341
+area: prompting-and-reasoning
+kind: mechanism
+topic: Prompt engineering
+topic_type: Technique
+maturity: established
+true_statement: Automatic Prompt Engineer (APE) has an LLM propose candidate instructions, scores each one on training examples, and keeps the best performer.
+false_statement: Automatic Prompt Engineer (APE) has humans propose candidate instructions, has an LLM score each one by its fluency, and keeps the best performer.
+explanation: APE treats the instruction as a program to search over, with a model generating candidates and a metric such as training accuracy choosing among them. This reframes prompt writing as optimisation; across 24 tasks its instructions matched or beat human ones on 21.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/prompt-engineering.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20d323cce49e6b2424f4286132c7aac6759fd9ec
+concepts:
+- kt:prompt-engineering
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-19'
+status: active

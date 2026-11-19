@@ -1,0 +1,21 @@
+id: ai-000321
+area: agents-and-tool-use
+kind: evidence
+topic: 'Generative Agents: Interactive Simulacra of Human Behavior'
+topic_type: Work
+maturity: established
+true_statement: In believability interviews, the full generative-agent architecture outranked human crowdworkers role-playing the agents, and the version without memory, reflection or planning ranked lowest.
+false_statement: In believability interviews, human crowdworkers role-playing the agents outranked the full generative-agent architecture, and the version without memory, reflection or planning ranked lowest.
+explanation: The ablations show each component adds believability, with removing reflection alone already lowering the ranking. The authors caution the crowdworkers were not meant to represent expert human performance, so this is not a claim of beating people in general.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/generative-agents-interactive-simulacra-of-human-behavior.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: b0870cb325a6b296baeda2c96f311aa7cff9029b
+concepts:
+- kt:generative-agents-interactive-simulacra-of-human-behavior
+- kt:planning-in-llms
+- kt:agent-memory
+difficulty: 3
+created: '2026-11-19'
+status: active

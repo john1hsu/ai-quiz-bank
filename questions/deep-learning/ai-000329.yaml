@@ -1,0 +1,22 @@
+id: ai-000329
+area: deep-learning
+kind: origin
+topic: Convolutional neural network
+topic_type: Architecture
+maturity: established
+true_statement: Fukushima's 1980 neocognitron learned without labels, whereas LeCun and colleagues later trained convolutional networks end to end with backpropagation.
+false_statement: Fukushima's 1980 neocognitron was trained end to end with backpropagation, whereas LeCun and colleagues later trained convolutional networks without labels.
+explanation: The neocognitron supplied the architecture of alternating feature-detecting and pooling-like layers, inspired by simple and complex cells in the visual cortex. Training it with gradients was LeCun's step, and it led to deployed systems such as cheque readers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/convolutional-neural-network.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fccec7eacd76b5797a253115ff4cca2a06cc66b8
+concepts:
+- kt:convolutional-neural-network
+- kt:neocognitron
+- kt:yann-lecun
+- kt:backpropagation
+difficulty: 1
+created: '2026-11-19'
+status: active

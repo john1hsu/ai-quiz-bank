@@ -1,0 +1,21 @@
+id: ai-000289
+area: inference-and-optimization
+kind: definition
+topic: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
+topic_type: Algorithm
+maturity: established
+true_statement: FlashAttention computes exact attention, giving the same result as standard attention, so it is a drop-in speedup rather than a modelling change.
+false_statement: FlashAttention computes a low-rank approximation of attention, giving a slightly different result, so it is a modelling change rather than a drop-in speedup.
+explanation: Its gains come from moving fewer bytes between GPU high-bandwidth memory and on-chip SRAM, not from approximating. Sparse and low-rank methods trade accuracy for speed; FlashAttention keeps the maths identical, which is why it spread so quickly.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/flash-attention.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 67b77b57a557a3261c090fd355b468b06daf45cd
+concepts:
+- kt:flash-attention
+- kt:self-attention
+- kt:high-bandwidth-memory
+difficulty: 1
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000262
+area: training-and-adaptation
+kind: mechanism
+topic: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'
+topic_type: Algorithm
+maturity: established
+true_statement: Direct Preference Optimization (DPO) sidesteps an intractable partition function because, under the Bradley–Terry model, a preference depends only on the reward difference between two responses.
+false_statement: Direct Preference Optimization (DPO) sidesteps an intractable partition function because, under the Bradley–Terry model, a preference depends only on the sum of two responses' rewards.
+explanation: Rewriting the reward in terms of the policy leaves a β log Z(x) term that is the same for both responses to a prompt, so it cancels in a difference but not in a sum. That cancellation is why the policy itself can act as an implicit reward model, with no separate reward network.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/direct-preference-optimization.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 71ff8df42c2fb5bccf59b57e2f555a76a0a56c30
+concepts:
+- kt:direct-preference-optimization
+- kt:bradley-terry-model
+- kt:rlhf
+difficulty: 3
+created: '2026-11-19'
+status: active

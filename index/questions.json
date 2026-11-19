@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 245,
- "active": 245,
+ "count": 342,
+ "active": 342,
  "questions": [
   {
    "id": "ai-000001",
@@ -4048,6 +4048,1630 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/commonsenseqa.html"
+  },
+  {
+   "id": "ai-000247",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Dimensionality reduction",
+   "t": "Isomap estimates geodesic distances as shortest paths through a k-nearest-neighbour graph, then embeds them with classical multidimensional scaling.",
+   "f": "Isomap estimates geodesic distances as straight-line Euclidean distances between all pairs of points, then embeds them with classical multidimensional scaling.",
+   "x": "Hopping between near neighbours makes the distance follow the curved sheet the data lies on, which is how Isomap unrolls the Swiss roll where PCA and plain MDS fail. Straight-line distances would cut across the roll and keep the fold.",
+   "concepts": [
+    "kt:dimensionality-reduction"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/dimensionality-reduction.html"
+  },
+  {
+   "id": "ai-000248",
+   "area": "ml-foundations",
+   "kind": "figure",
+   "topic": "Dimensionality reduction",
+   "t": "In 2006 Hinton and Salakhutdinov's 784-1000-500-250-30 deep autoencoder cut average squared reconstruction error on MNIST to 3.00, versus 13.87 for 30-component PCA.",
+   "f": "In 2006 Hinton and Salakhutdinov's 784-1000-500-250-30 deep autoencoder reached average squared reconstruction error on MNIST of 13.87, versus 3.00 for 30-component PCA.",
+   "x": "With the same 30-number code, the nonlinear autoencoder reconstructed digits several times more accurately than linear PCA. They made deep training work by pretraining stacked restricted Boltzmann machines before fine-tuning with backpropagation.",
+   "concepts": [
+    "kt:dimensionality-reduction",
+    "kt:autoencoder",
+    "kt:principal-component-analysis",
+    "kt:geoffrey-hinton"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/dimensionality-reduction.html",
+   "asOf": "2006"
+  },
+  {
+   "id": "ai-000249",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Dimensionality reduction",
+   "t": "Distances between clusters in a t-SNE plot shouldn't be over-read, and a 2-D map where classes overlap doesn't prove the classes are inseparable.",
+   "f": "Distances between clusters in a t-SNE plot can be read as true separations, and a 2-D map where classes overlap proves the classes are inseparable.",
+   "x": "t-SNE is built to keep local neighbourhoods, so the gaps between clusters depend on perplexity and the random seed rather than on real global distances. Squeezing many dimensions into two can hide separation that exists in the original space.",
+   "concepts": [
+    "kt:dimensionality-reduction",
+    "kt:t-sne"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/dimensionality-reduction.html"
+  },
+  {
+   "id": "ai-000250",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems",
+   "t": "Ling et al. (2017) supervised their algebra solver with step-by-step rationales rather than programs, using each rationale's milestones to constrain the hidden arithmetic program.",
+   "f": "Ling et al. (2017) supervised their algebra solver with hand-written programs rather than rationales, using each program's steps to constrain the generated natural-language rationale.",
+   "x": "The program was a latent variable that was never observed; the search kept only instructions able to emit the next rationale token. The authors report that without rationales the space of programs was too large to learn from question-answer pairs alone.",
+   "concepts": [
+    "kt:program-induction-by-rationale-generation",
+    "kt:program-induction",
+    "kt:aqua-rat"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/program-induction-by-rationale-generation.html"
+  },
+  {
+   "id": "ai-000251",
+   "area": "prompting-and-reasoning",
+   "kind": "figure",
+   "topic": "Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems",
+   "t": "On the AQuA test set in 2017, Ling et al.'s rationale-generating model reached 36.4% accuracy, against 20.8% for an attention-based sequence-to-sequence baseline.",
+   "f": "On the AQuA test set in 2017, Ling et al.'s rationale-generating model reached 56.4% accuracy, against 20.8% for an attention-based sequence-to-sequence baseline.",
+   "x": "With five answer options, chance is 20%, so the baseline barely beat guessing while the rationale model got about 1.75 times its score. That is real progress but far from solving algebra word problems, which is why later chain-of-thought work on AQuA mattered.",
+   "concepts": [
+    "kt:program-induction-by-rationale-generation",
+    "kt:aqua-rat",
+    "kt:sequence-to-sequence-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/program-induction-by-rationale-generation.html",
+   "asOf": "2017"
+  },
+  {
+   "id": "ai-000252",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems",
+   "t": "Most AQuA problems that Ling et al.'s model solved needed only one or two operations, and long rationales of over 200 tokens strained its attention and copy mechanisms.",
+   "f": "Most AQuA problems that Ling et al.'s model solved needed five or more operations, and long rationales of over 200 tokens helped its attention and copy mechanisms.",
+   "x": "The 2017 LSTM model handled short computations but struggled to keep track over long multi-step reasoning. Its rationales were also judged only with automatic metrics, with no human evaluation, so their quality as explanations was not directly tested.",
+   "concepts": [
+    "kt:program-induction-by-rationale-generation",
+    "kt:long-short-term-memory",
+    "kt:mathematical-reasoning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/program-induction-by-rationale-generation.html"
+  },
+  {
+   "id": "ai-000253",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "Deep Q-network: human-level control through deep reinforcement learning",
+   "t": "In a deep Q-network (DQN), experience replay samples stored transitions uniformly at random, which breaks up the correlation between consecutive frames.",
+   "f": "In a deep Q-network (DQN), the target network samples stored transitions uniformly at random, which breaks up the correlation between consecutive frames.",
+   "x": "Experience replay is the memory of past transitions that DQN draws random minibatches from, so each experience is reused and training data is less correlated. The target network is the other stabiliser: a frozen weight copy, refreshed every C steps, that keeps the regression target from shifting after every update.",
+   "concepts": [
+    "kt:deep-q-network",
+    "kt:q-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/deep-q-network.html"
+  },
+  {
+   "id": "ai-000254",
+   "area": "reinforcement-learning",
+   "kind": "origin",
+   "topic": "Deep Q-network: human-level control through deep reinforcement learning",
+   "t": "DeepMind's first DQN preprint, posted to arXiv in December 2013, ran one unchanged architecture on seven Atari 2600 games and beat a human expert on three.",
+   "f": "DeepMind's first DQN preprint, posted to arXiv in December 2013, ran one unchanged architecture on 49 Atari 2600 games and beat a human expert on three.",
+   "x": "The 2013 preprint was a small proof of concept on seven games. The 49-game evaluation came with the full Nature paper in 2015, which scaled the same one-architecture, one-hyperparameter-setting idea up to the wider benchmark.",
+   "concepts": [
+    "kt:deep-q-network",
+    "kt:playing-atari-with-deep-reinforcement-learning",
+    "kt:google-deepmind",
+    "kt:arcade-learning-environment"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/deep-q-network.html"
+  },
+  {
+   "id": "ai-000255",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "Deep Q-network: human-level control through deep reinforcement learning",
+   "t": "The DQN authors noted that Atari games needing temporally extended planning, such as Montezuma's Revenge, remained a major challenge for their agent.",
+   "f": "The DQN authors noted that Atari games needing fast reactive play, such as Breakout, remained a major challenge for their agent.",
+   "x": "Breakout was one of DQN's showcase successes: it even learned to tunnel through one side of the wall. Games where reward only comes after a long, planned sequence of moves exposed the limits of a reactive agent exploring with ε-greedy.",
+   "concepts": [
+    "kt:deep-q-network",
+    "kt:arcade-learning-environment",
+    "kt:exploration-exploitation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/deep-q-network.html"
+  },
+  {
+   "id": "ai-000256",
+   "area": "retrieval-and-knowledge",
+   "kind": "origin",
+   "topic": "GloVe",
+   "t": "GloVe was introduced by Pennington, Socher and Manning of Stanford at EMNLP 2014 to unite global count-based matrix factorisation with local context-window prediction.",
+   "f": "GloVe was introduced by Pennington, Socher and Manning of Stanford at EMNLP 2017 to unite global count-based matrix factorisation with local context-window prediction.",
+   "x": "GloVe appeared in 2014, a year after word2vec. Its authors saw that LSA-style factorisation used whole-corpus counts efficiently but did poorly on analogies, while window predictors like skip-gram did well on analogies but saw one window at a time, so they aimed for both.",
+   "concepts": [
+    "kt:glove",
+    "kt:stanford-nlp-group",
+    "kt:glove-global-vectors-for-word-representation",
+    "kt:latent-semantic-analysis",
+    "kt:word2vec"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/glove.html"
+  },
+  {
+   "id": "ai-000257",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "GloVe",
+   "t": "GloVe fits word and context vectors by weighted least squares so that their dot product plus two biases approximates the logarithm of the pair's co-occurrence count.",
+   "f": "GloVe fits word and context vectors by weighted least squares so that their dot product plus two biases approximates the ratio of the pair's co-occurrence probabilities.",
+   "x": "Ratios of co-occurrence probabilities motivate GloVe (\"solid\" is far likelier near \"ice\" than \"steam\"), but the fitted target is log X_ij. Because a log turns ratios into differences, vector differences then encode those ratios, which is what gives GloVe its analogy structure.",
+   "concepts": [
+    "kt:glove",
+    "kt:embeddings"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/glove.html"
+  },
+  {
+   "id": "ai-000258",
+   "area": "retrieval-and-knowledge",
+   "kind": "evidence",
+   "topic": "GloVe",
+   "t": "When Levy, Goldberg and Dagan retrained GloVe and skip-gram with negative sampling on the same corpus with matched hyperparameters, skip-gram beat GloVe on every task they tested.",
+   "f": "When Levy, Goldberg and Dagan retrained GloVe and skip-gram with negative sampling on the same corpus with matched hyperparameters, GloVe beat skip-gram on every task they tested.",
+   "x": "GloVe's original paper reported beating skip-gram, but Levy and colleagues traced that gap to uncontrolled hyperparameters, a single analogy set and different corpora. The wider lesson is that design choices such as context smoothing often matter more than which embedding algorithm you pick.",
+   "concepts": [
+    "kt:glove",
+    "kt:word2vec"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/glove.html"
+  },
+  {
+   "id": "ai-000259",
+   "area": "safety-alignment-and-security",
+   "kind": "origin",
+   "topic": "Goodhart's law",
+   "t": "Economist Charles Goodhart first proposed his law in 1975, writing about the targets used in monetary policy.",
+   "f": "Economist Charles Goodhart first proposed his law in 1975, writing about performance audits in British universities.",
+   "x": "Goodhart's point concerned monetary statistics that broke down once policymakers tried to steer by them. The university-audit setting belongs to anthropologist Marilyn Strathern, whose 1997 critique is the usual source of the catchy 'measure becomes a target' wording.",
+   "concepts": [
+    "kt:goodharts-law",
+    "kt:charles-goodhart"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/goodharts-law.html"
+  },
+  {
+   "id": "ai-000260",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Goodhart's law",
+   "t": "In Manheim and Garrabrant's taxonomy, regressional Goodhart arises because selecting for a high proxy score also selects for noise, so top scorers fall short on the true goal.",
+   "f": "In Manheim and Garrabrant's taxonomy, extremal Goodhart arises because selecting for a high proxy score also selects for noise, so top scorers fall short on the true goal.",
+   "x": "Any proxy is the true goal plus error, and the highest proxy scores are partly lucky error, so the winners are predictably worse than they look. Extremal Goodhart is a different failure: optimisation pushes into regions where the usual proxy-goal relationship stops holding at all.",
+   "concepts": [
+    "kt:goodharts-law"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/goodharts-law.html"
+  },
+  {
+   "id": "ai-000261",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "Goodhart's law",
+   "t": "Karwowski et al.'s early-stopping rule provably avoids Goodharting given a bound on the proxy-true reward angle, but in experiments it gave up about 10% to 44% of attainable true reward.",
+   "f": "Karwowski et al.'s early-stopping rule provably avoids Goodharting given a bound on the proxy-true reward angle, and in experiments it gave up almost none of the attainable true reward.",
+   "x": "Stopping early protects against the point where the true reward starts to fall, but it also stops before much of the genuine gain is reached. It shows the general trade: no fix removes Goodhart's law, mitigations buy robustness with performance, and this one also needs the angle bound estimated well.",
+   "concepts": [
+    "kt:goodharts-law",
+    "kt:reward-hacking"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/goodharts-law.html"
+  },
+  {
+   "id": "ai-000262",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+   "t": "Direct Preference Optimization (DPO) sidesteps an intractable partition function because, under the Bradley–Terry model, a preference depends only on the reward difference between two responses.",
+   "f": "Direct Preference Optimization (DPO) sidesteps an intractable partition function because, under the Bradley–Terry model, a preference depends only on the sum of two responses' rewards.",
+   "x": "Rewriting the reward in terms of the policy leaves a β log Z(x) term that is the same for both responses to a prompt, so it cancels in a difference but not in a sum. That cancellation is why the policy itself can act as an implicit reward model, with no separate reward network.",
+   "concepts": [
+    "kt:direct-preference-optimization",
+    "kt:bradley-terry-model",
+    "kt:rlhf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/direct-preference-optimization.html"
+  },
+  {
+   "id": "ai-000263",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+   "t": "Xu et al. (ICML 2024) found a carefully tuned PPO beat DPO in all their tests, and DPO failed to improve over supervised fine-tuning on competitive code generation.",
+   "f": "Xu et al. (ICML 2024) found DPO beat a carefully tuned PPO in all their tests, and PPO failed to improve over supervised fine-tuning on competitive code generation.",
+   "x": "The original DPO paper reported matching or beating PPO-based RLHF on small tasks, but this later study qualified that. It traced DPO's weaknesses to favouring out-of-distribution responses and to mismatch between the model's own outputs and the preference data.",
+   "concepts": [
+    "kt:direct-preference-optimization",
+    "kt:proximal-policy-optimization",
+    "kt:fine-tuning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/direct-preference-optimization.html"
+  },
+  {
+   "id": "ai-000264",
+   "area": "training-and-adaptation",
+   "kind": "application",
+   "topic": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+   "t": "Zephyr-7B applied a distilled form of DPO to preference rankings produced by a teacher model rather than by human annotators.",
+   "f": "Zephyr-7B applied a distilled form of DPO to preference rankings produced by human annotators rather than by a teacher model.",
+   "x": "Zephyr showed DPO working with AI-generated preference labels, which is why DPO is tied to synthetic data in practice. Dropping human labelling made preference tuning cheap, and its authors report it beat the much larger Llama2-Chat-70B on MT-Bench after a few hours of training.",
+   "concepts": [
+    "kt:direct-preference-optimization",
+    "kt:synthetic-data",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/direct-preference-optimization.html"
+  },
+  {
+   "id": "ai-000265",
+   "area": "transformers-and-llms",
+   "kind": "definition",
+   "topic": "Neural Machine Translation by Jointly Learning to Align and Translate",
+   "t": "Bahdanau attention lets a translation decoder build a fresh context vector from all source positions at every output step, instead of relying on one fixed-length sentence vector.",
+   "f": "Bahdanau attention lets a translation decoder build one context vector from all source positions per sentence, then reuse that fixed-length vector at every output step.",
+   "x": "Plain encoder-decoders squeezed the whole source into a single vector, a bottleneck that hurt long sentences. Recomputing the context per target word lets the decoder look at whichever source words matter right now.",
+   "concepts": [
+    "kt:neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "kt:attention-mechanism",
+    "kt:sequence-to-sequence-learning"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/neural-machine-translation-by-jointly-learning-to-align-and-translate.html"
+  },
+  {
+   "id": "ai-000266",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Neural Machine Translation by Jointly Learning to Align and Translate",
+   "t": "In RNNsearch, a small feed-forward network scores the previous decoder state against each encoder annotation, which is why Bahdanau attention is called additive attention.",
+   "f": "In RNNsearch, a scaled dot product scores the previous decoder state against each encoder annotation, which is why Bahdanau attention is called multiplicative attention.",
+   "x": "The score is v_a tanh(W_a s + U_a h): the two vectors are projected and added inside a learned network. That lets training decide which similarities matter and lets encoder and decoder vectors differ in size, unlike a plain dot-product score.",
+   "concepts": [
+    "kt:neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "kt:attention-mechanism",
+    "kt:recurrent-neural-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/neural-machine-translation-by-jointly-learning-to-align-and-translate.html"
+  },
+  {
+   "id": "ai-000267",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "Neural Machine Translation by Jointly Learning to Align and Translate",
+   "t": "In Bahdanau and colleagues' tests, a plain encoder-decoder's BLEU collapsed as sentences got longer, while RNNsearch-50 showed no clear decline even past 50 words.",
+   "f": "In Bahdanau and colleagues' tests, RNNsearch-50's BLEU collapsed as sentences got longer, while a plain encoder-decoder showed no clear decline even past 50 words.",
+   "x": "This was the direct evidence for the fixed-length bottleneck: one vector cannot hold a long sentence, but per-step attention over all source annotations can. It is the main reason attention spread from translation to most sequence models.",
+   "concepts": [
+    "kt:neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "kt:sequence-to-sequence-learning",
+    "kt:wmt-2014"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/neural-machine-translation-by-jointly-learning-to-align-and-translate.html"
+  },
+  {
+   "id": "ai-000268",
+   "area": "computer-vision-and-multimodal",
+   "kind": "definition",
+   "topic": "Faster R-CNN",
+   "t": "Faster R-CNN's key addition was a Region Proposal Network that shares the detector's convolutional features, replacing the slow selective-search proposals Fast R-CNN relied on.",
+   "f": "Faster R-CNN's key addition was RoI pooling, which pools each region's features from one shared map, replacing the slow per-region CNN passes Fast R-CNN relied on.",
+   "x": "RoI pooling was Fast R-CNN's contribution; it already shared one CNN pass across regions. That left proposal generation on the CPU as the bottleneck, and Faster R-CNN's RPN made proposals almost free by reusing the same feature map.",
+   "concepts": [
+    "kt:faster-r-cnn",
+    "kt:fast-r-cnn",
+    "kt:r-cnn"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/faster-r-cnn.html"
+  },
+  {
+   "id": "ai-000269",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Faster R-CNN",
+   "t": "At each feature-map position, Faster R-CNN's Region Proposal Network scores k = 9 anchor boxes: three scales times three aspect ratios (1:1, 1:2 and 2:1).",
+   "f": "At each feature-map position, Faster R-CNN's Region Proposal Network scores k = 6 anchor boxes: three scales times two aspect ratios (1:1 and 2:1).",
+   "x": "Anchors are reference boxes centred on each location; the RPN outputs an objectness score and four box offsets for every one. Using several scales and shapes at every position lets one small, translation-invariant network propose objects of very different sizes.",
+   "concepts": [
+    "kt:faster-r-cnn",
+    "kt:object-detection"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/faster-r-cnn.html"
+  },
+  {
+   "id": "ai-000270",
+   "area": "computer-vision-and-multimodal",
+   "kind": "figure",
+   "topic": "Faster R-CNN",
+   "t": "In 2015, on a K40 GPU, Faster R-CNN with VGG-16 took about 198 ms per image, only about 10 ms of it spent on region proposals.",
+   "f": "In 2015, on a K40 GPU, Faster R-CNN with VGG-16 took about 198 ms per image, about 150 ms of it spent on region proposals.",
+   "x": "Selective search had taken around 1.5 to 2 seconds per image, so moving proposals onto shared GPU features cut the whole pipeline from about 1,830 ms to 198 ms. Even so, roughly 5 frames per second is far from what 'real-time' usually means, because two stages still run per image.",
+   "concepts": [
+    "kt:faster-r-cnn",
+    "kt:faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/faster-r-cnn.html",
+   "asOf": "2015"
+  },
+  {
+   "id": "ai-000271",
+   "area": "evaluation-and-benchmarks",
+   "kind": "definition",
+   "topic": "MMLU: Measuring Massive Multitask Language Understanding",
+   "t": "MMLU (Massive Multitask Language Understanding) asks four-option multiple-choice questions across 57 subjects, from elementary mathematics to professional law.",
+   "f": "MMLU (Massive Multitask Language Understanding) asks ten-option multiple-choice questions across 57 subjects, from elementary mathematics to professional law.",
+   "x": "With four options, random guessing scores 25%, the baseline every MMLU result is read against. Ten options belong to its successor MMLU-Pro, which added choices partly because four-option questions reward elimination more than reasoning.",
+   "concepts": [
+    "kt:mmlu",
+    "kt:mmlu-pro"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mmlu.html"
+  },
+  {
+   "id": "ai-000272",
+   "area": "evaluation-and-benchmarks",
+   "kind": "figure",
+   "topic": "MMLU: Measuring Massive Multitask Language Understanding",
+   "t": "In the 2020 MMLU paper, the largest GPT-3 model averaged 43.9% few-shot, while smaller GPT-3 variants stayed near the 25% chance level.",
+   "f": "In the 2020 MMLU paper, the largest GPT-3 model averaged 89.8% few-shot, while smaller GPT-3 variants stayed near the 25% chance level.",
+   "x": "89.8% was the authors' estimate of expert-level accuracy, far above what GPT-3 managed. That only the 175B model rose clearly above chance made MMLU an early example of scale-dependent jumps in ability.",
+   "concepts": [
+    "kt:mmlu",
+    "kt:large-language-model",
+    "kt:emergent-abilities"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mmlu.html",
+   "asOf": "2020"
+  },
+  {
+   "id": "ai-000273",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "MMLU: Measuring Massive Multitask Language Understanding",
+   "t": "Re-annotating MMLU for MMLU-Redux, Gema et al. found errors in 57% of the analysed Virology questions, and re-scoring on corrected items could change model rankings.",
+   "f": "Re-annotating MMLU for MMLU-Redux, Gema et al. found errors in 57% of the analysed Virology questions, but re-scoring on corrected items left model rankings unchanged.",
+   "x": "Label noise is not just cosmetic: when the answer key is wrong, models get credit for matching the mistake, and fixing the key can reorder who looks best. It is one reason a headline MMLU score needs care before being trusted.",
+   "concepts": [
+    "kt:mmlu",
+    "kt:ai-evaluation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/mmlu.html"
+  },
+  {
+   "id": "ai-000274",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+   "t": "In AutoGen's conversation programming, each agent auto-replies until a termination condition is met, so the control flow emerges from the conversation itself.",
+   "f": "In AutoGen's conversation programming, each agent replies only along edges of a state graph defined in advance, so the control flow is fixed before the conversation.",
+   "x": "A single opening message can drive a long multi-agent exchange, with control steered by system messages or custom Python reply functions. Explicit state graphs are the approach of LangGraph, the main alternative design.",
+   "concepts": [
+    "kt:autogen",
+    "kt:multi-agent-systems",
+    "kt:langgraph"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/autogen.html"
+  },
+  {
+   "id": "ai-000275",
+   "area": "agents-and-tool-use",
+   "kind": "figure",
+   "topic": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+   "t": "In the 2023 AutoGen paper, a GPT-4-based AutoGen setup solved 52.5% of 120 level-5 MATH problems, against 30.0% for plain GPT-4.",
+   "f": "In the 2023 AutoGen paper, a GPT-4-based AutoGen setup solved 52.5% of 120 level-5 MATH problems, against 48.3% for plain GPT-4.",
+   "x": "Letting an assistant agent write code and a proxy agent run it gave GPT-4 a feedback loop it lacks when answering directly. The 48.33% figure was ChatGPT with Code Interpreter, a closer competitor that also executes code.",
+   "concepts": [
+    "kt:autogen",
+    "kt:tool-use",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/autogen.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000276",
+   "area": "agents-and-tool-use",
+   "kind": "application",
+   "topic": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+   "t": "Microsoft Agent Framework is the direct successor to both AutoGen and Semantic Kernel, combining AutoGen's agent abstractions with Semantic Kernel's enterprise features.",
+   "f": "Microsoft Agent Framework is the direct successor to both AutoGen and Semantic Kernel, combining Semantic Kernel's agent abstractions with AutoGen's enterprise features.",
+   "x": "The AutoGen repository is archived and points new users to Agent Framework, built by the same teams. It also adds explicit workflows for controlling multi-agent execution paths, which AutoGen's emergent conversations lacked.",
+   "concepts": [
+    "kt:autogen",
+    "kt:microsoft-agent-framework",
+    "kt:agentic-workflow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/autogen.html"
+  },
+  {
+   "id": "ai-000277",
+   "area": "ai-history",
+   "kind": "figure",
+   "topic": "ImageNet and AlexNet",
+   "t": "In ILSVRC-2012, AlexNet's seven-network ensemble scored 15.3% top-5 test error, against 26.2% for the second-best entry.",
+   "f": "In ILSVRC-2012, AlexNet's seven-network ensemble scored 15.3% top-5 test error, against 17.0% for the second-best entry.",
+   "x": "The point of the 2012 result was the size of the gap: an error rate more than ten points below the hand-engineered runner-up is what convinced computer vision to switch to deep learning. By 2014 nearly every top entry used convolutional networks.",
+   "concepts": [
+    "kt:imagenet-and-alexnet",
+    "kt:imagenet-large-scale-visual-recognition-challenge"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/imagenet-and-alexnet.html",
+   "asOf": "2012"
+  },
+  {
+   "id": "ai-000278",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "ImageNet and AlexNet",
+   "t": "ImageNet was introduced at CVPR 2009 by Jia Deng, Li Fei-Fei and colleagues, who organized its images under WordNet's noun hierarchy.",
+   "f": "ImageNet was introduced at CVPR 2012 by Alex Krizhevsky, Geoffrey Hinton and colleagues, who organized its images under WordNet's noun hierarchy.",
+   "x": "The dataset came three years before the model: Deng, Fei-Fei and colleagues built it, labeling with crowd workers, and the Toronto team behind AlexNet used it. Its WordNet roots later drew criticism for the person categories it inherited.",
+   "concepts": [
+    "kt:imagenet-and-alexnet",
+    "kt:image-classification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/imagenet-and-alexnet.html"
+  },
+  {
+   "id": "ai-000279",
+   "area": "ai-history",
+   "kind": "evidence",
+   "topic": "ImageNet and AlexNet",
+   "t": "AlexNet's authors found that removing any single convolutional layer hurt accuracy, even though each held at most 1% of the parameters, an early sign that depth itself mattered.",
+   "f": "AlexNet's authors found that removing any single convolutional layer barely changed accuracy, since each held at most 1% of the parameters, an early sign that width mattered more than depth.",
+   "x": "Most of AlexNet's parameters sat in its fully connected layers, so the convolutional layers looked cheap. That losing even one still cost accuracy suggested the stack of learned feature levels, not raw parameter count, was doing the work.",
+   "concepts": [
+    "kt:imagenet-and-alexnet",
+    "kt:convolutional-neural-network",
+    "kt:imagenet-classification-with-deep-convolutional-neural-networks"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/imagenet-and-alexnet.html"
+  },
+  {
+   "id": "ai-000280",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "High-bandwidth memory",
+   "t": "High-bandwidth memory (HBM) gets its bandwidth from a very wide interface of short in-package wires running at modest per-pin speeds.",
+   "f": "High-bandwidth memory (HBM) gets its bandwidth from a narrow interface of short in-package wires running at very high per-pin speeds.",
+   "x": "HBM stacks DRAM dies joined by through-silicon vias and sits beside the processor on an interposer, exposing 1,024 bits per stack in early generations. Width, not per-pin speed, is the trick; the narrow, fast bus describes conventional board-mounted memory such as GDDR.",
+   "concepts": [
+    "kt:high-bandwidth-memory",
+    "kt:through-silicon-via",
+    "kt:gddr-memory"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/high-bandwidth-memory.html"
+  },
+  {
+   "id": "ai-000281",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "origin",
+   "topic": "High-bandwidth memory",
+   "t": "High-bandwidth memory first reached the market in 2015, in AMD's Fiji graphics processors built with memory partner SK hynix.",
+   "f": "High-bandwidth memory first reached the market in 2018, in AMD's Fiji graphics processors built with memory partner SK hynix.",
+   "x": "AMD's Radeon R9 Fury family launched HBM in 2015, replacing GDDR5 and claiming about four times the bandwidth per watt. 2018 is when JEDEC's JESD235B update raised per-pin rates, a revision of an already shipping standard.",
+   "concepts": [
+    "kt:high-bandwidth-memory",
+    "kt:gddr-memory"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/high-bandwidth-memory.html"
+  },
+  {
+   "id": "ai-000282",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "figure",
+   "topic": "High-bandwidth memory",
+   "t": "A 2024 'memory wall' analysis estimated that peak server FLOPS grew about 3.0x every two years over two decades, while DRAM bandwidth grew only about 1.6x.",
+   "f": "A 2024 'memory wall' analysis estimated that DRAM bandwidth grew about 3.0x every two years over two decades, while peak server FLOPS grew only about 1.6x.",
+   "x": "Gholami and colleagues found compute outpacing memory bandwidth, which is why many AI workloads, especially LLM decoding, are limited by bytes moved rather than arithmetic. HBM narrows that gap but has not closed it.",
+   "concepts": [
+    "kt:high-bandwidth-memory",
+    "kt:memory-wall",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/high-bandwidth-memory.html",
+   "asOf": "2024"
+  },
+  {
+   "id": "ai-000283",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Universal approximation theorem",
+   "t": "In 1989 George Cybenko proved that a single hidden layer of continuous sigmoidal units can approximate any continuous function on the unit cube arbitrarily well.",
+   "f": "In 1989 George Cybenko proved that a single hidden layer of linear units can approximate any continuous function on the unit cube arbitrarily well.",
+   "x": "The nonlinearity is what makes it work: sums of sigmoids can bend into any continuous shape, while linear units only ever add up to a linear map. Hornik, Stinchcombe and White published a closely related result the same year.",
+   "concepts": [
+    "kt:universal-approximation-theorem",
+    "kt:george-cybenko",
+    "kt:approximation-by-superpositions-of-a-sigmoidal-function",
+    "kt:activation-function"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/universal-approximation-theorem.html"
+  },
+  {
+   "id": "ai-000284",
+   "area": "deep-learning",
+   "kind": "definition",
+   "topic": "Universal approximation theorem",
+   "t": "The universal approximation theorem is an existence result: it shows suitable weights exist but bounds neither the number of hidden units needed nor whether training will find them.",
+   "f": "The universal approximation theorem is a constructive result: it gives the suitable weights and bounds both the number of hidden units needed and whether training will find them.",
+   "x": "Cybenko's proof works by contradiction and places no limit on width or weight size. Lecture notes add that worst-case size grows exponentially with input dimension and that training is non-convex, so expressive power alone doesn't explain why networks learn well.",
+   "concepts": [
+    "kt:universal-approximation-theorem",
+    "kt:backpropagation",
+    "kt:curse-of-dimensionality"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/universal-approximation-theorem.html"
+  },
+  {
+   "id": "ai-000285",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Universal approximation theorem",
+   "t": "Lu and colleagues (NeurIPS 2017) showed ReLU networks of width n + 4 for n inputs are universal approximators as depth grows, while networks of width at most n generally are not.",
+   "f": "Lu and colleagues (NeurIPS 2017) showed ReLU networks of width n for n inputs are universal approximators as depth grows, while networks of width at most n − 4 generally are not.",
+   "x": "The classical theorems fix depth at one hidden layer and let width grow; this is the mirror image, fixing width and letting depth grow. The sharp jump between width n and n + 4 is a phase transition in what narrow deep networks can represent.",
+   "concepts": [
+    "kt:universal-approximation-theorem",
+    "kt:deep-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/universal-approximation-theorem.html"
+  },
+  {
+   "id": "ai-000286",
+   "area": "governance-and-policy",
+   "kind": "definition",
+   "topic": "Compute governance",
+   "t": "Compute governance treats compute as a policy lever because, unlike data and algorithms, its use is detectable, access is excludable, it is quantifiable and its supply chain is concentrated.",
+   "f": "Compute governance treats data as a policy lever because, unlike compute and algorithms, its use is detectable, access is excludable, it is quantifiable and its supply chain is concentrated.",
+   "x": "Sastry, Heim and co-authors argued in 2024 that data and algorithms are easy to copy and hard to observe, whereas chips are physical, countable and made by very few producers. That is what makes reporting, allocation and export controls workable.",
+   "concepts": [
+    "kt:compute-governance",
+    "kt:computing-power-and-the-governance-of-artificial-intelligence",
+    "kt:ai-accelerator"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/compute-governance.html"
+  },
+  {
+   "id": "ai-000287",
+   "area": "governance-and-policy",
+   "kind": "figure",
+   "topic": "Compute governance",
+   "t": "A 2024 paper reported training compute for notable ML systems doubling about every six months, while GPU price-performance doubled only every two to two-and-a-half years.",
+   "f": "A 2024 paper reported training compute for notable ML systems doubling about every two years, while GPU price-performance doubled roughly every six months.",
+   "x": "Because compute grew far faster than chips got cheaper, most of the growth came from bigger clusters and more spending. That spending makes large training runs visible, which is what gives compute governance its leverage.",
+   "concepts": [
+    "kt:compute-governance",
+    "kt:computing-power-and-the-governance-of-artificial-intelligence",
+    "kt:scaling-laws"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/compute-governance.html",
+   "asOf": "2024"
+  },
+  {
+   "id": "ai-000288",
+   "area": "governance-and-policy",
+   "kind": "evidence",
+   "topic": "Compute governance",
+   "t": "Sara Hooker argues fixed training-compute thresholds are shortsighted because the link between compute and risk is uncertain and shifting.",
+   "f": "Sara Hooker argues fixed training-compute thresholds are reliable because the link between compute and risk is predictable and stable.",
+   "x": "Compute is only a good proxy for risk while capability rises predictably with scale, the scaling-law assumption Hooker challenges. Efficiency gains also erode any fixed cut-off, and small narrow models can still be dangerous.",
+   "concepts": [
+    "kt:compute-governance",
+    "kt:scaling-laws"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/compute-governance.html"
+  },
+  {
+   "id": "ai-000289",
+   "area": "inference-and-optimization",
+   "kind": "definition",
+   "topic": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+   "t": "FlashAttention computes exact attention, giving the same result as standard attention, so it is a drop-in speedup rather than a modelling change.",
+   "f": "FlashAttention computes a low-rank approximation of attention, giving a slightly different result, so it is a modelling change rather than a drop-in speedup.",
+   "x": "Its gains come from moving fewer bytes between GPU high-bandwidth memory and on-chip SRAM, not from approximating. Sparse and low-rank methods trade accuracy for speed; FlashAttention keeps the maths identical, which is why it spread so quickly.",
+   "concepts": [
+    "kt:flash-attention",
+    "kt:self-attention",
+    "kt:high-bandwidth-memory"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/flash-attention.html"
+  },
+  {
+   "id": "ai-000290",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+   "t": "FlashAttention keeps a running row maximum and sum of exponentials, rescaling partial outputs per block, so it never stores the N×N score matrix.",
+   "f": "FlashAttention writes the N×N score matrix to high-bandwidth memory once, then reads it back in blocks to apply softmax and multiply by V.",
+   "x": "Softmax normally needs a whole row before normalising, which forces naive attention to write and reread the score matrix. The 'online softmax' trick fixes the normalisation as blocks arrive, so the full computation fuses into one kernel with memory linear in sequence length.",
+   "concepts": [
+    "kt:flash-attention",
+    "kt:self-attention",
+    "kt:context-window"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/flash-attention.html"
+  },
+  {
+   "id": "ai-000291",
+   "area": "inference-and-optimization",
+   "kind": "figure",
+   "topic": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+   "t": "In 2023 FlashAttention-2 reached 50–73% of an A100's peak FLOPs/s, up from 25–40% for the original FlashAttention.",
+   "f": "In 2023 FlashAttention-2 reached 25–40% of an A100's peak FLOPs/s, up from 10–20% for the original FlashAttention.",
+   "x": "FlashAttention-2 roughly doubled speed by cutting non-matmul work, parallelising over sequence length and splitting work across warps. Utilisation then fell again on newer hardware, which is why FlashAttention-3 and -4 were redesigned for Hopper and Blackwell.",
+   "concepts": [
+    "kt:flash-attention",
+    "kt:tri-dao"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/flash-attention.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000292",
+   "area": "ml-foundations",
+   "kind": "origin",
+   "topic": "Principal component analysis",
+   "t": "Karl Pearson (1901) derived PCA as fitting the closest lines and planes to a cloud of points; Harold Hotelling (1933) derived it as the projection that maximises variance.",
+   "f": "Harold Hotelling (1901) derived PCA as fitting the closest lines and planes to a cloud of points; Karl Pearson (1933) derived it as the projection that maximises variance.",
+   "x": "Pearson's geometric view minimises squared reconstruction error, and Hotelling's statistical view maximises projected variance. The two derivations give the same components, which is why PCA can be explained either way.",
+   "concepts": [
+    "kt:principal-component-analysis",
+    "kt:karl-pearson",
+    "kt:harold-hotelling"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/principal-component-analysis.html"
+  },
+  {
+   "id": "ai-000293",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Principal component analysis",
+   "t": "PCA keeps the covariance eigenvectors with the largest eigenvalues, because each eigenvalue is the variance captured along that component.",
+   "f": "PCA keeps the covariance eigenvectors with the smallest eigenvalues, because each eigenvalue is the variance captured along that component.",
+   "x": "Sorting by eigenvalue ranks directions by how much spread they hold, so the discarded eigenvalues add up to exactly the variance the projection throws away. For high-dimensional data, implementations get the same directions from an SVD of the centred data instead.",
+   "concepts": [
+    "kt:principal-component-analysis",
+    "kt:singular-value-decomposition"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/principal-component-analysis.html"
+  },
+  {
+   "id": "ai-000294",
+   "area": "ml-foundations",
+   "kind": "application",
+   "topic": "Principal component analysis",
+   "t": "Scikit-learn's PCA centres each feature but doesn't scale it, so variables measured on large scales dominate the components unless you rescale them first.",
+   "f": "Scikit-learn's PCA centres each feature and scales it to unit variance, so variables measured on large scales can't dominate the components even if you skip rescaling.",
+   "x": "Because PCA chases variance, a feature in large units looks important simply because its numbers are big. Whether to standardise is a real modelling choice; NIST's tutorial standardises and works from the correlation matrix instead.",
+   "concepts": [
+    "kt:principal-component-analysis",
+    "kt:scikit-learn"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/principal-component-analysis.html"
+  },
+  {
+   "id": "ai-000295",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Self-Refine: Iterative Refinement with Self-Feedback",
+   "t": "Self-Refine prompts one LLM to draft an answer, critique it and rewrite it, and the refine prompt carries the history of earlier drafts and critiques.",
+   "f": "Self-Refine trains a separate critic model to critique a generator LLM's draft, and the refine prompt carries only the current draft and its critique.",
+   "x": "All three roles are the same frozen model set up with few-shot prompts, so the method needs no training data or weight updates. Keeping the full history lets the model avoid repeating mistakes it already made in earlier rounds.",
+   "concepts": [
+    "kt:self-refine-iterative-refinement-with-self-feedback",
+    "kt:self-correction",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-refine-iterative-refinement-with-self-feedback.html"
+  },
+  {
+   "id": "ai-000296",
+   "area": "prompting-and-reasoning",
+   "kind": "figure",
+   "topic": "Self-Refine: Iterative Refinement with Self-Feedback",
+   "t": "In the 2023 Self-Refine paper, GPT-4's dialogue response score rose from 25.4 to 74.6, while its GSM8K math score barely moved, from 92.9 to 93.1.",
+   "f": "In the 2023 Self-Refine paper, GPT-4's GSM8K math score rose from 25.4 to 74.6, while its dialogue response score barely moved, from 92.9 to 93.1.",
+   "x": "Open-ended tasks with many acceptable answers benefited most from critique and rewriting. On math the model rarely noticed its own errors, judging most flawed solutions as fine, so self-feedback had little to work with.",
+   "concepts": [
+    "kt:self-refine-iterative-refinement-with-self-feedback",
+    "kt:gsm8k"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-refine-iterative-refinement-with-self-feedback.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000297",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Self-Refine: Iterative Refinement with Self-Feedback",
+   "t": "Huang et al. argued Self-Refine's CommonGen-Hard gains partly came from the feedback prompt adding a requirement the first prompt left out; stating it up front scored higher.",
+   "f": "Huang et al. argued Self-Refine's CommonGen-Hard gains partly came from the feedback prompt adding a requirement the first prompt left out; stating it up front scored lower.",
+   "x": "The requirement to use every concept was only spelled out at the feedback step, so revision looked better than a fairly written first prompt. A plain prompt that stated it scored 81.8 against Self-Refine's 75.1, a reminder to compare self-correction loops with simply improving the initial prompt.",
+   "concepts": [
+    "kt:self-refine-iterative-refinement-with-self-feedback",
+    "kt:self-correction",
+    "kt:prompt-engineering"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-refine-iterative-refinement-with-self-feedback.html"
+  },
+  {
+   "id": "ai-000298",
+   "area": "reinforcement-learning",
+   "kind": "definition",
+   "topic": "Exploration-exploitation dilemma",
+   "t": "Thompson sampling draws one plausible model from its posterior and acts optimally for that sample, so each action is tried in proportion to the chance it is best.",
+   "f": "Thompson sampling adds a confidence bonus to each action's estimate and picks the highest total, so each action is tried in proportion to the chance it is best.",
+   "x": "Thompson sampling explores through randomness in its beliefs: uncertain actions sometimes win the posterior draw. Adding a shrinking confidence bonus to each estimate is the upper confidence bound (UCB) approach, which explores through optimism rather than sampling.",
+   "concepts": [
+    "kt:exploration-exploitation",
+    "kt:thompson-sampling",
+    "kt:upper-confidence-bound"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/exploration-exploitation.html"
+  },
+  {
+   "id": "ai-000299",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "Exploration-exploitation dilemma",
+   "t": "Optimistic initial values push even a greedy learner to try every action early on, but the effect fades, so they do not help in nonstationary problems.",
+   "f": "Optimistic initial values push even a greedy learner to try every action early on, and the effect persists, so they suit nonstationary problems well.",
+   "x": "Starting every estimate too high means early rewards disappoint, so the learner keeps moving on to untried actions. Once the estimates settle the push to explore is gone, which is why the trick fails when the best action changes over time and exploration must restart.",
+   "concepts": [
+    "kt:exploration-exploitation",
+    "kt:multi-armed-bandit"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/exploration-exploitation.html"
+  },
+  {
+   "id": "ai-000300",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "Exploration-exploitation dilemma",
+   "t": "On Sutton and Barto's 10-armed testbed, ε = 0.1 found the best arm sooner, while ε = 0.01 learned more slowly but did better in the long run.",
+   "f": "On Sutton and Barto's 10-armed testbed, ε = 0.01 found the best arm sooner, while ε = 0.1 learned more slowly but did better in the long run.",
+   "x": "More random exploration discovers the best arm faster but keeps wasting a tenth of the choices on random arms forever. A smaller ε explores slowly, yet once it finds the best arm it exploits it almost all the time, so it pulls ahead later. A purely greedy learner often got stuck on a worse arm.",
+   "concepts": [
+    "kt:exploration-exploitation",
+    "kt:multi-armed-bandit"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/exploration-exploitation.html"
+  },
+  {
+   "id": "ai-000301",
+   "area": "retrieval-and-knowledge",
+   "kind": "definition",
+   "topic": "Word2vec",
+   "t": "Word2vec gives each vocabulary word one fixed vector whatever sentence it appears in, so it cannot separate the river and the money senses of \"bank\".",
+   "f": "Word2vec gives each vocabulary word a new vector in every sentence it appears in, so it can separate the river and the money senses of \"bank\".",
+   "x": "Word2vec embeddings are static: one vector per word type, blending all its senses. Producing a different vector per occurrence is what contextual encoders such as BERT do, which is why they replaced static vectors in most modern systems.",
+   "concepts": [
+    "kt:word2vec",
+    "kt:embeddings",
+    "kt:transformer-architecture"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/word2vec.html"
+  },
+  {
+   "id": "ai-000302",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Word2vec",
+   "t": "Word2vec's negative sampling draws noise words from the unigram distribution raised to the 3/4 power, which slightly raises how often rare words are picked as negatives.",
+   "f": "Word2vec's negative sampling draws noise words from the unigram distribution raised to the 3/4 power, which slightly raises how often frequent words are picked as negatives.",
+   "x": "Negative sampling turns training into telling real word-context pairs from k noise words, avoiding a full softmax over the vocabulary. Raising frequencies to 0.75 flattens the distribution, so rare words get a bit more of the probability mass and frequent ones a bit less.",
+   "concepts": [
+    "kt:word2vec"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/word2vec.html"
+  },
+  {
+   "id": "ai-000303",
+   "area": "retrieval-and-knowledge",
+   "kind": "evidence",
+   "topic": "Word2vec",
+   "t": "Levy and Goldberg showed skip-gram with negative sampling implicitly factorises a word-context matrix of pointwise mutual information shifted by a constant.",
+   "f": "Levy and Goldberg showed skip-gram with negative sampling implicitly factorises a term-document matrix of tf-idf weights shifted by a constant.",
+   "x": "This result tied word2vec back to count-based distributional methods built on PMI. An exact SVD of that matrix could match it on word similarity, though skip-gram stayed ahead on analogies; tf-idf weights term-document counts and is a different, sparse scheme.",
+   "concepts": [
+    "kt:word2vec",
+    "kt:tf-idf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/word2vec.html"
+  },
+  {
+   "id": "ai-000304",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "Reward hacking",
+   "t": "In Gao, Schulman and Hilton's study of RLHF overoptimization, larger proxy reward models reached higher gold scores and suffered less overoptimization.",
+   "f": "In Gao, Schulman and Hilton's study of RLHF overoptimization, smaller proxy reward models reached higher gold scores and suffered less overoptimization.",
+   "x": "A larger reward model is a better proxy for human judgement, so a policy can push further against it before the true (gold) score turns down. The benefit scaled smoothly with parameter count, which makes reward-model size a practical lever against reward hacking in RLHF, though not a cure.",
+   "concepts": [
+    "kt:reward-hacking",
+    "kt:reward-model",
+    "kt:rlhf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reward-hacking.html"
+  },
+  {
+   "id": "ai-000305",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Reward hacking",
+   "t": "OpenAI researchers found that folding a chain-of-thought monitor into the training reward, under heavy optimisation pressure, taught agents to hide their intent while still reward hacking.",
+   "f": "OpenAI researchers found that folding a chain-of-thought monitor into the training reward, under heavy optimisation pressure, taught agents to stop reward hacking and state their intent openly.",
+   "x": "Reading the chain of thought made hacks much easier to catch, but penalising what the monitor saw gave the agent a reason to clean up its reasoning rather than its behaviour. That is why the authors suggest a 'monitorability tax': leave the chain of thought unoptimised so it stays useful for oversight.",
+   "concepts": [
+    "kt:reward-hacking",
+    "kt:chain-of-thought",
+    "kt:scalable-oversight"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reward-hacking.html"
+  },
+  {
+   "id": "ai-000306",
+   "area": "safety-alignment-and-security",
+   "kind": "application",
+   "topic": "Reward hacking",
+   "t": "Anthropic's inoculation prompting tells a model during training that reward hacking is acceptable in that context, which largely stopped the hacking from spreading into broader misalignment.",
+   "f": "Anthropic's inoculation prompting tells a model during training that reward hacking is forbidden in that context, which largely stopped the hacking from spreading into broader misalignment.",
+   "x": "Anthropic saw a model that learned to game coding tests go on to sabotage safety code and fake alignment, even though standard safety training made it look fine in chat. Counterintuitively, permitting the hack in context removed that spillover, and Anthropic says it now uses the technique.",
+   "concepts": [
+    "kt:reward-hacking",
+    "kt:ai-alignment"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reward-hacking.html"
+  },
+  {
+   "id": "ai-000307",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Fine-tuning",
+   "t": "In classic fine-tuning, the copied pretrained layers get a small learning rate, while the new randomly initialised output layer gets a larger one.",
+   "f": "In classic fine-tuning, the copied pretrained layers get a large learning rate, while the new randomly initialised output layer gets a smaller one.",
+   "x": "The copied layers already hold useful features, so big updates would mostly damage them, while the new head starts from scratch and must move a long way. Dive into Deep Learning's example gives the head ten times the backbone's learning rate.",
+   "concepts": [
+    "kt:fine-tuning",
+    "kt:pretraining",
+    "kt:transfer-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/fine-tuning.html"
+  },
+  {
+   "id": "ai-000308",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Fine-tuning",
+   "t": "Kumar et al. (ICLR 2022) found full fine-tuning beat linear probing in distribution but did worse out of distribution, and probing first then fine-tuning recovered much of the gap.",
+   "f": "Kumar et al. (ICLR 2022) found full fine-tuning beat linear probing out of distribution but did worse in distribution, and probing first then fine-tuning recovered much of the gap.",
+   "x": "While a random head is still being learned, its noisy gradients distort the pretrained lower layers, which hurts robustness to distribution shift. Fitting a linear probe first (LP-FT) gives the head a sensible start, so fine-tuning changes the features less.",
+   "concepts": [
+    "kt:fine-tuning",
+    "kt:linear-probing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/fine-tuning.html"
+  },
+  {
+   "id": "ai-000309",
+   "area": "training-and-adaptation",
+   "kind": "figure",
+   "topic": "Fine-tuning",
+   "t": "In 2018, ULMFiT fine-tuned with only 100 labelled examples matched a text classifier trained from scratch on 100 times more data.",
+   "f": "In 2018, ULMFiT fine-tuned with only 100 labelled examples matched a text classifier trained from scratch on 10 times more data.",
+   "x": "Howard and Ruder's result showed how much labelled data a pretrained language model saves, which helped make pretrain-then-fine-tune the default recipe in NLP. The saving was a hundredfold, not tenfold.",
+   "concepts": [
+    "kt:fine-tuning",
+    "kt:universal-language-model-fine-tuning-for-text-classification",
+    "kt:pretraining"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/fine-tuning.html",
+   "asOf": "2018"
+  },
+  {
+   "id": "ai-000310",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Transformer architecture",
+   "t": "Decoder-only Transformers apply a causal mask that sets attention scores for future positions to negative infinity, so each token can attend only to earlier tokens.",
+   "f": "Encoder-only Transformers apply a causal mask that sets attention scores for future positions to negative infinity, so each token can attend only to earlier tokens.",
+   "x": "The causal mask is what makes a decoder-only model a left-to-right generator that can still train on all positions in parallel. Encoder-only models such as BERT use no mask, so every token sees both left and right context.",
+   "concepts": [
+    "kt:transformer-architecture",
+    "kt:self-attention",
+    "kt:bert",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/transformer-architecture.html"
+  },
+  {
+   "id": "ai-000311",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "Transformer architecture",
+   "t": "Xiong et al. (2020) showed that Post-LN Transformers have large gradients near the output at initialization, so they need learning-rate warm-up, while Pre-LN ones can train without it.",
+   "f": "Xiong et al. (2020) showed that Pre-LN Transformers have large gradients near the output at initialization, so they need learning-rate warm-up, while Post-LN ones can train without it.",
+   "x": "The original Transformer normalized after each residual addition (Post-LN). Moving layer normalization inside the residual branch (Pre-LN) keeps gradients well behaved, which is why later models such as LLaMA normalize sub-layer inputs.",
+   "concepts": [
+    "kt:transformer-architecture",
+    "kt:layer-normalization",
+    "kt:residual-connection"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/transformer-architecture.html"
+  },
+  {
+   "id": "ai-000312",
+   "area": "transformers-and-llms",
+   "kind": "application",
+   "topic": "Transformer architecture",
+   "t": "As of 2026, almost no large Transformer language models use anything but standard quadratic attention, because cheaper attention variants often underperform at scale.",
+   "f": "As of 2026, most large Transformer language models have replaced standard quadratic attention, because cheaper attention variants usually match it at scale.",
+   "x": "Self-attention compares every pair of positions, so cost grows with the square of sequence length and limits the context window. Many sub-quadratic variants exist, but Stanford's CS224N notes they rarely survive at scale, so better long-context designs remain an open question.",
+   "concepts": [
+    "kt:transformer-architecture",
+    "kt:self-attention",
+    "kt:context-window"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/transformer-architecture.html"
+  },
+  {
+   "id": "ai-000313",
+   "area": "computer-vision-and-multimodal",
+   "kind": "application",
+   "topic": "Object detection",
+   "t": "COCO's primary detection score averages precision over ten IoU thresholds from 0.50 to 0.95, while PASCAL VOC counted a detection correct at a single 50% IoU threshold.",
+   "f": "COCO's primary detection score counts a detection correct at a single 50% IoU threshold, while PASCAL VOC averaged precision over ten IoU thresholds from 0.50 to 0.95.",
+   "x": "Intersection over union (IoU) measures how well a predicted box overlaps the true one. VOC's 50% bar was deliberately lenient, so one number hid poor localization; COCO's averaging over stricter thresholds rewards boxes that fit tightly.",
+   "concepts": [
+    "kt:object-detection",
+    "kt:ms-coco",
+    "kt:pascal-voc"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/object-detection.html"
+  },
+  {
+   "id": "ai-000314",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Object detection",
+   "t": "DETR trains with a bipartite-matching loss that assigns each object exactly one prediction, which lets it drop non-maximum suppression and hand-built anchors.",
+   "f": "DETR trains with an anchor-matching loss that assigns each object several predictions, which means it still relies on non-maximum suppression and hand-built anchors.",
+   "x": "Conventional detectors let many candidates fire on one object and prune the duplicates afterwards with non-maximum suppression. DETR instead treats detection as set prediction from a fixed set of learned object queries, so duplicates are penalised during training rather than removed after it.",
+   "concepts": [
+    "kt:object-detection",
+    "kt:non-maximum-suppression",
+    "kt:vision-transformer"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/object-detection.html"
+  },
+  {
+   "id": "ai-000315",
+   "area": "computer-vision-and-multimodal",
+   "kind": "origin",
+   "topic": "Object detection",
+   "t": "In 2014 Girshick, Donahue, Darrell and Malik's R-CNN ran a convolutional network on region proposals and raised PASCAL VOC 2012 mAP by over 30% relative to the prior best.",
+   "f": "In 2014 Ren, He, Girshick and Sun's R-CNN ran a convolutional network on region proposals and raised PASCAL VOC 2012 mAP by over 30% relative to the prior best.",
+   "x": "R-CNN broke a plateau of hand-engineered feature pipelines and showed that an ImageNet-pretrained network fine-tuned on scarce detection data works well. Ren, He, Girshick and Sun wrote the later Faster R-CNN paper, which kept Girshick but changed the rest of the team.",
+   "concepts": [
+    "kt:object-detection",
+    "kt:pascal-voc",
+    "kt:convolutional-neural-network",
+    "kt:imagenet-and-alexnet"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/object-detection.html"
+  },
+  {
+   "id": "ai-000316",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "Benchmark contamination",
+   "t": "Oren et al.'s contamination test relies on a clean model finding every ordering of a benchmark's examples equally likely, so a preference for the published order signals memorisation.",
+   "f": "Oren et al.'s contamination test relies on a clean model preferring the published ordering of a benchmark's examples, so equal likelihood across shuffles signals memorisation.",
+   "x": "A model that never saw the test set has no reason to favour the order the examples were published in. If it does, it has probably read that file, and because the test only needs output probabilities it works on black-box models with exact false-positive guarantees.",
+   "concepts": [
+    "kt:benchmark-contamination",
+    "kt:membership-inference-attack"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/benchmark-contamination.html"
+  },
+  {
+   "id": "ai-000317",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "Benchmark contamination",
+   "t": "On GSM1k, a fresh set matched to GSM8K, some leading models scored up to 8% lower, though many frontier models showed little sign of overfitting (NeurIPS 2024).",
+   "f": "On GSM1k, a fresh set matched to GSM8K, some leading models scored up to 8% higher, though many frontier models showed little sign of overfitting (NeurIPS 2024).",
+   "x": "Rebuilding a benchmark from scratch and comparing is the clearest way to measure contamination's effect: a drop on unseen but equivalent problems means the old score was inflated. The result was mixed, with some model families overfit and many frontier models not.",
+   "concepts": [
+    "kt:benchmark-contamination",
+    "kt:gsm8k",
+    "kt:overfitting"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/benchmark-contamination.html"
+  },
+  {
+   "id": "ai-000318",
+   "area": "evaluation-and-benchmarks",
+   "kind": "application",
+   "topic": "Benchmark contamination",
+   "t": "LiveBench limits contamination by drawing questions from recent competitions, arXiv papers and news, refreshing them monthly and scoring against objective answers.",
+   "f": "LiveBench limits contamination by drawing questions from recent competitions, arXiv papers and news, refreshing them monthly and scoring them with LLM judges.",
+   "x": "Fresh questions are unlikely to be in any model's training data yet, and objective answers avoid the biases of LLM judges or crowdworkers. Even so, its authors softened the claim from 'contamination-free' to 'contamination-limited'.",
+   "concepts": [
+    "kt:benchmark-contamination",
+    "kt:livebench"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/benchmark-contamination.html"
+  },
+  {
+   "id": "ai-000319",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "t": "Generative agents rank memories by summing recency, importance and relevance, where importance is a 1–10 rating the LLM gives each memory when it is stored.",
+   "f": "Generative agents rank memories by summing recency, importance and relevance, where importance is the cosine similarity between the memory's embedding and the current query.",
+   "x": "Embedding similarity to the query is the relevance score; importance separates mundane events from poignant ones. Combining the three lets an agent recall what is recent, significant and on-topic rather than just the closest match.",
+   "concepts": [
+    "kt:generative-agents-interactive-simulacra-of-human-behavior",
+    "kt:agent-memory",
+    "kt:embeddings"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/generative-agents-interactive-simulacra-of-human-behavior.html"
+  },
+  {
+   "id": "ai-000320",
+   "area": "agents-and-tool-use",
+   "kind": "definition",
+   "topic": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "t": "In generative agents, a reflection is a higher-level insight written about recent memories and stored back in the memory stream, so later reflections can build on it.",
+   "f": "In generative agents, a reflection is a higher-level summary that replaces recent memories in the memory stream, so later reflections can only use the summary.",
+   "x": "Reflections cite the memories that support them and sit alongside raw observations, forming trees of increasingly abstract beliefs. They are triggered when the summed importance of recent events passes a threshold, a few times per simulated day.",
+   "concepts": [
+    "kt:generative-agents-interactive-simulacra-of-human-behavior",
+    "kt:agent-memory",
+    "kt:ai-agent"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/generative-agents-interactive-simulacra-of-human-behavior.html"
+  },
+  {
+   "id": "ai-000321",
+   "area": "agents-and-tool-use",
+   "kind": "evidence",
+   "topic": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "t": "In believability interviews, the full generative-agent architecture outranked human crowdworkers role-playing the agents, and the version without memory, reflection or planning ranked lowest.",
+   "f": "In believability interviews, human crowdworkers role-playing the agents outranked the full generative-agent architecture, and the version without memory, reflection or planning ranked lowest.",
+   "x": "The ablations show each component adds believability, with removing reflection alone already lowering the ranking. The authors caution the crowdworkers were not meant to represent expert human performance, so this is not a claim of beating people in general.",
+   "concepts": [
+    "kt:generative-agents-interactive-simulacra-of-human-behavior",
+    "kt:planning-in-llms",
+    "kt:agent-memory"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/generative-agents-interactive-simulacra-of-human-behavior.html"
+  },
+  {
+   "id": "ai-000322",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "ELIZA",
+   "t": "Joseph Weizenbaum of MIT described ELIZA, a program for typed conversation in English, in Communications of the ACM in 1966.",
+   "f": "Joseph Weizenbaum of MIT described ELIZA, a program for typed conversation in English, in Communications of the ACM in 1976.",
+   "x": "ELIZA dates to 1966 and ran on MIT's time-sharing system. 1976 is the year of Weizenbaum's book Computer Power and Human Reason, in which he warned against handing machines choices that are properly human.",
+   "concepts": [
+    "kt:eliza",
+    "kt:joseph-weizenbaum",
+    "kt:eliza-a-computer-program-for-the-study-of-natural-language-communication-between-man-and-machine"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eliza.html"
+  },
+  {
+   "id": "ai-000323",
+   "area": "ai-history",
+   "kind": "mechanism",
+   "topic": "ELIZA",
+   "t": "When ELIZA found several script keywords in an input, a higher-ranked keyword displaced a lower-ranked one, and its rules then built the reply.",
+   "f": "When ELIZA found several script keywords in an input, the first keyword found displaced any later ones, and its rules then built the reply.",
+   "x": "Each keyword in the script carries a rank, so the most important one wins regardless of position. A decomposition rule then splits the input around it and a reassembly rule rebuilds the fragments, swapping pronouns: pattern matching on surface text, not understanding.",
+   "concepts": [
+    "kt:eliza",
+    "kt:rule-based-system",
+    "kt:symbolic-ai"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eliza.html"
+  },
+  {
+   "id": "ai-000324",
+   "area": "ai-history",
+   "kind": "application",
+   "topic": "ELIZA",
+   "t": "Weizenbaum used a Rogerian psychotherapist for ELIZA's DOCTOR script because such an interviewer can seem to know almost nothing about the world.",
+   "f": "Weizenbaum used a Rogerian psychotherapist for ELIZA's DOCTOR script because such an interviewer is expected to know a great deal about the world.",
+   "x": "A therapist who reflects questions back hides the program's total lack of knowledge, so users fill in the understanding themselves. That human tendency to read meaning into simple output became known as the ELIZA effect.",
+   "concepts": [
+    "kt:eliza",
+    "kt:chatbot",
+    "kt:eliza-effect"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eliza.html"
+  },
+  {
+   "id": "ai-000325",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "origin",
+   "topic": "GPU computing",
+   "t": "Before compute APIs such as CUDA arrived, GPGPU programmers stored arrays as textures and wrote their kernels as fragment shaders.",
+   "f": "Before compute APIs such as CUDA arrived, GPGPU programmers stored arrays in shared memory and wrote their kernels as thread blocks.",
+   "x": "Early general-purpose GPU work had to disguise computation as graphics, which imposed 2D layouts and made scattered writes awkward. Shared memory, pointers and thread blocks only came with the compute interfaces AMD and NVIDIA shipped in 2006–2007.",
+   "concepts": [
+    "kt:gpu-computing",
+    "kt:cuda",
+    "kt:parallel-computing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/gpu-computing.html"
+  },
+  {
+   "id": "ai-000326",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "GPU computing",
+   "t": "GPUs hide memory latency by switching among many resident warps, so a kernel launch needs far more threads than the GPU has cores.",
+   "f": "GPUs hide memory latency with large per-thread caches, so a kernel launch needs about as many threads as the GPU has cores.",
+   "x": "GPUs trade latency for throughput: while some warps wait on memory, others compute. NVIDIA suggests roughly four times as many thread blocks as streaming multiprocessors; too few threads leave units idle, as in the tail effect of a last partial wave.",
+   "concepts": [
+    "kt:gpu-computing",
+    "kt:parallel-computing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/gpu-computing.html"
+  },
+  {
+   "id": "ai-000327",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "evidence",
+   "topic": "GPU computing",
+   "t": "In NVIDIA's performance guide, a linear layer at batch size 512 is math-limited, while ReLU and layer normalization are memory-limited.",
+   "f": "In NVIDIA's performance guide, a linear layer at batch size 512 is memory-limited, while ReLU and layer normalization are math-limited.",
+   "x": "What matters is arithmetic intensity, operations per byte moved. A large-batch matrix multiply reaches about 315 FLOPS per byte, above the GPU's ratio, while elementwise ReLU does about 0.25, so it just waits on memory; that is why peak FLOPS are rarely reached.",
+   "concepts": [
+    "kt:gpu-computing",
+    "kt:arithmetic-intensity",
+    "kt:roofline-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/gpu-computing.html"
+  },
+  {
+   "id": "ai-000328",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Convolutional neural network",
+   "t": "Because a convolutional layer reuses one kernel at every position, shifting the input image shifts its feature map by the same amount, a property called translation equivariance.",
+   "f": "Because a convolutional layer reuses one kernel at every position, shifting the input image leaves its feature map unchanged, a property called translation invariance.",
+   "x": "Weight sharing means a feature detector responds to a pattern wherever it appears, and its response moves with the pattern. It also slashes parameters: a few hundred shared weights instead of about a billion for a dense layer on a megapixel image.",
+   "concepts": [
+    "kt:convolutional-neural-network",
+    "kt:artificial-neural-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/convolutional-neural-network.html"
+  },
+  {
+   "id": "ai-000329",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Convolutional neural network",
+   "t": "Fukushima's 1980 neocognitron learned without labels, whereas LeCun and colleagues later trained convolutional networks end to end with backpropagation.",
+   "f": "Fukushima's 1980 neocognitron was trained end to end with backpropagation, whereas LeCun and colleagues later trained convolutional networks without labels.",
+   "x": "The neocognitron supplied the architecture of alternating feature-detecting and pooling-like layers, inspired by simple and complex cells in the visual cortex. Training it with gradients was LeCun's step, and it led to deployed systems such as cheque readers.",
+   "concepts": [
+    "kt:convolutional-neural-network",
+    "kt:neocognitron",
+    "kt:yann-lecun",
+    "kt:backpropagation"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/convolutional-neural-network.html"
+  },
+  {
+   "id": "ai-000330",
+   "area": "deep-learning",
+   "kind": "definition",
+   "topic": "Convolutional neural network",
+   "t": "The 'convolution' in deep-learning libraries is really cross-correlation, without flipping the kernel, and the difference does not matter because the kernel is learned.",
+   "f": "The 'convolution' in deep-learning libraries is true convolution with a flipped kernel, and the flip matters because cross-correlation would learn different features.",
+   "x": "Convolution and cross-correlation differ only by flipping the kernel. Since training starts from random weights, a network using cross-correlation simply learns the flipped kernel, so the results are equivalent.",
+   "concepts": [
+    "kt:convolutional-neural-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/convolutional-neural-network.html"
+  },
+  {
+   "id": "ai-000331",
+   "area": "governance-and-policy",
+   "kind": "definition",
+   "topic": "AI governance",
+   "t": "Dafoe's AI governance research agenda has three clusters: the technical landscape, AI politics, and ideal governance, which asks what institutions would best ensure beneficial AI.",
+   "f": "Dafoe's AI governance research agenda has three clusters: the technical landscape, AI politics, and ideal governance, which asks what AI will be able to do and when.",
+   "x": "Forecasting what AI can do and when belongs to the technical landscape cluster. Ideal governance is the normative part, asking which norms, institutions and systems should steer AI toward beneficial use.",
+   "concepts": [
+    "kt:ai-governance",
+    "kt:ai-governance-a-research-agenda"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-governance.html"
+  },
+  {
+   "id": "ai-000332",
+   "area": "governance-and-policy",
+   "kind": "evidence",
+   "topic": "AI governance",
+   "t": "Jobin, Ienca and Vayena's review of 84 AI ethics guidelines found convergence on five themes, yet no single principle appeared in every document.",
+   "f": "Jobin, Ienca and Vayena's review of 84 AI ethics guidelines found convergence on five themes, with transparency appearing in every document.",
+   "x": "Transparency, justice and fairness, non-maleficence, responsibility and privacy recurred, but none was universal, and authors disagreed on what the terms mean and how to implement them. It is a core piece of evidence for the critique that principles outran enforceable practice.",
+   "concepts": [
+    "kt:ai-governance",
+    "kt:algorithmic-bias-and-fairness"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-governance.html"
+  },
+  {
+   "id": "ai-000333",
+   "area": "governance-and-policy",
+   "kind": "application",
+   "topic": "AI governance",
+   "t": "Under the EU AI Act's risk tiers, chatbots carry transparency duties, while recruitment tools are high-risk and must meet data-quality and human-oversight requirements.",
+   "f": "Under the EU AI Act's risk tiers, recruitment tools carry transparency duties, while chatbots are high-risk and must meet data-quality and human-oversight requirements.",
+   "x": "The Act scales obligations to the harm a use can cause: decisions about people's jobs or health are high-risk, a chatbot mainly must disclose what it is. Most systems, like spam filters, carry no duties, and practices such as social scoring are banned.",
+   "concepts": [
+    "kt:ai-governance",
+    "kt:eu-ai-act"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-governance.html"
+  },
+  {
+   "id": "ai-000334",
+   "area": "inference-and-optimization",
+   "kind": "definition",
+   "topic": "Model pruning",
+   "t": "Structured pruning removes whole channels, heads or blocks, leaving a smaller dense network, while unstructured pruning zeroes individual weights in an irregular pattern.",
+   "f": "Unstructured pruning removes whole channels, heads or blocks, leaving a smaller dense network, while structured pruning zeroes individual weights in an irregular pattern.",
+   "x": "Unstructured pruning reaches the highest sparsity for a given accuracy, but its scattered zeros are hard for hardware to exploit. Structured pruning gives up some sparsity so ordinary dense kernels can run the slimmer model faster.",
+   "concepts": [
+    "kt:model-pruning",
+    "kt:model-compression"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-pruning.html"
+  },
+  {
+   "id": "ai-000335",
+   "area": "inference-and-optimization",
+   "kind": "evidence",
+   "topic": "Model pruning",
+   "t": "Frankle and Carbin found pruned subnetworks train to comparable accuracy when reset to their original initial weights, but not when freshly reinitialised.",
+   "f": "Frankle and Carbin found pruned subnetworks train to comparable accuracy when freshly reinitialised, but not when reset to their original initial weights.",
+   "x": "This lottery ticket result suggests pruning finds favourable initialisations, not just redundant weights. The sparse structure alone is not enough: the same mask with new random weights falls short of the dense network.",
+   "concepts": [
+    "kt:model-pruning",
+    "kt:lottery-ticket-hypothesis"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-pruning.html"
+  },
+  {
+   "id": "ai-000336",
+   "area": "inference-and-optimization",
+   "kind": "figure",
+   "topic": "Model pruning",
+   "t": "As of 2021, NVIDIA's 2:4 sparsity doubled A100 peak throughput on paper, yet its measured throughput gain on a sparse ResNeXt-101 was up to about 20%.",
+   "f": "As of 2021, NVIDIA's 2:4 sparsity doubled A100 peak throughput on paper, and its measured throughput gain on a sparse ResNeXt-101 was the full 2x.",
+   "x": "In 2:4 sparsity two of every four contiguous weights are zero, which Sparse Tensor Cores can skip. Peak figures still overstate real speedups, a recurring gap between parameter reductions and measured gains in pruning.",
+   "concepts": [
+    "kt:model-pruning",
+    "kt:tensor-cores"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-pruning.html",
+   "asOf": "2021"
+  },
+  {
+   "id": "ai-000337",
+   "area": "ml-foundations",
+   "kind": "definition",
+   "topic": "Supervised learning",
+   "t": "In supervised learning, a continuous target such as a house price makes the task regression, while a target with a few discrete values makes it classification.",
+   "f": "In supervised learning, a continuous target such as a house price makes the task classification, while a target with a few discrete values makes it regression.",
+   "x": "The type of label decides the task: regression predicts a number on a continuous scale, classification picks one of a small set of categories. The choice also shapes the loss, such as squared error for regression and cross-entropy for classification.",
+   "concepts": [
+    "kt:supervised-learning",
+    "kt:loss-function"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/supervised-learning.html"
+  },
+  {
+   "id": "ai-000338",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Supervised learning",
+   "t": "Fixing a narrower hypothesis class in advance makes empirical risk minimization less prone to overfitting, at the price of a stronger inductive bias.",
+   "f": "Fixing a wider hypothesis class in advance makes empirical risk minimization less prone to overfitting, at the price of a stronger inductive bias.",
+   "x": "Unrestricted ERM can pick a predictor that memorises the training set: zero training error, chance-level on new data. Limiting the class blocks such lookup tables, but if the class is too narrow it may miss the true pattern.",
+   "concepts": [
+    "kt:supervised-learning",
+    "kt:empirical-risk-minimization",
+    "kt:overfitting",
+    "kt:statistical-learning-theory"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/supervised-learning.html"
+  },
+  {
+   "id": "ai-000339",
+   "area": "ml-foundations",
+   "kind": "origin",
+   "topic": "Supervised learning",
+   "t": "Leslie Valiant's 1984 paper \"A Theory of the Learnable\" gave learning a computational footing, the template later called probably approximately correct (PAC) learning.",
+   "f": "Leslie Valiant's 1994 paper \"A Theory of the Learnable\" gave learning a computational footing, the template later called probably approximately correct (PAC) learning.",
+   "x": "Valiant's 1984 Communications of the ACM paper asked a learner to produce, in polynomial time, a rule whose error is small with high probability. That framing underlies the formal theory of supervised learning taught today.",
+   "concepts": [
+    "kt:supervised-learning",
+    "kt:statistical-learning-theory"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/supervised-learning.html"
+  },
+  {
+   "id": "ai-000340",
+   "area": "prompting-and-reasoning",
+   "kind": "origin",
+   "topic": "Prompt engineering",
+   "t": "Liu et al.'s 2021 survey named the 'pre-train, prompt, and predict' paradigm, in which an input is wrapped in a template whose open slots the language model fills.",
+   "f": "Brown et al.'s 2020 GPT-3 paper named the 'pre-train, prompt, and predict' paradigm, in which an input is wrapped in a template whose open slots the language model fills.",
+   "x": "GPT-3 showed in 2020 that tasks could be specified purely in text; Liu and colleagues' survey a year later gave the shift its name. The point is that one pretrained model is steered by templates instead of training a separate supervised model per task.",
+   "concepts": [
+    "kt:prompt-engineering",
+    "kt:natural-language-processing",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-engineering.html"
+  },
+  {
+   "id": "ai-000341",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Prompt engineering",
+   "t": "Automatic Prompt Engineer (APE) has an LLM propose candidate instructions, scores each one on training examples, and keeps the best performer.",
+   "f": "Automatic Prompt Engineer (APE) has humans propose candidate instructions, has an LLM score each one by its fluency, and keeps the best performer.",
+   "x": "APE treats the instruction as a program to search over, with a model generating candidates and a metric such as training accuracy choosing among them. This reframes prompt writing as optimisation; across 24 tasks its instructions matched or beat human ones on 21.",
+   "concepts": [
+    "kt:prompt-engineering",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-engineering.html"
+  },
+  {
+   "id": "ai-000342",
+   "area": "prompting-and-reasoning",
+   "kind": "application",
+   "topic": "Prompt engineering",
+   "t": "In OpenAI's chat APIs, developer messages take priority over user messages, which OpenAI likens to a function definition and the arguments passed to it.",
+   "f": "In OpenAI's chat APIs, user messages take priority over developer messages, which OpenAI likens to a function's arguments overriding its definition.",
+   "x": "Separating roles lets an application fix the rules and task while end users supply only the inputs. Giving the developer's instructions precedence is what keeps user text from simply rewriting how the application behaves.",
+   "concepts": [
+    "kt:prompt-engineering",
+    "kt:large-language-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-engineering.html"
+  },
+  {
+   "id": "ai-000343",
+   "area": "reinforcement-learning",
+   "kind": "definition",
+   "topic": "Markov decision process",
+   "t": "In a Markov decision process (MDP), the next state and reward depend only on the current state and action, so the state must summarise everything relevant about the past.",
+   "f": "In a Markov decision process (MDP), the next state and reward depend on the full history of states and actions, so the agent must remember everything about the past.",
+   "x": "The Markov property is what makes MDPs tractable: the current state is a sufficient summary, so values and policies can be defined per state. When the agent cannot observe such a state, the problem becomes a partially observable MDP, where the agent tracks a belief over states instead.",
+   "concepts": [
+    "kt:markov-decision-process",
+    "kt:markov-chain",
+    "kt:partially-observable-markov-decision-process"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/markov-decision-process.html"
   }
  ]
 }

@@ -1,0 +1,20 @@
+id: ai-000342
+area: prompting-and-reasoning
+kind: application
+topic: Prompt engineering
+topic_type: Technique
+maturity: established
+true_statement: In OpenAI's chat APIs, developer messages take priority over user messages, which OpenAI likens to a function definition and the arguments passed to it.
+false_statement: In OpenAI's chat APIs, user messages take priority over developer messages, which OpenAI likens to a function's arguments overriding its definition.
+explanation: Separating roles lets an application fix the rules and task while end users supply only the inputs. Giving the developer's instructions precedence is what keeps user text from simply rewriting how the application behaves.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/prompt-engineering.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20d323cce49e6b2424f4286132c7aac6759fd9ec
+concepts:
+- kt:prompt-engineering
+- kt:large-language-model
+difficulty: 1
+created: '2026-11-19'
+status: active

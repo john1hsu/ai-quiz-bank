@@ -1,0 +1,22 @@
+id: ai-000272
+area: evaluation-and-benchmarks
+kind: figure
+topic: 'MMLU: Measuring Massive Multitask Language Understanding'
+topic_type: Benchmark
+maturity: established
+true_statement: In the 2020 MMLU paper, the largest GPT-3 model averaged 43.9% few-shot, while smaller GPT-3 variants stayed near the 25% chance level.
+false_statement: In the 2020 MMLU paper, the largest GPT-3 model averaged 89.8% few-shot, while smaller GPT-3 variants stayed near the 25% chance level.
+explanation: 89.8% was the authors' estimate of expert-level accuracy, far above what GPT-3 managed. That only the 175B model rose clearly above chance made MMLU an early example of scale-dependent jumps in ability.
+as_of: '2020'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/mmlu.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: dc7747e59f89b2a1f086409eaad3083465879ab2
+concepts:
+- kt:mmlu
+- kt:large-language-model
+- kt:emergent-abilities
+difficulty: 2
+created: '2026-11-19'
+status: active

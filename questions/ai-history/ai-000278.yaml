@@ -1,0 +1,20 @@
+id: ai-000278
+area: ai-history
+kind: origin
+topic: ImageNet and AlexNet
+topic_type: Event
+maturity: historical
+true_statement: ImageNet was introduced at CVPR 2009 by Jia Deng, Li Fei-Fei and colleagues, who organized its images under WordNet's noun hierarchy.
+false_statement: ImageNet was introduced at CVPR 2012 by Alex Krizhevsky, Geoffrey Hinton and colleagues, who organized its images under WordNet's noun hierarchy.
+explanation: 'The dataset came three years before the model: Deng, Fei-Fei and colleagues built it, labeling with crowd workers, and the Toronto team behind AlexNet used it. Its WordNet roots later drew criticism for the person categories it inherited.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/imagenet-and-alexnet.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: ecc51d41d5c9023c23e53b165cba3ed886b52f0e
+concepts:
+- kt:imagenet-and-alexnet
+- kt:image-classification
+difficulty: 1
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000323
+area: ai-history
+kind: mechanism
+topic: ELIZA
+topic_type: Model
+maturity: historical
+true_statement: When ELIZA found several script keywords in an input, a higher-ranked keyword displaced a lower-ranked one, and its rules then built the reply.
+false_statement: When ELIZA found several script keywords in an input, the first keyword found displaced any later ones, and its rules then built the reply.
+explanation: 'Each keyword in the script carries a rank, so the most important one wins regardless of position. A decomposition rule then splits the input around it and a reassembly rule rebuilds the fragments, swapping pronouns: pattern matching on surface text, not understanding.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/eliza.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 710dc7231514534f26b223c71f5d5f371cc819b4
+concepts:
+- kt:eliza
+- kt:rule-based-system
+- kt:symbolic-ai
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000276
+area: agents-and-tool-use
+kind: application
+topic: 'AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation'
+topic_type: Tool
+maturity: established
+true_statement: Microsoft Agent Framework is the direct successor to both AutoGen and Semantic Kernel, combining AutoGen's agent abstractions with Semantic Kernel's enterprise features.
+false_statement: Microsoft Agent Framework is the direct successor to both AutoGen and Semantic Kernel, combining Semantic Kernel's agent abstractions with AutoGen's enterprise features.
+explanation: The AutoGen repository is archived and points new users to Agent Framework, built by the same teams. It also adds explicit workflows for controlling multi-agent execution paths, which AutoGen's emergent conversations lacked.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/autogen.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 8f9226f350247d3dff608dfcf956042a4a0d8b09
+concepts:
+- kt:autogen
+- kt:microsoft-agent-framework
+- kt:agentic-workflow
+difficulty: 2
+created: '2026-11-19'
+status: active

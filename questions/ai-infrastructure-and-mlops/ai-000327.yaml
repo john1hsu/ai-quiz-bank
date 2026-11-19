@@ -1,0 +1,21 @@
+id: ai-000327
+area: ai-infrastructure-and-mlops
+kind: evidence
+topic: GPU computing
+topic_type: Paradigm
+maturity: established
+true_statement: In NVIDIA's performance guide, a linear layer at batch size 512 is math-limited, while ReLU and layer normalization are memory-limited.
+false_statement: In NVIDIA's performance guide, a linear layer at batch size 512 is memory-limited, while ReLU and layer normalization are math-limited.
+explanation: What matters is arithmetic intensity, operations per byte moved. A large-batch matrix multiply reaches about 315 FLOPS per byte, above the GPU's ratio, while elementwise ReLU does about 0.25, so it just waits on memory; that is why peak FLOPS are rarely reached.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/gpu-computing.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 7ab7be9787e8bd554d5f25d8a1d2409a86941046
+concepts:
+- kt:gpu-computing
+- kt:arithmetic-intensity
+- kt:roofline-model
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000336
+area: inference-and-optimization
+kind: figure
+topic: Model pruning
+topic_type: Technique
+maturity: established
+true_statement: As of 2021, NVIDIA's 2:4 sparsity doubled A100 peak throughput on paper, yet its measured throughput gain on a sparse ResNeXt-101 was up to about 20%.
+false_statement: As of 2021, NVIDIA's 2:4 sparsity doubled A100 peak throughput on paper, and its measured throughput gain on a sparse ResNeXt-101 was the full 2x.
+explanation: In 2:4 sparsity two of every four contiguous weights are zero, which Sparse Tensor Cores can skip. Peak figures still overstate real speedups, a recurring gap between parameter reductions and measured gains in pruning.
+as_of: '2021'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-pruning.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0efa046c0f3ed83183e7ed0f792d8b64679ecf14
+concepts:
+- kt:model-pruning
+- kt:tensor-cores
+difficulty: 3
+created: '2026-11-19'
+status: active

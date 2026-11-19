@@ -1,0 +1,21 @@
+id: ai-000252
+area: prompting-and-reasoning
+kind: evidence
+topic: 'Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems'
+topic_type: Work
+maturity: historical
+true_statement: Most AQuA problems that Ling et al.'s model solved needed only one or two operations, and long rationales of over 200 tokens strained its attention and copy mechanisms.
+false_statement: Most AQuA problems that Ling et al.'s model solved needed five or more operations, and long rationales of over 200 tokens helped its attention and copy mechanisms.
+explanation: The 2017 LSTM model handled short computations but struggled to keep track over long multi-step reasoning. Its rationales were also judged only with automatic metrics, with no human evaluation, so their quality as explanations was not directly tested.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/program-induction-by-rationale-generation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0918065abb98e821ab50fed5ac55888ab3de24ef
+concepts:
+- kt:program-induction-by-rationale-generation
+- kt:long-short-term-memory
+- kt:mathematical-reasoning
+difficulty: 3
+created: '2026-11-19'
+status: active

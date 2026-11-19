@@ -1,0 +1,21 @@
+id: ai-000286
+area: governance-and-policy
+kind: definition
+topic: Compute governance
+topic_type: Concept
+maturity: emerging
+true_statement: Compute governance treats compute as a policy lever because, unlike data and algorithms, its use is detectable, access is excludable, it is quantifiable and its supply chain is concentrated.
+false_statement: Compute governance treats data as a policy lever because, unlike compute and algorithms, its use is detectable, access is excludable, it is quantifiable and its supply chain is concentrated.
+explanation: Sastry, Heim and co-authors argued in 2024 that data and algorithms are easy to copy and hard to observe, whereas chips are physical, countable and made by very few producers. That is what makes reporting, allocation and export controls workable.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/compute-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0e50aefd6189a0602939a1402b2607a5c477dcd0
+concepts:
+- kt:compute-governance
+- kt:computing-power-and-the-governance-of-artificial-intelligence
+- kt:ai-accelerator
+difficulty: 1
+created: '2026-11-19'
+status: active

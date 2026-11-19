@@ -1,0 +1,20 @@
+id: ai-000271
+area: evaluation-and-benchmarks
+kind: definition
+topic: 'MMLU: Measuring Massive Multitask Language Understanding'
+topic_type: Benchmark
+maturity: established
+true_statement: MMLU (Massive Multitask Language Understanding) asks four-option multiple-choice questions across 57 subjects, from elementary mathematics to professional law.
+false_statement: MMLU (Massive Multitask Language Understanding) asks ten-option multiple-choice questions across 57 subjects, from elementary mathematics to professional law.
+explanation: With four options, random guessing scores 25%, the baseline every MMLU result is read against. Ten options belong to its successor MMLU-Pro, which added choices partly because four-option questions reward elimination more than reasoning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/mmlu.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: dc7747e59f89b2a1f086409eaad3083465879ab2
+concepts:
+- kt:mmlu
+- kt:mmlu-pro
+difficulty: 1
+created: '2026-11-19'
+status: active

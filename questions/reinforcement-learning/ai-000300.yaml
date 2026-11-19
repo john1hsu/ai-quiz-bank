@@ -1,0 +1,20 @@
+id: ai-000300
+area: reinforcement-learning
+kind: evidence
+topic: Exploration-exploitation dilemma
+topic_type: Concept
+maturity: foundational
+true_statement: On Sutton and Barto's 10-armed testbed, ε = 0.1 found the best arm sooner, while ε = 0.01 learned more slowly but did better in the long run.
+false_statement: On Sutton and Barto's 10-armed testbed, ε = 0.01 found the best arm sooner, while ε = 0.1 learned more slowly but did better in the long run.
+explanation: More random exploration discovers the best arm faster but keeps wasting a tenth of the choices on random arms forever. A smaller ε explores slowly, yet once it finds the best arm it exploits it almost all the time, so it pulls ahead later. A purely greedy learner often got stuck on a worse arm.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/exploration-exploitation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 81bdc19c500b3eeec5375e010056153da8391bd3
+concepts:
+- kt:exploration-exploitation
+- kt:multi-armed-bandit
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000311
+area: transformers-and-llms
+kind: evidence
+topic: Transformer architecture
+topic_type: Architecture
+maturity: established
+true_statement: Xiong et al. (2020) showed that Post-LN Transformers have large gradients near the output at initialization, so they need learning-rate warm-up, while Pre-LN ones can train without it.
+false_statement: Xiong et al. (2020) showed that Pre-LN Transformers have large gradients near the output at initialization, so they need learning-rate warm-up, while Post-LN ones can train without it.
+explanation: The original Transformer normalized after each residual addition (Post-LN). Moving layer normalization inside the residual branch (Pre-LN) keeps gradients well behaved, which is why later models such as LLaMA normalize sub-layer inputs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/transformer-architecture.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 2b435471662a3db7db27f56be8a082eb827f5c9d
+concepts:
+- kt:transformer-architecture
+- kt:layer-normalization
+- kt:residual-connection
+difficulty: 3
+created: '2026-11-19'
+status: active

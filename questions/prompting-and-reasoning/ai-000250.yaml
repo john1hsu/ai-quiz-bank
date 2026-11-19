@@ -1,0 +1,21 @@
+id: ai-000250
+area: prompting-and-reasoning
+kind: mechanism
+topic: 'Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems'
+topic_type: Work
+maturity: historical
+true_statement: Ling et al. (2017) supervised their algebra solver with step-by-step rationales rather than programs, using each rationale's milestones to constrain the hidden arithmetic program.
+false_statement: Ling et al. (2017) supervised their algebra solver with hand-written programs rather than rationales, using each program's steps to constrain the generated natural-language rationale.
+explanation: The program was a latent variable that was never observed; the search kept only instructions able to emit the next rationale token. The authors report that without rationales the space of programs was too large to learn from question-answer pairs alone.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/program-induction-by-rationale-generation.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0918065abb98e821ab50fed5ac55888ab3de24ef
+concepts:
+- kt:program-induction-by-rationale-generation
+- kt:program-induction
+- kt:aqua-rat
+difficulty: 2
+created: '2026-11-19'
+status: active

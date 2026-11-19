@@ -1,0 +1,20 @@
+id: ai-000288
+area: governance-and-policy
+kind: evidence
+topic: Compute governance
+topic_type: Concept
+maturity: emerging
+true_statement: Sara Hooker argues fixed training-compute thresholds are shortsighted because the link between compute and risk is uncertain and shifting.
+false_statement: Sara Hooker argues fixed training-compute thresholds are reliable because the link between compute and risk is predictable and stable.
+explanation: Compute is only a good proxy for risk while capability rises predictably with scale, the scaling-law assumption Hooker challenges. Efficiency gains also erode any fixed cut-off, and small narrow models can still be dangerous.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/compute-governance.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 0e50aefd6189a0602939a1402b2607a5c477dcd0
+concepts:
+- kt:compute-governance
+- kt:scaling-laws
+difficulty: 3
+created: '2026-11-19'
+status: active

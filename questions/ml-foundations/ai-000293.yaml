@@ -1,0 +1,20 @@
+id: ai-000293
+area: ml-foundations
+kind: mechanism
+topic: Principal component analysis
+topic_type: Algorithm
+maturity: foundational
+true_statement: PCA keeps the covariance eigenvectors with the largest eigenvalues, because each eigenvalue is the variance captured along that component.
+false_statement: PCA keeps the covariance eigenvectors with the smallest eigenvalues, because each eigenvalue is the variance captured along that component.
+explanation: Sorting by eigenvalue ranks directions by how much spread they hold, so the discarded eigenvalues add up to exactly the variance the projection throws away. For high-dimensional data, implementations get the same directions from an SVD of the centred data instead.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/principal-component-analysis.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: adedc2c5de2ded8c4d72ed75d7aae0dfde228a0a
+concepts:
+- kt:principal-component-analysis
+- kt:singular-value-decomposition
+difficulty: 2
+created: '2026-11-19'
+status: active

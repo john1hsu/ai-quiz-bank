@@ -1,0 +1,21 @@
+id: ai-000277
+area: ai-history
+kind: figure
+topic: ImageNet and AlexNet
+topic_type: Event
+maturity: historical
+true_statement: In ILSVRC-2012, AlexNet's seven-network ensemble scored 15.3% top-5 test error, against 26.2% for the second-best entry.
+false_statement: In ILSVRC-2012, AlexNet's seven-network ensemble scored 15.3% top-5 test error, against 17.0% for the second-best entry.
+explanation: 'The point of the 2012 result was the size of the gap: an error rate more than ten points below the hand-engineered runner-up is what convinced computer vision to switch to deep learning. By 2014 nearly every top entry used convolutional networks.'
+as_of: '2012'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/imagenet-and-alexnet.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: ecc51d41d5c9023c23e53b165cba3ed886b52f0e
+concepts:
+- kt:imagenet-and-alexnet
+- kt:imagenet-large-scale-visual-recognition-challenge
+difficulty: 1
+created: '2026-11-19'
+status: active

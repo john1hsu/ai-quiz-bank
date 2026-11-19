@@ -1,0 +1,20 @@
+id: ai-000259
+area: safety-alignment-and-security
+kind: origin
+topic: Goodhart's law
+topic_type: Concept
+maturity: foundational
+true_statement: Economist Charles Goodhart first proposed his law in 1975, writing about the targets used in monetary policy.
+false_statement: Economist Charles Goodhart first proposed his law in 1975, writing about performance audits in British universities.
+explanation: Goodhart's point concerned monetary statistics that broke down once policymakers tried to steer by them. The university-audit setting belongs to anthropologist Marilyn Strathern, whose 1997 critique is the usual source of the catchy 'measure becomes a target' wording.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/goodharts-law.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: fdc87de52a80274985fbf00433e3d786fb8cd256
+concepts:
+- kt:goodharts-law
+- kt:charles-goodhart
+difficulty: 1
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000296
+area: prompting-and-reasoning
+kind: figure
+topic: 'Self-Refine: Iterative Refinement with Self-Feedback'
+topic_type: Work
+maturity: established
+true_statement: In the 2023 Self-Refine paper, GPT-4's dialogue response score rose from 25.4 to 74.6, while its GSM8K math score barely moved, from 92.9 to 93.1.
+false_statement: In the 2023 Self-Refine paper, GPT-4's GSM8K math score rose from 25.4 to 74.6, while its dialogue response score barely moved, from 92.9 to 93.1.
+explanation: Open-ended tasks with many acceptable answers benefited most from critique and rewriting. On math the model rarely noticed its own errors, judging most flawed solutions as fine, so self-feedback had little to work with.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/self-refine-iterative-refinement-with-self-feedback.md
+  commit: 7be1aea42bb2398395f805dd4c0b0f586d6945f6
+  blob: 20f0e11ea32531e7ab54215e3551c36a8e9d88d6
+concepts:
+- kt:self-refine-iterative-refinement-with-self-feedback
+- kt:gsm8k
+difficulty: 3
+created: '2026-11-19'
+status: active
