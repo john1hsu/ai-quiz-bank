@@ -1,0 +1,20 @@
+id: ai-000438
+area: safety-alignment-and-security
+kind: mechanism
+topic: Prompt injection
+topic_type: Risk
+maturity: emerging
+true_statement: The instruction hierarchy of Wallace et al. trains a model to ignore lower-privilege instructions that conflict with higher-privilege ones, so third-party text cannot override a system prompt.
+false_statement: The instruction hierarchy of Wallace et al. trains a model to follow the most recent instruction when instructions conflict, so third-party text can override a system prompt.
+explanation: Wallace et al. observed that models tended to weigh a developer's system prompt the same as user or retrieved text, which is what injection exploits. Training on generated conflicts taught GPT-3.5 to rank instructions by source, improving robustness even to unseen attack types.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/prompt-injection.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: d33a444e3a1701617e177a51d5b4cc71d6dffb7a
+concepts:
+- kt:prompt-injection
+- kt:instruction-hierarchy
+difficulty: 2
+created: '2026-11-20'
+status: active

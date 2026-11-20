@@ -1,0 +1,21 @@
+id: ai-000419
+area: deep-learning
+kind: mechanism
+topic: Activation function
+topic_type: Concept
+maturity: foundational
+true_statement: The logistic sigmoid's derivative peaks at only 0.25, at an input of zero, while the derivative of tanh peaks at 1.
+false_statement: The logistic sigmoid's derivative peaks at 1, at an input of zero, while the derivative of tanh peaks at only 0.25.
+explanation: The sigmoid's derivative is σ(x)(1 − σ(x)), which is largest when σ(x) = 0.5, giving 0.25; tanh's derivative 1 − tanh²(x) reaches 1 at zero. Backpropagation multiplies these factors across layers, so small, saturating sigmoid derivatives feed the vanishing gradient problem.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/activation-function.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5decde169913884abdadb199c4a46e7f1f124746
+concepts:
+- kt:activation-function
+- kt:vanishing-gradient-problem
+- kt:backpropagation
+difficulty: 2
+created: '2026-11-20'
+status: active

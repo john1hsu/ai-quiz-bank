@@ -1,0 +1,20 @@
+id: ai-000393
+area: prompting-and-reasoning
+kind: application
+topic: Few-shot prompting
+topic_type: Technique
+maturity: established
+true_statement: Liu et al. found that retrieving demonstrations semantically similar to each test query, using a sentence encoder, consistently beat randomly chosen examples for GPT-3.
+false_statement: Liu et al. found that randomly chosen demonstrations consistently beat examples retrieved for semantic similarity to each test query, using a sentence encoder, for GPT-3.
+explanation: 'Which examples go in the prompt matters, and nearby examples help most. This turned example selection into a retrieval problem: production systems keep a pool of labelled cases and pull each query''s nearest neighbours into the prompt.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/few-shot-prompting.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 426231c8a146c2163d996fba3612c1b25b084a9e
+concepts:
+- kt:few-shot-prompting
+- kt:semantic-search
+difficulty: 2
+created: '2026-11-20'
+status: active

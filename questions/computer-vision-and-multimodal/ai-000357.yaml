@@ -1,0 +1,21 @@
+id: ai-000357
+area: computer-vision-and-multimodal
+kind: evidence
+topic: 'Vision-language model: LLMs with visual input'
+topic_type: Architecture
+maturity: established
+true_statement: A 2023 study of object hallucination found vision-language models most often invent objects that are frequent in visual-instruction data or that commonly co-occur with objects really in the image.
+false_statement: A 2023 study of object hallucination found vision-language models most often invent objects that are rare in visual-instruction data or that seldom co-occur with objects really in the image.
+explanation: 'Hallucinated objects follow the training statistics: the model fills in what usually appears or usually accompanies what it sees, not unusual objects. The same study proposed POPE, polling the model with yes/no questions about specific objects, because caption-based metrics were skewed by prompts and generation style.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-language-model.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e37757e90b1fac09f17802880b17aadef1fd1dbe
+concepts:
+- kt:vision-language-model
+- kt:hallucination
+- kt:instruction-tuning
+difficulty: 3
+created: '2026-11-20'
+status: active

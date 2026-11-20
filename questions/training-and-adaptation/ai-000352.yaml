@@ -1,0 +1,20 @@
+id: ai-000352
+area: training-and-adaptation
+kind: evidence
+topic: Instruction tuning
+topic_type: Technique
+maturity: established
+true_statement: In FLAN's experiments, instruction tuning improved the 68B and 137B models on unseen tasks but hurt held-out performance for models of 8B parameters or fewer.
+false_statement: In FLAN's experiments, instruction tuning improved models of 8B parameters or fewer on unseen tasks but hurt held-out performance for the 68B and 137B models.
+explanation: So in the original FLAN setup the benefit appeared only at large scale. Later work with far more tasks (Chung et al.) reported gains for smaller models too, so the size threshold depends on the instruction-data mix rather than being fixed.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/instruction-tuning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 3b9273fb1e001f57c8b23565ad471da9d34960da
+concepts:
+- kt:instruction-tuning
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-20'
+status: active

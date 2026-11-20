@@ -1,0 +1,20 @@
+id: ai-000443
+area: transformers-and-llms
+kind: mechanism
+topic: Sequence-to-sequence learning
+topic_type: Paradigm
+maturity: established
+true_statement: With teacher forcing, a seq2seq decoder is trained on the ground-truth target shifted right by one position, starting with a beginning-of-sequence token.
+false_statement: With teacher forcing, a seq2seq decoder is trained on its own earlier predictions shifted right by one position, starting with a beginning-of-sequence token.
+explanation: Feeding the true previous tokens during training keeps each step's input correct even while the model's own guesses are still poor. Only at inference does the decoder consume its own predictions, stopping when it emits the end-of-sequence token.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/sequence-to-sequence-learning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 12ff15ca1839906b031748fddb4d7d03f4642350
+concepts:
+- kt:sequence-to-sequence-learning
+- kt:recurrent-neural-network
+difficulty: 2
+created: '2026-11-20'
+status: active

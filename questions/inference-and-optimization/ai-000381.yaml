@@ -1,0 +1,22 @@
+id: ai-000381
+area: inference-and-optimization
+kind: application
+topic: TensorRT-LLM
+topic_type: Tool
+maturity: established
+true_statement: TensorRT-LLM's FP8 quantization needs Hopper-generation or later NVIDIA GPUs, while its FP4 formats need Blackwell GPUs such as the B200.
+false_statement: TensorRT-LLM's FP4 quantization needs Hopper-generation or later NVIDIA GPUs, while its FP8 formats need Blackwell GPUs such as the B200.
+explanation: 'Low-precision formats depend on tensor-core hardware support, so each new format arrives with a GPU generation: FP8 with Hopper (H100) and FP4 with Blackwell. This tie to specific NVIDIA hardware is the library''s main lock-in; the false statement swaps the two generations.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/tensorrt-llm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: cddae2f18f369c19f533aefddc12d6711e390939
+concepts:
+- kt:tensorrt-llm
+- kt:quantization
+- kt:tensor-cores
+- kt:nvidia
+difficulty: 2
+created: '2026-11-20'
+status: active

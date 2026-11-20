@@ -1,0 +1,22 @@
+id: ai-000346
+area: retrieval-and-knowledge
+kind: figure
+topic: Information retrieval
+topic_type: Field
+maturity: foundational
+true_statement: In 2020, Dense Passage Retrieval's dual encoder beat a strong Lucene BM25 baseline by 9 to 19 points absolute in top-20 passage retrieval accuracy on open-domain question answering.
+false_statement: In 2020, a strong Lucene BM25 baseline beat Dense Passage Retrieval's dual encoder by 9 to 19 points absolute in top-20 passage retrieval accuracy on open-domain question answering.
+explanation: Karpukhin et al. encoded questions and passages separately into dense vectors, and that learned matching clearly outperformed keyword scoring on their QA benchmarks. The result helped shift IR toward neural retrievers, though BM25 stays the baseline every new retriever is measured against.
+as_of: '2020'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/information-retrieval.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e97300672b5f857625fd2dadd9f09a04d1b26bf2
+concepts:
+- kt:information-retrieval
+- kt:bm25
+- kt:semantic-search
+difficulty: 2
+created: '2026-11-20'
+status: active

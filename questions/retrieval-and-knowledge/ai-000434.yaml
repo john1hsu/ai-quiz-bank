@@ -1,0 +1,23 @@
+id: ai-000434
+area: retrieval-and-knowledge
+kind: figure
+topic: Reranking
+topic_type: Technique
+maturity: established
+true_statement: In 2019, Nogueira and Cho's BERT reranker over BM25's top 1,000 passages raised MS MARCO mean reciprocal rank at 10 from about 16.5 to 35.8, more than doubling it.
+false_statement: In 2019, Nogueira and Cho's BERT reranker over BM25's top 1,000 passages raised MS MARCO mean reciprocal rank at 10 from about 16.5 to 21.8, a gain of about a third.
+explanation: Fine-tuning BERT as a relevance classifier and running it only over BM25's shortlist more than doubled the score and topped the MS MARCO leaderboard. Its retrieve-then-rerank-then-answer shape became the template for today's RAG pipelines.
+as_of: '2019'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/reranking.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 2489e46e2ae33e0c0b790006cf23dbd8d99bc322
+concepts:
+- kt:reranking
+- kt:bert
+- kt:bm25
+- kt:ms-marco
+difficulty: 2
+created: '2026-11-20'
+status: active

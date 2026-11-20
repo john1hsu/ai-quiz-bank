@@ -1,0 +1,20 @@
+id: ai-000406
+area: evaluation-and-benchmarks
+kind: evidence
+topic: SWE-bench
+topic_type: Benchmark
+maturity: established
+true_statement: OpenAI built SWE-bench Verified after annotators found many original tasks had underspecified issues or tests too specific to accept a valid fix.
+false_statement: OpenAI built SWE-bench Verified after annotators found many original tasks had solutions leaked into the models' training data.
+explanation: Developers screened samples three times each and dropped tasks that were unfair to solve, leaving 500 human-checked problems. Contamination was a separate critique, raised in an independent audit noting most issues predated the models' knowledge cutoffs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/swe-bench.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 8960d5094c507cb78223a96721f9cadde44ad51f
+concepts:
+- kt:swe-bench
+- kt:benchmark-contamination
+difficulty: 2
+created: '2026-11-20'
+status: active

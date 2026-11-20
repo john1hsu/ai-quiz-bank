@@ -1,0 +1,20 @@
+id: ai-000414
+area: ai-history
+kind: evidence
+topic: Expert systems
+topic_type: Paradigm
+maturity: historical
+true_statement: MYCIN never entered routine clinical use, partly because it ran only on costly time-sharing computers unavailable on wards and needed 50–60 typed answers per consultation.
+false_statement: MYCIN never entered routine clinical use, partly because in blinded tests outside experts disagreed with its therapy advice far more often than with Stanford faculty's.
+explanation: 'MYCIN performed well: in a blinded evaluation, outside infectious-disease experts disagreed with it no more often than with Stanford faculty. What blocked use was practical, from Interlisp on costly time-sharing systems and long typed consultations to lost funding, showing that good test results do not guarantee adoption.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/expert-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 449aa94d2a823e0d1a774ae62698337fc0a4f26b
+concepts:
+- kt:expert-systems
+- kt:mycin
+difficulty: 2
+created: '2026-11-20'
+status: active

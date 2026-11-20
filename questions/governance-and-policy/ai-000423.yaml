@@ -1,0 +1,21 @@
+id: ai-000423
+area: governance-and-policy
+kind: mechanism
+topic: EU AI Act
+topic_type: Policy
+maturity: emerging
+true_statement: Under the EU AI Act, the Commission's AI Office has direct powers over general-purpose AI models, while Member State market-surveillance authorities enforce most other rules.
+false_statement: Under the EU AI Act, Member State market-surveillance authorities have direct powers over general-purpose AI models, while the Commission's AI Office enforces most other rules.
+explanation: 'Enforcement is split: general-purpose models are supervised centrally, so the AI Office can request documentation, evaluate models, order corrective measures and fine providers. National authorities handle the AI systems placed on their markets, following the EU''s usual product-surveillance model.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/eu-ai-act.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 9a14259347a7853da278657552813a938b4ebd9c
+concepts:
+- kt:eu-ai-act
+- kt:general-purpose-ai-model
+- kt:european-union
+difficulty: 2
+created: '2026-11-20'
+status: active

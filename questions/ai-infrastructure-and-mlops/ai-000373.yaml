@@ -1,0 +1,21 @@
+id: ai-000373
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: 'Model serving: deploying trained models behind inference APIs'
+topic_type: Concept
+maturity: established
+true_statement: In 2017 Google's TensorFlow-Serving authors estimated that the serving library alone could handle about 100,000 requests per second per CPU core.
+false_statement: In 2017 Google's TensorFlow-Serving authors estimated that the serving library alone could handle about 10,000 requests per second per CPU core.
+explanation: The estimate covers only the serving framework's own overhead, not model computation, and shows the plumbing is rarely the bottleneck. The false figure is ten times too low; Google's total traffic then ran to tens of millions of inferences per second.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/model-serving.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6e7aca6b27e4c20ed2d3bbc954c9a23808df9b15
+concepts:
+- kt:model-serving
+- kt:tensorflow-serving
+difficulty: 2
+created: '2026-11-20'
+status: active

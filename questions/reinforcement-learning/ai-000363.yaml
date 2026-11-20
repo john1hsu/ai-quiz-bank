@@ -1,0 +1,21 @@
+id: ai-000363
+area: reinforcement-learning
+kind: figure
+topic: AlphaZero
+topic_type: Algorithm
+maturity: established
+true_statement: In DeepMind's 2018 evaluation, AlphaZero searched about 60,000 chess positions per second, against roughly 60 million for Stockfish.
+false_statement: In DeepMind's 2018 evaluation, AlphaZero searched about 60 million chess positions per second, against roughly 60,000 for Stockfish.
+explanation: AlphaZero searched about a thousand times fewer positions than Stockfish and still won, because its learned evaluation guided a much smaller, more selective search. It was the classical engine that relied on brute-force breadth.
+as_of: '2018'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphazero.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c2b31837d954a66cb32ea724739eb53594a7f07d
+concepts:
+- kt:alphazero
+- kt:monte-carlo-tree-search
+difficulty: 2
+created: '2026-11-20'
+status: active

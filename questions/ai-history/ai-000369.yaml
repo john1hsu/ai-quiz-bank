@@ -1,0 +1,21 @@
+id: ai-000369
+area: ai-history
+kind: mechanism
+topic: Logic Theorist
+topic_type: Model
+maturity: historical
+true_statement: The Logic Theorist worked backward from the goal theorem, generating subproblems whose solution would yield it, instead of enumerating every possible derivation.
+false_statement: The Logic Theorist worked forward from the axioms, enumerating every possible derivation until the goal theorem appeared, instead of generating subproblems.
+explanation: Blind enumeration is what its authors called the British Museum algorithm, and they used it as the contrast. LT instead pruned the search with heuristics, working back from the goal and hunting for matching substitutions, a goal-directed style that became standard in automated reasoning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/logic-theorist.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7ce0b0d3a377eb696948b568b9c0a6543bc759f3
+concepts:
+- kt:logic-theorist
+- kt:heuristic-search
+- kt:automated-theorem-proving
+difficulty: 2
+created: '2026-11-20'
+status: active

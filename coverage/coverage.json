@@ -1,72 +1,72 @@
 {
  "totals": {
-  "active": 342
+  "active": 442
  },
  "areas": {
   "agents-and-tool-use": {
-   "active": 24
+   "active": 30
   },
   "ai-history": {
-   "active": 24
+   "active": 30
   },
   "ai-infrastructure-and-mlops": {
-   "active": 24
+   "active": 30
   },
   "computer-vision-and-multimodal": {
-   "active": 22
+   "active": 28
   },
   "deep-learning": {
-   "active": 24
+   "active": 30
   },
   "evaluation-and-benchmarks": {
-   "active": 22
+   "active": 28
   },
   "governance-and-policy": {
-   "active": 24
+   "active": 30
   },
   "inference-and-optimization": {
-   "active": 24
+   "active": 30
   },
   "ml-foundations": {
-   "active": 24
+   "active": 30
   },
   "prompting-and-reasoning": {
-   "active": 24
+   "active": 30
   },
   "reinforcement-learning": {
-   "active": 22
+   "active": 28
   },
   "retrieval-and-knowledge": {
-   "active": 21
+   "active": 30
   },
   "safety-alignment-and-security": {
-   "active": 21
+   "active": 30
   },
   "training-and-adaptation": {
-   "active": 21
+   "active": 30
   },
   "transformers-and-llms": {
-   "active": 21
+   "active": 28
   }
  },
  "kinds": {
   "application": {
-   "active": 32
+   "active": 44
   },
   "definition": {
-   "active": 46
+   "active": 53
   },
   "evidence": {
-   "active": 75
+   "active": 99
   },
   "figure": {
-   "active": 43
+   "active": 57
   },
   "mechanism": {
-   "active": 93
+   "active": 123
   },
   "origin": {
-   "active": 53
+   "active": 66
   }
  },
  "articles": {
@@ -88,6 +88,12 @@
   "articles/agents-and-tool-use/langgraph.md": {
    "active": 3
   },
+  "articles/agents-and-tool-use/multi-agent-systems.md": {
+   "active": 3
+  },
+  "articles/agents-and-tool-use/tool-use.md": {
+   "active": 3
+  },
   "articles/agents-and-tool-use/toolformer.md": {
    "active": 3
   },
@@ -106,10 +112,16 @@
   "articles/ai-history/eliza.md": {
    "active": 3
   },
+  "articles/ai-history/expert-systems.md": {
+   "active": 3
+  },
   "articles/ai-history/geoffrey-hinton.md": {
    "active": 3
   },
   "articles/ai-history/imagenet-and-alexnet.md": {
+   "active": 3
+  },
+  "articles/ai-history/logic-theorist.md": {
    "active": 3
   },
   "articles/ai-history/perceptron.md": {
@@ -124,6 +136,9 @@
   "articles/ai-infrastructure-and-mlops/data-parallelism.md": {
    "active": 3
   },
+  "articles/ai-infrastructure-and-mlops/distributed-training.md": {
+   "active": 3
+  },
   "articles/ai-infrastructure-and-mlops/gpu-computing.md": {
    "active": 3
   },
@@ -134,6 +149,9 @@
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/mlops.md": {
+   "active": 3
+  },
+  "articles/ai-infrastructure-and-mlops/model-serving.md": {
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/nvidia.md": {
@@ -160,10 +178,19 @@
   "articles/computer-vision-and-multimodal/generative-adversarial-network.md": {
    "active": 3
   },
+  "articles/computer-vision-and-multimodal/image-classification.md": {
+   "active": 3
+  },
   "articles/computer-vision-and-multimodal/object-detection.md": {
    "active": 3
   },
+  "articles/computer-vision-and-multimodal/vision-language-model.md": {
+   "active": 3
+  },
   "articles/computer-vision-and-multimodal/yolo.md": {
+   "active": 3
+  },
+  "articles/deep-learning/activation-function.md": {
    "active": 3
   },
   "articles/deep-learning/adam-optimizer.md": {
@@ -187,6 +214,9 @@
   "articles/deep-learning/long-short-term-memory.md": {
    "active": 3
   },
+  "articles/deep-learning/recurrent-neural-network.md": {
+   "active": 3
+  },
   "articles/deep-learning/universal-approximation-theorem.md": {
    "active": 3
   },
@@ -205,10 +235,16 @@
   "articles/evaluation-and-benchmarks/gsm8k.md": {
    "active": 3
   },
+  "articles/evaluation-and-benchmarks/llm-as-a-judge.md": {
+   "active": 3
+  },
   "articles/evaluation-and-benchmarks/mmlu.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/red-teaming.md": {
+   "active": 3
+  },
+  "articles/evaluation-and-benchmarks/swe-bench.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/truthfulqa.md": {
@@ -230,6 +266,12 @@
    "active": 3
   },
   "articles/governance-and-policy/compute-governance.md": {
+   "active": 3
+  },
+  "articles/governance-and-policy/eu-ai-act.md": {
+   "active": 3
+  },
+  "articles/governance-and-policy/executive-orders-on-ai.md": {
    "active": 3
   },
   "articles/governance-and-policy/nist-ai-risk-management-framework.md": {
@@ -262,6 +304,12 @@
   "articles/inference-and-optimization/speculative-decoding.md": {
    "active": 3
   },
+  "articles/inference-and-optimization/tensorrt-llm.md": {
+   "active": 3
+  },
+  "articles/inference-and-optimization/vllm.md": {
+   "active": 3
+  },
   "articles/ml-foundations/bias-variance-tradeoff.md": {
    "active": 3
   },
@@ -280,13 +328,22 @@
   "articles/ml-foundations/machine-learning.md": {
    "active": 3
   },
+  "articles/ml-foundations/overfitting.md": {
+   "active": 3
+  },
   "articles/ml-foundations/principal-component-analysis.md": {
+   "active": 3
+  },
+  "articles/ml-foundations/regularization.md": {
    "active": 3
   },
   "articles/ml-foundations/supervised-learning.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/chain-of-thought.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/few-shot-prompting.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/program-induction-by-rationale-generation.md": {
@@ -296,6 +353,9 @@
    "active": 3
   },
   "articles/prompting-and-reasoning/prompt-sensitivity.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/reasoning-models.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/scratchpad.md": {
@@ -316,6 +376,9 @@
   "articles/reinforcement-learning/alphago.md": {
    "active": 3
   },
+  "articles/reinforcement-learning/alphazero.md": {
+   "active": 3
+  },
   "articles/reinforcement-learning/deep-q-network.md": {
    "active": 3
   },
@@ -326,6 +389,9 @@
    "active": 1
   },
   "articles/reinforcement-learning/policy-gradient.md": {
+   "active": 3
+  },
+  "articles/reinforcement-learning/proximal-policy-optimization.md": {
    "active": 3
   },
   "articles/reinforcement-learning/q-learning.md": {
@@ -346,6 +412,15 @@
   "articles/retrieval-and-knowledge/glove.md": {
    "active": 3
   },
+  "articles/retrieval-and-knowledge/information-retrieval.md": {
+   "active": 3
+  },
+  "articles/retrieval-and-knowledge/reranking.md": {
+   "active": 3
+  },
+  "articles/retrieval-and-knowledge/retrieval-augmented-generation.md": {
+   "active": 3
+  },
   "articles/retrieval-and-knowledge/semantic-search.md": {
    "active": 3
   },
@@ -358,13 +433,22 @@
   "articles/safety-alignment-and-security/ai-alignment.md": {
    "active": 3
   },
+  "articles/safety-alignment-and-security/ai-safety.md": {
+   "active": 3
+  },
   "articles/safety-alignment-and-security/goodharts-law.md": {
+   "active": 3
+  },
+  "articles/safety-alignment-and-security/hallucination.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/jailbreak.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/mechanistic-interpretability.md": {
+   "active": 3
+  },
+  "articles/safety-alignment-and-security/prompt-injection.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/reward-hacking.md": {
@@ -376,13 +460,22 @@
   "articles/safety-alignment-and-security/sycophancy.md": {
    "active": 3
   },
+  "articles/training-and-adaptation/constitutional-ai.md": {
+   "active": 3
+  },
   "articles/training-and-adaptation/direct-preference-optimization.md": {
    "active": 3
   },
   "articles/training-and-adaptation/fine-tuning.md": {
    "active": 3
   },
+  "articles/training-and-adaptation/instruction-tuning.md": {
+   "active": 3
+  },
   "articles/training-and-adaptation/knowledge-distillation.md": {
+   "active": 3
+  },
+  "articles/training-and-adaptation/pretraining.md": {
    "active": 3
   },
   "articles/training-and-adaptation/qlora.md": {
@@ -406,6 +499,9 @@
   "articles/transformers-and-llms/emergent-abilities.md": {
    "active": 3
   },
+  "articles/transformers-and-llms/in-context-learning.md": {
+   "active": 3
+  },
   "articles/transformers-and-llms/large-language-model.md": {
    "active": 3
   },
@@ -414,6 +510,12 @@
   },
   "articles/transformers-and-llms/scaling-laws.md": {
    "active": 3
+  },
+  "articles/transformers-and-llms/self-attention.md": {
+   "active": 3
+  },
+  "articles/transformers-and-llms/sequence-to-sequence-learning.md": {
+   "active": 1
   },
   "articles/transformers-and-llms/transformer-architecture.md": {
    "active": 3

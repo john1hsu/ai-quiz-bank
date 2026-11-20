@@ -1,0 +1,20 @@
+id: ai-000360
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: LLM-as-a-judge
+topic_type: Technique
+maturity: established
+true_statement: G-Eval has the judge model first generate evaluation steps by chain-of-thought, then fill in a form with scores for criteria such as coherence or fluency.
+false_statement: G-Eval has the judge model first fill in a form with scores for criteria such as coherence or fluency, then generate evaluation steps by chain-of-thought.
+explanation: Reasoning before scoring lets the judge decide what to check before it commits to a number; writing the reasoning afterwards would only justify a verdict already made. With GPT-4 as backbone, G-Eval correlated with human summary ratings well above earlier automatic metrics.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/llm-as-a-judge.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 66670dfcada708d9e343f424c2b5df3ce1bff671
+concepts:
+- kt:llm-as-a-judge
+- kt:chain-of-thought
+difficulty: 2
+created: '2026-11-20'
+status: active

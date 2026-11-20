@@ -1,0 +1,21 @@
+id: ai-000425
+area: inference-and-optimization
+kind: mechanism
+topic: vLLM
+topic_type: Tool
+maturity: established
+true_statement: vLLM's V1 scheduler treats prefill and decode alike, giving each request a token count per step, so chunked prefill, prefix caching and speculative decoding share one mechanism.
+false_statement: vLLM's V1 scheduler runs prefill and decode as separate phases, each with its own queue, so chunked prefill, prefix caching and speculative decoding each need their own mechanism.
+explanation: 'Dropping the prefill/decode distinction turns scheduling into one question: how many tokens each request gets this step. That uniformity is what let the 2025 V1 rewrite fold several optimisations into a single code path, which the false statement denies.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/vllm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7cf43027e8fd07754445ae3709eddf0d40333bf6
+concepts:
+- kt:vllm
+- kt:speculative-decoding
+- kt:kv-cache
+difficulty: 3
+created: '2026-11-20'
+status: active

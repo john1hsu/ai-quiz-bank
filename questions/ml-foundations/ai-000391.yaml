@@ -1,0 +1,20 @@
+id: ai-000391
+area: ml-foundations
+kind: evidence
+topic: Overfitting
+topic_type: Concept
+maturity: foundational
+true_statement: Caruana, Lawrence and Giles (NIPS 2000) found oversized networks trained by backpropagation with early stopping generalized well, while conjugate gradient tended to overfit.
+false_statement: Caruana, Lawrence and Giles (NIPS 2000) found oversized networks trained by conjugate gradient with early stopping generalized well, while backpropagation tended to overfit.
+explanation: They explained that networks of different sizes learn a task's subcomponents in a similar order, so with early stopping a big backprop-trained network can match a smaller one. Conjugate gradient was the method they found prone to overfitting smooth regions of the input space.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/overfitting.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c90191befd399dc47c382b583262094f1c44face
+concepts:
+- kt:overfitting
+- kt:regularization
+difficulty: 3
+created: '2026-11-20'
+status: active

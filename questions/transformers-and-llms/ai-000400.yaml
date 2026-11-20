@@ -1,0 +1,20 @@
+id: ai-000400
+area: transformers-and-llms
+kind: evidence
+topic: Self-attention
+topic_type: Architecture
+maturity: established
+true_statement: Jain and Wallace (NAACL 2019) found attention weights often correlate poorly with gradient-based importance, and quite different attention patterns can give the same prediction.
+false_statement: Jain and Wallace (NAACL 2019) found attention weights closely track gradient-based importance, and quite different attention patterns always change the prediction.
+explanation: If very different attention maps can produce the same output, a map cannot be taken as the reason for that output. Their result is why raw attention heatmaps should not be read as faithful explanations of model behaviour.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/self-attention.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: d347c54244d698236249f913177dedcd43b64552
+concepts:
+- kt:self-attention
+- kt:mechanistic-interpretability
+difficulty: 3
+created: '2026-11-20'
+status: active

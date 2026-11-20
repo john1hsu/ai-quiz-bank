@@ -1,0 +1,21 @@
+id: ai-000364
+area: reinforcement-learning
+kind: evidence
+topic: AlphaZero
+topic_type: Algorithm
+maturity: established
+true_statement: AlphaZero must be given a game's rules to search ahead, limiting it to domains with known dynamics, whereas MuZero later planned with a model it learned itself.
+false_statement: MuZero must be given a game's rules to search ahead, limiting it to domains with known dynamics, whereas AlphaZero later planned with a model it learned itself.
+explanation: AlphaZero's tree search needs a perfect simulator, which is why it was confined to board games. MuZero, the later system, replaced the rules with a learned model, matching AlphaZero in Go, chess and shogi while also handling Atari games.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphazero.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c2b31837d954a66cb32ea724739eb53594a7f07d
+concepts:
+- kt:alphazero
+- kt:muzero
+- kt:reinforcement-learning
+difficulty: 2
+created: '2026-11-20'
+status: active

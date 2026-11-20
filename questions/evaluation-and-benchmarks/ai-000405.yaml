@@ -1,0 +1,21 @@
+id: ai-000405
+area: evaluation-and-benchmarks
+kind: figure
+topic: SWE-bench
+topic_type: Benchmark
+maturity: established
+true_statement: In the original 2023 SWE-bench paper, the best model, Claude 2, resolved only 1.96% of the 2,294 real GitHub issues.
+false_statement: In the original 2023 SWE-bench paper, the best model, Claude 2, resolved 19.6% of the 2,294 real GitHub issues.
+explanation: Asking a model to edit a whole repository so that its tests pass was far harder than earlier coding benchmarks, and models solved mainly the simplest issues. Scores climbed fast only once agent scaffolds such as SWE-agent arrived in 2024.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/swe-bench.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 8960d5094c507cb78223a96721f9cadde44ad51f
+concepts:
+- kt:swe-bench
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-20'
+status: active

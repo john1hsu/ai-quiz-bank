@@ -1,0 +1,21 @@
+id: ai-000353
+area: transformers-and-llms
+kind: definition
+topic: In-context learning
+topic_type: Concept
+maturity: established
+true_statement: In-context learning picks up a task from instructions or demonstrations placed in the prompt, within a forward pass and with the model's weights left unchanged.
+false_statement: In-context learning picks up a task from instructions or demonstrations placed in the prompt, by taking a few gradient steps that update the model's weights.
+explanation: In-context learning changes only the input, never the parameters, which is what separates it from fine-tuning. That is why one deployed model can switch tasks just by changing its prompt, even though its training only ever asked it to predict the next token.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/in-context-learning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6a0a763131e1e0ec048ef1a239934e16729f6475
+concepts:
+- kt:in-context-learning
+- kt:fine-tuning
+- kt:large-language-model
+difficulty: 1
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000431
+area: prompting-and-reasoning
+kind: mechanism
+topic: Reasoning models
+topic_type: Model
+maturity: emerging
+true_statement: DeepSeek-R1 was trained with reinforcement learning that rewarded verifiable final answers in maths, coding and STEM tasks, without human-annotated reasoning trajectories.
+false_statement: DeepSeek-R1 was trained with reinforcement learning that rewarded matching human-annotated reasoning trajectories step by step in maths, coding and STEM tasks.
+explanation: Because only the outcome is rewarded, the model is free to develop its own problem-solving style inside the trace. DeepSeek-AI reported that self-reflection and verification emerged from this training rather than being taught from human examples.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reasoning-models.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7c2ebb69d8557bff63d2d6f2eaf9c1b648b12ae2
+concepts:
+- kt:reasoning-models
+- kt:reinforcement-learning
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000372
+area: ai-infrastructure-and-mlops
+kind: application
+topic: 'Model serving: deploying trained models behind inference APIs'
+topic_type: Concept
+maturity: established
+true_statement: In TensorFlow-Serving, an availability-preserving policy loads a new model version before unloading the old one, while a resource-preserving policy unloads the old one first.
+false_statement: In TensorFlow-Serving, a resource-preserving policy loads a new model version before unloading the old one, while an availability-preserving policy unloads the old one first.
+explanation: Keeping the old version up until the new one is ready means the model never goes offline, but briefly needs memory for two copies. When two copies will not fit, the resource-preserving policy accepts a short gap instead; the false statement swaps the two policies.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/model-serving.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6e7aca6b27e4c20ed2d3bbc954c9a23808df9b15
+concepts:
+- kt:model-serving
+- kt:tensorflow-serving
+- kt:mlops
+difficulty: 2
+created: '2026-11-20'
+status: active

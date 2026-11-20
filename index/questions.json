@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 342,
- "active": 342,
+ "count": 442,
+ "active": 442,
  "questions": [
   {
    "id": "ai-000001",
@@ -5672,6 +5672,1665 @@
    "difficulty": 1,
    "status": "active",
    "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/markov-decision-process.html"
+  },
+  {
+   "id": "ai-000344",
+   "area": "retrieval-and-knowledge",
+   "kind": "origin",
+   "topic": "Information retrieval",
+   "t": "Cyril Cleverdon's Cranfield experiments in the 1960s set the template for evaluating information retrieval: a fixed document collection, a set of queries and human relevance judgments.",
+   "f": "Gerard Salton's SMART experiments in the 1960s set the template for evaluating information retrieval: a fixed document collection, a set of queries and human relevance judgments.",
+   "x": "Cleverdon ran the Cranfield tests at the Cranfield College of Aeronautics from 1958 to 1966, and NIST's TREC later scaled the same collection-queries-judgments recipe up. Salton's SMART project is remembered for ranking ideas such as the vector space model and TF-IDF weighting, not for the evaluation template.",
+   "concepts": [
+    "kt:information-retrieval",
+    "kt:trec"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/information-retrieval.html"
+  },
+  {
+   "id": "ai-000345",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Information retrieval",
+   "t": "An inverted index maps each term to a postings list of the documents that contain it, so answering a query only means reading the lists for the query's terms.",
+   "f": "An inverted index maps each document to a list of the terms it contains, so answering a query only means reading the lists for the query's terms.",
+   "x": "Scanning every document at query time is far too slow for large collections, so IR systems index in advance by term. Storing terms per document is the forward direction; the index is called inverted precisely because it flips that to documents per term.",
+   "concepts": [
+    "kt:information-retrieval",
+    "kt:inverted-index"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/information-retrieval.html"
+  },
+  {
+   "id": "ai-000346",
+   "area": "retrieval-and-knowledge",
+   "kind": "figure",
+   "topic": "Information retrieval",
+   "t": "In 2020, Dense Passage Retrieval's dual encoder beat a strong Lucene BM25 baseline by 9 to 19 points absolute in top-20 passage retrieval accuracy on open-domain question answering.",
+   "f": "In 2020, a strong Lucene BM25 baseline beat Dense Passage Retrieval's dual encoder by 9 to 19 points absolute in top-20 passage retrieval accuracy on open-domain question answering.",
+   "x": "Karpukhin et al. encoded questions and passages separately into dense vectors, and that learned matching clearly outperformed keyword scoring on their QA benchmarks. The result helped shift IR toward neural retrievers, though BM25 stays the baseline every new retriever is measured against.",
+   "concepts": [
+    "kt:information-retrieval",
+    "kt:bm25",
+    "kt:semantic-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/information-retrieval.html",
+   "asOf": "2020"
+  },
+  {
+   "id": "ai-000347",
+   "area": "safety-alignment-and-security",
+   "kind": "definition",
+   "topic": "Hallucination",
+   "t": "An intrinsic hallucination contradicts the source text, while an extrinsic hallucination can be neither supported nor refuted by the source.",
+   "f": "An extrinsic hallucination contradicts the source text, while an intrinsic hallucination can be neither supported nor refuted by the source.",
+   "x": "In Ji et al.'s taxonomy, a summary giving the wrong year for a dated event is intrinsic because the source shows it is wrong. An extrinsic addition might even be true, but nothing in the input lets you check it.",
+   "concepts": [
+    "kt:hallucination"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hallucination.html"
+  },
+  {
+   "id": "ai-000348",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "Hallucination",
+   "t": "Kalai and colleagues argue hallucinations persist after post-training partly because benchmarks score an abstention as zero, so a confident guess earns more on average.",
+   "f": "Kalai and colleagues argue hallucinations persist after post-training partly because benchmarks penalise an abstention below zero, so a confident guess earns more on average.",
+   "x": "Like a multiple-choice exam with no penalty for wrong answers, a guess sometimes scores while saying 'I don't know' never does, so models are pushed to bluff. Their proposed fix is to penalise confident errors more than abstentions in mainstream benchmarks, not to punish abstaining.",
+   "concepts": [
+    "kt:hallucination",
+    "kt:large-language-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hallucination.html"
+  },
+  {
+   "id": "ai-000349",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Hallucination",
+   "t": "Semantic entropy samples several answers to a question, groups them by meaning and measures entropy over those groups, so high entropy flags a likely confabulation.",
+   "f": "Semantic entropy samples several answers to a question, groups them by exact wording and measures entropy over those groups, so high entropy flags a likely confabulation.",
+   "x": "Grouping by meaning, using an entailment model or an LLM, stops differently worded but equivalent answers from looking like disagreement. The method costs roughly ten queries and cannot catch errors a model makes consistently, such as a fact it learned wrongly.",
+   "concepts": [
+    "kt:hallucination"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hallucination.html"
+  },
+  {
+   "id": "ai-000350",
+   "area": "training-and-adaptation",
+   "kind": "origin",
+   "topic": "Instruction tuning",
+   "t": "Wei et al. at Google Research coined the term instruction tuning, while the concurrent BigScience paper by Sanh et al. called the same idea multitask prompted training.",
+   "f": "Sanh et al. at BigScience coined the term instruction tuning, while the concurrent Google Research paper by Wei et al. called the same idea multitask prompted training.",
+   "x": "Wei et al.'s FLAN paper (ICLR 2022) introduced the name and instruction-tuned Google's 137-billion-parameter LaMDA-PT. Sanh et al.'s T0 work at BigScience appeared at the same time under the label multitask prompted training, so the two names are often mixed up.",
+   "concepts": [
+    "kt:instruction-tuning",
+    "kt:finetuned-language-models-are-zero-shot-learners"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/instruction-tuning.html"
+  },
+  {
+   "id": "ai-000351",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Instruction tuning",
+   "t": "To test zero-shot generalization, FLAN held out whole task clusters, so no natural language inference dataset was trained on when evaluating inference.",
+   "f": "To test zero-shot generalization, FLAN held out single datasets, so other natural language inference datasets were trained on when evaluating inference.",
+   "x": "Holding out a single dataset would let the model see the same kind of task in sibling datasets, which flatters zero-shot scores. Removing the entire cluster means the model has truly never been trained on that task type, so any gain shows instruction following carrying over to new tasks.",
+   "concepts": [
+    "kt:instruction-tuning",
+    "kt:zero-shot-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/instruction-tuning.html"
+  },
+  {
+   "id": "ai-000352",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Instruction tuning",
+   "t": "In FLAN's experiments, instruction tuning improved the 68B and 137B models on unseen tasks but hurt held-out performance for models of 8B parameters or fewer.",
+   "f": "In FLAN's experiments, instruction tuning improved models of 8B parameters or fewer on unseen tasks but hurt held-out performance for the 68B and 137B models.",
+   "x": "So in the original FLAN setup the benefit appeared only at large scale. Later work with far more tasks (Chung et al.) reported gains for smaller models too, so the size threshold depends on the instruction-data mix rather than being fixed.",
+   "concepts": [
+    "kt:instruction-tuning",
+    "kt:large-language-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/instruction-tuning.html"
+  },
+  {
+   "id": "ai-000353",
+   "area": "transformers-and-llms",
+   "kind": "definition",
+   "topic": "In-context learning",
+   "t": "In-context learning picks up a task from instructions or demonstrations placed in the prompt, within a forward pass and with the model's weights left unchanged.",
+   "f": "In-context learning picks up a task from instructions or demonstrations placed in the prompt, by taking a few gradient steps that update the model's weights.",
+   "x": "In-context learning changes only the input, never the parameters, which is what separates it from fine-tuning. That is why one deployed model can switch tasks just by changing its prompt, even though its training only ever asked it to predict the next token.",
+   "concepts": [
+    "kt:in-context-learning",
+    "kt:fine-tuning",
+    "kt:large-language-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/in-context-learning.html"
+  },
+  {
+   "id": "ai-000354",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "In-context learning",
+   "t": "An induction head is an attention circuit that finds an earlier occurrence of the current token and copies the token that followed it.",
+   "f": "An induction head is an attention circuit that finds an earlier occurrence of the current token and copies the token that preceded it.",
+   "x": "Copying what came next last time lets a model continue a pattern it has already seen in the prompt, a simple form of learning from context. Anthropic researchers linked these heads to in-context learning; copying the preceding token would not help predict what comes next.",
+   "concepts": [
+    "kt:in-context-learning",
+    "kt:induction-head",
+    "kt:mechanistic-interpretability"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/in-context-learning.html"
+  },
+  {
+   "id": "ai-000355",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "In-context learning",
+   "t": "Von Oswald et al. built a linear self-attention layer whose output equals one gradient-descent step on a regression loss, a result shown only on simple regression tasks.",
+   "f": "Von Oswald et al. built a linear self-attention layer whose output equals one gradient-descent step on a regression loss, a result they confirmed directly in large pretrained language models.",
+   "x": "The construction suggests a transformer could in principle learn inside its forward pass the way an optimiser would. But it was demonstrated only on simple regression with self-attention-only models, so it is one candidate explanation of in-context learning, not a settled account of large LLMs.",
+   "concepts": [
+    "kt:in-context-learning",
+    "kt:mechanistic-interpretability"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/in-context-learning.html"
+  },
+  {
+   "id": "ai-000356",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Vision-language model: LLMs with visual input",
+   "t": "Flamingo scales each new cross-attention layer's output by tanh(α) with α initialised to zero, so at the start of training the model behaves exactly like its frozen language model.",
+   "f": "Flamingo scales each new cross-attention layer's output by tanh(α) with α initialised to one, so at the start of training visual features already dominate its frozen language model.",
+   "x": "Since tanh(0) is 0, the inserted layers start switched off and the pretrained LM's behaviour is preserved; the gate then opens gradually as α is learned. Starting the gate fully open would disrupt the frozen LM and make training unstable, which is what the zero init avoids.",
+   "concepts": [
+    "kt:vision-language-model",
+    "kt:flamingo-a-visual-language-model-for-few-shot-learning",
+    "kt:large-language-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-language-model.html"
+  },
+  {
+   "id": "ai-000357",
+   "area": "computer-vision-and-multimodal",
+   "kind": "evidence",
+   "topic": "Vision-language model: LLMs with visual input",
+   "t": "A 2023 study of object hallucination found vision-language models most often invent objects that are frequent in visual-instruction data or that commonly co-occur with objects really in the image.",
+   "f": "A 2023 study of object hallucination found vision-language models most often invent objects that are rare in visual-instruction data or that seldom co-occur with objects really in the image.",
+   "x": "Hallucinated objects follow the training statistics: the model fills in what usually appears or usually accompanies what it sees, not unusual objects. The same study proposed POPE, polling the model with yes/no questions about specific objects, because caption-based metrics were skewed by prompts and generation style.",
+   "concepts": [
+    "kt:vision-language-model",
+    "kt:hallucination",
+    "kt:instruction-tuning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-language-model.html"
+  },
+  {
+   "id": "ai-000358",
+   "area": "computer-vision-and-multimodal",
+   "kind": "figure",
+   "topic": "Vision-language model: LLMs with visual input",
+   "t": "BLIP-2's authors reported in 2023 that it beat Flamingo-80B by 8.7% on zero-shot VQAv2 while training 54 times fewer parameters, thanks to keeping its image encoder and LLM frozen.",
+   "f": "BLIP-2's authors reported in 2023 that it beat Flamingo-80B by 8.7% on zero-shot VQAv2 while training 5 times fewer parameters, thanks to keeping its image encoder and LLM frozen.",
+   "x": "BLIP-2 trains only a lightweight Querying Transformer (Q-Former) between a frozen image encoder and a frozen LLM, so its trainable parameter count is tiny: 54 times fewer than Flamingo-80B, not merely 5. It shows that a small learned bridge between big frozen models can be both cheap and strong.",
+   "concepts": [
+    "kt:vision-language-model",
+    "kt:flamingo-a-visual-language-model-for-few-shot-learning",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-language-model.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000359",
+   "area": "evaluation-and-benchmarks",
+   "kind": "figure",
+   "topic": "LLM-as-a-judge",
+   "t": "In 2023, GPT-4 as a judge agreed with human experts on 85% of non-tied MT-Bench votes, slightly above the 81% at which the experts agreed with one another.",
+   "f": "In 2023, GPT-4 as a judge agreed with human experts on 81% of non-tied MT-Bench votes, slightly below the 85% at which the experts agreed with one another.",
+   "x": "Zheng et al.'s headline finding was that a strong LLM judge matched human preferences about as well as humans match each other. That is why LLM judges are used as a cheap first pass, though they are still checked against samples of human ratings.",
+   "concepts": [
+    "kt:llm-as-a-judge",
+    "kt:mt-bench",
+    "kt:human-evaluation",
+    "kt:judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-as-a-judge.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000360",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "LLM-as-a-judge",
+   "t": "G-Eval has the judge model first generate evaluation steps by chain-of-thought, then fill in a form with scores for criteria such as coherence or fluency.",
+   "f": "G-Eval has the judge model first fill in a form with scores for criteria such as coherence or fluency, then generate evaluation steps by chain-of-thought.",
+   "x": "Reasoning before scoring lets the judge decide what to check before it commits to a number; writing the reasoning afterwards would only justify a verdict already made. With GPT-4 as backbone, G-Eval correlated with human summary ratings well above earlier automatic metrics.",
+   "concepts": [
+    "kt:llm-as-a-judge",
+    "kt:chain-of-thought"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-as-a-judge.html"
+  },
+  {
+   "id": "ai-000361",
+   "area": "evaluation-and-benchmarks",
+   "kind": "application",
+   "topic": "LLM-as-a-judge",
+   "t": "To counter position bias, LLM judges are often run on both orders of the two answers, counting a win only when the verdict stays the same.",
+   "f": "To counter verbosity bias, LLM judges are often run on both orders of the two answers, counting a win only when the verdict stays the same.",
+   "x": "Position bias means a judge favours an answer because of where it sits; in Zheng et al.'s tests GPT-4 kept its verdict after a swap only 65% of the time. Swapping the order does nothing about verbosity bias, the pull toward longer, padded answers.",
+   "concepts": [
+    "kt:llm-as-a-judge"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-as-a-judge.html"
+  },
+  {
+   "id": "ai-000362",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "AlphaZero",
+   "t": "AlphaZero trains its policy head to match the move distribution from tree-search visit counts and its value head to predict each self-play game's final result.",
+   "f": "AlphaZero trains its value head to match the move distribution from tree-search visit counts and its policy head to predict each self-play game's final result.",
+   "x": "The policy head outputs move probabilities, so it imitates the search's improved distribution; the value head outputs one number, so it regresses toward the game outcome z. Search proposes stronger moves than the raw network and the network learns to reproduce them, so each round of self-play starts from a better player.",
+   "concepts": [
+    "kt:alphazero",
+    "kt:monte-carlo-tree-search",
+    "kt:self-play"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/alphazero.html"
+  },
+  {
+   "id": "ai-000363",
+   "area": "reinforcement-learning",
+   "kind": "figure",
+   "topic": "AlphaZero",
+   "t": "In DeepMind's 2018 evaluation, AlphaZero searched about 60,000 chess positions per second, against roughly 60 million for Stockfish.",
+   "f": "In DeepMind's 2018 evaluation, AlphaZero searched about 60 million chess positions per second, against roughly 60,000 for Stockfish.",
+   "x": "AlphaZero searched about a thousand times fewer positions than Stockfish and still won, because its learned evaluation guided a much smaller, more selective search. It was the classical engine that relied on brute-force breadth.",
+   "concepts": [
+    "kt:alphazero",
+    "kt:monte-carlo-tree-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/alphazero.html",
+   "asOf": "2018"
+  },
+  {
+   "id": "ai-000364",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "AlphaZero",
+   "t": "AlphaZero must be given a game's rules to search ahead, limiting it to domains with known dynamics, whereas MuZero later planned with a model it learned itself.",
+   "f": "MuZero must be given a game's rules to search ahead, limiting it to domains with known dynamics, whereas AlphaZero later planned with a model it learned itself.",
+   "x": "AlphaZero's tree search needs a perfect simulator, which is why it was confined to board games. MuZero, the later system, replaced the rules with a learned model, matching AlphaZero in Go, chess and shogi while also handling Atari games.",
+   "concepts": [
+    "kt:alphazero",
+    "kt:muzero",
+    "kt:reinforcement-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/alphazero.html"
+  },
+  {
+   "id": "ai-000365",
+   "area": "agents-and-tool-use",
+   "kind": "definition",
+   "topic": "Tool use",
+   "t": "In function calling the model never runs a tool itself: it emits a tool name and arguments matching a declared schema, and the application or provider executes the call.",
+   "f": "In function calling the model runs the tool itself during generation, using the code behind each declared schema, and the application only receives the final answer.",
+   "x": "The model sees only each tool's name, description and JSON Schema, never its code, so all it can do is ask; the host executes the call and feeds the result back for the model to continue. That split is why permission checks belong in the application.",
+   "concepts": [
+    "kt:tool-use",
+    "kt:large-language-model",
+    "kt:structured-output"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tool-use.html"
+  },
+  {
+   "id": "ai-000366",
+   "area": "agents-and-tool-use",
+   "kind": "origin",
+   "topic": "Tool use",
+   "t": "AI21 Labs' 2022 MRKL paper proposed a router that sends each input to the most suitable expert module, neural or symbolic such as a calculator, with the language model as fallback.",
+   "f": "Meta AI's 2022 MRKL paper proposed a router that sends each input to the most suitable expert module, neural or symbolic such as a calculator, with the language model as fallback.",
+   "x": "MRKL (Modular Reasoning, Knowledge and Language) came from AI21 Labs, the maker of Jurassic-1, and argued that models lack fresh data and reliable arithmetic, so those jobs should go to external modules. Its hand-built router preceded models that choose tools themselves.",
+   "concepts": [
+    "kt:tool-use",
+    "kt:mrkl-systems"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tool-use.html"
+  },
+  {
+   "id": "ai-000367",
+   "area": "agents-and-tool-use",
+   "kind": "figure",
+   "topic": "Tool use",
+   "t": "In 2024 the Gorilla paper reported about 72% zero-shot accuracy on Hugging Face API calls for its fine-tuned LLaMA-7B, against about 20% for GPT-4.",
+   "f": "In 2024 the Gorilla paper reported about 20% zero-shot accuracy on Hugging Face API calls for its fine-tuned LLaMA-7B, against about 72% for GPT-4.",
+   "x": "Gorilla was fine-tuned on APIBench with retrieved API documentation in its prompts, so a small specialised model beat a far larger general one at producing correct calls, checked by abstract-syntax-tree matching. The false statement swaps the two scores.",
+   "concepts": [
+    "kt:tool-use"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tool-use.html",
+   "asOf": "2024"
+  },
+  {
+   "id": "ai-000368",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "Logic Theorist",
+   "t": "The Logic Theorist, often called the first AI program, was written in 1955–1956 by Allen Newell, J. C. Shaw and Herbert A. Simon at the RAND Corporation.",
+   "f": "The Logic Theorist, often called the first AI program, was written in 1955–1956 by Allen Newell, J. C. Shaw and Herbert A. Simon at Dartmouth College.",
+   "x": "Newell, Shaw and Simon built it at RAND, with funding mainly from the US Air Force, and a version ran on RAND's JOHNNIAC computer. Dartmouth is the tempting wrong answer because the program was coded around the time of the 1956 Dartmouth workshop.",
+   "concepts": [
+    "kt:logic-theorist",
+    "kt:allen-newell",
+    "kt:herbert-a-simon",
+    "kt:cliff-shaw"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/logic-theorist.html"
+  },
+  {
+   "id": "ai-000369",
+   "area": "ai-history",
+   "kind": "mechanism",
+   "topic": "Logic Theorist",
+   "t": "The Logic Theorist worked backward from the goal theorem, generating subproblems whose solution would yield it, instead of enumerating every possible derivation.",
+   "f": "The Logic Theorist worked forward from the axioms, enumerating every possible derivation until the goal theorem appeared, instead of generating subproblems.",
+   "x": "Blind enumeration is what its authors called the British Museum algorithm, and they used it as the contrast. LT instead pruned the search with heuristics, working back from the goal and hunting for matching substitutions, a goal-directed style that became standard in automated reasoning.",
+   "concepts": [
+    "kt:logic-theorist",
+    "kt:heuristic-search",
+    "kt:automated-theorem-proving"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/logic-theorist.html"
+  },
+  {
+   "id": "ai-000370",
+   "area": "ai-history",
+   "kind": "evidence",
+   "topic": "Logic Theorist",
+   "t": "Hao Wang showed a complete, efficient propositional procedure easily proved the Principia theorems that had stumped the Logic Theorist.",
+   "f": "Hao Wang showed a complete, efficient propositional procedure stalled on the same Principia theorems that had stumped the Logic Theorist.",
+   "x": "Wang's result undercut the suggestion that exhaustive enumeration was the only alternative to heuristics, since a systematic method did better. Martin Davis replied that efficient proving was never LT's aim; it was meant to model human problem solving.",
+   "concepts": [
+    "kt:logic-theorist",
+    "kt:automated-theorem-proving",
+    "kt:heuristic-search"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/logic-theorist.html"
+  },
+  {
+   "id": "ai-000371",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "Model serving: deploying trained models behind inference APIs",
+   "t": "Clipper's adaptive batching used an additive-increase, multiplicative-decrease rule to find the largest batch size that still met its latency objective.",
+   "f": "Clipper's adaptive batching used a multiplicative-increase, additive-decrease rule to find the largest batch size that still met its latency objective.",
+   "x": "Growing the batch slowly and cutting it sharply when a latency target such as 20 ms is missed lets the server probe for throughput without long latency violations. The false version reverses the rule, which would overshoot the target quickly and recover slowly.",
+   "concepts": [
+    "kt:model-serving",
+    "kt:clipper-prediction-serving-system"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-serving.html"
+  },
+  {
+   "id": "ai-000372",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "application",
+   "topic": "Model serving: deploying trained models behind inference APIs",
+   "t": "In TensorFlow-Serving, an availability-preserving policy loads a new model version before unloading the old one, while a resource-preserving policy unloads the old one first.",
+   "f": "In TensorFlow-Serving, a resource-preserving policy loads a new model version before unloading the old one, while an availability-preserving policy unloads the old one first.",
+   "x": "Keeping the old version up until the new one is ready means the model never goes offline, but briefly needs memory for two copies. When two copies will not fit, the resource-preserving policy accepts a short gap instead; the false statement swaps the two policies.",
+   "concepts": [
+    "kt:model-serving",
+    "kt:tensorflow-serving",
+    "kt:mlops"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-serving.html"
+  },
+  {
+   "id": "ai-000373",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "figure",
+   "topic": "Model serving: deploying trained models behind inference APIs",
+   "t": "In 2017 Google's TensorFlow-Serving authors estimated that the serving library alone could handle about 100,000 requests per second per CPU core.",
+   "f": "In 2017 Google's TensorFlow-Serving authors estimated that the serving library alone could handle about 10,000 requests per second per CPU core.",
+   "x": "The estimate covers only the serving framework's own overhead, not model computation, and shows the plumbing is rarely the bottleneck. The false figure is ten times too low; Google's total traffic then ran to tens of millions of inferences per second.",
+   "concepts": [
+    "kt:model-serving",
+    "kt:tensorflow-serving"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-serving.html",
+   "asOf": "2017"
+  },
+  {
+   "id": "ai-000374",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Recurrent neural network",
+   "t": "Elman's 1990 simple recurrent network fed a copy of the previous hidden-layer activations back in through context units, alongside the current input.",
+   "f": "Elman's 1990 simple recurrent network fed a buffer of the most recent raw inputs back in as an extra spatial dimension, alongside the current input.",
+   "x": "Elman argued that treating time as an extra spatial dimension fixes the pattern length and treats shifted copies of a pattern as different. His network represented time implicitly through recycled hidden state, the core idea of an RNN's hidden state.",
+   "concepts": [
+    "kt:recurrent-neural-network",
+    "kt:artificial-neural-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/recurrent-neural-network.html"
+  },
+  {
+   "id": "ai-000375",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Recurrent neural network",
+   "t": "In a gated recurrent unit (GRU), the reset gate sets how much past state feeds the new candidate, while the update gate sets how much old state is carried forward.",
+   "f": "In a gated recurrent unit (GRU), the update gate sets how much past state feeds the new candidate, while the reset gate sets how much old state is carried forward.",
+   "x": "The two gates are easy to swap: reset shapes the candidate state, update blends old and new state. Such gates, deciding what to keep and what to overwrite, are how gated RNNs counter vanishing gradients, and the GRU is a lighter alternative to the LSTM.",
+   "concepts": [
+    "kt:recurrent-neural-network",
+    "kt:gated-recurrent-unit",
+    "kt:vanishing-gradient-problem"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/recurrent-neural-network.html"
+  },
+  {
+   "id": "ai-000376",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Recurrent neural network",
+   "t": "Pascanu, Mikolov and Bengio (ICML 2013) proposed clipping the gradient norm to tame exploding gradients in RNNs, and a soft regularisation constraint for vanishing ones.",
+   "f": "Pascanu, Mikolov and Bengio (ICML 2013) proposed clipping the gradient norm to tame vanishing gradients in RNNs, and a soft regularisation constraint for exploding ones.",
+   "x": "Clipping caps a gradient that has grown too large, so it cannot rescue one that has shrunk towards zero. Both problems come from multiplying through the same recurrent weights many times in backpropagation through time; vanishing gradients are better fixed by gated architectures.",
+   "concepts": [
+    "kt:recurrent-neural-network",
+    "kt:vanishing-gradient-problem",
+    "kt:backpropagation-through-time"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/recurrent-neural-network.html"
+  },
+  {
+   "id": "ai-000377",
+   "area": "governance-and-policy",
+   "kind": "definition",
+   "topic": "Executive orders on AI",
+   "t": "US executive orders on AI bind only the executive branch, cannot override statutes, and can be revoked by the next President.",
+   "f": "US executive orders on AI bind private developers as well as agencies, override conflicting statutes, and can be revoked only by Congress.",
+   "x": "An executive order is an instruction from the President to federal agencies, so its reach over companies comes only through follow-on rules, guidance and procurement terms. That is also why it is fragile: a new President can rescind it, as happened to EO 14110 within days in January 2025.",
+   "concepts": [
+    "kt:executive-orders-on-ai",
+    "kt:ai-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/executive-orders-on-ai.html"
+  },
+  {
+   "id": "ai-000378",
+   "area": "governance-and-policy",
+   "kind": "origin",
+   "topic": "Executive orders on AI",
+   "t": "EO 13859, signed in February 2019, launched the American AI Initiative and set five guiding principles for US federal AI policy.",
+   "f": "EO 14110, signed in February 2019, launched the American AI Initiative and set five guiding principles for US federal AI policy.",
+   "x": "EO 13859 was an early AI-focused order; its principles covered research, technical standards, workforce training, public trust and protecting US technological advantage. EO 14110 came later, in October 2023, and was far broader, with eight guiding principles and tasks for dozens of agencies.",
+   "concepts": [
+    "kt:executive-orders-on-ai",
+    "kt:ai-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/executive-orders-on-ai.html"
+  },
+  {
+   "id": "ai-000379",
+   "area": "governance-and-policy",
+   "kind": "mechanism",
+   "topic": "Executive orders on AI",
+   "t": "EO 14110 tied mandatory developer reporting to fixed training-compute thresholds, whereas EO 14409 relies on voluntary government access and a classified capability test.",
+   "f": "EO 14110 relied on voluntary government access and a classified capability test, whereas EO 14409 tied mandatory developer reporting to fixed training-compute thresholds.",
+   "x": "The 2023 order used the Defense Production Act to require reports from developers above set compute levels. The 2026 order instead has the NSA designate covered frontier models by benchmarking advanced cyber capabilities, and explicitly creates no mandatory licensing, leaving open which yardstick for frontier risk will last.",
+   "concepts": [
+    "kt:executive-orders-on-ai",
+    "kt:compute-governance"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/executive-orders-on-ai.html"
+  },
+  {
+   "id": "ai-000380",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "TensorRT-LLM",
+   "t": "By late 2026 TensorRT-LLM ran models as native PyTorch code and loaded Hugging Face checkpoints directly, having removed its step of compiling a TensorRT engine ahead of time.",
+   "f": "By late 2026 TensorRT-LLM compiled every model into a TensorRT engine ahead of time with trtllm-build, having removed its PyTorch backend.",
+   "x": "TensorRT-LLM began as an engine-compiling workflow, added a PyTorch backend as a beta in version 0.17, then made PyTorch its sole execution backend and dropped trtllm-build. Despite the name, older tutorials' engine-build step no longer exists, so the false statement has the change backwards.",
+   "concepts": [
+    "kt:tensorrt-llm",
+    "kt:pytorch"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tensorrt-llm.html"
+  },
+  {
+   "id": "ai-000381",
+   "area": "inference-and-optimization",
+   "kind": "application",
+   "topic": "TensorRT-LLM",
+   "t": "TensorRT-LLM's FP8 quantization needs Hopper-generation or later NVIDIA GPUs, while its FP4 formats need Blackwell GPUs such as the B200.",
+   "f": "TensorRT-LLM's FP4 quantization needs Hopper-generation or later NVIDIA GPUs, while its FP8 formats need Blackwell GPUs such as the B200.",
+   "x": "Low-precision formats depend on tensor-core hardware support, so each new format arrives with a GPU generation: FP8 with Hopper (H100) and FP4 with Blackwell. This tie to specific NVIDIA hardware is the library's main lock-in; the false statement swaps the two generations.",
+   "concepts": [
+    "kt:tensorrt-llm",
+    "kt:quantization",
+    "kt:tensor-cores",
+    "kt:nvidia"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tensorrt-llm.html"
+  },
+  {
+   "id": "ai-000382",
+   "area": "inference-and-optimization",
+   "kind": "figure",
+   "topic": "TensorRT-LLM",
+   "t": "In September 2023 NVIDIA reported that H100 GPUs running TensorRT-LLM gave up to 8 times the GPT-J-6B summarization throughput of A100 GPUs.",
+   "f": "In September 2023 NVIDIA reported that H100 GPUs running TensorRT-LLM gave up to 8 times the GPT-J-6B summarization throughput of H100 GPUs without it.",
+   "x": "The baseline was an older GPU generation, so the 8x mixes a hardware upgrade with software gains and does not isolate what the library adds. The false version makes it a same-hardware comparison, which is exactly the reading a vendor benchmark like this does not support.",
+   "concepts": [
+    "kt:tensorrt-llm",
+    "kt:nvidia"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tensorrt-llm.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000383",
+   "area": "retrieval-and-knowledge",
+   "kind": "origin",
+   "topic": "Retrieval-augmented generation for knowledge-intensive tasks",
+   "t": "The name retrieval-augmented generation comes from a 2020 NeurIPS paper by Patrick Lewis and colleagues, whose generator drew on a dense vector index of Wikipedia.",
+   "f": "The name retrieval-augmented generation comes from a 2020 ICML paper by Kelvin Guu and colleagues, whose generator drew on a dense vector index of Wikipedia.",
+   "x": "Lewis et al. coined RAG, pairing a seq2seq model's parametric memory with a non-parametric Wikipedia index. Guu et al.'s REALM, at ICML 2020, was the precursor: it added a retriever to masked-language-model pretraining but extracted answers rather than generating them.",
+   "concepts": [
+    "kt:retrieval-augmented-generation",
+    "kt:retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks",
+    "kt:realm"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/retrieval-augmented-generation.html"
+  },
+  {
+   "id": "ai-000384",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Retrieval-augmented generation for knowledge-intensive tasks",
+   "t": "RAG-Sequence conditions the whole answer on one retrieved passage at a time, while RAG-Token can draw on a different retrieved passage for each generated token.",
+   "f": "RAG-Token conditions the whole answer on one retrieved passage at a time, while RAG-Sequence can draw on a different retrieved passage for each generated token.",
+   "x": "Both variants treat the retrieved passages as a latent variable and marginalise over them; they differ in where the sum sits. RAG-Sequence sums over passages for the full output, while RAG-Token sums at every token, letting one answer combine evidence from several passages.",
+   "concepts": [
+    "kt:retrieval-augmented-generation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/retrieval-augmented-generation.html"
+  },
+  {
+   "id": "ai-000385",
+   "area": "retrieval-and-knowledge",
+   "kind": "application",
+   "topic": "Retrieval-augmented generation for knowledge-intensive tasks",
+   "t": "Compared with fine-tuning, RAG makes knowledge easy to update and answers traceable to sources, while fine-tuning gives more control over style and format and lower latency.",
+   "f": "Compared with fine-tuning, RAG gives more control over style and format and lower latency, while fine-tuning makes knowledge easy to update and answers traceable to sources.",
+   "x": "Swapping documents in an index updates what a RAG system knows without retraining, and the retrieved passages show where an answer came from, but the retrieval step adds latency. Fine-tuning bakes behaviour into the weights, which suits style and format, so the two are often combined.",
+   "concepts": [
+    "kt:retrieval-augmented-generation",
+    "kt:fine-tuning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/retrieval-augmented-generation.html"
+  },
+  {
+   "id": "ai-000386",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Pretraining: learning general-purpose representations before task adaptation",
+   "t": "BERT's masked language modelling picks about 15% of input tokens, mostly replaces them with a mask symbol, and trains the model to recover them from context on both sides.",
+   "f": "BERT's masked language modelling picks about 15% of input tokens, mostly replaces them with a mask symbol, and trains the model to recover them from the left context only.",
+   "x": "Masking lets an encoder look both ways while still having a target to predict, which is why BERT is bidirectional. Predicting from left context only is causal language modelling, the objective of GPT-style decoders.",
+   "concepts": [
+    "kt:pretraining",
+    "kt:self-supervised-learning"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pretraining.html"
+  },
+  {
+   "id": "ai-000387",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Pretraining: learning general-purpose representations before task adaptation",
+   "t": "Erhan, Bengio and colleagues argued that unsupervised pretraining helps deep networks mainly as a regularizer, steering them toward parameters that generalise better.",
+   "f": "Erhan, Bengio and colleagues argued that unsupervised pretraining helps deep networks mainly as an optimizer, steering them toward parameters that fit the training set better.",
+   "x": "Their experiments varying depth, capacity and data size pointed to better generalisation rather than easier fitting, so they framed pretraining as a kind of regularization. The account opened, but did not settle, the question of why pretraining transfers so well.",
+   "concepts": [
+    "kt:pretraining",
+    "kt:transfer-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pretraining.html"
+  },
+  {
+   "id": "ai-000388",
+   "area": "training-and-adaptation",
+   "kind": "figure",
+   "topic": "Pretraining: learning general-purpose representations before task adaptation",
+   "t": "In 2024 Meta reported pretraining its 405-billion-parameter Llama 3 model on about 15.6 trillion tokens.",
+   "f": "In 2024 Meta reported pretraining its 405-billion-parameter Llama 3 model on about 1.56 trillion tokens.",
+   "x": "That is roughly 38 tokens per parameter and about 3.8 x 10^25 FLOPs of compute, versus about 3.3 billion words for BERT-large. The jump shows how pretraining scaled up data, not only parameters, after Chinchilla showed many big models were undertrained.",
+   "concepts": [
+    "kt:pretraining",
+    "kt:large-language-model",
+    "kt:scaling-laws"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pretraining.html",
+   "asOf": "2024"
+  },
+  {
+   "id": "ai-000389",
+   "area": "ml-foundations",
+   "kind": "definition",
+   "topic": "Overfitting",
+   "t": "Underfitting shows up as high error on both training and validation data with only a small gap between them, usually because the model is too simple.",
+   "f": "Underfitting shows up as high error on both training and validation data with only a small gap between them, usually because the model is too complex.",
+   "x": "An underfit model cannot capture the pattern even on data it has seen, so both errors stay high. Excess complexity causes the opposite problem, overfitting, where training error is low but validation error is much higher.",
+   "concepts": [
+    "kt:overfitting",
+    "kt:underfitting",
+    "kt:bias-variance-tradeoff"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/overfitting.html"
+  },
+  {
+   "id": "ai-000390",
+   "area": "ml-foundations",
+   "kind": "application",
+   "topic": "Overfitting",
+   "t": "On a generalization curve, overfitting appears when training loss keeps falling or levels off while validation loss turns upward.",
+   "f": "On a generalization curve, overfitting appears when validation loss keeps falling or levels off while training loss turns upward.",
+   "x": "Plotting both losses against training iterations is the standard diagnostic: the model keeps improving on data it has memorized while getting worse on held-out data. Training loss rising while validation loss falls is not the overfitting signature.",
+   "concepts": [
+    "kt:overfitting",
+    "kt:cross-validation"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/overfitting.html"
+  },
+  {
+   "id": "ai-000391",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Overfitting",
+   "t": "Caruana, Lawrence and Giles (NIPS 2000) found oversized networks trained by backpropagation with early stopping generalized well, while conjugate gradient tended to overfit.",
+   "f": "Caruana, Lawrence and Giles (NIPS 2000) found oversized networks trained by conjugate gradient with early stopping generalized well, while backpropagation tended to overfit.",
+   "x": "They explained that networks of different sizes learn a task's subcomponents in a similar order, so with early stopping a big backprop-trained network can match a smaller one. Conjugate gradient was the method they found prone to overfitting smooth regions of the input space.",
+   "concepts": [
+    "kt:overfitting",
+    "kt:regularization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/overfitting.html"
+  },
+  {
+   "id": "ai-000392",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Few-shot prompting",
+   "t": "Min et al. (EMNLP 2022) found that swapping the gold labels in demonstrations for random ones barely hurt accuracy across 12 models, including GPT-3.",
+   "f": "Min et al. (EMNLP 2022) found that swapping the gold labels in demonstrations for random ones sharply cut accuracy across 12 models, including GPT-3.",
+   "x": "Demonstrations mostly show the model the label space, the kind of input text and the output format, not the correct input-label mapping. That is why few-shot examples are good at controlling format and weak at teaching genuinely new knowledge.",
+   "concepts": [
+    "kt:few-shot-prompting",
+    "kt:in-context-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/few-shot-prompting.html"
+  },
+  {
+   "id": "ai-000393",
+   "area": "prompting-and-reasoning",
+   "kind": "application",
+   "topic": "Few-shot prompting",
+   "t": "Liu et al. found that retrieving demonstrations semantically similar to each test query, using a sentence encoder, consistently beat randomly chosen examples for GPT-3.",
+   "f": "Liu et al. found that randomly chosen demonstrations consistently beat examples retrieved for semantic similarity to each test query, using a sentence encoder, for GPT-3.",
+   "x": "Which examples go in the prompt matters, and nearby examples help most. This turned example selection into a retrieval problem: production systems keep a pool of labelled cases and pull each query's nearest neighbours into the prompt.",
+   "concepts": [
+    "kt:few-shot-prompting",
+    "kt:semantic-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/few-shot-prompting.html"
+  },
+  {
+   "id": "ai-000394",
+   "area": "prompting-and-reasoning",
+   "kind": "figure",
+   "topic": "Few-shot prompting",
+   "t": "In the 2020 GPT-3 paper, few-shot prompts typically held 10 to 100 demonstrations, capped by what fit in the model's 2,048-token context window.",
+   "f": "In the 2020 GPT-3 paper, few-shot prompts typically held 10 to 100 demonstrations, capped by what fit in the model's 32,768-token context window.",
+   "x": "The number of demonstrations is bounded by the context window, and GPT-3's was only 2,048 tokens. Much longer windows later made many-shot prompting with hundreds or thousands of examples possible.",
+   "concepts": [
+    "kt:few-shot-prompting",
+    "kt:context-window",
+    "kt:language-models-are-few-shot-learners"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/few-shot-prompting.html",
+   "asOf": "2020"
+  },
+  {
+   "id": "ai-000395",
+   "area": "safety-alignment-and-security",
+   "kind": "definition",
+   "topic": "AI safety",
+   "t": "AI safety is broader than AI alignment: alignment asks whether a system pursues what its designers intend, while safety also covers misuse and failures on unusual inputs.",
+   "f": "AI alignment is broader than AI safety: safety asks whether a system pursues what its designers intend, while alignment also covers misuse and failures on unusual inputs.",
+   "x": "A perfectly aligned system can still be misused by its operator, break on out-of-distribution inputs or cause harm once deployed widely, and those problems belong to safety. That is why alignment is treated as one part of AI safety, not the other way round.",
+   "concepts": [
+    "kt:ai-safety",
+    "kt:ai-alignment"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-safety.html"
+  },
+  {
+   "id": "ai-000396",
+   "area": "safety-alignment-and-security",
+   "kind": "origin",
+   "topic": "AI safety",
+   "t": "Hendrycks and colleagues' 2021 paper Unsolved Problems in ML Safety split the field into four problems: robustness, monitoring, alignment and systemic safety.",
+   "f": "Amodei and colleagues' 2016 paper Concrete Problems in AI Safety split the field into four problems: robustness, monitoring, alignment and systemic safety.",
+   "x": "The 2021 roadmap framed safety around hazards: withstanding them, detecting them, reducing those inside the model and reducing those in the wider system. The 2016 Concrete Problems paper instead framed the field as preventing accidents and listed five problems such as reward hacking and safe exploration.",
+   "concepts": [
+    "kt:ai-safety",
+    "kt:concrete-problems-in-ai-safety"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-safety.html"
+  },
+  {
+   "id": "ai-000397",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "AI safety",
+   "t": "The 2025 International AI Safety Report found broad agreement that current systems cannot cause loss of control, but real disagreement on its likelihood over the next several years.",
+   "f": "The 2025 International AI Safety Report found broad agreement that loss of control is likely over the next several years, but real disagreement on whether current systems could cause it.",
+   "x": "The experts converged on today's systems lacking the capability, and split on how fast that could change. This uncertainty feeds the report's evidence dilemma: acting early on thin evidence may prove unnecessary, while waiting may leave society unprepared.",
+   "concepts": [
+    "kt:ai-safety",
+    "kt:ai-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-safety.html"
+  },
+  {
+   "id": "ai-000398",
+   "area": "transformers-and-llms",
+   "kind": "origin",
+   "topic": "Self-attention",
+   "t": "Cheng, Dong and Lapata's Long Short-Term Memory-Network (EMNLP 2016) was an early form of self-attention, scoring each token against all earlier hidden states.",
+   "f": "Cheng, Dong and Lapata's Long Short-Term Memory-Network (EMNLP 2019) was an early form of self-attention, scoring each token against all earlier hidden states.",
+   "x": "Attention between two sequences came first; attending within one sequence emerged around 2016, a year before the Transformer. The LSTMN replaced the LSTM's single memory cell with a tape of one vector per earlier token, so 2019 is too late to be a precursor.",
+   "concepts": [
+    "kt:self-attention",
+    "kt:long-short-term-memory-networks-for-machine-reading",
+    "kt:attention-mechanism"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-attention.html"
+  },
+  {
+   "id": "ai-000399",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Self-attention",
+   "t": "Self-attention on its own ignores token order: shuffling the input tokens just shuffles the outputs the same way, so order must be added with positional encodings.",
+   "f": "Self-attention on its own captures token order: shuffling the input tokens changes every output, so positional encodings are an optional extra.",
+   "x": "Each output is a weighted sum over all tokens, and the weights depend only on content, not position. Without positional encodings, learned or sinusoidal, a transformer would see a sentence as a bag of tokens.",
+   "concepts": [
+    "kt:self-attention",
+    "kt:positional-encoding",
+    "kt:transformer-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-attention.html"
+  },
+  {
+   "id": "ai-000400",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "Self-attention",
+   "t": "Jain and Wallace (NAACL 2019) found attention weights often correlate poorly with gradient-based importance, and quite different attention patterns can give the same prediction.",
+   "f": "Jain and Wallace (NAACL 2019) found attention weights closely track gradient-based importance, and quite different attention patterns always change the prediction.",
+   "x": "If very different attention maps can produce the same output, a map cannot be taken as the reason for that output. Their result is why raw attention heatmaps should not be read as faithful explanations of model behaviour.",
+   "concepts": [
+    "kt:self-attention",
+    "kt:mechanistic-interpretability"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/self-attention.html"
+  },
+  {
+   "id": "ai-000401",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Image classification",
+   "t": "A linear classifier on CIFAR-10 flattens each 32×32×3 image into 3,072 numbers, so its weight matrix W is 10×3,072 and yields one score per class.",
+   "f": "A linear classifier on CIFAR-10 flattens each 32×32×3 image into 1,024 numbers, so its weight matrix W is 10×1,024 and yields one score per class.",
+   "x": "Each colour image has 32 × 32 pixels times 3 channels, giving 3,072 inputs; 1,024 would count only one channel. Each of W's 10 rows acts as a template for one class, scored against the whole flattened image as f(x, W) = Wx + b.",
+   "concepts": [
+    "kt:image-classification",
+    "kt:cifar-10",
+    "kt:softmax-regression"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/image-classification.html"
+  },
+  {
+   "id": "ai-000402",
+   "area": "computer-vision-and-multimodal",
+   "kind": "application",
+   "topic": "Image classification",
+   "t": "The ImageNet challenge (ILSVRC) scored classifiers by top-5 error, allowing five guesses per image because photos often contain several objects while only one is labeled.",
+   "f": "The ImageNet challenge (ILSVRC) scored classifiers by top-5 error, allowing five guesses per image because each photo was labeled with five correct object categories.",
+   "x": "Each ILSVRC image has a single ground-truth label, and a prediction counts as correct if any of the five guesses matches it. The slack exists because a scene may show several valid objects, so a top-1 miss is not always a real error; the metric only partly fixes that ambiguity.",
+   "concepts": [
+    "kt:image-classification",
+    "kt:ilsvrc"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/image-classification.html"
+  },
+  {
+   "id": "ai-000403",
+   "area": "computer-vision-and-multimodal",
+   "kind": "evidence",
+   "topic": "Image classification",
+   "t": "When Recht and colleagues rebuilt CIFAR-10 and ImageNet test sets in 2019, accuracy fell, and they blamed models' brittleness on slightly harder images rather than overfitting from test-set reuse.",
+   "f": "When Recht and colleagues rebuilt CIFAR-10 and ImageNet test sets in 2019, accuracy fell, and they blamed overfitting from test-set reuse rather than models' brittleness on slightly harder images.",
+   "x": "The new test sets followed the original collection procedures, yet ImageNet accuracy dropped by about 11 to 14 points. The authors traced this to fragility on slightly harder images, not adaptive overfitting to a reused test set, and models that ranked higher before still tended to rank higher: a warning that leaderboard numbers overstate robustness.",
+   "concepts": [
+    "kt:image-classification",
+    "kt:ilsvrc",
+    "kt:cifar-10"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/image-classification.html"
+  },
+  {
+   "id": "ai-000404",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "SWE-bench",
+   "t": "In SWE-bench grading, FAIL_TO_PASS tests must fail before the fix and pass after it, while PASS_TO_PASS tests must pass both before and after.",
+   "f": "In SWE-bench grading, PASS_TO_PASS tests must fail before the fix and pass after it, while FAIL_TO_PASS tests must pass both before and after.",
+   "x": "The first set checks that the patch actually fixes the issue; the second guards against a patch that fixes it by breaking other behaviour. A task counts as resolved only if the patch applies cleanly and both sets pass.",
+   "concepts": [
+    "kt:swe-bench"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/swe-bench.html"
+  },
+  {
+   "id": "ai-000405",
+   "area": "evaluation-and-benchmarks",
+   "kind": "figure",
+   "topic": "SWE-bench",
+   "t": "In the original 2023 SWE-bench paper, the best model, Claude 2, resolved only 1.96% of the 2,294 real GitHub issues.",
+   "f": "In the original 2023 SWE-bench paper, the best model, Claude 2, resolved 19.6% of the 2,294 real GitHub issues.",
+   "x": "Asking a model to edit a whole repository so that its tests pass was far harder than earlier coding benchmarks, and models solved mainly the simplest issues. Scores climbed fast only once agent scaffolds such as SWE-agent arrived in 2024.",
+   "concepts": [
+    "kt:swe-bench",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/swe-bench.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000406",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "SWE-bench",
+   "t": "OpenAI built SWE-bench Verified after annotators found many original tasks had underspecified issues or tests too specific to accept a valid fix.",
+   "f": "OpenAI built SWE-bench Verified after annotators found many original tasks had solutions leaked into the models' training data.",
+   "x": "Developers screened samples three times each and dropped tasks that were unfair to solve, leaving 500 human-checked problems. Contamination was a separate critique, raised in an independent audit noting most issues predated the models' knowledge cutoffs.",
+   "concepts": [
+    "kt:swe-bench",
+    "kt:benchmark-contamination"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/swe-bench.html"
+  },
+  {
+   "id": "ai-000407",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "Proximal policy optimization",
+   "t": "PPO's clipped objective takes the minimum of the unclipped and clipped ratio-times-advantage terms, so pushing a good action's probability ratio past 1+ε earns nothing more.",
+   "f": "PPO's clipped objective takes the maximum of the unclipped and clipped ratio-times-advantage terms, so pushing a good action's probability ratio past 1+ε keeps earning more.",
+   "x": "Taking the minimum makes the objective a pessimistic bound, which removes any incentive to move the new policy far from the one that collected the data. That is how proximal policy optimization (PPO) gets trust-region-like stability while still running several epochs of minibatch updates on one batch.",
+   "concepts": [
+    "kt:proximal-policy-optimization",
+    "kt:policy-gradient",
+    "kt:trust-region-policy-optimization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/proximal-policy-optimization.html"
+  },
+  {
+   "id": "ai-000408",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "Proximal policy optimization",
+   "t": "Engstrom et al. (ICLR 2020) found that code-level optimizations left out of PPO's description accounted for most of its reward gain over TRPO.",
+   "f": "Engstrom et al. (ICLR 2020) found that the clipped objective at the heart of PPO's description accounted for most of its reward gain over TRPO.",
+   "x": "Implementation details outside the core algorithm, not the clipping idea itself, drove most of the improvement over trust region policy optimization (TRPO) and even changed how the method behaves. The lesson is to attribute RL results carefully between an algorithm and the code around it.",
+   "concepts": [
+    "kt:proximal-policy-optimization",
+    "kt:trust-region-policy-optimization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/proximal-policy-optimization.html"
+  },
+  {
+   "id": "ai-000409",
+   "area": "reinforcement-learning",
+   "kind": "application",
+   "topic": "Proximal policy optimization",
+   "t": "DeepSeek's group relative policy optimization (GRPO, 2024) drops PPO's separate value model and uses the mean and standard deviation of rewards across a group of sampled answers as the baseline.",
+   "f": "DeepSeek's group relative policy optimization (GRPO, 2024) drops PPO's separate reward model and uses the mean and standard deviation of rewards across a group of sampled answers as the baseline.",
+   "x": "In LLM training the value model, PPO's critic, is typically about as large as the policy, so removing it saves a lot of memory. GRPO still needs a reward signal; it only replaces the learned value baseline with group statistics.",
+   "concepts": [
+    "kt:proximal-policy-optimization",
+    "kt:actor-critic",
+    "kt:rlhf"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/proximal-policy-optimization.html"
+  },
+  {
+   "id": "ai-000410",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "Multi-agent systems",
+   "t": "In Du et al.'s multiagent debate, several instances of the same model each answer, then read and critique one another's reasoning over several rounds until they converge.",
+   "f": "In Du et al.'s multiagent debate, several instances of the same model each answer once, then a separate stronger judge model picks the single best answer without further rounds.",
+   "x": "The gain comes from agents revising their answers after seeing each other's reasoning, round after round, using only black-box access and the same prompts across tasks. The false version describes one-shot judging, which drops the iterative critique that improved reasoning and factuality.",
+   "concepts": [
+    "kt:multi-agent-systems",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/multi-agent-systems.html"
+  },
+  {
+   "id": "ai-000411",
+   "area": "agents-and-tool-use",
+   "kind": "figure",
+   "topic": "Multi-agent systems",
+   "t": "In 2025 Anthropic reported that token usage alone explained about 80% of the performance variance of its research agents on the BrowseComp benchmark.",
+   "f": "In 2025 Anthropic reported that the number of subagents alone explained about 80% of the performance variance of its research agents on the BrowseComp benchmark.",
+   "x": "Much of a multi-agent system's advantage comes from spending more tokens across parallel context windows, which is also why such runs cost about 15 times a chat. It was the token budget, not the count of agents, that Anthropic found explained most of the variance.",
+   "concepts": [
+    "kt:multi-agent-systems",
+    "kt:ai-agent"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/multi-agent-systems.html",
+   "asOf": "2025"
+  },
+  {
+   "id": "ai-000412",
+   "area": "agents-and-tool-use",
+   "kind": "evidence",
+   "topic": "Multi-agent systems",
+   "t": "Anthropic found multi-agent designs suit broad, parallel research, but fit poorly with tasks where all agents need shared context, which includes most coding work.",
+   "f": "Anthropic found multi-agent designs suit most coding work, but fit poorly with broad, parallel research, where all agents need shared context.",
+   "x": "Subagents with separate context windows shine when a task splits into independent searches, but they struggle when work is tightly interdependent, as most code changes are. That is why multi-agent setups are usually kept for high-value, breadth-first tasks.",
+   "concepts": [
+    "kt:multi-agent-systems",
+    "kt:agentic-systems"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/multi-agent-systems.html"
+  },
+  {
+   "id": "ai-000413",
+   "area": "ai-history",
+   "kind": "mechanism",
+   "topic": "Expert systems",
+   "t": "EMYCIN was MYCIN with its medical rules removed, a reuse possible because MYCIN kept its knowledge base separate from its inference engine.",
+   "f": "EMYCIN was MYCIN's medical rules fitted to a new inference engine, a reuse possible because MYCIN kept its knowledge base separate from its inference engine.",
+   "x": "EMYCIN kept MYCIN's inference engine and dropped its medical rules, so new domain rules could be loaded; it was later applied to electronics, tax advice and software consulting. Separating knowledge from reasoning made the engine reusable and let a knowledge base grow one rule at a time.",
+   "concepts": [
+    "kt:expert-systems",
+    "kt:mycin",
+    "kt:knowledge-base",
+    "kt:inference-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/expert-systems.html"
+  },
+  {
+   "id": "ai-000414",
+   "area": "ai-history",
+   "kind": "evidence",
+   "topic": "Expert systems",
+   "t": "MYCIN never entered routine clinical use, partly because it ran only on costly time-sharing computers unavailable on wards and needed 50–60 typed answers per consultation.",
+   "f": "MYCIN never entered routine clinical use, partly because in blinded tests outside experts disagreed with its therapy advice far more often than with Stanford faculty's.",
+   "x": "MYCIN performed well: in a blinded evaluation, outside infectious-disease experts disagreed with it no more often than with Stanford faculty. What blocked use was practical, from Interlisp on costly time-sharing systems and long typed consultations to lost funding, showing that good test results do not guarantee adoption.",
+   "concepts": [
+    "kt:expert-systems",
+    "kt:mycin"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/expert-systems.html"
+  },
+  {
+   "id": "ai-000415",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "Expert systems",
+   "t": "DENDRAL, begun at Stanford in 1965 by Edward Feigenbaum and geneticist Joshua Lederberg, inferred the structure of organic molecules from mass-spectrometry data.",
+   "f": "DENDRAL, begun at Stanford in 1972 by Edward Feigenbaum and geneticist Joshua Lederberg, inferred the structure of organic molecules from mass-spectrometry data.",
+   "x": "Feigenbaum, a student of Herbert Simon, started DENDRAL in 1965 soon after moving to Stanford; 1972 is when work on MYCIN began there. DENDRAL rivalled expert chemists and was used in industry and academia, an early proof that encoded expert knowledge could pay off.",
+   "concepts": [
+    "kt:expert-systems",
+    "kt:dendral",
+    "kt:edward-feigenbaum"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/expert-systems.html"
+  },
+  {
+   "id": "ai-000416",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "Distributed training",
+   "t": "Megatron-LM splits a transformer MLP block's first weight matrix by columns and its second by rows, so the nonlinearity runs locally and the forward pass needs one all-reduce.",
+   "f": "Megatron-LM splits a transformer MLP block's first weight matrix by rows and its second by columns, so the nonlinearity runs locally and the forward pass needs one all-reduce.",
+   "x": "A column split gives each GPU complete slices of the hidden activations, so it can apply the nonlinearity without talking to the others; the row-split second matrix then produces partial sums that one all-reduce combines. Splitting the other way round would need a synchronisation before the nonlinearity.",
+   "concepts": [
+    "kt:distributed-training",
+    "kt:tensor-parallelism",
+    "kt:all-reduce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/distributed-training.html"
+  },
+  {
+   "id": "ai-000417",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "evidence",
+   "topic": "Distributed training",
+   "t": "GPipe's authors found the idle pipeline bubble negligible once the number of micro-batches was at least four times the number of pipeline stages.",
+   "f": "GPipe's authors found the idle pipeline bubble negligible once the number of pipeline stages was at least four times the number of micro-batches.",
+   "x": "The bubble's share of time is about (K−1)/(M+K−1) for K stages and M micro-batches, so it shrinks as micro-batches outnumber stages. Adding stages relative to micro-batches makes the bubble worse, which is why the false statement has the ratio backwards.",
+   "concepts": [
+    "kt:distributed-training",
+    "kt:pipeline-parallelism"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/distributed-training.html"
+  },
+  {
+   "id": "ai-000418",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "application",
+   "topic": "Distributed training",
+   "t": "Narayanan and colleagues advise tensor parallelism within a server, pipeline parallelism across servers, and data parallelism to replicate the result and scale out.",
+   "f": "Narayanan and colleagues advise pipeline parallelism within a server, tensor parallelism across servers, and data parallelism to replicate the result and scale out.",
+   "x": "Tensor parallelism issues frequent all-reduces that need fast links inside a server, while pipeline parallelism only sends point-to-point activations between stages, which slower inter-server networks can carry. Swapping them, as the false statement does, puts the chattiest traffic on the slowest links.",
+   "concepts": [
+    "kt:distributed-training",
+    "kt:tensor-parallelism",
+    "kt:pipeline-parallelism",
+    "kt:data-parallelism"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/distributed-training.html"
+  },
+  {
+   "id": "ai-000419",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Activation function",
+   "t": "The logistic sigmoid's derivative peaks at only 0.25, at an input of zero, while the derivative of tanh peaks at 1.",
+   "f": "The logistic sigmoid's derivative peaks at 1, at an input of zero, while the derivative of tanh peaks at only 0.25.",
+   "x": "The sigmoid's derivative is σ(x)(1 − σ(x)), which is largest when σ(x) = 0.5, giving 0.25; tanh's derivative 1 − tanh²(x) reaches 1 at zero. Backpropagation multiplies these factors across layers, so small, saturating sigmoid derivatives feed the vanishing gradient problem.",
+   "concepts": [
+    "kt:activation-function",
+    "kt:vanishing-gradient-problem",
+    "kt:backpropagation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/activation-function.html"
+  },
+  {
+   "id": "ai-000420",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Activation function",
+   "t": "Nair and Hinton introduced rectified linear units in restricted Boltzmann machines at ICML 2010, deriving them as an approximation to many shifted sigmoid copies.",
+   "f": "Glorot, Bordes and Bengio introduced rectified linear units in restricted Boltzmann machines at ICML 2010, deriving them as an approximation to many shifted sigmoid copies.",
+   "x": "Nair and Hinton showed rectified units gave better features for object recognition and face verification. Glorot, Bordes and Bengio came a year later, at AISTATS 2011, showing that deep rectifier networks match or beat tanh networks without unsupervised pretraining.",
+   "concepts": [
+    "kt:activation-function",
+    "kt:rectified-linear-unit"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/activation-function.html"
+  },
+  {
+   "id": "ai-000421",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Activation function",
+   "t": "In Shazeer's 2020 Transformer experiments, gated SwiGLU and GEGLU feed-forward layers beat ReLU, while plain GELU and Swish did no better than ReLU.",
+   "f": "In Shazeer's 2020 Transformer experiments, plain GELU and Swish feed-forward layers beat ReLU, while gated SwiGLU and GEGLU did no better than ReLU.",
+   "x": "The gain came from gating, multiplying one linear projection by an activated second one, not from the smoother activation alone. Shazeer offered no theory for why it works, and such gains are small and setup-dependent, yet SwiGLU became common in Transformer feed-forward blocks.",
+   "concepts": [
+    "kt:activation-function",
+    "kt:swiglu",
+    "kt:gelu",
+    "kt:transformer-architecture"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/activation-function.html"
+  },
+  {
+   "id": "ai-000422",
+   "area": "governance-and-policy",
+   "kind": "figure",
+   "topic": "EU AI Act",
+   "t": "As of 2026, the EU AI Act presumes a general-purpose AI model has systemic risk when its cumulative training compute exceeds 10^25 floating-point operations.",
+   "f": "As of 2026, the EU AI Act presumes a general-purpose AI model has systemic risk when its cumulative training compute exceeds 10^27 floating-point operations.",
+   "x": "Training compute is used as a proxy for high-impact capabilities, and crossing 10^25 FLOPs triggers extra evaluation and risk-mitigation duties on top of the baseline duties every GPAI provider has. The false statement puts the bar a hundred times higher than the Act does.",
+   "concepts": [
+    "kt:eu-ai-act",
+    "kt:general-purpose-ai-model",
+    "kt:compute-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eu-ai-act.html",
+   "asOf": "2026"
+  },
+  {
+   "id": "ai-000423",
+   "area": "governance-and-policy",
+   "kind": "mechanism",
+   "topic": "EU AI Act",
+   "t": "Under the EU AI Act, the Commission's AI Office has direct powers over general-purpose AI models, while Member State market-surveillance authorities enforce most other rules.",
+   "f": "Under the EU AI Act, Member State market-surveillance authorities have direct powers over general-purpose AI models, while the Commission's AI Office enforces most other rules.",
+   "x": "Enforcement is split: general-purpose models are supervised centrally, so the AI Office can request documentation, evaluate models, order corrective measures and fine providers. National authorities handle the AI systems placed on their markets, following the EU's usual product-surveillance model.",
+   "concepts": [
+    "kt:eu-ai-act",
+    "kt:general-purpose-ai-model",
+    "kt:european-union"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eu-ai-act.html"
+  },
+  {
+   "id": "ai-000424",
+   "area": "governance-and-policy",
+   "kind": "evidence",
+   "topic": "EU AI Act",
+   "t": "Veale and Zuiderveen Borgesius warned that under the draft AI Act most high-risk systems could be certified by the provider's own self-assessment.",
+   "f": "Veale and Zuiderveen Borgesius warned that under the draft AI Act most high-risk systems would need certification by an independent third-party auditor.",
+   "x": "Their critique was that the Act borrows the New Legislative Framework built for goods like lifts and toys, where self-assessment against harmonised standards is common. That shifts real rule-making to private standards bodies, a dependence the later deadline extensions tied to standards readiness bear out.",
+   "concepts": [
+    "kt:eu-ai-act",
+    "kt:new-legislative-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/eu-ai-act.html"
+  },
+  {
+   "id": "ai-000425",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "vLLM",
+   "t": "vLLM's V1 scheduler treats prefill and decode alike, giving each request a token count per step, so chunked prefill, prefix caching and speculative decoding share one mechanism.",
+   "f": "vLLM's V1 scheduler runs prefill and decode as separate phases, each with its own queue, so chunked prefill, prefix caching and speculative decoding each need their own mechanism.",
+   "x": "Dropping the prefill/decode distinction turns scheduling into one question: how many tokens each request gets this step. That uniformity is what let the 2025 V1 rewrite fold several optimisations into a single code path, which the false statement denies.",
+   "concepts": [
+    "kt:vllm",
+    "kt:speculative-decoding",
+    "kt:kv-cache"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vllm.html"
+  },
+  {
+   "id": "ai-000426",
+   "area": "inference-and-optimization",
+   "kind": "figure",
+   "topic": "vLLM",
+   "t": "In 2023 vLLM's developers said sharing KV-cache blocks across sequences with copy-on-write cut memory use for parallel sampling and beam search by up to 55%.",
+   "f": "In 2023 vLLM's developers said sharing KV-cache blocks across sequences with copy-on-write cut memory use for single-sequence greedy decoding by up to 55%.",
+   "x": "Parallel samples and beam candidates start from the same prompt, so their cache blocks can be shared with reference counts and copied only when a sequence diverges. A lone greedy sequence has nothing to share with, so the saving cannot come from there.",
+   "concepts": [
+    "kt:vllm",
+    "kt:kv-cache",
+    "kt:batching-and-paged-attention"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vllm.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000427",
+   "area": "inference-and-optimization",
+   "kind": "application",
+   "topic": "vLLM",
+   "t": "vLLM's OpenAI-compatible chat endpoints need a chat template in the model's tokenizer configuration; without one, chat requests fail unless a template is passed with --chat-template.",
+   "f": "vLLM's OpenAI-compatible completions endpoint needs a chat template in the model's tokenizer configuration; without one, completion requests fail unless a template is passed with --chat-template.",
+   "x": "A chat request is a list of role-tagged messages, and the template is what turns them into the single prompt string the model was trained on. Plain completions already send a raw prompt, so they need no template; the false statement moves the requirement to the wrong endpoint.",
+   "concepts": [
+    "kt:vllm",
+    "kt:model-serving"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vllm.html"
+  },
+  {
+   "id": "ai-000428",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Regularization",
+   "t": "Under minibatch SGD, an L2 penalty makes each update first shrink every weight by a factor of (1 − ηλ), which is why L2 regularization is called weight decay.",
+   "f": "Under minibatch SGD, an L1 penalty makes each update first shrink every weight by a factor of (1 − ηλ), which is why L1 regularization is called weight decay.",
+   "x": "The gradient of (λ/2)‖w‖² is λw, so subtracting η times it scales each weight down in proportion to its size before the usual gradient step. Swapping in the L1 norm gives the lasso instead, which drives some weights to exactly zero rather than decaying them all by a common factor.",
+   "concepts": [
+    "kt:regularization",
+    "kt:weight-decay"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/regularization.html"
+  },
+  {
+   "id": "ai-000429",
+   "area": "ml-foundations",
+   "kind": "definition",
+   "topic": "Regularization",
+   "t": "An L1 penalty, as in the lasso, drives some coefficients to exactly zero, while an L2 penalty spreads weight across many correlated features.",
+   "f": "An L2 penalty, as in the lasso, drives some coefficients to exactly zero, while an L1 penalty spreads weight across many correlated features.",
+   "x": "Because L1 sets some coefficients to zero, the lasso doubles as feature selection and gives sparse, interpretable models. L2 (ridge or weight decay) shrinks all weights smoothly but rarely to zero, which is why it spreads weight across correlated inputs.",
+   "concepts": [
+    "kt:regularization",
+    "kt:lasso",
+    "kt:weight-decay"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/regularization.html"
+  },
+  {
+   "id": "ai-000430",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Regularization",
+   "t": "Krogh and Hertz (NIPS 1991) showed that in linear networks weight decay suppresses weight components irrelevant to the task by favouring the smallest solution.",
+   "f": "Krogh and Hertz (NIPS 1991) showed that in linear networks weight decay suppresses weight components irrelevant to the task by favouring the sparsest solution.",
+   "x": "Their analysis explains why weight decay helps generalization: among solutions that fit the data, the penalty picks the one with the smallest weights, and a well-chosen strength also damps static noise in the targets. Favouring sparse solutions is the signature of an L1 penalty, not of weight decay.",
+   "concepts": [
+    "kt:regularization",
+    "kt:weight-decay"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/regularization.html"
+  },
+  {
+   "id": "ai-000431",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Reasoning models",
+   "t": "DeepSeek-R1 was trained with reinforcement learning that rewarded verifiable final answers in maths, coding and STEM tasks, without human-annotated reasoning trajectories.",
+   "f": "DeepSeek-R1 was trained with reinforcement learning that rewarded matching human-annotated reasoning trajectories step by step in maths, coding and STEM tasks.",
+   "x": "Because only the outcome is rewarded, the model is free to develop its own problem-solving style inside the trace. DeepSeek-AI reported that self-reflection and verification emerged from this training rather than being taught from human examples.",
+   "concepts": [
+    "kt:reasoning-models",
+    "kt:reinforcement-learning",
+    "kt:large-language-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reasoning-models.html"
+  },
+  {
+   "id": "ai-000432",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Reasoning models",
+   "t": "Apple's 2025 puzzle study found standard models matched or beat reasoning models on easy instances, reasoning models helped at medium complexity, and both collapsed on hard ones.",
+   "f": "Apple's 2025 puzzle study found standard models matched or beat reasoning models on easy instances, reasoning models helped at medium complexity, and only standard models collapsed on hard ones.",
+   "x": "Extra thinking helped only in a middle band; at high complexity both kinds of model failed completely, and reasoning effort eventually fell as puzzles got harder. How far this generalises beyond puzzles is debated, but it is why simple requests are often sent to non-reasoning modes.",
+   "concepts": [
+    "kt:reasoning-models",
+    "kt:test-time-compute"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reasoning-models.html"
+  },
+  {
+   "id": "ai-000433",
+   "area": "prompting-and-reasoning",
+   "kind": "application",
+   "topic": "Reasoning models",
+   "t": "In OpenAI's API, a reasoning model's reasoning tokens are hidden from the developer, yet they are billed as output tokens and take up context-window space.",
+   "f": "In OpenAI's API, a reasoning model's reasoning tokens are hidden from the developer, so they are excluded from billing and take up no context-window space.",
+   "x": "Quality is bought with output tokens whether or not you see them, so cost and latency scale with thinking length. A response can even hit its token cap before any visible answer appears while still being charged, which is why OpenAI suggests reserving a large token budget.",
+   "concepts": [
+    "kt:reasoning-models",
+    "kt:test-time-compute"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reasoning-models.html"
+  },
+  {
+   "id": "ai-000434",
+   "area": "retrieval-and-knowledge",
+   "kind": "figure",
+   "topic": "Reranking",
+   "t": "In 2019, Nogueira and Cho's BERT reranker over BM25's top 1,000 passages raised MS MARCO mean reciprocal rank at 10 from about 16.5 to 35.8, more than doubling it.",
+   "f": "In 2019, Nogueira and Cho's BERT reranker over BM25's top 1,000 passages raised MS MARCO mean reciprocal rank at 10 from about 16.5 to 21.8, a gain of about a third.",
+   "x": "Fine-tuning BERT as a relevance classifier and running it only over BM25's shortlist more than doubled the score and topped the MS MARCO leaderboard. Its retrieve-then-rerank-then-answer shape became the template for today's RAG pipelines.",
+   "concepts": [
+    "kt:reranking",
+    "kt:bert",
+    "kt:bm25",
+    "kt:ms-marco"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reranking.html",
+   "asOf": "2019"
+  },
+  {
+   "id": "ai-000435",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Reranking",
+   "t": "ColBERT encodes the query and the document separately into per-token embeddings, then sums each query token's highest similarity to any document token.",
+   "f": "ColBERT encodes the query and the document jointly as one input into per-token embeddings, then sums each query token's highest similarity to any document token.",
+   "x": "Encoding separately is what lets ColBERT precompute document embeddings offline, making it over 170 times faster than a BERT cross-encoder at reranking. Joint encoding of query and passage is the cross-encoder design, which is accurate but needs a full transformer pass per pair.",
+   "concepts": [
+    "kt:reranking",
+    "kt:colbert"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reranking.html"
+  },
+  {
+   "id": "ai-000436",
+   "area": "retrieval-and-knowledge",
+   "kind": "evidence",
+   "topic": "Reranking",
+   "t": "A reranker cannot raise recall beyond what its first-stage retriever returns, because it only reorders the candidates it is given.",
+   "f": "A reranker can raise recall beyond what its first-stage retriever returns, because it rescans the collection for documents the first stage missed.",
+   "x": "Reranking trades breadth for precision on a shortlist, so a relevant document the first stage never fetched is lost for good. The ColBERT paper showed this: retrieving end to end lifted MS MARCO Recall@1000 from 81.4 when reranking BM25 candidates to 96.8.",
+   "concepts": [
+    "kt:reranking",
+    "kt:information-retrieval",
+    "kt:colbert"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/reranking.html"
+  },
+  {
+   "id": "ai-000437",
+   "area": "safety-alignment-and-security",
+   "kind": "origin",
+   "topic": "Prompt injection",
+   "t": "Simon Willison named prompt injection in September 2022, after Riley Goodside showed a GPT-3 translation prompt could be told to drop its task and print other text.",
+   "f": "Riley Goodside named prompt injection in September 2022, after Simon Willison showed a GPT-3 translation prompt could be told to drop its task and print other text.",
+   "x": "Goodside's demo drew attention to the behaviour, and Willison gave it a name by analogy to SQL injection, arguing it was a real security flaw rather than a curiosity. In both cases data supplied by someone else ends up being treated as commands.",
+   "concepts": [
+    "kt:prompt-injection"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-injection.html"
+  },
+  {
+   "id": "ai-000438",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Prompt injection",
+   "t": "The instruction hierarchy of Wallace et al. trains a model to ignore lower-privilege instructions that conflict with higher-privilege ones, so third-party text cannot override a system prompt.",
+   "f": "The instruction hierarchy of Wallace et al. trains a model to follow the most recent instruction when instructions conflict, so third-party text can override a system prompt.",
+   "x": "Wallace et al. observed that models tended to weigh a developer's system prompt the same as user or retrieved text, which is what injection exploits. Training on generated conflicts taught GPT-3.5 to rank instructions by source, improving robustness even to unseen attack types.",
+   "concepts": [
+    "kt:prompt-injection",
+    "kt:instruction-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-injection.html"
+  },
+  {
+   "id": "ai-000439",
+   "area": "safety-alignment-and-security",
+   "kind": "application",
+   "topic": "Prompt injection",
+   "t": "Because current mitigations do not fully stop prompt injection, NIST advises designing systems on the assumption that it will succeed, for example by splitting work across models with different permissions.",
+   "f": "Because current mitigations do not fully stop prompt injection, NIST advises designing systems on the assumption that it will be detected, for example by routing all work through one model behind a filter.",
+   "x": "Detectors and spotlighting of untrusted content help but can be bypassed, so damage is limited by design: least privilege, separated permissions and human approval for high-risk actions. Relying on one well-guarded model puts every permission behind a defence that may fail.",
+   "concepts": [
+    "kt:prompt-injection",
+    "kt:ai-agent",
+    "kt:tool-use"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/prompt-injection.html"
+  },
+  {
+   "id": "ai-000440",
+   "area": "training-and-adaptation",
+   "kind": "origin",
+   "topic": "Constitutional AI",
+   "t": "Constitutional AI was introduced in December 2022 by an Anthropic team led by Yuntao Bai and Jared Kaplan, in a paper that also popularised the term reinforcement learning from AI feedback.",
+   "f": "Constitutional AI was introduced in December 2020 by an Anthropic team led by Yuntao Bai and Jared Kaplan, in a paper that also popularised the term reinforcement learning from AI feedback.",
+   "x": "The paper, Constitutional AI: Harmlessness from AI Feedback, came out at the end of 2022. Its key idea was to replace human harmlessness labels with a short written list of principles plus model-generated feedback, the approach now called RLAIF.",
+   "concepts": [
+    "kt:constitutional-ai",
+    "kt:constitutional-ai-harmlessness-from-ai-feedback",
+    "kt:anthropic",
+    "kt:reinforcement-learning-from-ai-feedback"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/constitutional-ai.html"
+  },
+  {
+   "id": "ai-000441",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Constitutional AI",
+   "t": "Constitutional AI first fine-tunes on the model's own critiqued and revised answers, then trains a preference model on AI-labelled comparisons and runs reinforcement learning against it.",
+   "f": "Constitutional AI first trains a preference model on AI-labelled comparisons and runs reinforcement learning against it, then fine-tunes on the model's own critiqued and revised answers.",
+   "x": "The supervised critique-and-revise stage (SL-CAI) comes first and produces the model whose response pairs are then labelled by a feedback model in the RL stage (RL-CAI). Both stages start from a helpful-only model, and the RL stage works like RLHF except that harmlessness labels come from a model guided by the constitution.",
+   "concepts": [
+    "kt:constitutional-ai",
+    "kt:rlhf",
+    "kt:reinforcement-learning-from-ai-feedback"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/constitutional-ai.html"
+  },
+  {
+   "id": "ai-000442",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Constitutional AI",
+   "t": "Crowdworkers judged RL-CAI models more harmless than RLHF models of similar helpfulness, and the RL-CAI models rarely gave evasive refusals, typically explaining their objection instead.",
+   "f": "Crowdworkers judged RL-CAI models more harmless than RLHF models of similar helpfulness, but the RL-CAI models often gave evasive refusals, rarely explaining their objection instead.",
+   "x": "The result showed harmlessness need not come at the cost of stonewalling. The authors partly blamed earlier evasiveness on human labelling instructions that rewarded harmless but unhelpful answers.",
+   "concepts": [
+    "kt:constitutional-ai",
+    "kt:rlhf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/constitutional-ai.html"
+  },
+  {
+   "id": "ai-000443",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Sequence-to-sequence learning",
+   "t": "With teacher forcing, a seq2seq decoder is trained on the ground-truth target shifted right by one position, starting with a beginning-of-sequence token.",
+   "f": "With teacher forcing, a seq2seq decoder is trained on its own earlier predictions shifted right by one position, starting with a beginning-of-sequence token.",
+   "x": "Feeding the true previous tokens during training keeps each step's input correct even while the model's own guesses are still poor. Only at inference does the decoder consume its own predictions, stopping when it emits the end-of-sequence token.",
+   "concepts": [
+    "kt:sequence-to-sequence-learning",
+    "kt:recurrent-neural-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/sequence-to-sequence-learning.html"
   }
  ]
 }

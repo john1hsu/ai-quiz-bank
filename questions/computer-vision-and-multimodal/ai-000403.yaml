@@ -1,0 +1,21 @@
+id: ai-000403
+area: computer-vision-and-multimodal
+kind: evidence
+topic: Image classification
+topic_type: Application
+maturity: established
+true_statement: When Recht and colleagues rebuilt CIFAR-10 and ImageNet test sets in 2019, accuracy fell, and they blamed models' brittleness on slightly harder images rather than overfitting from test-set reuse.
+false_statement: When Recht and colleagues rebuilt CIFAR-10 and ImageNet test sets in 2019, accuracy fell, and they blamed overfitting from test-set reuse rather than models' brittleness on slightly harder images.
+explanation: 'The new test sets followed the original collection procedures, yet ImageNet accuracy dropped by about 11 to 14 points. The authors traced this to fragility on slightly harder images, not adaptive overfitting to a reused test set, and models that ranked higher before still tended to rank higher: a warning that leaderboard numbers overstate robustness.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/image-classification.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e4aaef5156cf4df3fc788de041daf45017699c80
+concepts:
+- kt:image-classification
+- kt:ilsvrc
+- kt:cifar-10
+difficulty: 3
+created: '2026-11-20'
+status: active

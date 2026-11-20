@@ -1,0 +1,21 @@
+id: ai-000416
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Distributed training
+topic_type: Paradigm
+maturity: established
+true_statement: Megatron-LM splits a transformer MLP block's first weight matrix by columns and its second by rows, so the nonlinearity runs locally and the forward pass needs one all-reduce.
+false_statement: Megatron-LM splits a transformer MLP block's first weight matrix by rows and its second by columns, so the nonlinearity runs locally and the forward pass needs one all-reduce.
+explanation: A column split gives each GPU complete slices of the hidden activations, so it can apply the nonlinearity without talking to the others; the row-split second matrix then produces partial sums that one all-reduce combines. Splitting the other way round would need a synchronisation before the nonlinearity.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/distributed-training.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 1805ef30b44bd31c550f603459a57742bb2bea7c
+concepts:
+- kt:distributed-training
+- kt:tensor-parallelism
+- kt:all-reduce
+difficulty: 3
+created: '2026-11-20'
+status: active

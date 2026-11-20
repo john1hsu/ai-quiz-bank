@@ -1,0 +1,21 @@
+id: ai-000399
+area: transformers-and-llms
+kind: mechanism
+topic: Self-attention
+topic_type: Architecture
+maturity: established
+true_statement: 'Self-attention on its own ignores token order: shuffling the input tokens just shuffles the outputs the same way, so order must be added with positional encodings.'
+false_statement: 'Self-attention on its own captures token order: shuffling the input tokens changes every output, so positional encodings are an optional extra.'
+explanation: Each output is a weighted sum over all tokens, and the weights depend only on content, not position. Without positional encodings, learned or sinusoidal, a transformer would see a sentence as a bag of tokens.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/self-attention.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: d347c54244d698236249f913177dedcd43b64552
+concepts:
+- kt:self-attention
+- kt:positional-encoding
+- kt:transformer-architecture
+difficulty: 2
+created: '2026-11-20'
+status: active

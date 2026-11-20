@@ -1,0 +1,20 @@
+id: ai-000366
+area: agents-and-tool-use
+kind: origin
+topic: Tool use
+topic_type: Technique
+maturity: established
+true_statement: AI21 Labs' 2022 MRKL paper proposed a router that sends each input to the most suitable expert module, neural or symbolic such as a calculator, with the language model as fallback.
+false_statement: Meta AI's 2022 MRKL paper proposed a router that sends each input to the most suitable expert module, neural or symbolic such as a calculator, with the language model as fallback.
+explanation: MRKL (Modular Reasoning, Knowledge and Language) came from AI21 Labs, the maker of Jurassic-1, and argued that models lack fresh data and reliable arithmetic, so those jobs should go to external modules. Its hand-built router preceded models that choose tools themselves.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/tool-use.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: ccd5dd41bc2fa977740b436ea8275ab4c932d8a9
+concepts:
+- kt:tool-use
+- kt:mrkl-systems
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,19 @@
+id: ai-000384
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Retrieval-augmented generation for knowledge-intensive tasks
+topic_type: Technique
+maturity: established
+true_statement: RAG-Sequence conditions the whole answer on one retrieved passage at a time, while RAG-Token can draw on a different retrieved passage for each generated token.
+false_statement: RAG-Token conditions the whole answer on one retrieved passage at a time, while RAG-Sequence can draw on a different retrieved passage for each generated token.
+explanation: Both variants treat the retrieved passages as a latent variable and marginalise over them; they differ in where the sum sits. RAG-Sequence sums over passages for the full output, while RAG-Token sums at every token, letting one answer combine evidence from several passages.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/retrieval-augmented-generation.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 066a8d59840f80ee61fd8705fc2ce084b6de9de9
+concepts:
+- kt:retrieval-augmented-generation
+difficulty: 2
+created: '2026-11-20'
+status: active

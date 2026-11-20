@@ -1,0 +1,20 @@
+id: ai-000420
+area: deep-learning
+kind: origin
+topic: Activation function
+topic_type: Concept
+maturity: foundational
+true_statement: Nair and Hinton introduced rectified linear units in restricted Boltzmann machines at ICML 2010, deriving them as an approximation to many shifted sigmoid copies.
+false_statement: Glorot, Bordes and Bengio introduced rectified linear units in restricted Boltzmann machines at ICML 2010, deriving them as an approximation to many shifted sigmoid copies.
+explanation: Nair and Hinton showed rectified units gave better features for object recognition and face verification. Glorot, Bordes and Bengio came a year later, at AISTATS 2011, showing that deep rectifier networks match or beat tanh networks without unsupervised pretraining.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/activation-function.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5decde169913884abdadb199c4a46e7f1f124746
+concepts:
+- kt:activation-function
+- kt:rectified-linear-unit
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000365
+area: agents-and-tool-use
+kind: definition
+topic: Tool use
+topic_type: Technique
+maturity: established
+true_statement: 'In function calling the model never runs a tool itself: it emits a tool name and arguments matching a declared schema, and the application or provider executes the call.'
+false_statement: In function calling the model runs the tool itself during generation, using the code behind each declared schema, and the application only receives the final answer.
+explanation: The model sees only each tool's name, description and JSON Schema, never its code, so all it can do is ask; the host executes the call and feeds the result back for the model to continue. That split is why permission checks belong in the application.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/tool-use.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: ccd5dd41bc2fa977740b436ea8275ab4c932d8a9
+concepts:
+- kt:tool-use
+- kt:large-language-model
+- kt:structured-output
+difficulty: 1
+created: '2026-11-20'
+status: active

@@ -1,0 +1,22 @@
+id: ai-000368
+area: ai-history
+kind: origin
+topic: Logic Theorist
+topic_type: Model
+maturity: historical
+true_statement: The Logic Theorist, often called the first AI program, was written in 1955–1956 by Allen Newell, J. C. Shaw and Herbert A. Simon at the RAND Corporation.
+false_statement: The Logic Theorist, often called the first AI program, was written in 1955–1956 by Allen Newell, J. C. Shaw and Herbert A. Simon at Dartmouth College.
+explanation: Newell, Shaw and Simon built it at RAND, with funding mainly from the US Air Force, and a version ran on RAND's JOHNNIAC computer. Dartmouth is the tempting wrong answer because the program was coded around the time of the 1956 Dartmouth workshop.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/logic-theorist.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7ce0b0d3a377eb696948b568b9c0a6543bc759f3
+concepts:
+- kt:logic-theorist
+- kt:allen-newell
+- kt:herbert-a-simon
+- kt:cliff-shaw
+difficulty: 1
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000411
+area: agents-and-tool-use
+kind: figure
+topic: Multi-agent systems
+topic_type: Paradigm
+maturity: emerging
+true_statement: In 2025 Anthropic reported that token usage alone explained about 80% of the performance variance of its research agents on the BrowseComp benchmark.
+false_statement: In 2025 Anthropic reported that the number of subagents alone explained about 80% of the performance variance of its research agents on the BrowseComp benchmark.
+explanation: Much of a multi-agent system's advantage comes from spending more tokens across parallel context windows, which is also why such runs cost about 15 times a chat. It was the token budget, not the count of agents, that Anthropic found explained most of the variance.
+as_of: '2025'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/multi-agent-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: af05acf502fcbff779cf320c1e1e4df1b07caf69
+concepts:
+- kt:multi-agent-systems
+- kt:ai-agent
+difficulty: 3
+created: '2026-11-20'
+status: active

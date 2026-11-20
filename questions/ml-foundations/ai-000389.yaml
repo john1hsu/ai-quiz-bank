@@ -1,0 +1,21 @@
+id: ai-000389
+area: ml-foundations
+kind: definition
+topic: Overfitting
+topic_type: Concept
+maturity: foundational
+true_statement: Underfitting shows up as high error on both training and validation data with only a small gap between them, usually because the model is too simple.
+false_statement: Underfitting shows up as high error on both training and validation data with only a small gap between them, usually because the model is too complex.
+explanation: An underfit model cannot capture the pattern even on data it has seen, so both errors stay high. Excess complexity causes the opposite problem, overfitting, where training error is low but validation error is much higher.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/overfitting.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c90191befd399dc47c382b583262094f1c44face
+concepts:
+- kt:overfitting
+- kt:underfitting
+- kt:bias-variance-tradeoff
+difficulty: 1
+created: '2026-11-20'
+status: active

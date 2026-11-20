@@ -1,0 +1,20 @@
+id: ai-000378
+area: governance-and-policy
+kind: origin
+topic: Executive orders on AI
+topic_type: Policy
+maturity: emerging
+true_statement: EO 13859, signed in February 2019, launched the American AI Initiative and set five guiding principles for US federal AI policy.
+false_statement: EO 14110, signed in February 2019, launched the American AI Initiative and set five guiding principles for US federal AI policy.
+explanation: EO 13859 was an early AI-focused order; its principles covered research, technical standards, workforce training, public trust and protecting US technological advantage. EO 14110 came later, in October 2023, and was far broader, with eight guiding principles and tasks for dozens of agencies.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/executive-orders-on-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: fea733cd5497dd53c0c193ca6bdaaf4307ef96e5
+concepts:
+- kt:executive-orders-on-ai
+- kt:ai-governance
+difficulty: 2
+created: '2026-11-20'
+status: active

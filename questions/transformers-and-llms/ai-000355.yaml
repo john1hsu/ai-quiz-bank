@@ -1,0 +1,20 @@
+id: ai-000355
+area: transformers-and-llms
+kind: evidence
+topic: In-context learning
+topic_type: Concept
+maturity: established
+true_statement: Von Oswald et al. built a linear self-attention layer whose output equals one gradient-descent step on a regression loss, a result shown only on simple regression tasks.
+false_statement: Von Oswald et al. built a linear self-attention layer whose output equals one gradient-descent step on a regression loss, a result they confirmed directly in large pretrained language models.
+explanation: The construction suggests a transformer could in principle learn inside its forward pass the way an optimiser would. But it was demonstrated only on simple regression with self-attention-only models, so it is one candidate explanation of in-context learning, not a settled account of large LLMs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/in-context-learning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6a0a763131e1e0ec048ef1a239934e16729f6475
+concepts:
+- kt:in-context-learning
+- kt:mechanistic-interpretability
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000433
+area: prompting-and-reasoning
+kind: application
+topic: Reasoning models
+topic_type: Model
+maturity: emerging
+true_statement: In OpenAI's API, a reasoning model's reasoning tokens are hidden from the developer, yet they are billed as output tokens and take up context-window space.
+false_statement: In OpenAI's API, a reasoning model's reasoning tokens are hidden from the developer, so they are excluded from billing and take up no context-window space.
+explanation: Quality is bought with output tokens whether or not you see them, so cost and latency scale with thinking length. A response can even hit its token cap before any visible answer appears while still being charged, which is why OpenAI suggests reserving a large token budget.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reasoning-models.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7c2ebb69d8557bff63d2d6f2eaf9c1b648b12ae2
+concepts:
+- kt:reasoning-models
+- kt:test-time-compute
+difficulty: 2
+created: '2026-11-20'
+status: active

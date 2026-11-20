@@ -1,0 +1,22 @@
+id: ai-000422
+area: governance-and-policy
+kind: figure
+topic: EU AI Act
+topic_type: Policy
+maturity: emerging
+true_statement: As of 2026, the EU AI Act presumes a general-purpose AI model has systemic risk when its cumulative training compute exceeds 10^25 floating-point operations.
+false_statement: As of 2026, the EU AI Act presumes a general-purpose AI model has systemic risk when its cumulative training compute exceeds 10^27 floating-point operations.
+explanation: Training compute is used as a proxy for high-impact capabilities, and crossing 10^25 FLOPs triggers extra evaluation and risk-mitigation duties on top of the baseline duties every GPAI provider has. The false statement puts the bar a hundred times higher than the Act does.
+as_of: '2026'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/eu-ai-act.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 9a14259347a7853da278657552813a938b4ebd9c
+concepts:
+- kt:eu-ai-act
+- kt:general-purpose-ai-model
+- kt:compute-governance
+difficulty: 2
+created: '2026-11-20'
+status: active

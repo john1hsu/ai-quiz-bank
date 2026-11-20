@@ -1,0 +1,20 @@
+id: ai-000410
+area: agents-and-tool-use
+kind: mechanism
+topic: Multi-agent systems
+topic_type: Paradigm
+maturity: emerging
+true_statement: In Du et al.'s multiagent debate, several instances of the same model each answer, then read and critique one another's reasoning over several rounds until they converge.
+false_statement: In Du et al.'s multiagent debate, several instances of the same model each answer once, then a separate stronger judge model picks the single best answer without further rounds.
+explanation: The gain comes from agents revising their answers after seeing each other's reasoning, round after round, using only black-box access and the same prompts across tasks. The false version describes one-shot judging, which drops the iterative critique that improved reasoning and factuality.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/multi-agent-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: af05acf502fcbff779cf320c1e1e4df1b07caf69
+concepts:
+- kt:multi-agent-systems
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-20'
+status: active

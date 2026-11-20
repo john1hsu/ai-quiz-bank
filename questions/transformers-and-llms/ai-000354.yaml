@@ -1,0 +1,21 @@
+id: ai-000354
+area: transformers-and-llms
+kind: mechanism
+topic: In-context learning
+topic_type: Concept
+maturity: established
+true_statement: An induction head is an attention circuit that finds an earlier occurrence of the current token and copies the token that followed it.
+false_statement: An induction head is an attention circuit that finds an earlier occurrence of the current token and copies the token that preceded it.
+explanation: Copying what came next last time lets a model continue a pattern it has already seen in the prompt, a simple form of learning from context. Anthropic researchers linked these heads to in-context learning; copying the preceding token would not help predict what comes next.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/in-context-learning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6a0a763131e1e0ec048ef1a239934e16729f6475
+concepts:
+- kt:in-context-learning
+- kt:induction-head
+- kt:mechanistic-interpretability
+difficulty: 2
+created: '2026-11-20'
+status: active

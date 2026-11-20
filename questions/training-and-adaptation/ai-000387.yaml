@@ -1,0 +1,20 @@
+id: ai-000387
+area: training-and-adaptation
+kind: evidence
+topic: 'Pretraining: learning general-purpose representations before task adaptation'
+topic_type: Technique
+maturity: established
+true_statement: Erhan, Bengio and colleagues argued that unsupervised pretraining helps deep networks mainly as a regularizer, steering them toward parameters that generalise better.
+false_statement: Erhan, Bengio and colleagues argued that unsupervised pretraining helps deep networks mainly as an optimizer, steering them toward parameters that fit the training set better.
+explanation: Their experiments varying depth, capacity and data size pointed to better generalisation rather than easier fitting, so they framed pretraining as a kind of regularization. The account opened, but did not settle, the question of why pretraining transfers so well.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/pretraining.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 90b61898bbd5923f6a5ae016218e3ae7cabd1f26
+concepts:
+- kt:pretraining
+- kt:transfer-learning
+difficulty: 3
+created: '2026-11-20'
+status: active

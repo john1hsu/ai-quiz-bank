@@ -1,0 +1,22 @@
+id: ai-000358
+area: computer-vision-and-multimodal
+kind: figure
+topic: 'Vision-language model: LLMs with visual input'
+topic_type: Architecture
+maturity: established
+true_statement: BLIP-2's authors reported in 2023 that it beat Flamingo-80B by 8.7% on zero-shot VQAv2 while training 54 times fewer parameters, thanks to keeping its image encoder and LLM frozen.
+false_statement: BLIP-2's authors reported in 2023 that it beat Flamingo-80B by 8.7% on zero-shot VQAv2 while training 5 times fewer parameters, thanks to keeping its image encoder and LLM frozen.
+explanation: 'BLIP-2 trains only a lightweight Querying Transformer (Q-Former) between a frozen image encoder and a frozen LLM, so its trainable parameter count is tiny: 54 times fewer than Flamingo-80B, not merely 5. It shows that a small learned bridge between big frozen models can be both cheap and strong.'
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-language-model.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e37757e90b1fac09f17802880b17aadef1fd1dbe
+concepts:
+- kt:vision-language-model
+- kt:flamingo-a-visual-language-model-for-few-shot-learning
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,19 @@
+id: ai-000404
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: SWE-bench
+topic_type: Benchmark
+maturity: established
+true_statement: In SWE-bench grading, FAIL_TO_PASS tests must fail before the fix and pass after it, while PASS_TO_PASS tests must pass both before and after.
+false_statement: In SWE-bench grading, PASS_TO_PASS tests must fail before the fix and pass after it, while FAIL_TO_PASS tests must pass both before and after.
+explanation: The first set checks that the patch actually fixes the issue; the second guards against a patch that fixes it by breaking other behaviour. A task counts as resolved only if the patch applies cleanly and both sets pass.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/swe-bench.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 8960d5094c507cb78223a96721f9cadde44ad51f
+concepts:
+- kt:swe-bench
+difficulty: 2
+created: '2026-11-20'
+status: active

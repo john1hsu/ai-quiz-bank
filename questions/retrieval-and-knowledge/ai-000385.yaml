@@ -1,0 +1,20 @@
+id: ai-000385
+area: retrieval-and-knowledge
+kind: application
+topic: Retrieval-augmented generation for knowledge-intensive tasks
+topic_type: Technique
+maturity: established
+true_statement: Compared with fine-tuning, RAG makes knowledge easy to update and answers traceable to sources, while fine-tuning gives more control over style and format and lower latency.
+false_statement: Compared with fine-tuning, RAG gives more control over style and format and lower latency, while fine-tuning makes knowledge easy to update and answers traceable to sources.
+explanation: Swapping documents in an index updates what a RAG system knows without retraining, and the retrieved passages show where an answer came from, but the retrieval step adds latency. Fine-tuning bakes behaviour into the weights, which suits style and format, so the two are often combined.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/retrieval-augmented-generation.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 066a8d59840f80ee61fd8705fc2ce084b6de9de9
+concepts:
+- kt:retrieval-augmented-generation
+- kt:fine-tuning
+difficulty: 2
+created: '2026-11-20'
+status: active

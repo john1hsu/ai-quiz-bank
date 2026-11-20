@@ -1,0 +1,20 @@
+id: ai-000442
+area: training-and-adaptation
+kind: evidence
+topic: Constitutional AI
+topic_type: Technique
+maturity: established
+true_statement: Crowdworkers judged RL-CAI models more harmless than RLHF models of similar helpfulness, and the RL-CAI models rarely gave evasive refusals, typically explaining their objection instead.
+false_statement: Crowdworkers judged RL-CAI models more harmless than RLHF models of similar helpfulness, but the RL-CAI models often gave evasive refusals, rarely explaining their objection instead.
+explanation: The result showed harmlessness need not come at the cost of stonewalling. The authors partly blamed earlier evasiveness on human labelling instructions that rewarded harmless but unhelpful answers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/constitutional-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 874f75224ee18ff80089d17f1cd609e4a08f7c7d
+concepts:
+- kt:constitutional-ai
+- kt:rlhf
+difficulty: 3
+created: '2026-11-20'
+status: active

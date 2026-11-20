@@ -1,0 +1,20 @@
+id: ai-000428
+area: ml-foundations
+kind: mechanism
+topic: Regularization
+topic_type: Concept
+maturity: foundational
+true_statement: Under minibatch SGD, an L2 penalty makes each update first shrink every weight by a factor of (1 − ηλ), which is why L2 regularization is called weight decay.
+false_statement: Under minibatch SGD, an L1 penalty makes each update first shrink every weight by a factor of (1 − ηλ), which is why L1 regularization is called weight decay.
+explanation: The gradient of (λ/2)‖w‖² is λw, so subtracting η times it scales each weight down in proportion to its size before the usual gradient step. Swapping in the L1 norm gives the lasso instead, which drives some weights to exactly zero rather than decaying them all by a common factor.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/regularization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5aa287c101fc9064a8c82fdc0a2c39d0a6023871
+concepts:
+- kt:regularization
+- kt:weight-decay
+difficulty: 2
+created: '2026-11-20'
+status: active

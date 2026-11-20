@@ -1,0 +1,20 @@
+id: ai-000351
+area: training-and-adaptation
+kind: mechanism
+topic: Instruction tuning
+topic_type: Technique
+maturity: established
+true_statement: To test zero-shot generalization, FLAN held out whole task clusters, so no natural language inference dataset was trained on when evaluating inference.
+false_statement: To test zero-shot generalization, FLAN held out single datasets, so other natural language inference datasets were trained on when evaluating inference.
+explanation: Holding out a single dataset would let the model see the same kind of task in sibling datasets, which flatters zero-shot scores. Removing the entire cluster means the model has truly never been trained on that task type, so any gain shows instruction following carrying over to new tasks.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/instruction-tuning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 3b9273fb1e001f57c8b23565ad471da9d34960da
+concepts:
+- kt:instruction-tuning
+- kt:zero-shot-learning
+difficulty: 2
+created: '2026-11-20'
+status: active

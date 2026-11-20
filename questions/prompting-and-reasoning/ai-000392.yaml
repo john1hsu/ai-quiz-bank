@@ -1,0 +1,20 @@
+id: ai-000392
+area: prompting-and-reasoning
+kind: evidence
+topic: Few-shot prompting
+topic_type: Technique
+maturity: established
+true_statement: Min et al. (EMNLP 2022) found that swapping the gold labels in demonstrations for random ones barely hurt accuracy across 12 models, including GPT-3.
+false_statement: Min et al. (EMNLP 2022) found that swapping the gold labels in demonstrations for random ones sharply cut accuracy across 12 models, including GPT-3.
+explanation: Demonstrations mostly show the model the label space, the kind of input text and the output format, not the correct input-label mapping. That is why few-shot examples are good at controlling format and weak at teaching genuinely new knowledge.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/few-shot-prompting.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 426231c8a146c2163d996fba3612c1b25b084a9e
+concepts:
+- kt:few-shot-prompting
+- kt:in-context-learning
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000390
+area: ml-foundations
+kind: application
+topic: Overfitting
+topic_type: Concept
+maturity: foundational
+true_statement: On a generalization curve, overfitting appears when training loss keeps falling or levels off while validation loss turns upward.
+false_statement: On a generalization curve, overfitting appears when validation loss keeps falling or levels off while training loss turns upward.
+explanation: 'Plotting both losses against training iterations is the standard diagnostic: the model keeps improving on data it has memorized while getting worse on held-out data. Training loss rising while validation loss falls is not the overfitting signature.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/overfitting.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c90191befd399dc47c382b583262094f1c44face
+concepts:
+- kt:overfitting
+- kt:cross-validation
+difficulty: 1
+created: '2026-11-20'
+status: active

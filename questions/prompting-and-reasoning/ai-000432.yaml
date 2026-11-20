@@ -1,0 +1,20 @@
+id: ai-000432
+area: prompting-and-reasoning
+kind: evidence
+topic: Reasoning models
+topic_type: Model
+maturity: emerging
+true_statement: Apple's 2025 puzzle study found standard models matched or beat reasoning models on easy instances, reasoning models helped at medium complexity, and both collapsed on hard ones.
+false_statement: Apple's 2025 puzzle study found standard models matched or beat reasoning models on easy instances, reasoning models helped at medium complexity, and only standard models collapsed on hard ones.
+explanation: Extra thinking helped only in a middle band; at high complexity both kinds of model failed completely, and reasoning effort eventually fell as puzzles got harder. How far this generalises beyond puzzles is debated, but it is why simple requests are often sent to non-reasoning modes.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reasoning-models.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7c2ebb69d8557bff63d2d6f2eaf9c1b648b12ae2
+concepts:
+- kt:reasoning-models
+- kt:test-time-compute
+difficulty: 3
+created: '2026-11-20'
+status: active

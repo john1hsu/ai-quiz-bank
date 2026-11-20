@@ -1,0 +1,22 @@
+id: ai-000388
+area: training-and-adaptation
+kind: figure
+topic: 'Pretraining: learning general-purpose representations before task adaptation'
+topic_type: Technique
+maturity: established
+true_statement: In 2024 Meta reported pretraining its 405-billion-parameter Llama 3 model on about 15.6 trillion tokens.
+false_statement: In 2024 Meta reported pretraining its 405-billion-parameter Llama 3 model on about 1.56 trillion tokens.
+explanation: That is roughly 38 tokens per parameter and about 3.8 x 10^25 FLOPs of compute, versus about 3.3 billion words for BERT-large. The jump shows how pretraining scaled up data, not only parameters, after Chinchilla showed many big models were undertrained.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/pretraining.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 90b61898bbd5923f6a5ae016218e3ae7cabd1f26
+concepts:
+- kt:pretraining
+- kt:large-language-model
+- kt:scaling-laws
+difficulty: 2
+created: '2026-11-20'
+status: active

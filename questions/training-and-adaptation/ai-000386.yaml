@@ -1,0 +1,20 @@
+id: ai-000386
+area: training-and-adaptation
+kind: mechanism
+topic: 'Pretraining: learning general-purpose representations before task adaptation'
+topic_type: Technique
+maturity: established
+true_statement: BERT's masked language modelling picks about 15% of input tokens, mostly replaces them with a mask symbol, and trains the model to recover them from context on both sides.
+false_statement: BERT's masked language modelling picks about 15% of input tokens, mostly replaces them with a mask symbol, and trains the model to recover them from the left context only.
+explanation: Masking lets an encoder look both ways while still having a target to predict, which is why BERT is bidirectional. Predicting from left context only is causal language modelling, the objective of GPT-style decoders.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/pretraining.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 90b61898bbd5923f6a5ae016218e3ae7cabd1f26
+concepts:
+- kt:pretraining
+- kt:self-supervised-learning
+difficulty: 1
+created: '2026-11-20'
+status: active

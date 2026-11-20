@@ -1,0 +1,20 @@
+id: ai-000350
+area: training-and-adaptation
+kind: origin
+topic: Instruction tuning
+topic_type: Technique
+maturity: established
+true_statement: Wei et al. at Google Research coined the term instruction tuning, while the concurrent BigScience paper by Sanh et al. called the same idea multitask prompted training.
+false_statement: Sanh et al. at BigScience coined the term instruction tuning, while the concurrent Google Research paper by Wei et al. called the same idea multitask prompted training.
+explanation: Wei et al.'s FLAN paper (ICLR 2022) introduced the name and instruction-tuned Google's 137-billion-parameter LaMDA-PT. Sanh et al.'s T0 work at BigScience appeared at the same time under the label multitask prompted training, so the two names are often mixed up.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/instruction-tuning.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 3b9273fb1e001f57c8b23565ad471da9d34960da
+concepts:
+- kt:instruction-tuning
+- kt:finetuned-language-models-are-zero-shot-learners
+difficulty: 1
+created: '2026-11-20'
+status: active

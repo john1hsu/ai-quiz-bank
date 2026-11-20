@@ -1,0 +1,21 @@
+id: ai-000407
+area: reinforcement-learning
+kind: mechanism
+topic: Proximal policy optimization
+topic_type: Algorithm
+maturity: established
+true_statement: PPO's clipped objective takes the minimum of the unclipped and clipped ratio-times-advantage terms, so pushing a good action's probability ratio past 1+ε earns nothing more.
+false_statement: PPO's clipped objective takes the maximum of the unclipped and clipped ratio-times-advantage terms, so pushing a good action's probability ratio past 1+ε keeps earning more.
+explanation: Taking the minimum makes the objective a pessimistic bound, which removes any incentive to move the new policy far from the one that collected the data. That is how proximal policy optimization (PPO) gets trust-region-like stability while still running several epochs of minibatch updates on one batch.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/proximal-policy-optimization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: bdf7d228d5f4e864168073190088298cdf951424
+concepts:
+- kt:proximal-policy-optimization
+- kt:policy-gradient
+- kt:trust-region-policy-optimization
+difficulty: 2
+created: '2026-11-20'
+status: active

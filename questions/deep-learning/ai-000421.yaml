@@ -1,0 +1,22 @@
+id: ai-000421
+area: deep-learning
+kind: evidence
+topic: Activation function
+topic_type: Concept
+maturity: foundational
+true_statement: In Shazeer's 2020 Transformer experiments, gated SwiGLU and GEGLU feed-forward layers beat ReLU, while plain GELU and Swish did no better than ReLU.
+false_statement: In Shazeer's 2020 Transformer experiments, plain GELU and Swish feed-forward layers beat ReLU, while gated SwiGLU and GEGLU did no better than ReLU.
+explanation: The gain came from gating, multiplying one linear projection by an activated second one, not from the smoother activation alone. Shazeer offered no theory for why it works, and such gains are small and setup-dependent, yet SwiGLU became common in Transformer feed-forward blocks.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/activation-function.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5decde169913884abdadb199c4a46e7f1f124746
+concepts:
+- kt:activation-function
+- kt:swiglu
+- kt:gelu
+- kt:transformer-architecture
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,22 @@
+id: ai-000426
+area: inference-and-optimization
+kind: figure
+topic: vLLM
+topic_type: Tool
+maturity: established
+true_statement: In 2023 vLLM's developers said sharing KV-cache blocks across sequences with copy-on-write cut memory use for parallel sampling and beam search by up to 55%.
+false_statement: In 2023 vLLM's developers said sharing KV-cache blocks across sequences with copy-on-write cut memory use for single-sequence greedy decoding by up to 55%.
+explanation: Parallel samples and beam candidates start from the same prompt, so their cache blocks can be shared with reference counts and copied only when a sequence diverges. A lone greedy sequence has nothing to share with, so the saving cannot come from there.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/vllm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7cf43027e8fd07754445ae3709eddf0d40333bf6
+concepts:
+- kt:vllm
+- kt:kv-cache
+- kt:batching-and-paged-attention
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000412
+area: agents-and-tool-use
+kind: evidence
+topic: Multi-agent systems
+topic_type: Paradigm
+maturity: emerging
+true_statement: Anthropic found multi-agent designs suit broad, parallel research, but fit poorly with tasks where all agents need shared context, which includes most coding work.
+false_statement: Anthropic found multi-agent designs suit most coding work, but fit poorly with broad, parallel research, where all agents need shared context.
+explanation: Subagents with separate context windows shine when a task splits into independent searches, but they struggle when work is tightly interdependent, as most code changes are. That is why multi-agent setups are usually kept for high-value, breadth-first tasks.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/multi-agent-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: af05acf502fcbff779cf320c1e1e4df1b07caf69
+concepts:
+- kt:multi-agent-systems
+- kt:agentic-systems
+difficulty: 2
+created: '2026-11-20'
+status: active

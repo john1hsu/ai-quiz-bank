@@ -1,0 +1,20 @@
+id: ai-000380
+area: inference-and-optimization
+kind: mechanism
+topic: TensorRT-LLM
+topic_type: Tool
+maturity: established
+true_statement: By late 2026 TensorRT-LLM ran models as native PyTorch code and loaded Hugging Face checkpoints directly, having removed its step of compiling a TensorRT engine ahead of time.
+false_statement: By late 2026 TensorRT-LLM compiled every model into a TensorRT engine ahead of time with trtllm-build, having removed its PyTorch backend.
+explanation: TensorRT-LLM began as an engine-compiling workflow, added a PyTorch backend as a beta in version 0.17, then made PyTorch its sole execution backend and dropped trtllm-build. Despite the name, older tutorials' engine-build step no longer exists, so the false statement has the change backwards.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/tensorrt-llm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: cddae2f18f369c19f533aefddc12d6711e390939
+concepts:
+- kt:tensorrt-llm
+- kt:pytorch
+difficulty: 2
+created: '2026-11-20'
+status: active

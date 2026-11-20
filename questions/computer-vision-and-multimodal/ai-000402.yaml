@@ -1,0 +1,20 @@
+id: ai-000402
+area: computer-vision-and-multimodal
+kind: application
+topic: Image classification
+topic_type: Application
+maturity: established
+true_statement: The ImageNet challenge (ILSVRC) scored classifiers by top-5 error, allowing five guesses per image because photos often contain several objects while only one is labeled.
+false_statement: The ImageNet challenge (ILSVRC) scored classifiers by top-5 error, allowing five guesses per image because each photo was labeled with five correct object categories.
+explanation: Each ILSVRC image has a single ground-truth label, and a prediction counts as correct if any of the five guesses matches it. The slack exists because a scene may show several valid objects, so a top-1 miss is not always a real error; the metric only partly fixes that ambiguity.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/image-classification.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e4aaef5156cf4df3fc788de041daf45017699c80
+concepts:
+- kt:image-classification
+- kt:ilsvrc
+difficulty: 1
+created: '2026-11-20'
+status: active

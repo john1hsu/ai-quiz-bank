@@ -1,0 +1,22 @@
+id: ai-000440
+area: training-and-adaptation
+kind: origin
+topic: Constitutional AI
+topic_type: Technique
+maturity: established
+true_statement: Constitutional AI was introduced in December 2022 by an Anthropic team led by Yuntao Bai and Jared Kaplan, in a paper that also popularised the term reinforcement learning from AI feedback.
+false_statement: Constitutional AI was introduced in December 2020 by an Anthropic team led by Yuntao Bai and Jared Kaplan, in a paper that also popularised the term reinforcement learning from AI feedback.
+explanation: 'The paper, Constitutional AI: Harmlessness from AI Feedback, came out at the end of 2022. Its key idea was to replace human harmlessness labels with a short written list of principles plus model-generated feedback, the approach now called RLAIF.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/constitutional-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 874f75224ee18ff80089d17f1cd609e4a08f7c7d
+concepts:
+- kt:constitutional-ai
+- kt:constitutional-ai-harmlessness-from-ai-feedback
+- kt:anthropic
+- kt:reinforcement-learning-from-ai-feedback
+difficulty: 1
+created: '2026-11-20'
+status: active

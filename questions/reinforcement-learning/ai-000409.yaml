@@ -1,0 +1,21 @@
+id: ai-000409
+area: reinforcement-learning
+kind: application
+topic: Proximal policy optimization
+topic_type: Algorithm
+maturity: established
+true_statement: DeepSeek's group relative policy optimization (GRPO, 2024) drops PPO's separate value model and uses the mean and standard deviation of rewards across a group of sampled answers as the baseline.
+false_statement: DeepSeek's group relative policy optimization (GRPO, 2024) drops PPO's separate reward model and uses the mean and standard deviation of rewards across a group of sampled answers as the baseline.
+explanation: In LLM training the value model, PPO's critic, is typically about as large as the policy, so removing it saves a lot of memory. GRPO still needs a reward signal; it only replaces the learned value baseline with group statistics.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/proximal-policy-optimization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: bdf7d228d5f4e864168073190088298cdf951424
+concepts:
+- kt:proximal-policy-optimization
+- kt:actor-critic
+- kt:rlhf
+difficulty: 2
+created: '2026-11-20'
+status: active

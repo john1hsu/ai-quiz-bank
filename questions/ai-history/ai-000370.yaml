@@ -1,0 +1,21 @@
+id: ai-000370
+area: ai-history
+kind: evidence
+topic: Logic Theorist
+topic_type: Model
+maturity: historical
+true_statement: Hao Wang showed a complete, efficient propositional procedure easily proved the Principia theorems that had stumped the Logic Theorist.
+false_statement: Hao Wang showed a complete, efficient propositional procedure stalled on the same Principia theorems that had stumped the Logic Theorist.
+explanation: Wang's result undercut the suggestion that exhaustive enumeration was the only alternative to heuristics, since a systematic method did better. Martin Davis replied that efficient proving was never LT's aim; it was meant to model human problem solving.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/logic-theorist.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7ce0b0d3a377eb696948b568b9c0a6543bc759f3
+concepts:
+- kt:logic-theorist
+- kt:automated-theorem-proving
+- kt:heuristic-search
+difficulty: 3
+created: '2026-11-20'
+status: active

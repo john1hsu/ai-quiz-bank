@@ -1,0 +1,20 @@
+id: ai-000435
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Reranking
+topic_type: Technique
+maturity: established
+true_statement: ColBERT encodes the query and the document separately into per-token embeddings, then sums each query token's highest similarity to any document token.
+false_statement: ColBERT encodes the query and the document jointly as one input into per-token embeddings, then sums each query token's highest similarity to any document token.
+explanation: Encoding separately is what lets ColBERT precompute document embeddings offline, making it over 170 times faster than a BERT cross-encoder at reranking. Joint encoding of query and passage is the cross-encoder design, which is accurate but needs a full transformer pass per pair.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/reranking.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 2489e46e2ae33e0c0b790006cf23dbd8d99bc322
+concepts:
+- kt:reranking
+- kt:colbert
+difficulty: 2
+created: '2026-11-20'
+status: active

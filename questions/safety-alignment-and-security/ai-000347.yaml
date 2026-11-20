@@ -1,0 +1,19 @@
+id: ai-000347
+area: safety-alignment-and-security
+kind: definition
+topic: Hallucination
+topic_type: Risk
+maturity: established
+true_statement: An intrinsic hallucination contradicts the source text, while an extrinsic hallucination can be neither supported nor refuted by the source.
+false_statement: An extrinsic hallucination contradicts the source text, while an intrinsic hallucination can be neither supported nor refuted by the source.
+explanation: In Ji et al.'s taxonomy, a summary giving the wrong year for a dated event is intrinsic because the source shows it is wrong. An extrinsic addition might even be true, but nothing in the input lets you check it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/hallucination.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: f3e320b3150e5f93dc580f595cdf5e1b709eca6a
+concepts:
+- kt:hallucination
+difficulty: 2
+created: '2026-11-20'
+status: active

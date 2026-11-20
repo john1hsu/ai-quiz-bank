@@ -1,0 +1,20 @@
+id: ai-000348
+area: safety-alignment-and-security
+kind: evidence
+topic: Hallucination
+topic_type: Risk
+maturity: established
+true_statement: Kalai and colleagues argue hallucinations persist after post-training partly because benchmarks score an abstention as zero, so a confident guess earns more on average.
+false_statement: Kalai and colleagues argue hallucinations persist after post-training partly because benchmarks penalise an abstention below zero, so a confident guess earns more on average.
+explanation: Like a multiple-choice exam with no penalty for wrong answers, a guess sometimes scores while saying 'I don't know' never does, so models are pushed to bluff. Their proposed fix is to penalise confident errors more than abstentions in mainstream benchmarks, not to punish abstaining.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/hallucination.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: f3e320b3150e5f93dc580f595cdf5e1b709eca6a
+concepts:
+- kt:hallucination
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000376
+area: deep-learning
+kind: evidence
+topic: Recurrent neural network
+topic_type: Architecture
+maturity: established
+true_statement: Pascanu, Mikolov and Bengio (ICML 2013) proposed clipping the gradient norm to tame exploding gradients in RNNs, and a soft regularisation constraint for vanishing ones.
+false_statement: Pascanu, Mikolov and Bengio (ICML 2013) proposed clipping the gradient norm to tame vanishing gradients in RNNs, and a soft regularisation constraint for exploding ones.
+explanation: Clipping caps a gradient that has grown too large, so it cannot rescue one that has shrunk towards zero. Both problems come from multiplying through the same recurrent weights many times in backpropagation through time; vanishing gradients are better fixed by gated architectures.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/recurrent-neural-network.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 2f648f53acaa6e81ba66b03765ab3b625c270205
+concepts:
+- kt:recurrent-neural-network
+- kt:vanishing-gradient-problem
+- kt:backpropagation-through-time
+difficulty: 2
+created: '2026-11-20'
+status: active

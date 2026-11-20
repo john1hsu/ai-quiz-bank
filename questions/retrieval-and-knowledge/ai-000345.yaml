@@ -1,0 +1,20 @@
+id: ai-000345
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Information retrieval
+topic_type: Field
+maturity: foundational
+true_statement: An inverted index maps each term to a postings list of the documents that contain it, so answering a query only means reading the lists for the query's terms.
+false_statement: An inverted index maps each document to a list of the terms it contains, so answering a query only means reading the lists for the query's terms.
+explanation: Scanning every document at query time is far too slow for large collections, so IR systems index in advance by term. Storing terms per document is the forward direction; the index is called inverted precisely because it flips that to documents per term.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/information-retrieval.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e97300672b5f857625fd2dadd9f09a04d1b26bf2
+concepts:
+- kt:information-retrieval
+- kt:inverted-index
+difficulty: 1
+created: '2026-11-20'
+status: active

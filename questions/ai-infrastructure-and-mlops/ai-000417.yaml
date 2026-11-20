@@ -1,0 +1,20 @@
+id: ai-000417
+area: ai-infrastructure-and-mlops
+kind: evidence
+topic: Distributed training
+topic_type: Paradigm
+maturity: established
+true_statement: GPipe's authors found the idle pipeline bubble negligible once the number of micro-batches was at least four times the number of pipeline stages.
+false_statement: GPipe's authors found the idle pipeline bubble negligible once the number of pipeline stages was at least four times the number of micro-batches.
+explanation: The bubble's share of time is about (K−1)/(M+K−1) for K stages and M micro-batches, so it shrinks as micro-batches outnumber stages. Adding stages relative to micro-batches makes the bubble worse, which is why the false statement has the ratio backwards.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/distributed-training.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 1805ef30b44bd31c550f603459a57742bb2bea7c
+concepts:
+- kt:distributed-training
+- kt:pipeline-parallelism
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000371
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: 'Model serving: deploying trained models behind inference APIs'
+topic_type: Concept
+maturity: established
+true_statement: Clipper's adaptive batching used an additive-increase, multiplicative-decrease rule to find the largest batch size that still met its latency objective.
+false_statement: Clipper's adaptive batching used a multiplicative-increase, additive-decrease rule to find the largest batch size that still met its latency objective.
+explanation: Growing the batch slowly and cutting it sharply when a latency target such as 20 ms is missed lets the server probe for throughput without long latency violations. The false version reverses the rule, which would overshoot the target quickly and recover slowly.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/model-serving.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 6e7aca6b27e4c20ed2d3bbc954c9a23808df9b15
+concepts:
+- kt:model-serving
+- kt:clipper-prediction-serving-system
+difficulty: 2
+created: '2026-11-20'
+status: active

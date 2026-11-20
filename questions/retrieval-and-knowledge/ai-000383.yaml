@@ -1,0 +1,21 @@
+id: ai-000383
+area: retrieval-and-knowledge
+kind: origin
+topic: Retrieval-augmented generation for knowledge-intensive tasks
+topic_type: Technique
+maturity: established
+true_statement: The name retrieval-augmented generation comes from a 2020 NeurIPS paper by Patrick Lewis and colleagues, whose generator drew on a dense vector index of Wikipedia.
+false_statement: The name retrieval-augmented generation comes from a 2020 ICML paper by Kelvin Guu and colleagues, whose generator drew on a dense vector index of Wikipedia.
+explanation: 'Lewis et al. coined RAG, pairing a seq2seq model''s parametric memory with a non-parametric Wikipedia index. Guu et al.''s REALM, at ICML 2020, was the precursor: it added a retriever to masked-language-model pretraining but extracted answers rather than generating them.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/retrieval-augmented-generation.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 066a8d59840f80ee61fd8705fc2ce084b6de9de9
+concepts:
+- kt:retrieval-augmented-generation
+- kt:retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks
+- kt:realm
+difficulty: 1
+created: '2026-11-20'
+status: active

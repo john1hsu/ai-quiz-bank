@@ -1,0 +1,20 @@
+id: ai-000344
+area: retrieval-and-knowledge
+kind: origin
+topic: Information retrieval
+topic_type: Field
+maturity: foundational
+true_statement: 'Cyril Cleverdon''s Cranfield experiments in the 1960s set the template for evaluating information retrieval: a fixed document collection, a set of queries and human relevance judgments.'
+false_statement: 'Gerard Salton''s SMART experiments in the 1960s set the template for evaluating information retrieval: a fixed document collection, a set of queries and human relevance judgments.'
+explanation: Cleverdon ran the Cranfield tests at the Cranfield College of Aeronautics from 1958 to 1966, and NIST's TREC later scaled the same collection-queries-judgments recipe up. Salton's SMART project is remembered for ranking ideas such as the vector space model and TF-IDF weighting, not for the evaluation template.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/information-retrieval.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e97300672b5f857625fd2dadd9f09a04d1b26bf2
+concepts:
+- kt:information-retrieval
+- kt:trec
+difficulty: 2
+created: '2026-11-20'
+status: active

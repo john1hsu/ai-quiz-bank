@@ -1,0 +1,21 @@
+id: ai-000401
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Image classification
+topic_type: Application
+maturity: established
+true_statement: A linear classifier on CIFAR-10 flattens each 32×32×3 image into 3,072 numbers, so its weight matrix W is 10×3,072 and yields one score per class.
+false_statement: A linear classifier on CIFAR-10 flattens each 32×32×3 image into 1,024 numbers, so its weight matrix W is 10×1,024 and yields one score per class.
+explanation: Each colour image has 32 × 32 pixels times 3 channels, giving 3,072 inputs; 1,024 would count only one channel. Each of W's 10 rows acts as a template for one class, scored against the whole flattened image as f(x, W) = Wx + b.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/image-classification.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e4aaef5156cf4df3fc788de041daf45017699c80
+concepts:
+- kt:image-classification
+- kt:cifar-10
+- kt:softmax-regression
+difficulty: 2
+created: '2026-11-20'
+status: active

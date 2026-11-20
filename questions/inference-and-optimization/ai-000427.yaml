@@ -1,0 +1,20 @@
+id: ai-000427
+area: inference-and-optimization
+kind: application
+topic: vLLM
+topic_type: Tool
+maturity: established
+true_statement: vLLM's OpenAI-compatible chat endpoints need a chat template in the model's tokenizer configuration; without one, chat requests fail unless a template is passed with --chat-template.
+false_statement: vLLM's OpenAI-compatible completions endpoint needs a chat template in the model's tokenizer configuration; without one, completion requests fail unless a template is passed with --chat-template.
+explanation: A chat request is a list of role-tagged messages, and the template is what turns them into the single prompt string the model was trained on. Plain completions already send a raw prompt, so they need no template; the false statement moves the requirement to the wrong endpoint.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/vllm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 7cf43027e8fd07754445ae3709eddf0d40333bf6
+concepts:
+- kt:vllm
+- kt:model-serving
+difficulty: 2
+created: '2026-11-20'
+status: active

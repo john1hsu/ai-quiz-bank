@@ -1,0 +1,20 @@
+id: ai-000379
+area: governance-and-policy
+kind: mechanism
+topic: Executive orders on AI
+topic_type: Policy
+maturity: emerging
+true_statement: EO 14110 tied mandatory developer reporting to fixed training-compute thresholds, whereas EO 14409 relies on voluntary government access and a classified capability test.
+false_statement: EO 14110 relied on voluntary government access and a classified capability test, whereas EO 14409 tied mandatory developer reporting to fixed training-compute thresholds.
+explanation: The 2023 order used the Defense Production Act to require reports from developers above set compute levels. The 2026 order instead has the NSA designate covered frontier models by benchmarking advanced cyber capabilities, and explicitly creates no mandatory licensing, leaving open which yardstick for frontier risk will last.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/executive-orders-on-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: fea733cd5497dd53c0c193ca6bdaaf4307ef96e5
+concepts:
+- kt:executive-orders-on-ai
+- kt:compute-governance
+difficulty: 3
+created: '2026-11-20'
+status: active

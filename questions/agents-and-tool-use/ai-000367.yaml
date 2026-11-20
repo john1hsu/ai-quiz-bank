@@ -1,0 +1,20 @@
+id: ai-000367
+area: agents-and-tool-use
+kind: figure
+topic: Tool use
+topic_type: Technique
+maturity: established
+true_statement: In 2024 the Gorilla paper reported about 72% zero-shot accuracy on Hugging Face API calls for its fine-tuned LLaMA-7B, against about 20% for GPT-4.
+false_statement: In 2024 the Gorilla paper reported about 20% zero-shot accuracy on Hugging Face API calls for its fine-tuned LLaMA-7B, against about 72% for GPT-4.
+explanation: Gorilla was fine-tuned on APIBench with retrieved API documentation in its prompts, so a small specialised model beat a far larger general one at producing correct calls, checked by abstract-syntax-tree matching. The false statement swaps the two scores.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/tool-use.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: ccd5dd41bc2fa977740b436ea8275ab4c932d8a9
+concepts:
+- kt:tool-use
+difficulty: 2
+created: '2026-11-20'
+status: active

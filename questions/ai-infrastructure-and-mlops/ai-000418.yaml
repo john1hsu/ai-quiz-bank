@@ -1,0 +1,22 @@
+id: ai-000418
+area: ai-infrastructure-and-mlops
+kind: application
+topic: Distributed training
+topic_type: Paradigm
+maturity: established
+true_statement: Narayanan and colleagues advise tensor parallelism within a server, pipeline parallelism across servers, and data parallelism to replicate the result and scale out.
+false_statement: Narayanan and colleagues advise pipeline parallelism within a server, tensor parallelism across servers, and data parallelism to replicate the result and scale out.
+explanation: Tensor parallelism issues frequent all-reduces that need fast links inside a server, while pipeline parallelism only sends point-to-point activations between stages, which slower inter-server networks can carry. Swapping them, as the false statement does, puts the chattiest traffic on the slowest links.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/distributed-training.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 1805ef30b44bd31c550f603459a57742bb2bea7c
+concepts:
+- kt:distributed-training
+- kt:tensor-parallelism
+- kt:pipeline-parallelism
+- kt:data-parallelism
+difficulty: 2
+created: '2026-11-20'
+status: active

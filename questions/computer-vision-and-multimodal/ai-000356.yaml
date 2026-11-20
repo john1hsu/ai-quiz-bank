@@ -1,0 +1,21 @@
+id: ai-000356
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: 'Vision-language model: LLMs with visual input'
+topic_type: Architecture
+maturity: established
+true_statement: Flamingo scales each new cross-attention layer's output by tanh(α) with α initialised to zero, so at the start of training the model behaves exactly like its frozen language model.
+false_statement: Flamingo scales each new cross-attention layer's output by tanh(α) with α initialised to one, so at the start of training visual features already dominate its frozen language model.
+explanation: Since tanh(0) is 0, the inserted layers start switched off and the pretrained LM's behaviour is preserved; the gate then opens gradually as α is learned. Starting the gate fully open would disrupt the frozen LM and make training unstable, which is what the zero init avoids.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-language-model.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: e37757e90b1fac09f17802880b17aadef1fd1dbe
+concepts:
+- kt:vision-language-model
+- kt:flamingo-a-visual-language-model-for-few-shot-learning
+- kt:large-language-model
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000382
+area: inference-and-optimization
+kind: figure
+topic: TensorRT-LLM
+topic_type: Tool
+maturity: established
+true_statement: In September 2023 NVIDIA reported that H100 GPUs running TensorRT-LLM gave up to 8 times the GPT-J-6B summarization throughput of A100 GPUs.
+false_statement: In September 2023 NVIDIA reported that H100 GPUs running TensorRT-LLM gave up to 8 times the GPT-J-6B summarization throughput of H100 GPUs without it.
+explanation: The baseline was an older GPU generation, so the 8x mixes a hardware upgrade with software gains and does not isolate what the library adds. The false version makes it a same-hardware comparison, which is exactly the reading a vendor benchmark like this does not support.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/tensorrt-llm.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: cddae2f18f369c19f533aefddc12d6711e390939
+concepts:
+- kt:tensorrt-llm
+- kt:nvidia
+difficulty: 3
+created: '2026-11-20'
+status: active

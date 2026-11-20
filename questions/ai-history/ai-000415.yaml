@@ -1,0 +1,21 @@
+id: ai-000415
+area: ai-history
+kind: origin
+topic: Expert systems
+topic_type: Paradigm
+maturity: historical
+true_statement: DENDRAL, begun at Stanford in 1965 by Edward Feigenbaum and geneticist Joshua Lederberg, inferred the structure of organic molecules from mass-spectrometry data.
+false_statement: DENDRAL, begun at Stanford in 1972 by Edward Feigenbaum and geneticist Joshua Lederberg, inferred the structure of organic molecules from mass-spectrometry data.
+explanation: Feigenbaum, a student of Herbert Simon, started DENDRAL in 1965 soon after moving to Stanford; 1972 is when work on MYCIN began there. DENDRAL rivalled expert chemists and was used in industry and academia, an early proof that encoded expert knowledge could pay off.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/expert-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 449aa94d2a823e0d1a774ae62698337fc0a4f26b
+concepts:
+- kt:expert-systems
+- kt:dendral
+- kt:edward-feigenbaum
+difficulty: 1
+created: '2026-11-20'
+status: active

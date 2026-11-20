@@ -1,0 +1,21 @@
+id: ai-000429
+area: ml-foundations
+kind: definition
+topic: Regularization
+topic_type: Concept
+maturity: foundational
+true_statement: An L1 penalty, as in the lasso, drives some coefficients to exactly zero, while an L2 penalty spreads weight across many correlated features.
+false_statement: An L2 penalty, as in the lasso, drives some coefficients to exactly zero, while an L1 penalty spreads weight across many correlated features.
+explanation: Because L1 sets some coefficients to zero, the lasso doubles as feature selection and gives sparse, interpretable models. L2 (ridge or weight decay) shrinks all weights smoothly but rarely to zero, which is why it spreads weight across correlated inputs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/regularization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5aa287c101fc9064a8c82fdc0a2c39d0a6023871
+concepts:
+- kt:regularization
+- kt:lasso
+- kt:weight-decay
+difficulty: 1
+created: '2026-11-20'
+status: active

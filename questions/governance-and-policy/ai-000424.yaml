@@ -1,0 +1,20 @@
+id: ai-000424
+area: governance-and-policy
+kind: evidence
+topic: EU AI Act
+topic_type: Policy
+maturity: emerging
+true_statement: Veale and Zuiderveen Borgesius warned that under the draft AI Act most high-risk systems could be certified by the provider's own self-assessment.
+false_statement: Veale and Zuiderveen Borgesius warned that under the draft AI Act most high-risk systems would need certification by an independent third-party auditor.
+explanation: Their critique was that the Act borrows the New Legislative Framework built for goods like lifts and toys, where self-assessment against harmonised standards is common. That shifts real rule-making to private standards bodies, a dependence the later deadline extensions tied to standards readiness bear out.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/eu-ai-act.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 9a14259347a7853da278657552813a938b4ebd9c
+concepts:
+- kt:eu-ai-act
+- kt:new-legislative-framework
+difficulty: 3
+created: '2026-11-20'
+status: active

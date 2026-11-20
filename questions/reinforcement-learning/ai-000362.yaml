@@ -1,0 +1,21 @@
+id: ai-000362
+area: reinforcement-learning
+kind: mechanism
+topic: AlphaZero
+topic_type: Algorithm
+maturity: established
+true_statement: AlphaZero trains its policy head to match the move distribution from tree-search visit counts and its value head to predict each self-play game's final result.
+false_statement: AlphaZero trains its value head to match the move distribution from tree-search visit counts and its policy head to predict each self-play game's final result.
+explanation: The policy head outputs move probabilities, so it imitates the search's improved distribution; the value head outputs one number, so it regresses toward the game outcome z. Search proposes stronger moves than the raw network and the network learns to reproduce them, so each round of self-play starts from a better player.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphazero.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: c2b31837d954a66cb32ea724739eb53594a7f07d
+concepts:
+- kt:alphazero
+- kt:monte-carlo-tree-search
+- kt:self-play
+difficulty: 2
+created: '2026-11-20'
+status: active

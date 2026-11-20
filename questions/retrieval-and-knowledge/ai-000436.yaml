@@ -1,0 +1,21 @@
+id: ai-000436
+area: retrieval-and-knowledge
+kind: evidence
+topic: Reranking
+topic_type: Technique
+maturity: established
+true_statement: A reranker cannot raise recall beyond what its first-stage retriever returns, because it only reorders the candidates it is given.
+false_statement: A reranker can raise recall beyond what its first-stage retriever returns, because it rescans the collection for documents the first stage missed.
+explanation: 'Reranking trades breadth for precision on a shortlist, so a relevant document the first stage never fetched is lost for good. The ColBERT paper showed this: retrieving end to end lifted MS MARCO Recall@1000 from 81.4 when reranking BM25 candidates to 96.8.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/reranking.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 2489e46e2ae33e0c0b790006cf23dbd8d99bc322
+concepts:
+- kt:reranking
+- kt:information-retrieval
+- kt:colbert
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000395
+area: safety-alignment-and-security
+kind: definition
+topic: AI safety
+topic_type: Field
+maturity: emerging
+true_statement: 'AI safety is broader than AI alignment: alignment asks whether a system pursues what its designers intend, while safety also covers misuse and failures on unusual inputs.'
+false_statement: 'AI alignment is broader than AI safety: safety asks whether a system pursues what its designers intend, while alignment also covers misuse and failures on unusual inputs.'
+explanation: A perfectly aligned system can still be misused by its operator, break on out-of-distribution inputs or cause harm once deployed widely, and those problems belong to safety. That is why alignment is treated as one part of AI safety, not the other way round.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/ai-safety.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 179224c4ee88bc069f55683e0e7c16005d545a13
+concepts:
+- kt:ai-safety
+- kt:ai-alignment
+difficulty: 1
+created: '2026-11-20'
+status: active

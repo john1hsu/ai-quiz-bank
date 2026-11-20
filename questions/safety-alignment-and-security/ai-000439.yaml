@@ -1,0 +1,21 @@
+id: ai-000439
+area: safety-alignment-and-security
+kind: application
+topic: Prompt injection
+topic_type: Risk
+maturity: emerging
+true_statement: Because current mitigations do not fully stop prompt injection, NIST advises designing systems on the assumption that it will succeed, for example by splitting work across models with different permissions.
+false_statement: Because current mitigations do not fully stop prompt injection, NIST advises designing systems on the assumption that it will be detected, for example by routing all work through one model behind a filter.
+explanation: 'Detectors and spotlighting of untrusted content help but can be bypassed, so damage is limited by design: least privilege, separated permissions and human approval for high-risk actions. Relying on one well-guarded model puts every permission behind a defence that may fail.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/prompt-injection.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: d33a444e3a1701617e177a51d5b4cc71d6dffb7a
+concepts:
+- kt:prompt-injection
+- kt:ai-agent
+- kt:tool-use
+difficulty: 2
+created: '2026-11-20'
+status: active

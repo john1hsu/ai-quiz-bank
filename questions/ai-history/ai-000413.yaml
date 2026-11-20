@@ -1,0 +1,22 @@
+id: ai-000413
+area: ai-history
+kind: mechanism
+topic: Expert systems
+topic_type: Paradigm
+maturity: historical
+true_statement: EMYCIN was MYCIN with its medical rules removed, a reuse possible because MYCIN kept its knowledge base separate from its inference engine.
+false_statement: EMYCIN was MYCIN's medical rules fitted to a new inference engine, a reuse possible because MYCIN kept its knowledge base separate from its inference engine.
+explanation: EMYCIN kept MYCIN's inference engine and dropped its medical rules, so new domain rules could be loaded; it was later applied to electronics, tax advice and software consulting. Separating knowledge from reasoning made the engine reusable and let a knowledge base grow one rule at a time.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/expert-systems.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 449aa94d2a823e0d1a774ae62698337fc0a4f26b
+concepts:
+- kt:expert-systems
+- kt:mycin
+- kt:knowledge-base
+- kt:inference-engine
+difficulty: 2
+created: '2026-11-20'
+status: active

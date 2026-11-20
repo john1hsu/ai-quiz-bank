@@ -1,0 +1,23 @@
+id: ai-000359
+area: evaluation-and-benchmarks
+kind: figure
+topic: LLM-as-a-judge
+topic_type: Technique
+maturity: established
+true_statement: In 2023, GPT-4 as a judge agreed with human experts on 85% of non-tied MT-Bench votes, slightly above the 81% at which the experts agreed with one another.
+false_statement: In 2023, GPT-4 as a judge agreed with human experts on 81% of non-tied MT-Bench votes, slightly below the 85% at which the experts agreed with one another.
+explanation: Zheng et al.'s headline finding was that a strong LLM judge matched human preferences about as well as humans match each other. That is why LLM judges are used as a cheap first pass, though they are still checked against samples of human ratings.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/llm-as-a-judge.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 66670dfcada708d9e343f424c2b5df3ce1bff671
+concepts:
+- kt:llm-as-a-judge
+- kt:mt-bench
+- kt:human-evaluation
+- kt:judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena
+difficulty: 2
+created: '2026-11-20'
+status: active

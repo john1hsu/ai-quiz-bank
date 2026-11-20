@@ -1,0 +1,20 @@
+id: ai-000408
+area: reinforcement-learning
+kind: evidence
+topic: Proximal policy optimization
+topic_type: Algorithm
+maturity: established
+true_statement: Engstrom et al. (ICLR 2020) found that code-level optimizations left out of PPO's description accounted for most of its reward gain over TRPO.
+false_statement: Engstrom et al. (ICLR 2020) found that the clipped objective at the heart of PPO's description accounted for most of its reward gain over TRPO.
+explanation: Implementation details outside the core algorithm, not the clipping idea itself, drove most of the improvement over trust region policy optimization (TRPO) and even changed how the method behaves. The lesson is to attribute RL results carefully between an algorithm and the code around it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/proximal-policy-optimization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: bdf7d228d5f4e864168073190088298cdf951424
+concepts:
+- kt:proximal-policy-optimization
+- kt:trust-region-policy-optimization
+difficulty: 3
+created: '2026-11-20'
+status: active

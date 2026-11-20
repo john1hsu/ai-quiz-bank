@@ -1,0 +1,20 @@
+id: ai-000377
+area: governance-and-policy
+kind: definition
+topic: Executive orders on AI
+topic_type: Policy
+maturity: emerging
+true_statement: US executive orders on AI bind only the executive branch, cannot override statutes, and can be revoked by the next President.
+false_statement: US executive orders on AI bind private developers as well as agencies, override conflicting statutes, and can be revoked only by Congress.
+explanation: 'An executive order is an instruction from the President to federal agencies, so its reach over companies comes only through follow-on rules, guidance and procurement terms. That is also why it is fragile: a new President can rescind it, as happened to EO 14110 within days in January 2025.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/executive-orders-on-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: fea733cd5497dd53c0c193ca6bdaaf4307ef96e5
+concepts:
+- kt:executive-orders-on-ai
+- kt:ai-governance
+difficulty: 1
+created: '2026-11-20'
+status: active

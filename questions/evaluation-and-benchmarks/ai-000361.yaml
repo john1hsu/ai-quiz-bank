@@ -1,0 +1,19 @@
+id: ai-000361
+area: evaluation-and-benchmarks
+kind: application
+topic: LLM-as-a-judge
+topic_type: Technique
+maturity: established
+true_statement: To counter position bias, LLM judges are often run on both orders of the two answers, counting a win only when the verdict stays the same.
+false_statement: To counter verbosity bias, LLM judges are often run on both orders of the two answers, counting a win only when the verdict stays the same.
+explanation: Position bias means a judge favours an answer because of where it sits; in Zheng et al.'s tests GPT-4 kept its verdict after a swap only 65% of the time. Swapping the order does nothing about verbosity bias, the pull toward longer, padded answers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/llm-as-a-judge.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 66670dfcada708d9e343f424c2b5df3ce1bff671
+concepts:
+- kt:llm-as-a-judge
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000441
+area: training-and-adaptation
+kind: mechanism
+topic: Constitutional AI
+topic_type: Technique
+maturity: established
+true_statement: Constitutional AI first fine-tunes on the model's own critiqued and revised answers, then trains a preference model on AI-labelled comparisons and runs reinforcement learning against it.
+false_statement: Constitutional AI first trains a preference model on AI-labelled comparisons and runs reinforcement learning against it, then fine-tunes on the model's own critiqued and revised answers.
+explanation: The supervised critique-and-revise stage (SL-CAI) comes first and produces the model whose response pairs are then labelled by a feedback model in the RL stage (RL-CAI). Both stages start from a helpful-only model, and the RL stage works like RLHF except that harmlessness labels come from a model guided by the constitution.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/constitutional-ai.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 874f75224ee18ff80089d17f1cd609e4a08f7c7d
+concepts:
+- kt:constitutional-ai
+- kt:rlhf
+- kt:reinforcement-learning-from-ai-feedback
+difficulty: 2
+created: '2026-11-20'
+status: active

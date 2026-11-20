@@ -1,0 +1,20 @@
+id: ai-000430
+area: ml-foundations
+kind: evidence
+topic: Regularization
+topic_type: Concept
+maturity: foundational
+true_statement: Krogh and Hertz (NIPS 1991) showed that in linear networks weight decay suppresses weight components irrelevant to the task by favouring the smallest solution.
+false_statement: Krogh and Hertz (NIPS 1991) showed that in linear networks weight decay suppresses weight components irrelevant to the task by favouring the sparsest solution.
+explanation: 'Their analysis explains why weight decay helps generalization: among solutions that fit the data, the penalty picks the one with the smallest weights, and a well-chosen strength also damps static noise in the targets. Favouring sparse solutions is the signature of an L1 penalty, not of weight decay.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/regularization.md
+  commit: 132c5361e2d7e7a37f75dc36736ca243881b8170
+  blob: 5aa287c101fc9064a8c82fdc0a2c39d0a6023871
+concepts:
+- kt:regularization
+- kt:weight-decay
+difficulty: 3
+created: '2026-11-20'
+status: active
