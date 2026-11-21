@@ -1,0 +1,21 @@
+id: ai-000504
+area: ai-history
+kind: origin
+topic: AI winter
+topic_type: Event
+maturity: historical
+true_statement: DARPA's Strategic Computing programme, announced in 1983 with $1 billion planned over a decade, was partly a response to Japan's Fifth Generation Computer Systems project.
+false_statement: DARPA's Strategic Computing programme, announced in 1983 with $1 billion planned over a decade, was partly a response to Britain's Lighthill report on AI.
+explanation: Strategic Computing belonged to the early-1980s recovery, driven by competition with Japan's Fifth Generation project; the 1973 Lighthill report had instead fed the cuts of the first winter. When contractors missed its milestones, it became part of the second winter's story.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/ai-winter.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 5c9de1492839dc37b6de94d6a00a89b8367d59fb
+concepts:
+- kt:ai-winter
+- kt:strategic-computing-initiative
+- kt:lighthill-report
+difficulty: 2
+created: '2026-11-21'
+status: active

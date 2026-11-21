@@ -1,0 +1,20 @@
+id: ai-000483
+area: safety-alignment-and-security
+kind: origin
+topic: Adversarial machine learning
+topic_type: Field
+maturity: established
+true_statement: Biggio and Roli trace adversarial machine learning to 2004–2005 work showing that linear spam filters could be evaded by small, targeted edits to email content.
+false_statement: Biggio and Roli trace adversarial machine learning to 2014 work showing that linear spam filters could be evaded by small, targeted edits to email content.
+explanation: The field is often dated to the 2014 discovery of adversarial examples in deep networks, but attacks on spam filters by Dalvi et al. and by Lowd and Meek came about a decade earlier. Seeing that history makes clear the problem is not specific to deep learning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/adversarial-machine-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dded5fd2bf4b07328a66d051dd1a3991c8af6
+concepts:
+- kt:adversarial-machine-learning
+- kt:adversarial-example
+difficulty: 2
+created: '2026-11-21'
+status: active

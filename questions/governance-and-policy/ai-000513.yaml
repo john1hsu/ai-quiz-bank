@@ -1,0 +1,21 @@
+id: ai-000513
+area: governance-and-policy
+kind: origin
+topic: Model cards
+topic_type: Technique
+maturity: established
+true_statement: Model cards were proposed by Margaret Mitchell, Timnit Gebru and colleagues, most of them at Google, in the paper Model Cards for Model Reporting at FAT* 2019.
+false_statement: Model cards were proposed by Margaret Mitchell, Timnit Gebru and colleagues, most of them at Microsoft, in the paper Model Cards for Model Reporting at FAT* 2019.
+explanation: The Google-based team argued that models were entering high-stakes uses such as hiring and health care with no standard way to report how they perform, so biases surfaced only after deployment. Their one-to-two-page cards became a template that Hugging Face and others adopted.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/model-cards.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c12dc80168ebcae571e80aad6e4e6823a9aa49f8
+concepts:
+- kt:model-cards
+- kt:margaret-mitchell
+- kt:model-cards-for-model-reporting
+difficulty: 1
+created: '2026-11-21'
+status: active

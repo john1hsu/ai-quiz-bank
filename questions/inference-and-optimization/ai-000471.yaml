@@ -1,0 +1,20 @@
+id: ai-000471
+area: inference-and-optimization
+kind: mechanism
+topic: Beam search
+topic_type: Algorithm
+maturity: established
+true_statement: Beam search usually divides a finished hypothesis's summed log-probability by a power of its length, because each extra token lowers the raw score and would unfairly favour short outputs.
+false_statement: Beam search usually divides a finished hypothesis's summed log-probability by a power of its length, because each extra token raises the raw score and would unfairly favour long outputs.
+explanation: Log-probabilities are negative, so every added token makes the sum smaller. Length normalisation, typically dividing by L to the power 0.75, offsets that bias so longer, complete answers are not crowded out.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/beam-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 2f07a5deeb988a7aa963228483555ef506074b20
+concepts:
+- kt:beam-search
+- kt:decoding-strategy
+difficulty: 2
+created: '2026-11-21'
+status: active

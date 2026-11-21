@@ -1,0 +1,20 @@
+id: ai-000463
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: PyTorch
+topic_type: Tool
+maturity: established
+true_statement: In torch.compile, TorchDynamo captures runs of PyTorch operations from Python bytecode into an FX graph, and TorchInductor compiles that graph into Triton kernels for GPUs.
+false_statement: In torch.compile, TorchInductor captures runs of PyTorch operations from Python bytecode into an FX graph, and TorchDynamo compiles that graph into Triton kernels for GPUs.
+explanation: Dynamo is the front end, a just-in-time compiler that rewrites bytecode so PyTorch can recover a graph without giving up Python's flexibility. Inductor is the default back end that turns the graph into Triton GPU kernels or C++ for CPUs; the false version swaps their roles.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/pytorch.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: d0ae66d50768199fd3293cb7733ba9c0eb79492c
+concepts:
+- kt:pytorch
+- kt:gpu-computing
+difficulty: 2
+created: '2026-11-21'
+status: active

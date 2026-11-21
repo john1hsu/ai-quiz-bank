@@ -1,0 +1,22 @@
+id: ai-000509
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: Google
+topic_type: Organization
+maturity: established
+true_statement: In 2017 Google reported its first TPU ran production neural-network inference roughly 15–30 times faster than contemporary CPUs and GPUs, with 30–80 times better performance per watt.
+false_statement: In 2017 Google reported its first TPU ran production neural-network inference roughly 30–80 times faster than contemporary CPUs and GPUs, with 15–30 times better performance per watt.
+explanation: Jouppi and colleagues compared the TPU with Intel Haswell CPUs and NVIDIA K80 GPUs on MLP, CNN and LSTM workloads. The energy-efficiency gain was even larger than the raw speed gain, showing what a custom inference chip could buy over general-purpose hardware; the false version swaps the two ranges.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/google.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: aaed9011ab631f12fda4cf3637b6bf81016da8ee
+concepts:
+- kt:google
+- kt:tpu
+- kt:nvidia
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,22 @@
+id: ai-000486
+area: training-and-adaptation
+kind: definition
+topic: Hugging Face TRL
+topic_type: Tool
+maturity: established
+true_statement: Despite its name, Hugging Face's TRL (Transformers Reinforcement Learning) is mostly used for supervised fine-tuning and offline preference training, with reinforcement learning one family among several.
+false_statement: As its name suggests, Hugging Face's TRL (Transformers Reinforcement Learning) is mostly used for online reinforcement learning such as PPO, with supervised fine-tuning one family among several.
+explanation: TRL began around the RL step of the RLHF recipe, but it grew into a general post-training library. Day to day, people mostly use its SFT and DPO-style trainers, which need no online generation or reward model in the loop.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/hugging-face-trl.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c27faf2094d162c0cfc230744cd10e20162b2ee4
+concepts:
+- kt:hugging-face-trl
+- kt:post-training
+- kt:fine-tuning
+- kt:hugging-face
+difficulty: 1
+created: '2026-11-21'
+status: active

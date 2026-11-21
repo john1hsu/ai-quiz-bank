@@ -1,0 +1,20 @@
+id: ai-000529
+area: safety-alignment-and-security
+kind: definition
+topic: Concrete Problems in AI Safety
+topic_type: Work
+maturity: historical
+true_statement: Concrete Problems in AI Safety defines an accident as unintended, harmful behaviour that emerges from a machine-learning system, treating deliberate misuse only as an adjacent topic.
+false_statement: Concrete Problems in AI Safety defines an accident as harmful behaviour caused by people deliberately misusing a machine-learning system, treating unintended failures only as an adjacent topic.
+explanation: The paper's focus is systems that go wrong on their own, usually through a badly specified objective or a faulty learning process. Misuse, privacy, fairness and security are listed as neighbouring concerns, which is also one of the agenda's acknowledged limits.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/concrete-problems-in-ai-safety.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 9962eece79c8de7227d97b9bf0af93f41500ed69
+concepts:
+- kt:concrete-problems-in-ai-safety
+- kt:ai-safety
+difficulty: 1
+created: '2026-11-21'
+status: active

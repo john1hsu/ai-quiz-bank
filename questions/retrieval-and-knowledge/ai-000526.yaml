@@ -1,0 +1,22 @@
+id: ai-000526
+area: retrieval-and-knowledge
+kind: figure
+topic: Vector database
+topic_type: Tool
+maturity: established
+true_statement: In 2019 DiskANN reported over 95% 1-recall@1 on a one-billion-point index served from a 64 GB RAM workstation, while memory-matched Faiss baselines plateaued near 50% recall.
+false_statement: In 2019 DiskANN reported over 95% 1-recall@1 on a one-billion-point index served from a 64 GB RAM workstation, while memory-matched Faiss baselines plateaued near 85% recall.
+explanation: DiskANN kept only compressed vectors in RAM and put its Vamana graph on SSD, so it could search a billion points accurately on modest hardware. In-memory baselines given the same RAM budget stalled at around half that recall.
+as_of: '2019'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/vector-database.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: a1568ddc6cbe21fcbdc97b47f2f5f1491c3890ea
+concepts:
+- kt:vector-database
+- kt:approximate-nearest-neighbor-search
+- kt:faiss
+difficulty: 3
+created: '2026-11-21'
+status: active

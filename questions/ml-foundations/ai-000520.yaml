@@ -1,0 +1,21 @@
+id: ai-000520
+area: ml-foundations
+kind: mechanism
+topic: Statistical learning theory
+topic_type: Field
+maturity: foundational
+true_statement: Vapnik's key theorem says empirical risk minimisation is consistent exactly when empirical risk converges to true risk uniformly over the whole hypothesis class.
+false_statement: Vapnik's key theorem says empirical risk minimisation is consistent exactly when empirical risk converges to true risk for the single hypothesis it ends up choosing.
+explanation: Because the learner picks the hypothesis that looks best on the sample, convergence for any one fixed hypothesis is not enough. The guarantee must hold across the whole class at once, which is why capacity measures like the VC dimension enter the analysis.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/statistical-learning-theory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 0dad01e3e815aa655e4d522caf36e805d94826fd
+concepts:
+- kt:statistical-learning-theory
+- kt:vladimir-vapnik
+- kt:supervised-learning
+difficulty: 3
+created: '2026-11-21'
+status: active

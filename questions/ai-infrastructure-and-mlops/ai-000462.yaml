@@ -1,0 +1,21 @@
+id: ai-000462
+area: ai-infrastructure-and-mlops
+kind: definition
+topic: PyTorch
+topic_type: Tool
+maturity: established
+true_statement: PyTorch rebuilds its autograd graph from scratch on every iteration, so ordinary Python if statements and loops can change the graph's shape from one step to the next.
+false_statement: PyTorch builds its autograd graph once before training starts, so ordinary Python if statements and loops are frozen into one graph shape for every step.
+explanation: This define-by-run design means the code that runs is the code that gets differentiated, which makes debugging and data-dependent control flow easy. Declaring a fixed graph ahead of execution is how earlier static-graph frameworks worked.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/pytorch.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: d0ae66d50768199fd3293cb7733ba9c0eb79492c
+concepts:
+- kt:pytorch
+- kt:automatic-differentiation
+- kt:deep-learning-framework
+difficulty: 2
+created: '2026-11-21'
+status: active

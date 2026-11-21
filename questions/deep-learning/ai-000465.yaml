@@ -1,0 +1,20 @@
+id: ai-000465
+area: deep-learning
+kind: definition
+topic: Batch normalization
+topic_type: Technique
+maturity: established
+true_statement: Batch normalization standardizes each feature with statistics computed across the examples in a mini-batch, whereas layer normalization uses statistics across the features of a single example.
+false_statement: Batch normalization standardizes each feature with statistics computed across the features of a single example, whereas layer normalization uses statistics across the examples in a mini-batch.
+explanation: Because batch norm pools over the batch, it depends on batch size and behaves differently at training and inference. Layer norm normalizes within one example, so it is batch-size independent, which is why it suits settings with tiny or unreliable batches.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/batch-normalization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: baf5e0ac0d48b590e098a290e42cad77effee3fd
+concepts:
+- kt:batch-normalization
+- kt:layer-normalization
+difficulty: 1
+created: '2026-11-21'
+status: active

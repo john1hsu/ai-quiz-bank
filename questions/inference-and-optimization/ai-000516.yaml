@@ -1,0 +1,20 @@
+id: ai-000516
+area: inference-and-optimization
+kind: mechanism
+topic: LLM inference optimization
+topic_type: Field
+maturity: established
+true_statement: In LLM inference, prefill is a matrix-matrix workload that keeps the GPU busy, while decode is a matrix-vector workload whose latency is dominated by memory transfers.
+false_statement: In LLM inference, decode is a matrix-matrix workload that keeps the GPU busy, while prefill is a matrix-vector workload whose latency is dominated by memory transfers.
+explanation: Prefill processes all prompt tokens at once, giving the GPU plenty of arithmetic per byte loaded. Decode handles one token per step, so weights and cache must be reloaded for little work, which is why most optimizations target the decode phase.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/llm-inference-optimization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 4ef57e785fb8a81e442af88a93f31aeb8fca0935
+concepts:
+- kt:llm-inference-optimization
+- kt:kv-cache
+difficulty: 2
+created: '2026-11-21'
+status: active

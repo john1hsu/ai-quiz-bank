@@ -1,0 +1,21 @@
+id: ai-000490
+area: computer-vision-and-multimodal
+kind: evidence
+topic: Vision transformer
+topic_type: Architecture
+maturity: established
+true_statement: ViTDet showed a plain, single-scale ViT can be a strong detection backbone by building a simple feature pyramid from its output, without a hierarchical design.
+false_statement: ViTDet showed a plain, single-scale ViT can be a strong detection backbone only after adding Swin-style patch-merging stages to make it hierarchical.
+explanation: Detection needs multi-scale features, which is why hierarchical designs like Swin were assumed necessary. ViTDet built a simple pyramid from the plain ViT's single-scale output instead, decoupling pre-training from the task so one plain ViT can be pre-trained once and reused.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-transformer.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 99e82a789a1ca77c2ebe877afe750c76801188d6
+concepts:
+- kt:vision-transformer
+- kt:object-detection
+- kt:masked-autoencoder
+difficulty: 3
+created: '2026-11-21'
+status: active

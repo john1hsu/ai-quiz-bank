@@ -1,0 +1,21 @@
+id: ai-000539
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Chatbot Arena
+topic_type: Benchmark
+maturity: established
+true_statement: The Leaderboard Illusion (2025) argued that undisclosed private testing let some Chatbot Arena providers try many model variants and publish only the best.
+false_statement: The Leaderboard Illusion (2025) argued that undisclosed private testing let some Chatbot Arena providers see other labs' test prompts in advance and tune on them.
+explanation: 'The preprint''s concern was selection: if a provider can test many variants privately and publish only the top score, the ranking rewards trying often rather than being better. These are the study authors'' claims, but they show how a widely watched leaderboard invites Goodhart-style pressure.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/chatbot-arena.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 581989321fe70c8e7f4e3f736cd2bf01239d4cbd
+concepts:
+- kt:chatbot-arena
+- kt:the-leaderboard-illusion
+- kt:goodharts-law
+difficulty: 3
+created: '2026-11-21'
+status: active

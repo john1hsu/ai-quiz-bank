@@ -1,0 +1,20 @@
+id: ai-000478
+area: prompting-and-reasoning
+kind: application
+topic: Structured output
+topic_type: Technique
+maturity: established
+true_statement: In OpenAI's API, JSON mode guarantees syntactically valid JSON but not that it fits a schema, while Structured Outputs with strict mode enforces a supplied JSON Schema.
+false_statement: In OpenAI's API, Structured Outputs guarantees syntactically valid JSON but not that it fits a schema, while JSON mode with strict mode enforces a supplied JSON Schema.
+explanation: 'JSON mode is the older, weaker option: output parses, but fields can be missing or wrong. Structured Outputs takes a schema and constrains decoding to it, though values and business rules still need checking in application code.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/structured-output.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: f13bce70285a30168b094f8bfd8dbf456e1f34a7
+concepts:
+- kt:structured-output
+- kt:function-calling
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000488
+area: training-and-adaptation
+kind: application
+topic: Hugging Face TRL
+topic_type: Tool
+maturity: established
+true_statement: From TRL v1.0 in 2026, SFT, DPO, reward modeling, RLOO and GRPO form a stable core under semantic versioning, while methods such as ORPO sit in an experimental namespace.
+false_statement: From TRL v1.0 in 2026, SFT, DPO, reward modeling, RLOO and ORPO form a stable core under semantic versioning, while methods such as GRPO sit in an experimental namespace.
+explanation: The split tells users which trainers they can build on without breaking changes. Methods graduate from experimental to stable based on how much they are used relative to their maintenance cost, and GRPO is one of the library's flagship trainers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/hugging-face-trl.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c27faf2094d162c0cfc230744cd10e20162b2ee4
+concepts:
+- kt:hugging-face-trl
+- kt:direct-preference-optimization
+- kt:reward-model
+difficulty: 2
+created: '2026-11-21'
+status: active

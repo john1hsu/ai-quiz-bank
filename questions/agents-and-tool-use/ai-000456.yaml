@@ -1,0 +1,20 @@
+id: ai-000456
+area: agents-and-tool-use
+kind: origin
+topic: ReAct prompting
+topic_type: Technique
+maturity: established
+true_statement: ReAct was introduced by Shunyu Yao and colleagues with Google Research's Brain Team, posted to arXiv in October 2022 and published at ICLR 2023.
+false_statement: ReAct was introduced by Shunyu Yao and colleagues with Google Research's Brain Team, posted to arXiv in October 2022 and published at NeurIPS 2023.
+explanation: ReAct appeared at ICLR 2023. The confusion is natural because Yao's follow-up, Tree of Thoughts, was the NeurIPS 2023 paper; the two together trace a line from interleaved reasoning and acting to explicit search over thoughts.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/react-prompting.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 56f7987d61c876b5019c386219b732dcaa00ffbe
+concepts:
+- kt:react-prompting
+- kt:google
+difficulty: 1
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000484
+area: safety-alignment-and-security
+kind: mechanism
+topic: Adversarial machine learning
+topic_type: Field
+maturity: established
+true_statement: Goodfellow, Shlens and Szegedy argued that vulnerability to small worst-case input perturbations stems mainly from models behaving too linearly in high-dimensional input spaces.
+false_statement: Goodfellow, Shlens and Szegedy argued that vulnerability to small worst-case input perturbations stems mainly from models behaving too nonlinearly and overfitting their training data.
+explanation: In high dimensions, many tiny per-feature changes add up to a large change in a roughly linear model's output. That insight explains why adversarial examples are so easy to find, and it led to their fast perturbation method and its use for adversarial training.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/adversarial-machine-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dded5fd2bf4b07328a66d051dd1a3991c8af6
+concepts:
+- kt:adversarial-machine-learning
+- kt:adversarial-example
+- kt:adversarial-training
+difficulty: 3
+created: '2026-11-21'
+status: active

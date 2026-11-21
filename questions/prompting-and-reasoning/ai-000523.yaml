@@ -1,0 +1,21 @@
+id: ai-000523
+area: prompting-and-reasoning
+kind: figure
+topic: Tree of Thoughts
+topic_type: Technique
+maturity: established
+true_statement: In 2023, Tree of Thoughts with breadth 5 solved 74% of Game of 24 problems with GPT-4, against 4.0% for chain-of-thought prompting.
+false_statement: In 2023, Tree of Thoughts with breadth 5 solved 45% of Game of 24 problems with GPT-4, against 4.0% for chain-of-thought prompting.
+explanation: Game of 24 punishes bad early choices, which is where search with lookahead helps most. The 45% figure is ToT with breadth 1; keeping five candidate states per step raised it to 74%.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/tree-of-thoughts.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 12fa686f05b0432101899b45c6b1f01114956418
+concepts:
+- kt:tree-of-thoughts
+- kt:chain-of-thought
+difficulty: 3
+created: '2026-11-21'
+status: active

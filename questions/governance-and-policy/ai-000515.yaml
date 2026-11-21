@@ -1,0 +1,20 @@
+id: ai-000515
+area: governance-and-policy
+kind: evidence
+topic: Model cards
+topic_type: Technique
+maturity: established
+true_statement: A 2024 study of 32,111 Hugging Face model cards found training sections were filled in most consistently, while environmental impact, limitations and evaluation sections were filled in least.
+false_statement: A 2024 study of 32,111 Hugging Face model cards found evaluation and limitations sections were filled in most consistently, while training and environmental impact sections were filled in least.
+explanation: 'Developers readily describe how they trained a model but skimp on the parts that matter most for safe use: where it fails and how it was tested. Having a card is common, so quality, not presence, is the real gap.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/model-cards.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c12dc80168ebcae571e80aad6e4e6823a9aa49f8
+concepts:
+- kt:model-cards
+- kt:hugging-face-hub
+difficulty: 3
+created: '2026-11-21'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000535
+area: computer-vision-and-multimodal
+kind: evidence
+topic: Latent diffusion model
+topic_type: Architecture
+maturity: established
+true_statement: 'Testing autoencoder downsampling factors from 1 to 32, the latent diffusion authors found 4 and 8 struck the right balance: a factor of 1 trained slowly and 32 lost too much detail.'
+false_statement: 'Testing autoencoder downsampling factors from 1 to 32, the latent diffusion authors found 32 struck the right balance: a factor of 1 trained slowly and 4 or 8 lost too much detail.'
+explanation: A factor of 1 is just pixel-space diffusion, which is slow and costly; very aggressive compression throws away detail the decoder cannot recover. Moderate compression lets the diffusion model spend its capacity on semantic structure while the frozen autoencoder handles perceptual detail.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/latent-diffusion-model.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 8d0ff5a000e595d2cbfda2d725ab995f63e761b9
+concepts:
+- kt:latent-diffusion-model
+- kt:variational-autoencoder
+difficulty: 3
+created: '2026-11-21'
+status: active

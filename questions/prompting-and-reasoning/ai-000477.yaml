@@ -1,0 +1,21 @@
+id: ai-000477
+area: prompting-and-reasoning
+kind: mechanism
+topic: Structured output
+topic_type: Technique
+maturity: established
+true_statement: Constrained decoding zeroes the probability of every token that could not lead to a valid output and renormalises, so sampling settings such as temperature still apply within the allowed set.
+false_statement: Constrained decoding zeroes the probability of every token that could not lead to a valid output and renormalises, so sampling settings such as temperature stop having any effect.
+explanation: 'The constraint is a mask applied before sampling, not a replacement for it: the model still samples, just from the tokens that keep the output parseable. Temperature reshapes the probabilities among those allowed tokens.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/structured-output.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: f13bce70285a30168b094f8bfd8dbf456e1f34a7
+concepts:
+- kt:structured-output
+- kt:constrained-decoding
+- kt:sampling-temperature-and-top-p
+difficulty: 2
+created: '2026-11-21'
+status: active

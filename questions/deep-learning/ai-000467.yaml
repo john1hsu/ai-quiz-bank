@@ -1,0 +1,20 @@
+id: ai-000467
+area: deep-learning
+kind: evidence
+topic: Batch normalization
+topic_type: Technique
+maturity: established
+true_statement: Santurkar and colleagues (NeurIPS 2018) found batch normalization helps mainly by smoothing the optimization landscape, not by stabilizing the distribution of layer inputs.
+false_statement: Santurkar and colleagues (NeurIPS 2018) found batch normalization helps mainly by stabilizing the distribution of layer inputs, not by smoothing the optimization landscape.
+explanation: Ioffe and Szegedy's original story was that batch norm reduces internal covariate shift. Santurkar's group found that input-distribution stability had little to do with its success; a smoother landscape makes gradients more predictable, so larger steps are safe.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/batch-normalization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: baf5e0ac0d48b590e098a290e42cad77effee3fd
+concepts:
+- kt:batch-normalization
+- kt:batch-normalization-accelerating-deep-network-training
+difficulty: 3
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000480
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Hybrid search
+topic_type: Technique
+maturity: established
+true_statement: Reciprocal rank fusion scores each document by summing 1/(k + rank) over the result lists that contain it, so BM25 scores and cosine similarities never need a common scale.
+false_statement: Reciprocal rank fusion scores each document by summing its min-max normalised scores over the result lists that contain it, so BM25 scores and cosine similarities share a common scale.
+explanation: RRF throws away raw scores and keeps only positions, which sidesteps the fact that lexical and dense scores live on unrelated scales. Normalising and summing scores is the other fusion family, score fusion, used for example by Weaviate's relative score fusion.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/hybrid-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3e34d2f86b24f10cfef01d7698e271f215186b1b
+concepts:
+- kt:hybrid-search
+- kt:reciprocal-rank-fusion
+- kt:bm25
+difficulty: 2
+created: '2026-11-21'
+status: active

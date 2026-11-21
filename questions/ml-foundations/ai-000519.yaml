@@ -1,0 +1,20 @@
+id: ai-000519
+area: ml-foundations
+kind: definition
+topic: Statistical learning theory
+topic_type: Field
+maturity: foundational
+true_statement: The VC dimension of a hypothesis class is the size of the largest set of points it can shatter, and linear classifiers in n dimensions have VC dimension n + 1.
+false_statement: The VC dimension of a hypothesis class is the size of the largest set of points it can shatter, and linear classifiers in n dimensions have VC dimension 2n.
+explanation: 'Shattering means the class can realise every possible labelling of the points, so the VC dimension measures capacity: for linear classifiers it is one more than the input dimension. Generalisation bounds grow with this capacity and shrink with the sample size.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/statistical-learning-theory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 0dad01e3e815aa655e4d522caf36e805d94826fd
+concepts:
+- kt:statistical-learning-theory
+- kt:vc-dimension
+difficulty: 2
+created: '2026-11-21'
+status: active

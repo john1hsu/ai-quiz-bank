@@ -1,0 +1,20 @@
+id: ai-000533
+area: training-and-adaptation
+kind: evidence
+topic: Parameter-efficient fine-tuning
+topic_type: Paradigm
+maturity: established
+true_statement: Prompt tuning on T5 grew more competitive with model size, matching full fine-tuning only beyond billions of parameters and lagging behind it at smaller scales.
+false_statement: Prompt tuning on T5 grew less competitive with model size, matching full fine-tuning only at small scales and lagging behind it beyond billions of parameters.
+explanation: A learned soft prompt at the input is a very small lever, and only at large scale did it match tuning all weights. So prompt tuning's parity with full fine-tuning is mainly a large-model result, and at smaller scales it lags.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/parameter-efficient-fine-tuning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: bc8951514b171d5bd1f619c95c15455316710b97
+concepts:
+- kt:parameter-efficient-fine-tuning
+- kt:prompt-tuning
+difficulty: 3
+created: '2026-11-21'
+status: active

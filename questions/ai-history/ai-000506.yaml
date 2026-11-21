@@ -1,0 +1,21 @@
+id: ai-000506
+area: ai-history
+kind: figure
+topic: AI winter
+topic_type: Event
+maturity: historical
+true_statement: Total US federal AI funding, including Strategic Computing, rose from $106 million in 1984 to $274 million in 1988, just before the second AI winter set in.
+false_statement: Total US federal AI funding, including Strategic Computing, fell from $274 million in 1984 to $106 million in 1988, just before the second AI winter set in.
+explanation: 'The mid-1980s were a boom: expert systems and Strategic Computing more than doubled federal AI money. The winter came after that peak, when expert systems proved brittle and the Lisp-machine market collapsed, so the false version reverses the direction of the boom.'
+as_of: '1988'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/ai-winter.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 5c9de1492839dc37b6de94d6a00a89b8367d59fb
+concepts:
+- kt:ai-winter
+- kt:strategic-computing-initiative
+difficulty: 2
+created: '2026-11-21'
+status: active

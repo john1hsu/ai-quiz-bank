@@ -1,0 +1,21 @@
+id: ai-000489
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Vision transformer
+topic_type: Architecture
+maturity: established
+true_statement: Swin Transformer computes self-attention only inside local windows, so its cost grows linearly with image size, and shifts the window grid between blocks so information crosses window borders.
+false_statement: Swin Transformer computes self-attention only inside local windows, so its cost grows quadratically with image size, and shifts the window grid between blocks so information crosses window borders.
+explanation: Global self-attention compares every patch with every other, so its cost is quadratic in the number of patches. Restricting attention to fixed-size windows (7×7 patches by default) makes cost linear, and shifting the windows between blocks restores communication across them, at the price of reintroducing a locality prior.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-transformer.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 99e82a789a1ca77c2ebe877afe750c76801188d6
+concepts:
+- kt:vision-transformer
+- kt:swin-transformer
+- kt:self-attention
+difficulty: 2
+created: '2026-11-21'
+status: active

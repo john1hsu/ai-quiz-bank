@@ -1,0 +1,20 @@
+id: ai-000508
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Google
+topic_type: Organization
+maturity: established
+true_statement: TensorFlow, described by Google Brain at OSDI 2016, represents both computation and mutable state as dataflow graphs and maps them across CPUs, GPUs and custom accelerators.
+false_statement: TensorFlow, described by Google Brain at OSDI 2016, represents computation as dataflow graphs but keeps mutable state on separate parameter servers outside the graph.
+explanation: Putting state inside the dataflow graph was TensorFlow's break from earlier parameter-server systems, and its authors argued this gave developers more freedom to try new training algorithms. The false version describes the older design it was contrasted with.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/google.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: aaed9011ab631f12fda4cf3637b6bf81016da8ee
+concepts:
+- kt:google
+- kt:tensorflow
+difficulty: 2
+created: '2026-11-21'
+status: active

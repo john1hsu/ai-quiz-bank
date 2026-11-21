@@ -1,0 +1,21 @@
+id: ai-000542
+area: reinforcement-learning
+kind: mechanism
+topic: SARSA
+topic_type: Algorithm
+maturity: foundational
+true_statement: Expected SARSA replaces the sampled next action's value in SARSA's target with the expected value of Q(S_{t+1}, ·) under the policy, removing that sampling variance.
+false_statement: Expected SARSA replaces the sampled next action's value in SARSA's target with the maximum of Q(S_{t+1}, ·) over actions, removing that sampling variance.
+explanation: Taking the maximum would make it Q-learning; Expected SARSA instead averages over the next actions the policy might take. That removes the noise of sampling A_{t+1} at extra computational cost, and van Seijen and colleagues found it tolerates larger learning rates.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/sarsa.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 17b8fa5e564cbbd5acc6850bd6a78d1f7a3215df
+concepts:
+- kt:sarsa
+- kt:expected-sarsa
+- kt:q-learning
+difficulty: 2
+created: '2026-11-21'
+status: active

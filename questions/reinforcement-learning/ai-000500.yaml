@@ -1,0 +1,20 @@
+id: ai-000500
+area: reinforcement-learning
+kind: evidence
+topic: Monte Carlo tree search
+topic_type: Algorithm
+maturity: established
+true_statement: Plain UCT struggles in games with trap states, where a loss follows within a few moves, which is one reason MCTS lagged in chess.
+false_statement: Plain UCT struggles in games with trap states, where a loss follows within a few moves, which is one reason MCTS lagged in Go.
+explanation: Random playouts average over many lines and can miss a short forced loss that a minimax search would spot. Chess is full of such tactical traps, whereas Go lacked good evaluation heuristics, which is exactly where MCTS dominated for a decade.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/monte-carlo-tree-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 475b89acf2feac8fb4bf8ca4d57a0db23bf7a818
+concepts:
+- kt:monte-carlo-tree-search
+- kt:alpha-beta-pruning
+difficulty: 3
+created: '2026-11-21'
+status: active

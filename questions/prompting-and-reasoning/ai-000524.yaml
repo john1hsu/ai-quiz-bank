@@ -1,0 +1,20 @@
+id: ai-000524
+area: prompting-and-reasoning
+kind: evidence
+topic: Tree of Thoughts
+topic_type: Technique
+maturity: established
+true_statement: The Tree of Thoughts authors estimated that it can generate 5 to 100 times more tokens than chain-of-thought prompting on the same problem.
+false_statement: The Tree of Thoughts authors estimated that it can generate 1.5 to 2 times more tokens than chain-of-thought prompting on the same problem.
+explanation: Every branch proposed, evaluated and expanded costs model calls, so search multiplies token use well beyond a single chain. That price is why the authors note deliberate search may be unnecessary on tasks a strong model already handles.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/tree-of-thoughts.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 12fa686f05b0432101899b45c6b1f01114956418
+concepts:
+- kt:tree-of-thoughts
+- kt:test-time-compute
+difficulty: 2
+created: '2026-11-21'
+status: active

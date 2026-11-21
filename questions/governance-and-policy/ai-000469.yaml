@@ -1,0 +1,21 @@
+id: ai-000469
+area: governance-and-policy
+kind: definition
+topic: ISO/IEC 42001
+topic_type: Policy
+maturity: emerging
+true_statement: An ISO/IEC 42001 certificate attests that an organization runs a conforming AI management system; the standard sets no performance, robustness or safety thresholds for particular models.
+false_statement: An ISO/IEC 42001 certificate attests that each of an organization's models meets the standard's minimum performance, robustness and safety thresholds.
+explanation: 'Like ISO/IEC 27001 for information security, 42001 audits the governance process: policies, roles, risk assessment and treatment, monitoring and improvement. It says nothing about how good or safe a specific model is, so a certificate is not a model safety rating.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/iso-iec-42001.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3bf8168bed6fc2017b55319882bd05e0217a67ca
+concepts:
+- kt:iso-iec-42001
+- kt:ai-governance
+- kt:iso-iec-27001
+difficulty: 2
+created: '2026-11-21'
+status: active

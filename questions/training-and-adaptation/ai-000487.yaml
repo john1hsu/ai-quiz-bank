@@ -1,0 +1,22 @@
+id: ai-000487
+area: training-and-adaptation
+kind: mechanism
+topic: Hugging Face TRL
+topic_type: Tool
+maturity: established
+true_statement: When TRL's PPO trainer is used with LoRA adapters, switching the adapters off turns the same weights back into the frozen reference model, so no second model copy is needed.
+false_statement: When TRL's PPO trainer is used with LoRA adapters, switching the adapters off turns the same weights into the reward model, so no separate reward model is needed.
+explanation: RLHF-style PPO compares the policy against a frozen reference model, normally a second full copy. With adapters, the base weights are that reference and the adapters are the policy, which is how a 20-billion-parameter RL run fit on one 24 GB GPU in 2023.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/hugging-face-trl.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c27faf2094d162c0cfc230744cd10e20162b2ee4
+concepts:
+- kt:hugging-face-trl
+- kt:proximal-policy-optimization
+- kt:parameter-efficient-fine-tuning
+- kt:rlhf
+difficulty: 3
+created: '2026-11-21'
+status: active

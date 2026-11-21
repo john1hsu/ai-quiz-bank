@@ -1,0 +1,20 @@
+id: ai-000468
+area: governance-and-policy
+kind: origin
+topic: ISO/IEC 42001
+topic_type: Policy
+maturity: emerging
+true_statement: ISO/IEC 42001, the international standard for AI management systems, was developed by the joint ISO/IEC committee JTC 1/SC 42 and published in December 2023.
+false_statement: ISO/IEC 42001, the international standard for AI management systems, was developed by the joint ISO/IEC committee JTC 1/SC 42 and published in December 2021.
+explanation: Edition 1.0 appeared on 18 December 2023, and ISO promoted it as the first AI management system standard. Its certification companion, ISO/IEC 42006 for audit bodies, followed in July 2025.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/iso-iec-42001.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3bf8168bed6fc2017b55319882bd05e0217a67ca
+concepts:
+- kt:iso-iec-42001
+- kt:iso-iec-jtc-1-sc-42
+difficulty: 1
+created: '2026-11-21'
+status: active

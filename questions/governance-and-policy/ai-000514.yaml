@@ -1,0 +1,21 @@
+id: ai-000514
+area: governance-and-policy
+kind: mechanism
+topic: Model cards
+topic_type: Technique
+maturity: established
+true_statement: 'A model card''s distinctive element is disaggregated evaluation: results are reported separately for groups, conditions and their intersections, since an aggregate score can hide subgroup failures.'
+false_statement: 'A model card''s distinctive element is aggregated evaluation: results are pooled into one score across groups, conditions and their intersections, since subgroup scores can hide overall failures.'
+explanation: A model with a good average can still fail badly for one group; reporting per group and per intersection, such as age combined with gender, exposes that. The paper's smiling-detection card, for example, revealed a higher false discovery rate for older men.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/model-cards.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: c12dc80168ebcae571e80aad6e4e6823a9aa49f8
+concepts:
+- kt:model-cards
+- kt:algorithmic-bias-and-fairness
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-21'
+status: active

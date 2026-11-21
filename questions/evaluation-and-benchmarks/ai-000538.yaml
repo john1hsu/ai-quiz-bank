@@ -1,0 +1,20 @@
+id: ai-000538
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: Chatbot Arena
+topic_type: Benchmark
+maturity: established
+true_statement: Chatbot Arena fits Bradley-Terry coefficients to its pairwise votes, having moved away from an online Elo rating to get cleaner statistical estimates and confidence intervals.
+false_statement: Chatbot Arena fits online Elo ratings to its pairwise votes, having moved away from Bradley-Terry coefficients to get cleaner statistical estimates and confidence intervals.
+explanation: In the Bradley-Terry model the chance one model beats another is a logistic function of the gap in their scores, fitted to all votes at once. Unlike an online Elo update, which depends on vote order, this supports proper estimation and confidence intervals on each model's rank.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/chatbot-arena.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 581989321fe70c8e7f4e3f736cd2bf01239d4cbd
+concepts:
+- kt:chatbot-arena
+- kt:bradley-terry-model
+difficulty: 2
+created: '2026-11-21'
+status: active

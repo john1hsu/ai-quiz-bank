@@ -1,0 +1,22 @@
+id: ai-000531
+area: training-and-adaptation
+kind: origin
+topic: Parameter-efficient fine-tuning
+topic_type: Paradigm
+maturity: established
+true_statement: The term parameter-efficient fine-tuning traces to Houlsby and colleagues at Google (ICML 2019), who inserted small trainable adapter modules into a frozen BERT model.
+false_statement: The term parameter-efficient fine-tuning traces to Hu and colleagues (ICLR 2022), who inserted small trainable adapter modules into a frozen BERT model.
+explanation: Houlsby et al.'s adapters came within 0.4% of full fine-tuning on GLUE while adding only about 3.6% parameters per task. Hu et al. came later with LoRA, a reparameterization method rather than added adapter layers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/parameter-efficient-fine-tuning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: bc8951514b171d5bd1f619c95c15455316710b97
+concepts:
+- kt:parameter-efficient-fine-tuning
+- kt:parameter-efficient-transfer-learning-for-nlp
+- kt:adapter-modules
+- kt:lora
+difficulty: 1
+created: '2026-11-21'
+status: active

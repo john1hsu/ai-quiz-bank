@@ -1,0 +1,21 @@
+id: ai-000510
+area: deep-learning
+kind: origin
+topic: Residual connection
+topic_type: Technique
+maturity: established
+true_statement: He and colleagues at Microsoft Research introduced residual connections to fix degradation, where adding layers to a deep plain network raised its training error.
+false_statement: He and colleagues at Microsoft Research introduced residual connections to fix overfitting, where adding layers to a deep plain network raised only its test error.
+explanation: 'Training error going up with depth means the optimiser, not overfitting, was failing: a deeper net could copy a shallower one with identity layers but did not find that solution. Residual blocks make the identity the easy default by learning only F(x) = H(x) − x.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/residual-connection.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: cc7ac3b7db65099baab1bc7ef59a9557b03e136a
+concepts:
+- kt:residual-connection
+- kt:microsoft-research
+- kt:deep-residual-learning-for-image-recognition
+difficulty: 2
+created: '2026-11-21'
+status: active

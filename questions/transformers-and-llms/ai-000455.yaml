@@ -1,0 +1,21 @@
+id: ai-000455
+area: transformers-and-llms
+kind: figure
+topic: Attention mechanism
+topic_type: Architecture
+maturity: foundational
+true_statement: In 2015 Bahdanau and colleagues' RNNsearch-50 scored 26.75 BLEU on WMT '14 English-to-French, far above a plain encoder-decoder's 17.82 but still below the phrase-based Moses system.
+false_statement: In 2015 Bahdanau and colleagues' RNNsearch-50 scored 26.75 BLEU on WMT '14 English-to-French, far above a plain encoder-decoder's 17.82 and also above the phrase-based Moses system.
+explanation: Attention gave a large jump over the fixed-vector encoder-decoder, but on the full test set the first attention model had not yet overtaken mature phrase-based statistical translation. Its significance was the direction it opened, not an immediate win over every system.
+as_of: '2015'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-mechanism.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 7b1737d4dc6563b2f8863157d465d0a248ba2273
+concepts:
+- kt:attention-mechanism
+- kt:neural-machine-translation-by-jointly-learning-to-align-and-translate
+difficulty: 3
+created: '2026-11-21'
+status: active

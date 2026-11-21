@@ -1,0 +1,20 @@
+id: ai-000458
+area: agents-and-tool-use
+kind: evidence
+topic: ReAct prompting
+topic_type: Technique
+maturity: established
+true_statement: Verma, Bhambri and Kambhampati (2024) found ReAct's performance depended mostly on how closely the example trajectories resembled the query task, not on interleaving or thought content.
+false_statement: Verma, Bhambri and Kambhampati (2024) found ReAct's performance depended mostly on interleaving and thought content, not on how closely the example trajectories resembled the query task.
+explanation: Their sequential decision-making experiments suggested ReAct works more like approximate retrieval from similar examples than like reasoning. If so, prompt designers must supply instance-specific exemplars, which undercuts the paper's original explanation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/react-prompting.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 56f7987d61c876b5019c386219b732dcaa00ffbe
+concepts:
+- kt:react-prompting
+- kt:few-shot-prompting
+difficulty: 3
+created: '2026-11-21'
+status: active

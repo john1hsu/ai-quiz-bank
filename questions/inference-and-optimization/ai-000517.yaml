@@ -1,0 +1,20 @@
+id: ai-000517
+area: inference-and-optimization
+kind: definition
+topic: LLM inference optimization
+topic_type: Field
+maturity: established
+true_statement: In Zhou et al.'s 2024 taxonomy, system-level inference techniques such as faster kernels and batching are typically lossless, while model-level ones such as quantization risk accuracy.
+false_statement: In Zhou et al.'s 2024 taxonomy, model-level inference techniques such as faster kernels and batching are typically lossless, while system-level ones such as quantization risk accuracy.
+explanation: Model-level methods change the network itself, through compression or efficient structures, so they can cost quality and often need retraining. System-level work changes how the same computation is run and scheduled, so outputs stay the same.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/llm-inference-optimization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 4ef57e785fb8a81e442af88a93f31aeb8fca0935
+concepts:
+- kt:llm-inference-optimization
+- kt:model-compression
+difficulty: 2
+created: '2026-11-21'
+status: active

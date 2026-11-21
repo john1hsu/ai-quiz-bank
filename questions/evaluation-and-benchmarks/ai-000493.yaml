@@ -1,0 +1,20 @@
+id: ai-000493
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: Perplexity
+topic_type: Concept
+maturity: foundational
+true_statement: When a Transformer scores a long document, splitting it into disjoint fixed-length chunks gives a higher perplexity than a strided sliding window over the same text.
+false_statement: When a Transformer scores a long document, splitting it into disjoint fixed-length chunks gives a lower perplexity than a strided sliding window over the same text.
+explanation: With disjoint chunks the first tokens of each chunk are predicted with almost no context, which inflates their loss. A sliding window gives every token more history at the cost of extra forward passes, so the evaluation protocol alone can move the reported number noticeably.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/perplexity.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 47dff82a405f0b62628e3b48e7af81b62575f01a
+concepts:
+- kt:perplexity
+- kt:context-window
+difficulty: 2
+created: '2026-11-21'
+status: active

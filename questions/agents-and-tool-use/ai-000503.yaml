@@ -1,0 +1,20 @@
+id: ai-000503
+area: agents-and-tool-use
+kind: application
+topic: Agent memory
+topic_type: Concept
+maturity: emerging
+true_statement: LangGraph's docs say writing agent memories in the hot path makes them available at once but adds latency, while writing them in a background task avoids that latency.
+false_statement: LangGraph's docs say writing agent memories in a background task makes them available at once but adds latency, while writing them in the hot path avoids that latency.
+explanation: Writing in the hot path means the agent pauses to save a memory before replying, so it is fresh immediately but slows the response. Background writes keep responses fast, at the risk that another thread briefly misses a memory that was just written.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent-memory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 14b091c66f0f26c39bff99d29b7a09cb54ecaa9e
+concepts:
+- kt:agent-memory
+- kt:langgraph
+difficulty: 2
+created: '2026-11-21'
+status: active

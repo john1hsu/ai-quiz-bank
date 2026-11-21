@@ -1,0 +1,19 @@
+id: ai-000448
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Human evaluation
+topic_type: Technique
+maturity: established
+true_statement: Karpinska, Akoury and Iyyer found Amazon Mechanical Turk workers, even after qualification filters, could not tell model text from human references, whereas English teachers could.
+false_statement: Karpinska, Akoury and Iyyer found English teachers, even after qualification filters, could not tell model text from human references, whereas Amazon Mechanical Turk workers could.
+explanation: 'Human evaluation is only as good as its raters: cheap crowdworkers may miss differences that trained experts see. The same study found most open-ended generation papers left out key crowdsourcing details, so their human results are hard to trust or reproduce.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/human-evaluation.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 372bc1da78af0d2f8eac40a233902d4444a70358
+concepts:
+- kt:human-evaluation
+difficulty: 3
+created: '2026-11-21'
+status: active

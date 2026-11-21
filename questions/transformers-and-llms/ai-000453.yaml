@@ -1,0 +1,20 @@
+id: ai-000453
+area: transformers-and-llms
+kind: mechanism
+topic: Attention mechanism
+topic_type: Architecture
+maturity: foundational
+true_statement: Luong and colleagues' local attention looks only at a window centred on a predicted aligned source position, while their global attention looks at every source position.
+false_statement: Luong and colleagues' global attention looks only at a window centred on a predicted aligned source position, while their local attention looks at every source position.
+explanation: Local attention narrows the softmax to a Gaussian-weighted window around where the model predicts the alignment is, cutting cost; global attention is the full version that scores every source word. The names describe scope, so the false twin has them backwards.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-mechanism.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 7b1737d4dc6563b2f8863157d465d0a248ba2273
+concepts:
+- kt:attention-mechanism
+- kt:sequence-to-sequence-learning
+difficulty: 2
+created: '2026-11-21'
+status: active

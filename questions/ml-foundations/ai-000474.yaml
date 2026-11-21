@@ -1,0 +1,22 @@
+id: ai-000474
+area: ml-foundations
+kind: origin
+topic: Ensemble methods
+topic_type: Technique
+maturity: foundational
+true_statement: Leo Breiman introduced bagging (bootstrap aggregating) in 1996 and later combined it with random feature selection to create random forests in 2001.
+false_statement: Yoav Freund and Robert Schapire introduced bagging (bootstrap aggregating) in 1996 and later combined it with random feature selection to create random forests in 2001.
+explanation: Both bagging and random forests are Breiman's work, five years apart. Freund and Schapire are the names behind the other main family, boosting, whose AdaBoost algorithm appeared in their 1997 paper.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/ensemble-methods.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dce7fe6d218928e861e165a751654c952669b
+concepts:
+- kt:ensemble-methods
+- kt:bagging
+- kt:random-forest
+- kt:boosting
+difficulty: 1
+created: '2026-11-21'
+status: active

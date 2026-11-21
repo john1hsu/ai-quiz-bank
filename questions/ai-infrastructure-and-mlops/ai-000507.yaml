@@ -1,0 +1,20 @@
+id: ai-000507
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: Google
+topic_type: Organization
+maturity: established
+true_statement: In April 2023 Google merged the Brain team and DeepMind into one unit, Google DeepMind, led by DeepMind CEO Demis Hassabis, with Jeff Dean as chief scientist.
+false_statement: In April 2023 Google merged the Brain team and DeepMind into one unit, Google DeepMind, led by Jeff Dean, with DeepMind CEO Demis Hassabis as chief scientist.
+explanation: Sundar Pichai announced the merger on April 20, 2023, putting Hassabis in charge of the combined lab and making Dean chief scientist across Google Research and Google DeepMind. The false version swaps the two roles.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/google.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: aaed9011ab631f12fda4cf3637b6bf81016da8ee
+concepts:
+- kt:google
+- kt:google-deepmind
+difficulty: 1
+created: '2026-11-21'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000540
+area: reinforcement-learning
+kind: origin
+topic: SARSA
+topic_type: Algorithm
+maturity: foundational
+true_statement: SARSA was introduced by Rummery and Niranjan in a 1994 Cambridge technical report as Modified Connectionist Q-Learning, and Richard Sutton later gave it its name.
+false_statement: SARSA was introduced by Richard Sutton in a 1994 Cambridge technical report as Modified Connectionist Q-Learning, and Rummery and Niranjan later gave it its name.
+explanation: Rummery and Niranjan wanted Q-learning-style methods that update on-line with neural-network approximators. Sutton's 1996 NIPS paper named it after the five quantities each update uses (state, action, reward, next state, next action) and showed it working with coarse-coded function approximation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/sarsa.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 17b8fa5e564cbbd5acc6850bd6a78d1f7a3215df
+concepts:
+- kt:sarsa
+- kt:on-line-q-learning-using-connectionist-systems
+difficulty: 1
+created: '2026-11-21'
+status: active

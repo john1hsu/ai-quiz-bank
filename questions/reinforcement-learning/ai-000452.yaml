@@ -1,0 +1,21 @@
+id: ai-000452
+area: reinforcement-learning
+kind: evidence
+topic: Temporal-difference learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: On the same batch of episodes, batch TD(0) converges to the estimate implied by a maximum-likelihood Markov model, while batch Monte Carlo minimizes error on the observed returns.
+false_statement: On the same batch of episodes, batch Monte Carlo converges to the estimate implied by a maximum-likelihood Markov model, while batch TD(0) minimizes error on the observed returns.
+explanation: TD's bootstrapping implicitly uses the transition structure seen in the data, giving the certainty-equivalence estimate; Monte Carlo just averages the returns that happened to follow each state. In Sutton and Barto's example this gave one state 0.75 under TD and 0 under Monte Carlo.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/temporal-difference-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 72eb5259d42748bf0ca0453e1c326cf89120068b
+concepts:
+- kt:temporal-difference-learning
+- kt:monte-carlo-methods
+- kt:markov-decision-process
+difficulty: 3
+created: '2026-11-21'
+status: active

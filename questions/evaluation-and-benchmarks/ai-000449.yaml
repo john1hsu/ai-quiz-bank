@@ -1,0 +1,21 @@
+id: ai-000449
+area: evaluation-and-benchmarks
+kind: figure
+topic: Human evaluation
+topic_type: Technique
+maturity: established
+true_statement: In 2020 Howcroft and colleagues found more than 200 different terms for the quality aspects judged across 165 NLG papers with human evaluations.
+false_statement: In 2020 Howcroft and colleagues found only about 20 different terms for the quality aspects judged across 165 NLG papers with human evaluations.
+explanation: Natural language generation (NLG) studies used a sprawl of often undefined criteria names, so two papers 'measuring fluency' might not measure the same thing. That confusion is why the authors called for standard definitions and evaluation sheets documenting each study's design.
+as_of: '2020'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/human-evaluation.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 372bc1da78af0d2f8eac40a233902d4444a70358
+concepts:
+- kt:human-evaluation
+- kt:ai-evaluation
+difficulty: 2
+created: '2026-11-21'
+status: active

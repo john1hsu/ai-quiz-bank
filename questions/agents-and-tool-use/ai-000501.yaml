@@ -1,0 +1,20 @@
+id: ai-000501
+area: agents-and-tool-use
+kind: definition
+topic: Agent memory
+topic_type: Concept
+maturity: emerging
+true_statement: In the CoALA framework, episodic memory stores an agent's past experience such as trajectories, while semantic memory stores knowledge about the world and the agent itself.
+false_statement: In the CoALA framework, semantic memory stores an agent's past experience such as trajectories, while episodic memory stores knowledge about the world and the agent itself.
+explanation: 'CoALA (Cognitive Architectures for Language Agents) borrows the cognitive-science split: episodes are what happened, semantics are what is known. Keeping them apart helps decide what to log as history and what to distil into facts or profiles.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent-memory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 14b091c66f0f26c39bff99d29b7a09cb54ecaa9e
+concepts:
+- kt:agent-memory
+- kt:ai-agent
+difficulty: 1
+created: '2026-11-21'
+status: active

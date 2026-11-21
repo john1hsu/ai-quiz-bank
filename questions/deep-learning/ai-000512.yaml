@@ -1,0 +1,20 @@
+id: ai-000512
+area: deep-learning
+kind: evidence
+topic: Residual connection
+topic_type: Technique
+maturity: established
+true_statement: Veit and colleagues found a 110-layer ResNet behaves like an ensemble of mostly short paths, with most of the gradient flowing through paths only 10–34 layers deep.
+false_statement: Veit and colleagues found a 110-layer ResNet behaves like one very deep path, with most of the gradient flowing through paths over 100 layers deep.
+explanation: Unrolling a ResNet shows many paths of different lengths. Their result suggests residual connections avoid vanishing gradients less by making very long paths trainable than by keeping short ones available, a point still debated.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/residual-connection.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: cc7ac3b7db65099baab1bc7ef59a9557b03e136a
+concepts:
+- kt:residual-connection
+- kt:vanishing-gradient-problem
+difficulty: 3
+created: '2026-11-21'
+status: active

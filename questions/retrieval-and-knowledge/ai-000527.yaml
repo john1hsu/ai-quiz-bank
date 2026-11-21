@@ -1,0 +1,20 @@
+id: ai-000527
+area: retrieval-and-knowledge
+kind: application
+topic: Vector database
+topic_type: Tool
+maturity: established
+true_statement: In pgvector, vector search over an ordinary PostgreSQL table is exact by default, and adding an HNSW or IVFFlat index switches it to approximate results.
+false_statement: In pgvector, vector search over an ordinary PostgreSQL table is approximate by default, and adding an HNSW or IVFFlat index switches it to exact results.
+explanation: Without an index, pgvector compares the query with every row, which is exact but scales linearly. An approximate nearest neighbour index trades a little recall for much faster queries, the same trade every vector database makes at scale.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/vector-database.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: a1568ddc6cbe21fcbdc97b47f2f5f1491c3890ea
+concepts:
+- kt:vector-database
+- kt:approximate-nearest-neighbor-search
+difficulty: 2
+created: '2026-11-21'
+status: active

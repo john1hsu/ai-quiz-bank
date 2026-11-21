@@ -1,0 +1,21 @@
+id: ai-000451
+area: reinforcement-learning
+kind: origin
+topic: Temporal-difference learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: Richard Sutton formalized temporal-difference learning in a 1988 Machine Learning paper, noting the idea had appeared earlier in Arthur Samuel's checkers player.
+false_statement: Gerald Tesauro formalized temporal-difference learning in a 1988 Machine Learning paper, noting the idea had appeared earlier in Arthur Samuel's checkers player.
+explanation: Sutton's paper gave TD a name, a theory and convergence proofs for special cases, after the idea had been used informally in Samuel's checkers player and Holland's bucket brigade. Tesauro came later, applying TD(λ) in TD-Gammon.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/temporal-difference-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 72eb5259d42748bf0ca0453e1c326cf89120068b
+concepts:
+- kt:temporal-difference-learning
+- kt:richard-sutton
+- kt:learning-to-predict-by-the-methods-of-temporal-differences
+difficulty: 1
+created: '2026-11-21'
+status: active

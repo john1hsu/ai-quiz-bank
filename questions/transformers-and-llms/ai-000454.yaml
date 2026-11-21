@@ -1,0 +1,20 @@
+id: ai-000454
+area: transformers-and-llms
+kind: origin
+topic: Attention mechanism
+topic_type: Architecture
+maturity: foundational
+true_statement: Xu et al.'s Show, Attend and Tell (ICML 2015) carried attention into image captioning, attending over regions of convolutional image features as each word was generated.
+false_statement: Luong et al.'s Show, Attend and Tell (ICML 2015) carried attention into image captioning, attending over regions of convolutional image features as each word was generated.
+explanation: 'Xu and colleagues showed that attention was not tied to translation: the decoder could look at image regions instead of source words. Luong, Pham and Manning wrote a 2015 translation paper on attention scoring, which makes the names easy to mix up.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/attention-mechanism.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 7b1737d4dc6563b2f8863157d465d0a248ba2273
+concepts:
+- kt:attention-mechanism
+- kt:image-captioning
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000460
+area: ai-history
+kind: mechanism
+topic: Symbolic AI
+topic_type: Paradigm
+maturity: historical
+true_statement: Newell and Simon's heuristic search hypothesis says a symbol system solves problems by generating and modifying symbol structures, searching selectively under heuristics rather than exhaustively.
+false_statement: Newell and Simon's heuristic search hypothesis says a symbol system solves problems by generating and modifying symbol structures, searching exhaustively rather than selectively under heuristics.
+explanation: Because real machines have limited resources, the search over candidate solutions must be pruned by heuristics; exhaustive search runs into combinatorial explosion. This idea runs through the Logic Theorist's best-first search, GPS's means-ends analysis and alpha-beta pruning in chess programs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/symbolic-ai.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 02c7967676208560290d9bb8516990bb05e7b3a4
+concepts:
+- kt:symbolic-ai
+- kt:physical-symbol-system-hypothesis
+- kt:logic-theorist
+difficulty: 2
+created: '2026-11-21'
+status: active

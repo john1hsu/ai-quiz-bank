@@ -1,0 +1,22 @@
+id: ai-000476
+area: ml-foundations
+kind: evidence
+topic: Ensemble methods
+topic_type: Technique
+maturity: foundational
+true_statement: In Dietterich's decision-tree comparison, AdaBoost beat bagging on clean data but fell behind it when 20% of labels were corrupted, because boosting put much of its weight on the mislabelled examples.
+false_statement: In Dietterich's decision-tree comparison, AdaBoost beat bagging on clean data and widened its lead when 20% of labels were corrupted, because boosting put much of its weight on the mislabelled examples.
+explanation: Boosting keeps upweighting examples it gets wrong, and mislabelled examples are always wrong, so noise pulls the ensemble toward fitting errors. Bagging treats every example equally, which makes it, and random forests, far more tolerant of label noise.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/ensemble-methods.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dce7fe6d218928e861e165a751654c952669b
+concepts:
+- kt:ensemble-methods
+- kt:boosting
+- kt:bagging
+- kt:overfitting
+difficulty: 3
+created: '2026-11-21'
+status: active

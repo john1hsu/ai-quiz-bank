@@ -1,0 +1,20 @@
+id: ai-000459
+area: ai-history
+kind: definition
+topic: Symbolic AI
+topic_type: Paradigm
+maturity: historical
+true_statement: To recognise a letter, a symbolic AI program compares the input with programmer-written geometric descriptions, while a connectionist system adjusts network connections from examples.
+false_statement: To recognise a letter, a symbolic AI program adjusts network connections from examples, while a connectionist system compares the input with programmer-written geometric descriptions.
+explanation: Symbolic, top-down AI encodes knowledge explicitly as human-written symbols and rules; connectionist, bottom-up AI learns its knowledge from data by tuning connection strengths. The false version swaps the two traditions, which is the core distinction between them.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/symbolic-ai.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 02c7967676208560290d9bb8516990bb05e7b3a4
+concepts:
+- kt:symbolic-ai
+- kt:connectionism
+difficulty: 1
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000457
+area: agents-and-tool-use
+kind: mechanism
+topic: ReAct prompting
+topic_type: Technique
+maturity: established
+true_statement: In ReAct, a thought only updates the model's own context, while an action is executed by an external environment that returns an observation added to the context.
+false_statement: In ReAct, an action only updates the model's own context, while a thought is executed by an external environment that returns an observation added to the context.
+explanation: Thoughts are free-form reasoning that plan or track progress without touching the world; actions such as a search call do touch it, and the observation that comes back grounds the next thought. That loop is what lets external facts correct the reasoning.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/react-prompting.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 56f7987d61c876b5019c386219b732dcaa00ffbe
+concepts:
+- kt:react-prompting
+- kt:tool-use
+- kt:chain-of-thought
+difficulty: 1
+created: '2026-11-21'
+status: active

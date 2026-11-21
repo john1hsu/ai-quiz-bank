@@ -1,0 +1,20 @@
+id: ai-000495
+area: transformers-and-llms
+kind: mechanism
+topic: KV cache
+topic_type: Technique
+maturity: established
+true_statement: A KV cache keeps earlier tokens' keys and values but not their queries, since each decoding step attends only from the current token's query over the cached prefix.
+false_statement: A KV cache keeps earlier tokens' queries and keys but not their values, since each decoding step attends only from the current token's value over the cached prefix.
+explanation: At each decode step only the new token asks the question (its query); every earlier token contributes its key, to be scored, and its value, to be averaged. So keys and values are worth storing, while old queries are never used again.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/kv-cache.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: eb3ed7e012f4e290a3a71386c88749634f669b8f
+concepts:
+- kt:kv-cache
+- kt:self-attention
+difficulty: 2
+created: '2026-11-21'
+status: active

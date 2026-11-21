@@ -1,0 +1,21 @@
+id: ai-000444
+area: computer-vision-and-multimodal
+kind: definition
+topic: Computer vision
+topic_type: Field
+maturity: established
+true_statement: Semantic segmentation labels every pixel with a class but does not separate individual objects, while instance segmentation also outlines each object.
+false_statement: Instance segmentation labels every pixel with a class but does not separate individual objects, while semantic segmentation also outlines each object.
+explanation: In the ladder of vision tasks, semantic segmentation answers 'what class is this pixel', so two touching cars merge into one 'car' region. Instance segmentation goes a step further and gives each car its own outline, which is what you need when counting or tracking objects.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/computer-vision.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3ca7a45702797288656b5384a2fe8d46472ff8e6
+concepts:
+- kt:computer-vision
+- kt:semantic-segmentation
+- kt:object-detection
+difficulty: 1
+created: '2026-11-21'
+status: active

@@ -1,0 +1,19 @@
+id: ai-000498
+area: reinforcement-learning
+kind: mechanism
+topic: Monte Carlo tree search
+topic_type: Algorithm
+maturity: established
+true_statement: Each Monte Carlo tree search iteration runs selection, then expansion, then simulation with a default policy, then backpropagation of the outcome along the path.
+false_statement: Each Monte Carlo tree search iteration runs selection, then simulation with a default policy, then expansion, then backpropagation of the outcome along the path.
+explanation: The tree policy first walks down to a node that can still grow, a new child is added, and only then is a playout run from that new node. Backing the result up the path updates visit counts and values, so the tree grows deepest where play looks best.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/monte-carlo-tree-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 475b89acf2feac8fb4bf8ca4d57a0db23bf7a818
+concepts:
+- kt:monte-carlo-tree-search
+difficulty: 2
+created: '2026-11-21'
+status: active

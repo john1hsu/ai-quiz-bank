@@ -1,0 +1,20 @@
+id: ai-000450
+area: reinforcement-learning
+kind: definition
+topic: Temporal-difference learning
+topic_type: Algorithm
+maturity: foundational
+true_statement: Temporal-difference learning samples real transitions like Monte Carlo methods and bootstraps from its own estimates like dynamic programming.
+false_statement: Temporal-difference learning samples real transitions like dynamic programming and bootstraps from its own estimates like Monte Carlo methods.
+explanation: TD needs no model of the environment because it learns from sampled experience, the Monte Carlo trait. It updates toward reward plus the estimated value of the next state instead of waiting for the full return, the dynamic-programming trait, which lets it learn after every step and from unfinished episodes.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/temporal-difference-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 72eb5259d42748bf0ca0453e1c326cf89120068b
+concepts:
+- kt:temporal-difference-learning
+- kt:monte-carlo-methods
+difficulty: 1
+created: '2026-11-21'
+status: active

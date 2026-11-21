@@ -1,0 +1,20 @@
+id: ai-000479
+area: prompting-and-reasoning
+kind: evidence
+topic: Structured output
+topic_type: Technique
+maturity: established
+true_statement: Tam et al. (EMNLP 2024) found that forcing formats such as JSON was linked to a notable drop in reasoning performance, and that stricter constraints tended to hurt more.
+false_statement: Tam et al. (EMNLP 2024) found that forcing formats such as JSON was linked to a notable drop in reasoning performance, and that looser constraints tended to hurt more.
+explanation: 'The worry is that squeezing a model into a rigid format leaves less room for step-by-step reasoning. The question is still open: the JSONSchemaBench authors later reported slight gains from constrained engines on three reasoning tasks.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/structured-output.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: f13bce70285a30168b094f8bfd8dbf456e1f34a7
+concepts:
+- kt:structured-output
+- kt:chain-of-thought
+difficulty: 3
+created: '2026-11-21'
+status: active

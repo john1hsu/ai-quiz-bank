@@ -1,0 +1,21 @@
+id: ai-000543
+area: transformers-and-llms
+kind: origin
+topic: Natural language processing
+topic_type: Field
+maturity: established
+true_statement: In 2011 Collobert, Weston and colleagues used one neural architecture for tagging, chunking, named-entity recognition and semantic role labeling, learning representations from mostly unlabeled text.
+false_statement: In 2011 Collobert, Weston and colleagues used one neural architecture for tagging, chunking, named-entity recognition and semantic role labeling, relying on hand-engineered, task-specific features.
+explanation: 'This work marked NLP''s neural turn: instead of crafting features for each task, a single network learned shared internal representations, largely from unlabeled text. Hand-engineered features were exactly what it set out to replace.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/natural-language-processing.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 9056d41fbb9bb54d0f71815f0e466e687349c0d9
+concepts:
+- kt:natural-language-processing
+- kt:deep-learning
+- kt:named-entity-recognition
+difficulty: 2
+created: '2026-11-21'
+status: active

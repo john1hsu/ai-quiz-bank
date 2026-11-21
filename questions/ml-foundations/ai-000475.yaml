@@ -1,0 +1,22 @@
+id: ai-000475
+area: ml-foundations
+kind: mechanism
+topic: Ensemble methods
+topic_type: Technique
+maturity: foundational
+true_statement: Bagging helps most with unstable base learners such as decision trees, whose output shifts a lot with small data changes; in Breiman's tests it left stable k-nearest-neighbour classifiers essentially unchanged.
+false_statement: Bagging helps most with stable base learners such as k-nearest-neighbour classifiers, whose output shifts little with small data changes; in Breiman's tests it left unstable decision trees essentially unchanged.
+explanation: Averaging over bootstrap resamples only helps if the resamples produce genuinely different models. Unstable trees do, so their errors partly cancel and test error fell sharply, while a stable learner gives nearly the same model every time and gains nothing.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/ensemble-methods.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dce7fe6d218928e861e165a751654c952669b
+concepts:
+- kt:ensemble-methods
+- kt:bagging
+- kt:decision-tree
+- kt:bias-variance-tradeoff
+difficulty: 2
+created: '2026-11-21'
+status: active

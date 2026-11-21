@@ -1,0 +1,20 @@
+id: ai-000522
+area: prompting-and-reasoning
+kind: mechanism
+topic: Tree of Thoughts
+topic_type: Technique
+maturity: established
+true_statement: In Tree of Thoughts the language model itself evaluates partial solutions, either valuing each state independently or voting across candidates for the most promising one.
+false_statement: In Tree of Thoughts a separately trained reward model evaluates partial solutions, either valuing each state independently or voting across candidates for the most promising one.
+explanation: 'ToT needs no extra training: the same model that proposes thoughts also judges them, for example labelling a Game of 24 state sure, maybe or impossible. That self-evaluation is cheap to set up but imperfect, and can prune valid steps.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/tree-of-thoughts.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 12fa686f05b0432101899b45c6b1f01114956418
+concepts:
+- kt:tree-of-thoughts
+- kt:heuristic-search
+difficulty: 2
+created: '2026-11-21'
+status: active

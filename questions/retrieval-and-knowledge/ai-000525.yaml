@@ -1,0 +1,21 @@
+id: ai-000525
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Vector database
+topic_type: Tool
+maturity: established
+true_statement: In filtered vector search, post-filtering runs the similarity search first and applies attribute filters afterwards, so it can return fewer than k results unless extra candidates are fetched.
+false_statement: In filtered vector search, pre-filtering runs the similarity search first and applies attribute filters afterwards, so it can return fewer than k results unless extra candidates are fetched.
+explanation: If the nearest k vectors are found first, filters such as tenant or date may discard many of them, leaving a short result list. Pre-filtering does the opposite, blocking non-matching vectors before the scan, which avoids that shortfall but can disconnect a graph index.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/vector-database.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: a1568ddc6cbe21fcbdc97b47f2f5f1491c3890ea
+concepts:
+- kt:vector-database
+- kt:approximate-nearest-neighbor-search
+- kt:hybrid-search
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000502
+area: agents-and-tool-use
+kind: mechanism
+topic: Agent memory
+topic_type: Concept
+maturity: emerging
+true_statement: MemGPT treats the context window like an operating system's main memory, and the model itself moves data between the window and outside storage through function calls.
+false_statement: MemGPT treats the context window like an operating system's main memory, and a fixed retrieval pipeline outside the model moves data between the window and outside storage.
+explanation: MemGPT's key move is giving the model control over its own memory tiers, like a program paging data in and out, with a queue manager warning it of memory pressure. A fixed external pipeline is the more conventional retrieval design it departs from.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/agent-memory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 14b091c66f0f26c39bff99d29b7a09cb54ecaa9e
+concepts:
+- kt:agent-memory
+- kt:memgpt
+- kt:context-window
+difficulty: 2
+created: '2026-11-21'
+status: active

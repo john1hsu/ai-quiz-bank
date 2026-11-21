@@ -1,0 +1,21 @@
+id: ai-000505
+area: ai-history
+kind: evidence
+topic: AI winter
+topic_type: Event
+maturity: historical
+true_statement: The AI100 panel blamed AI's gap between promise and practice partly on too little grounding in real sensor data and overreliance on true/false logic rather than quantified uncertainty.
+false_statement: The AI100 panel blamed AI's gap between promise and practice partly on too little grounding in real sensor data and overreliance on quantified uncertainty rather than true/false logic.
+explanation: Brittle rule-based expert systems reasoned in crisp true/false terms and struggled with messy real-world inputs. The recovery of the 1990s came from statistical machine learning, which handles uncertainty explicitly, so the false version reverses the lesson.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/ai-winter.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 5c9de1492839dc37b6de94d6a00a89b8367d59fb
+concepts:
+- kt:ai-winter
+- kt:expert-systems
+- kt:machine-learning
+difficulty: 2
+created: '2026-11-21'
+status: active

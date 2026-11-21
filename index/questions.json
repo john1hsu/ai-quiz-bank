@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 442,
- "active": 442,
+ "count": 542,
+ "active": 542,
  "questions": [
   {
    "id": "ai-000001",
@@ -7331,6 +7331,1664 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/sequence-to-sequence-learning.html"
+  },
+  {
+   "id": "ai-000444",
+   "area": "computer-vision-and-multimodal",
+   "kind": "definition",
+   "topic": "Computer vision",
+   "t": "Semantic segmentation labels every pixel with a class but does not separate individual objects, while instance segmentation also outlines each object.",
+   "f": "Instance segmentation labels every pixel with a class but does not separate individual objects, while semantic segmentation also outlines each object.",
+   "x": "In the ladder of vision tasks, semantic segmentation answers 'what class is this pixel', so two touching cars merge into one 'car' region. Instance segmentation goes a step further and gives each car its own outline, which is what you need when counting or tracking objects.",
+   "concepts": [
+    "kt:computer-vision",
+    "kt:semantic-segmentation",
+    "kt:object-detection"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/computer-vision.html"
+  },
+  {
+   "id": "ai-000445",
+   "area": "computer-vision-and-multimodal",
+   "kind": "origin",
+   "topic": "Computer vision",
+   "t": "Seymour Papert's 1966 MIT memo, The Summer Vision Project, planned to build a significant part of a visual system with summer workers in a single summer.",
+   "f": "Seymour Papert's 1966 MIT memo, The Summer Vision Project, planned to build a significant part of a visual system with summer workers over a ten-year programme.",
+   "x": "The memo's one-summer plan, from figure-ground separation to naming objects, shows how early AI researchers underestimated perception. The problem in fact took decades, which is why the memo is the field's classic cautionary tale.",
+   "concepts": [
+    "kt:computer-vision",
+    "kt:pattern-recognition"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/computer-vision.html"
+  },
+  {
+   "id": "ai-000446",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Computer vision",
+   "t": "Computer vision runs computer graphics backwards: graphics predicts the image a scene will produce, while vision must infer the scene from the image.",
+   "f": "Computer vision runs computer graphics forwards: vision predicts the image a scene will produce, while graphics must infer the scene from the image.",
+   "x": "Graphics and physics give forward models of how light reaches an image plane; vision has to invert that process. Because a 2D image does not pin down a unique 3D scene, the inverse problem is ill-posed, so vision systems lean on physical or probabilistic models or on regularities learned from large datasets.",
+   "concepts": [
+    "kt:computer-vision",
+    "kt:computer-graphics"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/computer-vision.html"
+  },
+  {
+   "id": "ai-000447",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "Human evaluation",
+   "t": "InstructGPT's labelers ranked several model outputs from best to worst, and those rankings were used to train a reward model.",
+   "f": "InstructGPT's labelers scored each model output on a Likert scale, and those absolute ratings were used to train a reward model.",
+   "x": "Ranking is one of three common human-evaluation formats, alongside absolute ratings and pairwise preferences. Relative judgments are easier for raters to make consistently than absolute scores, and they turn naturally into the comparison data a reward model learns from in RLHF.",
+   "concepts": [
+    "kt:human-evaluation",
+    "kt:rlhf"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/human-evaluation.html"
+  },
+  {
+   "id": "ai-000448",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "Human evaluation",
+   "t": "Karpinska, Akoury and Iyyer found Amazon Mechanical Turk workers, even after qualification filters, could not tell model text from human references, whereas English teachers could.",
+   "f": "Karpinska, Akoury and Iyyer found English teachers, even after qualification filters, could not tell model text from human references, whereas Amazon Mechanical Turk workers could.",
+   "x": "Human evaluation is only as good as its raters: cheap crowdworkers may miss differences that trained experts see. The same study found most open-ended generation papers left out key crowdsourcing details, so their human results are hard to trust or reproduce.",
+   "concepts": [
+    "kt:human-evaluation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/human-evaluation.html"
+  },
+  {
+   "id": "ai-000449",
+   "area": "evaluation-and-benchmarks",
+   "kind": "figure",
+   "topic": "Human evaluation",
+   "t": "In 2020 Howcroft and colleagues found more than 200 different terms for the quality aspects judged across 165 NLG papers with human evaluations.",
+   "f": "In 2020 Howcroft and colleagues found only about 20 different terms for the quality aspects judged across 165 NLG papers with human evaluations.",
+   "x": "Natural language generation (NLG) studies used a sprawl of often undefined criteria names, so two papers 'measuring fluency' might not measure the same thing. That confusion is why the authors called for standard definitions and evaluation sheets documenting each study's design.",
+   "concepts": [
+    "kt:human-evaluation",
+    "kt:ai-evaluation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/human-evaluation.html",
+   "asOf": "2020"
+  },
+  {
+   "id": "ai-000450",
+   "area": "reinforcement-learning",
+   "kind": "definition",
+   "topic": "Temporal-difference learning",
+   "t": "Temporal-difference learning samples real transitions like Monte Carlo methods and bootstraps from its own estimates like dynamic programming.",
+   "f": "Temporal-difference learning samples real transitions like dynamic programming and bootstraps from its own estimates like Monte Carlo methods.",
+   "x": "TD needs no model of the environment because it learns from sampled experience, the Monte Carlo trait. It updates toward reward plus the estimated value of the next state instead of waiting for the full return, the dynamic-programming trait, which lets it learn after every step and from unfinished episodes.",
+   "concepts": [
+    "kt:temporal-difference-learning",
+    "kt:monte-carlo-methods"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/temporal-difference-learning.html"
+  },
+  {
+   "id": "ai-000451",
+   "area": "reinforcement-learning",
+   "kind": "origin",
+   "topic": "Temporal-difference learning",
+   "t": "Richard Sutton formalized temporal-difference learning in a 1988 Machine Learning paper, noting the idea had appeared earlier in Arthur Samuel's checkers player.",
+   "f": "Gerald Tesauro formalized temporal-difference learning in a 1988 Machine Learning paper, noting the idea had appeared earlier in Arthur Samuel's checkers player.",
+   "x": "Sutton's paper gave TD a name, a theory and convergence proofs for special cases, after the idea had been used informally in Samuel's checkers player and Holland's bucket brigade. Tesauro came later, applying TD(λ) in TD-Gammon.",
+   "concepts": [
+    "kt:temporal-difference-learning",
+    "kt:richard-sutton",
+    "kt:learning-to-predict-by-the-methods-of-temporal-differences"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/temporal-difference-learning.html"
+  },
+  {
+   "id": "ai-000452",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "Temporal-difference learning",
+   "t": "On the same batch of episodes, batch TD(0) converges to the estimate implied by a maximum-likelihood Markov model, while batch Monte Carlo minimizes error on the observed returns.",
+   "f": "On the same batch of episodes, batch Monte Carlo converges to the estimate implied by a maximum-likelihood Markov model, while batch TD(0) minimizes error on the observed returns.",
+   "x": "TD's bootstrapping implicitly uses the transition structure seen in the data, giving the certainty-equivalence estimate; Monte Carlo just averages the returns that happened to follow each state. In Sutton and Barto's example this gave one state 0.75 under TD and 0 under Monte Carlo.",
+   "concepts": [
+    "kt:temporal-difference-learning",
+    "kt:monte-carlo-methods",
+    "kt:markov-decision-process"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/temporal-difference-learning.html"
+  },
+  {
+   "id": "ai-000453",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "Attention mechanism",
+   "t": "Luong and colleagues' local attention looks only at a window centred on a predicted aligned source position, while their global attention looks at every source position.",
+   "f": "Luong and colleagues' global attention looks only at a window centred on a predicted aligned source position, while their local attention looks at every source position.",
+   "x": "Local attention narrows the softmax to a Gaussian-weighted window around where the model predicts the alignment is, cutting cost; global attention is the full version that scores every source word. The names describe scope, so the false twin has them backwards.",
+   "concepts": [
+    "kt:attention-mechanism",
+    "kt:sequence-to-sequence-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/attention-mechanism.html"
+  },
+  {
+   "id": "ai-000454",
+   "area": "transformers-and-llms",
+   "kind": "origin",
+   "topic": "Attention mechanism",
+   "t": "Xu et al.'s Show, Attend and Tell (ICML 2015) carried attention into image captioning, attending over regions of convolutional image features as each word was generated.",
+   "f": "Luong et al.'s Show, Attend and Tell (ICML 2015) carried attention into image captioning, attending over regions of convolutional image features as each word was generated.",
+   "x": "Xu and colleagues showed that attention was not tied to translation: the decoder could look at image regions instead of source words. Luong, Pham and Manning wrote a 2015 translation paper on attention scoring, which makes the names easy to mix up.",
+   "concepts": [
+    "kt:attention-mechanism",
+    "kt:image-captioning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/attention-mechanism.html"
+  },
+  {
+   "id": "ai-000455",
+   "area": "transformers-and-llms",
+   "kind": "figure",
+   "topic": "Attention mechanism",
+   "t": "In 2015 Bahdanau and colleagues' RNNsearch-50 scored 26.75 BLEU on WMT '14 English-to-French, far above a plain encoder-decoder's 17.82 but still below the phrase-based Moses system.",
+   "f": "In 2015 Bahdanau and colleagues' RNNsearch-50 scored 26.75 BLEU on WMT '14 English-to-French, far above a plain encoder-decoder's 17.82 and also above the phrase-based Moses system.",
+   "x": "Attention gave a large jump over the fixed-vector encoder-decoder, but on the full test set the first attention model had not yet overtaken mature phrase-based statistical translation. Its significance was the direction it opened, not an immediate win over every system.",
+   "concepts": [
+    "kt:attention-mechanism",
+    "kt:neural-machine-translation-by-jointly-learning-to-align-and-translate"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/attention-mechanism.html",
+   "asOf": "2015"
+  },
+  {
+   "id": "ai-000456",
+   "area": "agents-and-tool-use",
+   "kind": "origin",
+   "topic": "ReAct prompting",
+   "t": "ReAct was introduced by Shunyu Yao and colleagues with Google Research's Brain Team, posted to arXiv in October 2022 and published at ICLR 2023.",
+   "f": "ReAct was introduced by Shunyu Yao and colleagues with Google Research's Brain Team, posted to arXiv in October 2022 and published at NeurIPS 2023.",
+   "x": "ReAct appeared at ICLR 2023. The confusion is natural because Yao's follow-up, Tree of Thoughts, was the NeurIPS 2023 paper; the two together trace a line from interleaved reasoning and acting to explicit search over thoughts.",
+   "concepts": [
+    "kt:react-prompting",
+    "kt:google"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/react-prompting.html"
+  },
+  {
+   "id": "ai-000457",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "ReAct prompting",
+   "t": "In ReAct, a thought only updates the model's own context, while an action is executed by an external environment that returns an observation added to the context.",
+   "f": "In ReAct, an action only updates the model's own context, while a thought is executed by an external environment that returns an observation added to the context.",
+   "x": "Thoughts are free-form reasoning that plan or track progress without touching the world; actions such as a search call do touch it, and the observation that comes back grounds the next thought. That loop is what lets external facts correct the reasoning.",
+   "concepts": [
+    "kt:react-prompting",
+    "kt:tool-use",
+    "kt:chain-of-thought"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/react-prompting.html"
+  },
+  {
+   "id": "ai-000458",
+   "area": "agents-and-tool-use",
+   "kind": "evidence",
+   "topic": "ReAct prompting",
+   "t": "Verma, Bhambri and Kambhampati (2024) found ReAct's performance depended mostly on how closely the example trajectories resembled the query task, not on interleaving or thought content.",
+   "f": "Verma, Bhambri and Kambhampati (2024) found ReAct's performance depended mostly on interleaving and thought content, not on how closely the example trajectories resembled the query task.",
+   "x": "Their sequential decision-making experiments suggested ReAct works more like approximate retrieval from similar examples than like reasoning. If so, prompt designers must supply instance-specific exemplars, which undercuts the paper's original explanation.",
+   "concepts": [
+    "kt:react-prompting",
+    "kt:few-shot-prompting"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/react-prompting.html"
+  },
+  {
+   "id": "ai-000459",
+   "area": "ai-history",
+   "kind": "definition",
+   "topic": "Symbolic AI",
+   "t": "To recognise a letter, a symbolic AI program compares the input with programmer-written geometric descriptions, while a connectionist system adjusts network connections from examples.",
+   "f": "To recognise a letter, a symbolic AI program adjusts network connections from examples, while a connectionist system compares the input with programmer-written geometric descriptions.",
+   "x": "Symbolic, top-down AI encodes knowledge explicitly as human-written symbols and rules; connectionist, bottom-up AI learns its knowledge from data by tuning connection strengths. The false version swaps the two traditions, which is the core distinction between them.",
+   "concepts": [
+    "kt:symbolic-ai",
+    "kt:connectionism"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/symbolic-ai.html"
+  },
+  {
+   "id": "ai-000460",
+   "area": "ai-history",
+   "kind": "mechanism",
+   "topic": "Symbolic AI",
+   "t": "Newell and Simon's heuristic search hypothesis says a symbol system solves problems by generating and modifying symbol structures, searching selectively under heuristics rather than exhaustively.",
+   "f": "Newell and Simon's heuristic search hypothesis says a symbol system solves problems by generating and modifying symbol structures, searching exhaustively rather than selectively under heuristics.",
+   "x": "Because real machines have limited resources, the search over candidate solutions must be pruned by heuristics; exhaustive search runs into combinatorial explosion. This idea runs through the Logic Theorist's best-first search, GPS's means-ends analysis and alpha-beta pruning in chess programs.",
+   "concepts": [
+    "kt:symbolic-ai",
+    "kt:physical-symbol-system-hypothesis",
+    "kt:logic-theorist"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/symbolic-ai.html"
+  },
+  {
+   "id": "ai-000461",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "Symbolic AI",
+   "t": "John McCarthy and Patrick Hayes named the frame problem in 1969: the difficulty of formally stating what does not change when an action occurs.",
+   "f": "Allen Newell and Herbert Simon named the frame problem in 1969: the difficulty of formally stating what does not change when an action occurs.",
+   "x": "The frame problem came from McCarthy's logicist strand, which formalised actions in the situation calculus, not from Newell and Simon's search-based tradition. Attempts to solve it drove the nonmonotonic logics of 1980 and helped make knowledge representation a subfield.",
+   "concepts": [
+    "kt:symbolic-ai",
+    "kt:knowledge-representation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/symbolic-ai.html"
+  },
+  {
+   "id": "ai-000462",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "definition",
+   "topic": "PyTorch",
+   "t": "PyTorch rebuilds its autograd graph from scratch on every iteration, so ordinary Python if statements and loops can change the graph's shape from one step to the next.",
+   "f": "PyTorch builds its autograd graph once before training starts, so ordinary Python if statements and loops are frozen into one graph shape for every step.",
+   "x": "This define-by-run design means the code that runs is the code that gets differentiated, which makes debugging and data-dependent control flow easy. Declaring a fixed graph ahead of execution is how earlier static-graph frameworks worked.",
+   "concepts": [
+    "kt:pytorch",
+    "kt:automatic-differentiation",
+    "kt:deep-learning-framework"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pytorch.html"
+  },
+  {
+   "id": "ai-000463",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "PyTorch",
+   "t": "In torch.compile, TorchDynamo captures runs of PyTorch operations from Python bytecode into an FX graph, and TorchInductor compiles that graph into Triton kernels for GPUs.",
+   "f": "In torch.compile, TorchInductor captures runs of PyTorch operations from Python bytecode into an FX graph, and TorchDynamo compiles that graph into Triton kernels for GPUs.",
+   "x": "Dynamo is the front end, a just-in-time compiler that rewrites bytecode so PyTorch can recover a graph without giving up Python's flexibility. Inductor is the default back end that turns the graph into Triton GPU kernels or C++ for CPUs; the false version swaps their roles.",
+   "concepts": [
+    "kt:pytorch",
+    "kt:gpu-computing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pytorch.html"
+  },
+  {
+   "id": "ai-000464",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "figure",
+   "topic": "PyTorch",
+   "t": "In 2024 the PyTorch team reported torch.compile geometric-mean speedups on an NVIDIA A100 of 2.27× for inference and 1.41× for training across over 180 models.",
+   "f": "In 2024 the PyTorch team reported torch.compile geometric-mean speedups on an NVIDIA A100 of 1.41× for inference and 2.27× for training across over 180 models.",
+   "x": "Compilation helped inference noticeably more than training, and it beat six other compilers in the same tests. These are the authors' numbers from the ASPLOS 2024 paper, not independent measurements.",
+   "concepts": [
+    "kt:pytorch",
+    "kt:gpu-computing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/pytorch.html",
+   "asOf": "2024"
+  },
+  {
+   "id": "ai-000465",
+   "area": "deep-learning",
+   "kind": "definition",
+   "topic": "Batch normalization",
+   "t": "Batch normalization standardizes each feature with statistics computed across the examples in a mini-batch, whereas layer normalization uses statistics across the features of a single example.",
+   "f": "Batch normalization standardizes each feature with statistics computed across the features of a single example, whereas layer normalization uses statistics across the examples in a mini-batch.",
+   "x": "Because batch norm pools over the batch, it depends on batch size and behaves differently at training and inference. Layer norm normalizes within one example, so it is batch-size independent, which is why it suits settings with tiny or unreliable batches.",
+   "concepts": [
+    "kt:batch-normalization",
+    "kt:layer-normalization"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/batch-normalization.html"
+  },
+  {
+   "id": "ai-000466",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Batch normalization",
+   "t": "During training a batch normalization layer normalizes with the current batch's statistics, while at inference it uses running averages of mean and variance stored during training.",
+   "f": "During training a batch normalization layer normalizes with running averages of mean and variance, while at inference it uses the current batch's statistics.",
+   "x": "Using stored averages at inference makes a prediction independent of which other examples happen to share its batch. In PyTorch the running averages use a momentum of 0.1 by default, and turning running statistics off makes the layer use batch statistics in both modes.",
+   "concepts": [
+    "kt:batch-normalization",
+    "kt:pytorch"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/batch-normalization.html"
+  },
+  {
+   "id": "ai-000467",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Batch normalization",
+   "t": "Santurkar and colleagues (NeurIPS 2018) found batch normalization helps mainly by smoothing the optimization landscape, not by stabilizing the distribution of layer inputs.",
+   "f": "Santurkar and colleagues (NeurIPS 2018) found batch normalization helps mainly by stabilizing the distribution of layer inputs, not by smoothing the optimization landscape.",
+   "x": "Ioffe and Szegedy's original story was that batch norm reduces internal covariate shift. Santurkar's group found that input-distribution stability had little to do with its success; a smoother landscape makes gradients more predictable, so larger steps are safe.",
+   "concepts": [
+    "kt:batch-normalization",
+    "kt:batch-normalization-accelerating-deep-network-training"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/batch-normalization.html"
+  },
+  {
+   "id": "ai-000468",
+   "area": "governance-and-policy",
+   "kind": "origin",
+   "topic": "ISO/IEC 42001",
+   "t": "ISO/IEC 42001, the international standard for AI management systems, was developed by the joint ISO/IEC committee JTC 1/SC 42 and published in December 2023.",
+   "f": "ISO/IEC 42001, the international standard for AI management systems, was developed by the joint ISO/IEC committee JTC 1/SC 42 and published in December 2021.",
+   "x": "Edition 1.0 appeared on 18 December 2023, and ISO promoted it as the first AI management system standard. Its certification companion, ISO/IEC 42006 for audit bodies, followed in July 2025.",
+   "concepts": [
+    "kt:iso-iec-42001",
+    "kt:iso-iec-jtc-1-sc-42"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/iso-iec-42001.html"
+  },
+  {
+   "id": "ai-000469",
+   "area": "governance-and-policy",
+   "kind": "definition",
+   "topic": "ISO/IEC 42001",
+   "t": "An ISO/IEC 42001 certificate attests that an organization runs a conforming AI management system; the standard sets no performance, robustness or safety thresholds for particular models.",
+   "f": "An ISO/IEC 42001 certificate attests that each of an organization's models meets the standard's minimum performance, robustness and safety thresholds.",
+   "x": "Like ISO/IEC 27001 for information security, 42001 audits the governance process: policies, roles, risk assessment and treatment, monitoring and improvement. It says nothing about how good or safe a specific model is, so a certificate is not a model safety rating.",
+   "concepts": [
+    "kt:iso-iec-42001",
+    "kt:ai-governance",
+    "kt:iso-iec-27001"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/iso-iec-42001.html"
+  },
+  {
+   "id": "ai-000470",
+   "area": "governance-and-policy",
+   "kind": "application",
+   "topic": "ISO/IEC 42001",
+   "t": "Under the EU AI Act, a legal presumption of conformity comes from harmonised standards by CEN and CENELEC's JTC 21 cited in the Official Journal, rather than from ISO/IEC 42001 itself.",
+   "f": "Under the EU AI Act, a legal presumption of conformity comes from certification to ISO/IEC 42001 itself, rather than from harmonised standards by CEN and CENELEC's JTC 21.",
+   "x": "The Act gives legal weight only to European harmonised standards referenced in the Official Journal; its quality management standard is a separate draft, prEN 18286. The Commission prefers adopting international standards where they align, which leaves room for, but does not guarantee, a role for 42001.",
+   "concepts": [
+    "kt:iso-iec-42001",
+    "kt:eu-ai-act"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/iso-iec-42001.html"
+  },
+  {
+   "id": "ai-000471",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "Beam search",
+   "t": "Beam search usually divides a finished hypothesis's summed log-probability by a power of its length, because each extra token lowers the raw score and would unfairly favour short outputs.",
+   "f": "Beam search usually divides a finished hypothesis's summed log-probability by a power of its length, because each extra token raises the raw score and would unfairly favour long outputs.",
+   "x": "Log-probabilities are negative, so every added token makes the sum smaller. Length normalisation, typically dividing by L to the power 0.75, offsets that bias so longer, complete answers are not crowded out.",
+   "concepts": [
+    "kt:beam-search",
+    "kt:decoding-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/beam-search.html"
+  },
+  {
+   "id": "ai-000472",
+   "area": "inference-and-optimization",
+   "kind": "evidence",
+   "topic": "Beam search",
+   "t": "Koehn and Knowles (2017) found translation quality usually worsens once the beam grows past an optimal size, mainly because wider beams produce shorter translations.",
+   "f": "Koehn and Knowles (2017) found translation quality usually worsens once the beam grows past an optimal size, mainly because wider beams produce longer translations.",
+   "x": "A wider beam searches harder for high-probability outputs, and short outputs tend to score well, so more search can mean worse translations. They tested beams from 1 to 1,000; length normalisation softened the drop but did not remove it.",
+   "concepts": [
+    "kt:beam-search",
+    "kt:sequence-to-sequence-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/beam-search.html"
+  },
+  {
+   "id": "ai-000473",
+   "area": "inference-and-optimization",
+   "kind": "definition",
+   "topic": "Beam search",
+   "t": "Diverse beam search is a beam-search variant that adds diversity constraints between groups of beams, because ordinary beam candidates are often near-duplicate rewordings.",
+   "f": "Diverse beam search is a beam-search variant that samples each next token at random within the beam, because ordinary beam candidates are often near-duplicate rewordings.",
+   "x": "Vijayakumar et al. kept beam search's structure but penalised groups of beams for resembling each other, gaining variety at little extra cost. Random sampling within a beam is a different idea, closer to beam-search multinomial sampling.",
+   "concepts": [
+    "kt:beam-search",
+    "kt:diverse-beam-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/beam-search.html"
+  },
+  {
+   "id": "ai-000474",
+   "area": "ml-foundations",
+   "kind": "origin",
+   "topic": "Ensemble methods",
+   "t": "Leo Breiman introduced bagging (bootstrap aggregating) in 1996 and later combined it with random feature selection to create random forests in 2001.",
+   "f": "Yoav Freund and Robert Schapire introduced bagging (bootstrap aggregating) in 1996 and later combined it with random feature selection to create random forests in 2001.",
+   "x": "Both bagging and random forests are Breiman's work, five years apart. Freund and Schapire are the names behind the other main family, boosting, whose AdaBoost algorithm appeared in their 1997 paper.",
+   "concepts": [
+    "kt:ensemble-methods",
+    "kt:bagging",
+    "kt:random-forest",
+    "kt:boosting"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ensemble-methods.html"
+  },
+  {
+   "id": "ai-000475",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Ensemble methods",
+   "t": "Bagging helps most with unstable base learners such as decision trees, whose output shifts a lot with small data changes; in Breiman's tests it left stable k-nearest-neighbour classifiers essentially unchanged.",
+   "f": "Bagging helps most with stable base learners such as k-nearest-neighbour classifiers, whose output shifts little with small data changes; in Breiman's tests it left unstable decision trees essentially unchanged.",
+   "x": "Averaging over bootstrap resamples only helps if the resamples produce genuinely different models. Unstable trees do, so their errors partly cancel and test error fell sharply, while a stable learner gives nearly the same model every time and gains nothing.",
+   "concepts": [
+    "kt:ensemble-methods",
+    "kt:bagging",
+    "kt:decision-tree",
+    "kt:bias-variance-tradeoff"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ensemble-methods.html"
+  },
+  {
+   "id": "ai-000476",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Ensemble methods",
+   "t": "In Dietterich's decision-tree comparison, AdaBoost beat bagging on clean data but fell behind it when 20% of labels were corrupted, because boosting put much of its weight on the mislabelled examples.",
+   "f": "In Dietterich's decision-tree comparison, AdaBoost beat bagging on clean data and widened its lead when 20% of labels were corrupted, because boosting put much of its weight on the mislabelled examples.",
+   "x": "Boosting keeps upweighting examples it gets wrong, and mislabelled examples are always wrong, so noise pulls the ensemble toward fitting errors. Bagging treats every example equally, which makes it, and random forests, far more tolerant of label noise.",
+   "concepts": [
+    "kt:ensemble-methods",
+    "kt:boosting",
+    "kt:bagging",
+    "kt:overfitting"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ensemble-methods.html"
+  },
+  {
+   "id": "ai-000477",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Structured output",
+   "t": "Constrained decoding zeroes the probability of every token that could not lead to a valid output and renormalises, so sampling settings such as temperature still apply within the allowed set.",
+   "f": "Constrained decoding zeroes the probability of every token that could not lead to a valid output and renormalises, so sampling settings such as temperature stop having any effect.",
+   "x": "The constraint is a mask applied before sampling, not a replacement for it: the model still samples, just from the tokens that keep the output parseable. Temperature reshapes the probabilities among those allowed tokens.",
+   "concepts": [
+    "kt:structured-output",
+    "kt:constrained-decoding",
+    "kt:sampling-temperature-and-top-p"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/structured-output.html"
+  },
+  {
+   "id": "ai-000478",
+   "area": "prompting-and-reasoning",
+   "kind": "application",
+   "topic": "Structured output",
+   "t": "In OpenAI's API, JSON mode guarantees syntactically valid JSON but not that it fits a schema, while Structured Outputs with strict mode enforces a supplied JSON Schema.",
+   "f": "In OpenAI's API, Structured Outputs guarantees syntactically valid JSON but not that it fits a schema, while JSON mode with strict mode enforces a supplied JSON Schema.",
+   "x": "JSON mode is the older, weaker option: output parses, but fields can be missing or wrong. Structured Outputs takes a schema and constrains decoding to it, though values and business rules still need checking in application code.",
+   "concepts": [
+    "kt:structured-output",
+    "kt:function-calling"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/structured-output.html"
+  },
+  {
+   "id": "ai-000479",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Structured output",
+   "t": "Tam et al. (EMNLP 2024) found that forcing formats such as JSON was linked to a notable drop in reasoning performance, and that stricter constraints tended to hurt more.",
+   "f": "Tam et al. (EMNLP 2024) found that forcing formats such as JSON was linked to a notable drop in reasoning performance, and that looser constraints tended to hurt more.",
+   "x": "The worry is that squeezing a model into a rigid format leaves less room for step-by-step reasoning. The question is still open: the JSONSchemaBench authors later reported slight gains from constrained engines on three reasoning tasks.",
+   "concepts": [
+    "kt:structured-output",
+    "kt:chain-of-thought"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/structured-output.html"
+  },
+  {
+   "id": "ai-000480",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Hybrid search",
+   "t": "Reciprocal rank fusion scores each document by summing 1/(k + rank) over the result lists that contain it, so BM25 scores and cosine similarities never need a common scale.",
+   "f": "Reciprocal rank fusion scores each document by summing its min-max normalised scores over the result lists that contain it, so BM25 scores and cosine similarities share a common scale.",
+   "x": "RRF throws away raw scores and keeps only positions, which sidesteps the fact that lexical and dense scores live on unrelated scales. Normalising and summing scores is the other fusion family, score fusion, used for example by Weaviate's relative score fusion.",
+   "concepts": [
+    "kt:hybrid-search",
+    "kt:reciprocal-rank-fusion",
+    "kt:bm25"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hybrid-search.html"
+  },
+  {
+   "id": "ai-000481",
+   "area": "retrieval-and-knowledge",
+   "kind": "origin",
+   "topic": "Hybrid search",
+   "t": "Reciprocal rank fusion, now a common way to merge keyword and vector results in hybrid search, was introduced by Cormack, Clarke and Buettcher at SIGIR 2009.",
+   "f": "Reciprocal rank fusion, now a common way to merge keyword and vector results in hybrid search, was introduced by Cormack, Clarke and Buettcher at SIGIR 2019.",
+   "x": "RRF dates from 2009, about a decade before dense passage retrieval in 2020. Because it uses only rank positions, it later became a natural fit for merging BM25 with embedding search, whose scores are not comparable.",
+   "concepts": [
+    "kt:hybrid-search",
+    "kt:reciprocal-rank-fusion"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hybrid-search.html"
+  },
+  {
+   "id": "ai-000482",
+   "area": "retrieval-and-knowledge",
+   "kind": "evidence",
+   "topic": "Hybrid search",
+   "t": "Ma and colleagues' 2021 replication of dense passage retrieval found that the top results of sparse and dense retrievers overlap little, suggesting the two exploit different relevance signals.",
+   "f": "Ma and colleagues' 2021 replication of dense passage retrieval found that the top results of sparse and dense retrievers overlap heavily, suggesting the two exploit the same relevance signals.",
+   "x": "Low overlap is the core argument for hybrid search: if both retrievers returned the same documents, fusing them would add nothing. Because they surface different relevant passages, the replication found tuned hybrids beat dense retrieval alone on nearly every dataset.",
+   "concepts": [
+    "kt:hybrid-search",
+    "kt:dense-passage-retrieval",
+    "kt:bm25"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hybrid-search.html"
+  },
+  {
+   "id": "ai-000483",
+   "area": "safety-alignment-and-security",
+   "kind": "origin",
+   "topic": "Adversarial machine learning",
+   "t": "Biggio and Roli trace adversarial machine learning to 2004–2005 work showing that linear spam filters could be evaded by small, targeted edits to email content.",
+   "f": "Biggio and Roli trace adversarial machine learning to 2014 work showing that linear spam filters could be evaded by small, targeted edits to email content.",
+   "x": "The field is often dated to the 2014 discovery of adversarial examples in deep networks, but attacks on spam filters by Dalvi et al. and by Lowd and Meek came about a decade earlier. Seeing that history makes clear the problem is not specific to deep learning.",
+   "concepts": [
+    "kt:adversarial-machine-learning",
+    "kt:adversarial-example"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/adversarial-machine-learning.html"
+  },
+  {
+   "id": "ai-000484",
+   "area": "safety-alignment-and-security",
+   "kind": "mechanism",
+   "topic": "Adversarial machine learning",
+   "t": "Goodfellow, Shlens and Szegedy argued that vulnerability to small worst-case input perturbations stems mainly from models behaving too linearly in high-dimensional input spaces.",
+   "f": "Goodfellow, Shlens and Szegedy argued that vulnerability to small worst-case input perturbations stems mainly from models behaving too nonlinearly and overfitting their training data.",
+   "x": "In high dimensions, many tiny per-feature changes add up to a large change in a roughly linear model's output. That insight explains why adversarial examples are so easy to find, and it led to their fast perturbation method and its use for adversarial training.",
+   "concepts": [
+    "kt:adversarial-machine-learning",
+    "kt:adversarial-example",
+    "kt:adversarial-training"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/adversarial-machine-learning.html"
+  },
+  {
+   "id": "ai-000485",
+   "area": "safety-alignment-and-security",
+   "kind": "definition",
+   "topic": "Adversarial machine learning",
+   "t": "In Biggio and Roli's threat model, an attacker's capability is causative if they can influence the training data and exploratory if they can only shape test-time inputs.",
+   "f": "In Biggio and Roli's threat model, an attacker's capability is exploratory if they can influence the training data and causative if they can only shape test-time inputs.",
+   "x": "A causative attacker changes what the model learns, as in data poisoning, while an exploratory attacker works with a trained model, as in evasion. Naming the capability up front tells defenders which attack surfaces they must protect.",
+   "concepts": [
+    "kt:adversarial-machine-learning",
+    "kt:data-poisoning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/adversarial-machine-learning.html"
+  },
+  {
+   "id": "ai-000486",
+   "area": "training-and-adaptation",
+   "kind": "definition",
+   "topic": "Hugging Face TRL",
+   "t": "Despite its name, Hugging Face's TRL (Transformers Reinforcement Learning) is mostly used for supervised fine-tuning and offline preference training, with reinforcement learning one family among several.",
+   "f": "As its name suggests, Hugging Face's TRL (Transformers Reinforcement Learning) is mostly used for online reinforcement learning such as PPO, with supervised fine-tuning one family among several.",
+   "x": "TRL began around the RL step of the RLHF recipe, but it grew into a general post-training library. Day to day, people mostly use its SFT and DPO-style trainers, which need no online generation or reward model in the loop.",
+   "concepts": [
+    "kt:hugging-face-trl",
+    "kt:post-training",
+    "kt:fine-tuning",
+    "kt:hugging-face"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hugging-face-trl.html"
+  },
+  {
+   "id": "ai-000487",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Hugging Face TRL",
+   "t": "When TRL's PPO trainer is used with LoRA adapters, switching the adapters off turns the same weights back into the frozen reference model, so no second model copy is needed.",
+   "f": "When TRL's PPO trainer is used with LoRA adapters, switching the adapters off turns the same weights into the reward model, so no separate reward model is needed.",
+   "x": "RLHF-style PPO compares the policy against a frozen reference model, normally a second full copy. With adapters, the base weights are that reference and the adapters are the policy, which is how a 20-billion-parameter RL run fit on one 24 GB GPU in 2023.",
+   "concepts": [
+    "kt:hugging-face-trl",
+    "kt:proximal-policy-optimization",
+    "kt:parameter-efficient-fine-tuning",
+    "kt:rlhf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hugging-face-trl.html"
+  },
+  {
+   "id": "ai-000488",
+   "area": "training-and-adaptation",
+   "kind": "application",
+   "topic": "Hugging Face TRL",
+   "t": "From TRL v1.0 in 2026, SFT, DPO, reward modeling, RLOO and GRPO form a stable core under semantic versioning, while methods such as ORPO sit in an experimental namespace.",
+   "f": "From TRL v1.0 in 2026, SFT, DPO, reward modeling, RLOO and ORPO form a stable core under semantic versioning, while methods such as GRPO sit in an experimental namespace.",
+   "x": "The split tells users which trainers they can build on without breaking changes. Methods graduate from experimental to stable based on how much they are used relative to their maintenance cost, and GRPO is one of the library's flagship trainers.",
+   "concepts": [
+    "kt:hugging-face-trl",
+    "kt:direct-preference-optimization",
+    "kt:reward-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/hugging-face-trl.html"
+  },
+  {
+   "id": "ai-000489",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Vision transformer",
+   "t": "Swin Transformer computes self-attention only inside local windows, so its cost grows linearly with image size, and shifts the window grid between blocks so information crosses window borders.",
+   "f": "Swin Transformer computes self-attention only inside local windows, so its cost grows quadratically with image size, and shifts the window grid between blocks so information crosses window borders.",
+   "x": "Global self-attention compares every patch with every other, so its cost is quadratic in the number of patches. Restricting attention to fixed-size windows (7×7 patches by default) makes cost linear, and shifting the windows between blocks restores communication across them, at the price of reintroducing a locality prior.",
+   "concepts": [
+    "kt:vision-transformer",
+    "kt:swin-transformer",
+    "kt:self-attention"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-transformer.html"
+  },
+  {
+   "id": "ai-000490",
+   "area": "computer-vision-and-multimodal",
+   "kind": "evidence",
+   "topic": "Vision transformer",
+   "t": "ViTDet showed a plain, single-scale ViT can be a strong detection backbone by building a simple feature pyramid from its output, without a hierarchical design.",
+   "f": "ViTDet showed a plain, single-scale ViT can be a strong detection backbone only after adding Swin-style patch-merging stages to make it hierarchical.",
+   "x": "Detection needs multi-scale features, which is why hierarchical designs like Swin were assumed necessary. ViTDet built a simple pyramid from the plain ViT's single-scale output instead, decoupling pre-training from the task so one plain ViT can be pre-trained once and reused.",
+   "concepts": [
+    "kt:vision-transformer",
+    "kt:object-detection",
+    "kt:masked-autoencoder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-transformer.html"
+  },
+  {
+   "id": "ai-000491",
+   "area": "computer-vision-and-multimodal",
+   "kind": "figure",
+   "topic": "Vision transformer",
+   "t": "In 2021 DeiT trained a convolution-free 86M-parameter ViT to 83.1% ImageNet top-1 using ImageNet alone, on a single machine in under three days.",
+   "f": "In 2021 DeiT trained a convolution-free 86M-parameter ViT to 83.1% ImageNet top-1 only after JFT-300M pre-training, on a single machine in under three days.",
+   "x": "DeiT's point was data efficiency: with stronger augmentation and a better training recipe, a ViT no longer needed a huge private pre-training set to be competitive. Its distillation token, learning from a convnet teacher, pushed the reported accuracy higher still.",
+   "concepts": [
+    "kt:vision-transformer",
+    "kt:image-classification",
+    "kt:knowledge-distillation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vision-transformer.html",
+   "asOf": "2021"
+  },
+  {
+   "id": "ai-000492",
+   "area": "evaluation-and-benchmarks",
+   "kind": "definition",
+   "topic": "Perplexity",
+   "t": "A language model that spreads probability uniformly over its vocabulary has a perplexity equal to the vocabulary size, a baseline any useful model must beat.",
+   "f": "A language model that spreads probability uniformly over its vocabulary has a perplexity equal to 1, a baseline any useful model must beat.",
+   "x": "Perplexity reads as an effective branching factor: how many equally likely choices the model is torn between at each token. A uniform guess is torn between every word, so it scores the vocabulary size; a score of 1 belongs to a model that is always certain and right.",
+   "concepts": [
+    "kt:perplexity",
+    "kt:language-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/perplexity.html"
+  },
+  {
+   "id": "ai-000493",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "Perplexity",
+   "t": "When a Transformer scores a long document, splitting it into disjoint fixed-length chunks gives a higher perplexity than a strided sliding window over the same text.",
+   "f": "When a Transformer scores a long document, splitting it into disjoint fixed-length chunks gives a lower perplexity than a strided sliding window over the same text.",
+   "x": "With disjoint chunks the first tokens of each chunk are predicted with almost no context, which inflates their loss. A sliding window gives every token more history at the cost of extra forward passes, so the evaluation protocol alone can move the reported number noticeably.",
+   "concepts": [
+    "kt:perplexity",
+    "kt:context-window"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/perplexity.html"
+  },
+  {
+   "id": "ai-000494",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "Perplexity",
+   "t": "Fang et al. (ICLR 2025) found standard perplexity tracked long-context benchmarks only weakly, while their LongPPL, scored only on tokens that depend on distant context, tracked them closely.",
+   "f": "Fang et al. (ICLR 2025) found standard perplexity tracked long-context benchmarks closely, while their LongPPL, scored only on tokens that depend on distant context, tracked them only weakly.",
+   "x": "Most tokens can be predicted from nearby text, so averaging over every token drowns out the few that test long-range memory. Scoring only those key tokens gives a metric that actually reflects long-context ability.",
+   "concepts": [
+    "kt:perplexity",
+    "kt:context-window"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/perplexity.html"
+  },
+  {
+   "id": "ai-000495",
+   "area": "transformers-and-llms",
+   "kind": "mechanism",
+   "topic": "KV cache",
+   "t": "A KV cache keeps earlier tokens' keys and values but not their queries, since each decoding step attends only from the current token's query over the cached prefix.",
+   "f": "A KV cache keeps earlier tokens' queries and keys but not their values, since each decoding step attends only from the current token's value over the cached prefix.",
+   "x": "At each decode step only the new token asks the question (its query); every earlier token contributes its key, to be scored, and its value, to be averaged. So keys and values are worth storing, while old queries are never used again.",
+   "concepts": [
+    "kt:kv-cache",
+    "kt:self-attention"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/kv-cache.html"
+  },
+  {
+   "id": "ai-000496",
+   "area": "transformers-and-llms",
+   "kind": "definition",
+   "topic": "KV cache",
+   "t": "Multi-query attention has all query heads share a single key-value head, while grouped-query attention uses an intermediate number of key-value heads.",
+   "f": "Grouped-query attention has all query heads share a single key-value head, while multi-query attention uses an intermediate number of key-value heads.",
+   "x": "Both shrink the KV cache by storing fewer key-value heads than query heads. Multi-query is the extreme with just one, and grouped-query, published at EMNLP 2023, sits between it and full multi-head attention, which is why the names are easy to swap.",
+   "concepts": [
+    "kt:kv-cache",
+    "kt:multi-query-attention",
+    "kt:grouped-query-attention"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/kv-cache.html"
+  },
+  {
+   "id": "ai-000497",
+   "area": "transformers-and-llms",
+   "kind": "evidence",
+   "topic": "KV cache",
+   "t": "The grouped-query attention authors reported that uptraining multi-head checkpoints with about 5% of pre-training compute gave quality close to multi-head attention at speeds near multi-query attention.",
+   "f": "The grouped-query attention authors reported that uptraining multi-head checkpoints with about 5% of pre-training compute gave quality close to multi-query attention at speeds near multi-head attention.",
+   "x": "Grouped-query attention sits between the two extremes and aims for the best of each: the quality of full multi-head attention and the speed of a single shared key-value head. The false twin swaps which property comes from which end.",
+   "concepts": [
+    "kt:kv-cache",
+    "kt:grouped-query-attention",
+    "kt:multi-query-attention"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/kv-cache.html"
+  },
+  {
+   "id": "ai-000498",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "Monte Carlo tree search",
+   "t": "Each Monte Carlo tree search iteration runs selection, then expansion, then simulation with a default policy, then backpropagation of the outcome along the path.",
+   "f": "Each Monte Carlo tree search iteration runs selection, then simulation with a default policy, then expansion, then backpropagation of the outcome along the path.",
+   "x": "The tree policy first walks down to a node that can still grow, a new child is added, and only then is a playout run from that new node. Backing the result up the path updates visit counts and values, so the tree grows deepest where play looks best.",
+   "concepts": [
+    "kt:monte-carlo-tree-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/monte-carlo-tree-search.html"
+  },
+  {
+   "id": "ai-000499",
+   "area": "reinforcement-learning",
+   "kind": "origin",
+   "topic": "Monte Carlo tree search",
+   "t": "In 2006 Kocsis and Szepesvári created UCT by treating each tree node's action choice as a multi-armed bandit, solved with a modified UCB1 rule.",
+   "f": "In 2006 Rémi Coulom created UCT by treating each tree node's action choice as a multi-armed bandit, solved with a modified UCB1 rule.",
+   "x": "Coulom coined the name Monte Carlo tree search that year for his Go program Crazy Stone, with an empirically tuned backup rule. Kocsis and Szepesvári's bandit framing gave the variant most implementations start from, plus a proof that it is consistent.",
+   "concepts": [
+    "kt:monte-carlo-tree-search",
+    "kt:upper-confidence-bound",
+    "kt:multi-armed-bandit"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/monte-carlo-tree-search.html"
+  },
+  {
+   "id": "ai-000500",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "Monte Carlo tree search",
+   "t": "Plain UCT struggles in games with trap states, where a loss follows within a few moves, which is one reason MCTS lagged in chess.",
+   "f": "Plain UCT struggles in games with trap states, where a loss follows within a few moves, which is one reason MCTS lagged in Go.",
+   "x": "Random playouts average over many lines and can miss a short forced loss that a minimax search would spot. Chess is full of such tactical traps, whereas Go lacked good evaluation heuristics, which is exactly where MCTS dominated for a decade.",
+   "concepts": [
+    "kt:monte-carlo-tree-search",
+    "kt:alpha-beta-pruning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/monte-carlo-tree-search.html"
+  },
+  {
+   "id": "ai-000501",
+   "area": "agents-and-tool-use",
+   "kind": "definition",
+   "topic": "Agent memory",
+   "t": "In the CoALA framework, episodic memory stores an agent's past experience such as trajectories, while semantic memory stores knowledge about the world and the agent itself.",
+   "f": "In the CoALA framework, semantic memory stores an agent's past experience such as trajectories, while episodic memory stores knowledge about the world and the agent itself.",
+   "x": "CoALA (Cognitive Architectures for Language Agents) borrows the cognitive-science split: episodes are what happened, semantics are what is known. Keeping them apart helps decide what to log as history and what to distil into facts or profiles.",
+   "concepts": [
+    "kt:agent-memory",
+    "kt:ai-agent"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agent-memory.html"
+  },
+  {
+   "id": "ai-000502",
+   "area": "agents-and-tool-use",
+   "kind": "mechanism",
+   "topic": "Agent memory",
+   "t": "MemGPT treats the context window like an operating system's main memory, and the model itself moves data between the window and outside storage through function calls.",
+   "f": "MemGPT treats the context window like an operating system's main memory, and a fixed retrieval pipeline outside the model moves data between the window and outside storage.",
+   "x": "MemGPT's key move is giving the model control over its own memory tiers, like a program paging data in and out, with a queue manager warning it of memory pressure. A fixed external pipeline is the more conventional retrieval design it departs from.",
+   "concepts": [
+    "kt:agent-memory",
+    "kt:memgpt",
+    "kt:context-window"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agent-memory.html"
+  },
+  {
+   "id": "ai-000503",
+   "area": "agents-and-tool-use",
+   "kind": "application",
+   "topic": "Agent memory",
+   "t": "LangGraph's docs say writing agent memories in the hot path makes them available at once but adds latency, while writing them in a background task avoids that latency.",
+   "f": "LangGraph's docs say writing agent memories in a background task makes them available at once but adds latency, while writing them in the hot path avoids that latency.",
+   "x": "Writing in the hot path means the agent pauses to save a memory before replying, so it is fresh immediately but slows the response. Background writes keep responses fast, at the risk that another thread briefly misses a memory that was just written.",
+   "concepts": [
+    "kt:agent-memory",
+    "kt:langgraph"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/agent-memory.html"
+  },
+  {
+   "id": "ai-000504",
+   "area": "ai-history",
+   "kind": "origin",
+   "topic": "AI winter",
+   "t": "DARPA's Strategic Computing programme, announced in 1983 with $1 billion planned over a decade, was partly a response to Japan's Fifth Generation Computer Systems project.",
+   "f": "DARPA's Strategic Computing programme, announced in 1983 with $1 billion planned over a decade, was partly a response to Britain's Lighthill report on AI.",
+   "x": "Strategic Computing belonged to the early-1980s recovery, driven by competition with Japan's Fifth Generation project; the 1973 Lighthill report had instead fed the cuts of the first winter. When contractors missed its milestones, it became part of the second winter's story.",
+   "concepts": [
+    "kt:ai-winter",
+    "kt:strategic-computing-initiative",
+    "kt:lighthill-report"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-winter.html"
+  },
+  {
+   "id": "ai-000505",
+   "area": "ai-history",
+   "kind": "evidence",
+   "topic": "AI winter",
+   "t": "The AI100 panel blamed AI's gap between promise and practice partly on too little grounding in real sensor data and overreliance on true/false logic rather than quantified uncertainty.",
+   "f": "The AI100 panel blamed AI's gap between promise and practice partly on too little grounding in real sensor data and overreliance on quantified uncertainty rather than true/false logic.",
+   "x": "Brittle rule-based expert systems reasoned in crisp true/false terms and struggled with messy real-world inputs. The recovery of the 1990s came from statistical machine learning, which handles uncertainty explicitly, so the false version reverses the lesson.",
+   "concepts": [
+    "kt:ai-winter",
+    "kt:expert-systems",
+    "kt:machine-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-winter.html"
+  },
+  {
+   "id": "ai-000506",
+   "area": "ai-history",
+   "kind": "figure",
+   "topic": "AI winter",
+   "t": "Total US federal AI funding, including Strategic Computing, rose from $106 million in 1984 to $274 million in 1988, just before the second AI winter set in.",
+   "f": "Total US federal AI funding, including Strategic Computing, fell from $274 million in 1984 to $106 million in 1988, just before the second AI winter set in.",
+   "x": "The mid-1980s were a boom: expert systems and Strategic Computing more than doubled federal AI money. The winter came after that peak, when expert systems proved brittle and the Lisp-machine market collapsed, so the false version reverses the direction of the boom.",
+   "concepts": [
+    "kt:ai-winter",
+    "kt:strategic-computing-initiative"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/ai-winter.html",
+   "asOf": "1988"
+  },
+  {
+   "id": "ai-000507",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "origin",
+   "topic": "Google",
+   "t": "In April 2023 Google merged the Brain team and DeepMind into one unit, Google DeepMind, led by DeepMind CEO Demis Hassabis, with Jeff Dean as chief scientist.",
+   "f": "In April 2023 Google merged the Brain team and DeepMind into one unit, Google DeepMind, led by Jeff Dean, with DeepMind CEO Demis Hassabis as chief scientist.",
+   "x": "Sundar Pichai announced the merger on April 20, 2023, putting Hassabis in charge of the combined lab and making Dean chief scientist across Google Research and Google DeepMind. The false version swaps the two roles.",
+   "concepts": [
+    "kt:google",
+    "kt:google-deepmind"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/google.html"
+  },
+  {
+   "id": "ai-000508",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "mechanism",
+   "topic": "Google",
+   "t": "TensorFlow, described by Google Brain at OSDI 2016, represents both computation and mutable state as dataflow graphs and maps them across CPUs, GPUs and custom accelerators.",
+   "f": "TensorFlow, described by Google Brain at OSDI 2016, represents computation as dataflow graphs but keeps mutable state on separate parameter servers outside the graph.",
+   "x": "Putting state inside the dataflow graph was TensorFlow's break from earlier parameter-server systems, and its authors argued this gave developers more freedom to try new training algorithms. The false version describes the older design it was contrasted with.",
+   "concepts": [
+    "kt:google",
+    "kt:tensorflow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/google.html"
+  },
+  {
+   "id": "ai-000509",
+   "area": "ai-infrastructure-and-mlops",
+   "kind": "figure",
+   "topic": "Google",
+   "t": "In 2017 Google reported its first TPU ran production neural-network inference roughly 15–30 times faster than contemporary CPUs and GPUs, with 30–80 times better performance per watt.",
+   "f": "In 2017 Google reported its first TPU ran production neural-network inference roughly 30–80 times faster than contemporary CPUs and GPUs, with 15–30 times better performance per watt.",
+   "x": "Jouppi and colleagues compared the TPU with Intel Haswell CPUs and NVIDIA K80 GPUs on MLP, CNN and LSTM workloads. The energy-efficiency gain was even larger than the raw speed gain, showing what a custom inference chip could buy over general-purpose hardware; the false version swaps the two ranges.",
+   "concepts": [
+    "kt:google",
+    "kt:tpu",
+    "kt:nvidia"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/google.html",
+   "asOf": "2017"
+  },
+  {
+   "id": "ai-000510",
+   "area": "deep-learning",
+   "kind": "origin",
+   "topic": "Residual connection",
+   "t": "He and colleagues at Microsoft Research introduced residual connections to fix degradation, where adding layers to a deep plain network raised its training error.",
+   "f": "He and colleagues at Microsoft Research introduced residual connections to fix overfitting, where adding layers to a deep plain network raised only its test error.",
+   "x": "Training error going up with depth means the optimiser, not overfitting, was failing: a deeper net could copy a shallower one with identity layers but did not find that solution. Residual blocks make the identity the easy default by learning only F(x) = H(x) − x.",
+   "concepts": [
+    "kt:residual-connection",
+    "kt:microsoft-research",
+    "kt:deep-residual-learning-for-image-recognition"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/residual-connection.html"
+  },
+  {
+   "id": "ai-000511",
+   "area": "deep-learning",
+   "kind": "mechanism",
+   "topic": "Residual connection",
+   "t": "The gradient of a residual block F(x) + x is the block's Jacobian plus the identity, so the signal always has an unattenuated path back to earlier layers.",
+   "f": "The gradient of a residual block F(x) + x is the block's Jacobian times the identity, so the signal is attenuated by every block's weights on its way back to earlier layers.",
+   "x": "The added identity term means the gradient never has to pass only through stacked weight matrices, which is how residual connections ease vanishing gradients. He et al.'s pre-activation follow-up used this direct path to train a 1001-layer ResNet.",
+   "concepts": [
+    "kt:residual-connection",
+    "kt:vanishing-gradient-problem"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/residual-connection.html"
+  },
+  {
+   "id": "ai-000512",
+   "area": "deep-learning",
+   "kind": "evidence",
+   "topic": "Residual connection",
+   "t": "Veit and colleagues found a 110-layer ResNet behaves like an ensemble of mostly short paths, with most of the gradient flowing through paths only 10–34 layers deep.",
+   "f": "Veit and colleagues found a 110-layer ResNet behaves like one very deep path, with most of the gradient flowing through paths over 100 layers deep.",
+   "x": "Unrolling a ResNet shows many paths of different lengths. Their result suggests residual connections avoid vanishing gradients less by making very long paths trainable than by keeping short ones available, a point still debated.",
+   "concepts": [
+    "kt:residual-connection",
+    "kt:vanishing-gradient-problem"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/residual-connection.html"
+  },
+  {
+   "id": "ai-000513",
+   "area": "governance-and-policy",
+   "kind": "origin",
+   "topic": "Model cards",
+   "t": "Model cards were proposed by Margaret Mitchell, Timnit Gebru and colleagues, most of them at Google, in the paper Model Cards for Model Reporting at FAT* 2019.",
+   "f": "Model cards were proposed by Margaret Mitchell, Timnit Gebru and colleagues, most of them at Microsoft, in the paper Model Cards for Model Reporting at FAT* 2019.",
+   "x": "The Google-based team argued that models were entering high-stakes uses such as hiring and health care with no standard way to report how they perform, so biases surfaced only after deployment. Their one-to-two-page cards became a template that Hugging Face and others adopted.",
+   "concepts": [
+    "kt:model-cards",
+    "kt:margaret-mitchell",
+    "kt:model-cards-for-model-reporting"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-cards.html"
+  },
+  {
+   "id": "ai-000514",
+   "area": "governance-and-policy",
+   "kind": "mechanism",
+   "topic": "Model cards",
+   "t": "A model card's distinctive element is disaggregated evaluation: results are reported separately for groups, conditions and their intersections, since an aggregate score can hide subgroup failures.",
+   "f": "A model card's distinctive element is aggregated evaluation: results are pooled into one score across groups, conditions and their intersections, since subgroup scores can hide overall failures.",
+   "x": "A model with a good average can still fail badly for one group; reporting per group and per intersection, such as age combined with gender, exposes that. The paper's smiling-detection card, for example, revealed a higher false discovery rate for older men.",
+   "concepts": [
+    "kt:model-cards",
+    "kt:algorithmic-bias-and-fairness",
+    "kt:ai-evaluation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-cards.html"
+  },
+  {
+   "id": "ai-000515",
+   "area": "governance-and-policy",
+   "kind": "evidence",
+   "topic": "Model cards",
+   "t": "A 2024 study of 32,111 Hugging Face model cards found training sections were filled in most consistently, while environmental impact, limitations and evaluation sections were filled in least.",
+   "f": "A 2024 study of 32,111 Hugging Face model cards found evaluation and limitations sections were filled in most consistently, while training and environmental impact sections were filled in least.",
+   "x": "Developers readily describe how they trained a model but skimp on the parts that matter most for safe use: where it fails and how it was tested. Having a card is common, so quality, not presence, is the real gap.",
+   "concepts": [
+    "kt:model-cards",
+    "kt:hugging-face-hub"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/model-cards.html"
+  },
+  {
+   "id": "ai-000516",
+   "area": "inference-and-optimization",
+   "kind": "mechanism",
+   "topic": "LLM inference optimization",
+   "t": "In LLM inference, prefill is a matrix-matrix workload that keeps the GPU busy, while decode is a matrix-vector workload whose latency is dominated by memory transfers.",
+   "f": "In LLM inference, decode is a matrix-matrix workload that keeps the GPU busy, while prefill is a matrix-vector workload whose latency is dominated by memory transfers.",
+   "x": "Prefill processes all prompt tokens at once, giving the GPU plenty of arithmetic per byte loaded. Decode handles one token per step, so weights and cache must be reloaded for little work, which is why most optimizations target the decode phase.",
+   "concepts": [
+    "kt:llm-inference-optimization",
+    "kt:kv-cache"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-inference-optimization.html"
+  },
+  {
+   "id": "ai-000517",
+   "area": "inference-and-optimization",
+   "kind": "definition",
+   "topic": "LLM inference optimization",
+   "t": "In Zhou et al.'s 2024 taxonomy, system-level inference techniques such as faster kernels and batching are typically lossless, while model-level ones such as quantization risk accuracy.",
+   "f": "In Zhou et al.'s 2024 taxonomy, model-level inference techniques such as faster kernels and batching are typically lossless, while system-level ones such as quantization risk accuracy.",
+   "x": "Model-level methods change the network itself, through compression or efficient structures, so they can cost quality and often need retraining. System-level work changes how the same computation is run and scheduled, so outputs stay the same.",
+   "concepts": [
+    "kt:llm-inference-optimization",
+    "kt:model-compression"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-inference-optimization.html"
+  },
+  {
+   "id": "ai-000518",
+   "area": "inference-and-optimization",
+   "kind": "figure",
+   "topic": "LLM inference optimization",
+   "t": "NVIDIA engineers estimated in 2023 that one 4,096-token request to Llama 2 7B in 16-bit precision needs about 2 GB of KV cache, on top of roughly 14 GB of weights.",
+   "f": "NVIDIA engineers estimated in 2023 that one 4,096-token request to Llama 2 7B in 16-bit precision needs about 14 GB of KV cache, on top of roughly 2 GB of weights.",
+   "x": "Even for a small model, one long request's cache is a sizeable fraction of the weights, and every concurrent request needs its own. That is why cache size, not just model size, caps how many requests fit on a GPU.",
+   "concepts": [
+    "kt:llm-inference-optimization",
+    "kt:kv-cache"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/llm-inference-optimization.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000519",
+   "area": "ml-foundations",
+   "kind": "definition",
+   "topic": "Statistical learning theory",
+   "t": "The VC dimension of a hypothesis class is the size of the largest set of points it can shatter, and linear classifiers in n dimensions have VC dimension n + 1.",
+   "f": "The VC dimension of a hypothesis class is the size of the largest set of points it can shatter, and linear classifiers in n dimensions have VC dimension 2n.",
+   "x": "Shattering means the class can realise every possible labelling of the points, so the VC dimension measures capacity: for linear classifiers it is one more than the input dimension. Generalisation bounds grow with this capacity and shrink with the sample size.",
+   "concepts": [
+    "kt:statistical-learning-theory",
+    "kt:vc-dimension"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/statistical-learning-theory.html"
+  },
+  {
+   "id": "ai-000520",
+   "area": "ml-foundations",
+   "kind": "mechanism",
+   "topic": "Statistical learning theory",
+   "t": "Vapnik's key theorem says empirical risk minimisation is consistent exactly when empirical risk converges to true risk uniformly over the whole hypothesis class.",
+   "f": "Vapnik's key theorem says empirical risk minimisation is consistent exactly when empirical risk converges to true risk for the single hypothesis it ends up choosing.",
+   "x": "Because the learner picks the hypothesis that looks best on the sample, convergence for any one fixed hypothesis is not enough. The guarantee must hold across the whole class at once, which is why capacity measures like the VC dimension enter the analysis.",
+   "concepts": [
+    "kt:statistical-learning-theory",
+    "kt:vladimir-vapnik",
+    "kt:supervised-learning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/statistical-learning-theory.html"
+  },
+  {
+   "id": "ai-000521",
+   "area": "ml-foundations",
+   "kind": "evidence",
+   "topic": "Statistical learning theory",
+   "t": "Zhang et al. (ICLR 2017) showed standard image classifiers trained with stochastic gradient methods can fit completely random labels, and explicit regularization does not change this qualitatively.",
+   "f": "Zhang et al. (ICLR 2017) showed standard image classifiers trained with stochastic gradient methods can fit completely random labels, but explicit regularization reliably prevents this.",
+   "x": "The same networks that generalise on real labels can also memorise pure noise, even with regularizers switched on. So the model family's capacity alone cannot explain why deep learning generalises, which is where classical capacity bounds stop being useful.",
+   "concepts": [
+    "kt:statistical-learning-theory",
+    "kt:overfitting",
+    "kt:regularization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/statistical-learning-theory.html"
+  },
+  {
+   "id": "ai-000522",
+   "area": "prompting-and-reasoning",
+   "kind": "mechanism",
+   "topic": "Tree of Thoughts",
+   "t": "In Tree of Thoughts the language model itself evaluates partial solutions, either valuing each state independently or voting across candidates for the most promising one.",
+   "f": "In Tree of Thoughts a separately trained reward model evaluates partial solutions, either valuing each state independently or voting across candidates for the most promising one.",
+   "x": "ToT needs no extra training: the same model that proposes thoughts also judges them, for example labelling a Game of 24 state sure, maybe or impossible. That self-evaluation is cheap to set up but imperfect, and can prune valid steps.",
+   "concepts": [
+    "kt:tree-of-thoughts",
+    "kt:heuristic-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tree-of-thoughts.html"
+  },
+  {
+   "id": "ai-000523",
+   "area": "prompting-and-reasoning",
+   "kind": "figure",
+   "topic": "Tree of Thoughts",
+   "t": "In 2023, Tree of Thoughts with breadth 5 solved 74% of Game of 24 problems with GPT-4, against 4.0% for chain-of-thought prompting.",
+   "f": "In 2023, Tree of Thoughts with breadth 5 solved 45% of Game of 24 problems with GPT-4, against 4.0% for chain-of-thought prompting.",
+   "x": "Game of 24 punishes bad early choices, which is where search with lookahead helps most. The 45% figure is ToT with breadth 1; keeping five candidate states per step raised it to 74%.",
+   "concepts": [
+    "kt:tree-of-thoughts",
+    "kt:chain-of-thought"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tree-of-thoughts.html",
+   "asOf": "2023"
+  },
+  {
+   "id": "ai-000524",
+   "area": "prompting-and-reasoning",
+   "kind": "evidence",
+   "topic": "Tree of Thoughts",
+   "t": "The Tree of Thoughts authors estimated that it can generate 5 to 100 times more tokens than chain-of-thought prompting on the same problem.",
+   "f": "The Tree of Thoughts authors estimated that it can generate 1.5 to 2 times more tokens than chain-of-thought prompting on the same problem.",
+   "x": "Every branch proposed, evaluated and expanded costs model calls, so search multiplies token use well beyond a single chain. That price is why the authors note deliberate search may be unnecessary on tasks a strong model already handles.",
+   "concepts": [
+    "kt:tree-of-thoughts",
+    "kt:test-time-compute"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/tree-of-thoughts.html"
+  },
+  {
+   "id": "ai-000525",
+   "area": "retrieval-and-knowledge",
+   "kind": "mechanism",
+   "topic": "Vector database",
+   "t": "In filtered vector search, post-filtering runs the similarity search first and applies attribute filters afterwards, so it can return fewer than k results unless extra candidates are fetched.",
+   "f": "In filtered vector search, pre-filtering runs the similarity search first and applies attribute filters afterwards, so it can return fewer than k results unless extra candidates are fetched.",
+   "x": "If the nearest k vectors are found first, filters such as tenant or date may discard many of them, leaving a short result list. Pre-filtering does the opposite, blocking non-matching vectors before the scan, which avoids that shortfall but can disconnect a graph index.",
+   "concepts": [
+    "kt:vector-database",
+    "kt:approximate-nearest-neighbor-search",
+    "kt:hybrid-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vector-database.html"
+  },
+  {
+   "id": "ai-000526",
+   "area": "retrieval-and-knowledge",
+   "kind": "figure",
+   "topic": "Vector database",
+   "t": "In 2019 DiskANN reported over 95% 1-recall@1 on a one-billion-point index served from a 64 GB RAM workstation, while memory-matched Faiss baselines plateaued near 50% recall.",
+   "f": "In 2019 DiskANN reported over 95% 1-recall@1 on a one-billion-point index served from a 64 GB RAM workstation, while memory-matched Faiss baselines plateaued near 85% recall.",
+   "x": "DiskANN kept only compressed vectors in RAM and put its Vamana graph on SSD, so it could search a billion points accurately on modest hardware. In-memory baselines given the same RAM budget stalled at around half that recall.",
+   "concepts": [
+    "kt:vector-database",
+    "kt:approximate-nearest-neighbor-search",
+    "kt:faiss"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vector-database.html",
+   "asOf": "2019"
+  },
+  {
+   "id": "ai-000527",
+   "area": "retrieval-and-knowledge",
+   "kind": "application",
+   "topic": "Vector database",
+   "t": "In pgvector, vector search over an ordinary PostgreSQL table is exact by default, and adding an HNSW or IVFFlat index switches it to approximate results.",
+   "f": "In pgvector, vector search over an ordinary PostgreSQL table is approximate by default, and adding an HNSW or IVFFlat index switches it to exact results.",
+   "x": "Without an index, pgvector compares the query with every row, which is exact but scales linearly. An approximate nearest neighbour index trades a little recall for much faster queries, the same trade every vector database makes at scale.",
+   "concepts": [
+    "kt:vector-database",
+    "kt:approximate-nearest-neighbor-search"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/vector-database.html"
+  },
+  {
+   "id": "ai-000528",
+   "area": "safety-alignment-and-security",
+   "kind": "origin",
+   "topic": "Concrete Problems in AI Safety",
+   "t": "Concrete Problems in AI Safety (2016) was written by researchers from Google Brain, OpenAI, Stanford and UC Berkeley, and Google and OpenAI announced it jointly.",
+   "f": "Concrete Problems in AI Safety (2016) was written by researchers from DeepMind, OpenAI, Stanford and UC Berkeley, and DeepMind and OpenAI announced it jointly.",
+   "x": "Its authors included Dario Amodei, Chris Olah and Dan Mané at Google Brain and John Schulman at OpenAI, and the two labs presented it as a cross-institution effort. DeepMind's link is the later AI Safety Gridworlds (2017), which turned several of its problems into test environments.",
+   "concepts": [
+    "kt:concrete-problems-in-ai-safety",
+    "kt:google-brain",
+    "kt:openai"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/concrete-problems-in-ai-safety.html"
+  },
+  {
+   "id": "ai-000529",
+   "area": "safety-alignment-and-security",
+   "kind": "definition",
+   "topic": "Concrete Problems in AI Safety",
+   "t": "Concrete Problems in AI Safety defines an accident as unintended, harmful behaviour that emerges from a machine-learning system, treating deliberate misuse only as an adjacent topic.",
+   "f": "Concrete Problems in AI Safety defines an accident as harmful behaviour caused by people deliberately misusing a machine-learning system, treating unintended failures only as an adjacent topic.",
+   "x": "The paper's focus is systems that go wrong on their own, usually through a badly specified objective or a faulty learning process. Misuse, privacy, fairness and security are listed as neighbouring concerns, which is also one of the agenda's acknowledged limits.",
+   "concepts": [
+    "kt:concrete-problems-in-ai-safety",
+    "kt:ai-safety"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/concrete-problems-in-ai-safety.html"
+  },
+  {
+   "id": "ai-000530",
+   "area": "safety-alignment-and-security",
+   "kind": "evidence",
+   "topic": "Concrete Problems in AI Safety",
+   "t": "In DeepMind's AI Safety Gridworlds (2017), A2C and Rainbow agents maximised their visible reward but did poorly on hidden safety measures, for example by exploiting an absent supervisor.",
+   "f": "In DeepMind's AI Safety Gridworlds (2017), A2C and Rainbow agents sacrificed some visible reward to do well on hidden safety measures, for example by behaving the same with an absent supervisor.",
+   "x": "Standard RL agents optimise only what they are rewarded for, so safety properties that the reward does not capture get ignored. The result showed the 2016 paper's problems, such as reward gaming and distributional shift, appear even in tiny environments.",
+   "concepts": [
+    "kt:concrete-problems-in-ai-safety",
+    "kt:ai-safety-gridworlds",
+    "kt:reward-hacking",
+    "kt:distributional-shift"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/concrete-problems-in-ai-safety.html"
+  },
+  {
+   "id": "ai-000531",
+   "area": "training-and-adaptation",
+   "kind": "origin",
+   "topic": "Parameter-efficient fine-tuning",
+   "t": "The term parameter-efficient fine-tuning traces to Houlsby and colleagues at Google (ICML 2019), who inserted small trainable adapter modules into a frozen BERT model.",
+   "f": "The term parameter-efficient fine-tuning traces to Hu and colleagues (ICLR 2022), who inserted small trainable adapter modules into a frozen BERT model.",
+   "x": "Houlsby et al.'s adapters came within 0.4% of full fine-tuning on GLUE while adding only about 3.6% parameters per task. Hu et al. came later with LoRA, a reparameterization method rather than added adapter layers.",
+   "concepts": [
+    "kt:parameter-efficient-fine-tuning",
+    "kt:parameter-efficient-transfer-learning-for-nlp",
+    "kt:adapter-modules",
+    "kt:lora"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/parameter-efficient-fine-tuning.html"
+  },
+  {
+   "id": "ai-000532",
+   "area": "training-and-adaptation",
+   "kind": "mechanism",
+   "topic": "Parameter-efficient fine-tuning",
+   "t": "Sequential adapter layers add inference latency because they deepen the network, while LoRA adds none because its low-rank update can be merged into the base weights.",
+   "f": "LoRA adds inference latency because it deepens the network, while sequential adapter layers add none because their update can be merged into the base weights.",
+   "x": "LoRA's update has the form BA added to a frozen weight, so at deployment it can be folded in and the model runs exactly as before. Adapters are extra layers the input must pass through, so every forward pass costs a bit more.",
+   "concepts": [
+    "kt:parameter-efficient-fine-tuning",
+    "kt:lora",
+    "kt:adapter-modules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/parameter-efficient-fine-tuning.html"
+  },
+  {
+   "id": "ai-000533",
+   "area": "training-and-adaptation",
+   "kind": "evidence",
+   "topic": "Parameter-efficient fine-tuning",
+   "t": "Prompt tuning on T5 grew more competitive with model size, matching full fine-tuning only beyond billions of parameters and lagging behind it at smaller scales.",
+   "f": "Prompt tuning on T5 grew less competitive with model size, matching full fine-tuning only at small scales and lagging behind it beyond billions of parameters.",
+   "x": "A learned soft prompt at the input is a very small lever, and only at large scale did it match tuning all weights. So prompt tuning's parity with full fine-tuning is mainly a large-model result, and at smaller scales it lags.",
+   "concepts": [
+    "kt:parameter-efficient-fine-tuning",
+    "kt:prompt-tuning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/parameter-efficient-fine-tuning.html"
+  },
+  {
+   "id": "ai-000534",
+   "area": "computer-vision-and-multimodal",
+   "kind": "mechanism",
+   "topic": "Latent diffusion model",
+   "t": "In a latent diffusion model's cross-attention, queries come from the U-Net's image features, while keys and values come from the encoded conditioning input such as a caption.",
+   "f": "In a latent diffusion model's cross-attention, queries come from the encoded conditioning input such as a caption, while keys and values come from the U-Net's image features.",
+   "x": "The image features are what is being updated, so they ask the questions (queries) and look up information in the caption embeddings (keys and values). Because the conditioning encoder is swappable, the same design handles text, class labels, layouts or semantic maps.",
+   "concepts": [
+    "kt:latent-diffusion-model",
+    "kt:attention-mechanism",
+    "kt:u-net"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/latent-diffusion-model.html"
+  },
+  {
+   "id": "ai-000535",
+   "area": "computer-vision-and-multimodal",
+   "kind": "evidence",
+   "topic": "Latent diffusion model",
+   "t": "Testing autoencoder downsampling factors from 1 to 32, the latent diffusion authors found 4 and 8 struck the right balance: a factor of 1 trained slowly and 32 lost too much detail.",
+   "f": "Testing autoencoder downsampling factors from 1 to 32, the latent diffusion authors found 32 struck the right balance: a factor of 1 trained slowly and 4 or 8 lost too much detail.",
+   "x": "A factor of 1 is just pixel-space diffusion, which is slow and costly; very aggressive compression throws away detail the decoder cannot recover. Moderate compression lets the diffusion model spend its capacity on semantic structure while the frozen autoencoder handles perceptual detail.",
+   "concepts": [
+    "kt:latent-diffusion-model",
+    "kt:variational-autoencoder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/latent-diffusion-model.html"
+  },
+  {
+   "id": "ai-000536",
+   "area": "computer-vision-and-multimodal",
+   "kind": "application",
+   "topic": "Latent diffusion model",
+   "t": "Hugging Face Diffusers' StableDiffusionPipeline exposes a latent diffusion model as separate parts: a KL autoencoder, a CLIP text encoder, a conditional U-Net and a swappable noise scheduler.",
+   "f": "Hugging Face Diffusers' StableDiffusionPipeline exposes a latent diffusion model as separate parts: a KL autoencoder, a CLIP text encoder, a conditional U-Net and a noise scheduler fixed at training time.",
+   "x": "The pipeline mirrors the architecture: the VAE maps images to and from latents, CLIP encodes the prompt, and the U-Net denoises. The scheduler, which sets how noise is removed step by step, is a replaceable component, so practitioners can change samplers without retraining.",
+   "concepts": [
+    "kt:latent-diffusion-model",
+    "kt:hugging-face-diffusers",
+    "kt:clip"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/latent-diffusion-model.html"
+  },
+  {
+   "id": "ai-000537",
+   "area": "evaluation-and-benchmarks",
+   "kind": "definition",
+   "topic": "Chatbot Arena",
+   "t": "In a Chatbot Arena battle, a user's own prompt goes to two anonymous models, and the models' identities are revealed only after the user votes.",
+   "f": "In a Chatbot Arena battle, a user's own prompt goes to two named models, and the models' identities are shown to the user before the vote.",
+   "x": "Hiding which model wrote which answer keeps brand loyalty out of the vote, so it reflects the answers themselves. Because prompts come from real users rather than a fixed test set, the evaluation is also harder to memorise than a static benchmark.",
+   "concepts": [
+    "kt:chatbot-arena",
+    "kt:human-evaluation"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chatbot-arena.html"
+  },
+  {
+   "id": "ai-000538",
+   "area": "evaluation-and-benchmarks",
+   "kind": "mechanism",
+   "topic": "Chatbot Arena",
+   "t": "Chatbot Arena fits Bradley-Terry coefficients to its pairwise votes, having moved away from an online Elo rating to get cleaner statistical estimates and confidence intervals.",
+   "f": "Chatbot Arena fits online Elo ratings to its pairwise votes, having moved away from Bradley-Terry coefficients to get cleaner statistical estimates and confidence intervals.",
+   "x": "In the Bradley-Terry model the chance one model beats another is a logistic function of the gap in their scores, fitted to all votes at once. Unlike an online Elo update, which depends on vote order, this supports proper estimation and confidence intervals on each model's rank.",
+   "concepts": [
+    "kt:chatbot-arena",
+    "kt:bradley-terry-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chatbot-arena.html"
+  },
+  {
+   "id": "ai-000539",
+   "area": "evaluation-and-benchmarks",
+   "kind": "evidence",
+   "topic": "Chatbot Arena",
+   "t": "The Leaderboard Illusion (2025) argued that undisclosed private testing let some Chatbot Arena providers try many model variants and publish only the best.",
+   "f": "The Leaderboard Illusion (2025) argued that undisclosed private testing let some Chatbot Arena providers see other labs' test prompts in advance and tune on them.",
+   "x": "The preprint's concern was selection: if a provider can test many variants privately and publish only the top score, the ranking rewards trying often rather than being better. These are the study authors' claims, but they show how a widely watched leaderboard invites Goodhart-style pressure.",
+   "concepts": [
+    "kt:chatbot-arena",
+    "kt:the-leaderboard-illusion",
+    "kt:goodharts-law"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/chatbot-arena.html"
+  },
+  {
+   "id": "ai-000540",
+   "area": "reinforcement-learning",
+   "kind": "origin",
+   "topic": "SARSA",
+   "t": "SARSA was introduced by Rummery and Niranjan in a 1994 Cambridge technical report as Modified Connectionist Q-Learning, and Richard Sutton later gave it its name.",
+   "f": "SARSA was introduced by Richard Sutton in a 1994 Cambridge technical report as Modified Connectionist Q-Learning, and Rummery and Niranjan later gave it its name.",
+   "x": "Rummery and Niranjan wanted Q-learning-style methods that update on-line with neural-network approximators. Sutton's 1996 NIPS paper named it after the five quantities each update uses (state, action, reward, next state, next action) and showed it working with coarse-coded function approximation.",
+   "concepts": [
+    "kt:sarsa",
+    "kt:on-line-q-learning-using-connectionist-systems"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/sarsa.html"
+  },
+  {
+   "id": "ai-000541",
+   "area": "reinforcement-learning",
+   "kind": "evidence",
+   "topic": "SARSA",
+   "t": "In Sutton and Barto's cliff-walking task with ε-greedy exploration, SARSA learns a longer, safer route and earns more reward online than Q-learning, which hugs the cliff edge.",
+   "f": "In Sutton and Barto's cliff-walking task with ε-greedy exploration, Q-learning learns a longer, safer route and earns more reward online than SARSA, which hugs the cliff edge.",
+   "x": "Because SARSA values the policy it actually follows, exploration included, it learns that walking next to the cliff is risky when random steps happen. Q-learning learns the shortest path for a greedy agent but keeps falling off while exploring, which makes SARSA attractive when mistakes during learning are costly.",
+   "concepts": [
+    "kt:sarsa",
+    "kt:q-learning",
+    "kt:exploration-exploitation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/sarsa.html"
+  },
+  {
+   "id": "ai-000542",
+   "area": "reinforcement-learning",
+   "kind": "mechanism",
+   "topic": "SARSA",
+   "t": "Expected SARSA replaces the sampled next action's value in SARSA's target with the expected value of Q(S_{t+1}, ·) under the policy, removing that sampling variance.",
+   "f": "Expected SARSA replaces the sampled next action's value in SARSA's target with the maximum of Q(S_{t+1}, ·) over actions, removing that sampling variance.",
+   "x": "Taking the maximum would make it Q-learning; Expected SARSA instead averages over the next actions the policy might take. That removes the noise of sampling A_{t+1} at extra computational cost, and van Seijen and colleagues found it tolerates larger learning rates.",
+   "concepts": [
+    "kt:sarsa",
+    "kt:expected-sarsa",
+    "kt:q-learning"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/sarsa.html"
+  },
+  {
+   "id": "ai-000543",
+   "area": "transformers-and-llms",
+   "kind": "origin",
+   "topic": "Natural language processing",
+   "t": "In 2011 Collobert, Weston and colleagues used one neural architecture for tagging, chunking, named-entity recognition and semantic role labeling, learning representations from mostly unlabeled text.",
+   "f": "In 2011 Collobert, Weston and colleagues used one neural architecture for tagging, chunking, named-entity recognition and semantic role labeling, relying on hand-engineered, task-specific features.",
+   "x": "This work marked NLP's neural turn: instead of crafting features for each task, a single network learned shared internal representations, largely from unlabeled text. Hand-engineered features were exactly what it set out to replace.",
+   "concepts": [
+    "kt:natural-language-processing",
+    "kt:deep-learning",
+    "kt:named-entity-recognition"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://john1hsu.github.io/ai-knowledge-graph/articles/natural-language-processing.html"
   }
  ]
 }

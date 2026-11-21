@@ -1,0 +1,21 @@
+id: ai-000521
+area: ml-foundations
+kind: evidence
+topic: Statistical learning theory
+topic_type: Field
+maturity: foundational
+true_statement: Zhang et al. (ICLR 2017) showed standard image classifiers trained with stochastic gradient methods can fit completely random labels, and explicit regularization does not change this qualitatively.
+false_statement: Zhang et al. (ICLR 2017) showed standard image classifiers trained with stochastic gradient methods can fit completely random labels, but explicit regularization reliably prevents this.
+explanation: The same networks that generalise on real labels can also memorise pure noise, even with regularizers switched on. So the model family's capacity alone cannot explain why deep learning generalises, which is where classical capacity bounds stop being useful.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/statistical-learning-theory.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 0dad01e3e815aa655e4d522caf36e805d94826fd
+concepts:
+- kt:statistical-learning-theory
+- kt:overfitting
+- kt:regularization
+difficulty: 3
+created: '2026-11-21'
+status: active

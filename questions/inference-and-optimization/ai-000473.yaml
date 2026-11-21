@@ -1,0 +1,20 @@
+id: ai-000473
+area: inference-and-optimization
+kind: definition
+topic: Beam search
+topic_type: Algorithm
+maturity: established
+true_statement: Diverse beam search is a beam-search variant that adds diversity constraints between groups of beams, because ordinary beam candidates are often near-duplicate rewordings.
+false_statement: Diverse beam search is a beam-search variant that samples each next token at random within the beam, because ordinary beam candidates are often near-duplicate rewordings.
+explanation: Vijayakumar et al. kept beam search's structure but penalised groups of beams for resembling each other, gaining variety at little extra cost. Random sampling within a beam is a different idea, closer to beam-search multinomial sampling.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/beam-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 2f07a5deeb988a7aa963228483555ef506074b20
+concepts:
+- kt:beam-search
+- kt:diverse-beam-search
+difficulty: 2
+created: '2026-11-21'
+status: active

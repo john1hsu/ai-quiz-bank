@@ -1,0 +1,21 @@
+id: ai-000499
+area: reinforcement-learning
+kind: origin
+topic: Monte Carlo tree search
+topic_type: Algorithm
+maturity: established
+true_statement: In 2006 Kocsis and Szepesvári created UCT by treating each tree node's action choice as a multi-armed bandit, solved with a modified UCB1 rule.
+false_statement: In 2006 Rémi Coulom created UCT by treating each tree node's action choice as a multi-armed bandit, solved with a modified UCB1 rule.
+explanation: Coulom coined the name Monte Carlo tree search that year for his Go program Crazy Stone, with an empirically tuned backup rule. Kocsis and Szepesvári's bandit framing gave the variant most implementations start from, plus a proof that it is consistent.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/monte-carlo-tree-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 475b89acf2feac8fb4bf8ca4d57a0db23bf7a818
+concepts:
+- kt:monte-carlo-tree-search
+- kt:upper-confidence-bound
+- kt:multi-armed-bandit
+difficulty: 1
+created: '2026-11-21'
+status: active

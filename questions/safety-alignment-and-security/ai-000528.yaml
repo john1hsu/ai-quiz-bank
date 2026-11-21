@@ -1,0 +1,21 @@
+id: ai-000528
+area: safety-alignment-and-security
+kind: origin
+topic: Concrete Problems in AI Safety
+topic_type: Work
+maturity: historical
+true_statement: Concrete Problems in AI Safety (2016) was written by researchers from Google Brain, OpenAI, Stanford and UC Berkeley, and Google and OpenAI announced it jointly.
+false_statement: Concrete Problems in AI Safety (2016) was written by researchers from DeepMind, OpenAI, Stanford and UC Berkeley, and DeepMind and OpenAI announced it jointly.
+explanation: Its authors included Dario Amodei, Chris Olah and Dan Mané at Google Brain and John Schulman at OpenAI, and the two labs presented it as a cross-institution effort. DeepMind's link is the later AI Safety Gridworlds (2017), which turned several of its problems into test environments.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/concrete-problems-in-ai-safety.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 9962eece79c8de7227d97b9bf0af93f41500ed69
+concepts:
+- kt:concrete-problems-in-ai-safety
+- kt:google-brain
+- kt:openai
+difficulty: 1
+created: '2026-11-21'
+status: active

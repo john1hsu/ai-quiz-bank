@@ -1,0 +1,20 @@
+id: ai-000494
+area: evaluation-and-benchmarks
+kind: evidence
+topic: Perplexity
+topic_type: Concept
+maturity: foundational
+true_statement: Fang et al. (ICLR 2025) found standard perplexity tracked long-context benchmarks only weakly, while their LongPPL, scored only on tokens that depend on distant context, tracked them closely.
+false_statement: Fang et al. (ICLR 2025) found standard perplexity tracked long-context benchmarks closely, while their LongPPL, scored only on tokens that depend on distant context, tracked them only weakly.
+explanation: Most tokens can be predicted from nearby text, so averaging over every token drowns out the few that test long-range memory. Scoring only those key tokens gives a metric that actually reflects long-context ability.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/perplexity.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 47dff82a405f0b62628e3b48e7af81b62575f01a
+concepts:
+- kt:perplexity
+- kt:context-window
+difficulty: 3
+created: '2026-11-21'
+status: active

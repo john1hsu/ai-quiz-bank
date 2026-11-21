@@ -1,0 +1,21 @@
+id: ai-000464
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: PyTorch
+topic_type: Tool
+maturity: established
+true_statement: In 2024 the PyTorch team reported torch.compile geometric-mean speedups on an NVIDIA A100 of 2.27× for inference and 1.41× for training across over 180 models.
+false_statement: In 2024 the PyTorch team reported torch.compile geometric-mean speedups on an NVIDIA A100 of 1.41× for inference and 2.27× for training across over 180 models.
+explanation: Compilation helped inference noticeably more than training, and it beat six other compilers in the same tests. These are the authors' numbers from the ASPLOS 2024 paper, not independent measurements.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/pytorch.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: d0ae66d50768199fd3293cb7733ba9c0eb79492c
+concepts:
+- kt:pytorch
+- kt:gpu-computing
+difficulty: 3
+created: '2026-11-21'
+status: active

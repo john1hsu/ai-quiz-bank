@@ -1,0 +1,20 @@
+id: ai-000472
+area: inference-and-optimization
+kind: evidence
+topic: Beam search
+topic_type: Algorithm
+maturity: established
+true_statement: Koehn and Knowles (2017) found translation quality usually worsens once the beam grows past an optimal size, mainly because wider beams produce shorter translations.
+false_statement: Koehn and Knowles (2017) found translation quality usually worsens once the beam grows past an optimal size, mainly because wider beams produce longer translations.
+explanation: A wider beam searches harder for high-probability outputs, and short outputs tend to score well, so more search can mean worse translations. They tested beams from 1 to 1,000; length normalisation softened the drop but did not remove it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/beam-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 2f07a5deeb988a7aa963228483555ef506074b20
+concepts:
+- kt:beam-search
+- kt:sequence-to-sequence-learning
+difficulty: 3
+created: '2026-11-21'
+status: active

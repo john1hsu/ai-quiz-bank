@@ -1,0 +1,20 @@
+id: ai-000445
+area: computer-vision-and-multimodal
+kind: origin
+topic: Computer vision
+topic_type: Field
+maturity: established
+true_statement: Seymour Papert's 1966 MIT memo, The Summer Vision Project, planned to build a significant part of a visual system with summer workers in a single summer.
+false_statement: Seymour Papert's 1966 MIT memo, The Summer Vision Project, planned to build a significant part of a visual system with summer workers over a ten-year programme.
+explanation: The memo's one-summer plan, from figure-ground separation to naming objects, shows how early AI researchers underestimated perception. The problem in fact took decades, which is why the memo is the field's classic cautionary tale.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/computer-vision.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3ca7a45702797288656b5384a2fe8d46472ff8e6
+concepts:
+- kt:computer-vision
+- kt:pattern-recognition
+difficulty: 1
+created: '2026-11-21'
+status: active

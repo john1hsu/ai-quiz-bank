@@ -1,0 +1,20 @@
+id: ai-000481
+area: retrieval-and-knowledge
+kind: origin
+topic: Hybrid search
+topic_type: Technique
+maturity: established
+true_statement: Reciprocal rank fusion, now a common way to merge keyword and vector results in hybrid search, was introduced by Cormack, Clarke and Buettcher at SIGIR 2009.
+false_statement: Reciprocal rank fusion, now a common way to merge keyword and vector results in hybrid search, was introduced by Cormack, Clarke and Buettcher at SIGIR 2019.
+explanation: RRF dates from 2009, about a decade before dense passage retrieval in 2020. Because it uses only rank positions, it later became a natural fit for merging BM25 with embedding search, whose scores are not comparable.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/hybrid-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3e34d2f86b24f10cfef01d7698e271f215186b1b
+concepts:
+- kt:hybrid-search
+- kt:reciprocal-rank-fusion
+difficulty: 1
+created: '2026-11-21'
+status: active

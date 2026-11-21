@@ -1,0 +1,20 @@
+id: ai-000485
+area: safety-alignment-and-security
+kind: definition
+topic: Adversarial machine learning
+topic_type: Field
+maturity: established
+true_statement: In Biggio and Roli's threat model, an attacker's capability is causative if they can influence the training data and exploratory if they can only shape test-time inputs.
+false_statement: In Biggio and Roli's threat model, an attacker's capability is exploratory if they can influence the training data and causative if they can only shape test-time inputs.
+explanation: A causative attacker changes what the model learns, as in data poisoning, while an exploratory attacker works with a trained model, as in evasion. Naming the capability up front tells defenders which attack surfaces they must protect.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/adversarial-machine-learning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: e53dded5fd2bf4b07328a66d051dd1a3991c8af6
+concepts:
+- kt:adversarial-machine-learning
+- kt:data-poisoning
+difficulty: 2
+created: '2026-11-21'
+status: active

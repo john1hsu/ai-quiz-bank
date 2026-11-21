@@ -1,0 +1,20 @@
+id: ai-000470
+area: governance-and-policy
+kind: application
+topic: ISO/IEC 42001
+topic_type: Policy
+maturity: emerging
+true_statement: Under the EU AI Act, a legal presumption of conformity comes from harmonised standards by CEN and CENELEC's JTC 21 cited in the Official Journal, rather than from ISO/IEC 42001 itself.
+false_statement: Under the EU AI Act, a legal presumption of conformity comes from certification to ISO/IEC 42001 itself, rather than from harmonised standards by CEN and CENELEC's JTC 21.
+explanation: The Act gives legal weight only to European harmonised standards referenced in the Official Journal; its quality management standard is a separate draft, prEN 18286. The Commission prefers adopting international standards where they align, which leaves room for, but does not guarantee, a role for 42001.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/iso-iec-42001.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3bf8168bed6fc2017b55319882bd05e0217a67ca
+concepts:
+- kt:iso-iec-42001
+- kt:eu-ai-act
+difficulty: 3
+created: '2026-11-21'
+status: active

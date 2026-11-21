@@ -1,0 +1,20 @@
+id: ai-000461
+area: ai-history
+kind: origin
+topic: Symbolic AI
+topic_type: Paradigm
+maturity: historical
+true_statement: 'John McCarthy and Patrick Hayes named the frame problem in 1969: the difficulty of formally stating what does not change when an action occurs.'
+false_statement: 'Allen Newell and Herbert Simon named the frame problem in 1969: the difficulty of formally stating what does not change when an action occurs.'
+explanation: The frame problem came from McCarthy's logicist strand, which formalised actions in the situation calculus, not from Newell and Simon's search-based tradition. Attempts to solve it drove the nonmonotonic logics of 1980 and helped make knowledge representation a subfield.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/symbolic-ai.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 02c7967676208560290d9bb8516990bb05e7b3a4
+concepts:
+- kt:symbolic-ai
+- kt:knowledge-representation
+difficulty: 2
+created: '2026-11-21'
+status: active

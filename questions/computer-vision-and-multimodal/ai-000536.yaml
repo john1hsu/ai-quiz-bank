@@ -1,0 +1,21 @@
+id: ai-000536
+area: computer-vision-and-multimodal
+kind: application
+topic: Latent diffusion model
+topic_type: Architecture
+maturity: established
+true_statement: 'Hugging Face Diffusers'' StableDiffusionPipeline exposes a latent diffusion model as separate parts: a KL autoencoder, a CLIP text encoder, a conditional U-Net and a swappable noise scheduler.'
+false_statement: 'Hugging Face Diffusers'' StableDiffusionPipeline exposes a latent diffusion model as separate parts: a KL autoencoder, a CLIP text encoder, a conditional U-Net and a noise scheduler fixed at training time.'
+explanation: 'The pipeline mirrors the architecture: the VAE maps images to and from latents, CLIP encodes the prompt, and the U-Net denoises. The scheduler, which sets how noise is removed step by step, is a replaceable component, so practitioners can change samplers without retraining.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/latent-diffusion-model.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 8d0ff5a000e595d2cbfda2d725ab995f63e761b9
+concepts:
+- kt:latent-diffusion-model
+- kt:hugging-face-diffusers
+- kt:clip
+difficulty: 2
+created: '2026-11-21'
+status: active

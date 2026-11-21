@@ -1,0 +1,20 @@
+id: ai-000511
+area: deep-learning
+kind: mechanism
+topic: Residual connection
+topic_type: Technique
+maturity: established
+true_statement: The gradient of a residual block F(x) + x is the block's Jacobian plus the identity, so the signal always has an unattenuated path back to earlier layers.
+false_statement: The gradient of a residual block F(x) + x is the block's Jacobian times the identity, so the signal is attenuated by every block's weights on its way back to earlier layers.
+explanation: The added identity term means the gradient never has to pass only through stacked weight matrices, which is how residual connections ease vanishing gradients. He et al.'s pre-activation follow-up used this direct path to train a 1001-layer ResNet.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/residual-connection.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: cc7ac3b7db65099baab1bc7ef59a9557b03e136a
+concepts:
+- kt:residual-connection
+- kt:vanishing-gradient-problem
+difficulty: 2
+created: '2026-11-21'
+status: active

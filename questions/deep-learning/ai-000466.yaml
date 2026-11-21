@@ -1,0 +1,20 @@
+id: ai-000466
+area: deep-learning
+kind: mechanism
+topic: Batch normalization
+topic_type: Technique
+maturity: established
+true_statement: During training a batch normalization layer normalizes with the current batch's statistics, while at inference it uses running averages of mean and variance stored during training.
+false_statement: During training a batch normalization layer normalizes with running averages of mean and variance, while at inference it uses the current batch's statistics.
+explanation: Using stored averages at inference makes a prediction independent of which other examples happen to share its batch. In PyTorch the running averages use a momentum of 0.1 by default, and turning running statistics off makes the layer use batch statistics in both modes.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/batch-normalization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: baf5e0ac0d48b590e098a290e42cad77effee3fd
+concepts:
+- kt:batch-normalization
+- kt:pytorch
+difficulty: 2
+created: '2026-11-21'
+status: active

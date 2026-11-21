@@ -1,0 +1,21 @@
+id: ai-000482
+area: retrieval-and-knowledge
+kind: evidence
+topic: Hybrid search
+topic_type: Technique
+maturity: established
+true_statement: Ma and colleagues' 2021 replication of dense passage retrieval found that the top results of sparse and dense retrievers overlap little, suggesting the two exploit different relevance signals.
+false_statement: Ma and colleagues' 2021 replication of dense passage retrieval found that the top results of sparse and dense retrievers overlap heavily, suggesting the two exploit the same relevance signals.
+explanation: 'Low overlap is the core argument for hybrid search: if both retrievers returned the same documents, fusing them would add nothing. Because they surface different relevant passages, the replication found tuned hybrids beat dense retrieval alone on nearly every dataset.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/hybrid-search.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 3e34d2f86b24f10cfef01d7698e271f215186b1b
+concepts:
+- kt:hybrid-search
+- kt:dense-passage-retrieval
+- kt:bm25
+difficulty: 3
+created: '2026-11-21'
+status: active

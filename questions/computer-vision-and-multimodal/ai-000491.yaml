@@ -1,0 +1,22 @@
+id: ai-000491
+area: computer-vision-and-multimodal
+kind: figure
+topic: Vision transformer
+topic_type: Architecture
+maturity: established
+true_statement: In 2021 DeiT trained a convolution-free 86M-parameter ViT to 83.1% ImageNet top-1 using ImageNet alone, on a single machine in under three days.
+false_statement: In 2021 DeiT trained a convolution-free 86M-parameter ViT to 83.1% ImageNet top-1 only after JFT-300M pre-training, on a single machine in under three days.
+explanation: 'DeiT''s point was data efficiency: with stronger augmentation and a better training recipe, a ViT no longer needed a huge private pre-training set to be competitive. Its distillation token, learning from a convnet teacher, pushed the reported accuracy higher still.'
+as_of: '2021'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/vision-transformer.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 99e82a789a1ca77c2ebe877afe750c76801188d6
+concepts:
+- kt:vision-transformer
+- kt:image-classification
+- kt:knowledge-distillation
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000518
+area: inference-and-optimization
+kind: figure
+topic: LLM inference optimization
+topic_type: Field
+maturity: established
+true_statement: NVIDIA engineers estimated in 2023 that one 4,096-token request to Llama 2 7B in 16-bit precision needs about 2 GB of KV cache, on top of roughly 14 GB of weights.
+false_statement: NVIDIA engineers estimated in 2023 that one 4,096-token request to Llama 2 7B in 16-bit precision needs about 14 GB of KV cache, on top of roughly 2 GB of weights.
+explanation: Even for a small model, one long request's cache is a sizeable fraction of the weights, and every concurrent request needs its own. That is why cache size, not just model size, caps how many requests fit on a GPU.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/llm-inference-optimization.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 4ef57e785fb8a81e442af88a93f31aeb8fca0935
+concepts:
+- kt:llm-inference-optimization
+- kt:kv-cache
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000496
+area: transformers-and-llms
+kind: definition
+topic: KV cache
+topic_type: Technique
+maturity: established
+true_statement: Multi-query attention has all query heads share a single key-value head, while grouped-query attention uses an intermediate number of key-value heads.
+false_statement: Grouped-query attention has all query heads share a single key-value head, while multi-query attention uses an intermediate number of key-value heads.
+explanation: Both shrink the KV cache by storing fewer key-value heads than query heads. Multi-query is the extreme with just one, and grouped-query, published at EMNLP 2023, sits between it and full multi-head attention, which is why the names are easy to swap.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/kv-cache.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: eb3ed7e012f4e290a3a71386c88749634f669b8f
+concepts:
+- kt:kv-cache
+- kt:multi-query-attention
+- kt:grouped-query-attention
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000532
+area: training-and-adaptation
+kind: mechanism
+topic: Parameter-efficient fine-tuning
+topic_type: Paradigm
+maturity: established
+true_statement: Sequential adapter layers add inference latency because they deepen the network, while LoRA adds none because its low-rank update can be merged into the base weights.
+false_statement: LoRA adds inference latency because it deepens the network, while sequential adapter layers add none because their update can be merged into the base weights.
+explanation: LoRA's update has the form BA added to a frozen weight, so at deployment it can be folded in and the model runs exactly as before. Adapters are extra layers the input must pass through, so every forward pass costs a bit more.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/parameter-efficient-fine-tuning.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: bc8951514b171d5bd1f619c95c15455316710b97
+concepts:
+- kt:parameter-efficient-fine-tuning
+- kt:lora
+- kt:adapter-modules
+difficulty: 2
+created: '2026-11-21'
+status: active

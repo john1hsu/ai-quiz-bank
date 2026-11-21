@@ -1,0 +1,21 @@
+id: ai-000541
+area: reinforcement-learning
+kind: evidence
+topic: SARSA
+topic_type: Algorithm
+maturity: foundational
+true_statement: In Sutton and Barto's cliff-walking task with ε-greedy exploration, SARSA learns a longer, safer route and earns more reward online than Q-learning, which hugs the cliff edge.
+false_statement: In Sutton and Barto's cliff-walking task with ε-greedy exploration, Q-learning learns a longer, safer route and earns more reward online than SARSA, which hugs the cliff edge.
+explanation: Because SARSA values the policy it actually follows, exploration included, it learns that walking next to the cliff is risky when random steps happen. Q-learning learns the shortest path for a greedy agent but keeps falling off while exploring, which makes SARSA attractive when mistakes during learning are costly.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/sarsa.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: 17b8fa5e564cbbd5acc6850bd6a78d1f7a3215df
+concepts:
+- kt:sarsa
+- kt:q-learning
+- kt:exploration-exploitation
+difficulty: 2
+created: '2026-11-21'
+status: active

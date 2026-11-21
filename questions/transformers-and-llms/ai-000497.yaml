@@ -1,0 +1,21 @@
+id: ai-000497
+area: transformers-and-llms
+kind: evidence
+topic: KV cache
+topic_type: Technique
+maturity: established
+true_statement: The grouped-query attention authors reported that uptraining multi-head checkpoints with about 5% of pre-training compute gave quality close to multi-head attention at speeds near multi-query attention.
+false_statement: The grouped-query attention authors reported that uptraining multi-head checkpoints with about 5% of pre-training compute gave quality close to multi-query attention at speeds near multi-head attention.
+explanation: 'Grouped-query attention sits between the two extremes and aims for the best of each: the quality of full multi-head attention and the speed of a single shared key-value head. The false twin swaps which property comes from which end.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/kv-cache.md
+  commit: 1bf379ddadef5b9d7028fecd3dd4a0f3e809472d
+  blob: eb3ed7e012f4e290a3a71386c88749634f669b8f
+concepts:
+- kt:kv-cache
+- kt:grouped-query-attention
+- kt:multi-query-attention
+difficulty: 3
+created: '2026-11-21'
+status: active
