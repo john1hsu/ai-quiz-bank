@@ -1,0 +1,20 @@
+id: ai-000548
+area: agents-and-tool-use
+kind: mechanism
+topic: Model Context Protocol
+topic_type: Tool
+maturity: emerging
+true_statement: In the Model Context Protocol, a host application creates a separate client for each server it connects to, and each client holds that one connection.
+false_statement: In the Model Context Protocol, a host application creates a single shared client that holds the connections to all of the servers it uses.
+explanation: 'MCP has three roles: the host (an IDE or chat app), one client per server connection, and the servers that provide context. Keeping clients one-to-one with servers isolates each connection, and the host then merges every server''s tools into one registry for the model.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/model-context-protocol.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e0ff7465ea114cb6b63c4a61c2c8a7367197edf5
+concepts:
+- kt:model-context-protocol
+- kt:tool-use
+difficulty: 2
+created: '2026-11-23'
+status: active

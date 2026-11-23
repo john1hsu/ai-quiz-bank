@@ -1,0 +1,20 @@
+id: ai-000612
+area: inference-and-optimization
+kind: evidence
+topic: Orca (LLM serving system)
+topic_type: Tool
+maturity: established
+true_statement: Sarathi-Serve found that mixing phases in one batch, as Orca-style scheduling does, lets a newly admitted prefill-heavy request stall ongoing decodes, which it fixes with chunked prefills.
+false_statement: Sarathi-Serve found that mixing phases in one batch, as Orca-style scheduling does, lets a long-running decode stall newly admitted prefills, which it fixes with chunked decodes.
+explanation: A long prompt's prefill is a big compute burst, so every decoding request batched with it waits, causing latency spikes. Splitting the prefill into chunks spread over several iterations keeps decodes flowing.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/orca-serving-system.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: f95d51f2f687fde27abac6bda512219ce3e3779d
+concepts:
+- kt:orca-serving-system
+- kt:sarathi-serve
+difficulty: 3
+created: '2026-11-23'
+status: active

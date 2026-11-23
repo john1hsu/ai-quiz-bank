@@ -1,0 +1,21 @@
+id: ai-000634
+area: transformers-and-llms
+kind: mechanism
+topic: BERT
+topic_type: Model
+maturity: established
+true_statement: In BERT's next sentence prediction, the second sentence is the real next sentence half the time and a random one otherwise, and a classifier on the classification token predicts which.
+false_statement: In BERT's next sentence prediction, the second sentence is the real next sentence half the time and a random one otherwise, and a classifier on the separator token predicts which.
+explanation: The special classification token's final vector summarises the whole input, which is why sentence-level heads sit on it. Both NSP labels come free from raw text, and dropping NSP lowered BERT's scores on QNLI, MNLI and SQuAD in the paper's ablation.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/bert.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: be97d8f45ec48e552140cd35794e706d1dea460b
+concepts:
+- kt:bert
+- kt:pretraining
+- kt:self-supervised-learning
+difficulty: 2
+created: '2026-11-23'
+status: active

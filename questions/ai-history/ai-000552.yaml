@@ -1,0 +1,20 @@
+id: ai-000552
+area: ai-history
+kind: figure
+topic: Artificial intelligence
+topic_type: Field
+maturity: foundational
+true_statement: Stanford HAI's 2025 AI Index reported that the share of surveyed organisations using AI rose from 55% in 2023 to 78% in 2024.
+false_statement: Stanford HAI's 2025 AI Index reported that the share of surveyed organisations using AI rose from 35% in 2023 to 55% in 2024.
+explanation: A jump of more than 20 points in one year shows how quickly AI moved from pilot projects to routine business use once large language models arrived. Adoption figures like this date fast, which is why the year matters.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/artificial-intelligence.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: fd6ec24d7513b168d9afb26f92929b8f4bc58953
+concepts:
+- kt:artificial-intelligence
+difficulty: 1
+created: '2026-11-23'
+status: active

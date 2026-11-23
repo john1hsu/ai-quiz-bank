@@ -1,0 +1,20 @@
+id: ai-000566
+area: ml-foundations
+kind: evidence
+topic: Generative model
+topic_type: Concept
+maturity: foundational
+true_statement: Ng and Jordan (2001) found logistic regression reaches a lower asymptotic error than naive Bayes, but naive Bayes approaches its own asymptote faster, so it can win on scarce data.
+false_statement: Ng and Jordan (2001) found naive Bayes reaches a lower asymptotic error than logistic regression, but logistic regression approaches its own asymptote faster, so it can win on scarce data.
+explanation: The result challenged the folk wisdom that discriminative training is nearly always better. With little data the generative model's stronger assumptions help it converge quickly; with plenty of data the discriminative model's flexibility wins.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/generative-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: bb6749fba1651c91799b5db53f875e8069b188df
+concepts:
+- kt:generative-model
+- kt:discriminative-model
+difficulty: 3
+created: '2026-11-23'
+status: active

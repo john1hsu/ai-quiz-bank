@@ -1,0 +1,20 @@
+id: ai-000580
+area: computer-vision-and-multimodal
+kind: definition
+topic: Semantic segmentation
+topic_type: Application
+maturity: established
+true_statement: Panoptic segmentation gives every pixel a class label and an instance ID, using IDs for countable things like cars but ignoring them for amorphous stuff like sky.
+false_statement: Panoptic segmentation gives every pixel a class label and an instance ID, using IDs for amorphous stuff like sky but ignoring them for countable things like cars.
+explanation: Kirillov and colleagues proposed panoptic segmentation in 2019 to unify semantic and instance segmentation. It makes no sense to count separate patches of grass or sky, but separating each car or person matters for tasks like tracking.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/semantic-segmentation.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6b9728e08d10855dace1d079844dbbc282598d2e
+concepts:
+- kt:semantic-segmentation
+- kt:instance-segmentation
+difficulty: 2
+created: '2026-11-23'
+status: active

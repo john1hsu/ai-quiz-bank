@@ -1,0 +1,21 @@
+id: ai-000587
+area: reinforcement-learning
+kind: evidence
+topic: AlphaGo Zero
+topic_type: Model
+maturity: historical
+true_statement: A network trained on human games predicted expert Go moves better than AlphaGo Zero's self-play network, yet the self-play player beat it within 24 hours of training.
+false_statement: AlphaGo Zero's self-play network predicted expert Go moves better than a network trained on human games, yet the human-trained player beat it within 24 hours of training.
+explanation: Imitating humans and winning are different targets. The self-play system was not trying to copy expert moves, so it drifted toward its own style of play, which turned out to be stronger.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago-zero.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c6782b0d93260455cae3cc91ae3d860f2b9e4c48
+concepts:
+- kt:alphago-zero
+- kt:supervised-learning
+- kt:self-play
+difficulty: 3
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000595
+area: ai-history
+kind: origin
+topic: Deep Blue
+topic_type: Model
+maturity: historical
+true_statement: Garry Kasparov beat IBM's Deep Blue 4–2 in their 1996 Philadelphia match, then lost the 1997 New York rematch 3.5–2.5.
+false_statement: IBM's Deep Blue beat Garry Kasparov 4–2 in their 1996 Philadelphia match, then lost the 1997 New York rematch 3.5–2.5.
+explanation: Deep Blue won only the first game in 1996, itself a first against a reigning champion at normal time controls. A heavily upgraded machine won the 1997 rematch, the first match loss by a sitting world champion to a computer.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/deep-blue.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 70b3063c74cbdcd53c8328677dc3b512a7de761a
+concepts:
+- kt:deep-blue
+- kt:ibm-research
+difficulty: 1
+created: '2026-11-23'
+status: active

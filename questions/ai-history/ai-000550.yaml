@@ -1,0 +1,20 @@
+id: ai-000550
+area: ai-history
+kind: definition
+topic: Artificial intelligence
+topic_type: Field
+maturity: foundational
+true_statement: 'John McCarthy held that AI need not imitate people: researchers may use methods never observed in humans or animals if they solve the problems intelligence faces.'
+false_statement: 'John McCarthy held that AI must imitate people: researchers should use only methods observed in humans or animals to solve the problems intelligence faces.'
+explanation: McCarthy defined intelligence as the computational part of achieving goals in the world, so the target is the problem, not human biology. That is why AI can use search, logic or statistics that look nothing like how brains work.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/artificial-intelligence.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: fd6ec24d7513b168d9afb26f92929b8f4bc58953
+concepts:
+- kt:artificial-intelligence
+- kt:john-mccarthy
+difficulty: 1
+created: '2026-11-23'
+status: active

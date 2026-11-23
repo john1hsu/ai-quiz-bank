@@ -1,0 +1,20 @@
+id: ai-000636
+area: transformers-and-llms
+kind: evidence
+topic: BERT
+topic_type: Model
+maturity: established
+true_statement: The 2019 RoBERTa study concluded BERT was significantly undertrained, and a more carefully tuned recipe matched or beat every model published after BERT on GLUE, RACE and SQuAD.
+false_statement: The 2019 RoBERTa study concluded BERT was significantly overtrained, and a shorter, lighter recipe matched or beat every model published after BERT on GLUE, RACE and SQuAD.
+explanation: Liu and colleagues showed many of BERT's gains-to-be were hiding in training choices and hyperparameters, not new architectures. It is a reminder that a baseline's recipe needs tuning before newer methods are credited with beating it.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/bert.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: be97d8f45ec48e552140cd35794e706d1dea460b
+concepts:
+- kt:bert
+- kt:roberta
+difficulty: 2
+created: '2026-11-23'
+status: active

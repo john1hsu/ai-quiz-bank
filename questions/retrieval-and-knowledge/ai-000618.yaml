@@ -1,0 +1,21 @@
+id: ai-000618
+area: retrieval-and-knowledge
+kind: application
+topic: GraphRAG
+topic_type: Technique
+maturity: emerging
+true_statement: Microsoft's LazyGraphRAG swaps LLM entity extraction for cheaper noun-phrase extraction and skips index-time summaries, deferring LLM work to query time.
+false_statement: Microsoft's LazyGraphRAG swaps noun-phrase extraction for fuller LLM entity extraction and writes all summaries at index time, removing LLM work from query time.
+explanation: Full GraphRAG's main drawback is cost, since every chunk passes through an LLM before any question is asked. LazyGraphRAG moves that spending to query time, which Microsoft says brings indexing cost down to that of vector RAG.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/graphrag.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d63579193a9b8276ba650d23fa4154d376794a38
+concepts:
+- kt:graphrag
+- kt:lazygraphrag
+- kt:microsoft-research
+difficulty: 2
+created: '2026-11-23'
+status: active

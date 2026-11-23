@@ -1,0 +1,20 @@
+id: ai-000577
+area: training-and-adaptation
+kind: definition
+topic: Transfer learning
+topic_type: Paradigm
+maturity: established
+true_statement: 'Transfer learning is asymmetric: it reuses source knowledge to do well on a target task, while multi-task learning tries to do well on all its tasks at once.'
+false_statement: 'Multi-task learning is asymmetric: it reuses source knowledge to do well on a target task, while transfer learning tries to do well on all its tasks at once.'
+explanation: In transfer learning the source task is only a means to an end, so performance on it can be sacrificed. Multi-task learning treats every task as a goal, which is why the two are contrasted even though both share knowledge across tasks.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/transfer-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 8332798a1603362adfb25c29483d5322cd9fa958
+concepts:
+- kt:transfer-learning
+- kt:multi-task-learning
+difficulty: 1
+created: '2026-11-23'
+status: active

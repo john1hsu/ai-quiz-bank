@@ -1,0 +1,20 @@
+id: ai-000563
+area: inference-and-optimization
+kind: figure
+topic: Model compression
+topic_type: Paradigm
+maturity: established
+true_statement: In 2015 Deep Compression shrank AlexNet's storage about 35-fold, from 240 MB to 6.9 MB, with no reported loss of ImageNet accuracy.
+false_statement: In 2015 Deep Compression shrank AlexNet's storage about 3.5-fold, from 240 MB to 69 MB, with no reported loss of ImageNet accuracy.
+explanation: A model of a few megabytes fits in on-chip or phone memory, which is why the result became a landmark for mobile vision. It also showed how much redundancy trained networks carry.
+as_of: '2015'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-compression.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 5d8a8b26b70be3670a641ad69108355f13fa99b4
+concepts:
+- kt:model-compression
+difficulty: 2
+created: '2026-11-23'
+status: active

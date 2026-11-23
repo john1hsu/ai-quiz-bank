@@ -1,0 +1,20 @@
+id: ai-000584
+area: evaluation-and-benchmarks
+kind: evidence
+topic: BLEU
+topic_type: Concept
+maturity: foundational
+true_statement: Callison-Burch and colleagues reported that in the 2005 NIST evaluation the system human judges ranked first was ranked only sixth by BLEU.
+false_statement: Callison-Burch and colleagues reported that in the 2005 NIST evaluation the system BLEU ranked first was ranked only sixth by human judges.
+explanation: BLEU gives no credit for synonyms or paraphrases, so a good translation worded differently from the references scores low. Their conclusion was that a higher BLEU is neither necessary nor sufficient for better translation, and it is safest for comparing similar systems.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/bleu.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: b3d03436075a3292fd7206fe5ca830f18d0630ce
+concepts:
+- kt:bleu
+- kt:human-evaluation
+difficulty: 3
+created: '2026-11-23'
+status: active

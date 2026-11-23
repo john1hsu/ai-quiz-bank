@@ -1,0 +1,19 @@
+id: ai-000609
+area: governance-and-policy
+kind: definition
+topic: Council of Europe Framework Convention on Artificial Intelligence
+topic_type: Policy
+maturity: emerging
+true_statement: The Council of Europe AI Convention leaves national defence outside its scope, and parties need not apply it to national security activities so long as they respect international law.
+false_statement: The Council of Europe AI Convention brings national defence fully within its scope, though parties need not apply it to national security activities so long as they respect international law.
+explanation: Defence and security carve-outs were the price of getting many states to sign. Research on systems not yet available for use is also excluded unless testing could interfere with rights, democracy or the rule of law.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/council-of-europe-framework-convention-on-ai.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: ef64fa8028db82d8cceabb0bb34a83326179685d
+concepts:
+- kt:council-of-europe-framework-convention-on-ai
+difficulty: 2
+created: '2026-11-23'
+status: active

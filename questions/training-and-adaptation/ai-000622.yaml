@@ -1,0 +1,20 @@
+id: ai-000622
+area: training-and-adaptation
+kind: origin
+topic: Bradley-Terry model
+topic_type: Concept
+maturity: foundational
+true_statement: The Bradley-Terry model is named for 1952 paired-comparison work, but Ernst Zermelo had studied the same form in 1928 to rate chess players.
+false_statement: The Bradley-Terry model is named for 1952 paired-comparison work, but Louis Thurstone had studied the same form in 1928 to rate chess players.
+explanation: The model has been rediscovered many times, from axioms, maximum entropy and noisy-strength arguments. Thurstone's name belongs to a close cousin that assumes Gaussian rather than Gumbel-type noise.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/bradley-terry-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 61422a3d0767a7fac0f13c1d6cbb548be223f4ca
+concepts:
+- kt:bradley-terry-model
+- kt:paired-comparison
+difficulty: 2
+created: '2026-11-23'
+status: active

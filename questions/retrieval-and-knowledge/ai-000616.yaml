@@ -1,0 +1,21 @@
+id: ai-000616
+area: retrieval-and-knowledge
+kind: definition
+topic: GraphRAG
+topic_type: Technique
+maturity: emerging
+true_statement: GraphRAG targets global sensemaking questions, such as a corpus's main themes, whose answers are spread across many documents where nearest-chunk vector retrieval falls short.
+false_statement: GraphRAG targets pointed factual questions, such as one entity's birth date, whose answers sit in a single passage where nearest-chunk vector retrieval falls short.
+explanation: Retrieving the few chunks closest to a query works when one passage holds the answer. A question about the whole collection has no single nearest chunk, so GraphRAG summarises the corpus in advance through an entity graph and its communities.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/graphrag.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d63579193a9b8276ba650d23fa4154d376794a38
+concepts:
+- kt:graphrag
+- kt:retrieval-augmented-generation
+- kt:semantic-search
+difficulty: 2
+created: '2026-11-23'
+status: active

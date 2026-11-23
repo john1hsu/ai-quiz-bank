@@ -1,0 +1,20 @@
+id: ai-000623
+area: training-and-adaptation
+kind: mechanism
+topic: Bradley-Terry model
+topic_type: Concept
+maturity: foundational
+true_statement: Modelling each item's performance as its strength plus Gumbel-type noise yields the Bradley-Terry model, while Gaussian noise yields the Thurstone-Mosteller model.
+false_statement: Modelling each item's performance as its strength plus Gaussian noise yields the Bradley-Terry model, while Gumbel-type noise yields the Thurstone-Mosteller model.
+explanation: The difference of two Gumbel variables follows a logistic distribution, which gives Bradley-Terry its sigmoid of the score difference. Gaussian noise gives a probit curve instead; the two predict almost the same win rates, but the logistic form is easier to fit.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/bradley-terry-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 61422a3d0767a7fac0f13c1d6cbb548be223f4ca
+concepts:
+- kt:bradley-terry-model
+- kt:thurstone-mosteller-model
+difficulty: 3
+created: '2026-11-23'
+status: active

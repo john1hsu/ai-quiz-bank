@@ -1,0 +1,21 @@
+id: ai-000568
+area: prompting-and-reasoning
+kind: mechanism
+topic: Least-to-most prompting
+topic_type: Technique
+maturity: established
+true_statement: Least-to-most prompting first has the model split a problem into subquestions, then answers them in order, putting each earlier answer into the prompt for the next.
+false_statement: Least-to-most prompting first has the model split a problem into subquestions, then answers them in parallel, with no subquestion seeing the others' answers.
+explanation: 'The sequential hand-off is the point: each call builds on solved pieces, so every step is only slightly harder than the last and close to what the exemplars show. That explicit chaining is what distinguishes it from a single free-running chain of thought.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/least-to-most-prompting.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 088363986e7d46749c29ac33aaad765c62e4b8c6
+concepts:
+- kt:least-to-most-prompting
+- kt:chain-of-thought
+- kt:few-shot-prompting
+difficulty: 2
+created: '2026-11-23'
+status: active

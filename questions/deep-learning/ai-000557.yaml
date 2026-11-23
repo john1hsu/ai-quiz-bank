@@ -1,0 +1,21 @@
+id: ai-000557
+area: deep-learning
+kind: mechanism
+topic: Representation learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: A masked autoencoder hides about 75% of an image's patches, runs its encoder on the visible patches only, and lets a lightweight decoder reconstruct the missing ones.
+false_statement: A masked autoencoder hides about 75% of an image's patches, runs its encoder on all patches with mask tokens in place, and lets a lightweight decoder reconstruct them.
+explanation: Because the heavy encoder only processes the quarter of patches left visible, training is several times cheaper. Hiding so much of the image also makes reconstruction hard enough that the encoder must learn meaningful visual features rather than copy neighbouring pixels.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/representation-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c800642288716e6376320e5804c27b2faf5232c6
+concepts:
+- kt:representation-learning
+- kt:autoencoder
+- kt:self-supervised-learning
+difficulty: 2
+created: '2026-11-23'
+status: active

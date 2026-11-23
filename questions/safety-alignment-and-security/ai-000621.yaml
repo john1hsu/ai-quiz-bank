@@ -1,0 +1,20 @@
+id: ai-000621
+area: safety-alignment-and-security
+kind: mechanism
+topic: Adversarial example
+topic_type: Concept
+maturity: established
+true_statement: 'Ilyas and colleagues argued adversarial perturbations flip non-robust features: patterns that truly predict the label in the data but look meaningless to humans.'
+false_statement: 'Ilyas and colleagues argued adversarial perturbations flip spurious features: patterns that carry no information about the label in the data and arise only from training defects.'
+explanation: On this view models are not malfunctioning; they use every predictive pattern available, including brittle ones people ignore. That also explains transfer, since independently trained models pick up the same non-robust features from the same data.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/adversarial-example.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 477684c0e8e18839b7124c0ac2036e792d6477ef
+concepts:
+- kt:adversarial-example
+- kt:image-classification
+difficulty: 3
+created: '2026-11-23'
+status: active

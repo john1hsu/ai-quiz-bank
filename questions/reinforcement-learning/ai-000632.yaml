@@ -1,0 +1,19 @@
+id: ai-000632
+area: reinforcement-learning
+kind: mechanism
+topic: Multi-armed bandit
+topic_type: Concept
+maturity: foundational
+true_statement: The Exp3 adversarial bandit algorithm divides each observed reward by the probability of having picked that arm, so its reward estimates stay unbiased for every arm.
+false_statement: The Exp3 adversarial bandit algorithm multiplies each observed reward by the probability of having picked that arm, so its reward estimates stay unbiased for every arm.
+explanation: Rarely chosen arms are seen rarely, so each sighting is scaled up to stand for all the rounds it was not chosen. This importance weighting lets Exp3 keep exponential weights on every arm even though it only sees one reward per round.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/multi-armed-bandit.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c0a1f7062f4185b7c28670906fcb1be5dcd2bb20
+concepts:
+- kt:multi-armed-bandit
+difficulty: 3
+created: '2026-11-23'
+status: active

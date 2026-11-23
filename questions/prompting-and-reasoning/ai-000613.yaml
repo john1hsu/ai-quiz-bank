@@ -1,0 +1,21 @@
+id: ai-000613
+area: prompting-and-reasoning
+kind: definition
+topic: Reflexion
+topic_type: Technique
+maturity: established
+true_statement: Reflexion improves a language agent across attempts by writing verbal reflections on its failures into memory for the next try, rather than updating model weights.
+false_statement: Reflexion improves a language agent across attempts by converting its failures into reward signals that fine-tune model weights before the next try.
+explanation: 'Its authors call the reflection a semantic gradient: a direction for improvement expressed in words and placed in the prompt. That avoids the many samples and costly weight updates conventional reinforcement learning needs.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reflexion.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: ba96550581fff394f231eb1f3ebefcb365c32645
+concepts:
+- kt:reflexion
+- kt:reinforcement-learning
+- kt:agent-memory
+difficulty: 1
+created: '2026-11-23'
+status: active

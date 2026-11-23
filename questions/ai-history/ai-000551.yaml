@@ -1,0 +1,20 @@
+id: ai-000551
+area: ai-history
+kind: application
+topic: Artificial intelligence
+topic_type: Field
+maturity: foundational
+true_statement: The OECD's November 2023 revision of its AI system definition allows a system's objectives to be implicit, such as learned ones, and names content among the outputs.
+false_statement: The OECD's November 2023 revision of its AI system definition requires a system's objectives to be explicitly stated, and drops content from the outputs.
+explanation: The 2019 wording fit systems with stated goals; learned objectives and generative AI did not fit neatly. Allowing implicit objectives and listing content as an output brought generative models clearly inside the definition that much AI governance builds on.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/artificial-intelligence.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: fd6ec24d7513b168d9afb26f92929b8f4bc58953
+concepts:
+- kt:artificial-intelligence
+- kt:ai-governance
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000617
+area: retrieval-and-knowledge
+kind: mechanism
+topic: GraphRAG
+topic_type: Technique
+maturity: emerging
+true_statement: In GraphRAG's global search, a map step turns each batch of community summaries into a partial answer scored 0–100, and a reduce step merges the best-scored ones.
+false_statement: In GraphRAG's global search, a reduce step turns each batch of community summaries into a partial answer scored 0–100, and a map step merges the best-scored ones.
+explanation: Map-reduce lets the system cover far more summaries than one context window could hold. Partial answers scored zero are dropped, and the rest are combined highest-scored first, so the final answer draws on the most helpful parts of the corpus.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/graphrag.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d63579193a9b8276ba650d23fa4154d376794a38
+concepts:
+- kt:graphrag
+- kt:context-window
+difficulty: 2
+created: '2026-11-23'
+status: active

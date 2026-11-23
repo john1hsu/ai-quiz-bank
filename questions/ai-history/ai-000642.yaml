@@ -1,0 +1,21 @@
+id: ai-000642
+area: ai-history
+kind: evidence
+topic: Connectionism
+topic_type: Paradigm
+maturity: historical
+true_statement: Fodor and Pylyshyn argued in 1988 that thought is systematic, so cognition needs compositional symbols, and that networks could at best implement a classical symbol system.
+false_statement: Fodor and Pylyshyn argued in 1988 that thought is systematic, so cognition needs distributed patterns, and that classical symbol systems could at best implement a network.
+explanation: Their point was that anyone who can think 'John loves Mary' can think 'Mary loves John', which combinatorial syntax explains naturally. Replies countered that trained networks can generalise systematically, and later tests gave mixed results.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/connectionism.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e5c878e183e6f1f1bd4fa7d2024a8ff4006f2fa9
+concepts:
+- kt:connectionism
+- kt:symbolic-ai
+- kt:cognitive-science
+difficulty: 3
+created: '2026-11-23'
+status: active

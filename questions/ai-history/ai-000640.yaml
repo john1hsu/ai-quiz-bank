@@ -1,0 +1,21 @@
+id: ai-000640
+area: ai-history
+kind: definition
+topic: Connectionism
+topic_type: Paradigm
+maturity: historical
+true_statement: In connectionism a concept is a distributed pattern of activity over many units, and a network's knowledge is stored in its connection strengths rather than in explicit rules.
+false_statement: In connectionism a concept is a single dedicated symbol held by one unit, and a network's knowledge is stored in explicit rules rather than in its connection strengths.
+explanation: Distributed storage is why connectionist networks degrade gracefully when units are damaged and can complete partial patterns. It also makes learning, finding good weights, the central problem, rather than writing rules by hand as symbolic AI does.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/connectionism.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e5c878e183e6f1f1bd4fa7d2024a8ff4006f2fa9
+concepts:
+- kt:connectionism
+- kt:symbolic-ai
+- kt:artificial-neural-network
+difficulty: 1
+created: '2026-11-23'
+status: active

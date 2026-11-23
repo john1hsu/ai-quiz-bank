@@ -1,0 +1,20 @@
+id: ai-000576
+area: safety-alignment-and-security
+kind: definition
+topic: Reward model
+topic_type: Technique
+maturity: established
+true_statement: A process reward model scores each intermediate step of a model's reasoning, while an outcome reward model scores only the final answer.
+false_statement: An outcome reward model scores each intermediate step of a model's reasoning, while a process reward model scores only the final answer.
+explanation: Step-level scores say where a solution went wrong, not just whether it did. Lightman and colleagues found process supervision clearly beat outcome supervision on the MATH benchmark, and such models can also rerank sampled solutions at inference time.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/reward-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c94c92c017c5bcf9b3ba0d3a1d7518884d47c3c5
+concepts:
+- kt:reward-model
+- kt:test-time-compute
+difficulty: 2
+created: '2026-11-23'
+status: active

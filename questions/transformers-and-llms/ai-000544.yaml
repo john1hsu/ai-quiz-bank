@@ -1,0 +1,21 @@
+id: ai-000544
+area: transformers-and-llms
+kind: mechanism
+topic: Language Models are Few-Shot Learners
+topic_type: Work
+maturity: foundational
+true_statement: GPT-3 kept GPT-2's architecture but alternated dense attention layers with locally banded sparse attention layers, in the style of the Sparse Transformer.
+false_statement: GPT-3 kept GPT-2's architecture but replaced every dense attention layer with locally banded sparse attention, in the style of the Sparse Transformer.
+explanation: 'The only architectural change from GPT-2 was interleaving: dense and sparse layers alternate rather than all layers going sparse. Banded sparse attention trims the cost of attending over a long context while the dense layers keep full token-to-token access.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/language-models-are-few-shot-learners.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 3ccd035b6fea9845027df30bc92a967581070388
+concepts:
+- kt:language-models-are-few-shot-learners
+- kt:sparse-transformer
+- kt:transformer-architecture
+difficulty: 2
+created: '2026-11-23'
+status: active

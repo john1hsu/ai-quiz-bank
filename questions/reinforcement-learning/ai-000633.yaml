@@ -1,0 +1,21 @@
+id: ai-000633
+area: reinforcement-learning
+kind: application
+topic: Multi-armed bandit
+topic_type: Concept
+maturity: foundational
+true_statement: LinUCB's authors evaluated news recommenders offline by replaying uniformly random logged traffic and keeping only events where the policy matched the logged choice.
+false_statement: LinUCB's authors evaluated news recommenders offline by replaying traffic logged by the production recommender and keeping only events where the policy matched the logged choice.
+explanation: Because the logged articles were chosen uniformly at random, the matching events are an unbiased sample of how the new policy would have done. Logs from a production system are skewed toward what that system liked, which biases the estimate.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/multi-armed-bandit.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c0a1f7062f4185b7c28670906fcb1be5dcd2bb20
+concepts:
+- kt:multi-armed-bandit
+- kt:contextual-bandit
+- kt:recommender-system
+difficulty: 3
+created: '2026-11-23'
+status: active

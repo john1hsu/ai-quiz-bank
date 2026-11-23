@@ -1,0 +1,21 @@
+id: ai-000628
+area: evaluation-and-benchmarks
+kind: application
+topic: WMT 2014
+topic_type: Benchmark
+maturity: historical
+true_statement: WMT 2014's official system ranking came from human judges ranking anonymised outputs, while automatic metrics such as BLEU and TER were reported alongside.
+false_statement: WMT 2014's official system ranking came from automatic metrics such as BLEU and TER, while human judges ranking anonymised outputs were reported alongside.
+explanation: 'The organisers trusted people over n-gram overlap for the final verdict: about 328,830 pairwise judgements from researchers, combined into a ranking with TrueSkill. Later neural papers mostly reused only the test sets and BLEU, not the human evaluation.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/wmt-2014.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 89ab10cdcf5b076f3a0d9c15f5c22daf2c763d88
+concepts:
+- kt:wmt-2014
+- kt:human-evaluation
+- kt:bleu
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000639
+area: agents-and-tool-use
+kind: application
+topic: Computer-use agents
+topic_type: Technique
+maturity: emerging
+true_statement: Because a computer-use agent reads whatever appears on screen, guidance recommends running it in a minimal-privilege virtual machine and requiring human confirmation for consequential steps.
+false_statement: Because a computer-use agent reads whatever appears on screen, guidance recommends running it on the user's main machine with saved credentials so it can finish consequential steps unattended.
+explanation: Text in a webpage or image can carry instructions that override the user's, a form of prompt injection. Isolation, withheld credentials, domain allow-lists and confirmations before payments limit what a hijacked agent could do.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/computer-use-agents.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6ab3d4d40a3cb5a339b876a2f403f6150f97de33
+concepts:
+- kt:computer-use-agents
+- kt:prompt-injection
+difficulty: 2
+created: '2026-11-23'
+status: active

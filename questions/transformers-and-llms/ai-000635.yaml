@@ -1,0 +1,21 @@
+id: ai-000635
+area: transformers-and-llms
+kind: figure
+topic: BERT
+topic_type: Model
+maturity: established
+true_statement: BERT-large, released by Google in 2018, had 24 Transformer encoder layers, hidden size 1024 and 16 attention heads, about 340 million parameters.
+false_statement: BERT-large, released by Google in 2018, had 24 Transformer encoder layers, hidden size 1024 and 16 attention heads, about 110 million parameters.
+explanation: 110 million is BERT-base, with 12 layers, hidden size 768 and 12 heads. Doubling the depth and widening the layers roughly tripled the parameter count, and pretraining took about four days on 64 TPU chips.
+as_of: '2018'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/bert.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: be97d8f45ec48e552140cd35794e706d1dea460b
+concepts:
+- kt:bert
+- kt:google
+difficulty: 2
+created: '2026-11-23'
+status: active

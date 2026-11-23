@@ -1,0 +1,20 @@
+id: ai-000604
+area: ml-foundations
+kind: origin
+topic: Unsupervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: The procedure now taught as k-means comes from Stuart Lloyd's least-squares quantization method, circulated at Bell Labs in 1957 and published only in 1982.
+false_statement: The procedure now taught as k-means comes from Stuart Lloyd's least-squares quantization method, circulated at IBM in 1957 and published only in 1982.
+explanation: Lloyd was designing signal quantizers for pulse-code modulation, not clustering data. His alternation of moving each point to its cell's centroid and redrawing cells by nearest neighbour never increases squared error, which is exactly k-means.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/unsupervised-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 640c5f6845e460cfe326b12f95d46760641b2165
+concepts:
+- kt:unsupervised-learning
+- kt:k-means-clustering
+difficulty: 2
+created: '2026-11-23'
+status: active

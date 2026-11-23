@@ -1,0 +1,21 @@
+id: ai-000605
+area: ml-foundations
+kind: mechanism
+topic: Unsupervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: When EM fits a Gaussian mixture, the E-step computes each point's soft membership in each component, and the M-step re-estimates the weights, means and covariances from them.
+false_statement: When EM fits a Gaussian mixture, the M-step computes each point's soft membership in each component, and the E-step re-estimates the weights, means and covariances from them.
+explanation: The E (expectation) step fills in the hidden component labels with probabilities from Bayes' rule; the M (maximization) step then does weighted maximum likelihood. It is like k-means with soft rather than hard assignments.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/unsupervised-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 640c5f6845e460cfe326b12f95d46760641b2165
+concepts:
+- kt:unsupervised-learning
+- kt:expectation-maximization
+- kt:k-means-clustering
+difficulty: 2
+created: '2026-11-23'
+status: active

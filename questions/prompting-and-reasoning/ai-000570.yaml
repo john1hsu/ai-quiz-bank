@@ -1,0 +1,20 @@
+id: ai-000570
+area: prompting-and-reasoning
+kind: evidence
+topic: Least-to-most prompting
+topic_type: Technique
+maturity: established
+true_statement: The least-to-most authors found nearly all GSM8K problems were solved when the model was given a correct decomposition, so most errors came from splitting the problem.
+false_statement: The least-to-most authors found most GSM8K problems were still missed when the model was given a correct decomposition, so most errors came from solving the subproblems.
+explanation: 'Decomposition is the bottleneck, not the arithmetic of each piece. It also explains why decomposition prompts must be written per domain: a split that works for math word problems does not transfer to commonsense questions.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/least-to-most-prompting.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 088363986e7d46749c29ac33aaad765c62e4b8c6
+concepts:
+- kt:least-to-most-prompting
+- kt:gsm8k
+difficulty: 3
+created: '2026-11-23'
+status: active

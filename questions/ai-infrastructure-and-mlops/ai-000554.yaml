@@ -1,0 +1,21 @@
+id: ai-000554
+area: ai-infrastructure-and-mlops
+kind: figure
+topic: AI accelerator
+topic_type: Hardware
+maturity: established
+true_statement: A 2017 survey by Sze and colleagues reported that an 8-bit fixed-point multiply uses about 18.5 times less energy than a 32-bit floating-point multiply.
+false_statement: A 2017 survey by Sze and colleagues reported that an 8-bit fixed-point multiply uses about 1.85 times less energy than a 32-bit floating-point multiply.
+explanation: Narrow integer arithmetic is far cheaper in silicon than full floating point, which is why accelerators push for low precision and why quantization matters. Inference tolerates the lost precision better than training, so int8 is a common peak-throughput format.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/ai-accelerator.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 16914f91597b6e4e772517045563ea15ef46f9ad
+concepts:
+- kt:ai-accelerator
+- kt:quantization
+difficulty: 2
+created: '2026-11-23'
+status: active

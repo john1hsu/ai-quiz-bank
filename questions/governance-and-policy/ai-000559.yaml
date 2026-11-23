@@ -1,0 +1,20 @@
+id: ai-000559
+area: governance-and-policy
+kind: origin
+topic: OECD AI Principles
+topic_type: Policy
+maturity: established
+true_statement: The OECD Council adopted its Recommendation on Artificial Intelligence in May 2019, and the following month G20 leaders in Osaka welcomed G20 AI Principles drawn from it.
+false_statement: G20 leaders in Osaka adopted the G20 AI Principles in May 2019, and the following month the OECD Council drew its Recommendation on Artificial Intelligence from them.
+explanation: The OECD text came first and the G20 borrowed from it, which is how the principles reached large economies outside the OECD. The OECD describes its Recommendation as the first intergovernmental standard on AI.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/oecd-ai-principles.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 9d08876b5e148f708ddd3fd4a0cc66eb42b035e5
+concepts:
+- kt:oecd-ai-principles
+- kt:oecd
+difficulty: 2
+created: '2026-11-23'
+status: active

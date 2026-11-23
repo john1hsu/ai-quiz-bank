@@ -1,0 +1,22 @@
+id: ai-000588
+area: reinforcement-learning
+kind: figure
+topic: AlphaGo Zero
+topic_type: Model
+maturity: historical
+true_statement: In 2017 DeepMind reported that after about three days of self-play, AlphaGo Zero beat the version of AlphaGo that had defeated Lee Sedol by 100 games to 0.
+false_statement: In 2017 DeepMind reported that after about forty days of self-play, AlphaGo Zero beat the version of AlphaGo that had defeated Lee Sedol by 100 games to 0.
+explanation: Three days of training from random play was enough to surpass a system built with months of human data. The forty-day figure belongs to a larger 40-block run, which went on to beat the stronger AlphaGo Master.
+as_of: '2017'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago-zero.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c6782b0d93260455cae3cc91ae3d860f2b9e4c48
+concepts:
+- kt:alphago-zero
+- kt:alphago
+- kt:google-deepmind
+difficulty: 1
+created: '2026-11-23'
+status: active

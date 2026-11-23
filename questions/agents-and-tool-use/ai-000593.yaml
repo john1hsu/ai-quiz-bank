@@ -1,0 +1,20 @@
+id: ai-000593
+area: agents-and-tool-use
+kind: figure
+topic: Planning in LLMs
+topic_type: Concept
+maturity: emerging
+true_statement: In Valmeekam and colleagues' 2023 study on planning-competition-style domains, GPT-4 produced valid plans on its own in only about 12% of instances on average.
+false_statement: In Valmeekam and colleagues' 2023 study on planning-competition-style domains, GPT-4 produced valid plans on its own in about 72% of instances on average.
+explanation: The low autonomous success rate is the core evidence for the view that LLMs cannot plan reliably alone. Results improved when an external verifier checked plans and sent feedback, the idea behind the later LLM-Modulo framework.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/planning-in-llms.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c85928e144f1ecfe571d69cf762b399310d2195e
+concepts:
+- kt:planning-in-llms
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,21 @@
+id: ai-000606
+area: ml-foundations
+kind: application
+topic: Unsupervised learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: Because k-means and EM only reach a local optimum or stationary point, Stanford's CS229 notes advise running them from several random initialisations.
+false_statement: Because k-means and EM reach the global optimum from any starting point, Stanford's CS229 notes advise running them once from a single random initialisation.
+explanation: Each iteration of either algorithm can only improve its objective, but that just guarantees it settles somewhere, not that it finds the best solution. Several restarts and keeping the best result is the cheap practical fix.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/unsupervised-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 640c5f6845e460cfe326b12f95d46760641b2165
+concepts:
+- kt:unsupervised-learning
+- kt:k-means-clustering
+- kt:expectation-maximization
+difficulty: 2
+created: '2026-11-23'
+status: active

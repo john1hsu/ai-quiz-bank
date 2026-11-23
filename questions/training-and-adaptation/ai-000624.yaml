@@ -1,0 +1,21 @@
+id: ai-000624
+area: training-and-adaptation
+kind: evidence
+topic: Bradley-Terry model
+topic_type: Concept
+maturity: foundational
+true_statement: Because Bradley-Terry gives each item a single scalar strength, it cannot represent intransitive preferences in which A beats B, B beats C and C beats A.
+false_statement: Because Bradley-Terry gives each item a separate strength against every opponent, it can represent intransitive preferences in which A beats B, B beats C and C beats A.
+explanation: One number per item forces a strict ordering, so cyclic or context-dependent preferences get averaged away. This limit carries straight into reward models and leaderboards built on Bradley-Terry, whose scores are also only relative to the pool compared.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/bradley-terry-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 61422a3d0767a7fac0f13c1d6cbb548be223f4ca
+concepts:
+- kt:bradley-terry-model
+- kt:reward-model
+- kt:chatbot-arena
+difficulty: 2
+created: '2026-11-23'
+status: active

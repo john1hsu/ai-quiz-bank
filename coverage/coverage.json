@@ -1,72 +1,72 @@
 {
  "totals": {
-  "active": 542
+  "active": 642
  },
  "areas": {
   "agents-and-tool-use": {
-   "active": 36
+   "active": 45
   },
   "ai-history": {
-   "active": 36
+   "active": 45
   },
   "ai-infrastructure-and-mlops": {
-   "active": 36
+   "active": 43
   },
   "computer-vision-and-multimodal": {
-   "active": 37
+   "active": 43
   },
   "deep-learning": {
-   "active": 36
+   "active": 42
   },
   "evaluation-and-benchmarks": {
-   "active": 37
+   "active": 43
   },
   "governance-and-policy": {
-   "active": 36
+   "active": 42
   },
   "inference-and-optimization": {
-   "active": 36
+   "active": 42
   },
   "ml-foundations": {
-   "active": 36
+   "active": 42
   },
   "prompting-and-reasoning": {
-   "active": 36
+   "active": 42
   },
   "reinforcement-learning": {
-   "active": 37
+   "active": 43
   },
   "retrieval-and-knowledge": {
-   "active": 36
+   "active": 42
   },
   "safety-alignment-and-security": {
-   "active": 36
+   "active": 42
   },
   "training-and-adaptation": {
-   "active": 36
+   "active": 42
   },
   "transformers-and-llms": {
-   "active": 35
+   "active": 44
   }
  },
  "kinds": {
   "application": {
-   "active": 50
+   "active": 61
   },
   "definition": {
-   "active": 69
+   "active": 83
   },
   "evidence": {
-   "active": 121
+   "active": 140
   },
   "figure": {
-   "active": 66
+   "active": 80
   },
   "mechanism": {
-   "active": 152
+   "active": 180
   },
   "origin": {
-   "active": 84
+   "active": 98
   }
  },
  "articles": {
@@ -85,13 +85,22 @@
   "articles/agents-and-tool-use/autogen.md": {
    "active": 3
   },
+  "articles/agents-and-tool-use/computer-use-agents.md": {
+   "active": 3
+  },
   "articles/agents-and-tool-use/generative-agents-interactive-simulacra-of-human-behavior.md": {
    "active": 3
   },
   "articles/agents-and-tool-use/langgraph.md": {
    "active": 3
   },
+  "articles/agents-and-tool-use/model-context-protocol.md": {
+   "active": 3
+  },
   "articles/agents-and-tool-use/multi-agent-systems.md": {
+   "active": 3
+  },
+  "articles/agents-and-tool-use/planning-in-llms.md": {
    "active": 3
   },
   "articles/agents-and-tool-use/react-prompting.md": {
@@ -112,10 +121,19 @@
   "articles/ai-history/ai-winter.md": {
    "active": 3
   },
+  "articles/ai-history/artificial-intelligence.md": {
+   "active": 3
+  },
   "articles/ai-history/chinese-room-argument.md": {
    "active": 3
   },
+  "articles/ai-history/connectionism.md": {
+   "active": 3
+  },
   "articles/ai-history/dartmouth-workshop.md": {
+   "active": 3
+  },
+  "articles/ai-history/deep-blue.md": {
    "active": 3
   },
   "articles/ai-history/eliza.md": {
@@ -140,6 +158,9 @@
    "active": 3
   },
   "articles/ai-history/turing-test.md": {
+   "active": 3
+  },
+  "articles/ai-infrastructure-and-mlops/ai-accelerator.md": {
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/cuda.md": {
@@ -172,7 +193,13 @@
   "articles/ai-infrastructure-and-mlops/nvidia.md": {
    "active": 3
   },
+  "articles/ai-infrastructure-and-mlops/pipeline-parallelism.md": {
+   "active": 1
+  },
   "articles/ai-infrastructure-and-mlops/pytorch.md": {
+   "active": 3
+  },
+  "articles/ai-infrastructure-and-mlops/tensor-cores.md": {
    "active": 3
   },
   "articles/ai-infrastructure-and-mlops/tpu.md": {
@@ -206,6 +233,12 @@
    "active": 3
   },
   "articles/computer-vision-and-multimodal/object-detection.md": {
+   "active": 3
+  },
+  "articles/computer-vision-and-multimodal/semantic-segmentation.md": {
+   "active": 3
+  },
+  "articles/computer-vision-and-multimodal/u-net.md": {
    "active": 3
   },
   "articles/computer-vision-and-multimodal/vision-language-model.md": {
@@ -247,10 +280,16 @@
   "articles/deep-learning/recurrent-neural-network.md": {
    "active": 3
   },
+  "articles/deep-learning/representation-learning.md": {
+   "active": 3
+  },
   "articles/deep-learning/residual-connection.md": {
    "active": 3
   },
   "articles/deep-learning/universal-approximation-theorem.md": {
+   "active": 3
+  },
+  "articles/deep-learning/vanishing-gradient-problem.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/ai-evaluation.md": {
@@ -260,6 +299,9 @@
    "active": 3
   },
   "articles/evaluation-and-benchmarks/benchmark-contamination.md": {
+   "active": 3
+  },
+  "articles/evaluation-and-benchmarks/bleu.md": {
    "active": 3
   },
   "articles/evaluation-and-benchmarks/chatbot-arena.md": {
@@ -292,6 +334,9 @@
   "articles/evaluation-and-benchmarks/truthfulqa.md": {
    "active": 3
   },
+  "articles/evaluation-and-benchmarks/wmt-2014.md": {
+   "active": 3
+  },
   "articles/governance-and-policy/ai-chip-export-controls.md": {
    "active": 3
   },
@@ -310,6 +355,9 @@
   "articles/governance-and-policy/compute-governance.md": {
    "active": 3
   },
+  "articles/governance-and-policy/council-of-europe-framework-convention-on-ai.md": {
+   "active": 3
+  },
   "articles/governance-and-policy/eu-ai-act.md": {
    "active": 3
   },
@@ -323,6 +371,9 @@
    "active": 3
   },
   "articles/governance-and-policy/nist-ai-risk-management-framework.md": {
+   "active": 3
+  },
+  "articles/governance-and-policy/oecd-ai-principles.md": {
    "active": 3
   },
   "articles/governance-and-policy/omb-ai-memoranda.md": {
@@ -346,7 +397,13 @@
   "articles/inference-and-optimization/llm-inference-optimization.md": {
    "active": 3
   },
+  "articles/inference-and-optimization/model-compression.md": {
+   "active": 3
+  },
   "articles/inference-and-optimization/model-pruning.md": {
+   "active": 3
+  },
+  "articles/inference-and-optimization/orca-serving-system.md": {
    "active": 3
   },
   "articles/inference-and-optimization/quantization.md": {
@@ -379,6 +436,9 @@
   "articles/ml-foundations/ensemble-methods.md": {
    "active": 3
   },
+  "articles/ml-foundations/generative-model.md": {
+   "active": 3
+  },
   "articles/ml-foundations/hidden-markov-model.md": {
    "active": 3
   },
@@ -400,10 +460,16 @@
   "articles/ml-foundations/supervised-learning.md": {
    "active": 3
   },
+  "articles/ml-foundations/unsupervised-learning.md": {
+   "active": 3
+  },
   "articles/prompting-and-reasoning/chain-of-thought.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/few-shot-prompting.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/least-to-most-prompting.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/program-induction-by-rationale-generation.md": {
@@ -416,6 +482,9 @@
    "active": 3
   },
   "articles/prompting-and-reasoning/reasoning-models.md": {
+   "active": 3
+  },
+  "articles/prompting-and-reasoning/reflexion.md": {
    "active": 3
   },
   "articles/prompting-and-reasoning/scratchpad.md": {
@@ -439,6 +508,9 @@
   "articles/reinforcement-learning/actor-critic.md": {
    "active": 3
   },
+  "articles/reinforcement-learning/alphago-zero.md": {
+   "active": 3
+  },
   "articles/reinforcement-learning/alphago.md": {
    "active": 3
   },
@@ -455,6 +527,9 @@
    "active": 1
   },
   "articles/reinforcement-learning/monte-carlo-tree-search.md": {
+   "active": 3
+  },
+  "articles/reinforcement-learning/multi-armed-bandit.md": {
    "active": 3
   },
   "articles/reinforcement-learning/policy-gradient.md": {
@@ -487,10 +562,16 @@
   "articles/retrieval-and-knowledge/glove.md": {
    "active": 3
   },
+  "articles/retrieval-and-knowledge/graphrag.md": {
+   "active": 3
+  },
   "articles/retrieval-and-knowledge/hybrid-search.md": {
    "active": 3
   },
   "articles/retrieval-and-knowledge/information-retrieval.md": {
+   "active": 3
+  },
+  "articles/retrieval-and-knowledge/named-entity-recognition.md": {
    "active": 3
   },
   "articles/retrieval-and-knowledge/reranking.md": {
@@ -509,6 +590,9 @@
    "active": 3
   },
   "articles/retrieval-and-knowledge/word2vec.md": {
+   "active": 3
+  },
+  "articles/safety-alignment-and-security/adversarial-example.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/adversarial-machine-learning.md": {
@@ -541,10 +625,16 @@
   "articles/safety-alignment-and-security/reward-hacking.md": {
    "active": 3
   },
+  "articles/safety-alignment-and-security/reward-model.md": {
+   "active": 3
+  },
   "articles/safety-alignment-and-security/scalable-oversight.md": {
    "active": 3
   },
   "articles/safety-alignment-and-security/sycophancy.md": {
+   "active": 3
+  },
+  "articles/training-and-adaptation/bradley-terry-model.md": {
    "active": 3
   },
   "articles/training-and-adaptation/constitutional-ai.md": {
@@ -583,10 +673,16 @@
   "articles/training-and-adaptation/synthetic-data.md": {
    "active": 3
   },
+  "articles/training-and-adaptation/transfer-learning.md": {
+   "active": 3
+  },
   "articles/transformers-and-llms/attention-is-all-you-need.md": {
    "active": 3
   },
   "articles/transformers-and-llms/attention-mechanism.md": {
+   "active": 3
+  },
+  "articles/transformers-and-llms/bert.md": {
    "active": 3
   },
   "articles/transformers-and-llms/context-window.md": {
@@ -601,6 +697,9 @@
   "articles/transformers-and-llms/kv-cache.md": {
    "active": 3
   },
+  "articles/transformers-and-llms/language-models-are-few-shot-learners.md": {
+   "active": 3
+  },
   "articles/transformers-and-llms/large-language-model.md": {
    "active": 3
   },
@@ -608,6 +707,9 @@
    "active": 1
   },
   "articles/transformers-and-llms/neural-machine-translation-by-jointly-learning-to-align-and-translate.md": {
+   "active": 3
+  },
+  "articles/transformers-and-llms/positional-encoding.md": {
    "active": 3
   },
   "articles/transformers-and-llms/scaling-laws.md": {

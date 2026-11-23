@@ -1,0 +1,21 @@
+id: ai-000631
+area: reinforcement-learning
+kind: definition
+topic: Multi-armed bandit
+topic_type: Concept
+maturity: foundational
+true_statement: 'A basic multi-armed bandit has no state: pulling an arm does not change future situations, which is what separates it from reinforcement learning in a Markov decision process.'
+false_statement: 'A Markov decision process has no state: taking an action does not change future situations, which is what separates it from learning in a basic multi-armed bandit.'
+explanation: In a bandit the only problem is learning which arm pays best while still earning reward. In an MDP actions also move the agent to new states, so it must weigh delayed consequences too; bandits isolate the exploration-exploitation dilemma.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/multi-armed-bandit.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c0a1f7062f4185b7c28670906fcb1be5dcd2bb20
+concepts:
+- kt:multi-armed-bandit
+- kt:markov-decision-process
+- kt:exploration-exploitation
+difficulty: 1
+created: '2026-11-23'
+status: active

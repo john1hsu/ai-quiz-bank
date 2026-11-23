@@ -1,0 +1,22 @@
+id: ai-000641
+area: ai-history
+kind: origin
+topic: Connectionism
+topic_type: Paradigm
+maturity: historical
+true_statement: Connectionism revived in 1986, when Rumelhart, Hinton and Williams showed in Nature that back-propagating errors lets hidden units learn useful internal representations.
+false_statement: Connectionism revived in 1969, when Minsky and Papert showed in Nature that back-propagating errors lets hidden units learn useful internal representations.
+explanation: Minsky and Papert's 1969 work did the opposite, exposing the limits of two-layer networks at a time when nobody knew how to train hidden units. Backpropagation solved that training problem and, with the Parallel Distributed Processing volumes the same year, began connectionism's golden age.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/connectionism.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e5c878e183e6f1f1bd4fa7d2024a8ff4006f2fa9
+concepts:
+- kt:connectionism
+- kt:backpropagation
+- kt:geoffrey-hinton
+- kt:perceptron
+difficulty: 1
+created: '2026-11-23'
+status: active

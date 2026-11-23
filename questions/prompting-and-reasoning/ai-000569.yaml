@@ -1,0 +1,21 @@
+id: ai-000569
+area: prompting-and-reasoning
+kind: figure
+topic: Least-to-most prompting
+topic_type: Technique
+maturity: established
+true_statement: In the 2023 least-to-most paper, the method reached at least 99% accuracy on every SCAN split with 14 exemplars, while chain-of-thought reached 16% on the length split.
+false_statement: In the 2023 least-to-most paper, the method reached at least 99% accuracy on every SCAN split with 14 exemplars, while chain-of-thought reached 61% on the length split.
+explanation: SCAN's length split tests on command sequences longer than any seen in the examples, exactly the easy-to-hard gap that chain-of-thought struggles with. Decomposition let a prompted model match specialised systems trained on over 15,000 examples.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/least-to-most-prompting.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 088363986e7d46749c29ac33aaad765c62e4b8c6
+concepts:
+- kt:least-to-most-prompting
+- kt:compositional-generalization
+difficulty: 3
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000565
+area: ml-foundations
+kind: definition
+topic: Generative model
+topic_type: Concept
+maturity: foundational
+true_statement: A generative model learns the distribution of the data itself, p(x) or the joint p(x, y), while a discriminative model learns only p(y | x).
+false_statement: A discriminative model learns the distribution of the data itself, p(x) or the joint p(x, y), while a generative model learns only p(y | x).
+explanation: Because a generative model accounts for how inputs are spread across the whole input space, it can score how likely an example is and sample new ones. A discriminative model takes the input as given and only learns a boundary, which is an easier task but cannot produce data.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/generative-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: bb6749fba1651c91799b5db53f875e8069b188df
+concepts:
+- kt:generative-model
+- kt:discriminative-model
+difficulty: 1
+created: '2026-11-23'
+status: active

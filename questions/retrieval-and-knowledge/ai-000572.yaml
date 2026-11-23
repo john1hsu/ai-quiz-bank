@@ -1,0 +1,21 @@
+id: ai-000572
+area: retrieval-and-knowledge
+kind: origin
+topic: Named-entity recognition
+topic_type: Application
+maturity: established
+true_statement: Named-entity recognition was defined as an evaluation task at the Sixth Message Understanding Conference (MUC-6), held in 1995, with all test texts from the Wall Street Journal.
+false_statement: Named-entity recognition was defined as an evaluation task at the CoNLL-2003 shared task, held in 2003, with all test texts from the Wall Street Journal.
+explanation: MUC-6 wanted practical, domain-independent component tasks, and named entities fit. CoNLL-2003 came later and set the benchmark of the next two decades, using Reuters and German newspaper text rather than the Wall Street Journal.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/named-entity-recognition.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d4bdfab437298eb1244f8880f51af86c7f53c197
+concepts:
+- kt:named-entity-recognition
+- kt:message-understanding-conference-6
+- kt:conll-2003
+difficulty: 1
+created: '2026-11-23'
+status: active

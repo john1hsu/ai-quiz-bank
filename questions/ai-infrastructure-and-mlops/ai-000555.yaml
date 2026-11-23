@@ -1,0 +1,21 @@
+id: ai-000555
+area: ai-infrastructure-and-mlops
+kind: application
+topic: AI accelerator
+topic_type: Hardware
+maturity: established
+true_statement: Georgetown CSET's 2020 report described GPUs as used mainly for AI training and FPGAs mainly for inference, with AI-specific ASICs used for either.
+false_statement: Georgetown CSET's 2020 report described FPGAs as used mainly for AI training and GPUs mainly for inference, with AI-specific ASICs used for either.
+explanation: GPUs offer mature software and raw parallel throughput, which suits training. FPGAs are reconfigurable but slower and harder to program, so they found a niche in inference, while ASICs like the TPU can be built for either job at the highest efficiency.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/ai-accelerator.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 16914f91597b6e4e772517045563ea15ef46f9ad
+concepts:
+- kt:ai-accelerator
+- kt:gpu-computing
+- kt:application-specific-integrated-circuit
+difficulty: 2
+created: '2026-11-23'
+status: active

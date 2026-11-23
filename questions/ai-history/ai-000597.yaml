@@ -1,0 +1,20 @@
+id: ai-000597
+area: ai-history
+kind: figure
+topic: Deep Blue
+topic_type: Model
+maturity: historical
+true_statement: During the 1997 Kasparov match, Deep Blue averaged about 126 million chess positions per second on long searches, using 480 custom chess chips.
+false_statement: During the 1997 Kasparov match, Deep Blue averaged about 12.6 million chess positions per second on long searches, using 480 custom chess chips.
+explanation: Each chip managed only 2 to 2.5 million positions per second, so the speed came from running hundreds in parallel. Its designers still put chess knowledge ahead of speed, with an evaluation function of about 8,000 hand-tuned features.
+as_of: '1997'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/deep-blue.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 70b3063c74cbdcd53c8328677dc3b512a7de761a
+concepts:
+- kt:deep-blue
+difficulty: 2
+created: '2026-11-23'
+status: active

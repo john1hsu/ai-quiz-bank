@@ -1,0 +1,20 @@
+id: ai-000585
+area: evaluation-and-benchmarks
+kind: application
+topic: BLEU
+topic_type: Concept
+maturity: foundational
+true_statement: SacreBLEU scores detokenized output using its own internal WMT-standard tokenization and prints a signature of its settings, so BLEU numbers can be compared across papers.
+false_statement: SacreBLEU scores output pre-tokenized by each researcher's own tokenizer and prints a signature of its settings, so BLEU numbers can be compared across papers.
+explanation: Matt Post showed that tokenization, casing and reference choices could move BLEU by up to 1.8 points, often more than a new method's claimed gain. Taking preprocessing out of users' hands is what makes the numbers comparable.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/bleu.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: b3d03436075a3292fd7206fe5ca830f18d0630ce
+concepts:
+- kt:bleu
+- kt:sacrebleu
+difficulty: 2
+created: '2026-11-23'
+status: active

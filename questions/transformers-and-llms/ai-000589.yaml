@@ -1,0 +1,21 @@
+id: ai-000589
+area: transformers-and-llms
+kind: mechanism
+topic: Positional encoding
+topic_type: Technique
+maturity: established
+true_statement: Rotary position embedding rotates slices of each query and key by an angle proportional to the token's position, so their dot product depends only on the offset between tokens.
+false_statement: Rotary position embedding rotates slices of each query and key by an angle proportional to the token's position, so their dot product depends on each token's absolute position.
+explanation: Rotating both sides means the angles subtract in the dot product, leaving only m − n. RoPE therefore encodes absolute positions yet yields relative attention, which is why it became the scheme behind models such as LLaMA.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/positional-encoding.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 291109bf59d1a46d87b7fc88767a772cfc1e3c35
+concepts:
+- kt:positional-encoding
+- kt:rotary-position-embedding
+- kt:self-attention
+difficulty: 2
+created: '2026-11-23'
+status: active

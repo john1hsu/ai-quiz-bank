@@ -1,0 +1,19 @@
+id: ai-000571
+area: retrieval-and-knowledge
+kind: mechanism
+topic: Named-entity recognition
+topic_type: Application
+maturity: established
+true_statement: In BIO tagging for named-entity recognition, each token is marked as beginning, inside or outside an entity, so n entity types need 2n+1 tags.
+false_statement: In BIO tagging for named-entity recognition, each token is marked as beginning, inside or outside an entity, so n entity types need n+1 tags.
+explanation: Every type gets its own B and I tag, plus one shared O tag, giving 2n+1. The separate B tag is what lets a tagger mark where one entity ends and an adjacent entity of the same type begins, which the simpler IO scheme blurs.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/named-entity-recognition.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d4bdfab437298eb1244f8880f51af86c7f53c197
+concepts:
+- kt:named-entity-recognition
+difficulty: 2
+created: '2026-11-23'
+status: active

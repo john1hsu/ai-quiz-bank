@@ -1,0 +1,20 @@
+id: ai-000578
+area: training-and-adaptation
+kind: evidence
+topic: Transfer learning
+topic_type: Paradigm
+maturity: established
+true_statement: Yosinski and colleagues found that first-layer features in ImageNet networks, Gabor-like filters and colour blobs, are general, while last-layer features are task-specific.
+false_statement: Yosinski and colleagues found that last-layer features in ImageNet networks, Gabor-like filters and colour blobs, are general, while first-layer features are task-specific.
+explanation: Early layers learn edge and colour detectors useful for almost any image task, which is why they transfer well and why fine-tuning usually keeps them. Transfer got worse with depth and when source and target tasks differed more, such as man-made versus natural objects.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/transfer-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 8332798a1603362adfb25c29483d5322cd9fa958
+concepts:
+- kt:transfer-learning
+- kt:representation-learning
+difficulty: 2
+created: '2026-11-23'
+status: active

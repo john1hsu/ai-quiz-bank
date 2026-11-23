@@ -1,0 +1,21 @@
+id: ai-000611
+area: inference-and-optimization
+kind: figure
+topic: Orca (LLM serving system)
+topic_type: Tool
+maturity: established
+true_statement: In 2022 Orca's authors reported 36.9 times FasterTransformer's throughput at the same latency when serving GPT-3 175B.
+false_statement: In 2022 Orca's authors reported 3.69 times FasterTransformer's throughput at the same latency when serving GPT-3 175B.
+explanation: 'Most of the gain came from iteration-level scheduling: without it, Orca''s engine roughly matched FasterTransformer. The authors flagged caveats, including synthetic workloads and a single end-to-end baseline.'
+as_of: '2022'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/orca-serving-system.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: f95d51f2f687fde27abac6bda512219ce3e3779d
+concepts:
+- kt:orca-serving-system
+- kt:fastertransformer
+difficulty: 2
+created: '2026-11-23'
+status: active

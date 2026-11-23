@@ -1,0 +1,20 @@
+id: ai-000637
+area: agents-and-tool-use
+kind: mechanism
+topic: Computer-use agents
+topic_type: Technique
+maturity: emerging
+true_statement: In Anthropic's computer-use API the model only emits tool calls such as screenshot or a click at pixel coordinates, and the developer's application executes them in an environment it controls.
+false_statement: In Anthropic's computer-use API the model emits tool calls such as screenshot or a click at pixel coordinates, and Anthropic's servers execute them in a hosted virtual desktop.
+explanation: 'Computer use is a client-side toolset, like ordinary function calling: the model never touches the machine directly. That puts the developer in charge of sandboxing, which matters because the agent acts with whatever access that environment has.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/computer-use-agents.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6ab3d4d40a3cb5a339b876a2f403f6150f97de33
+concepts:
+- kt:computer-use-agents
+- kt:tool-use
+difficulty: 2
+created: '2026-11-23'
+status: active

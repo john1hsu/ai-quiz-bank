@@ -1,0 +1,20 @@
+id: ai-000549
+area: agents-and-tool-use
+kind: application
+topic: Model Context Protocol
+topic_type: Tool
+maturity: emerging
+true_statement: The MCP specification says tool descriptions and annotations should be treated as untrusted unless they come from a trusted server, and that users should consent before any tool runs.
+false_statement: The MCP specification says tool descriptions and annotations can be trusted once a server completes the handshake, so users need not consent before each tool runs.
+explanation: The protocol cannot enforce safety itself, so it pushes responsibility onto implementers. Tool metadata goes straight to the model, which is why hidden instructions in it (tool poisoning) are a form of prompt injection; auditing metadata and asking for consent are the mitigations.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/model-context-protocol.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e0ff7465ea114cb6b63c4a61c2c8a7367197edf5
+concepts:
+- kt:model-context-protocol
+- kt:prompt-injection
+difficulty: 2
+created: '2026-11-23'
+status: active

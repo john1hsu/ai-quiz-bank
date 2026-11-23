@@ -1,0 +1,20 @@
+id: ai-000602
+area: deep-learning
+kind: mechanism
+topic: Vanishing gradient problem
+topic_type: Concept
+maturity: foundational
+true_statement: Pascanu and colleagues showed an RNN's long-term gradients must vanish if the recurrent matrix's largest eigenvalue is below 1/γ, where γ bounds the nonlinearity's derivative.
+false_statement: Pascanu and colleagues showed an RNN's long-term gradients must vanish if the recurrent matrix's largest eigenvalue is above 1/γ, where γ bounds the nonlinearity's derivative.
+explanation: Each step back in time multiplies the gradient by the recurrent weights and the activation's derivative; if their combined size stays below 1, contributions from the distant past shrink exponentially. An eigenvalue above 1/γ is necessary, though not sufficient, for gradients to explode.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/vanishing-gradient-problem.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 860a81730f079d68670325669a8e24f471ec5c9f
+concepts:
+- kt:vanishing-gradient-problem
+- kt:recurrent-neural-network
+difficulty: 3
+created: '2026-11-23'
+status: active

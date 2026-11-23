@@ -1,0 +1,22 @@
+id: ai-000625
+area: computer-vision-and-multimodal
+kind: origin
+topic: U-Net
+topic_type: Architecture
+maturity: established
+true_statement: U-Net was introduced by Ronneberger, Fischer and Brox of the University of Freiburg at MICCAI 2015, designed for biomedical images where labelled data is scarce.
+false_statement: U-Net was introduced by Ronneberger, Fischer and Brox of the University of Freiburg at MICCAI 2015, designed for street scenes where labelled data is plentiful.
+explanation: Annotating cells and neurons pixel by pixel is slow expert work, so the design leaned on heavy elastic-deformation augmentation to learn from few images. It won the ISBI 2015 cell-tracking challenge in two categories by a large margin.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/u-net.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 5a9061f95c75c1642d4581933919fe6f63bee071
+concepts:
+- kt:u-net
+- kt:u-net-convolutional-networks-for-biomedical-image-segmentation
+- kt:olaf-ronneberger
+- kt:medical-image-analysis
+difficulty: 1
+created: '2026-11-23'
+status: active

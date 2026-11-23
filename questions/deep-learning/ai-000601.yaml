@@ -1,0 +1,21 @@
+id: ai-000601
+area: deep-learning
+kind: origin
+topic: Vanishing gradient problem
+topic_type: Concept
+maturity: foundational
+true_statement: Bengio, Simard and Frasconi's 1994 paper 'Learning long-term dependencies with gradient descent is difficult' described vanishing and exploding gradients in recurrent networks.
+false_statement: Hochreiter and Schmidhuber's 1994 paper 'Learning long-term dependencies with gradient descent is difficult' described vanishing and exploding gradients in recurrent networks.
+explanation: The 1994 analysis showed why gradient descent struggles to link inputs far apart in a sequence. Hochreiter and Schmidhuber's answer came later, with the 1997 LSTM, whose memory cell gives error a path that does not fade.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/vanishing-gradient-problem.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 860a81730f079d68670325669a8e24f471ec5c9f
+concepts:
+- kt:vanishing-gradient-problem
+- kt:learning-long-term-dependencies-with-gradient-descent-is-difficult
+- kt:recurrent-neural-network
+difficulty: 1
+created: '2026-11-23'
+status: active

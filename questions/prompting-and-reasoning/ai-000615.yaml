@@ -1,0 +1,21 @@
+id: ai-000615
+area: prompting-and-reasoning
+kind: evidence
+topic: Reflexion
+topic_type: Technique
+maturity: established
+true_statement: Huang and colleagues noted that Reflexion's HotPotQA setup used the correct answer to decide when to stop retrying, and argued such gains vanish without oracle labels.
+false_statement: Huang and colleagues noted that Reflexion's HotPotQA setup used a label-free self-check to decide when to stop retrying, and argued such gains hold without oracle labels.
+explanation: If the loop stops only when the answer is right, more retries are bound to look like improvement. Surveys of self-correction conclude it works when honest external feedback exists, as with test suites or game environments.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reflexion.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: ba96550581fff394f231eb1f3ebefcb365c32645
+concepts:
+- kt:reflexion
+- kt:hotpotqa
+- kt:self-correction
+difficulty: 3
+created: '2026-11-23'
+status: active

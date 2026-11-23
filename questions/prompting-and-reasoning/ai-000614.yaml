@@ -1,0 +1,21 @@
+id: ai-000614
+area: prompting-and-reasoning
+kind: figure
+topic: Reflexion
+topic_type: Technique
+maturity: established
+true_statement: In 2023 Reflexion's authors reported 91.0% pass@1 on Python HumanEval, against 80.1% for GPT-4 on its own.
+false_statement: In 2023 Reflexion's authors reported 80.1% pass@1 on Python HumanEval, against 91.0% for GPT-4 on its own.
+explanation: On code, the agent writes its own unit tests and reflects on failures before retrying. The same weak test signal hurt on MBPP Python, where false-positive tests left Reflexion slightly behind plain GPT-4.
+as_of: '2023'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/prompting-and-reasoning/reflexion.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: ba96550581fff394f231eb1f3ebefcb365c32645
+concepts:
+- kt:reflexion
+- kt:humaneval
+difficulty: 2
+created: '2026-11-23'
+status: active

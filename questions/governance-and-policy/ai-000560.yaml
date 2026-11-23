@@ -1,0 +1,20 @@
+id: ai-000560
+area: governance-and-policy
+kind: definition
+topic: OECD AI Principles
+topic_type: Policy
+maturity: established
+true_statement: The OECD AI Principles set out five values-based principles addressed to all AI actors, plus five recommendations addressed to governments.
+false_statement: The OECD AI Principles set out five values-based principles addressed to governments, plus five recommendations addressed to all AI actors.
+explanation: Values such as transparency, robustness and accountability apply to everyone who takes part in an AI system's lifecycle. The policy recommendations, such as investing in research and preparing the labour market, are things only governments can do.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/oecd-ai-principles.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 9d08876b5e148f708ddd3fd4a0cc66eb42b035e5
+concepts:
+- kt:oecd-ai-principles
+- kt:ai-governance
+difficulty: 2
+created: '2026-11-23'
+status: active

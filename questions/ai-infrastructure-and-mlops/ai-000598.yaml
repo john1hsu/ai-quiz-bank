@@ -1,0 +1,20 @@
+id: ai-000598
+area: ai-infrastructure-and-mlops
+kind: origin
+topic: Tensor Cores
+topic_type: Hardware
+maturity: established
+true_statement: NVIDIA introduced Tensor Cores with its Volta architecture in 2017, each unit computing a fused multiply-add D = A×B + C on 4×4 matrices.
+false_statement: NVIDIA introduced Tensor Cores with its Ampere architecture in 2020, each unit computing a fused multiply-add D = A×B + C on 4×4 matrices.
+explanation: Volta's GV100 put eight Tensor Cores in each streaming multiprocessor, and larger matrix products are built from many of these small steps. Ampere in 2020 brought the third generation, adding formats such as TF32 and BF16.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tensor-cores.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 028d703b7a8ddf21abe0deb62a42f6578169d453
+concepts:
+- kt:tensor-cores
+- kt:nvidia
+difficulty: 1
+created: '2026-11-23'
+status: active

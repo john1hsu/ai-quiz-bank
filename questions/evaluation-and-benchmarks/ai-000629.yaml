@@ -1,0 +1,20 @@
+id: ai-000629
+area: evaluation-and-benchmarks
+kind: definition
+topic: WMT 2014
+topic_type: Benchmark
+maturity: historical
+true_statement: WMT 2014 mainly asked for constrained systems, trained only on the supplied data, so that comparisons would reflect methods rather than access to data.
+false_statement: WMT 2014 mainly asked for unconstrained systems, trained on any data a team could obtain, so that comparisons would reflect methods rather than access to data.
+explanation: If one team trains on far more text, its win says little about its method. Fixing the training data isolates the modelling choices, and systems that used substantial extra data had to be flagged.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/wmt-2014.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 89ab10cdcf5b076f3a0d9c15f5c22daf2c763d88
+concepts:
+- kt:wmt-2014
+- kt:machine-translation
+difficulty: 2
+created: '2026-11-23'
+status: active

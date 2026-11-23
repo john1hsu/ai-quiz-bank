@@ -1,0 +1,20 @@
+id: ai-000556
+area: deep-learning
+kind: definition
+topic: Representation learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: Bengio, Courville and Vincent favoured disentangled representations over merely invariant ones, because invariant features can discard information a later task needs.
+false_statement: Bengio, Courville and Vincent favoured invariant representations over disentangled ones, because disentangled features can discard information a later task needs.
+explanation: A disentangled representation separates the underlying factors of variation but keeps all of them, so any downstream task can use the ones it cares about. An invariant feature deliberately ignores some factors, which helps one task but may hurt another.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/representation-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c800642288716e6376320e5804c27b2faf5232c6
+concepts:
+- kt:representation-learning
+- kt:representation-learning-a-review-and-new-perspectives
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000600
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Tensor Cores
+topic_type: Hardware
+maturity: established
+true_statement: Micikevicius and colleagues' mixed-precision recipe keeps an FP32 master copy of the weights and scales up the loss so that small gradients survive in half precision.
+false_statement: Micikevicius and colleagues' mixed-precision recipe keeps an FP32 master copy of the weights and scales up the learning rate so that small gradients survive in half precision.
+explanation: Tiny gradient values underflow to zero in FP16. Multiplying the loss scales every gradient up by the same factor through backpropagation, and it is divided back out before the FP32 weight update, roughly halving memory use without hurting accuracy.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tensor-cores.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 028d703b7a8ddf21abe0deb62a42f6578169d453
+concepts:
+- kt:tensor-cores
+- kt:mixed-precision-training
+difficulty: 2
+created: '2026-11-23'
+status: active

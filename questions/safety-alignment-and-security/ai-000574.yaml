@@ -1,0 +1,21 @@
+id: ai-000574
+area: safety-alignment-and-security
+kind: mechanism
+topic: Reward model
+topic_type: Technique
+maturity: established
+true_statement: InstructGPT used a 6-billion-parameter reward model rather than a 175-billion one, because the larger one trained less stably and suited PPO's value function less well.
+false_statement: InstructGPT used a 175-billion-parameter reward model rather than a 6-billion one, because the smaller one trained less stably and suited PPO's value function less well.
+explanation: In InstructGPT the PPO value function was initialised from the reward model, so the reward model's size and stability mattered twice. A bigger scorer is not automatically a better training signal.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/reward-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c94c92c017c5bcf9b3ba0d3a1d7518884d47c3c5
+concepts:
+- kt:reward-model
+- kt:rlhf
+- kt:proximal-policy-optimization
+difficulty: 3
+created: '2026-11-23'
+status: active

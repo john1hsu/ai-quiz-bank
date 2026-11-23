@@ -1,0 +1,21 @@
+id: ai-000579
+area: training-and-adaptation
+kind: mechanism
+topic: Transfer learning
+topic_type: Paradigm
+maturity: established
+true_statement: Ben-David and colleagues bound a classifier's target-domain error by its source-domain error plus a divergence between the domains that can be estimated from unlabelled data.
+false_statement: Ben-David and colleagues bound a classifier's target-domain error by its source-domain error plus a divergence between the domains that can be estimated only from labelled target data.
+explanation: Because the divergence needs no target labels, you can check how far apart two domains are before committing to transfer. The bound also shows why transfer fails when no single hypothesis does well on both domains, the root of negative transfer.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/training-and-adaptation/transfer-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 8332798a1603362adfb25c29483d5322cd9fa958
+concepts:
+- kt:transfer-learning
+- kt:domain-adaptation
+- kt:negative-transfer
+difficulty: 3
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000620
+area: safety-alignment-and-security
+kind: evidence
+topic: Adversarial example
+topic_type: Concept
+maturity: established
+true_statement: Carlini and Wagner showed defensive distillation did not meaningfully improve robustness, since their stronger attacks succeeded on distilled networks as often as on undistilled ones.
+false_statement: Carlini and Wagner showed defensive distillation meaningfully improved robustness, since their stronger attacks succeeded far less often on distilled networks than on undistilled ones.
+explanation: Distillation had looked effective only because it defeated the weak attacks it was tested against. The lasting lesson for evaluation is that a defence must be checked against adaptive, well-tuned attacks before claiming robustness.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/safety-alignment-and-security/adversarial-example.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 477684c0e8e18839b7124c0ac2036e792d6477ef
+concepts:
+- kt:adversarial-example
+- kt:adversarial-machine-learning
+difficulty: 2
+created: '2026-11-23'
+status: active

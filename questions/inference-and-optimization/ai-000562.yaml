@@ -1,0 +1,21 @@
+id: ai-000562
+area: inference-and-optimization
+kind: mechanism
+topic: Model compression
+topic_type: Paradigm
+maturity: established
+true_statement: 'Han, Mao and Dally''s Deep Compression chained three steps: magnitude pruning, trained quantization with shared weights, and Huffman coding.'
+false_statement: 'Han, Mao and Dally''s Deep Compression chained three steps: magnitude pruning, low-rank factorization of weight matrices, and Huffman coding.'
+explanation: 'Deep Compression showed that compression methods stack: pruning removes weights, quantization makes the survivors share a few values, and Huffman coding stores those values compactly. Low-rank factorization is a separate compression family that the paper did not use.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-compression.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 5d8a8b26b70be3670a641ad69108355f13fa99b4
+concepts:
+- kt:model-compression
+- kt:model-pruning
+- kt:quantization
+difficulty: 2
+created: '2026-11-23'
+status: active

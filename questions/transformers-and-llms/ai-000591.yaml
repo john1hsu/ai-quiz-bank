@@ -1,0 +1,22 @@
+id: ai-000591
+area: transformers-and-llms
+kind: evidence
+topic: Positional encoding
+topic_type: Technique
+maturity: established
+true_statement: In the ALiBi paper's WikiText-103 tests, a sinusoidal model trained on 512 tokens improved for only about 20 extra tokens, while rotary embeddings stretched this to about 200.
+false_statement: In the ALiBi paper's WikiText-103 tests, a rotary model trained on 512 tokens improved for only about 20 extra tokens, while sinusoidal embeddings stretched this to about 200.
+explanation: Neither scheme extrapolated far past its training length, which motivated ALiBi's distance penalty on attention scores. Rotary did better than sinusoids, and later methods like position interpolation patched RoPE further.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/positional-encoding.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 291109bf59d1a46d87b7fc88767a772cfc1e3c35
+concepts:
+- kt:positional-encoding
+- kt:alibi
+- kt:rotary-position-embedding
+- kt:context-window
+difficulty: 3
+created: '2026-11-23'
+status: active

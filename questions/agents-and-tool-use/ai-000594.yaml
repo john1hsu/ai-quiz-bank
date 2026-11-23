@@ -1,0 +1,20 @@
+id: ai-000594
+area: agents-and-tool-use
+kind: evidence
+topic: Planning in LLMs
+topic_type: Concept
+maturity: emerging
+true_statement: When Huang and colleagues mapped each LLM-generated household step onto the closest action the simulator allowed, plans became far more executable but raters saw a trade-off with correctness.
+false_statement: When Huang and colleagues mapped each LLM-generated household step onto the closest action the simulator allowed, plans became far more executable and raters saw correctness rise with it.
+explanation: Large models wrote fluent step lists, but many steps named actions the VirtualHome environment could not run. Forcing steps into admissible actions fixed that while sometimes distorting the plan's meaning, the tension between fluent and grounded plans that runs through the field.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/planning-in-llms.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c85928e144f1ecfe571d69cf762b399310d2195e
+concepts:
+- kt:planning-in-llms
+- kt:ai-agent
+difficulty: 3
+created: '2026-11-23'
+status: active

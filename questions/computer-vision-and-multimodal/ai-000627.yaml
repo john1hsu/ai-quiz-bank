@@ -1,0 +1,20 @@
+id: ai-000627
+area: computer-vision-and-multimodal
+kind: evidence
+topic: U-Net
+topic_type: Architecture
+maturity: established
+true_statement: nnU-Net kept a nearly standard U-Net, automated preprocessing, training and postprocessing for each dataset, and topped the Medical Segmentation Decathlon's phase-1 leaderboard.
+false_statement: nnU-Net heavily redesigned the U-Net architecture, kept preprocessing, training and postprocessing fixed across datasets, and topped the Medical Segmentation Decathlon's phase-1 leaderboard.
+explanation: Its authors argued that pipeline choices matter more than architectural tweaks, a recurring finding among U-Net variants. For practitioners the lesson is to tune preprocessing and training before inventing a new network.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/u-net.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 5a9061f95c75c1642d4581933919fe6f63bee071
+concepts:
+- kt:u-net
+- kt:medical-image-analysis
+difficulty: 3
+created: '2026-11-23'
+status: active

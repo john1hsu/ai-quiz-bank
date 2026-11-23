@@ -1,0 +1,20 @@
+id: ai-000603
+area: deep-learning
+kind: evidence
+topic: Vanishing gradient problem
+topic_type: Concept
+maturity: foundational
+true_statement: He and colleagues checked that their batch-normalized plain networks had healthy backward gradient norms, so the degradation they saw in deeper nets was not caused by vanishing gradients.
+false_statement: He and colleagues found that their batch-normalized plain networks had vanishing backward gradient norms, so the degradation they saw in deeper nets was caused by vanishing gradients.
+explanation: By 2015 normalized initialization and batch normalization had largely tamed vanishing gradients, yet deeper plain networks still trained worse. Treating that as a separate optimization problem led to residual connections; the lesson is to inspect per-layer gradient norms before blaming vanishing gradients.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/vanishing-gradient-problem.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 860a81730f079d68670325669a8e24f471ec5c9f
+concepts:
+- kt:vanishing-gradient-problem
+- kt:deep-learning
+difficulty: 3
+created: '2026-11-23'
+status: active

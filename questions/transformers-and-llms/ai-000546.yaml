@@ -1,0 +1,21 @@
+id: ai-000546
+area: transformers-and-llms
+kind: figure
+topic: Language Models are Few-Shot Learners
+topic_type: Work
+maturity: foundational
+true_statement: In 2020 few-shot GPT-3 scored 71.2% on TriviaQA, edging past a retrieval-augmented baseline that scored 68.0%.
+false_statement: In 2020 few-shot GPT-3 scored 68.0% on TriviaQA, trailing a retrieval-augmented baseline that scored 71.2%.
+explanation: 'TriviaQA was one of GPT-3''s headline wins: with only prompt examples and no retrieval it beat a system that looks documents up. Results were uneven, though, since it still trailed retrieval-based systems on Natural Questions.'
+as_of: '2020'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/language-models-are-few-shot-learners.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 3ccd035b6fea9845027df30bc92a967581070388
+concepts:
+- kt:language-models-are-few-shot-learners
+- kt:triviaqa
+difficulty: 2
+created: '2026-11-23'
+status: active

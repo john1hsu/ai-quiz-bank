@@ -1,0 +1,20 @@
+id: ai-000592
+area: agents-and-tool-use
+kind: mechanism
+topic: Planning in LLMs
+topic_type: Concept
+maturity: emerging
+true_statement: In LLM+P the language model rewrites a natural-language problem as a PDDL file, a classical planner solves it, and the model turns the resulting plan back into prose.
+false_statement: In LLM+P a classical planner rewrites a natural-language problem as a PDDL file, the language model solves it, and the planner turns the resulting plan back into prose.
+explanation: The model does what it is good at, translating between language and formal notation, while a sound planner does the search. On the authors' benchmark this returned optimal plans for most problems, where the LLM alone often failed to find any feasible plan.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/planning-in-llms.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c85928e144f1ecfe571d69cf762b399310d2195e
+concepts:
+- kt:planning-in-llms
+- kt:automated-planning
+difficulty: 2
+created: '2026-11-23'
+status: active

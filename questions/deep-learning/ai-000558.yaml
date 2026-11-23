@@ -1,0 +1,19 @@
+id: ai-000558
+area: deep-learning
+kind: evidence
+topic: Representation learning
+topic_type: Paradigm
+maturity: foundational
+true_statement: Training over 12,000 models, Locatello and colleagues could not reliably pick out well-disentangled ones without supervision, and argued inductive biases are essential.
+false_statement: Training over 12,000 models, Locatello and colleagues reliably picked out well-disentangled ones without supervision, and argued inductive biases are unnecessary.
+explanation: Their ICML 2019 outstanding paper showed that unsupervised disentanglement is impossible in theory without assumptions about both models and data. Empirically, more disentanglement also did not clearly reduce how many samples downstream tasks needed.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/deep-learning/representation-learning.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c800642288716e6376320e5804c27b2faf5232c6
+concepts:
+- kt:representation-learning
+difficulty: 3
+created: '2026-11-23'
+status: active

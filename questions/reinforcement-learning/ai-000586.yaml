@@ -1,0 +1,22 @@
+id: ai-000586
+area: reinforcement-learning
+kind: mechanism
+topic: AlphaGo Zero
+topic_type: Model
+maturity: historical
+true_statement: AlphaGo Zero used one residual network with policy and value heads and scored search leaves with that network alone, dropping AlphaGo's fast random rollouts.
+false_statement: AlphaGo Zero used one residual network with policy and value heads but still scored search leaves partly with AlphaGo's fast random rollouts.
+explanation: Merging the two networks and removing rollouts simplified the system and made the learned value estimate carry all the evaluation. Ablations showed the shared policy-value network alone was worth roughly 600 Elo.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/reinforcement-learning/alphago-zero.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: c6782b0d93260455cae3cc91ae3d860f2b9e4c48
+concepts:
+- kt:alphago-zero
+- kt:alphago
+- kt:monte-carlo-tree-search
+- kt:residual-connection
+difficulty: 2
+created: '2026-11-23'
+status: active

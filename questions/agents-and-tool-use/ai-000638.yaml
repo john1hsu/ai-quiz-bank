@@ -1,0 +1,21 @@
+id: ai-000638
+area: agents-and-tool-use
+kind: figure
+topic: Computer-use agents
+topic_type: Technique
+maturity: emerging
+true_statement: When OSWorld was published in 2024, humans solved over 72% of its real-computer tasks while the best model managed 12.24%.
+false_statement: When OSWorld was published in 2024, humans solved over 72% of its real-computer tasks while the best model managed 42.24%.
+explanation: OSWorld runs 369 tasks on real Ubuntu, Windows and macOS machines, many spanning several applications. Failures came mainly from GUI grounding, locating the right element on screen, and missing knowledge of how software works.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/computer-use-agents.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6ab3d4d40a3cb5a339b876a2f403f6150f97de33
+concepts:
+- kt:computer-use-agents
+- kt:osworld
+difficulty: 2
+created: '2026-11-23'
+status: active

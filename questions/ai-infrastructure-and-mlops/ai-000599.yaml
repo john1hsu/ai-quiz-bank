@@ -1,0 +1,20 @@
+id: ai-000599
+area: ai-infrastructure-and-mlops
+kind: definition
+topic: Tensor Cores
+topic_type: Hardware
+maturity: established
+true_statement: The TF32 format keeps FP32's 8-bit exponent but cuts the mantissa to 10 bits, which let NVIDIA run unmodified FP32 training code on A100 Tensor Cores.
+false_statement: The TF32 format keeps FP32's 23-bit mantissa but cuts the exponent to 5 bits, which let NVIDIA run unmodified FP32 training code on A100 Tensor Cores.
+explanation: Keeping the exponent preserves FP32's dynamic range, so values rarely overflow or underflow, while the shorter mantissa makes the multiply far cheaper. That is why NVIDIA could make TF32 the default for AI training without code changes.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/tensor-cores.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 028d703b7a8ddf21abe0deb62a42f6578169d453
+concepts:
+- kt:tensor-cores
+- kt:mixed-precision-training
+difficulty: 2
+created: '2026-11-23'
+status: active

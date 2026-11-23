@@ -1,0 +1,20 @@
+id: ai-000561
+area: governance-and-policy
+kind: figure
+topic: OECD AI Principles
+topic_type: Policy
+maturity: established
+true_statement: At its May 2024 revision, the OECD AI Recommendation had 47 adherents, including the European Union, up from 42 countries at its 2019 launch.
+false_statement: At its May 2024 revision, the OECD AI Recommendation had 74 adherents, including the European Union, up from 42 countries at its 2019 launch.
+explanation: Adherence is a voluntary political commitment, not a treaty, so the list grows as governments sign on. Some G20 members, such as China and India, back the G20 principles without adhering to the OECD instrument itself.
+as_of: '2024'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/oecd-ai-principles.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 9d08876b5e148f708ddd3fd4a0cc66eb42b035e5
+concepts:
+- kt:oecd-ai-principles
+difficulty: 2
+created: '2026-11-23'
+status: active

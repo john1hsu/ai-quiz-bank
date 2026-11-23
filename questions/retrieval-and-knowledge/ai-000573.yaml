@@ -1,0 +1,20 @@
+id: ai-000573
+area: retrieval-and-knowledge
+kind: application
+topic: Named-entity recognition
+topic_type: Application
+maturity: established
+true_statement: UniversalNER distilled ChatGPT into smaller open-type entity recognisers by instruction tuning, without supervised NER examples, and reported beating ChatGPT on a 43-dataset benchmark.
+false_statement: UniversalNER distilled ChatGPT into smaller open-type entity recognisers by fine-tuning on supervised NER examples, and reported trailing ChatGPT on a 43-dataset benchmark.
+explanation: Targeted distillation works because a small model only needs the teacher's skill at one task, not its general ability. Open NER lets users name arbitrary entity types, escaping the fixed type sets of classic benchmarks.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/retrieval-and-knowledge/named-entity-recognition.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: d4bdfab437298eb1244f8880f51af86c7f53c197
+concepts:
+- kt:named-entity-recognition
+- kt:large-language-model
+difficulty: 2
+created: '2026-11-23'
+status: active

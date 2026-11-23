@@ -1,0 +1,20 @@
+id: ai-000581
+area: computer-vision-and-multimodal
+kind: origin
+topic: Semantic segmentation
+topic_type: Application
+maturity: established
+true_statement: Long, Shelhamer and Darrell's fully convolutional networks (CVPR 2015) turned classifiers such as AlexNet and VGG into networks that take any input size and output a matching label map.
+false_statement: Ronneberger, Fischer and Brox's fully convolutional networks (CVPR 2015) turned classifiers such as AlexNet and VGG into networks that take any input size and output a matching label map.
+explanation: Replacing fully connected heads with convolutions let pretrained classifiers be fine-tuned end to end, pixels to pixels, which launched deep semantic segmentation. Ronneberger, Fischer and Brox built U-Net the same year, for biomedical images.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/semantic-segmentation.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6b9728e08d10855dace1d079844dbbc282598d2e
+concepts:
+- kt:semantic-segmentation
+- kt:convolutional-neural-network
+difficulty: 1
+created: '2026-11-23'
+status: active

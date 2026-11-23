@@ -1,0 +1,21 @@
+id: ai-000630
+area: evaluation-and-benchmarks
+kind: figure
+topic: WMT 2014
+topic_type: Benchmark
+maturity: historical
+true_statement: In 2014 Sutskever, Vinyals and Le's deep LSTM scored 34.8 BLEU on WMT'14 English-to-French, beating a phrase-based statistical baseline at 33.3.
+false_statement: In 2014 Sutskever, Vinyals and Le's deep LSTM scored 33.3 BLEU on WMT'14 English-to-French, trailing a phrase-based statistical baseline at 34.8.
+explanation: It was one of the first times a pure neural sequence-to-sequence model beat a mature statistical system on a major benchmark. Using the LSTM to rerank the baseline's candidates pushed the score higher still, to 36.5.
+as_of: '2014'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/wmt-2014.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 89ab10cdcf5b076f3a0d9c15f5c22daf2c763d88
+concepts:
+- kt:wmt-2014
+- kt:sequence-to-sequence-learning
+difficulty: 2
+created: '2026-11-23'
+status: active

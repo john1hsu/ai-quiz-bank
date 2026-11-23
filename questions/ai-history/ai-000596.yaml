@@ -1,0 +1,21 @@
+id: ai-000596
+area: ai-history
+kind: mechanism
+topic: Deep Blue
+topic_type: Model
+maturity: historical
+true_statement: Deep Blue's master node searched the top of the game tree, worker nodes searched the middle levels in software, and custom chess chips searched the last few plies in hardware.
+false_statement: Deep Blue's custom chess chips searched the top of the game tree in hardware, worker nodes searched the middle levels in software, and a master node searched the last few plies.
+explanation: The deepest plies hold by far the most positions, so that is where the fast special-purpose chips paid off. Software near the root handled the selective, knowledge-heavy decisions, with alpha-beta search running across all three layers.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-history/deep-blue.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 70b3063c74cbdcd53c8328677dc3b512a7de761a
+concepts:
+- kt:deep-blue
+- kt:alpha-beta-pruning
+- kt:application-specific-integrated-circuit
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000553
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: AI accelerator
+topic_type: Hardware
+maturity: established
+true_statement: Neural-network accelerators are judged largely by their dataflow, because fetching a value from DRAM can cost orders of magnitude more energy than the arithmetic it feeds.
+false_statement: Neural-network accelerators are judged largely by their dataflow, because the arithmetic on a value can cost orders of magnitude more energy than fetching it from DRAM.
+explanation: Data movement, not multiplication, dominates an accelerator's energy budget. Dataflows such as weight-stationary or row-stationary decide which values stay in each processing element's local buffer, so fewer trips are made to expensive off-chip memory.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/ai-accelerator.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 16914f91597b6e4e772517045563ea15ef46f9ad
+concepts:
+- kt:ai-accelerator
+- kt:high-bandwidth-memory
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,20 @@
+id: ai-000567
+area: ml-foundations
+kind: mechanism
+topic: Generative model
+topic_type: Concept
+maturity: foundational
+true_statement: Normalizing flows compute exact likelihoods by change of variables, which forces every layer to be invertible with a tractable Jacobian and to keep input and output the same size.
+false_statement: Normalizing flows compute exact likelihoods by optimizing an evidence lower bound, which forces every layer to be invertible with a tractable Jacobian and to keep input and output the same size.
+explanation: Each deep generative family pays for tractability somewhere. Flows get exact densities but pay with architectural restrictions; the evidence lower bound (ELBO) is the variational autoencoder's trick, which gives only a bound on the likelihood.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ml-foundations/generative-model.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: bb6749fba1651c91799b5db53f875e8069b188df
+concepts:
+- kt:generative-model
+- kt:variational-autoencoder
+difficulty: 2
+created: '2026-11-23'
+status: active

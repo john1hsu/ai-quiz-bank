@@ -1,0 +1,19 @@
+id: ai-000583
+area: evaluation-and-benchmarks
+kind: mechanism
+topic: BLEU
+topic_type: Concept
+maturity: foundational
+true_statement: BLEU multiplies its score by a brevity penalty because n-gram precision alone would reward translations that are too short.
+false_statement: BLEU multiplies its score by a brevity penalty because n-gram recall alone would reward translations that are too short.
+explanation: A one-word output whose word appears in the reference has perfect precision, so BLEU needs a length check. Recall would punish short output on its own, but BLEU does not measure recall directly; the penalty is its only stand-in, applied over the whole corpus rather than per sentence.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/evaluation-and-benchmarks/bleu.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: b3d03436075a3292fd7206fe5ca830f18d0630ce
+concepts:
+- kt:bleu
+difficulty: 2
+created: '2026-11-23'
+status: active

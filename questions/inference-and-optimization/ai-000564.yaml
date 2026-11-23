@@ -1,0 +1,22 @@
+id: ai-000564
+area: inference-and-optimization
+kind: evidence
+topic: Model compression
+topic_type: Paradigm
+maturity: established
+true_statement: On the knowledge-intensive LLM-KICK benchmark, every pruning method tested degraded noticeably, sometimes at 25–30% sparsity, while quantization held up better.
+false_statement: On the knowledge-intensive LLM-KICK benchmark, every quantization method tested degraded noticeably, sometimes at 4-bit precision, while pruning held up better.
+explanation: Jaiswal and colleagues built LLM-KICK because perplexity can hide damage that shows up on tasks needing stored knowledge. Pruned models still did well on in-context retrieval and summarization, so the harm is task-dependent.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/model-compression.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 5d8a8b26b70be3670a641ad69108355f13fa99b4
+concepts:
+- kt:model-compression
+- kt:model-pruning
+- kt:quantization
+- kt:perplexity
+difficulty: 3
+created: '2026-11-23'
+status: active

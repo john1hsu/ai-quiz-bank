@@ -1,0 +1,20 @@
+id: ai-000590
+area: transformers-and-llms
+kind: origin
+topic: Positional encoding
+topic_type: Technique
+maturity: established
+true_statement: In the 2017 Transformer paper, learned position embeddings performed nearly the same as sinusoids, but the authors kept sinusoids hoping they would extrapolate to longer sequences.
+false_statement: In the 2017 Transformer paper, sinusoids performed nearly the same as learned position embeddings, but the authors kept learned embeddings hoping they would extrapolate to longer sequences.
+explanation: A learned table has no entry for positions beyond the training length, while a sine-and-cosine formula can be evaluated at any position. The hope was reasonable, but later tests showed sinusoids extrapolate only a little.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/transformers-and-llms/positional-encoding.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 291109bf59d1a46d87b7fc88767a772cfc1e3c35
+concepts:
+- kt:positional-encoding
+- kt:attention-is-all-you-need
+difficulty: 2
+created: '2026-11-23'
+status: active

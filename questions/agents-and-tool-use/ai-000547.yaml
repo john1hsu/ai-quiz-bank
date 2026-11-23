@@ -1,0 +1,21 @@
+id: ai-000547
+area: agents-and-tool-use
+kind: origin
+topic: Model Context Protocol
+topic_type: Tool
+maturity: emerging
+true_statement: Anthropic released the Model Context Protocol in November 2024, modelling it on the Language Server Protocol, which lets one language integration serve many editors.
+false_statement: Google released the Model Context Protocol in November 2024, modelling it on the Language Server Protocol, which lets one language integration serve many editors.
+explanation: 'Anthropic launched MCP to replace one-off connectors for every data source with a single protocol. The Language Server Protocol analogy is the key intuition: write a server once and every compatible AI application can use it. Google''s protocol from 2025 is Agent2Agent, which links agents to each other rather than to tools.'
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/agents-and-tool-use/model-context-protocol.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: e0ff7465ea114cb6b63c4a61c2c8a7367197edf5
+concepts:
+- kt:model-context-protocol
+- kt:anthropic
+- kt:language-server-protocol
+difficulty: 1
+created: '2026-11-23'
+status: active

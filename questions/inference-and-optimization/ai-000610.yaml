@@ -1,0 +1,21 @@
+id: ai-000610
+area: inference-and-optimization
+kind: mechanism
+topic: Orca (LLM serving system)
+topic_type: Tool
+maturity: established
+true_statement: Before a request first runs, Orca reserves key/value cache slots for its full max_tokens budget, so no running request can stall waiting for memory that nobody can free.
+false_statement: Orca allocates key/value cache slots one block at a time as each request generates tokens, so no running request can stall waiting for memory that nobody can free.
+explanation: Up-front reservation rules out deadlock but wastes memory, because most requests stop well before their budget. Allocating blocks on demand is what vLLM's PagedAttention later did, recovering that idle cache space.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/inference-and-optimization/orca-serving-system.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: f95d51f2f687fde27abac6bda512219ce3e3779d
+concepts:
+- kt:orca-serving-system
+- kt:kv-cache
+- kt:vllm
+difficulty: 2
+created: '2026-11-23'
+status: active

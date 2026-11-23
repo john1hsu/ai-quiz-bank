@@ -1,0 +1,21 @@
+id: ai-000607
+area: governance-and-policy
+kind: origin
+topic: Council of Europe Framework Convention on Artificial Intelligence
+topic_type: Policy
+maturity: emerging
+true_statement: The Council of Europe adopted its Framework Convention on AI in May 2024 and opened it for signature that September, calling it the first legally binding international AI treaty.
+false_statement: The European Union adopted its Framework Convention on AI in May 2024 and opened it for signature that September, calling it the first legally binding international AI treaty.
+explanation: The Council of Europe is a separate, larger human-rights body with 46 member states; the EU was a negotiator and early signatory, not the author. Unlike the EU AI Act, the convention is a treaty open to non-European countries, and the United States signed on day one.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/governance-and-policy/council-of-europe-framework-convention-on-ai.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: ef64fa8028db82d8cceabb0bb34a83326179685d
+concepts:
+- kt:council-of-europe-framework-convention-on-ai
+- kt:council-of-europe
+- kt:eu-ai-act
+difficulty: 1
+created: '2026-11-23'
+status: active

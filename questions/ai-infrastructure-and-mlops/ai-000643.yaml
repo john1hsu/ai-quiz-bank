@@ -1,0 +1,20 @@
+id: ai-000643
+area: ai-infrastructure-and-mlops
+kind: mechanism
+topic: Pipeline parallelism
+topic_type: Technique
+maturity: established
+true_statement: Asynchronous PipeDream never flushes its pipeline, so it stashes the weight version each micro-batch used in its forward pass and reuses it for that micro-batch's backward pass.
+false_statement: Asynchronous PipeDream never flushes its pipeline, so it discards the weight version each micro-batch used in its forward pass and applies whatever weights are current at that micro-batch's backward pass.
+explanation: Without a flush, weights change while a micro-batch is still in flight, and mixing old activations with new weights gives an invalid gradient. Weight stashing keeps staleness bounded; Megatron-LM chose synchronous flushes instead to keep exact optimizer semantics.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/ai-infrastructure-and-mlops/pipeline-parallelism.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 194e2e9b3967ddcddcb8214bd7f280402338a125
+concepts:
+- kt:pipeline-parallelism
+- kt:backpropagation
+difficulty: 3
+created: '2026-11-23'
+status: active

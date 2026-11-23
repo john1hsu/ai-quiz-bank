@@ -1,0 +1,19 @@
+id: ai-000582
+area: computer-vision-and-multimodal
+kind: mechanism
+topic: Semantic segmentation
+topic_type: Application
+maturity: established
+true_statement: DeepLab used atrous convolution to widen the field of view without extra parameters, and a fully connected conditional random field to restore boundaries blurred by downsampling.
+false_statement: DeepLab used a fully connected conditional random field to widen the field of view without extra parameters, and atrous convolution to restore boundaries blurred by downsampling.
+explanation: Atrous (dilated) convolution spaces out kernel taps so each output sees more context at the same cost. The CRF then works on the predicted map, pulling label edges toward real image edges. Both tackle the trade-off between context and resolution.
+source:
+  repo: john1hsu/ai-knowledge-graph
+  path: articles/computer-vision-and-multimodal/semantic-segmentation.md
+  commit: 7ca4d91c4508f3e190d53bcdd6972c7febe6f2b1
+  blob: 6b9728e08d10855dace1d079844dbbc282598d2e
+concepts:
+- kt:semantic-segmentation
+difficulty: 2
+created: '2026-11-23'
+status: active
